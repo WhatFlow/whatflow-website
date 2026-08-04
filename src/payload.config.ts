@@ -20,36 +20,37 @@ const realpath = (value: string) => (fs.existsSync(value) ? fs.realpathSync(valu
 const isCLI = process.argv.some((value) => realpath(value).endsWith(path.join("payload", "bin.js")));
 const isProduction = process.env.NODE_ENV === "production";
 
-const cloudflare =
-  isCLI || !isProduction
-    ? await getCloudflareContextFromWrangler()
-    : await getCloudflareContext({ async: true });
+export default (async () => {
+  const cloudflare = isCLI
+    ? ({ env: {} } as unknown as CloudflareContext)
+    : await (isProduction
+        ? getCloudflareContext({ async: true })
+        : getCloudflareContextFromWrangler());
 
-export default buildConfig({
-  admin: {
-    user: Users.slug,
-    importMap: {
-      baseDir: path.resolve(dirname),
+  return buildConfig({
+    admin: {
+      user: Users.slug,
+      importMap: {
+        baseDir: path.resolve(dirname),
+      },
     },
-  },
-  collections: [Users, Media],
-  editor: lexicalEditor(),
-  secret: process.env.PAYLOAD_SECRET || "",
-  typescript: {
-    outputFile: path.resolve(dirname, "payload-types.ts"),
-  },
-  db: sqliteD1Adapter({
-    binding: cloudflare.env.D1,
-    // Enable in Cloudflare dashboard if you want global read replicas.
-    // readReplicas: "first-primary",
-  }),
-  plugins: [
-    r2Storage({
-      bucket: cloudflare.env.R2,
-      collections: { media: true },
+    collections: [Users, Media],
+    editor: lexicalEditor(),
+    secret: process.env.PAYLOAD_SECRET || "",
+    typescript: {
+      outputFile: path.resolve(dirname, "payload-types.ts"),
+    },
+    db: sqliteD1Adapter({
+      binding: cloudflare.env.whatflow_payload_cms,
     }),
-  ],
-});
+    plugins: [
+      r2Storage({
+        bucket: cloudflare.env.whatflow_payload_cms_assets,
+        collections: { media: true },
+      }),
+    ],
+  });
+})();
 
 function getCloudflareContextFromWrangler(): Promise<CloudflareContext> {
   return import(/* webpackIgnore: true */ `${"__wrangler".replaceAll("_", "")}`).then(

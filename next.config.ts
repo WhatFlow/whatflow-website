@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
 		],
 	},
 	// Packages with Cloudflare Workers specific implementations.
-	serverExternalPackages: ["jose", "pg-cloudflare"],
+	serverExternalPackages: ["jose", "pg-cloudflare", "drizzle-kit"],
 	webpack: (webpackConfig: any) => {
 		webpackConfig.resolve.extensionAlias = {
 			".cjs": [".cts", ".cjs"],

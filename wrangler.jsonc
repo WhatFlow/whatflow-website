@@ -27,7 +27,7 @@
 	"vars": {},
 	"d1_databases": [
 		{
-			"binding": "D1",
+			"binding": "whatflow_payload_cms",
 			"database_name": "whatflow-payload-cms",
 			"database_id": "2092c715-3b73-4bdc-9517-f69107a4f2e8",
 			"remote": true
