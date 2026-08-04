@@ -24,10 +24,7 @@
 		// see https://opennext.js.org/cloudflare/howtos/image
 		"binding": "IMAGES"
 	},
-	"vars": {
-		// Set a strong value via `wrangler secret put PAYLOAD_SECRET` for non-local environments.
-		"PAYLOAD_SECRET": "local-dev-secret-change-me"
-	},
+	"vars": {},
 	"d1_databases": [
 		{
 			"binding": "D1",
@@ -37,10 +34,6 @@
 		}
 	],
 	"r2_buckets": [
-		{
-			"binding": "R2",
-			"bucket_name": "whatflow-payload-media"
-		},
 		{
 			"bucket_name": "whatflow-payload-cms-assets",
 			"binding": "whatflow_payload_cms_assets",
