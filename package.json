@@ -1,5 +1,5 @@
 {
-  "name": "my-next-app",
+  "name": "whatflow",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "payload": "payload",
+    "generate:types": "payload generate:types",
+    "generate:importmap": "payload generate:importmap",
+    "migrate": "payload migrate",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
@@ -14,7 +18,14 @@
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.19.9",
+    "@payloadcms/db-d1-sqlite": "^3.87.0",
+    "@payloadcms/next": "^3.87.0",
+    "@payloadcms/richtext-lexical": "^3.87.0",
+    "@payloadcms/storage-r2": "^3.87.0",
+    "@payloadcms/ui": "^3.87.0",
+    "graphql": "^16.14.2",
     "next": "16.2.11",
+    "payload": "^3.87.0",
     "react": "^19.1.7",
     "react-dom": "^19.1.7"
   },
