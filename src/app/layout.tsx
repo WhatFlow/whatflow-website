@@ -1,20 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
-	subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
 	title: "WhatFlow | Automated WhatsApp Marketing & Notifications for Shopify",
-	description: "Boost Shopify store sales with automated WhatsApp messaging. Recover abandoned checkouts, automate Judge.me review requests, trigger Shopify Flow events, and track ROI with built-in analytics.",
+	description: "Boost Shopify store sales with automated WhatsApp messaging. Recover abandoned checkouts, automate Judge.me review requests, trigger Shopify Flow events, and track ROI.",
 	keywords: [
 		"Shopify WhatsApp integration",
 		"WhatsApp automation",
@@ -31,14 +20,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className="dark scroll-smooth">
+		<html lang="en" className="scroll-smooth">
 			<head>
-				<link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
+				<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 			</head>
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#090d16] text-gray-100 selection:bg-emerald-500 selection:text-black`}>
+			<body className="antialiased bg-[#FCF5EB] text-[#111B21] selection:bg-[#25D366] selection:text-[#111B21]">
 				{children}
 			</body>
 		</html>
 	);
 }
-
