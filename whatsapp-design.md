@@ -1,245 +1,184 @@
----
-version: alpha
-name: WhatsApp Public Website
-description: Design system summary inferred from the current WhatsApp marketing website at whatsapp.com.
-colors:
-  primary: "#25D366"
-  primary-dark: "#075E54"
-  primary-mid: "#128C7E"
-  accent-blue: "#34B7F1"
-  chat-green: "#D9FDD3"
-  chat-cream: "#FCF5EB"
-  surface: "#FFFFFF"
-  surface-warm: "#FCF5EB"
-  surface-muted: "#F7F1E8"
-  ink: "#111B21"
-  ink-soft: "#1C1E21"
-  text-muted: "#3B4A54"
-  border: "#DAD7D0"
-  footer-dark: "#111B21"
-  on-primary: "#111B21"
-  on-dark: "#FFFFFF"
-  on-surface: "#111B21"
-typography:
-  display-xl:
-    fontFamily: Helvetica Neue, Helvetica, Arial, sans-serif
-    fontSize: 80px
-    fontWeight: 400
-    lineHeight: 0.95
-    letterSpacing: -0.04em
-  display-lg:
-    fontFamily: Helvetica Neue, Helvetica, Arial, sans-serif
-    fontSize: 64px
-    fontWeight: 400
-    lineHeight: 1
-    letterSpacing: -0.035em
-  headline-lg:
-    fontFamily: Helvetica Neue, Helvetica, Arial, sans-serif
-    fontSize: 48px
-    fontWeight: 400
-    lineHeight: 1.05
-    letterSpacing: -0.025em
-  headline-md:
-    fontFamily: Helvetica Neue, Helvetica, Arial, sans-serif
-    fontSize: 36px
-    fontWeight: 400
-    lineHeight: 1.1
-    letterSpacing: -0.02em
-  body-lg:
-    fontFamily: Helvetica Neue, Helvetica, Arial, sans-serif
-    fontSize: 24px
-    fontWeight: 400
-    lineHeight: 1.35
-    letterSpacing: -0.01em
-  body-md:
-    fontFamily: Helvetica Neue, Helvetica, Arial, sans-serif
-    fontSize: 18px
-    fontWeight: 400
-    lineHeight: 1.45
-  body-sm:
-    fontFamily: Helvetica Neue, Helvetica, Arial, sans-serif
-    fontSize: 16px
-    fontWeight: 400
-    lineHeight: 1.45
-  label-md:
-    fontFamily: Helvetica Neue, Helvetica, Arial, sans-serif
-    fontSize: 16px
-    fontWeight: 400
-    lineHeight: 1
-  caption:
-    fontFamily: Helvetica Neue, Helvetica, Arial, sans-serif
-    fontSize: 12px
-    fontWeight: 400
-    lineHeight: 1.4
-spacing:
-  xs: 4px
-  sm: 8px
-  md: 16px
-  lg: 24px
-  xl: 32px
-  2xl: 48px
-  3xl: 64px
-  4xl: 96px
-  section-y: 112px
-  page-margin-mobile: 20px
-  page-margin-desktop: 40px
-  max-width: 1440px
-  content-width: 1180px
-rounded:
-  sm: 8px
-  md: 16px
-  lg: 24px
-  xl: 32px
-  pill: 9999px
-  hero: 40px
-components:
-  button-primary:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.ink}"
-    typography: "{typography.label-md}"
-    rounded: "{rounded.pill}"
-    padding: 16px 28px
-    borderColor: "{colors.ink}"
-  button-primary-hover:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.on-dark}"
-  button-secondary:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    typography: "{typography.label-md}"
-    rounded: "{rounded.pill}"
-    padding: 16px 28px
-    borderColor: "{colors.ink}"
-  nav-link:
-    textColor: "{colors.ink}"
-    typography: "{typography.label-md}"
-    padding: 8px 12px
-  hero-card:
-    backgroundColor: "{colors.surface-warm}"
-    rounded: "{rounded.hero}"
-    padding: 40px
-  chat-bubble-incoming:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.lg}"
-    padding: 12px 16px
-  chat-bubble-outgoing:
-    backgroundColor: "{colors.chat-green}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.lg}"
-    padding: 12px 16px
-  footer:
-    backgroundColor: "{colors.footer-dark}"
-    textColor: "{colors.on-dark}"
-    padding: 64px 40px
+# WhatFlow - UI/UX Design Specification (`design.md`)
+
+## 1. Overview
+
+The **WhatFlow** web application utilizes a striking **Neo-brutalist** (or retro-web) design language. This aesthetic is characterized by high contrast, thick black borders, hard block shadows (zero blur), vibrant accent colors against muted backgrounds, and bold typography. It emphasizes clarity, unpretentious UI elements, and a playful yet professional tone suitable for a modern B2B SaaS tool.
+
 ---
 
-# WhatsApp DESIGN.md
+## 2. Global Design Tokens
 
-## Overview
+### 2.1. Color Palette
 
-WhatsApp’s public website design is warm, human, simple, and globally accessible. The brand expression centers on private communication: real people, friendly message bubbles, natural photography, and plainspoken copy. The UI should feel reliable and safe, but never corporate-heavy. It balances a consumer-friendly visual language with enough polish to support business, privacy, security, and app download flows.
+The color system relies on stark contrasts. Borders and shadows are strictly black, while containers use muted backgrounds to allow vibrant CTAs (Call to Actions) to pop.
 
-The core mood is **private, close, expressive, and effortless**. Designs should use generous negative space, rounded shapes, large human-centered imagery, soft cream surfaces, and WhatsApp green as a confident but approachable action color.
+* **Backgrounds:**
+* `Global Background`: Off-white/Cream (`#FDFBF7` approx.)
+* `Dark Section Background`: Deep Slate/Black (`#0F172A` approx.)
+* `Card Background Primary`: Light Mint Green (`#D1F5D3` approx.)
+* `Card Background Secondary`: White (`#FFFFFF`)
 
-The visual system should prioritize clarity over decoration. Let content, people, and messaging moments carry the emotion. Use iconography and chat UI fragments as supporting storytelling devices, not as dense dashboards.
 
-## Colors
+* **Accents & Interactions:**
+* `Primary Accent (Brand Green)`: `#00D261` (Used for primary buttons, prominent text, success states)
+* `Secondary Accent (Blue)`: `#2563EB` (Used for informative tags, setup guides)
+* `Warning/Pending (Yellow)`: `#FFC107` (Used for badges, pending states)
+* `Danger/Cancel (Red)`: `#FF4B4B` (Used for cancel buttons, error states)
 
-The palette is built around WhatsApp green, deep ink, and a warm cream background. The marketing site does not feel pure white or cold; it uses a soft off-white cream as a signature page foundation.
 
-- **Primary Green (`#25D366`):** The most recognizable WhatsApp brand color. Use for primary calls to action, selected states, small highlights, and brand moments.
-- **Primary Dark Green (`#075E54`):** A deeper WhatsApp green for brand anchoring, contrast, and darker UI accents.
-- **Primary Mid Green (`#128C7E`):** A secondary brand green useful for gradients, illustrations, and supportive accents.
-- **Accent Blue (`#34B7F1`):** A supporting communication accent, best used sparingly in illustrated or chat-adjacent contexts.
-- **Warm Cream (`#FCF5EB`):** The dominant page background. It creates a soft, friendly, human tone.
-- **Ink (`#111B21`):** Main text and dark surface color. Use for headings, body copy, button borders, and footer backgrounds.
-- **Chat Green (`#D9FDD3`):** Outgoing message bubble color. Use only when representing WhatsApp chat UI or lightweight conversational elements.
-- **White (`#FFFFFF`):** Use for cards, incoming bubbles, image overlays, and high-contrast content surfaces.
+* **Strokes & Typography:**
+* `Primary Text / Borders`: Solid Black (`#000000` or `#111111`)
+* `Inverted Text`: Solid White (`#FFFFFF`)
 
-Avoid overusing saturated green across full sections. The site’s look comes from the contrast between warm cream, dark ink, real imagery, and selective green.
 
-## Typography
 
-Typography is simple, rounded by feel, and highly readable. Use a Helvetica-like sans-serif stack: **Helvetica Neue, Helvetica, Arial, sans-serif**. The brand voice is clear and direct; the type should not feel overly technical or ornamental.
+### 2.2. Typography
 
-- **Display headings:** Very large, lightweight, tightly tracked, and expressive. Use for hero statements such as “Message privately.”
-- **Section headlines:** Large, plainspoken, and broken across lines when helpful. Line breaks can add rhythm and friendliness.
-- **Body copy:** Medium-to-large body sizes with comfortable line height. Copy should feel conversational and accessible.
-- **Navigation and labels:** Simple sentence case labels, regular weight, and enough spacing to feel tappable.
+The typographic hierarchy relies heavily on uppercase, heavy-weight sans-serif fonts for headings, and highly legible geometric sans-serifs for body copy.
 
-Do not use heavy all-caps labels or overly condensed type. WhatsApp’s tone is personal and approachable, so typography should feel natural and calm.
+* **Font Families:**
+* *Primary (Headings)*: Inter Black, Roboto Black, or Archivo Black (Geometric, ultra-bold).
+* *Secondary (Body/UI)*: Inter Regular/Medium.
 
-## Layout
 
-The layout uses spacious editorial sections with strong visual storytelling. Desktop layouts often pair large text blocks with tall device screenshots, chat bubbles, or lifestyle photography. Mobile layouts should stack sections cleanly and preserve generous spacing.
+* **Special Text Treatments:**
+* **Outlined Text (Stroke):** A signature element of this design. Key heading words are rendered with a transparent fill and a thick black, green, or blue stroke (e.g., `-webkit-text-stroke: 2px #111111; color: transparent;`). Seen extensively across all files.
+* **Casing:** All H1, H2, and Button text are strictly `UPPERCASE`.
 
-Use a **max-width page container** around 1440px, with desktop side margins around 40px and mobile margins around 20px. Sections should breathe; avoid cramming multiple product messages into one viewport.
 
-Recommended layout patterns:
 
-- Hero section with a large rounded image container and overlaid/adjacent chat UI fragments.
-- Alternating two-column sections: text on one side, product or human image on the other.
-- Full-width warm cream background for most pages.
-- Dark footer with structured link columns and high contrast.
-- Large vertical spacing between sections, typically 96–112px on desktop.
+### 2.3. Borders and Shadows
 
-The grid should feel fluid rather than rigid. Align content carefully, but allow imagery and chat bubbles to create a playful, organic rhythm.
+The defining characteristic of the UI components.
 
-## Elevation & Depth
+* **Borders:** Uniform `2px` to `3px` solid black borders on almost all interactive elements, cards, and input fields.
+* **Block Shadows:** Hard shadows with no blur.
+* *Standard Shadow:* `box-shadow: 4px 4px 0px 0px #000000;`
+* *Hover State Shadow:* Often translates the element `-2px` on the X/Y axis and increases the shadow to `6px 6px` to simulate a physical press/lift.
 
-Depth is subtle. WhatsApp’s website does not rely on heavy shadows or glass effects. Hierarchy is created through scale, spacing, color contrast, rounded containers, and layered imagery.
 
-Use shadows sparingly and softly, mostly for floating chat bubbles or device mockups. Prefer tonal separation: cream page background, white bubbles/cards, dark footer, green action buttons. When layering chat elements over photography, ensure shadows are soft and realistic.
 
-Avoid dramatic drop shadows, neon glows, glossy gradients, or 3D skeuomorphic surfaces. The design should remain calm and trustworthy.
+---
 
-## Shapes
+## 3. Component Library
 
-Shapes are friendly and highly rounded. Buttons use full pill radii. Cards and image containers use large rounded corners. Chat bubbles use rounded rectangles with conversational softness.
+### 3.1. Buttons
 
-- **Buttons:** Fully rounded pills.
-- **Hero imagery:** Large rounded rectangles, around 32–40px radius.
-- **Cards and content blocks:** Soft rounded corners, usually 16–32px.
-- **Chat bubbles:** Rounded corners with a friendly bubble-like silhouette.
-- **Avatars and reaction elements:** Circular or pill-based forms.
+Buttons are heavily stylized to look like physical, tactile blocks.
 
-Sharp corners should be avoided except for layout edges or invisible grid boundaries.
+* **Primary CTA (Install App, Install WhatFlow):**
+* Background: Brand Green
+* Text: Black, Bold, Uppercase
+* Border: 2px solid Black
+* Shadow: 4px 4px Black block shadow
 
-## Components
 
-**Navigation**  
-Use a clean top navigation with the WhatsApp logo on the left, feature/product links in the center, and actions like “Log in” and “Download” on the right. Navigation links should be regular weight, sentence case, and calm. Keep spacing generous and avoid dense menus.
+* **Secondary/Ghost CTA (View Setup Guide, View Pricing):**
+* Background: White or Light Blue
+* Text: Secondary Blue or Black, Bold, Uppercase
+* Border: 2px solid Black
+* Shadow: 4px 4px Black block shadow
 
-**Buttons**  
-Primary buttons are green pills with dark text and a dark border. They should feel tactile and friendly. Secondary buttons can be outlined pills or simple text links with arrow affordances. Hover states may invert to dark backgrounds with light text.
 
-**Hero sections**  
-Hero sections should combine a large emotional headline, short supporting copy, and a clear download action. Use lifestyle imagery and chat/message fragments to show the product in context. The hero should feel personal rather than like a software dashboard.
+* **Action Buttons (Confirm/Cancel - seen in mockups):**
+* *Confirm*: Green background, White text, Black border/shadow.
+* *Cancel*: White background, Red text, Black border/shadow.
 
-**Chat bubbles**  
-Incoming bubbles are white; outgoing bubbles use soft chat green. Keep text short, conversational, and natural. Bubbles should float lightly and can overlap imagery, but should not obscure faces or key content.
 
-**Feature sections**  
-Feature sections should use short headings, warm body copy, and one strong visual. Each section should communicate one idea: calling, privacy, groups, expression, or business. Avoid mixing too many screenshots in one component.
 
-**Links**  
-Use simple “Learn more” links with subtle directional arrows when needed. Links should feel understated; primary conversion belongs to the Download button.
+### 3.2. Badges & Tags
 
-**Footer**  
-The footer uses a dark ink background with white text. Structure links into clear columns such as “What we do,” “Who we are,” “Use WhatsApp,” and “Need help?” Keep it functional and high contrast.
+Used to denote status, features, or integrations.
 
-## Do's and Don'ts
+* **Pill Tags:** Fully rounded corners (`border-radius: 999px`), 2px black border, solid white or lightly tinted backgrounds. Text is uppercase and bold.
+* *Examples:* "AUTOMATIC", "SHOPIFY SYNC", "OFFICIAL META API".
 
-- Do use warm cream as the default background instead of stark white.
-- Do reserve WhatsApp green for primary actions and meaningful brand highlights.
-- Do use real human imagery and conversational UI elements to create emotional warmth.
-- Do keep copy short, direct, and globally understandable.
-- Do use large rounded corners and pill-shaped actions consistently.
-- Do create hierarchy with scale, whitespace, and contrast rather than heavy shadows.
-- Don’t make the interface look like a dense SaaS dashboard.
-- Don’t overuse green as a full-page background unless it has a specific brand purpose.
-- Don’t use sharp, corporate, or overly technical visual language.
-- Don’t combine too many feature messages in one section.
-- Don’t use heavy gradients, glassmorphism, or decorative effects that compete with the core message.
-- Don’t reduce chat UI to generic messaging visuals; keep bubbles, reactions, and privacy cues recognizably WhatsApp-like.
+
+* **Block Tags:** Rectangular tags often attached to the top edge of a larger card.
+* *Examples:* "ONE-TAP RESPONSE" (Yellow), "FEATURE — ORDER CONFIRMATION" (Dark Green).
+
+
+
+### 3.3. Form Elements (Inputs & Dropdowns)
+
+* **Inputs (e.g., Pricing Calculator):**
+* Container: White background, 2px solid black border.
+* Label: Small, bold, uppercase text above the input.
+* Interaction: On focus, the border likely thickens or the box shadow shifts.
+
+
+
+---
+
+## 4. Section & Layout Analysis
+
+### 4.1. Order Confirmation Feature Layout
+
+**Reference File:** `1786491800546.png`
+
+* **Left Column (Copy):** Large H1 ("KNOW WHICH ORDERS ARE REAL.") with "REAL." rendered in outlined green text. Above the H1 are two pill tags. Below is sub-copy and dual CTAs.
+* **Right Column (Visual):** A stacked card component. The background card is dark teal. Inset is a white card containing a stylized WhatsApp chat mockup. The mockup features a user message, a Shopify order snippet (image, details, price), and two prominent action buttons (Confirm/Cancel).
+* **Footer Strip:** An informational strip showing "ONE TAP. THREE CLEAR OUTCOMES." with three status pills (Confirmation Pending, Order Confirmed, Order Cancelled).
+
+### 4.2. Pricing Calculator Layout
+
+**Reference Files:** `1786491793711.png` and `1786491799422.png` (Identical frames)
+
+* **Left Column (Copy):** H1 ("PRICING THAT SCALES WITH EVERY ORDER.") with "EVERY ORDER." outlined in green. Pill tags for "PAY FOR YOUR USAGE" and "ALL FEATURES INCLUDED".
+* **Right Column (Interactive Tool):** A large, split-panel card with a prominent "CALCULATE YOUR MONTHLY COST" header badge.
+* *Left half (Input):* White background with input fields for "Monthly Orders" (1,000), "Messages Per Order" (2), and a dropdown for "Message Type". Includes a black "CALCULATE →" button.
+* *Right half (Output):* Light mint green background. Displays large typography for "ESTIMATED MESSAGES" (2,000) and a recommended plan badge ("STARTER").
+
+
+
+### 4.3. Shopify Events Integration Layout
+
+**Reference File:** `1786491796190.png`
+
+* **Left Column (Copy):** H1 ("TURN SHOPIFY EVENTS INTO WHATSAPP CONVERSATIONS.") with "INTO" outlined in green and "WHATSAPP CONVERSATIONS." solid black.
+* **Right Column (Visual):** A dark teal background card displaying a complex UI mockup. It shows a mobile phone frame (WhatsApp interface) side-by-side with a Shopify order receipt card.
+* **Bottom Marquee:** A dark section with a scrolling/static ticker displaying features ("ORDER CONFIRMATION ∞ ABANDONED CHECKOUT ∞").
+
+### 4.4. Official API Connection Layout
+
+**Reference File:** `1786491797615.png`
+
+* **Left Column (Copy):** H1 ("THE OFFICIAL WAY TO AUTOMATE WHATSAPP.") with "OFFICIAL" outlined in blue and "WHATSAPP." outlined in green.
+* **Right Column (Visual):** A workflow illustration inside a card. It displays a Shopify order card connected by a bold black arrow to a WhatsApp "Order confirmed" chat bubble, visually demonstrating the data flow.
+* **Lower Section:** Introduction of a dark section (`#0F172A`) with massive typography: "BUILT FOR RELIABILITY." with "RELIABILITY." outlined in bright green.
+
+---
+
+## 5. Development Guidelines (CSS/Implementation Notes)
+
+To replicate this specific aesthetic in code, engineers should utilize the following CSS paradigms:
+
+```css
+/* Base brutalist container/button style */
+.neo-box {
+  background-color: var(--bg-color);
+  border: 2px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  border-radius: 8px; /* Slight rounding softens the brutalism */
+  transition: all 0.15s ease-in-out;
+}
+
+/* Button Hover State */
+.neo-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+/* Button Active/Click State */
+.neo-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+
+/* Outlined Text Typography */
+.text-outline-green {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--brand-green);
+}
+
+```

@@ -3,37 +3,87 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
-// ─── Apps Data ───────────────────────────────────────────────────────────────
+// ─── Data Definitions ─────────────────────────────────────────────────────────
+
 const APPS = [
 	{
 		id: "chat",
-		name: "WhatFlow Chat",
-		tag: "Unofficial API",
-		tagColor: "bg-orange-100 text-orange-700",
+		name: "WHATFLOW CHAT",
+		tag: "UNOFFICIAL API",
+		tagColor: "bg-[#FFF3CD] text-[#856404] border-black",
 		description: "Order confirmations, cart recovery & real-time updates via WhatsApp.",
 		icon: "💬",
 		link: "https://apps.shopify.com/whatflow",
-		color: "#f0fdf4",
+		price: "$9",
+		badge: "QUICK SETUP",
+		featured: false,
+		features: [
+			"500 messages / month",
+			"Instant order confirmations",
+			"Cart recovery sequences",
+			"Shipping & delivery updates",
+		],
 	},
 	{
 		id: "business",
-		name: "WhatFlow Business",
-		tag: "Meta Cloud API",
-		tagColor: "bg-green-100 text-green-700",
+		name: "WHATFLOW BUSINESS",
+		tag: "META CLOUD API",
+		tagColor: "bg-[#D4EDDA] text-[#155724] border-black",
 		description: "Official WhatsApp API with AI chat, broadcasts & back-in-stock alerts.",
 		icon: "⚡",
 		link: "https://apps.shopify.com/whatflow-official-api",
-		color: "#f0fdf4",
+		price: "$49",
+		badge: "MOST POPULAR",
+		featured: true,
+		features: [
+			"Unlimited messages via Cloud API",
+			"Official Meta verification badge",
+			"AI auto-reply chatbot (24/7)",
+			"Broadcast campaigns & segments",
+			"Native Shopify Flow action",
+			"Judge.me photo review requests",
+		],
 	},
 	{
 		id: "ai",
-		name: "WhatFlow AI",
-		tag: "AI Chatbot",
-		tagColor: "bg-purple-100 text-purple-700",
-		description: "AI chat widget for your Shopify storefront — support, upsells & order tracking.",
+		name: "WHATFLOW AI",
+		tag: "STOREFRONT WIDGET",
+		tagColor: "bg-[#E2E3E5] text-[#383D41] border-black",
+		description: "AI chat widget for your Shopify storefront — support, upsells & tracking.",
 		icon: "🤖",
 		link: "https://apps.shopify.com/whatflow-ai",
-		color: "#faf5ff",
+		price: "$19",
+		badge: "NEWEST",
+		featured: false,
+		features: [
+			"AI product recommendations",
+			"Order lookup & tracking widget",
+			"Multilingual AI support",
+			"Smart upsells & cross-sells",
+		],
+	},
+];
+
+const FAQS = [
+	{
+		q: "Which app should I start with?",
+		a: "If you want instant setup without a Meta business account, start with WhatFlow Chat. For official Meta verification, AI chatbots, and Shopify Flow integration, choose WhatFlow Business API.",
+	},
+	{
+		q: "Do I need a Meta WhatsApp Business Account?",
+		a: "Only for WhatFlow Business API, which connects directly to Meta's official Cloud API for certified message delivery. WhatFlow Chat requires no Meta account.",
+	},
+	{
+		q: "Can I use multiple WhatFlow apps together?",
+		a: "Yes! Many merchants pair WhatFlow Business API for post-purchase WhatsApp notifications with WhatFlow AI for storefront customer support.",
+	},
+	{
+		q: "Is there a free trial for all plans?",
+		a: "Yes, all plans come with a 14-day free trial. No credit card is required to get started.",
+	},
+	{
+		q: "Does WhatFlow integrate with Shopify Flow?",
+		a: "Yes — WhatFlow Business API provides a native Shopify Flow action block, allowing you to trigger WhatsApp workflows from any Shopify event.",
 	},
 ];
 
@@ -48,7 +98,7 @@ function useReveal() {
 					}
 				});
 			},
-			{ threshold: 0.12 }
+			{ threshold: 0.1 }
 		);
 
 		document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
@@ -56,604 +106,830 @@ function useReveal() {
 	}, []);
 }
 
-// ─── Animated Counter ─────────────────────────────────────────────────────────
-function AnimatedCounter({ end, suffix = "", duration = 1800 }: { end: number; suffix?: string; duration?: number }) {
-	const [count, setCount] = useState(0);
-	const ref = useRef<HTMLSpanElement>(null);
-	const started = useRef(false);
-
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				if (entry.isIntersecting && !started.current) {
-					started.current = true;
-					const start = performance.now();
-					const animate = (now: number) => {
-						const elapsed = now - start;
-						const progress = Math.min(elapsed / duration, 1);
-						const ease = 1 - Math.pow(1 - progress, 3);
-						setCount(Math.floor(ease * end));
-						if (progress < 1) requestAnimationFrame(animate);
-					};
-					requestAnimationFrame(animate);
-				}
-			},
-			{ threshold: 0.5 }
-		);
-		if (ref.current) observer.observe(ref.current);
-		return () => observer.disconnect();
-	}, [end, duration]);
-
-	return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
-}
-
 // ─── Logo Component ───────────────────────────────────────────────────────────
 function WhatFlowLogo() {
 	return (
 		<a href="/" className="flex items-center gap-2.5 group" id="nav-logo">
-			<div className="w-9 h-9 rounded-xl bg-[#25D366] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
-				<svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
+			<div className="w-10 h-10 rounded-xl bg-white border-2 border-black shadow-[2px_2px_0px_#000] flex items-center justify-center relative group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform">
+				<svg viewBox="0 0 24 24" className="w-6 h-6 fill-black">
 					<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
 				</svg>
+				<span className="absolute -top-1 -right-1 w-4 h-4 bg-[#2563EB] rounded-full border border-black flex items-center justify-center text-[9px] text-white font-bold">
+					✓
+				</span>
 			</div>
-			<span className="text-xl font-bold tracking-tight text-[#111111]">WhatFlow</span>
+			<span className="text-2xl font-display font-black tracking-tight text-black uppercase">WHATFLOW</span>
 		</a>
 	);
 }
 
-// ─── Apps Dropdown ────────────────────────────────────────────────────────────
-function AppsDropdown() {
-	const [open, setOpen] = useState(false);
-	const ref = useRef<HTMLDivElement>(null);
-
-	useEffect(() => {
-		const handler = (e: MouseEvent) => {
-			if (ref.current && !ref.current.contains(e.target as Node)) {
-				setOpen(false);
-			}
-		};
-		document.addEventListener("mousedown", handler);
-		return () => document.removeEventListener("mousedown", handler);
-	}, []);
-
-	return (
-		<div ref={ref} className="relative">
-			<button
-				id="nav-apps-btn"
-				onClick={() => setOpen((o) => !o)}
-				className="flex items-center gap-1.5 text-[15px] font-medium text-[#111111] hover:text-[#25D366] transition-colors py-1.5 px-1"
-				aria-expanded={open}
-				aria-haspopup="true"
-			>
-				Apps
-				<svg
-					className={`w-4 h-4 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
-					fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
-				>
-					<path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-				</svg>
-			</button>
-
-			{open && (
-				<div
-					id="nav-apps-dropdown"
-					className="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[520px] bg-white rounded-2xl shadow-2xl border border-[#e8e8e8] z-50 overflow-hidden"
-				>
-					<div className="p-2">
-						<p className="text-[11px] font-semibold uppercase tracking-widest text-[#999] px-3 py-2">Our Apps</p>
-						{APPS.map((app) => (
-							<a
-								key={app.id}
-								href={app.link}
-								target="_blank"
-								rel="noopener noreferrer"
-								id={`nav-app-${app.id}`}
-								className="flex items-start gap-4 px-4 py-4 rounded-xl hover:bg-[#f6f6f6] transition-colors group"
-								onClick={() => setOpen(false)}
-							>
-								<div className="w-11 h-11 rounded-xl bg-[#f0fdf4] flex items-center justify-center text-xl flex-shrink-0 border border-[#e5e5e5] group-hover:scale-105 transition-transform">
-									{app.icon}
-								</div>
-								<div className="flex-1 min-w-0">
-									<div className="flex items-center gap-2 mb-1">
-										<span className="font-semibold text-[14px] text-[#111111]">{app.name}</span>
-										<span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${app.tagColor}`}>{app.tag}</span>
-									</div>
-									<p className="text-[13px] text-[#666] leading-snug">{app.description}</p>
-								</div>
-								<svg className="w-4 h-4 text-[#bbb] group-hover:text-[#25D366] group-hover:translate-x-1 transition-all flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-									<path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-								</svg>
-							</a>
-						))}
-					</div>
-
-					<div className="bg-[#f9f9f9] border-t border-[#eee] px-5 py-3 flex items-center justify-between">
-						<p className="text-[12px] text-[#999]">Trusted by 1,000+ Shopify merchants</p>
-						<a href="#pricing" className="text-[12px] font-semibold text-[#25D366] hover:underline" onClick={() => setOpen(false)}>View pricing →</a>
-					</div>
-				</div>
-			)}
-		</div>
-	);
-}
-
-// ─── Navbar ───────────────────────────────────────────────────────────────────
+// ─── Navbar Component ─────────────────────────────────────────────────────────
 function Navbar() {
-	const [scrolled, setScrolled] = useState(false);
-
-	useEffect(() => {
-		const onScroll = () => setScrolled(window.scrollY > 20);
-		window.addEventListener("scroll", onScroll);
-		return () => window.removeEventListener("scroll", onScroll);
-	}, []);
-
 	return (
-		<nav
-			id="main-nav"
-			className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 animate-fade-in ${
-				scrolled
-					? "bg-white/95 backdrop-blur-md shadow-sm border-b border-[#e5e5e5]"
-					: "bg-white border-b border-[#e5e5e5]"
-			}`}
-		>
-			<div className="max-w-[1240px] mx-auto px-6 h-[70px] flex items-center justify-between">
+		<header className="sticky top-0 z-50 bg-[#FAF7F0] border-b-[2.5px] border-black">
+			<div className="max-w-[1280px] mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
 				<WhatFlowLogo />
 
-				<div className="hidden md:flex items-center gap-6">
-					<AppsDropdown />
-					<a id="nav-features" href="#features" className="text-[15px] font-medium text-[#111111] hover:text-[#25D366] transition-colors">Features</a>
-					<a id="nav-pricing" href="#pricing" className="text-[15px] font-medium text-[#111111] hover:text-[#25D366] transition-colors">Pricing</a>
-					<a id="nav-blog" href="#faq" className="text-[15px] font-medium text-[#111111] hover:text-[#25D366] transition-colors">FAQ</a>
-				</div>
+				<nav className="hidden lg:flex items-center gap-8">
+					<a href="#hero" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
+						HOME
+					</a>
+					<a href="#products" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors relative py-1 border-b-2 border-transparent hover:border-black">
+						PRODUCTS
+					</a>
+					<a href="#pricing" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
+						PRICING
+					</a>
+					<a href="#features" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
+						FEATURES
+					</a>
+					<a href="#faq" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
+						HELP
+					</a>
+					<a href="#about" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
+						ABOUT
+					</a>
+				</nav>
 
 				<div className="flex items-center gap-3">
 					<a
-						id="nav-admin"
-						href="/admin"
-						className="text-[14px] font-medium text-[#444] hover:text-[#111] transition-colors hidden sm:block"
+						href="#products"
+						className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg flex items-center gap-2"
 					>
-						Log in
-					</a>
-					<a
-						id="nav-explore"
-						href="#apps"
-						className="px-5 py-2.5 rounded-full bg-[#111111] text-white text-[14px] font-semibold hover:bg-[#25D366] hover:text-[#111111] transition-all shadow-sm border border-[#111111] hover:border-[#25D366]"
-					>
-						Explore apps
+						INSTALL APP
 					</a>
 				</div>
 			</div>
-		</nav>
+		</header>
 	);
 }
 
-// ─── Hero Section ─────────────────────────────────────────────────────────────
-function Hero() {
+// ─── Hero Section (Matching Image 1) ─────────────────────────────────────────
+function HeroSection() {
+	const [activeAction, setActiveAction] = useState<"confirm" | "cancel" | null>(null);
+
 	return (
-		<section id="hero" className="pt-[70px] min-h-screen flex">
-			<div className="flex w-full flex-col lg:flex-row">
-				{/* Left Panel */}
-				<div className="flex-1 bg-white flex items-center px-8 sm:px-12 lg:px-16 xl:px-20 py-16 lg:py-0">
-					<div className="max-w-lg">
-						<div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full border border-[#e5e5e5] bg-[#fafafa] text-[13px] font-medium text-[#444] mb-8 animate-fade-up">
-							<span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse inline-block"></span>
-							New — WhatFlow AI Chatbot is live!
-							<a href="https://apps.shopify.com/whatflow-ai" target="_blank" rel="noopener noreferrer" className="text-[#25D366] font-semibold hover:underline">Try it →</a>
+		<section id="hero" className="bg-[#FAF7F0] pt-10 pb-16 px-4 sm:px-6 border-b-[2.5px] border-black">
+			<div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+				{/* Left Hero Content */}
+				<div className="lg:col-span-6 space-y-6">
+					{/* Badges */}
+					<div className="flex flex-wrap items-center gap-3">
+						<div className="neo-pill bg-white px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-black">
+							<span className="text-[#2563EB] font-black text-sm">∞</span>
+							<span>OFFICIAL META API</span>
 						</div>
-
-						<h1 className="text-[44px] sm:text-[52px] lg:text-[60px] font-bold leading-[1.05] tracking-tight text-[#111111] mb-6">
-							<span className="animate-fade-up delay-100 block">Grow your store</span>
-							<span className="animate-fade-up delay-200 block">with our{" "}
-								<span className="relative inline-block">
-									<span className="text-[#25D366]">WhatsApp</span>
-									<svg className="absolute -bottom-1 left-0 w-full" height="6" viewBox="0 0 200 6" fill="none">
-										<path d="M2 4 Q50 1 100 4 Q150 1 198 4" stroke="#25D366" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-									</svg>
-								</span>
-							</span>
-							<span className="animate-fade-up delay-300 block">apps</span>
-						</h1>
-
-						<p className="text-[17px] sm:text-[18px] text-[#555] leading-relaxed mb-8 animate-fade-up delay-400 max-w-sm">
-							Join 1,000+ Shopify merchants using WhatFlow to recover carts, automate notifications, and grow with AI.
-						</p>
-
-						<div className="flex flex-wrap items-center gap-4 animate-fade-up delay-500">
-							<a
-								id="hero-cta"
-								href="#apps"
-								className="flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#111111] text-white text-[15px] font-semibold hover:bg-[#25D366] hover:text-[#111111] transition-all border border-[#111111] hover:border-[#25D366] shadow-sm"
-							>
-								Explore apps
-								<svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-									<path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-								</svg>
-							</a>
-							<a
-								id="hero-demo"
-								href="#features"
-								className="text-[15px] font-medium text-[#444] hover:text-[#111] underline underline-offset-4 decoration-[#e5e5e5] hover:decoration-[#111] transition-all"
-							>
-								See how it works
-							</a>
+						<div className="neo-pill bg-[#E8F8F0] px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-black">
+							<span className="w-4 h-4 bg-[#95BF47] rounded flex items-center justify-center text-[10px] text-white font-bold">S</span>
+							<span>BUILT FOR SHOPIFY</span>
 						</div>
+					</div>
 
-						<p className="text-[13px] text-[#aaa] mt-10 animate-fade-up delay-600">
-							Some of the best eCommerce brands are using our apps
-						</p>
+					{/* Heading */}
+					<h1 className="text-[44px] sm:text-[58px] lg:text-[64px] font-display font-black leading-[1.02] uppercase text-black tracking-tight">
+						TURN SHOPIFY EVENTS{" "}
+						<span className="text-stroke-green block sm:inline">INTO WHATSAPP</span>{" "}
+						CONVERSATIONS.
+					</h1>
+
+					{/* Subtitle */}
+					<p className="text-[17px] sm:text-[18px] text-[#222222] font-medium leading-relaxed max-w-lg">
+						Official WhatsApp automation for confirmations, recovery and order updates.
+					</p>
+
+					{/* Action Buttons */}
+					<div className="flex flex-wrap items-center gap-4 pt-2">
+						<a
+							href="#products"
+							className="neo-btn bg-[#00D261] text-black font-extrabold text-sm uppercase tracking-wide px-7 py-3.5 rounded-lg flex items-center gap-2"
+						>
+							INSTALL ON SHOPIFY
+						</a>
+						<a
+							href="#features"
+							className="neo-btn bg-white text-[#2563EB] font-extrabold text-sm uppercase tracking-wide px-7 py-3.5 rounded-lg"
+						>
+							SEE HOW IT WORKS
+						</a>
 					</div>
 				</div>
 
-				{/* Right Panel — Green with Illustration */}
-				<div className="lg:w-[50%] xl:w-[52%] bg-[#25D366] flex items-center justify-center p-12 lg:p-16 min-h-[50vh] lg:min-h-0 relative overflow-hidden">
-					{/* Subtle background circles */}
-					<div className="absolute w-64 h-64 rounded-full bg-white/10 -top-12 -right-12" />
-					<div className="absolute w-40 h-40 rounded-full bg-white/10 bottom-8 left-8" />
-					<div className="absolute w-20 h-20 rounded-full bg-white/15 top-1/2 right-8" />
+				{/* Right Visual Box (Teal Container with Phone Mockup & Order Card) */}
+				<div className="lg:col-span-6 relative">
+					<div className="neo-box-teal p-6 sm:p-8 relative min-h-[460px] flex items-center justify-center">
+						{/* Top Attached Badge */}
+						<div className="absolute top-0 right-6 -translate-y-1/2 neo-pill bg-[#FFC107] px-4 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
+							ORDER #1027
+						</div>
 
-					<div className="relative z-10 animate-float max-w-md w-full">
-						<Image
-							src="/hero-illustration.png"
-							alt="Person watering a WhatsApp plant — grow your store with WhatFlow"
-							width={520}
-							height={520}
-							className="w-full h-auto drop-shadow-xl"
-							priority
-						/>
+						<div className="w-full flex flex-col sm:flex-row items-center justify-center gap-6">
+							{/* Phone Mockup Frame */}
+							<div className="w-full sm:w-[270px] bg-white border-2 border-black rounded-3xl shadow-[5px_5px_0px_#000] overflow-hidden flex flex-col">
+								{/* Phone Header */}
+								<div className="bg-[#075E54] text-white p-3 flex items-center justify-between border-b-2 border-black">
+									<div className="flex items-center gap-2">
+										<div className="w-7 h-7 rounded-full bg-[#00D261] border border-black flex items-center justify-center text-xs font-bold text-black">
+											🏪
+										</div>
+										<div>
+											<div className="flex items-center gap-1 font-bold text-xs">
+												<span>Store</span>
+												<span className="text-[#00D261]">✓</span>
+											</div>
+											<div className="text-[9px] text-[#A7F3D0]">Business Account</div>
+										</div>
+									</div>
+									<div className="flex items-center gap-2 text-xs">
+										<span>📹</span>
+										<span>📞</span>
+										<span>⋮</span>
+									</div>
+								</div>
+
+								{/* Phone Chat Body */}
+								<div className="p-3 bg-[#EFEAE2] space-y-3 min-h-[280px] text-xs">
+									<div className="text-center">
+										<span className="bg-white border border-black px-2 py-0.5 rounded text-[10px] font-bold">Today</span>
+									</div>
+
+									{/* WhatsApp Order Bubble */}
+									<div className="bg-[#E7FCE9] border border-black p-2.5 rounded-lg shadow-sm">
+										<p className="font-medium text-[#111111] mb-1.5 leading-snug">
+											Hi Alex 👋<br />
+											Thanks for your order! We've received it and are getting it ready to ship.
+										</p>
+										<div className="bg-white border border-black p-2 rounded flex items-center gap-2 text-[11px]">
+											<span className="text-base">📦</span>
+											<div>
+												<div className="font-bold text-black">Order #1027</div>
+												<div className="text-[#555] text-[10px]">2 items • $89.00</div>
+											</div>
+										</div>
+										<div className="text-[9px] text-right text-[#666] mt-1">10:30 AM</div>
+									</div>
+
+									{/* WhatsApp Action Bubble */}
+									<div className="bg-white border border-black p-2.5 rounded-lg space-y-2">
+										<p className="font-medium text-[#111111] text-[11px]">
+											Please confirm your order to continue.
+										</p>
+										<div className="space-y-1.5">
+											<button
+												onClick={() => setActiveAction("confirm")}
+												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${
+													activeAction === "confirm"
+														? "bg-[#00D261] text-black"
+														: "bg-white text-[#00D261] hover:bg-[#E7FCE9]"
+												}`}
+											>
+												{activeAction === "confirm" ? "✓ CONFIRMED!" : "CONFIRM ORDER"}
+											</button>
+											<button
+												onClick={() => setActiveAction("cancel")}
+												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${
+													activeAction === "cancel"
+														? "bg-[#FF4B4B] text-white"
+														: "bg-white text-[#FF4B4B] hover:bg-[#FFEBEB]"
+												}`}
+											>
+												{activeAction === "cancel" ? "✕ CANCELLED" : "CANCEL ORDER"}
+											</button>
+										</div>
+										<div className="text-[9px] text-right text-[#666]">10:30 AM</div>
+									</div>
+								</div>
+
+								{/* Phone Bottom Input */}
+								<div className="bg-[#F0F0F0] p-2 border-t-2 border-black flex items-center gap-2">
+									<span className="text-xs">😊</span>
+									<div className="flex-1 bg-white border border-black px-2 py-1 rounded-full text-[10px] text-gray-400">
+										Message
+									</div>
+									<span className="text-xs">📎</span>
+									<span className="text-xs">📷</span>
+									<div className="w-6 h-6 rounded-full bg-[#00D261] border border-black flex items-center justify-center text-[10px] text-black font-bold">
+										🎙️
+									</div>
+								</div>
+							</div>
+
+							{/* Shopify Receipt Card (Overlay side card) */}
+							<div className="w-full sm:w-[220px] neo-box p-4 text-xs space-y-3 bg-white">
+								<div className="flex items-center justify-between border-b border-gray-200 pb-2">
+									<div className="flex items-center gap-1.5 font-extrabold text-black">
+										<span className="w-4 h-4 bg-[#95BF47] rounded flex items-center justify-center text-[9px] text-white font-bold">S</span>
+										<span>shopify</span>
+									</div>
+								</div>
+
+								<div className="flex items-center justify-between">
+									<div>
+										<div className="font-extrabold text-black text-sm">Order #1027</div>
+										<div className="text-[10px] text-gray-500">May 12, 2024 at 10:30 AM</div>
+									</div>
+									<span className="neo-pill bg-[#FFC107] px-2 py-0.5 text-[9px] font-bold text-black">
+										• Paid
+									</span>
+								</div>
+
+								<div className="border-t border-gray-200 pt-2 space-y-2">
+									<div className="text-[10px] font-bold uppercase text-gray-600">Order summary</div>
+
+									<div className="flex items-center justify-between text-[11px]">
+										<div className="flex items-center gap-2">
+											<div className="w-8 h-8 bg-gray-100 border border-black rounded flex items-center justify-center">👕</div>
+											<div>
+												<div className="font-bold">Essentials Tee</div>
+												<div className="text-[9px] text-gray-500">Black / M <span className="ml-2 font-bold text-black">x 1</span></div>
+											</div>
+										</div>
+										<div className="font-bold">$39.00</div>
+									</div>
+
+									<div className="flex items-center justify-between text-[11px]">
+										<div className="flex items-center gap-2">
+											<div className="w-8 h-8 bg-gray-100 border border-black rounded flex items-center justify-center">🧢</div>
+											<div>
+												<div className="font-bold">Logo Cap</div>
+												<div className="text-[9px] text-gray-500">Black <span className="ml-2 font-bold text-black">x 1</span></div>
+											</div>
+										</div>
+										<div className="font-bold">$50.00</div>
+									</div>
+								</div>
+
+								<div className="border-t border-gray-200 pt-2 space-y-1 text-[11px]">
+									<div className="flex justify-between text-gray-600">
+										<span>Subtotal</span>
+										<span className="font-bold text-black">$89.00</span>
+									</div>
+									<div className="flex justify-between text-gray-600">
+										<span>Shipping</span>
+										<span className="font-bold text-black">Free</span>
+									</div>
+									<div className="flex justify-between font-extrabold text-black text-sm pt-1 border-t border-gray-200">
+										<span>Total</span>
+										<span>$89.00</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>
+			</div>
+
+			{/* Ticker Marquee Strip */}
+			<div className="mt-12 -mx-4 sm:-mx-6 bg-[#091E17] border-y-[2.5px] border-black py-4 overflow-hidden">
+				<div className="animate-marquee items-center gap-8 font-display font-extrabold text-sm sm:text-base uppercase tracking-widest text-white whitespace-nowrap">
+					<span>ORDER CONFIRMATION</span>
+					<span className="text-[#00D261] text-xl">∞</span>
+					<span>ABANDONED CHECKOUT</span>
+					<span className="text-[#00D261] text-xl">∞</span>
+					<span>FULFILLMENT UPDATES</span>
+					<span className="text-[#00D261] text-xl">∞</span>
+					<span>AUTO REPLIER</span>
+					<span className="text-[#00D261] text-xl">∞</span>
+					<span>ORDER CONFIRMATION</span>
+					<span className="text-[#00D261] text-xl">∞</span>
+					<span>ABANDONED CHECKOUT</span>
+					<span className="text-[#00D261] text-xl">∞</span>
+					<span>FULFILLMENT UPDATES</span>
+					<span className="text-[#00D261] text-xl">∞</span>
+					<span>AUTO REPLIER</span>
+					<span className="text-[#00D261] text-xl">∞</span>
 				</div>
 			</div>
 		</section>
 	);
 }
 
-// ─── Stats Section ────────────────────────────────────────────────────────────
-function Stats() {
-	const stats = [
-		{ value: 1000, suffix: "+", label: "Shopify Merchants" },
-		{ value: 98, suffix: "%", label: "Message Open Rate" },
-		{ value: 35, suffix: "%", label: "Cart Recovery Rate" },
-		{ value: 3, suffix: " apps", label: "WhatsApp Solutions" },
-	];
-
+// ─── Official API Section (Matching Image 2) ────────────────────────────────
+function OfficialApiSection() {
 	return (
-		<section className="bg-[#111111] text-white py-14 px-6">
-			<div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-				{stats.map((stat, i) => (
-					<div key={i} className="reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
-						<div className="text-3xl sm:text-4xl font-bold text-[#25D366] mb-1">
-							<AnimatedCounter end={stat.value} suffix={stat.suffix} />
+		<section id="products" className="bg-[#FAF7F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
+			<div className="max-w-[1280px] mx-auto space-y-12">
+				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+					{/* Left Content */}
+					<div className="lg:col-span-6 space-y-6">
+						<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
+							PRODUCT — OFFICIAL API
 						</div>
-						<div className="text-[13px] text-[#888]">{stat.label}</div>
+
+						<div className="flex flex-wrap items-center gap-3">
+							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-[#2563EB]">
+								META BUSINESS PLATFORM
+							</div>
+							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black">
+								SHOPIFY NATIVE
+							</div>
+						</div>
+
+						<h2 className="text-[38px] sm:text-[50px] lg:text-[56px] font-display font-black leading-[1.05] uppercase text-black tracking-tight">
+							THE <span className="text-stroke-blue">OFFICIAL</span> WAY TO AUTOMATE{" "}
+							<span className="text-stroke-green">WHATSAPP.</span>
+						</h2>
+
+						<p className="text-[17px] text-[#222222] font-medium leading-relaxed max-w-md">
+							Connect Shopify to the official WhatsApp Business Platform and automate every important order moment.
+						</p>
+
+						<div className="flex flex-wrap items-center gap-4 pt-2">
+							<a
+								href="#pricing"
+								className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
+							>
+								INSTALL OFFICIAL API
+							</a>
+							<a
+								href="#pricing"
+								className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
+							>
+								VIEW PRICING
+							</a>
+						</div>
 					</div>
-				))}
-			</div>
-		</section>
-	);
-}
 
-// ─── Apps Showcase ────────────────────────────────────────────────────────────
-function AppsSection() {
-	const panels: Array<{
-		id: string; name: string; tag: string; tagColor: string; description: string;
-		icon: string; link: string; color: string;
-		bgColor: string; accentColor: string; features: string[]; badge: string; featured: boolean;
-	}> = [
-		{
-			...APPS[0],
-			bgColor: "#fff9f0",
-			accentColor: "#f59e0b",
-			features: ["Order confirmations", "Cart recovery", "Shipping updates", "Cancel notifications"],
-			badge: "Quick Setup",
-			featured: false,
-		},
-		{
-			...APPS[1],
-			bgColor: "#f0fdf4",
-			accentColor: "#25D366",
-			features: ["Meta Cloud API certified", "AI auto-reply chat", "Segment broadcasts", "Back-in-stock alerts"],
-			badge: "Most Popular",
-			featured: true,
-		},
-		{
-			...APPS[2],
-			bgColor: "#faf5ff",
-			accentColor: "#8b5cf6",
-			features: ["AI product recommendations", "Order tracking widget", "Multilingual support", "Upsell suggestions"],
-			badge: "Newest",
-			featured: false,
-		},
-	];
+					{/* Right Visual Box (Diagram: Shopify -> Arrow -> WhatsApp) */}
+					<div className="lg:col-span-6">
+						<div className="neo-box-teal p-6 sm:p-8 relative">
+							{/* Top Badge */}
+							<div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 neo-box bg-[#E8F8F0] px-4 py-1 font-extrabold text-xs uppercase text-[#2563EB] tracking-wider">
+								OFFICIAL CONNECTION
+							</div>
 
-	return (
-		<section id="apps" className="py-20 md:py-28 px-6 bg-white">
-			<div className="max-w-[1240px] mx-auto">
-				<div className="text-center mb-16 reveal">
-					<h2 className="text-[36px] sm:text-[44px] font-bold tracking-tight text-[#111111] mb-4">
-						Three apps. One WhatsApp suite.
+							<div className="bg-[#E8F8F0] border-2 border-black p-6 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
+								{/* Shopify Card */}
+								<div className="w-full sm:w-[190px] bg-white border-2 border-black p-3.5 rounded-xl shadow-[3px_3px_0px_#000] space-y-2 text-xs">
+									<div className="flex items-center gap-1.5 font-bold">
+										<span className="w-4 h-4 bg-[#95BF47] rounded flex items-center justify-center text-[9px] text-white font-bold">S</span>
+										<span className="font-extrabold text-black">shopify</span>
+									</div>
+									<div className="text-[10px] text-gray-500">Order #1027<br />May 12, 2024</div>
+									<div className="border-t border-black pt-1.5 flex justify-between items-center text-[10px]">
+										<span>Essentials Tee</span>
+										<span className="font-bold">$39.00</span>
+									</div>
+									<div className="border-t border-black pt-1 flex justify-between items-center font-bold text-xs">
+										<span>Total</span>
+										<span>$39.00</span>
+									</div>
+								</div>
+
+								{/* Arrow */}
+								<div className="text-2xl font-black text-black">➔</div>
+
+								{/* WhatsApp Card */}
+								<div className="w-full sm:w-[210px] bg-white border-2 border-black rounded-xl shadow-[3px_3px_0px_#000] overflow-hidden text-xs">
+									<div className="bg-[#00D261] text-black p-2 font-bold flex items-center justify-between border-b border-black">
+										<div className="flex items-center gap-1.5">
+											<span>💬</span>
+											<span>WhatsApp</span>
+										</div>
+										<span>⋮</span>
+									</div>
+									<div className="p-3 bg-[#E8F8F0] space-y-2">
+										<div className="bg-white border border-black p-2.5 rounded-lg space-y-1">
+											<div className="font-bold text-black flex items-center gap-1 text-[11px]">
+												<span>Order confirmed</span>
+												<span className="text-[#00D261]">✓</span>
+											</div>
+											<p className="text-[10px] text-gray-700 leading-snug">
+												Hi Alex! Your order #1027 has been confirmed and will be shipped soon.
+											</p>
+											<div className="text-[8px] text-right text-gray-500 font-bold">10:30 AM ✓✓</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Lower Dark Banner: BUILT FOR RELIABILITY */}
+				<div className="bg-[#091E17] neo-box p-8 sm:p-12 text-white space-y-4">
+					<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
+						WHY OFFICIAL?
+					</div>
+					<h2 className="text-[36px] sm:text-[54px] font-display font-black uppercase text-white tracking-tight leading-none">
+						BUILT FOR <span className="text-stroke-green">RELIABILITY.</span>
 					</h2>
-					<p className="text-[17px] text-[#666] max-w-xl mx-auto">
-						Start with the right app for your store — all built on the same reliable WhatFlow platform.
+				</div>
+			</div>
+		</section>
+	);
+}
+
+// ─── Pricing & Calculator Section (Matching Image 3) ────────────────────────
+function PricingCalculatorSection() {
+	const [orders, setOrders] = useState<number>(1000);
+	const [msgPerOrder, setMsgPerOrder] = useState<number>(2);
+	const [msgType, setMsgType] = useState<string>("Utility");
+
+	const estimatedMessages = orders * msgPerOrder;
+
+	const recommendedPlan =
+		estimatedMessages <= 1500 ? "STARTER" : estimatedMessages <= 5000 ? "GROWTH" : "PRO";
+
+	return (
+		<section id="pricing" className="bg-[#FAF7F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
+			<div className="max-w-[1280px] mx-auto space-y-12">
+				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+					{/* Left Content */}
+					<div className="lg:col-span-6 space-y-6">
+						<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
+							PRICING — OFFICIAL API
+						</div>
+
+						<div className="flex flex-wrap items-center gap-3">
+							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black">
+								PAY FOR YOUR USAGE
+							</div>
+							<div className="neo-pill bg-[#E8F8F0] px-3 py-1 text-xs font-extrabold uppercase text-black">
+								ALL FEATURES INCLUDED
+							</div>
+						</div>
+
+						<h2 className="text-[38px] sm:text-[50px] lg:text-[56px] font-display font-black leading-[1.05] uppercase text-black tracking-tight">
+							PRICING THAT SCALES WITH{" "}
+							<span className="text-stroke-green">EVERY ORDER.</span>
+						</h2>
+
+						<p className="text-[17px] text-[#222222] font-medium leading-relaxed max-w-md">
+							Estimate WhatFlow and Meta charges before you choose a plan.
+						</p>
+
+						<div className="pt-2">
+							<a
+								href="#all-plans"
+								className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg inline-block"
+							>
+								VIEW ALL PLANS
+							</a>
+						</div>
+					</div>
+
+					{/* Right Interactive Calculator Box */}
+					<div className="lg:col-span-6">
+						<div className="neo-box-teal p-6 sm:p-8 relative">
+							{/* Top Attached Badge */}
+							<div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 neo-box bg-[#00D261] px-5 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
+								CALCULATE YOUR MONTHLY COST
+							</div>
+
+							<div className="bg-white border-2 border-black rounded-xl overflow-hidden shadow-[4px_4px_0px_#000] grid grid-cols-1 sm:grid-cols-12 mt-2">
+								{/* Left Calculator Inputs */}
+								<div className="sm:col-span-7 p-6 space-y-4 bg-white">
+									<div>
+										<label className="block text-[10px] font-extrabold uppercase tracking-wider text-gray-700 mb-1">
+											MONTHLY ORDERS
+										</label>
+										<input
+											type="number"
+											min={100}
+											step={100}
+											value={orders}
+											onChange={(e) => setOrders(Math.max(1, parseInt(e.target.value) || 0))}
+											className="w-full bg-white border-2 border-black rounded-lg px-3 py-2 text-sm font-extrabold text-black focus:outline-none focus:ring-2 focus:ring-[#00D261]"
+										/>
+									</div>
+
+									<div>
+										<label className="block text-[10px] font-extrabold uppercase tracking-wider text-gray-700 mb-1">
+											MESSAGES PER ORDER
+										</label>
+										<input
+											type="number"
+											min={1}
+											max={10}
+											value={msgPerOrder}
+											onChange={(e) => setMsgPerOrder(Math.max(1, parseInt(e.target.value) || 1))}
+											className="w-full bg-white border-2 border-black rounded-lg px-3 py-2 text-sm font-extrabold text-black focus:outline-none focus:ring-2 focus:ring-[#00D261]"
+										/>
+									</div>
+
+									<div>
+										<label className="block text-[10px] font-extrabold uppercase tracking-wider text-gray-700 mb-1">
+											MESSAGE TYPE
+										</label>
+										<select
+											value={msgType}
+											onChange={(e) => setMsgType(e.target.value)}
+											className="w-full bg-white border-2 border-black rounded-lg px-3 py-2 text-xs font-extrabold text-black focus:outline-none"
+										>
+											<option value="Utility">Utility</option>
+											<option value="Marketing">Marketing</option>
+											<option value="Authentication">Authentication</option>
+										</select>
+									</div>
+
+									<button
+										onClick={() => {}}
+										className="w-full neo-btn bg-black text-white font-extrabold text-xs uppercase tracking-wider py-3 rounded-lg flex items-center justify-center gap-2 mt-2"
+									>
+										<span>CALCULATE</span>
+										<span>➔</span>
+									</button>
+								</div>
+
+								{/* Right Calculator Output Panel */}
+								<div className="sm:col-span-5 p-6 bg-[#D5F5E3] border-t-2 sm:border-t-0 sm:border-l-2 border-black flex flex-col justify-between space-y-6">
+									<div>
+										<div className="text-[10px] font-extrabold uppercase tracking-wider text-gray-700 mb-1">
+											ESTIMATED MESSAGES
+										</div>
+										<div className="text-4xl font-display font-black text-black">
+											{estimatedMessages.toLocaleString()}
+										</div>
+									</div>
+
+									<div className="space-y-2">
+										<div className="text-[10px] font-extrabold uppercase tracking-wider text-gray-700">
+											RECOMMENDED PLAN
+										</div>
+										<div className="neo-btn bg-[#00D261] text-black font-display font-black text-center py-2 px-4 rounded-lg text-lg uppercase tracking-wider">
+											{recommendedPlan}
+										</div>
+									</div>
+
+									<div className="neo-pill bg-white/80 p-2 text-[10px] text-center font-bold text-gray-800 border border-black">
+										ⓘ Meta charges shown separately.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Lower Dark Banner: ALL FEATURES. EVERY PLAN. */}
+				<div className="bg-[#091E17] neo-box p-8 sm:p-12 text-white space-y-4">
+					<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
+						SIMPLE BY DESIGN
+					</div>
+					<h2 className="text-[36px] sm:text-[54px] font-display font-black uppercase text-white tracking-tight leading-none">
+						ALL FEATURES. <span className="text-stroke-green">EVERY PLAN.</span>
+					</h2>
+				</div>
+			</div>
+		</section>
+	);
+}
+
+// ─── Features Section & Status Strip (Matching Image 4) ───────────────────────
+function FeaturesStatusSection() {
+	const [selectedStatus, setSelectedStatus] = useState<"pending" | "confirmed" | "cancelled">("confirmed");
+
+	return (
+		<section id="features" className="bg-[#E8F8F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
+			<div className="max-w-[1280px] mx-auto space-y-12">
+				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+					{/* Left Content */}
+					<div className="lg:col-span-6 space-y-6">
+						<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
+							FEATURE — ORDER CONFIRMATION
+						</div>
+
+						<div className="flex flex-wrap items-center gap-3">
+							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-[#2563EB]">
+								AUTOMATIC
+							</div>
+							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black">
+								SHOPIFY SYNC
+							</div>
+						</div>
+
+						<h2 className="text-[38px] sm:text-[50px] lg:text-[56px] font-display font-black leading-[1.05] uppercase text-black tracking-tight">
+							KNOW WHICH ORDERS ARE{" "}
+							<span className="text-stroke-green">REAL.</span>
+						</h2>
+
+						<p className="text-[17px] text-[#222222] font-medium leading-relaxed max-w-md">
+							Ask customers to confirm or cancel on WhatsApp before your team starts fulfillment.
+						</p>
+
+						<div className="flex flex-wrap items-center gap-4 pt-2">
+							<a
+								href="#products"
+								className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
+							>
+								INSTALL WHATFLOW
+							</a>
+							<a
+								href="#faq"
+								className="neo-btn bg-white text-[#2563EB] font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
+							>
+								VIEW SETUP GUIDE
+							</a>
+						</div>
+					</div>
+
+					{/* Right Visual Box (One-tap response mockup) */}
+					<div className="lg:col-span-6">
+						<div className="neo-box-teal p-6 sm:p-8 relative">
+							{/* Top Attached Badge */}
+							<div className="absolute top-0 left-6 -translate-y-1/2 neo-pill bg-[#FFC107] px-4 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
+								ONE-TAP RESPONSE
+							</div>
+
+							<div className="bg-white border-2 border-black rounded-xl p-5 shadow-[4px_4px_0px_#000] space-y-4">
+								{/* Chat Header */}
+								<div className="flex items-center gap-3 border-b border-gray-200 pb-3">
+									<div className="w-9 h-9 rounded-full bg-[#00D261] border border-black flex items-center justify-center font-bold text-black text-sm">
+										💬
+									</div>
+									<div className="flex-1">
+										<div className="font-extrabold text-black text-xs">Alex Johnson</div>
+										<div className="text-[10px] text-gray-500">10:30 AM</div>
+									</div>
+								</div>
+
+								{/* Prompt Box */}
+								<div className="bg-[#FAF7F0] border border-black p-3.5 rounded-lg text-xs font-medium text-black">
+									Hi Alex! Please confirm or cancel your order so we can prepare it.
+								</div>
+
+								{/* Order Item Box */}
+								<div className="bg-gray-50 border border-gray-300 p-3 rounded-lg flex items-center justify-between text-xs">
+									<div className="flex items-center gap-3">
+										<div className="w-10 h-10 bg-white border border-black rounded flex items-center justify-center">👕</div>
+										<div>
+											<div className="font-bold text-black">Order #1027</div>
+											<div className="text-[10px] text-gray-500">Essentials Tee • Black / M • Qty: 1</div>
+										</div>
+									</div>
+									<div className="font-extrabold text-black">$39.00</div>
+								</div>
+
+								{/* Action Buttons */}
+								<div className="space-y-2 pt-1">
+									<button
+										onClick={() => setSelectedStatus("confirmed")}
+										className={`w-full py-2.5 px-4 rounded-lg font-extrabold text-xs border-2 border-black transition-all flex items-center justify-center gap-2 ${
+											selectedStatus === "confirmed"
+												? "bg-[#00D261] text-black shadow-[2px_2px_0px_#000]"
+												: "bg-white text-[#00D261] hover:bg-[#E8F8F0]"
+										}`}
+									>
+										<span>✓</span>
+										<span>CONFIRM ORDER</span>
+									</button>
+
+									<button
+										onClick={() => setSelectedStatus("cancelled")}
+										className={`w-full py-2.5 px-4 rounded-lg font-extrabold text-xs border-2 border-black transition-all flex items-center justify-center gap-2 ${
+											selectedStatus === "cancelled"
+												? "bg-[#FF4B4B] text-white shadow-[2px_2px_0px_#000]"
+												: "bg-white text-[#FF4B4B] hover:bg-[#FFEBEB]"
+										}`}
+									>
+										<span>✕</span>
+										<span>CANCEL ORDER</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Bottom Shopify Status Strip */}
+				<div className="space-y-6 pt-4">
+					<div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+						<div>
+							<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-2">
+								SHOPIFY STATUS
+							</div>
+							<h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-black">
+								ONE TAP. THREE CLEAR OUTCOMES.
+							</h3>
+						</div>
+					</div>
+
+					{/* 3 Status Pill Cards */}
+					<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+						<button
+							onClick={() => setSelectedStatus("pending")}
+							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-all ${
+								selectedStatus === "pending"
+									? "bg-[#FFC107] text-black shadow-[4px_4px_0px_#000] scale-[1.02]"
+									: "bg-[#FFF9E6] text-black hover:bg-[#FFC107]/20"
+							}`}
+						>
+							<span className="w-7 h-7 rounded-full bg-white border border-black flex items-center justify-center font-bold text-sm">
+								⏳
+							</span>
+							<span className="font-extrabold text-xs uppercase tracking-wider">
+								CONFIRMATION PENDING
+							</span>
+						</button>
+
+						<button
+							onClick={() => setSelectedStatus("confirmed")}
+							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-all ${
+								selectedStatus === "confirmed"
+									? "bg-[#00D261] text-black shadow-[4px_4px_0px_#000] scale-[1.02]"
+									: "bg-[#E8F8F0] text-black hover:bg-[#00D261]/20"
+							}`}
+						>
+							<span className="w-7 h-7 rounded-full bg-white border border-black flex items-center justify-center font-bold text-sm text-[#00D261]">
+								✓
+							</span>
+							<span className="font-extrabold text-xs uppercase tracking-wider">
+								ORDER CONFIRMED
+							</span>
+						</button>
+
+						<button
+							onClick={() => setSelectedStatus("cancelled")}
+							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-all ${
+								selectedStatus === "cancelled"
+									? "bg-[#FF4B4B] text-white shadow-[4px_4px_0px_#000] scale-[1.02]"
+									: "bg-[#FFEBEB] text-[#FF4B4B] hover:bg-[#FF4B4B]/20"
+							}`}
+						>
+							<span className="w-7 h-7 rounded-full bg-white border border-black flex items-center justify-center font-bold text-sm text-[#FF4B4B]">
+								✕
+							</span>
+							<span className="font-extrabold text-xs uppercase tracking-wider">
+								ORDER CANCELLED
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+}
+
+// ─── All Apps Grid Section ───────────────────────────────────────────────────
+function AllAppsSection() {
+	return (
+		<section id="all-plans" className="bg-[#FAF7F0] py-16 sm:py-24 px-4 sm:px-6 border-b-[2.5px] border-black">
+			<div className="max-w-[1280px] mx-auto space-y-12">
+				<div className="text-center max-w-2xl mx-auto space-y-4">
+					<div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
+						OUR APPS
+					</div>
+					<h2 className="text-[36px] sm:text-[46px] font-display font-black uppercase text-black tracking-tight">
+						CHOOSE THE PERFECT APP FOR YOUR STORE.
+					</h2>
+					<p className="text-gray-700 font-medium text-base">
+						14-day free trial on all plans. No credit card required.
 					</p>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-					{panels.map((app, i) => (
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+					{APPS.map((app) => (
 						<div
 							key={app.id}
-							id={`app-card-${app.id}`}
-							className={`reveal rounded-3xl overflow-hidden border flex flex-col ${
-								app.featured
-									? "border-[#25D366] shadow-xl ring-1 ring-[#25D366]/30"
-									: "border-[#e8e8e8]"
+							className={`neo-box p-8 flex flex-col justify-between space-y-6 relative transition-all ${
+								app.featured ? "bg-[#E8F8F0] shadow-[6px_6px_0px_#000] border-3" : "bg-white"
 							}`}
-							style={{ transitionDelay: `${i * 0.15}s` }}
 						>
-							{/* Card Header */}
-							<div className="p-8 pb-6" style={{ backgroundColor: app.bgColor }}>
-								{app.featured && (
-									<div className="inline-block px-3 py-1 rounded-full bg-[#25D366] text-[#111] text-[11px] font-bold uppercase tracking-wider mb-4">
-										{app.badge}
-									</div>
-								)}
-								{!app.featured && (
-									<div className="inline-block px-3 py-1 rounded-full bg-white border border-[#e5e5e5] text-[#666] text-[11px] font-semibold uppercase tracking-wider mb-4">
-										{app.badge}
-									</div>
-								)}
-								<div className="text-4xl mb-4">{app.icon}</div>
-								<h3 className="text-[22px] font-bold text-[#111111] mb-2">{app.name}</h3>
-								<p className="text-[14px] text-[#666] leading-relaxed">{app.description}</p>
-							</div>
-
-							{/* Card Body */}
-							<div className="flex-1 p-8 pt-6 bg-white flex flex-col">
-								<ul className="space-y-2.5 mb-8 flex-1">
-									{app.features.map((f) => (
-										<li key={f} className="flex items-center gap-2.5 text-[14px] text-[#444]">
-											<span className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: `${app.accentColor}20` }}>
-												<svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke={app.accentColor} strokeWidth={3}>
-													<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-												</svg>
-											</span>
-											{f}
-										</li>
-									))}
-								</ul>
-
-								<a
-									href={app.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									id={`app-install-${app.id}`}
-									className={`w-full py-3 rounded-full text-center text-[14px] font-semibold transition-all border ${
-										app.featured
-											? "bg-[#25D366] text-[#111111] border-[#25D366] hover:bg-[#111111] hover:text-white hover:border-[#111111]"
-											: "bg-white text-[#111111] border-[#111111] hover:bg-[#111111] hover:text-white"
-									}`}
-								>
-									Install on Shopify →
-								</a>
-							</div>
-						</div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
-}
-
-// ─── Features Section ─────────────────────────────────────────────────────────
-function Features() {
-	const features = [
-		{
-			icon: "🛒",
-			title: "Abandoned Cart Recovery",
-			desc: "Send WhatsApp messages 15 minutes after cart abandonment. Recover up to 35% of lost revenue automatically.",
-		},
-		{
-			icon: "📦",
-			title: "Order Notifications",
-			desc: "Keep customers informed at every step — confirmations, fulfillment updates, and delivery alerts via WhatsApp.",
-		},
-		{
-			icon: "⭐",
-			title: "Review Requests",
-			desc: "Collect photo & video reviews from customers on Judge.me via WhatsApp. Get 4x more reviews.",
-		},
-		{
-			icon: "📢",
-			title: "Broadcast Campaigns",
-			desc: "Send targeted WhatsApp campaigns to customer segments with custom templates and UTM tracking.",
-		},
-		{
-			icon: "🤖",
-			title: "AI Auto-Reply",
-			desc: "Let AI handle common customer questions about orders, shipping, and products — 24/7.",
-		},
-		{
-			icon: "⚡",
-			title: "Shopify Flow Native",
-			desc: "Use WhatFlow as a native action inside Shopify Flow for fully custom automation workflows.",
-		},
-	];
-
-	return (
-		<section id="features" className="py-20 md:py-28 px-6 bg-[#fafafa] border-t border-[#e5e5e5]">
-			<div className="max-w-[1240px] mx-auto">
-				<div className="text-center mb-16 reveal">
-					<h2 className="text-[36px] sm:text-[44px] font-bold tracking-tight text-[#111111] mb-4">
-						Everything your store needs on WhatsApp.
-					</h2>
-					<p className="text-[17px] text-[#666] max-w-xl mx-auto">
-						Powerful features built specifically for Shopify merchants.
-					</p>
-				</div>
-
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-					{features.map((f, i) => (
-						<div
-							key={f.title}
-							id={`feature-${i}`}
-							className="reveal bg-white rounded-2xl p-7 border border-[#e8e8e8] hover:border-[#25D366] hover:shadow-md transition-all cursor-default"
-							style={{ transitionDelay: `${i * 0.08}s` }}
-						>
-							<div className="text-3xl mb-4">{f.icon}</div>
-							<h3 className="text-[17px] font-bold text-[#111111] mb-2">{f.title}</h3>
-							<p className="text-[14px] text-[#666] leading-relaxed">{f.desc}</p>
-						</div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
-}
-
-// ─── Social Proof ─────────────────────────────────────────────────────────────
-function SocialProof() {
-	const reviews = [
-		{ name: "Ahmed K.", store: "Trendify Store", text: "WhatFlow recovered 3 carts in the first week. Incredible ROI from Day 1.", stars: 5 },
-		{ name: "Sara M.", store: "GlowBox Beauty", text: "The Business API plan is fantastic. Our customers love getting WhatsApp updates.", stars: 5 },
-		{ name: "James R.", store: "SportsDrop", text: "The AI chatbot handles 80% of our support tickets. We reduced our support team workload massively.", stars: 5 },
-	];
-
-	return (
-		<section className="py-20 md:py-24 px-6 bg-white border-t border-[#e5e5e5]">
-			<div className="max-w-[1240px] mx-auto">
-				<div className="text-center mb-14 reveal">
-					<h2 className="text-[32px] sm:text-[40px] font-bold tracking-tight text-[#111111] mb-4">
-						Merchants love WhatFlow.
-					</h2>
-					<div className="flex items-center justify-center gap-1 text-[#f59e0b]">
-						{"★★★★★"} <span className="text-[#666] ml-2 text-sm font-medium">5.0 on Shopify App Store</span>
-					</div>
-				</div>
-
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-					{reviews.map((r, i) => (
-						<div
-							key={r.name}
-							id={`review-${i}`}
-							className="reveal bg-[#fafafa] border border-[#e8e8e8] rounded-2xl p-7"
-							style={{ transitionDelay: `${i * 0.12}s` }}
-						>
-							<div className="flex text-[#f59e0b] text-lg mb-4">{"★".repeat(r.stars)}</div>
-							<p className="text-[15px] text-[#333] leading-relaxed mb-5">"{r.text}"</p>
-							<div>
-								<div className="font-semibold text-[14px] text-[#111111]">{r.name}</div>
-								<div className="text-[13px] text-[#888]">{r.store}</div>
-							</div>
-						</div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
-}
-
-// ─── Pricing ──────────────────────────────────────────────────────────────────
-function Pricing() {
-	const plans: Array<{
-		name: string; sub: string; price: string; desc: string;
-		features: string[]; cta: string; link: string; featured: boolean;
-	}> = [
-		{
-			name: "WhatFlow Chat",
-			sub: "Unofficial API",
-			price: "$9",
-			desc: "Start automating WhatsApp for your store without the setup complexity of a Meta account.",
-			features: ["500 messages / month", "Order confirmations", "Cart recovery sequences", "Shipping updates"],
-			cta: "Install Free",
-			link: "https://apps.shopify.com/whatflow",
-			featured: false,
-		},
-		{
-			name: "WhatFlow Business",
-			sub: "Meta Cloud API",
-			price: "$49",
-			desc: "The full power of the official WhatsApp Business API with AI, broadcasts, and Shopify Flow.",
-			features: ["Unlimited messages", "Official Meta verification", "AI auto-reply chat", "Broadcasts & segments", "Shopify Flow integration", "Judge.me reviews"],
-			cta: "Start Free Trial",
-			link: "https://apps.shopify.com/whatflow-official-api",
-			featured: true,
-		},
-		{
-			name: "WhatFlow AI",
-			sub: "Storefront Widget",
-			price: "$19",
-			desc: "Add a smart AI chat widget to your Shopify storefront to drive sales and reduce support load.",
-			features: ["AI product recommendations", "Order lookup & tracking", "Multilingual AI", "Size & fit assistant", "Upsell engine"],
-			cta: "Install Free",
-			link: "https://apps.shopify.com/whatflow-ai",
-			featured: false,
-		},
-	];
-
-
-	return (
-		<section id="pricing" className="py-20 md:py-28 px-6 bg-[#fafafa] border-t border-[#e5e5e5]">
-			<div className="max-w-[1240px] mx-auto">
-				<div className="text-center mb-16 reveal">
-					<h2 className="text-[36px] sm:text-[44px] font-bold tracking-tight text-[#111111] mb-4">
-						Simple pricing. No surprises.
-					</h2>
-					<p className="text-[17px] text-[#666]">14-day free trial on all plans. No credit card required.</p>
-				</div>
-
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-					{plans.map((plan, i) => (
-						<div
-							key={plan.name}
-							id={`pricing-${i}`}
-							className={`reveal rounded-3xl overflow-hidden border flex flex-col bg-white ${
-								plan.featured ? "border-[#25D366] shadow-xl ring-1 ring-[#25D366]/30" : "border-[#e8e8e8]"
-							}`}
-							style={{ transitionDelay: `${i * 0.15}s` }}
-						>
-							{plan.featured && (
-								<div className="bg-[#25D366] text-[#111111] text-center text-[12px] font-bold py-1.5 uppercase tracking-wider">
-									Most Popular
+							{app.featured && (
+								<div className="absolute top-0 right-6 -translate-y-1/2 neo-pill bg-[#00D261] px-3.5 py-1 text-[10px] font-extrabold uppercase tracking-wider text-black">
+									{app.badge}
 								</div>
 							)}
-							<div className="p-8 flex-1 flex flex-col">
-								<div className="mb-6">
-									<div className="text-[11px] font-semibold uppercase tracking-widest text-[#888] mb-1">{plan.sub}</div>
-									<h3 className="text-[20px] font-bold text-[#111111] mb-2">{plan.name}</h3>
-									<div className="flex items-baseline gap-1 mb-3">
-										<span className="text-[40px] font-bold text-[#111111]">{plan.price}</span>
-										<span className="text-[#888] text-sm">/month</span>
-									</div>
-									<p className="text-[13px] text-[#666] leading-relaxed">{plan.desc}</p>
+
+							<div className="space-y-4">
+								<div className="flex items-center justify-between">
+									<span className="text-4xl">{app.icon}</span>
+									<span className={`neo-pill px-2.5 py-0.5 text-[10px] font-bold ${app.tagColor}`}>
+										{app.tag}
+									</span>
 								</div>
 
-								<ul className="space-y-2.5 mb-8 flex-1">
-									{plan.features.map((f) => (
-										<li key={f} className="flex items-center gap-2.5 text-[14px] text-[#444]">
-											<span className="w-4 h-4 rounded-full bg-[#f0fdf4] flex items-center justify-center flex-shrink-0">
-												<svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="#25D366" strokeWidth={3}>
-													<path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-												</svg>
-											</span>
-											{f}
+								<div>
+									<h3 className="text-xl font-display font-black text-black">{app.name}</h3>
+									<div className="flex items-baseline gap-1 mt-1">
+										<span className="text-3xl font-display font-black text-black">{app.price}</span>
+										<span className="text-gray-500 font-bold text-xs">/month</span>
+									</div>
+								</div>
+
+								<p className="text-xs text-gray-700 font-medium leading-relaxed">
+									{app.description}
+								</p>
+
+								<ul className="space-y-2 pt-2">
+									{app.features.map((feat) => (
+										<li key={feat} className="flex items-center gap-2 text-xs font-semibold text-black">
+											<span className="text-[#00D261] font-bold">✓</span>
+											<span>{feat}</span>
 										</li>
 									))}
 								</ul>
-
-								<a
-									href={plan.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									id={`pricing-cta-${i}`}
-									className={`w-full py-3 rounded-full text-center text-[14px] font-semibold transition-all border ${
-										plan.featured
-											? "bg-[#25D366] text-[#111111] border-[#25D366] hover:bg-[#111111] hover:text-white hover:border-[#111111]"
-											: "bg-white text-[#111111] border-[#111111] hover:bg-[#111111] hover:text-white"
-									}`}
-								>
-									{plan.cta} →
-								</a>
 							</div>
+
+							<a
+								href={app.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								className={`w-full neo-btn py-3 rounded-lg text-center font-extrabold text-xs uppercase tracking-wider ${
+									app.featured ? "bg-[#00D261] text-black" : "bg-black text-white hover:bg-[#00D261] hover:text-black"
+								}`}
+							>
+								INSTALL ON SHOPIFY ➔
+							</a>
 						</div>
 					))}
 				</div>
@@ -662,41 +938,37 @@ function Pricing() {
 	);
 }
 
-// ─── FAQ ──────────────────────────────────────────────────────────────────────
-function FAQ() {
-	const [open, setOpen] = useState<number | null>(null);
-
-	const faqs = [
-		{ q: "Which app should I start with?", a: "If you're just getting started, WhatFlow Chat is the simplest way to begin. For serious merchants wanting official Meta verification and advanced features, WhatFlow Business API is the best choice. WhatFlow AI is great as an add-on for your storefront." },
-		{ q: "Do I need a Meta WhatsApp Business Account?", a: "Only for WhatFlow Business API, which connects to the official Meta Cloud API for certified message delivery. WhatFlow Chat uses an unofficial approach requiring no Meta account. WhatFlow AI is entirely independent of WhatsApp." },
-		{ q: "Can I install multiple apps?", a: "Yes! Many merchants use WhatFlow Chat or Business API alongside WhatFlow AI to cover both automated messaging and storefront customer support." },
-		{ q: "Is there a free trial?", a: "All plans include a 14-day free trial. No credit card is required to start." },
-		{ q: "Does it work with Shopify Flow?", a: "Yes — WhatFlow Business API includes a native Shopify Flow action block so you can trigger WhatsApp messages in any custom automation workflow." },
-	];
+// ─── FAQ Accordion Section ────────────────────────────────────────────────────
+function FAQSection() {
+	const [openIdx, setOpenIdx] = useState<number | null>(0);
 
 	return (
-		<section id="faq" className="py-20 md:py-24 px-6 bg-white border-t border-[#e5e5e5]">
-			<div className="max-w-3xl mx-auto">
-				<div className="text-center mb-14 reveal">
-					<h2 className="text-[32px] sm:text-[40px] font-bold tracking-tight text-[#111111] mb-4">
-						Frequently Asked Questions
+		<section id="faq" className="bg-[#FAF7F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
+			<div className="max-w-3xl mx-auto space-y-10">
+				<div className="text-center space-y-3">
+					<div className="neo-box inline-block bg-[#00D261] px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
+						FREQUENTLY ASKED
+					</div>
+					<h2 className="text-[34px] sm:text-[44px] font-display font-black uppercase text-black tracking-tight">
+						GOT QUESTIONS? WE HAVE ANSWERS.
 					</h2>
 				</div>
 
-				<div className="space-y-3">
-					{faqs.map((item, idx) => (
-						<div key={idx} id={`faq-${idx}`} className="reveal border border-[#e8e8e8] rounded-2xl overflow-hidden" style={{ transitionDelay: `${idx * 0.07}s` }}>
+				<div className="space-y-4">
+					{FAQS.map((faq, idx) => (
+						<div key={idx} className="neo-box bg-white overflow-hidden">
 							<button
-								onClick={() => setOpen(open === idx ? null : idx)}
-								className="w-full flex items-center justify-between p-6 text-left font-semibold text-[16px] text-[#111111] hover:bg-[#fafafa] transition-colors"
-								aria-expanded={open === idx}
+								onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
+								className="w-full p-5 text-left font-extrabold text-sm sm:text-base text-black flex items-center justify-between gap-4 hover:bg-[#FAF7F0]"
 							>
-								<span>{item.q}</span>
-								<span className={`text-2xl font-bold text-[#25D366] transition-transform duration-200 ${open === idx ? "rotate-45" : ""}`}>+</span>
+								<span>{faq.q}</span>
+								<span className="w-7 h-7 rounded-full bg-[#FAF7F0] border border-black flex items-center justify-center text-lg font-black">
+									{openIdx === idx ? "−" : "+"}
+								</span>
 							</button>
-							{open === idx && (
-								<div className="px-6 pb-5 text-[14px] text-[#555] leading-relaxed border-t border-[#f0f0f0] pt-4 animate-fade-in">
-									{item.a}
+							{openIdx === idx && (
+								<div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-gray-700 font-medium leading-relaxed border-t border-gray-200">
+									{faq.a}
 								</div>
 							)}
 						</div>
@@ -710,99 +982,88 @@ function FAQ() {
 // ─── CTA Banner ───────────────────────────────────────────────────────────────
 function CTABanner() {
 	return (
-		<section className="bg-[#111111] py-20 px-6 text-center">
-			<div className="max-w-2xl mx-auto reveal">
-				<div className="text-5xl mb-6">💬</div>
-				<h2 className="text-[32px] sm:text-[42px] font-bold text-white mb-4 tracking-tight">
-					Ready to grow your store with WhatsApp?
+		<section className="bg-[#091E17] py-16 px-4 sm:px-6 text-center text-white border-b-[2.5px] border-black">
+			<div className="max-w-3xl mx-auto space-y-6">
+				<div className="text-5xl">💬</div>
+				<h2 className="text-[34px] sm:text-[48px] font-display font-black uppercase tracking-tight">
+					READY TO AUTOMATE YOUR STORE WITH <span className="text-stroke-green">WHATSAPP?</span>
 				</h2>
-				<p className="text-[#888] text-[16px] mb-8">
-					Join 1,000+ Shopify merchants. Start your free trial today.
+				<p className="text-gray-300 font-medium text-base">
+					Join 1,000+ Shopify merchants using WhatFlow to recover carts and delight customers.
 				</p>
-				<a
-					id="cta-final"
-					href="#apps"
-					className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#25D366] text-[#111111] font-bold text-[16px] hover:bg-white transition-all shadow-lg"
-				>
-					Explore all apps
-					<svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-						<path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-					</svg>
-				</a>
+				<div>
+					<a
+						href="#products"
+						className="neo-btn bg-[#00D261] text-black font-extrabold text-sm uppercase tracking-wider px-8 py-4 rounded-lg inline-block"
+					>
+						EXPLORE ALL APPS ➔
+					</a>
+				</div>
 			</div>
 		</section>
 	);
 }
 
-// ─── Footer ───────────────────────────────────────────────────────────────────
+// ─── Footer Component ─────────────────────────────────────────────────────────
 function Footer() {
 	return (
-		<footer className="bg-[#111111] text-white border-t border-white/10 py-14 px-6">
-			<div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
-				<div>
-					<div className="flex items-center gap-2 mb-4">
-						<div className="w-8 h-8 rounded-lg bg-[#25D366] flex items-center justify-center">
-							<svg viewBox="0 0 24 24" className="w-4 h-4 fill-white">
-								<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24z" />
-							</svg>
-						</div>
-						<span className="font-bold text-base">WhatFlow</span>
-					</div>
-					<p className="text-[12px] text-[#666] leading-relaxed">WhatsApp automation apps built for Shopify merchants.</p>
+		<footer className="bg-[#091E17] text-white py-12 px-4 sm:px-6">
+			<div className="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 pb-10 border-b border-white/20">
+				<div className="col-span-2 md:col-span-1 space-y-3">
+					<WhatFlowLogo />
+					<p className="text-xs text-gray-400 font-medium">
+						WhatsApp automation suite built specifically for Shopify merchants.
+					</p>
 				</div>
 
-				<div>
-					<h4 className="font-semibold text-sm mb-4">Our Apps</h4>
-					<ul className="space-y-2.5 text-[13px] text-[#888]">
-						<li><a href="https://apps.shopify.com/whatflow" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors">WhatFlow Chat</a></li>
-						<li><a href="https://apps.shopify.com/whatflow-official-api" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors">WhatFlow Business API</a></li>
-						<li><a href="https://apps.shopify.com/whatflow-ai" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors">WhatFlow AI Chatbot</a></li>
+				<div className="space-y-3">
+					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">PRODUCTS</h4>
+					<ul className="space-y-2 text-xs font-semibold text-gray-300">
+						<li><a href="https://apps.shopify.com/whatflow" target="_blank" className="hover:text-[#00D261]">WhatFlow Chat</a></li>
+						<li><a href="https://apps.shopify.com/whatflow-official-api" target="_blank" className="hover:text-[#00D261]">WhatFlow Business</a></li>
+						<li><a href="https://apps.shopify.com/whatflow-ai" target="_blank" className="hover:text-[#00D261]">WhatFlow AI</a></li>
 					</ul>
 				</div>
 
-				<div>
-					<h4 className="font-semibold text-sm mb-4">Features</h4>
-					<ul className="space-y-2.5 text-[13px] text-[#888]">
-						<li><a href="#features" className="hover:text-[#25D366] transition-colors">Cart Recovery</a></li>
-						<li><a href="#features" className="hover:text-[#25D366] transition-colors">Order Notifications</a></li>
-						<li><a href="#features" className="hover:text-[#25D366] transition-colors">AI Chat Widget</a></li>
-						<li><a href="#features" className="hover:text-[#25D366] transition-colors">Shopify Flow</a></li>
+				<div className="space-y-3">
+					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">FEATURES</h4>
+					<ul className="space-y-2 text-xs font-semibold text-gray-300">
+						<li><a href="#features" className="hover:text-[#00D261]">Order Confirmations</a></li>
+						<li><a href="#features" className="hover:text-[#00D261]">Cart Recovery</a></li>
+						<li><a href="#pricing" className="hover:text-[#00D261]">Cost Calculator</a></li>
 					</ul>
 				</div>
 
-				<div>
-					<h4 className="font-semibold text-sm mb-4">Support</h4>
-					<ul className="space-y-2.5 text-[13px] text-[#888]">
-						<li><a href="#faq" className="hover:text-[#25D366] transition-colors">FAQ</a></li>
-						<li><a href="/admin" className="hover:text-[#25D366] transition-colors">Admin Panel</a></li>
-						<li><a href="#" className="hover:text-[#25D366] transition-colors">Privacy Policy</a></li>
-						<li><a href="#" className="hover:text-[#25D366] transition-colors">Terms of Service</a></li>
+				<div className="space-y-3">
+					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">SUPPORT</h4>
+					<ul className="space-y-2 text-xs font-semibold text-gray-300">
+						<li><a href="#faq" className="hover:text-[#00D261]">FAQ & Help</a></li>
+						<li><a href="/admin" className="hover:text-[#00D261]">Admin Panel</a></li>
 					</ul>
 				</div>
 			</div>
 
-			<div className="max-w-[1240px] mx-auto border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-[#555]">
+			<div className="max-w-[1280px] mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 font-medium gap-2">
 				<span>© {new Date().getFullYear()} WhatFlow. All rights reserved.</span>
-				<span>Built on Cloudflare Workers & Payload CMS.</span>
+				<span>Neo-brutalist theme for Shopify WhatsApp Apps.</span>
 			</div>
 		</footer>
 	);
 }
 
-// ─── Root Page ────────────────────────────────────────────────────────────────
-export default function Home() {
+// ─── Main Page Export ─────────────────────────────────────────────────────────
+export default function HomePage() {
 	useReveal();
 
 	return (
-		<div className="min-h-screen bg-white text-[#111111] flex flex-col">
+		<div className="min-h-screen bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
 			<Navbar />
-			<Hero />
-			<Stats />
-			<AppsSection />
-			<Features />
-			<SocialProof />
-			<Pricing />
-			<FAQ />
+			<HeroSection />
+			<OfficialApiSection />
+			<PricingCalculatorSection />
+			<FeaturesStatusSection />
+			<AllAppsSection />
+			<FAQSection />
 			<CTABanner />
 			<Footer />
 		</div>
