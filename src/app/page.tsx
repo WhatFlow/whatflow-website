@@ -107,18 +107,21 @@ function useReveal() {
 }
 
 // ─── Logo Component ───────────────────────────────────────────────────────────
-function WhatFlowLogo() {
+function WhatFlowLogo({ lightMode = true }: { lightMode?: boolean }) {
 	return (
 		<a href="/" className="flex items-center gap-2.5 group" id="nav-logo">
-			<div className="w-10 h-10 rounded-xl bg-white border-2 border-black shadow-[2px_2px_0px_#000] flex items-center justify-center relative group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform">
-				<svg viewBox="0 0 24 24" className="w-6 h-6 fill-black">
-					<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
-				</svg>
-				<span className="absolute -top-1 -right-1 w-4 h-4 bg-[#2563EB] rounded-full border border-black flex items-center justify-center text-[9px] text-white font-bold">
-					✓
-				</span>
+			<div className="w-10 h-10 rounded-xl bg-[#00D261] border-2 border-black shadow-[2px_2px_0px_#000] flex items-center justify-center relative p-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform overflow-hidden">
+				<Image
+					src="/logo.svg"
+					alt="WhatFlow Logo"
+					width={32}
+					height={32}
+					className="w-full h-full object-contain"
+				/>
 			</div>
-			<span className="text-2xl font-display font-black tracking-tight text-black uppercase">WHATFLOW</span>
+			<span className={`text-2xl font-display font-black tracking-tight uppercase ${lightMode ? "text-black" : "text-white"}`}>
+				WHATFLOW
+			</span>
 		</a>
 	);
 }
@@ -176,11 +179,15 @@ function HeroSection() {
 					{/* Badges */}
 					<div className="flex flex-wrap items-center gap-3">
 						<div className="neo-pill bg-white px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-black">
-							<span className="text-[#2563EB] font-black text-sm">∞</span>
+							<Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={48} height={15} alt="Meta" className="h-3.5 w-auto" />
 							<span>OFFICIAL META API</span>
 						</div>
+						<div className="neo-pill bg-[#F0F4FF] px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#1877F2]">
+							<Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={48} height={15} alt="Meta" className="h-3.5 w-auto" />
+							<span>TECH PARTNER</span>
+						</div>
 						<div className="neo-pill bg-[#E8F8F0] px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-black">
-							<span className="w-4 h-4 bg-[#95BF47] rounded flex items-center justify-center text-[10px] text-white font-bold">S</span>
+							<Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={18} height={18} alt="Shopify" />
 							<span>BUILT FOR SHOPIFY</span>
 						</div>
 					</div>
@@ -228,9 +235,7 @@ function HeroSection() {
 								{/* Phone Header */}
 								<div className="bg-[#075E54] text-white p-3 flex items-center justify-between border-b-2 border-black">
 									<div className="flex items-center gap-2">
-										<div className="w-7 h-7 rounded-full bg-[#00D261] border border-black flex items-center justify-center text-xs font-bold text-black">
-											🏪
-										</div>
+										<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg" width={24} height={24} alt="WhatsApp" />
 										<div>
 											<div className="flex items-center gap-1 font-bold text-xs">
 												<span>Store</span>
@@ -316,9 +321,8 @@ function HeroSection() {
 							{/* Shopify Receipt Card (Overlay side card) */}
 							<div className="w-full sm:w-[220px] neo-box p-4 text-xs space-y-3 bg-white">
 								<div className="flex items-center justify-between border-b border-gray-200 pb-2">
-									<div className="flex items-center gap-1.5 font-extrabold text-black">
-										<span className="w-4 h-4 bg-[#95BF47] rounded flex items-center justify-center text-[9px] text-white font-bold">S</span>
-										<span>shopify</span>
+									<div className="flex items-center gap-1.5">
+										<Image src="/shopify-brand-assets/01-logo/svg/logo-color-white-bg.svg" width={78} height={22} alt="Shopify" className="h-5 w-auto" />
 									</div>
 								</div>
 
@@ -416,11 +420,13 @@ function OfficialApiSection() {
 						</div>
 
 						<div className="flex flex-wrap items-center gap-3">
-							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-[#2563EB]">
-								META BUSINESS PLATFORM
+							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-[#2563EB] flex items-center gap-1.5">
+								<Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={48} height={15} alt="Meta" className="h-3.5 w-auto" />
+								<span>BUSINESS PLATFORM</span>
 							</div>
-							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black">
-								SHOPIFY NATIVE
+							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black flex items-center gap-1.5">
+								<Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={14} height={14} alt="Shopify" />
+								<span>SHOPIFY NATIVE</span>
 							</div>
 						</div>
 
@@ -460,9 +466,8 @@ function OfficialApiSection() {
 							<div className="bg-[#E8F8F0] border-2 border-black p-6 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
 								{/* Shopify Card */}
 								<div className="w-full sm:w-[190px] bg-white border-2 border-black p-3.5 rounded-xl shadow-[3px_3px_0px_#000] space-y-2 text-xs">
-									<div className="flex items-center gap-1.5 font-bold">
-										<span className="w-4 h-4 bg-[#95BF47] rounded flex items-center justify-center text-[9px] text-white font-bold">S</span>
-										<span className="font-extrabold text-black">shopify</span>
+									<div className="flex items-center gap-1.5 border-b border-gray-100 pb-1.5">
+										<Image src="/shopify-brand-assets/01-logo/svg/logo-color-white-bg.svg" width={72} height={20} alt="Shopify" className="h-4.5 w-auto" />
 									</div>
 									<div className="text-[10px] text-gray-500">Order #1027<br />May 12, 2024</div>
 									<div className="border-t border-black pt-1.5 flex justify-between items-center text-[10px]">
@@ -482,7 +487,7 @@ function OfficialApiSection() {
 								<div className="w-full sm:w-[210px] bg-white border-2 border-black rounded-xl shadow-[3px_3px_0px_#000] overflow-hidden text-xs">
 									<div className="bg-[#00D261] text-black p-2 font-bold flex items-center justify-between border-b border-black">
 										<div className="flex items-center gap-1.5">
-											<span>💬</span>
+											<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_White_RGB_2026.svg" width={16} height={16} alt="WhatsApp" />
 											<span>WhatsApp</span>
 										</div>
 										<span>⋮</span>
@@ -692,8 +697,9 @@ function FeaturesStatusSection() {
 							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-[#2563EB]">
 								AUTOMATIC
 							</div>
-							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black">
-								SHOPIFY SYNC
+							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black flex items-center gap-1.5">
+								<Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={14} height={14} alt="Shopify" />
+								<span>SHOPIFY SYNC</span>
 							</div>
 						</div>
 
@@ -733,9 +739,7 @@ function FeaturesStatusSection() {
 							<div className="bg-white border-2 border-black rounded-xl p-5 shadow-[4px_4px_0px_#000] space-y-4">
 								{/* Chat Header */}
 								<div className="flex items-center gap-3 border-b border-gray-200 pb-3">
-									<div className="w-9 h-9 rounded-full bg-[#00D261] border border-black flex items-center justify-center font-bold text-black text-sm">
-										💬
-									</div>
+									<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg" width={28} height={28} alt="WhatsApp" />
 									<div className="flex-1">
 										<div className="font-extrabold text-black text-xs">Alex Johnson</div>
 										<div className="text-[10px] text-gray-500">10:30 AM</div>
@@ -984,7 +988,9 @@ function CTABanner() {
 	return (
 		<section className="bg-[#091E17] py-16 px-4 sm:px-6 text-center text-white border-b-[2.5px] border-black">
 			<div className="max-w-3xl mx-auto space-y-6">
-				<div className="text-5xl">💬</div>
+				<div className="flex justify-center">
+					<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_White_RGB_2026.svg" width={48} height={48} alt="WhatsApp" />
+				</div>
 				<h2 className="text-[34px] sm:text-[48px] font-display font-black uppercase tracking-tight">
 					READY TO AUTOMATE YOUR STORE WITH <span className="text-stroke-green">WHATSAPP?</span>
 				</h2>
@@ -1010,7 +1016,7 @@ function Footer() {
 		<footer className="bg-[#091E17] text-white py-12 px-4 sm:px-6">
 			<div className="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 pb-10 border-b border-white/20">
 				<div className="col-span-2 md:col-span-1 space-y-3">
-					<WhatFlowLogo />
+					<WhatFlowLogo lightMode={false} />
 					<p className="text-xs text-gray-400 font-medium">
 						WhatsApp automation suite built specifically for Shopify merchants.
 					</p>

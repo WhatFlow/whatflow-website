@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "vault-mcp"
+  ],
+  "enableAllProjectMcpServers": true
+}
