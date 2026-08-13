@@ -12,6 +12,7 @@ import { GetPlatformProxyOptions } from "wrangler";
 
 import { Media } from "./collections/Media";
 import { Users } from "./collections/Users";
+import { Reviews } from "./collections/Reviews";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -34,7 +35,7 @@ export default (async () => {
         baseDir: path.resolve(dirname),
       },
     },
-    collections: [Users, Media],
+    collections: [Users, Media, Reviews],
     editor: lexicalEditor(),
     secret: process.env.PAYLOAD_SECRET || "",
     typescript: {

@@ -3,6 +3,61 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
+// ─── SVG Icon Components ──────────────────────────────────────────────────────
+function ChatBubbleIcon({ className = "w-6 h-6" }: { className?: string }) {
+	return (
+		<svg viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[2.2]`} strokeLinecap="round" strokeLinejoin="round">
+			<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+		</svg>
+	);
+}
+
+function LightningBoltIcon({ className = "w-6 h-6" }: { className?: string }) {
+	return (
+		<svg viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[2.2]`} strokeLinecap="round" strokeLinejoin="round">
+			<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+		</svg>
+	);
+}
+
+function RobotAIIcon({ className = "w-6 h-6" }: { className?: string }) {
+	return (
+		<svg viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[2.2]`} strokeLinecap="round" strokeLinejoin="round">
+			<rect x="3" y="11" width="18" height="10" rx="2" />
+			<circle cx="8.5" cy="16" r="1.5" fill="currentColor" />
+			<circle cx="15.5" cy="16" r="1.5" fill="currentColor" />
+			<path d="M12 2v6M9 4h6" />
+		</svg>
+	);
+}
+
+function TShirtIcon({ className = "w-4 h-4" }: { className?: string }) {
+	return (
+		<svg viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[2]`} strokeLinecap="round" strokeLinejoin="round">
+			<path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6z" />
+			<path d="M16 2a4 4 0 01-8 0" />
+		</svg>
+	);
+}
+
+function CapHatIcon({ className = "w-4 h-4" }: { className?: string }) {
+	return (
+		<svg viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[2]`} strokeLinecap="round" strokeLinejoin="round">
+			<path d="M12 4a8 8 0 0 0-8 8v2h16v-2a8 8 0 0 0-8-8z" />
+			<path d="M2 14h20v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2z" />
+		</svg>
+	);
+}
+
+function ClockIcon({ className = "w-4 h-4" }: { className?: string }) {
+	return (
+		<svg viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[2.5]`} strokeLinecap="round" strokeLinejoin="round">
+			<circle cx="12" cy="12" r="9" />
+			<path d="M12 6v6l4 2" />
+		</svg>
+	);
+}
+
 // ─── Data Definitions ─────────────────────────────────────────────────────────
 
 const APPS = [
@@ -12,7 +67,7 @@ const APPS = [
 		tag: "UNOFFICIAL API",
 		tagColor: "bg-[#FFF3CD] text-[#856404] border-black",
 		description: "Order confirmations, cart recovery & real-time updates via WhatsApp.",
-		icon: "💬",
+		icon: <ChatBubbleIcon className="w-8 h-8 text-black" />,
 		link: "https://apps.shopify.com/whatflow",
 		price: "$9",
 		badge: "QUICK SETUP",
@@ -30,7 +85,7 @@ const APPS = [
 		tag: "META CLOUD API",
 		tagColor: "bg-[#D4EDDA] text-[#155724] border-black",
 		description: "Official WhatsApp API with AI chat, broadcasts & back-in-stock alerts.",
-		icon: "⚡",
+		icon: <LightningBoltIcon className="w-8 h-8 text-black" />,
 		link: "https://apps.shopify.com/whatflow-official-api",
 		price: "$49",
 		badge: "MOST POPULAR",
@@ -50,7 +105,7 @@ const APPS = [
 		tag: "STOREFRONT WIDGET",
 		tagColor: "bg-[#E2E3E5] text-[#383D41] border-black",
 		description: "AI chat widget for your Shopify storefront — support, upsells & tracking.",
-		icon: "🤖",
+		icon: <RobotAIIcon className="w-8 h-8 text-black" />,
 		link: "https://apps.shopify.com/whatflow-ai",
 		price: "$19",
 		badge: "NEWEST",
@@ -244,10 +299,10 @@ function HeroSection() {
 											<div className="text-[9px] text-[#A7F3D0]">Business Account</div>
 										</div>
 									</div>
-									<div className="flex items-center gap-2 text-xs">
-										<span>📹</span>
-										<span>📞</span>
-										<span>⋮</span>
+									<div className="flex items-center gap-2 text-[#A7F3D0]">
+										<svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+										<svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+										<span className="text-xs font-bold text-white">⋮</span>
 									</div>
 								</div>
 
@@ -306,14 +361,13 @@ function HeroSection() {
 
 								{/* Phone Bottom Input */}
 								<div className="bg-[#F0F0F0] p-2 border-t-2 border-black flex items-center gap-2">
-									<span className="text-xs">😊</span>
+									<svg viewBox="0 0 24 24" className="w-4 h-4 text-gray-500 fill-none stroke-current stroke-2"><circle cx="12" cy="12" r="10" /><path strokeLinecap="round" d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" /></svg>
 									<div className="flex-1 bg-white border border-black px-2 py-1 rounded-full text-[10px] text-gray-400">
 										Message
 									</div>
-									<span className="text-xs">📎</span>
-									<span className="text-xs">📷</span>
-									<div className="w-6 h-6 rounded-full bg-[#00D261] border border-black flex items-center justify-center text-[10px] text-black font-bold">
-										🎙️
+									<svg viewBox="0 0 24 24" className="w-4 h-4 text-gray-500 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><circle cx="12" cy="13" r="3" /></svg>
+									<div className="w-6 h-6 rounded-full bg-[#00D261] border border-black flex items-center justify-center text-black font-bold">
+										<svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
 									</div>
 								</div>
 							</div>
@@ -341,7 +395,9 @@ function HeroSection() {
 
 									<div className="flex items-center justify-between text-[11px]">
 										<div className="flex items-center gap-2">
-											<div className="w-8 h-8 bg-gray-100 border border-black rounded flex items-center justify-center">👕</div>
+											<div className="w-8 h-8 bg-gray-100 border border-black rounded flex items-center justify-center">
+												<TShirtIcon className="w-4 h-4 text-black" />
+											</div>
 											<div>
 												<div className="font-bold">Essentials Tee</div>
 												<div className="text-[9px] text-gray-500">Black / M <span className="ml-2 font-bold text-black">x 1</span></div>
@@ -352,7 +408,9 @@ function HeroSection() {
 
 									<div className="flex items-center justify-between text-[11px]">
 										<div className="flex items-center gap-2">
-											<div className="w-8 h-8 bg-gray-100 border border-black rounded flex items-center justify-center">🧢</div>
+											<div className="w-8 h-8 bg-gray-100 border border-black rounded flex items-center justify-center">
+												<CapHatIcon className="w-4 h-4 text-black" />
+											</div>
 											<div>
 												<div className="font-bold">Logo Cap</div>
 												<div className="text-[9px] text-gray-500">Black <span className="ml-2 font-bold text-black">x 1</span></div>
@@ -754,7 +812,9 @@ function FeaturesStatusSection() {
 								{/* Order Item Box */}
 								<div className="bg-gray-50 border border-gray-300 p-3 rounded-lg flex items-center justify-between text-xs">
 									<div className="flex items-center gap-3">
-										<div className="w-10 h-10 bg-white border border-black rounded flex items-center justify-center">👕</div>
+										<div className="w-10 h-10 bg-white border border-black rounded flex items-center justify-center">
+											<TShirtIcon className="w-5 h-5 text-black" />
+										</div>
 										<div>
 											<div className="font-bold text-black">Order #1027</div>
 											<div className="text-[10px] text-gray-500">Essentials Tee • Black / M • Qty: 1</div>
@@ -817,8 +877,8 @@ function FeaturesStatusSection() {
 									: "bg-[#FFF9E6] text-black hover:bg-[#FFC107]/20"
 							}`}
 						>
-							<span className="w-7 h-7 rounded-full bg-white border border-black flex items-center justify-center font-bold text-sm">
-								⏳
+							<span className="w-7 h-7 rounded-full bg-white border border-black flex items-center justify-center">
+								<ClockIcon className="w-4 h-4 text-black" />
 							</span>
 							<span className="font-extrabold text-xs uppercase tracking-wider">
 								CONFIRMATION PENDING
@@ -896,7 +956,9 @@ function AllAppsSection() {
 
 							<div className="space-y-4">
 								<div className="flex items-center justify-between">
-									<span className="text-4xl">{app.icon}</span>
+									<div className="w-12 h-12 bg-white border-2 border-black rounded-xl shadow-[2px_2px_0px_#000] flex items-center justify-center">
+										{app.icon}
+									</div>
 									<span className={`neo-pill px-2.5 py-0.5 text-[10px] font-bold ${app.tagColor}`}>
 										{app.tag}
 									</span>
@@ -935,6 +997,128 @@ function AllAppsSection() {
 								INSTALL ON SHOPIFY ➔
 							</a>
 						</div>
+					))}
+				</div>
+			</div>
+		</section>
+	);
+}
+
+// ─── Dual Row Scrolling Reviews Section (Payload CMS Dynamic) ─────────────────
+type ReviewItem = {
+	id: string | number;
+	author: string;
+	rating: number;
+	body: string;
+	faviconUrl?: string;
+	favicon?: { url?: string };
+};
+
+function ReviewCard({ review }: { review: ReviewItem }) {
+	const avatarUrl = review.favicon?.url || review.faviconUrl;
+	const initials = review.author
+		.split(" ")
+		.map((n) => n[0])
+		.join("")
+		.substring(0, 2)
+		.toUpperCase();
+
+	return (
+		<div className="w-[310px] sm:w-[360px] flex-shrink-0 neo-box bg-white p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:-translate-y-1 transition-transform">
+			<div className="space-y-3">
+				<div className="flex items-center gap-1 text-[#FFC107] text-sm tracking-widest font-black">
+					{"★".repeat(Math.min(5, Math.max(1, review.rating || 5)))}
+				</div>
+				<p className="text-xs sm:text-sm font-medium text-black leading-relaxed">
+					"{review.body}"
+				</p>
+			</div>
+
+			<div className="flex items-center gap-3 border-t border-gray-100 pt-3">
+				{avatarUrl ? (
+					<Image
+						src={avatarUrl}
+						alt={review.author}
+						width={36}
+						height={36}
+						className="w-9 h-9 rounded-xl neo-box object-contain bg-white p-1"
+					/>
+				) : (
+					<div className="w-9 h-9 rounded-xl font-extrabold text-xs flex items-center justify-center neo-box bg-[#00D261] text-black shadow-[1px_1px_0px_#000]">
+						{initials}
+					</div>
+				)}
+				<div>
+					<div className="font-extrabold text-xs text-black uppercase tracking-wider">
+						{review.author}
+					</div>
+					<div className="text-[10px] text-gray-500 font-bold uppercase">
+						Shopify Merchant
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}
+
+function ReviewsSection() {
+	const [reviews, setReviews] = useState<ReviewItem[]>([]);
+	const [loading, setLoading] = useState<boolean>(true);
+
+	useEffect(() => {
+		fetch("/api/reviews?limit=50&where[active][equals]=true")
+			.then((res) => res.json())
+			.then((data: any) => {
+				if (data && Array.isArray(data.docs)) {
+					const fiveStar = data.docs.filter((r: ReviewItem) => (r.rating || 5) >= 5);
+					setReviews(fiveStar);
+				}
+				setLoading(false);
+			})
+			.catch(() => {
+				setReviews([]);
+				setLoading(false);
+			});
+	}, []);
+
+	// Hide section completely if loading or if no 5-star reviews are available in CMS
+	if (loading || reviews.length === 0) {
+		return null;
+	}
+
+	const half = Math.ceil(reviews.length / 2);
+	const row1 = reviews.slice(0, half);
+	const row2 = reviews.slice(half).length > 0 ? reviews.slice(half) : row1;
+
+	return (
+		<section className="bg-[#FAF7F0] py-16 sm:py-20 border-b-[2.5px] border-black overflow-hidden">
+			<div className="max-w-[1280px] mx-auto px-4 sm:px-6 mb-12 text-center space-y-4">
+				<div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
+					MERCHANT REVIEWS
+				</div>
+				<h2 className="text-[36px] sm:text-[48px] font-display font-black uppercase text-black tracking-tight">
+					LOVED BY SHOPIFY STORES.
+				</h2>
+				<div className="flex items-center justify-center gap-2 text-xs font-extrabold uppercase text-black">
+					<span className="text-[#FFC107] text-base">★★★★★</span>
+					<span>5.0 RATING ON SHOPIFY APP STORE</span>
+				</div>
+			</div>
+
+			{/* Row 1: Forward Marquee */}
+			<div className="mb-6 overflow-hidden py-2">
+				<div className="animate-marquee-slow flex gap-6">
+					{[...row1, ...row1, ...row1].map((review, i) => (
+						<ReviewCard key={`r1-${review.id}-${i}`} review={review} />
+					))}
+				</div>
+			</div>
+
+			{/* Row 2: Reverse Marquee */}
+			<div className="overflow-hidden py-2">
+				<div className="animate-marquee-reverse flex gap-6">
+					{[...row2, ...row2, ...row2].map((review, i) => (
+						<ReviewCard key={`r2-${review.id}-${i}`} review={review} />
 					))}
 				</div>
 			</div>
@@ -1069,6 +1253,7 @@ export default function HomePage() {
 			<PricingCalculatorSection />
 			<FeaturesStatusSection />
 			<AllAppsSection />
+			<ReviewsSection />
 			<FAQSection />
 			<CTABanner />
 			<Footer />
