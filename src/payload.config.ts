@@ -37,7 +37,7 @@ export default (async () => {
     },
     collections: [Users, Media, Reviews],
     editor: lexicalEditor(),
-    secret: process.env.PAYLOAD_SECRET || "",
+    secret: (cloudflare.env as any)?.PAYLOAD_SECRET || process.env.PAYLOAD_SECRET || "",
     typescript: {
       outputFile: path.resolve(dirname, "payload-types.ts"),
     },
