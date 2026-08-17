@@ -13,6 +13,7 @@ import { GetPlatformProxyOptions } from "wrangler";
 import { Media } from "./collections/Media";
 import { Users } from "./collections/Users";
 import { Reviews } from "./collections/Reviews";
+import { CountryRates } from "./collections/CountryRates";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -35,7 +36,7 @@ export default (async () => {
         baseDir: path.resolve(dirname),
       },
     },
-    collections: [Users, Media, Reviews],
+    collections: [Users, Media, Reviews, CountryRates],
     editor: lexicalEditor(),
     secret: (cloudflare.env as any)?.PAYLOAD_SECRET || process.env.PAYLOAD_SECRET || "",
     typescript: {

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // ─── SVG Icon Components ──────────────────────────────────────────────────────
 function ChatBubbleIcon({ className = "w-6 h-6" }: { className?: string }) {
@@ -195,9 +196,9 @@ function Navbar() {
 					<a href="#products" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors relative py-1 border-b-2 border-transparent hover:border-black">
 						PRODUCTS
 					</a>
-					<a href="#pricing" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
+					<Link href="/pricing" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
 						PRICING
-					</a>
+					</Link>
 					<a href="#features" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
 						FEATURES
 					</a>
@@ -499,17 +500,19 @@ function OfficialApiSection() {
 
 						<div className="flex flex-wrap items-center gap-4 pt-2">
 							<a
-								href="#pricing"
+								href="https://apps.shopify.com"
+								target="_blank"
+								rel="noreferrer"
 								className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
 							>
 								INSTALL OFFICIAL API
 							</a>
-							<a
-								href="#pricing"
+							<Link
+								href="/pricing"
 								className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
 							>
-								VIEW PRICING
-							</a>
+								VIEW PRICING & PLANS
+							</Link>
 						</div>
 					</div>
 
@@ -575,161 +578,6 @@ function OfficialApiSection() {
 					</div>
 					<h2 className="text-[36px] sm:text-[54px] font-display font-black uppercase text-white tracking-tight leading-none">
 						BUILT FOR <span className="text-stroke-green">RELIABILITY.</span>
-					</h2>
-				</div>
-			</div>
-		</section>
-	);
-}
-
-// ─── Pricing & Calculator Section (Matching Image 3) ────────────────────────
-function PricingCalculatorSection() {
-	const [orders, setOrders] = useState<number>(1000);
-	const [msgPerOrder, setMsgPerOrder] = useState<number>(2);
-	const [msgType, setMsgType] = useState<string>("Utility");
-
-	const estimatedMessages = orders * msgPerOrder;
-
-	const recommendedPlan =
-		estimatedMessages <= 1500 ? "STARTER" : estimatedMessages <= 5000 ? "GROWTH" : "PRO";
-
-	return (
-		<section id="pricing" className="bg-[#FAF7F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
-			<div className="max-w-[1280px] mx-auto space-y-12">
-				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-					{/* Left Content */}
-					<div className="lg:col-span-6 space-y-6">
-						<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
-							PRICING — OFFICIAL API
-						</div>
-
-						<div className="flex flex-wrap items-center gap-3">
-							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black">
-								PAY FOR YOUR USAGE
-							</div>
-							<div className="neo-pill bg-[#E8F8F0] px-3 py-1 text-xs font-extrabold uppercase text-black">
-								ALL FEATURES INCLUDED
-							</div>
-						</div>
-
-						<h2 className="text-[38px] sm:text-[50px] lg:text-[56px] font-display font-black leading-[1.05] uppercase text-black tracking-tight">
-							PRICING THAT SCALES WITH{" "}
-							<span className="text-stroke-green">EVERY ORDER.</span>
-						</h2>
-
-						<p className="text-[17px] text-[#222222] font-medium leading-relaxed max-w-md">
-							Estimate WhatFlow and Meta charges before you choose a plan.
-						</p>
-
-						<div className="pt-2">
-							<a
-								href="#all-plans"
-								className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg inline-block"
-							>
-								VIEW ALL PLANS
-							</a>
-						</div>
-					</div>
-
-					{/* Right Interactive Calculator Box */}
-					<div className="lg:col-span-6">
-						<div className="neo-box-teal p-6 sm:p-8 relative">
-							{/* Top Attached Badge */}
-							<div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 neo-box bg-[#00D261] px-5 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
-								CALCULATE YOUR MONTHLY COST
-							</div>
-
-							<div className="bg-white border-2 border-black rounded-xl overflow-hidden shadow-[4px_4px_0px_#000] grid grid-cols-1 sm:grid-cols-12 mt-2">
-								{/* Left Calculator Inputs */}
-								<div className="sm:col-span-7 p-6 space-y-4 bg-white">
-									<div>
-										<label className="block text-[10px] font-extrabold uppercase tracking-wider text-gray-700 mb-1">
-											MONTHLY ORDERS
-										</label>
-										<input
-											type="number"
-											min={100}
-											step={100}
-											value={orders}
-											onChange={(e) => setOrders(Math.max(1, parseInt(e.target.value) || 0))}
-											className="w-full bg-white border-2 border-black rounded-lg px-3 py-2 text-sm font-extrabold text-black focus:outline-none focus:ring-2 focus:ring-[#00D261]"
-										/>
-									</div>
-
-									<div>
-										<label className="block text-[10px] font-extrabold uppercase tracking-wider text-gray-700 mb-1">
-											MESSAGES PER ORDER
-										</label>
-										<input
-											type="number"
-											min={1}
-											max={10}
-											value={msgPerOrder}
-											onChange={(e) => setMsgPerOrder(Math.max(1, parseInt(e.target.value) || 1))}
-											className="w-full bg-white border-2 border-black rounded-lg px-3 py-2 text-sm font-extrabold text-black focus:outline-none focus:ring-2 focus:ring-[#00D261]"
-										/>
-									</div>
-
-									<div>
-										<label className="block text-[10px] font-extrabold uppercase tracking-wider text-gray-700 mb-1">
-											MESSAGE TYPE
-										</label>
-										<select
-											value={msgType}
-											onChange={(e) => setMsgType(e.target.value)}
-											className="w-full bg-white border-2 border-black rounded-lg px-3 py-2 text-xs font-extrabold text-black focus:outline-none"
-										>
-											<option value="Utility">Utility</option>
-											<option value="Marketing">Marketing</option>
-											<option value="Authentication">Authentication</option>
-										</select>
-									</div>
-
-									<button
-										onClick={() => {}}
-										className="w-full neo-btn bg-black text-white font-extrabold text-xs uppercase tracking-wider py-3 rounded-lg flex items-center justify-center gap-2 mt-2"
-									>
-										<span>CALCULATE</span>
-										<span>➔</span>
-									</button>
-								</div>
-
-								{/* Right Calculator Output Panel */}
-								<div className="sm:col-span-5 p-6 bg-[#D5F5E3] border-t-2 sm:border-t-0 sm:border-l-2 border-black flex flex-col justify-between space-y-6">
-									<div>
-										<div className="text-[10px] font-extrabold uppercase tracking-wider text-gray-700 mb-1">
-											ESTIMATED MESSAGES
-										</div>
-										<div className="text-4xl font-display font-black text-black">
-											{estimatedMessages.toLocaleString()}
-										</div>
-									</div>
-
-									<div className="space-y-2">
-										<div className="text-[10px] font-extrabold uppercase tracking-wider text-gray-700">
-											RECOMMENDED PLAN
-										</div>
-										<div className="neo-btn bg-[#00D261] text-black font-display font-black text-center py-2 px-4 rounded-lg text-lg uppercase tracking-wider">
-											{recommendedPlan}
-										</div>
-									</div>
-
-									<div className="neo-pill bg-white/80 p-2 text-[10px] text-center font-bold text-gray-800 border border-black">
-										ⓘ Meta charges shown separately.
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				{/* Lower Dark Banner: ALL FEATURES. EVERY PLAN. */}
-				<div className="bg-[#091E17] neo-box p-8 sm:p-12 text-white space-y-4">
-					<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-						SIMPLE BY DESIGN
-					</div>
-					<h2 className="text-[36px] sm:text-[54px] font-display font-black uppercase text-white tracking-tight leading-none">
-						ALL FEATURES. <span className="text-stroke-green">EVERY PLAN.</span>
 					</h2>
 				</div>
 			</div>
@@ -1220,7 +1068,7 @@ function Footer() {
 					<ul className="space-y-2 text-xs font-semibold text-gray-300">
 						<li><a href="#features" className="hover:text-[#00D261]">Order Confirmations</a></li>
 						<li><a href="#features" className="hover:text-[#00D261]">Cart Recovery</a></li>
-						<li><a href="#pricing" className="hover:text-[#00D261]">Cost Calculator</a></li>
+						<li><Link href="/pricing" className="hover:text-[#00D261]">Pricing & Calculator</Link></li>
 					</ul>
 				</div>
 
@@ -1250,7 +1098,6 @@ export default function HomePage() {
 			<Navbar />
 			<HeroSection />
 			<OfficialApiSection />
-			<PricingCalculatorSection />
 			<FeaturesStatusSection />
 			<AllAppsSection />
 			<ReviewsSection />
