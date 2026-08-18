@@ -193,3 +193,107 @@ body {
 	animation: slideDown 0.2s ease both;
 }
 
+/* ─── Rich Text / Prose Styles ─── */
+.prose-whatflow {
+	color: #111111;
+	font-size: 1rem;
+	line-height: 1.8;
+	max-width: 72ch;
+}
+
+.prose-whatflow h1,
+.prose-whatflow h2,
+.prose-whatflow h3,
+.prose-whatflow h4 {
+	font-family: 'Space Grotesk', 'Inter', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	color: #000;
+	line-height: 1.1;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+
+.prose-whatflow h1 { font-size: 2.4rem; }
+.prose-whatflow h2 { font-size: 1.8rem; }
+.prose-whatflow h3 { font-size: 1.3rem; }
+.prose-whatflow h4 { font-size: 1.05rem; }
+
+.prose-whatflow p {
+	margin-top: 0;
+	margin-bottom: 1.25rem;
+}
+
+.prose-whatflow a {
+	color: #2563EB;
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+.prose-whatflow a:hover { color: #00D261; }
+
+.prose-whatflow ul,
+.prose-whatflow ol {
+	padding-left: 1.5rem;
+	margin-bottom: 1.25rem;
+}
+
+.prose-whatflow li {
+	margin-bottom: 0.4rem;
+}
+
+.prose-whatflow blockquote {
+	border-left: 4px solid #00D261;
+	background: #F0FFF6;
+	padding: 1rem 1.25rem;
+	border-radius: 0 8px 8px 0;
+	margin: 1.5rem 0;
+	font-style: italic;
+	font-weight: 600;
+	color: #0A6B56;
+}
+
+.prose-whatflow code {
+	background: #F0F0F0;
+	border: 1px solid #000;
+	border-radius: 4px;
+	padding: 0.15em 0.4em;
+	font-family: 'Courier New', monospace;
+	font-size: 0.88em;
+}
+
+.prose-whatflow pre {
+	background: #091E17;
+	color: #00D261;
+	border: 2.5px solid #000;
+	border-radius: 10px;
+	padding: 1.25rem;
+	overflow-x: auto;
+	margin-bottom: 1.5rem;
+}
+
+.prose-whatflow pre code {
+	background: none;
+	border: none;
+	padding: 0;
+	color: inherit;
+}
+
+.prose-whatflow img {
+	border: 2.5px solid #000;
+	border-radius: 10px;
+	box-shadow: 4px 4px 0px #000;
+	max-width: 100%;
+	height: auto;
+	margin: 1.5rem 0;
+}
+
+.prose-whatflow hr {
+	border: none;
+	border-top: 2.5px solid #000;
+	margin: 2.5rem 0;
+}
+
+.prose-whatflow strong { font-weight: 800; }
+

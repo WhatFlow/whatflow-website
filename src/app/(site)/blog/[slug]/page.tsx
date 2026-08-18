@@ -1,0 +1,222 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import { getPost, getRelatedPosts, formatDate, CATEGORY_LABELS, CATEGORY_COLORS } from "@/lib/payload-api";
+import { RichText } from "@/lib/RichText";
+
+interface PostPageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await getPost(slug);
+  if (!post) return { title: "Post Not Found — WhatFlow" };
+
+  const title = post.seo?.metaTitle || `${post.title} — WhatFlow Blog`;
+  const description = post.seo?.metaDescription || post.excerpt;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      publishedTime: post.publishedAt ?? undefined,
+      images: post.coverImage?.url ? [{ url: post.coverImage.url, alt: post.coverImage.alt }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
+
+export default async function BlogPostPage({ params }: PostPageProps) {
+  const { slug } = await params;
+  const post = await getPost(slug);
+  if (!post) notFound();
+
+  const relatedPosts = await getRelatedPosts(post.category, post.slug, 3).catch(() => []);
+  const categoryLabel = CATEGORY_LABELS[post.category] ?? post.category;
+  const categoryColor = CATEGORY_COLORS[post.category] ?? "bg-gray-100 text-gray-700";
+
+  return (
+    <div className="min-h-screen bg-[#FAF7F0]">
+      {/* ─── Cover Image Banner ─── */}
+      <div className="relative w-full h-[340px] sm:h-[440px] bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
+        {post.coverImage?.url ? (
+          <Image
+            src={post.coverImage.url}
+            alt={post.coverImage.alt || post.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-[#00D261]/20 via-[#0A6B56]/10 to-[#091E17]/20 flex items-center justify-center">
+            <span className="text-8xl">✍️</span>
+          </div>
+        )}
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#091E17]/60 via-transparent to-transparent" />
+      </div>
+
+      {/* ─── Article Header ─── */}
+      <section className="px-4 sm:px-6 py-10 border-b-[2.5px] border-black bg-[#FAF7F0]">
+        <div className="max-w-[800px] mx-auto">
+          {/* Breadcrumb */}
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500 mb-6">
+            <Link href="/" className="hover:text-[#00D261] transition-colors">Home</Link>
+            <span>›</span>
+            <Link href="/blog" className="hover:text-[#00D261] transition-colors">Blog</Link>
+            <span>›</span>
+            <span className="text-black">{post.title}</span>
+          </div>
+
+          {/* Category + Date row */}
+          <div className="flex items-center gap-3 flex-wrap mb-5">
+            <span className={`neo-pill px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider border-black ${categoryColor}`}>
+              {categoryLabel}
+            </span>
+            {post.publishedAt && (
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">
+                {formatDate(post.publishedAt)}
+              </span>
+            )}
+          </div>
+
+          {/* Title */}
+          <h1 className="text-[34px] sm:text-[48px] lg:text-[58px] font-display font-black uppercase text-black tracking-tight leading-tight mb-6">
+            {post.title}
+          </h1>
+
+          {/* Author bar */}
+          <div className="flex items-center gap-3 py-4 border-t border-b border-gray-200">
+            <div className="w-10 h-10 rounded-xl bg-[#00D261] border-2 border-black flex items-center justify-center font-extrabold text-sm text-black shadow-[2px_2px_0px_#000]">
+              {post.author.charAt(0).toUpperCase()}
+            </div>
+            <div>
+              <div className="font-extrabold text-sm text-black">{post.author}</div>
+              {post.authorRole && (
+                <div className="text-[11px] text-gray-500 font-bold uppercase tracking-wide">{post.authorRole}</div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Article Content ─── */}
+      <section className="px-4 sm:px-6 py-12">
+        <div className="max-w-[800px] mx-auto">
+          <RichText content={post.content} />
+        </div>
+      </section>
+
+      {/* ─── Tags ─── */}
+      {post.tags && post.tags.length > 0 && (
+        <section className="px-4 sm:px-6 pb-10">
+          <div className="max-w-[800px] mx-auto">
+            <div className="flex items-center gap-2 flex-wrap border-t-[2.5px] border-black pt-6">
+              <span className="text-xs font-extrabold uppercase tracking-wider text-gray-500 mr-1">Tags:</span>
+              {post.tags.map(({ tag }) => (
+                <span
+                  key={tag}
+                  className="neo-pill bg-white px-3 py-1 text-[11px] font-bold text-black"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ─── Related Posts ─── */}
+      {relatedPosts.length > 0 && (
+        <section className="px-4 sm:px-6 py-14 border-t-[2.5px] border-black bg-white">
+          <div className="max-w-[1280px] mx-auto">
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-2">
+                  KEEP READING
+                </div>
+                <h2 className="text-[26px] sm:text-[32px] font-display font-black uppercase text-black tracking-tight">
+                  RELATED ARTICLES
+                </h2>
+              </div>
+              <Link
+                href="/blog"
+                className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg hidden sm:inline-flex items-center gap-1"
+              >
+                ALL POSTS →
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {relatedPosts.map((related) => (
+                <Link
+                  key={related.id}
+                  href={`/blog/${related.slug}`}
+                  className="neo-box bg-white overflow-hidden group hover:-translate-y-1 transition-transform"
+                >
+                  <div className="relative h-40 bg-[#E8F8F0] border-b-[2.5px] border-black overflow-hidden">
+                    {related.coverImage?.url ? (
+                      <Image
+                        src={related.coverImage.url}
+                        alt={related.coverImage.alt || related.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-4xl">✍️</div>
+                    )}
+                  </div>
+                  <div className="p-5 space-y-2">
+                    <span className={`neo-pill px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider border-black ${CATEGORY_COLORS[related.category] ?? "bg-gray-100 text-gray-700"}`}>
+                      {CATEGORY_LABELS[related.category] ?? related.category}
+                    </span>
+                    <h3 className="font-display font-black text-base text-black uppercase leading-tight group-hover:text-[#0A6B56] transition-colors">
+                      {related.title}
+                    </h3>
+                    <p className="text-[11px] text-gray-500 font-bold">{formatDate(related.publishedAt)}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ─── CTA ─── */}
+      <section className="bg-[#091E17] border-t-[2.5px] border-black py-14 px-4 sm:px-6 text-center">
+        <div className="max-w-2xl mx-auto space-y-4">
+          <h2 className="text-[28px] sm:text-[38px] font-display font-black uppercase text-white tracking-tight">
+            READY TO AUTOMATE YOUR STORE WITH{" "}
+            <span className="text-stroke-green">WHATSAPP?</span>
+          </h2>
+          <p className="text-gray-300 text-sm font-medium">
+            Join 1,000+ Shopify merchants. 14-day free trial.
+          </p>
+          <div className="flex items-center justify-center gap-3 flex-wrap">
+            <Link
+              href="/#products"
+              className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-lg"
+            >
+              INSTALL ON SHOPIFY →
+            </Link>
+            <Link
+              href="/blog"
+              className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-lg"
+            >
+              ← BACK TO BLOG
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

@@ -14,6 +14,8 @@ import { Media } from "./collections/Media";
 import { Users } from "./collections/Users";
 import { Reviews } from "./collections/Reviews";
 import { CountryRates } from "./collections/CountryRates";
+import { Posts } from "./collections/Posts";
+import { CaseStudies } from "./collections/CaseStudies";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -36,7 +38,7 @@ export default (async () => {
         baseDir: path.resolve(dirname),
       },
     },
-    collections: [Users, Media, Reviews, CountryRates],
+    collections: [Users, Media, Reviews, CountryRates, Posts, CaseStudies],
     editor: lexicalEditor(),
     secret: (cloudflare.env as any)?.PAYLOAD_SECRET || process.env.PAYLOAD_SECRET || "",
     typescript: {

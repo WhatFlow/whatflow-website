@@ -1,8 +1,23 @@
-"use client";
-
-import { useState, useEffect, useRef } from "react";
+// Server Component — no "use client" directive
 import Image from "next/image";
 import Link from "next/link";
+
+// ─── Client Components (interactive) ─────────────────────────────────────────
+import { HeroSection } from "@/components/HeroSection";
+import { FeaturesStatusSection } from "@/components/FeaturesStatusSection";
+import { ReviewsSection } from "@/components/ReviewsSection";
+import { FAQSection } from "@/components/FAQSection";
+
+// ─── Server-side data fetching ────────────────────────────────────────────────
+import {
+	getPosts,
+	getCaseStudies,
+	formatDate,
+	CATEGORY_LABELS,
+	CATEGORY_COLORS,
+	type Post,
+	type CaseStudy,
+} from "@/lib/payload-api";
 
 // ─── SVG Icon Components ──────────────────────────────────────────────────────
 function ChatBubbleIcon({ className = "w-6 h-6" }: { className?: string }) {
@@ -32,35 +47,7 @@ function RobotAIIcon({ className = "w-6 h-6" }: { className?: string }) {
 	);
 }
 
-function TShirtIcon({ className = "w-4 h-4" }: { className?: string }) {
-	return (
-		<svg viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[2]`} strokeLinecap="round" strokeLinejoin="round">
-			<path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6z" />
-			<path d="M16 2a4 4 0 01-8 0" />
-		</svg>
-	);
-}
-
-function CapHatIcon({ className = "w-4 h-4" }: { className?: string }) {
-	return (
-		<svg viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[2]`} strokeLinecap="round" strokeLinejoin="round">
-			<path d="M12 4a8 8 0 0 0-8 8v2h16v-2a8 8 0 0 0-8-8z" />
-			<path d="M2 14h20v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2z" />
-		</svg>
-	);
-}
-
-function ClockIcon({ className = "w-4 h-4" }: { className?: string }) {
-	return (
-		<svg viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[2.5]`} strokeLinecap="round" strokeLinejoin="round">
-			<circle cx="12" cy="12" r="9" />
-			<path d="M12 6v6l4 2" />
-		</svg>
-	);
-}
-
 // ─── Data Definitions ─────────────────────────────────────────────────────────
-
 const APPS = [
 	{
 		id: "chat",
@@ -120,48 +107,6 @@ const APPS = [
 	},
 ];
 
-const FAQS = [
-	{
-		q: "Which app should I start with?",
-		a: "If you want instant setup without a Meta business account, start with WhatFlow Chat. For official Meta verification, AI chatbots, and Shopify Flow integration, choose WhatFlow Business API.",
-	},
-	{
-		q: "Do I need a Meta WhatsApp Business Account?",
-		a: "Only for WhatFlow Business API, which connects directly to Meta's official Cloud API for certified message delivery. WhatFlow Chat requires no Meta account.",
-	},
-	{
-		q: "Can I use multiple WhatFlow apps together?",
-		a: "Yes! Many merchants pair WhatFlow Business API for post-purchase WhatsApp notifications with WhatFlow AI for storefront customer support.",
-	},
-	{
-		q: "Is there a free trial for all plans?",
-		a: "Yes, all plans come with a 14-day free trial. No credit card is required to get started.",
-	},
-	{
-		q: "Does WhatFlow integrate with Shopify Flow?",
-		a: "Yes — WhatFlow Business API provides a native Shopify Flow action block, allowing you to trigger WhatsApp workflows from any Shopify event.",
-	},
-];
-
-// ─── Scroll Reveal Hook ───────────────────────────────────────────────────────
-function useReveal() {
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add("visible");
-					}
-				});
-			},
-			{ threshold: 0.1 }
-		);
-
-		document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
-		return () => observer.disconnect();
-	}, []);
-}
-
 // ─── Logo Component ───────────────────────────────────────────────────────────
 function WhatFlowLogo({ lightMode = true }: { lightMode?: boolean }) {
 	return (
@@ -189,7 +134,7 @@ function Navbar() {
 			<div className="max-w-[1280px] mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
 				<WhatFlowLogo />
 
-				<nav className="hidden lg:flex items-center gap-8">
+				<nav className="hidden lg:flex items-center gap-6">
 					<a href="#hero" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
 						HOME
 					</a>
@@ -202,11 +147,14 @@ function Navbar() {
 					<a href="#features" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
 						FEATURES
 					</a>
+					<Link href="/blog" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
+						BLOG
+					</Link>
+					<Link href="/case-studies" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
+						CASE STUDIES
+					</Link>
 					<a href="#faq" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
 						HELP
-					</a>
-					<a href="#about" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						ABOUT
 					</a>
 				</nav>
 
@@ -223,250 +171,7 @@ function Navbar() {
 	);
 }
 
-// ─── Hero Section (Matching Image 1) ─────────────────────────────────────────
-function HeroSection() {
-	const [activeAction, setActiveAction] = useState<"confirm" | "cancel" | null>(null);
-
-	return (
-		<section id="hero" className="bg-[#FAF7F0] pt-10 pb-16 px-4 sm:px-6 border-b-[2.5px] border-black">
-			<div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-				{/* Left Hero Content */}
-				<div className="lg:col-span-6 space-y-6">
-					{/* Badges */}
-					<div className="flex flex-wrap items-center gap-3">
-						<div className="neo-pill bg-white px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-black">
-							<Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={48} height={15} alt="Meta" className="h-3.5 w-auto" />
-							<span>OFFICIAL META API</span>
-						</div>
-						<div className="neo-pill bg-[#F0F4FF] px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#1877F2]">
-							<Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={48} height={15} alt="Meta" className="h-3.5 w-auto" />
-							<span>TECH PARTNER</span>
-						</div>
-						<div className="neo-pill bg-[#E8F8F0] px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-black">
-							<Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={18} height={18} alt="Shopify" />
-							<span>BUILT FOR SHOPIFY</span>
-						</div>
-					</div>
-
-					{/* Heading */}
-					<h1 className="text-[44px] sm:text-[58px] lg:text-[64px] font-display font-black leading-[1.02] uppercase text-black tracking-tight">
-						TURN SHOPIFY EVENTS{" "}
-						<span className="text-stroke-green block sm:inline">INTO WHATSAPP</span>{" "}
-						CONVERSATIONS.
-					</h1>
-
-					{/* Subtitle */}
-					<p className="text-[17px] sm:text-[18px] text-[#222222] font-medium leading-relaxed max-w-lg">
-						Official WhatsApp automation for confirmations, recovery and order updates.
-					</p>
-
-					{/* Action Buttons */}
-					<div className="flex flex-wrap items-center gap-4 pt-2">
-						<a
-							href="#products"
-							className="neo-btn bg-[#00D261] text-black font-extrabold text-sm uppercase tracking-wide px-7 py-3.5 rounded-lg flex items-center gap-2"
-						>
-							INSTALL ON SHOPIFY
-						</a>
-						<a
-							href="#features"
-							className="neo-btn bg-white text-[#2563EB] font-extrabold text-sm uppercase tracking-wide px-7 py-3.5 rounded-lg"
-						>
-							SEE HOW IT WORKS
-						</a>
-					</div>
-				</div>
-
-				{/* Right Visual Box (Teal Container with Phone Mockup & Order Card) */}
-				<div className="lg:col-span-6 relative">
-					<div className="neo-box-teal p-6 sm:p-8 relative min-h-[460px] flex items-center justify-center">
-						{/* Top Attached Badge */}
-						<div className="absolute top-0 right-6 -translate-y-1/2 neo-pill bg-[#FFC107] px-4 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
-							ORDER #1027
-						</div>
-
-						<div className="w-full flex flex-col sm:flex-row items-center justify-center gap-6">
-							{/* Phone Mockup Frame */}
-							<div className="w-full sm:w-[270px] bg-white border-2 border-black rounded-3xl shadow-[5px_5px_0px_#000] overflow-hidden flex flex-col">
-								{/* Phone Header */}
-								<div className="bg-[#075E54] text-white p-3 flex items-center justify-between border-b-2 border-black">
-									<div className="flex items-center gap-2">
-										<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg" width={24} height={24} alt="WhatsApp" />
-										<div>
-											<div className="flex items-center gap-1 font-bold text-xs">
-												<span>Store</span>
-												<span className="text-[#00D261]">✓</span>
-											</div>
-											<div className="text-[9px] text-[#A7F3D0]">Business Account</div>
-										</div>
-									</div>
-									<div className="flex items-center gap-2 text-[#A7F3D0]">
-										<svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
-										<svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-										<span className="text-xs font-bold text-white">⋮</span>
-									</div>
-								</div>
-
-								{/* Phone Chat Body */}
-								<div className="p-3 bg-[#EFEAE2] space-y-3 min-h-[280px] text-xs">
-									<div className="text-center">
-										<span className="bg-white border border-black px-2 py-0.5 rounded text-[10px] font-bold">Today</span>
-									</div>
-
-									{/* WhatsApp Order Bubble */}
-									<div className="bg-[#E7FCE9] border border-black p-2.5 rounded-lg shadow-sm">
-										<p className="font-medium text-[#111111] mb-1.5 leading-snug">
-											Hi Alex 👋<br />
-											Thanks for your order! We've received it and are getting it ready to ship.
-										</p>
-										<div className="bg-white border border-black p-2 rounded flex items-center gap-2 text-[11px]">
-											<span className="text-base">📦</span>
-											<div>
-												<div className="font-bold text-black">Order #1027</div>
-												<div className="text-[#555] text-[10px]">2 items • $89.00</div>
-											</div>
-										</div>
-										<div className="text-[9px] text-right text-[#666] mt-1">10:30 AM</div>
-									</div>
-
-									{/* WhatsApp Action Bubble */}
-									<div className="bg-white border border-black p-2.5 rounded-lg space-y-2">
-										<p className="font-medium text-[#111111] text-[11px]">
-											Please confirm your order to continue.
-										</p>
-										<div className="space-y-1.5">
-											<button
-												onClick={() => setActiveAction("confirm")}
-												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${
-													activeAction === "confirm"
-														? "bg-[#00D261] text-black"
-														: "bg-white text-[#00D261] hover:bg-[#E7FCE9]"
-												}`}
-											>
-												{activeAction === "confirm" ? "✓ CONFIRMED!" : "CONFIRM ORDER"}
-											</button>
-											<button
-												onClick={() => setActiveAction("cancel")}
-												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${
-													activeAction === "cancel"
-														? "bg-[#FF4B4B] text-white"
-														: "bg-white text-[#FF4B4B] hover:bg-[#FFEBEB]"
-												}`}
-											>
-												{activeAction === "cancel" ? "✕ CANCELLED" : "CANCEL ORDER"}
-											</button>
-										</div>
-										<div className="text-[9px] text-right text-[#666]">10:30 AM</div>
-									</div>
-								</div>
-
-								{/* Phone Bottom Input */}
-								<div className="bg-[#F0F0F0] p-2 border-t-2 border-black flex items-center gap-2">
-									<svg viewBox="0 0 24 24" className="w-4 h-4 text-gray-500 fill-none stroke-current stroke-2"><circle cx="12" cy="12" r="10" /><path strokeLinecap="round" d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" /></svg>
-									<div className="flex-1 bg-white border border-black px-2 py-1 rounded-full text-[10px] text-gray-400">
-										Message
-									</div>
-									<svg viewBox="0 0 24 24" className="w-4 h-4 text-gray-500 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><circle cx="12" cy="13" r="3" /></svg>
-									<div className="w-6 h-6 rounded-full bg-[#00D261] border border-black flex items-center justify-center text-black font-bold">
-										<svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
-									</div>
-								</div>
-							</div>
-
-							{/* Shopify Receipt Card (Overlay side card) */}
-							<div className="w-full sm:w-[220px] neo-box p-4 text-xs space-y-3 bg-white">
-								<div className="flex items-center justify-between border-b border-gray-200 pb-2">
-									<div className="flex items-center gap-1.5">
-										<Image src="/shopify-brand-assets/01-logo/svg/logo-color-white-bg.svg" width={78} height={22} alt="Shopify" className="h-5 w-auto" />
-									</div>
-								</div>
-
-								<div className="flex items-center justify-between">
-									<div>
-										<div className="font-extrabold text-black text-sm">Order #1027</div>
-										<div className="text-[10px] text-gray-500">May 12, 2024 at 10:30 AM</div>
-									</div>
-									<span className="neo-pill bg-[#FFC107] px-2 py-0.5 text-[9px] font-bold text-black">
-										• Paid
-									</span>
-								</div>
-
-								<div className="border-t border-gray-200 pt-2 space-y-2">
-									<div className="text-[10px] font-bold uppercase text-gray-600">Order summary</div>
-
-									<div className="flex items-center justify-between text-[11px]">
-										<div className="flex items-center gap-2">
-											<div className="w-8 h-8 bg-gray-100 border border-black rounded flex items-center justify-center">
-												<TShirtIcon className="w-4 h-4 text-black" />
-											</div>
-											<div>
-												<div className="font-bold">Essentials Tee</div>
-												<div className="text-[9px] text-gray-500">Black / M <span className="ml-2 font-bold text-black">x 1</span></div>
-											</div>
-										</div>
-										<div className="font-bold">$39.00</div>
-									</div>
-
-									<div className="flex items-center justify-between text-[11px]">
-										<div className="flex items-center gap-2">
-											<div className="w-8 h-8 bg-gray-100 border border-black rounded flex items-center justify-center">
-												<CapHatIcon className="w-4 h-4 text-black" />
-											</div>
-											<div>
-												<div className="font-bold">Logo Cap</div>
-												<div className="text-[9px] text-gray-500">Black <span className="ml-2 font-bold text-black">x 1</span></div>
-											</div>
-										</div>
-										<div className="font-bold">$50.00</div>
-									</div>
-								</div>
-
-								<div className="border-t border-gray-200 pt-2 space-y-1 text-[11px]">
-									<div className="flex justify-between text-gray-600">
-										<span>Subtotal</span>
-										<span className="font-bold text-black">$89.00</span>
-									</div>
-									<div className="flex justify-between text-gray-600">
-										<span>Shipping</span>
-										<span className="font-bold text-black">Free</span>
-									</div>
-									<div className="flex justify-between font-extrabold text-black text-sm pt-1 border-t border-gray-200">
-										<span>Total</span>
-										<span>$89.00</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			{/* Ticker Marquee Strip */}
-			<div className="mt-12 -mx-4 sm:-mx-6 bg-[#091E17] border-y-[2.5px] border-black py-4 overflow-hidden">
-				<div className="animate-marquee items-center gap-8 font-display font-extrabold text-sm sm:text-base uppercase tracking-widest text-white whitespace-nowrap">
-					<span>ORDER CONFIRMATION</span>
-					<span className="text-[#00D261] text-xl">∞</span>
-					<span>ABANDONED CHECKOUT</span>
-					<span className="text-[#00D261] text-xl">∞</span>
-					<span>FULFILLMENT UPDATES</span>
-					<span className="text-[#00D261] text-xl">∞</span>
-					<span>AUTO REPLIER</span>
-					<span className="text-[#00D261] text-xl">∞</span>
-					<span>ORDER CONFIRMATION</span>
-					<span className="text-[#00D261] text-xl">∞</span>
-					<span>ABANDONED CHECKOUT</span>
-					<span className="text-[#00D261] text-xl">∞</span>
-					<span>FULFILLMENT UPDATES</span>
-					<span className="text-[#00D261] text-xl">∞</span>
-					<span>AUTO REPLIER</span>
-					<span className="text-[#00D261] text-xl">∞</span>
-				</div>
-			</div>
-		</section>
-	);
-}
-
-// ─── Official API Section (Matching Image 2) ────────────────────────────────
+// ─── Official API Section ─────────────────────────────────────────────────────
 function OfficialApiSection() {
 	return (
 		<section id="products" className="bg-[#FAF7F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
@@ -516,10 +221,9 @@ function OfficialApiSection() {
 						</div>
 					</div>
 
-					{/* Right Visual Box (Diagram: Shopify -> Arrow -> WhatsApp) */}
+					{/* Right Visual Box */}
 					<div className="lg:col-span-6">
 						<div className="neo-box-teal p-6 sm:p-8 relative">
-							{/* Top Badge */}
 							<div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 neo-box bg-[#E8F8F0] px-4 py-1 font-extrabold text-xs uppercase text-[#2563EB] tracking-wider">
 								OFFICIAL CONNECTION
 							</div>
@@ -571,7 +275,7 @@ function OfficialApiSection() {
 					</div>
 				</div>
 
-				{/* Lower Dark Banner: BUILT FOR RELIABILITY */}
+				{/* Lower Dark Banner */}
 				<div className="bg-[#091E17] neo-box p-8 sm:p-12 text-white space-y-4">
 					<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
 						WHY OFFICIAL?
@@ -585,193 +289,7 @@ function OfficialApiSection() {
 	);
 }
 
-// ─── Features Section & Status Strip (Matching Image 4) ───────────────────────
-function FeaturesStatusSection() {
-	const [selectedStatus, setSelectedStatus] = useState<"pending" | "confirmed" | "cancelled">("confirmed");
-
-	return (
-		<section id="features" className="bg-[#E8F8F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
-			<div className="max-w-[1280px] mx-auto space-y-12">
-				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-					{/* Left Content */}
-					<div className="lg:col-span-6 space-y-6">
-						<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
-							FEATURE — ORDER CONFIRMATION
-						</div>
-
-						<div className="flex flex-wrap items-center gap-3">
-							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-[#2563EB]">
-								AUTOMATIC
-							</div>
-							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black flex items-center gap-1.5">
-								<Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={14} height={14} alt="Shopify" />
-								<span>SHOPIFY SYNC</span>
-							</div>
-						</div>
-
-						<h2 className="text-[38px] sm:text-[50px] lg:text-[56px] font-display font-black leading-[1.05] uppercase text-black tracking-tight">
-							KNOW WHICH ORDERS ARE{" "}
-							<span className="text-stroke-green">REAL.</span>
-						</h2>
-
-						<p className="text-[17px] text-[#222222] font-medium leading-relaxed max-w-md">
-							Ask customers to confirm or cancel on WhatsApp before your team starts fulfillment.
-						</p>
-
-						<div className="flex flex-wrap items-center gap-4 pt-2">
-							<a
-								href="#products"
-								className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
-							>
-								INSTALL WHATFLOW
-							</a>
-							<a
-								href="#faq"
-								className="neo-btn bg-white text-[#2563EB] font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
-							>
-								VIEW SETUP GUIDE
-							</a>
-						</div>
-					</div>
-
-					{/* Right Visual Box (One-tap response mockup) */}
-					<div className="lg:col-span-6">
-						<div className="neo-box-teal p-6 sm:p-8 relative">
-							{/* Top Attached Badge */}
-							<div className="absolute top-0 left-6 -translate-y-1/2 neo-pill bg-[#FFC107] px-4 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
-								ONE-TAP RESPONSE
-							</div>
-
-							<div className="bg-white border-2 border-black rounded-xl p-5 shadow-[4px_4px_0px_#000] space-y-4">
-								{/* Chat Header */}
-								<div className="flex items-center gap-3 border-b border-gray-200 pb-3">
-									<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg" width={28} height={28} alt="WhatsApp" />
-									<div className="flex-1">
-										<div className="font-extrabold text-black text-xs">Alex Johnson</div>
-										<div className="text-[10px] text-gray-500">10:30 AM</div>
-									</div>
-								</div>
-
-								{/* Prompt Box */}
-								<div className="bg-[#FAF7F0] border border-black p-3.5 rounded-lg text-xs font-medium text-black">
-									Hi Alex! Please confirm or cancel your order so we can prepare it.
-								</div>
-
-								{/* Order Item Box */}
-								<div className="bg-gray-50 border border-gray-300 p-3 rounded-lg flex items-center justify-between text-xs">
-									<div className="flex items-center gap-3">
-										<div className="w-10 h-10 bg-white border border-black rounded flex items-center justify-center">
-											<TShirtIcon className="w-5 h-5 text-black" />
-										</div>
-										<div>
-											<div className="font-bold text-black">Order #1027</div>
-											<div className="text-[10px] text-gray-500">Essentials Tee • Black / M • Qty: 1</div>
-										</div>
-									</div>
-									<div className="font-extrabold text-black">$39.00</div>
-								</div>
-
-								{/* Action Buttons */}
-								<div className="space-y-2 pt-1">
-									<button
-										onClick={() => setSelectedStatus("confirmed")}
-										className={`w-full py-2.5 px-4 rounded-lg font-extrabold text-xs border-2 border-black transition-all flex items-center justify-center gap-2 ${
-											selectedStatus === "confirmed"
-												? "bg-[#00D261] text-black shadow-[2px_2px_0px_#000]"
-												: "bg-white text-[#00D261] hover:bg-[#E8F8F0]"
-										}`}
-									>
-										<span>✓</span>
-										<span>CONFIRM ORDER</span>
-									</button>
-
-									<button
-										onClick={() => setSelectedStatus("cancelled")}
-										className={`w-full py-2.5 px-4 rounded-lg font-extrabold text-xs border-2 border-black transition-all flex items-center justify-center gap-2 ${
-											selectedStatus === "cancelled"
-												? "bg-[#FF4B4B] text-white shadow-[2px_2px_0px_#000]"
-												: "bg-white text-[#FF4B4B] hover:bg-[#FFEBEB]"
-										}`}
-									>
-										<span>✕</span>
-										<span>CANCEL ORDER</span>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				{/* Bottom Shopify Status Strip */}
-				<div className="space-y-6 pt-4">
-					<div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-						<div>
-							<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-2">
-								SHOPIFY STATUS
-							</div>
-							<h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-black">
-								ONE TAP. THREE CLEAR OUTCOMES.
-							</h3>
-						</div>
-					</div>
-
-					{/* 3 Status Pill Cards */}
-					<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-						<button
-							onClick={() => setSelectedStatus("pending")}
-							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-all ${
-								selectedStatus === "pending"
-									? "bg-[#FFC107] text-black shadow-[4px_4px_0px_#000] scale-[1.02]"
-									: "bg-[#FFF9E6] text-black hover:bg-[#FFC107]/20"
-							}`}
-						>
-							<span className="w-7 h-7 rounded-full bg-white border border-black flex items-center justify-center">
-								<ClockIcon className="w-4 h-4 text-black" />
-							</span>
-							<span className="font-extrabold text-xs uppercase tracking-wider">
-								CONFIRMATION PENDING
-							</span>
-						</button>
-
-						<button
-							onClick={() => setSelectedStatus("confirmed")}
-							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-all ${
-								selectedStatus === "confirmed"
-									? "bg-[#00D261] text-black shadow-[4px_4px_0px_#000] scale-[1.02]"
-									: "bg-[#E8F8F0] text-black hover:bg-[#00D261]/20"
-							}`}
-						>
-							<span className="w-7 h-7 rounded-full bg-white border border-black flex items-center justify-center font-bold text-sm text-[#00D261]">
-								✓
-							</span>
-							<span className="font-extrabold text-xs uppercase tracking-wider">
-								ORDER CONFIRMED
-							</span>
-						</button>
-
-						<button
-							onClick={() => setSelectedStatus("cancelled")}
-							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-all ${
-								selectedStatus === "cancelled"
-									? "bg-[#FF4B4B] text-white shadow-[4px_4px_0px_#000] scale-[1.02]"
-									: "bg-[#FFEBEB] text-[#FF4B4B] hover:bg-[#FF4B4B]/20"
-							}`}
-						>
-							<span className="w-7 h-7 rounded-full bg-white border border-black flex items-center justify-center font-bold text-sm text-[#FF4B4B]">
-								✕
-							</span>
-							<span className="font-extrabold text-xs uppercase tracking-wider">
-								ORDER CANCELLED
-							</span>
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
-}
-
-// ─── All Apps Grid Section ───────────────────────────────────────────────────
+// ─── All Apps Grid Section ────────────────────────────────────────────────────
 function AllAppsSection() {
 	return (
 		<section id="all-plans" className="bg-[#FAF7F0] py-16 sm:py-24 px-4 sm:px-6 border-b-[2.5px] border-black">
@@ -852,169 +370,6 @@ function AllAppsSection() {
 	);
 }
 
-// ─── Dual Row Scrolling Reviews Section (Payload CMS Dynamic) ─────────────────
-type ReviewItem = {
-	id: string | number;
-	author: string;
-	rating: number;
-	body: string;
-	faviconUrl?: string;
-	favicon?: { url?: string };
-};
-
-function ReviewCard({ review }: { review: ReviewItem }) {
-	const avatarUrl = review.favicon?.url || review.faviconUrl;
-	const initials = review.author
-		.split(" ")
-		.map((n) => n[0])
-		.join("")
-		.substring(0, 2)
-		.toUpperCase();
-
-	return (
-		<div className="w-[310px] sm:w-[360px] flex-shrink-0 neo-box bg-white p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:-translate-y-1 transition-transform">
-			<div className="space-y-3">
-				<div className="flex items-center gap-1 text-[#FFC107] text-sm tracking-widest font-black">
-					{"★".repeat(Math.min(5, Math.max(1, review.rating || 5)))}
-				</div>
-				<p className="text-xs sm:text-sm font-medium text-black leading-relaxed">
-					"{review.body}"
-				</p>
-			</div>
-
-			<div className="flex items-center gap-3 border-t border-gray-100 pt-3">
-				{avatarUrl ? (
-					<Image
-						src={avatarUrl}
-						alt={review.author}
-						width={36}
-						height={36}
-						className="w-9 h-9 rounded-xl neo-box object-contain bg-white p-1"
-					/>
-				) : (
-					<div className="w-9 h-9 rounded-xl font-extrabold text-xs flex items-center justify-center neo-box bg-[#00D261] text-black shadow-[1px_1px_0px_#000]">
-						{initials}
-					</div>
-				)}
-				<div>
-					<div className="font-extrabold text-xs text-black uppercase tracking-wider">
-						{review.author}
-					</div>
-					<div className="text-[10px] text-gray-500 font-bold uppercase">
-						Shopify Merchant
-					</div>
-				</div>
-			</div>
-		</div>
-	);
-}
-
-function ReviewsSection() {
-	const [reviews, setReviews] = useState<ReviewItem[]>([]);
-	const [loading, setLoading] = useState<boolean>(true);
-
-	useEffect(() => {
-		fetch("/api/reviews?limit=50&where[active][equals]=true")
-			.then((res) => res.json())
-			.then((data: any) => {
-				if (data && Array.isArray(data.docs)) {
-					const fiveStar = data.docs.filter((r: ReviewItem) => (r.rating || 5) >= 5);
-					setReviews(fiveStar);
-				}
-				setLoading(false);
-			})
-			.catch(() => {
-				setReviews([]);
-				setLoading(false);
-			});
-	}, []);
-
-	// Hide section completely if loading or if no 5-star reviews are available in CMS
-	if (loading || reviews.length === 0) {
-		return null;
-	}
-
-	const half = Math.ceil(reviews.length / 2);
-	const row1 = reviews.slice(0, half);
-	const row2 = reviews.slice(half).length > 0 ? reviews.slice(half) : row1;
-
-	return (
-		<section className="bg-[#FAF7F0] py-16 sm:py-20 border-b-[2.5px] border-black overflow-hidden">
-			<div className="max-w-[1280px] mx-auto px-4 sm:px-6 mb-12 text-center space-y-4">
-				<div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
-					MERCHANT REVIEWS
-				</div>
-				<h2 className="text-[36px] sm:text-[48px] font-display font-black uppercase text-black tracking-tight">
-					LOVED BY SHOPIFY STORES.
-				</h2>
-				<div className="flex items-center justify-center gap-2 text-xs font-extrabold uppercase text-black">
-					<span className="text-[#FFC107] text-base">★★★★★</span>
-					<span>5.0 RATING ON SHOPIFY APP STORE</span>
-				</div>
-			</div>
-
-			{/* Row 1: Forward Marquee */}
-			<div className="mb-6 overflow-hidden py-2">
-				<div className="animate-marquee-slow flex gap-6">
-					{[...row1, ...row1, ...row1].map((review, i) => (
-						<ReviewCard key={`r1-${review.id}-${i}`} review={review} />
-					))}
-				</div>
-			</div>
-
-			{/* Row 2: Reverse Marquee */}
-			<div className="overflow-hidden py-2">
-				<div className="animate-marquee-reverse flex gap-6">
-					{[...row2, ...row2, ...row2].map((review, i) => (
-						<ReviewCard key={`r2-${review.id}-${i}`} review={review} />
-					))}
-				</div>
-			</div>
-		</section>
-	);
-}
-
-// ─── FAQ Accordion Section ────────────────────────────────────────────────────
-function FAQSection() {
-	const [openIdx, setOpenIdx] = useState<number | null>(0);
-
-	return (
-		<section id="faq" className="bg-[#FAF7F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
-			<div className="max-w-3xl mx-auto space-y-10">
-				<div className="text-center space-y-3">
-					<div className="neo-box inline-block bg-[#00D261] px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-						FREQUENTLY ASKED
-					</div>
-					<h2 className="text-[34px] sm:text-[44px] font-display font-black uppercase text-black tracking-tight">
-						GOT QUESTIONS? WE HAVE ANSWERS.
-					</h2>
-				</div>
-
-				<div className="space-y-4">
-					{FAQS.map((faq, idx) => (
-						<div key={idx} className="neo-box bg-white overflow-hidden">
-							<button
-								onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
-								className="w-full p-5 text-left font-extrabold text-sm sm:text-base text-black flex items-center justify-between gap-4 hover:bg-[#FAF7F0]"
-							>
-								<span>{faq.q}</span>
-								<span className="w-7 h-7 rounded-full bg-[#FAF7F0] border border-black flex items-center justify-center text-lg font-black">
-									{openIdx === idx ? "−" : "+"}
-								</span>
-							</button>
-							{openIdx === idx && (
-								<div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-gray-700 font-medium leading-relaxed border-t border-gray-200">
-									{faq.a}
-								</div>
-							)}
-						</div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
-}
-
 // ─── CTA Banner ───────────────────────────────────────────────────────────────
 function CTABanner() {
 	return (
@@ -1042,11 +397,192 @@ function CTABanner() {
 	);
 }
 
+// ─── Blog Preview Section (server-rendered) ───────────────────────────────────
+function BlogPreviewCard({ post }: { post: Post }) {
+	const colorClass = CATEGORY_COLORS[post.category] ?? "bg-gray-100 text-gray-700";
+	const categoryLabel = CATEGORY_LABELS[post.category] ?? post.category;
+
+	return (
+		<Link
+			href={`/blog/${post.slug}`}
+			className="neo-box bg-white flex flex-col overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
+		>
+			<div className="relative w-full h-44 bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
+				{post.coverImage?.url ? (
+					<Image
+						src={post.coverImage.url}
+						alt={post.coverImage.alt || post.title}
+						fill
+						className="object-cover group-hover:scale-105 transition-transform duration-300"
+					/>
+				) : (
+					<div className="w-full h-full flex items-center justify-center">
+						<span className="text-4xl">✍️</span>
+					</div>
+				)}
+			</div>
+			<div className="p-5 flex flex-col flex-1 gap-2.5">
+				<div className="flex items-center justify-between gap-2">
+					<span className={`neo-pill px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider border-black ${colorClass}`}>
+						{categoryLabel}
+					</span>
+					<span className="text-[10px] font-bold text-gray-400 uppercase">{formatDate(post.publishedAt)}</span>
+				</div>
+				<h3 className="font-display font-black text-black text-base uppercase leading-tight group-hover:text-[#0A6B56] transition-colors">
+					{post.title}
+				</h3>
+				<p className="text-xs text-gray-500 font-medium leading-relaxed flex-1 line-clamp-2">{post.excerpt}</p>
+				<span className="text-[10px] font-extrabold uppercase tracking-wider text-[#2563EB] group-hover:text-[#00D261] transition-colors mt-auto">
+					READ MORE →
+				</span>
+			</div>
+		</Link>
+	);
+}
+
+function CaseStudyPreviewCard({ study }: { study: CaseStudy }) {
+	const primaryMetric = study.metrics?.[0];
+	return (
+		<Link
+			href={`/case-studies/${study.slug}`}
+			className="neo-box-teal flex flex-col overflow-hidden group hover:-translate-y-1 transition-transform duration-200 relative"
+		>
+			{primaryMetric && (
+				<div className="absolute top-4 right-4 neo-box bg-[#00D261] px-3 py-2 text-center z-10">
+					<div className="font-display font-black text-2xl text-black leading-none">{primaryMetric.value}</div>
+					<div className="text-[9px] font-extrabold uppercase tracking-wider text-black/70">{primaryMetric.label}</div>
+				</div>
+			)}
+			<div className="relative h-52 bg-[#0A6B56]/50 overflow-hidden">
+				{study.coverImage?.url ? (
+					<Image
+						src={study.coverImage.url}
+						alt={study.coverImage.alt || study.title}
+						fill
+						className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-300"
+					/>
+				) : (
+					<div className="w-full h-full flex items-center justify-center text-5xl">📈</div>
+				)}
+			</div>
+			<div className="p-6 space-y-2">
+				<div className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">{study.storeName}</div>
+				<h3 className="font-display font-black text-white text-lg uppercase leading-tight group-hover:text-[#00D261] transition-colors">
+					{study.title}
+				</h3>
+				<p className="text-xs text-[#A7F3D0] font-medium leading-relaxed line-clamp-2">{study.excerpt}</p>
+				<span className="text-[10px] font-extrabold uppercase tracking-wider text-[#00D261] group-hover:text-white transition-colors inline-block pt-1">
+					READ CASE STUDY →
+				</span>
+			</div>
+		</Link>
+	);
+}
+
+async function BlogAndCaseStudiesSection() {
+	// Fetch in parallel; gracefully degrade on error
+	const [postsResult, studiesResult] = await Promise.allSettled([
+		getPosts({ limit: 3, featured: false }),
+		getCaseStudies({ limit: 1, featured: true }),
+	]);
+
+	const posts = postsResult.status === "fulfilled" ? postsResult.value.docs : [];
+	const featuredStudy = studiesResult.status === "fulfilled" ? studiesResult.value.docs[0] ?? null : null;
+
+	// If no content at all, don't render the section
+	if (posts.length === 0 && !featuredStudy) return null;
+
+	return (
+		<section id="blog-preview" className="bg-[#FAF7F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
+			<div className="max-w-[1280px] mx-auto space-y-14">
+				{/* Blog Posts */}
+				{posts.length > 0 && (
+					<div className="space-y-8">
+						<div className="flex items-center justify-between gap-4">
+							<div>
+								<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-2">
+									FROM THE BLOG
+								</div>
+								<h2 className="text-[28px] sm:text-[38px] font-display font-black uppercase text-black tracking-tight">
+									LATEST ARTICLES
+								</h2>
+							</div>
+							<Link
+								href="/blog"
+								className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg hidden sm:inline-flex items-center gap-1 whitespace-nowrap"
+							>
+								VIEW ALL →
+							</Link>
+						</div>
+
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+							{posts.map((post) => (
+								<BlogPreviewCard key={post.id} post={post} />
+							))}
+						</div>
+
+						<div className="sm:hidden">
+							<Link href="/blog" className="neo-btn w-full text-center bg-white text-black font-extrabold text-xs uppercase tracking-wider py-3 rounded-lg block">
+								VIEW ALL POSTS →
+							</Link>
+						</div>
+					</div>
+				)}
+
+				{/* Featured Case Study */}
+				{featuredStudy && (
+					<div className="space-y-8">
+						<div className="flex items-center justify-between gap-4">
+							<div>
+								<div className="neo-box inline-block bg-[#091E17] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#00D261] mb-2">
+									SUCCESS STORY
+								</div>
+								<h2 className="text-[28px] sm:text-[38px] font-display font-black uppercase text-black tracking-tight">
+									REAL RESULTS
+								</h2>
+							</div>
+							<Link
+								href="/case-studies"
+								className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg hidden sm:inline-flex items-center gap-1 whitespace-nowrap"
+							>
+								ALL STORIES →
+							</Link>
+						</div>
+
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+							<CaseStudyPreviewCard study={featuredStudy} />
+							<div className="space-y-4">
+								{featuredStudy.metrics && featuredStudy.metrics.length > 0 && (
+									<div className="grid grid-cols-2 gap-4">
+										{featuredStudy.metrics.slice(0, 4).map((m) => (
+											<div key={m.label} className="neo-box bg-white p-4 text-center">
+												<div className="font-display font-black text-2xl text-black">{m.value}</div>
+												<div className="text-[10px] font-bold uppercase tracking-wider text-gray-500 mt-1">{m.label}</div>
+												{m.description && <div className="text-[9px] text-gray-400 font-bold">{m.description}</div>}
+											</div>
+										))}
+									</div>
+								)}
+								<Link
+									href="/case-studies"
+									className="neo-btn bg-[#091E17] text-[#00D261] font-extrabold text-xs uppercase tracking-wider py-3.5 rounded-lg block text-center"
+								>
+									VIEW ALL CASE STUDIES →
+								</Link>
+							</div>
+						</div>
+					</div>
+				)}
+			</div>
+		</section>
+	);
+}
+
 // ─── Footer Component ─────────────────────────────────────────────────────────
 function Footer() {
 	return (
 		<footer className="bg-[#091E17] text-white py-12 px-4 sm:px-6">
-			<div className="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 pb-10 border-b border-white/20">
+			<div className="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 pb-10 border-b border-white/20">
 				<div className="col-span-2 md:col-span-1 space-y-3">
 					<WhatFlowLogo lightMode={false} />
 					<p className="text-xs text-gray-400 font-medium">
@@ -1073,6 +609,14 @@ function Footer() {
 				</div>
 
 				<div className="space-y-3">
+					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">RESOURCES</h4>
+					<ul className="space-y-2 text-xs font-semibold text-gray-300">
+						<li><Link href="/blog" className="hover:text-[#00D261]">Blog</Link></li>
+						<li><Link href="/case-studies" className="hover:text-[#00D261]">Case Studies</Link></li>
+					</ul>
+				</div>
+
+				<div className="space-y-3">
 					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">SUPPORT</h4>
 					<ul className="space-y-2 text-xs font-semibold text-gray-300">
 						<li><a href="#faq" className="hover:text-[#00D261]">FAQ & Help</a></li>
@@ -1089,10 +633,8 @@ function Footer() {
 	);
 }
 
-// ─── Main Page Export ─────────────────────────────────────────────────────────
-export default function HomePage() {
-	useReveal();
-
+// ─── Main Page Export (Server Component) ─────────────────────────────────────
+export default async function HomePage() {
 	return (
 		<div className="min-h-screen bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
 			<Navbar />
@@ -1101,6 +643,7 @@ export default function HomePage() {
 			<FeaturesStatusSection />
 			<AllAppsSection />
 			<ReviewsSection />
+			<BlogAndCaseStudiesSection />
 			<FAQSection />
 			<CTABanner />
 			<Footer />
