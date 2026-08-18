@@ -2,8 +2,19 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getPost, getRelatedPosts, formatDate, CATEGORY_LABELS, CATEGORY_COLORS } from "@/lib/payload-api";
+import {
+  getPost,
+  getRelatedPosts,
+  formatDate,
+  calculateReadingTime,
+  CATEGORY_LABELS,
+  CATEGORY_COLORS,
+} from "@/lib/payload-api";
 import { RichText } from "@/lib/RichText";
+import { ReadingProgressBar } from "@/components/ReadingProgressBar";
+import { SocialShare } from "@/components/SocialShare";
+import { TableOfContents } from "@/components/TableOfContents";
+import { NewsletterBox } from "@/components/NewsletterBox";
 
 interface PostPageProps {
   params: Promise<{ slug: string }>;
@@ -25,7 +36,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
       description,
       type: "article",
       publishedTime: post.publishedAt ?? undefined,
-      images: post.coverImage?.url ? [{ url: post.coverImage.url, alt: post.coverImage.alt }] : [],
+      authors: [post.author || "WhatFlow Team"],
     },
     twitter: {
       card: "summary_large_image",
@@ -43,9 +54,80 @@ export default async function BlogPostPage({ params }: PostPageProps) {
   const relatedPosts = await getRelatedPosts(post.category, post.slug, 3).catch(() => []);
   const categoryLabel = CATEGORY_LABELS[post.category] ?? post.category;
   const categoryColor = CATEGORY_COLORS[post.category] ?? "bg-gray-100 text-gray-700";
+  const readingTime = calculateReadingTime(post.content, post.excerpt);
+
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
+
+  const postUrl = `${siteUrl}/blog/${post.slug}`;
+
+  // JSON-LD structured data for Google Rich Snippets
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.publishedAt || new Date().toISOString(),
+    author: {
+      "@type": "Person",
+      name: post.author || "WhatFlow Team",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "WhatFlow",
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/logo.svg`,
+      },
+    },
+    image: post.coverImage?.url ? [post.coverImage.url] : undefined,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": postUrl,
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `${siteUrl}/blog`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: postUrl,
+      },
+    ],
+  };
 
   return (
-    <div className="min-h-screen bg-[#FAF7F0]">
+    <div className="min-h-screen bg-[#FAF7F0] relative">
+      <ReadingProgressBar />
+
+      {/* JSON-LD Schemas */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       {/* ─── Cover Image Banner ─── */}
       <div className="relative w-full h-[340px] sm:h-[440px] bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
         {post.coverImage?.url ? (
@@ -61,23 +143,33 @@ export default async function BlogPostPage({ params }: PostPageProps) {
             <span className="text-8xl">✍️</span>
           </div>
         )}
-        {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#091E17]/60 via-transparent to-transparent" />
       </div>
 
       {/* ─── Article Header ─── */}
       <section className="px-4 sm:px-6 py-10 border-b-[2.5px] border-black bg-[#FAF7F0]">
-        <div className="max-w-[800px] mx-auto">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500 mb-6">
-            <Link href="/" className="hover:text-[#00D261] transition-colors">Home</Link>
-            <span>›</span>
-            <Link href="/blog" className="hover:text-[#00D261] transition-colors">Blog</Link>
-            <span>›</span>
-            <span className="text-black">{post.title}</span>
+        <div className="max-w-[1080px] mx-auto">
+          {/* Breadcrumb + RSS link */}
+          <div className="flex items-center justify-between gap-4 flex-wrap mb-6">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500 flex-wrap">
+              <Link href="/" className="hover:text-[#00D261] transition-colors">Home</Link>
+              <span>›</span>
+              <Link href="/blog" className="hover:text-[#00D261] transition-colors">Blog</Link>
+              <span>›</span>
+              <span className="text-black truncate max-w-xs sm:max-w-md">{post.title}</span>
+            </div>
+            <a
+              href="/blog/rss.xml"
+              target="_blank"
+              className="neo-pill bg-[#FFF3CD] text-[#856404] px-2.5 py-0.5 text-[10px] font-black uppercase flex items-center gap-1 hover:bg-[#FFE8A1]"
+              title="Subscribe via RSS"
+            >
+              <span>📡</span>
+              <span>RSS FEED</span>
+            </a>
           </div>
 
-          {/* Category + Date row */}
+          {/* Category + Date + Reading time row */}
           <div className="flex items-center gap-3 flex-wrap mb-5">
             <span className={`neo-pill px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider border-black ${categoryColor}`}>
               {categoryLabel}
@@ -87,6 +179,10 @@ export default async function BlogPostPage({ params }: PostPageProps) {
                 {formatDate(post.publishedAt)}
               </span>
             )}
+            <span className="text-gray-300">•</span>
+            <span className="neo-pill bg-white px-2.5 py-0.5 text-[10px] font-bold text-gray-700">
+              ⏱ {readingTime} min read
+            </span>
           </div>
 
           {/* Title */}
@@ -94,46 +190,83 @@ export default async function BlogPostPage({ params }: PostPageProps) {
             {post.title}
           </h1>
 
-          {/* Author bar */}
-          <div className="flex items-center gap-3 py-4 border-t border-b border-gray-200">
-            <div className="w-10 h-10 rounded-xl bg-[#00D261] border-2 border-black flex items-center justify-center font-extrabold text-sm text-black shadow-[2px_2px_0px_#000]">
-              {post.author.charAt(0).toUpperCase()}
+          {/* Author bar & Top Social Share */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 py-4 border-t border-b border-gray-200">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-[#00D261] border-2 border-black flex items-center justify-center font-extrabold text-sm text-black shadow-[2px_2px_0px_#000]">
+                {post.author.charAt(0).toUpperCase()}
+              </div>
+              <div>
+                <div className="font-extrabold text-sm text-black">{post.author}</div>
+                {post.authorRole && (
+                  <div className="text-[11px] text-gray-500 font-bold uppercase tracking-wide">{post.authorRole}</div>
+                )}
+              </div>
             </div>
-            <div>
-              <div className="font-extrabold text-sm text-black">{post.author}</div>
-              {post.authorRole && (
-                <div className="text-[11px] text-gray-500 font-bold uppercase tracking-wide">{post.authorRole}</div>
-              )}
-            </div>
+
+            <SocialShare title={post.title} url={postUrl} />
           </div>
         </div>
       </section>
 
-      {/* ─── Article Content ─── */}
+      {/* ─── Main Content Area with TOC Sidebar ─── */}
       <section className="px-4 sm:px-6 py-12">
-        <div className="max-w-[800px] mx-auto">
-          <RichText content={post.content} />
-        </div>
-      </section>
+        <div className="max-w-[1080px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
+          {/* Main Article Body */}
+          <div className="lg:col-span-8 space-y-8">
+            <RichText content={post.content} />
 
-      {/* ─── Tags ─── */}
-      {post.tags && post.tags.length > 0 && (
-        <section className="px-4 sm:px-6 pb-10">
-          <div className="max-w-[800px] mx-auto">
-            <div className="flex items-center gap-2 flex-wrap border-t-[2.5px] border-black pt-6">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-gray-500 mr-1">Tags:</span>
-              {post.tags.map(({ tag }) => (
-                <span
-                  key={tag}
-                  className="neo-pill bg-white px-3 py-1 text-[11px] font-bold text-black"
-                >
-                  {tag}
-                </span>
-              ))}
+            {/* Newsletter CTA Box */}
+            <NewsletterBox />
+
+            {/* Bottom Social Share */}
+            <div className="neo-box bg-white p-5 rounded-xl border-[2.5px] border-black flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="font-display font-black text-sm uppercase text-black">
+                Found this helpful? Spread the word:
+              </div>
+              <SocialShare title={post.title} url={postUrl} />
+            </div>
+
+            {/* Tags */}
+            {post.tags && post.tags.length > 0 && (
+              <div className="pt-4 border-t border-gray-200 flex items-center gap-2 flex-wrap">
+                <span className="text-xs font-extrabold uppercase tracking-wider text-gray-500 mr-1">Tags:</span>
+                {post.tags.map(({ tag }) => (
+                  <span
+                    key={tag}
+                    className="neo-pill bg-white px-3 py-1 text-[11px] font-bold text-black"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Sidebar (TOC & Fast App CTA) */}
+          <div className="hidden lg:block lg:col-span-4 space-y-6">
+            <TableOfContents />
+
+            <div className="neo-box-teal p-6 text-white space-y-4 rounded-xl">
+              <div className="neo-pill inline-block bg-[#00D261] px-2.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-black">
+                SHOPIFY APPS
+              </div>
+              <h4 className="font-display font-black text-lg uppercase leading-tight">
+                AUTOMATE YOUR STORE WITH WHATSAPP.
+              </h4>
+              <p className="text-xs text-[#D5F5E3] font-medium leading-relaxed">
+                Cart recovery, order alerts, AI support, and official Meta API badges.
+              </p>
+              <Link
+                href="/#products"
+                className="neo-btn bg-[#00D261] text-black font-black text-xs uppercase tracking-wider py-2.5 rounded-lg block text-center"
+              >
+                EXPLORE APPS ➔
+              </Link>
             </div>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* ─── Related Posts ─── */}
       {relatedPosts.length > 0 && (
@@ -191,7 +324,7 @@ export default async function BlogPostPage({ params }: PostPageProps) {
         </section>
       )}
 
-      {/* ─── CTA ─── */}
+      {/* ─── Bottom CTA ─── */}
       <section className="bg-[#091E17] border-t-[2.5px] border-black py-14 px-4 sm:px-6 text-center">
         <div className="max-w-2xl mx-auto space-y-4">
           <h2 className="text-[28px] sm:text-[38px] font-display font-black uppercase text-white tracking-tight">

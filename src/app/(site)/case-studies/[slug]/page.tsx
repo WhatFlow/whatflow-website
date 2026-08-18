@@ -2,8 +2,19 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getCaseStudy, getCaseStudies, formatDate, INDUSTRY_LABELS, APP_LABELS } from "@/lib/payload-api";
+import {
+  getCaseStudy,
+  getCaseStudies,
+  formatDate,
+  calculateReadingTime,
+  INDUSTRY_LABELS,
+  APP_LABELS,
+} from "@/lib/payload-api";
 import { RichText } from "@/lib/RichText";
+import { ReadingProgressBar } from "@/components/ReadingProgressBar";
+import { SocialShare } from "@/components/SocialShare";
+import { NewsletterBox } from "@/components/NewsletterBox";
+import { TableOfContents } from "@/components/TableOfContents";
 
 const APP_COLORS: Record<string, string> = {
   chat: "bg-[#FFF3CD] text-[#856404]",
@@ -31,7 +42,6 @@ export async function generateMetadata({ params }: CaseStudyPageProps): Promise<
       description,
       type: "article",
       publishedTime: study.publishedAt ?? undefined,
-      images: study.coverImage?.url ? [{ url: study.coverImage.url, alt: study.coverImage.alt }] : [],
     },
     twitter: {
       card: "summary_large_image",
@@ -52,9 +62,76 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
     .catch(() => []);
 
   const industryLabel = INDUSTRY_LABELS[study.industry] ?? study.industry;
+  const readingTime = calculateReadingTime(study.content, study.excerpt);
+
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
+
+  const studyUrl = `${siteUrl}/case-studies/${study.slug}`;
+
+  // JSON-LD structured data
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: study.title,
+    description: study.excerpt,
+    datePublished: study.publishedAt || new Date().toISOString(),
+    publisher: {
+      "@type": "Organization",
+      name: "WhatFlow",
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/logo.svg`,
+      },
+    },
+    image: study.coverImage?.url ? [study.coverImage.url] : undefined,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": studyUrl,
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Case Studies",
+        item: `${siteUrl}/case-studies`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: study.storeName,
+        item: studyUrl,
+      },
+    ],
+  };
 
   return (
-    <div className="min-h-screen bg-[#FAF7F0]">
+    <div className="min-h-screen bg-[#FAF7F0] relative">
+      <ReadingProgressBar />
+
+      {/* JSON-LD Schemas */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       {/* ─── Cover Banner ─── */}
       <div className="relative w-full h-[300px] sm:h-[420px] bg-[#091E17] border-b-[2.5px] border-black overflow-hidden">
         {study.coverImage?.url ? (
@@ -96,7 +173,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
 
       {/* ─── Header ─── */}
       <section className="px-4 sm:px-6 py-10 border-b-[2.5px] border-black bg-[#FAF7F0]">
-        <div className="max-w-[900px] mx-auto">
+        <div className="max-w-[1080px] mx-auto">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500 mb-6">
             <Link href="/" className="hover:text-[#00D261] transition-colors">Home</Link>
@@ -106,25 +183,35 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
             <span className="text-black">{study.storeName}</span>
           </div>
 
-          <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black mb-4">
-            CASE STUDY
+          <div className="flex items-center gap-3 flex-wrap mb-4">
+            <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
+              CASE STUDY
+            </div>
+            <span className="neo-pill bg-white px-2.5 py-0.5 text-[10px] font-bold text-gray-700">
+              ⏱ {readingTime} min read
+            </span>
           </div>
+
           <h1 className="text-[30px] sm:text-[44px] lg:text-[54px] font-display font-black uppercase text-black tracking-tight leading-tight mb-6">
             {study.title}
           </h1>
 
-          {/* Meta row */}
-          <div className="flex items-center gap-4 flex-wrap text-xs font-bold text-gray-500 uppercase tracking-wider pb-6 border-b-[2.5px] border-black">
-            {study.publishedAt && <span>{formatDate(study.publishedAt)}</span>}
-            <span className="w-1 h-1 rounded-full bg-gray-400" />
-            {study.appsUsed?.map((app) => (
-              <span
-                key={app}
-                className={`neo-pill px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider border-black ${APP_COLORS[app] ?? "bg-gray-100"}`}
-              >
-                {APP_LABELS[app] ?? app}
-              </span>
-            ))}
+          {/* Meta row + Social Share */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b-[2.5px] border-black">
+            <div className="flex items-center gap-4 flex-wrap text-xs font-bold text-gray-500 uppercase tracking-wider">
+              {study.publishedAt && <span>{formatDate(study.publishedAt)}</span>}
+              <span className="w-1 h-1 rounded-full bg-gray-400" />
+              {study.appsUsed?.map((app) => (
+                <span
+                  key={app}
+                  className={`neo-pill px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider border-black ${APP_COLORS[app] ?? "bg-gray-100"}`}
+                >
+                  {APP_LABELS[app] ?? app}
+                </span>
+              ))}
+            </div>
+
+            <SocialShare title={study.title} url={studyUrl} />
           </div>
         </div>
       </section>
@@ -132,11 +219,11 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       {/* ─── Metrics Strip ─── */}
       {study.metrics && study.metrics.length > 0 && (
         <section className="bg-[#091E17] border-b-[2.5px] border-black px-4 sm:px-6 py-8">
-          <div className="max-w-[900px] mx-auto">
+          <div className="max-w-[1080px] mx-auto">
             <div className={`grid gap-6 ${
-              study.metrics.length === 1 ? "grid-cols-1 max-w-xs" :
-              study.metrics.length === 2 ? "grid-cols-2" :
-              study.metrics.length === 3 ? "grid-cols-3" :
+              study.metrics.length === 1 ? "grid-cols-1 max-w-xs mx-auto" :
+              study.metrics.length === 2 ? "grid-cols-1 sm:grid-cols-2" :
+              study.metrics.length === 3 ? "grid-cols-1 sm:grid-cols-3" :
               "grid-cols-2 sm:grid-cols-4"
             }`}>
               {study.metrics.map((metric) => (
@@ -160,10 +247,43 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
         </section>
       )}
 
-      {/* ─── Content ─── */}
+      {/* ─── Content Grid with Sidebar ─── */}
       <section className="px-4 sm:px-6 py-12">
-        <div className="max-w-[900px] mx-auto">
-          <RichText content={study.content} />
+        <div className="max-w-[1080px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-8 space-y-8">
+            <RichText content={study.content} />
+
+            <NewsletterBox />
+
+            <div className="neo-box bg-white p-5 rounded-xl border-[2.5px] border-black flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="font-display font-black text-sm uppercase text-black">
+                Share this merchant story:
+              </div>
+              <SocialShare title={study.title} url={studyUrl} />
+            </div>
+          </div>
+
+          <div className="hidden lg:block lg:col-span-4 space-y-6">
+            <TableOfContents />
+
+            <div className="neo-box bg-[#00D261] p-6 text-black space-y-4 rounded-xl">
+              <div className="neo-pill inline-block bg-black px-2.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-[#00D261]">
+                GET SIMILAR RESULTS
+              </div>
+              <h4 className="font-display font-black text-xl uppercase leading-tight">
+                LAUNCH IN UNDER 5 MINUTES.
+              </h4>
+              <p className="text-xs text-black/80 font-medium leading-relaxed">
+                Connect WhatFlow to your Shopify store and start recovering abandoned carts on WhatsApp today.
+              </p>
+              <Link
+                href="/#products"
+                className="neo-btn bg-black text-[#00D261] font-black text-xs uppercase tracking-wider py-2.5 rounded-lg block text-center"
+              >
+                INSTALL WHATFLOW ➔
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

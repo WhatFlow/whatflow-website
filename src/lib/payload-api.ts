@@ -237,3 +237,26 @@ export const CATEGORY_COLORS: Record<string, string> = {
   whatsapp: "bg-[#E8F8F0] text-[#0A6B56]",
   shopify: "bg-[#E8F0FF] text-[#2563EB]",
 };
+
+// ─── Reading Time & Text Extraction ──────────────────────────────────────────
+
+export function extractTextFromLexical(node: any): string {
+  if (!node) return "";
+  if (typeof node === "string") return node;
+  if (typeof node === "object") {
+    if ("text" in node && typeof node.text === "string") return node.text;
+    if ("root" in node) return extractTextFromLexical(node.root);
+    if (Array.isArray(node.children)) {
+      return node.children.map(extractTextFromLexical).join(" ");
+    }
+  }
+  return "";
+}
+
+export function calculateReadingTime(content: unknown, excerpt?: string): number {
+  const text = (extractTextFromLexical(content) + " " + (excerpt || "")).trim();
+  const words = text.split(/\s+/).filter(Boolean).length;
+  const wordsPerMinute = 200;
+  return Math.max(1, Math.ceil(words / wordsPerMinute));
+}
+

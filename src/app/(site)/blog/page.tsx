@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { getPosts, formatDate, CATEGORY_LABELS, CATEGORY_COLORS, type Post } from "@/lib/payload-api";
+import {
+  getPosts,
+  formatDate,
+  calculateReadingTime,
+  CATEGORY_LABELS,
+  CATEGORY_COLORS,
+  type Post,
+} from "@/lib/payload-api";
 
 export const metadata: Metadata = {
   title: "Blog — WhatFlow",
@@ -28,6 +35,7 @@ const CATEGORIES = [
 function PostCard({ post }: { post: Post }) {
   const colorClass = CATEGORY_COLORS[post.category] ?? "bg-gray-100 text-gray-700";
   const categoryLabel = CATEGORY_LABELS[post.category] ?? post.category;
+  const readingTime = calculateReadingTime(post.content, post.excerpt);
 
   return (
     <Link
@@ -53,6 +61,9 @@ function PostCard({ post }: { post: Post }) {
             Featured
           </div>
         )}
+        <div className="absolute bottom-3 right-3 neo-pill bg-white text-black text-[9px] font-extrabold uppercase px-2 py-0.5 border border-black shadow-[1px_1px_0px_#000]">
+          ⏱ {readingTime} min read
+        </div>
       </div>
 
       {/* Card Body */}
@@ -134,17 +145,29 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     <div className="min-h-screen bg-[#FAF7F0]">
       {/* ─── Hero ─── */}
       <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
-        <div className="max-w-[1280px] mx-auto">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black mb-4">
-            WHATFLOW BLOG
+        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black mb-4">
+              WHATFLOW BLOG
+            </div>
+            <h1 className="text-[48px] sm:text-[64px] lg:text-[80px] font-display font-black uppercase text-black tracking-tight leading-none mb-4">
+              TIPS, GUIDES &amp;{" "}
+              <span className="text-stroke-green">UPDATES.</span>
+            </h1>
+            <p className="text-[17px] text-[#222] font-medium max-w-xl">
+              Everything you need to know about WhatsApp marketing for your Shopify store.
+            </p>
           </div>
-          <h1 className="text-[48px] sm:text-[64px] lg:text-[80px] font-display font-black uppercase text-black tracking-tight leading-none mb-4">
-            TIPS, GUIDES &amp;{" "}
-            <span className="text-stroke-green">UPDATES.</span>
-          </h1>
-          <p className="text-[17px] text-[#222] font-medium max-w-xl">
-            Everything you need to know about WhatsApp marketing for your Shopify store.
-          </p>
+
+          <a
+            href="/blog/rss.xml"
+            target="_blank"
+            className="neo-btn bg-[#FFF3CD] text-[#856404] px-4 py-2.5 rounded-lg text-xs font-black uppercase tracking-wider flex items-center gap-2 self-start md:self-auto hover:bg-[#FFE8A1]"
+            title="Subscribe to RSS Feed"
+          >
+            <span className="text-base">📡</span>
+            <span>RSS FEED</span>
+          </a>
         </div>
       </section>
 
