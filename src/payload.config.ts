@@ -29,6 +29,8 @@ import { Reviews } from "./collections/Reviews";
 import { CountryRates } from "./collections/CountryRates";
 import { Posts } from "./collections/Posts";
 import { CaseStudies } from "./collections/CaseStudies";
+import { Integrations } from "./collections/Integrations";
+import { Changelog } from "./collections/Changelog";
 import { allEditorBlocks } from "./collections/blocks";
 
 const filename = fileURLToPath(import.meta.url);
@@ -52,14 +54,25 @@ export default (async () => {
         baseDir: path.resolve(dirname),
       },
     },
-    collections: [Users, Media, Reviews, CountryRates, Posts, CaseStudies],
+    collections: [
+      Users,
+      Media,
+      Reviews,
+      CountryRates,
+      Posts,
+      CaseStudies,
+      Integrations,
+      Changelog,
+    ],
     editor: lexicalEditor({
       features: ({ defaultFeatures }) => [
         ...defaultFeatures,
         FixedToolbarFeature(),
         InlineToolbarFeature(),
         HeadingFeature({ enabledHeadingSizes: ["h1", "h2", "h3", "h4", "h5", "h6"] }),
-        LinkFeature({ enabledCollections: ["posts", "case-studies"] }),
+        LinkFeature({
+          enabledCollections: ["posts", "case-studies", "integrations", "changelog"],
+        }),
         ChecklistFeature(),
         HorizontalRuleFeature(),
         BlockquoteFeature(),

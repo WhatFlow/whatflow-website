@@ -260,3 +260,149 @@ export function calculateReadingTime(content: unknown, excerpt?: string): number
   return Math.max(1, Math.ceil(words / wordsPerMinute));
 }
 
+// ─── Reviews API ────────────────────────────────────────────────────────────
+
+export type Review = {
+  id: string;
+  storeName: string;
+  merchantName?: string;
+  quote: string;
+  rating: number;
+  highlight?: string;
+  app?: "chat" | "business-api" | "ai" | "general";
+  featured?: boolean;
+};
+
+export async function getReviews(
+  options: { limit?: number; page?: number } = {}
+): Promise<CollectionResponse<Review>> {
+  const params = new URLSearchParams();
+  params.set("depth", "1");
+  if (options.limit) params.set("limit", String(options.limit));
+  if (options.page) params.set("page", String(options.page));
+
+  return payloadFetch<CollectionResponse<Review>>(`/api/reviews?${params.toString()}`);
+}
+
+// ─── Integrations API ─────────────────────────────────────────────────────────
+
+export type Integration = {
+  id: string;
+  name: string;
+  slug: string;
+  category: "automation" | "reviews" | "marketing" | "support" | "subscriptions" | "shipping";
+  tagline: string;
+  description: string;
+  logo?: MediaDoc;
+  featured?: boolean;
+  keyFeatures?: { feature: string }[];
+  guideUrl?: string;
+  docsContent?: unknown;
+  status: "draft" | "published" | "coming-soon";
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+  };
+};
+
+export const INTEGRATION_CATEGORY_LABELS: Record<string, string> = {
+  automation: "Automation & Workflows",
+  reviews: "Reviews & UGC",
+  marketing: "Marketing & CRM",
+  support: "Helpdesk & Support",
+  subscriptions: "Subscriptions",
+  shipping: "Shipping & Tracking",
+};
+
+export async function getIntegrations(
+  options: {
+    category?: string;
+    featured?: boolean;
+    limit?: number;
+    page?: number;
+  } = {}
+): Promise<CollectionResponse<Integration>> {
+  const params = new URLSearchParams();
+  params.set("where[status][not_equals]", "draft");
+  params.set("sort", "name");
+  params.set("depth", "1");
+  if (options.limit) params.set("limit", String(options.limit));
+  if (options.page) params.set("page", String(options.page));
+  if (options.category && options.category !== "all") {
+    params.set("where[category][equals]", options.category);
+  }
+  if (options.featured !== undefined) {
+    params.set("where[featured][equals]", String(options.featured));
+  }
+
+  return payloadFetch<CollectionResponse<Integration>>(`/api/integrations?${params.toString()}`);
+}
+
+export async function getIntegration(slug: string): Promise<Integration | null> {
+  const params = new URLSearchParams();
+  params.set("where[slug][equals]", slug);
+  params.set("where[status][not_equals]", "draft");
+  params.set("depth", "1");
+  params.set("limit", "1");
+
+  const res = await payloadFetch<CollectionResponse<Integration>>(`/api/integrations?${params.toString()}`);
+  return res.docs[0] ?? null;
+}
+
+// ─── Changelog API ───────────────────────────────────────────────────────────
+
+export type ChangelogEntry = {
+  id: string;
+  version: string;
+  title: string;
+  slug: string;
+  releaseDate: string;
+  type: "feature" | "improvement" | "fix" | "security";
+  app: "all" | "business-api" | "chat" | "ai";
+  summary: string;
+  content?: unknown;
+  gitCommitHash?: string;
+  gitCommitMessage?: string;
+  status: "draft" | "published";
+};
+
+export const CHANGELOG_TYPE_LABELS: Record<string, string> = {
+  feature: "New Feature",
+  improvement: "Improvement",
+  fix: "Bug Fix",
+  security: "Security",
+};
+
+export const CHANGELOG_TYPE_COLORS: Record<string, string> = {
+  feature: "bg-[#00D261] text-black",
+  improvement: "bg-[#2563EB] text-white",
+  fix: "bg-[#FFC107] text-black",
+  security: "bg-[#FF4B4B] text-white",
+};
+
+export async function getChangelogEntries(
+  options: {
+    app?: string;
+    type?: string;
+    limit?: number;
+    page?: number;
+  } = {}
+): Promise<CollectionResponse<ChangelogEntry>> {
+  const params = new URLSearchParams();
+  params.set("where[status][equals]", "published");
+  params.set("sort", "-releaseDate");
+  params.set("depth", "1");
+  if (options.limit) params.set("limit", String(options.limit));
+  if (options.page) params.set("page", String(options.page));
+  if (options.app && options.app !== "all") {
+    params.set("where[app][equals]", options.app);
+  }
+  if (options.type && options.type !== "all") {
+    params.set("where[type][equals]", options.type);
+  }
+
+  return payloadFetch<CollectionResponse<ChangelogEntry>>(`/api/changelog?${params.toString()}`);
+}
+
+
+

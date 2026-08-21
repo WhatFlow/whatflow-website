@@ -1,5 +1,11 @@
 import type { MetadataRoute } from "next";
-import { getPosts, getCaseStudies } from "@/lib/payload-api";
+import {
+  getPosts,
+  getCaseStudies,
+  getIntegrations,
+  getChangelogEntries,
+  type Integration,
+} from "@/lib/payload-api";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl =
@@ -21,6 +27,60 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/integrations`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/calculator`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/reviews`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/changelog`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/compare`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/compare/whatflow-vs-wati`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/compare/whatflow-vs-interakt`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/compare/whatflow-vs-bitespeed`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/compare/whatflow-vs-klaviyo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: "daily",
@@ -31,6 +91,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/security`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
     },
   ];
 
@@ -62,5 +140,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     studyRoutes = [];
   }
 
-  return [...staticRoutes, ...postRoutes, ...studyRoutes];
+  // Integrations
+  let integrationRoutes: MetadataRoute.Sitemap = [];
+  try {
+    const integrationsData = await getIntegrations({ limit: 100 });
+    integrationRoutes = integrationsData.docs.map((item: Integration) => ({
+      url: `${baseUrl}/integrations/${item.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
+  } catch {
+    integrationRoutes = [];
+  }
+
+  return [...staticRoutes, ...postRoutes, ...studyRoutes, ...integrationRoutes];
 }

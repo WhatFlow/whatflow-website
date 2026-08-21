@@ -4,6 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { getShopifyAppUrl } from "@/lib/shopify-app";
+
 // ─── SVG Icon Components ──────────────────────────────────────────────────────
 function TShirtIcon({ className = "w-4 h-4" }: { className?: string }) {
 	return (
@@ -62,7 +64,9 @@ export function HeroSection() {
 					{/* Action Buttons */}
 					<div className="flex flex-wrap items-center gap-4 pt-2">
 						<a
-							href="#products"
+							href={getShopifyAppUrl("hero_cta")}
+							target="_blank"
+							rel="noopener noreferrer"
 							className="neo-btn bg-[#00D261] text-black font-extrabold text-sm uppercase tracking-wide px-7 py-3.5 rounded-lg flex items-center gap-2"
 						>
 							INSTALL ON SHOPIFY

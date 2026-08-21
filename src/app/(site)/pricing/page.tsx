@@ -4,6 +4,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { CountryRateItem } from "@/lib/country-rates-data";
+import { getShopifyAppUrl } from "@/lib/shopify-app";
 
 // ─── Plan Data Definition ───────────────────────────────────────────────────
 interface PricingPlan {
@@ -155,9 +156,9 @@ function PricingNavbar() {
 
 				<div className="flex items-center gap-3">
 					<a
-						href="https://apps.shopify.com"
+						href={getShopifyAppUrl("pricing_nav")}
 						target="_blank"
-						rel="noreferrer"
+						rel="noopener noreferrer"
 						className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg flex items-center gap-2"
 					>
 						INSTALL APP
@@ -499,9 +500,9 @@ export default function PricingPage() {
 
 								<div className="space-y-2">
 									<a
-										href="https://apps.shopify.com"
+										href={getShopifyAppUrl("pricing_recommended_calculator")}
 										target="_blank"
-										rel="noreferrer"
+										rel="noopener noreferrer"
 										className="neo-btn w-full bg-[#00D261] text-black font-display font-black text-center py-3 px-4 rounded-lg text-sm uppercase tracking-wider block"
 									>
 										START WITH {recommendedPlan.name.toUpperCase()} PLAN
@@ -630,9 +631,9 @@ export default function PricingPage() {
 									{/* Card Bottom / Footer */}
 									<div className="p-6 sm:p-7 pt-0 space-y-3">
 										<a
-											href="https://apps.shopify.com"
+											href={getShopifyAppUrl(`pricing_plan_${plan.id}`)}
 											target="_blank"
-											rel="noreferrer"
+											rel="noopener noreferrer"
 											className={`neo-btn w-full text-center py-3 px-4 rounded-lg font-extrabold text-xs uppercase tracking-wider block ${
 												isRec || plan.popular
 													? "bg-[#00D261] text-black"
@@ -820,9 +821,9 @@ export default function PricingPage() {
 
 					<div className="pt-2">
 						<a
-							href="https://apps.shopify.com"
+							href={getShopifyAppUrl("pricing_bottom_cta")}
 							target="_blank"
-							rel="noreferrer"
+							rel="noopener noreferrer"
 							className="neo-btn bg-[#00D261] text-black font-display font-black text-sm uppercase tracking-wider px-8 py-4 rounded-xl inline-block"
 						>
 							INSTALL WHATFLOW ON SHOPIFY

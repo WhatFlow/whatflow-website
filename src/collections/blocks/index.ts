@@ -65,7 +65,7 @@ export const CtaBlock: Block = {
       type: "text",
       required: true,
       label: "Button URL",
-      defaultValue: "https://apps.shopify.com/whatflow-official-api",
+      defaultValue: "https://apps.shopify.com/whatflow-official-api?utm_source=whatflow_website&utm_medium=blog_cta&utm_campaign=website_direct",
     },
     {
       name: "badge",
