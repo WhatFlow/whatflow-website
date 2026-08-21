@@ -1,7 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getCaseStudy, INDUSTRY_LABELS } from "@/lib/payload-api";
 
-export const runtime = "edge";
 export const alt = "WhatFlow Case Study";
 export const size = {
   width: 1200,

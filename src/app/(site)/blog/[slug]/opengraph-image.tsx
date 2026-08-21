@@ -1,7 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getPost, CATEGORY_LABELS } from "@/lib/payload-api";
 
-export const runtime = "edge";
 export const alt = "WhatFlow Blog Post";
 export const size = {
   width: 1200,
