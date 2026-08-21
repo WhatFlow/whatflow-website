@@ -56,7 +56,11 @@ The defining characteristic of the UI components.
 * *Standard Shadow:* `box-shadow: 4px 4px 0px 0px #000000;`
 * *Hover State Shadow:* Often translates the element `-2px` on the X/Y axis and increases the shadow to `6px 6px` to simulate a physical press/lift.
 
+### 2.4. Iconography & Strict No-Emoji Policy
 
+* **No Emojis Rule:** Standard platform emojis (such as 💡, ⚠️, 🚨, 📈, ✍️, 📝, 📡, 🔗, 📦, ⏱, 👋) are **strictly forbidden** throughout the entire application UI and marketing copy.
+* **SVG Icon Standards:** Always use clean, monoline SVG stroke icons (stroke width `1.5px` to `2.5px`, stroke linecap/join `round`) or branded monochrome SVG glyphs.
+* **Text & Status Badges:** Status indicators, categories, and labels must be expressed with uppercase neo-pill tags or bold typographic labels rather than decorative emoji characters.
 
 ---
 

@@ -53,7 +53,13 @@ function PostCard({ post }: { post: Post }) {
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-[#00D261]/20 to-[#0A6B56]/20 flex items-center justify-center">
-            <span className="text-5xl">✍️</span>
+            <svg viewBox="0 0 24 24" className="w-12 h-12 text-black/40 fill-none stroke-current stroke-[1.5]" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
           </div>
         )}
         {post.featured && (
@@ -61,8 +67,12 @@ function PostCard({ post }: { post: Post }) {
             Featured
           </div>
         )}
-        <div className="absolute bottom-3 right-3 neo-pill bg-white text-black text-[9px] font-extrabold uppercase px-2 py-0.5 border border-black shadow-[1px_1px_0px_#000]">
-          ⏱ {readingTime} min read
+        <div className="absolute bottom-3 right-3 neo-pill bg-white text-black text-[9px] font-extrabold uppercase px-2 py-0.5 border border-black shadow-[1px_1px_0px_#000] flex items-center gap-1">
+          <svg viewBox="0 0 24 24" className="w-3 h-3 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <span>{readingTime} MIN READ</span>
         </div>
       </div>
 
@@ -107,9 +117,14 @@ function PostCard({ post }: { post: Post }) {
 
 function EmptyState() {
   return (
-    <div className="neo-box bg-white text-center py-20 px-6 col-span-full">
-      <div className="text-5xl mb-4">📝</div>
-      <h3 className="font-display font-black text-2xl text-black uppercase mb-2">
+    <div className="neo-box bg-white text-center py-20 px-6 col-span-full space-y-3">
+      <div className="w-12 h-12 mx-auto bg-[#FAF7F0] border-2 border-black rounded-xl flex items-center justify-center shadow-[2px_2px_0px_#000]">
+        <svg viewBox="0 0 24 24" className="w-6 h-6 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+        </svg>
+      </div>
+      <h3 className="font-display font-black text-2xl text-black uppercase">
         No posts yet
       </h3>
       <p className="text-gray-500 font-medium text-sm">
@@ -165,7 +180,11 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
             className="neo-btn bg-[#FFF3CD] text-[#856404] px-4 py-2.5 rounded-lg text-xs font-black uppercase tracking-wider flex items-center gap-2 self-start md:self-auto hover:bg-[#FFE8A1]"
             title="Subscribe to RSS Feed"
           >
-            <span className="text-base">📡</span>
+            <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5]" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 11a9 9 0 0 1 9 9" />
+              <path d="M4 4a16 16 0 0 1 16 16" />
+              <circle cx="5" cy="19" r="1" fill="currentColor" />
+            </svg>
             <span>RSS FEED</span>
           </a>
         </div>

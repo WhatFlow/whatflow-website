@@ -187,8 +187,12 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
             <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
               CASE STUDY
             </div>
-            <span className="neo-pill bg-white px-2.5 py-0.5 text-[10px] font-bold text-gray-700">
-              ⏱ {readingTime} min read
+            <span className="neo-pill bg-white px-2.5 py-0.5 text-[10px] font-bold text-gray-700 flex items-center gap-1">
+              <svg viewBox="0 0 24 24" className="w-3 h-3 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>{readingTime} MIN READ</span>
             </span>
           </div>
 
@@ -353,8 +357,11 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                         className="object-cover opacity-60 group-hover:scale-105 transition-transform"
                       />
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center text-4xl bg-gradient-to-br from-[#00D261]/20 to-[#0A6B56]/20">
-                        📈
+                      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#00D261]/20 to-[#0A6B56]/20">
+                        <svg viewBox="0 0 24 24" className="w-8 h-8 text-black/40 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                          <polyline points="17 6 23 6 23 12" />
+                        </svg>
                       </div>
                     )}
                     {s.metrics?.[0] && (

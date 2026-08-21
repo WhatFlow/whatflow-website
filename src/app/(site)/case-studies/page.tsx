@@ -52,7 +52,10 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-[#00D261]/20 to-[#0A6B56]/20 flex items-center justify-center">
-            <span className="text-5xl">📈</span>
+            <svg viewBox="0 0 24 24" className="w-12 h-12 text-black/40 fill-none stroke-current stroke-[1.5]" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+              <polyline points="17 6 23 6 23 12" />
+            </svg>
           </div>
         )}
         {/* Featured badge */}
@@ -134,9 +137,14 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
 
 function EmptyState() {
   return (
-    <div className="neo-box bg-white text-center py-20 px-6 col-span-full">
-      <div className="text-5xl mb-4">📈</div>
-      <h3 className="font-display font-black text-2xl text-black uppercase mb-2">
+    <div className="neo-box bg-white text-center py-20 px-6 col-span-full space-y-3">
+      <div className="w-12 h-12 mx-auto bg-[#FAF7F0] border-2 border-black rounded-xl flex items-center justify-center shadow-[2px_2px_0px_#000]">
+        <svg viewBox="0 0 24 24" className="w-6 h-6 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+          <polyline points="17 6 23 6 23 12" />
+        </svg>
+      </div>
+      <h3 className="font-display font-black text-2xl text-black uppercase">
         Case Studies Coming Soon
       </h3>
       <p className="text-gray-500 font-medium text-sm max-w-sm mx-auto">

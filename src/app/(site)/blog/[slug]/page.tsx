@@ -140,7 +140,12 @@ export default async function BlogPostPage({ params }: PostPageProps) {
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-[#00D261]/20 via-[#0A6B56]/10 to-[#091E17]/20 flex items-center justify-center">
-            <span className="text-8xl">✍️</span>
+            <svg viewBox="0 0 24 24" className="w-16 h-16 text-black/30 fill-none stroke-current stroke-[1.5]" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+            </svg>
           </div>
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-[#091E17]/60 via-transparent to-transparent" />
@@ -164,7 +169,11 @@ export default async function BlogPostPage({ params }: PostPageProps) {
               className="neo-pill bg-[#FFF3CD] text-[#856404] px-2.5 py-0.5 text-[10px] font-black uppercase flex items-center gap-1 hover:bg-[#FFE8A1]"
               title="Subscribe via RSS"
             >
-              <span>📡</span>
+              <svg viewBox="0 0 24 24" className="w-3 h-3 fill-none stroke-current stroke-[2.5]" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 11a9 9 0 0 1 9 9" />
+                <path d="M4 4a16 16 0 0 1 16 16" />
+                <circle cx="5" cy="19" r="1" fill="currentColor" />
+              </svg>
               <span>RSS FEED</span>
             </a>
           </div>
@@ -180,8 +189,12 @@ export default async function BlogPostPage({ params }: PostPageProps) {
               </span>
             )}
             <span className="text-gray-300">•</span>
-            <span className="neo-pill bg-white px-2.5 py-0.5 text-[10px] font-bold text-gray-700">
-              ⏱ {readingTime} min read
+            <span className="neo-pill bg-white px-2.5 py-0.5 text-[10px] font-bold text-gray-700 flex items-center gap-1">
+              <svg viewBox="0 0 24 24" className="w-3 h-3 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>{readingTime} MIN READ</span>
             </span>
           </div>
 
@@ -305,7 +318,12 @@ export default async function BlogPostPage({ params }: PostPageProps) {
                         className="object-cover group-hover:scale-105 transition-transform"
                       />
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center text-4xl">✍️</div>
+                      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#00D261]/20 to-[#0A6B56]/20">
+                        <svg viewBox="0 0 24 24" className="w-8 h-8 text-black/40 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                          <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                      </div>
                     )}
                   </div>
                   <div className="p-5 space-y-2">

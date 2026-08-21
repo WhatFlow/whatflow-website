@@ -61,7 +61,14 @@ export function TableOfContents({ selector = ".prose-whatflow" }: { selector?: s
   return (
     <div className="neo-box bg-white p-5 rounded-xl space-y-3 sticky top-24">
       <div className="flex items-center gap-2 pb-2 border-b border-black font-display font-black text-xs uppercase tracking-wider text-black">
-        <span>📑</span>
+        <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="8" y1="6" x2="21" y2="6" />
+          <line x1="8" y1="12" x2="21" y2="12" />
+          <line x1="8" y1="18" x2="21" y2="18" />
+          <line x1="3" y1="6" x2="3.01" y2="6" />
+          <line x1="3" y1="12" x2="3.01" y2="12" />
+          <line x1="3" y1="18" x2="3.01" y2="18" />
+        </svg>
         <span>Table of Contents</span>
       </div>
       <nav className="space-y-1 text-xs">

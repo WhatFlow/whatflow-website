@@ -417,7 +417,10 @@ function BlogPreviewCard({ post }: { post: Post }) {
 					/>
 				) : (
 					<div className="w-full h-full flex items-center justify-center">
-						<span className="text-4xl">✍️</span>
+						<svg viewBox="0 0 24 24" className="w-8 h-8 text-black/40 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+							<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+							<polyline points="14 2 14 8 20 8" />
+						</svg>
 					</div>
 				)}
 			</div>
@@ -462,7 +465,12 @@ function CaseStudyPreviewCard({ study }: { study: CaseStudy }) {
 						className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-300"
 					/>
 				) : (
-					<div className="w-full h-full flex items-center justify-center text-5xl">📈</div>
+					<div className="w-full h-full flex items-center justify-center">
+						<svg viewBox="0 0 24 24" className="w-10 h-10 text-white/40 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+							<polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+							<polyline points="17 6 23 6 23 12" />
+						</svg>
+					</div>
 				)}
 			</div>
 			<div className="p-6 space-y-2">

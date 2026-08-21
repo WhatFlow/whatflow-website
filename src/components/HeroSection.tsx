@@ -115,11 +115,15 @@ export function HeroSection() {
 									{/* WhatsApp Order Bubble */}
 									<div className="bg-[#E7FCE9] border border-black p-2.5 rounded-lg shadow-sm">
 										<p className="font-medium text-[#111111] mb-1.5 leading-snug">
-											Hi Alex 👋<br />
+											Hi Alex,<br />
 											Thanks for your order! We've received it and are getting it ready to ship.
 										</p>
 										<div className="bg-white border border-black p-2 rounded flex items-center gap-2 text-[11px]">
-											<span className="text-base">📦</span>
+											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+												<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+												<polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+												<line x1="12" y1="22.08" x2="12" y2="12" />
+											</svg>
 											<div>
 												<div className="font-bold text-black">Order #1027</div>
 												<div className="text-[#555] text-[10px]">2 items • $89.00</div>
