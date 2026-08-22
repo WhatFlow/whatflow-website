@@ -2,23 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
+import { getBreadcrumbSchema, getFAQSchema, SITE_URL } from "@/lib/schema-org";
 
 interface ComparePageProps {
   params: Promise<{ slug: string }>;
 }
 
-const COMPARISON_DETAILS: Record<
-  string,
-  {
-    competitor: string;
-    title: string;
-    description: string;
-    intro: string;
-    whatflowAdvantages: { title: string; desc: string }[];
-    competitorDrawbacks: { title: string; desc: string }[];
-    featureTable: { feature: string; whatflow: string; competitor: string }[];
-  }
-> = {
+interface ComparisonData {
+  competitor: string;
+  title: string;
+  description: string;
+  intro: string;
+  whatflowAdvantages: { title: string; desc: string }[];
+  competitorDrawbacks: { title: string; desc: string }[];
+  featureTable: { feature: string; whatflow: string; competitor: string }[];
+  faqs?: { question: string; answer: string }[];
+}
+
+const COMPARISON_DETAILS: Record<string, ComparisonData> = {
   "whatflow-vs-wati": {
     competitor: "Wati",
     title: "WhatFlow vs Wati: The Best Shopify WhatsApp Alternative",
@@ -58,6 +59,16 @@ const COMPARISON_DETAILS: Record<
       { feature: "Direct Shopify Billing", whatflow: "✓ 1-Click", competitor: "✕ External Stripe/Card" },
       { feature: "Judge.me & Loox Integration", whatflow: "✓ Built-in", competitor: "✕ Not Supported" },
       { feature: "COD 1-Click Order Confirmation", whatflow: "✓ Automated", competitor: "Manual macro" },
+    ],
+    faqs: [
+      {
+        question: "Can I migrate from Wati to WhatFlow without losing my WhatsApp number?",
+        answer: "Yes! You can easily migrate your verified WhatsApp Business Account (WABA) number directly to WhatFlow with zero downtime and keep your green tick status.",
+      },
+      {
+        question: "How does WhatFlow pricing compare to Wati?",
+        answer: "WhatFlow offers transparent subscription plans with zero conversation markup. Wati charges per-agent seat fees and marks up every WhatsApp conversation.",
+      },
     ],
   },
   "whatflow-vs-interakt": {
@@ -100,6 +111,12 @@ const COMPARISON_DETAILS: Record<
       { feature: "Pre-Approved Templates", whatflow: "✓ 20+ Ready", competitor: "Manual submission" },
       { feature: "Real-Time ROI Tracking", whatflow: "✓ Included", competitor: "Basic analytics" },
     ],
+    faqs: [
+      {
+        question: "Why do Shopify merchants switch from Interakt to WhatFlow?",
+        answer: "Merchants switch for direct Shopify app store billing, instant onboarding via Meta Embedded Signup, and significantly faster message delivery rates.",
+      },
+    ],
   },
   "whatflow-vs-bitespeed": {
     competitor: "BiteSpeed",
@@ -135,6 +152,12 @@ const COMPARISON_DETAILS: Record<
       { feature: "Shopify Flow Triggers", whatflow: "✓ Unlimited", competitor: "Tier-restricted" },
       { feature: "Meta Rates Transparency", whatflow: "✓ 100% Direct", competitor: "Bundled pricing" },
       { feature: "Free Trial", whatflow: "14-Day Full Access", competitor: "Limited demo" },
+    ],
+    faqs: [
+      {
+        question: "Does WhatFlow take any percentage of my recovered cart sales?",
+        answer: "No, WhatFlow never charges GMV commission fees. All recovered revenue is 100% yours.",
+      },
     ],
   },
   "whatflow-vs-klaviyo": {
@@ -173,6 +196,180 @@ const COMPARISON_DETAILS: Record<
       { feature: "Verified Sender Badge", whatflow: "✓ Official Green Tick", competitor: "✕ Shortcode / Unknown" },
       { feature: "Klaviyo Contact Sync", whatflow: "✓ 2-Way Sync", competitor: "Native" },
     ],
+    faqs: [
+      {
+        question: "Can I use WhatFlow alongside Klaviyo?",
+        answer: "Yes! WhatFlow is designed to work alongside Klaviyo. Use Klaviyo for email newsletters and WhatFlow for instant WhatsApp cart recovery and order alerts.",
+      },
+    ],
+  },
+  "whatflow-vs-quickreply": {
+    competitor: "QuickReply.ai",
+    title: "WhatFlow vs QuickReply.ai: Better Automation at Lower Cost",
+    description: "Compare WhatFlow vs QuickReply.ai. See why Shopify merchants choose WhatFlow for modern UI, zero conversation markup, and seamless Flow automations.",
+    intro: "QuickReply.ai is focused on conversational AI, but merchants often find their pricing tiers restrictive and setup complex. WhatFlow provides an ultra-clean interface, instant Meta Cloud API connection, zero markups, and native Shopify Flow integrations.",
+    whatflowAdvantages: [
+      {
+        title: "Direct Wholesale Meta Rates",
+        desc: "No markup on Meta API conversation charges, saving growing Shopify stores hundreds of dollars monthly.",
+      },
+      {
+        title: "Native Shopify App Store Experience",
+        desc: "1-click installation with Shopify managed billing and deep admin integration.",
+      },
+      {
+        title: "Modern Neo-Brutalist Dashboard",
+        desc: "Lightning fast dashboard built for high-volume stores without lag or confusing multi-layer menus.",
+      },
+    ],
+    competitorDrawbacks: [
+      {
+        title: "Steep Learning Curve",
+        desc: "Complex chatbot builder that takes hours to configure and test.",
+      },
+      {
+        title: "Higher Monthly Tiers",
+        desc: "Higher barrier to entry for early-stage and mid-market Shopify brands.",
+      },
+    ],
+    featureTable: [
+      { feature: "Meta Markup", whatflow: "0% (Direct Wholesale)", competitor: "Custom markup" },
+      { feature: "Shopify Flow Native Action", whatflow: "✓ Built-in", competitor: "Limited triggers" },
+      { feature: "Setup Time", whatflow: "Under 3 minutes", competitor: "30+ minutes" },
+      { feature: "Unlimited Agent Seats", whatflow: "✓ Yes", competitor: "Seat-restricted" },
+    ],
+    faqs: [
+      {
+        question: "How fast is setup with WhatFlow compared to QuickReply.ai?",
+        answer: "WhatFlow uses Meta's official Embedded Signup, allowing you to connect your phone number and launch pre-approved templates in under 3 minutes.",
+      },
+    ],
+  },
+  "whatflow-vs-tidio": {
+    competitor: "Tidio",
+    title: "WhatFlow vs Tidio: Dedicated WhatsApp Power for Shopify",
+    description: "Compare WhatFlow vs Tidio WhatsApp. Learn why WhatFlow's eCommerce-first WhatsApp suite outperforms generic multi-channel chat widgets.",
+    intro: "Tidio is an excellent general live-chat widget, but its WhatsApp capabilities are an add-on with limited eCommerce trigger depth. WhatFlow is engineered specifically for Shopify, offering automated COD verification, review gathering, and native Shopify Flow triggers.",
+    whatflowAdvantages: [
+      {
+        title: "Full eCommerce Lifecycle Automations",
+        desc: "Automated cart recovery, order confirmation, shipping tracking, and review requests out of the box.",
+      },
+      {
+        title: "Shopify COD Fraud Prevention",
+        desc: "Interactive 1-click confirmation buttons that auto-tag Shopify orders to prevent RTO losses.",
+      },
+      {
+        title: "Unlimited WhatsApp Team Seats",
+        desc: "Empower your entire customer support and sales team without per-seat add-on fees.",
+      },
+    ],
+    competitorDrawbacks: [
+      {
+        title: "Generic Live-Chat Focus",
+        desc: "WhatsApp features are treated as secondary to website live-chat widgets.",
+      },
+      {
+        title: "Limited Shopify Event Triggers",
+        desc: "Lacks deep integration with Shopify order statuses and review apps like Judge.me and Loox.",
+      },
+    ],
+    featureTable: [
+      { feature: "Primary Focus", whatflow: "Shopify WhatsApp Engine", competitor: "Multi-channel Widget" },
+      { feature: "COD Verification Buttons", whatflow: "✓ Native 1-Click", competitor: "✕ Not Available" },
+      { feature: "Review App Integrations", whatflow: "✓ Judge.me / Loox", competitor: "✕ Limited" },
+      { feature: "Unlimited Team Seats", whatflow: "✓ Included", competitor: "✕ Per-Seat Billing" },
+    ],
+    faqs: [
+      {
+        question: "Can I use WhatFlow if I only need WhatsApp?",
+        answer: "Yes! WhatFlow is built 100% for WhatsApp, giving you significantly deeper Shopify automations and better Meta Cloud API reliability.",
+      },
+    ],
+  },
+  "whatflow-vs-aisensy": {
+    competitor: "AiSensy",
+    title: "WhatFlow vs AiSensy: The Global Shopify WhatsApp Alternative",
+    description: "Compare WhatFlow vs AiSensy. See why Shopify brands worldwide choose WhatFlow for direct Shopify App Store billing and edge performance.",
+    intro: "AiSensy is a general WhatsApp broadcast tool with limited Shopify automation depth. WhatFlow provides native Shopify Flow integration, automated abandoned cart recovery, and direct Shopify billing in your store's local currency.",
+    whatflowAdvantages: [
+      {
+        title: "Shopify-First Design & Billing",
+        desc: "Billed directly via Shopify with 1-click installation and no separate third-party payment processing.",
+      },
+      {
+        title: "Automated Dynamic Cart Recovery",
+        desc: "Send personalized WhatsApp recovery links with images of the exact abandoned items.",
+      },
+      {
+        title: "Global Low-Latency Infrastructure",
+        desc: "Powered by Cloudflare edge compute to guarantee instant webhook execution worldwide.",
+      },
+    ],
+    competitorDrawbacks: [
+      {
+        title: "Non-Shopify Centric",
+        desc: "Broad focus across multiple industries means slower eCommerce-specific feature rollouts.",
+      },
+      {
+        title: "Manual Shopify Sync",
+        desc: "Requires manual CSV uploads or basic webhook setups for advanced store events.",
+      },
+    ],
+    featureTable: [
+      { feature: "Shopify App Store Billing", whatflow: "✓ Direct 1-Click", competitor: "✕ External Invoicing" },
+      { feature: "Shopify Flow Integration", whatflow: "✓ Native Action", competitor: "✕ Webhook Only" },
+      { feature: "Automated Cart Recovery", whatflow: "✓ Dynamic Products", competitor: "Manual broadcast" },
+      { feature: "Global Edge Infrastructure", whatflow: "✓ Sub-50ms", competitor: "Single-region cloud" },
+    ],
+    faqs: [
+      {
+        question: "Is WhatFlow suitable for international stores?",
+        answer: "Yes, WhatFlow is built on Cloudflare's global edge network, delivering WhatsApp webhooks and messages with sub-50ms latency across 100+ countries.",
+      },
+    ],
+  },
+  "whatflow-vs-gorgias": {
+    competitor: "Gorgias WhatsApp",
+    title: "WhatFlow vs Gorgias: Affordable WhatsApp Automations for Shopify",
+    description: "Compare WhatFlow vs Gorgias WhatsApp. Discover why stores use WhatFlow for cost-effective outbound marketing and proactive WhatsApp automations.",
+    intro: "Gorgias is a premier support helpdesk, but its WhatsApp feature is expensive and focused only on inbound support tickets. WhatFlow provides both high-ROI outbound marketing campaigns (cart recovery, COD verification) and 2-way support at a fraction of the cost.",
+    whatflowAdvantages: [
+      {
+        title: "Proactive Marketing & Cart Recovery",
+        desc: "Drive incremental revenue with automated abandoned checkout sequences and promotional broadcasts.",
+      },
+      {
+        title: "Fraction of the Cost",
+        desc: "Avoid expensive per-ticket helpdesk pricing tiers while getting full WhatsApp marketing capabilities.",
+      },
+      {
+        title: "Seamless Support Handoff",
+        desc: "Use WhatFlow's built-in live chat inbox or connect to your external support workflows via webhooks.",
+      },
+    ],
+    competitorDrawbacks: [
+      {
+        title: "High Per-Ticket Pricing",
+        desc: "Gorgias charges steep overages as support ticket volume increases.",
+      },
+      {
+        title: "Limited Outbound Marketing",
+        desc: "Does not provide comprehensive outbound marketing campaigns, dynamic discount broadcasts, or review collection flows.",
+      },
+    ],
+    featureTable: [
+      { feature: "Outbound Marketing Broadcasts", whatflow: "✓ Unlimited", competitor: "✕ Inbound Support Only" },
+      { feature: "Abandoned Cart Recovery", whatflow: "✓ Automated Dynamic", competitor: "✕ Not Supported" },
+      { feature: "Pricing Basis", whatflow: "Predictable Flat Tiers", competitor: "Per-Ticket Surcharges" },
+      { feature: "Zero Meta Rate Markup", whatflow: "✓ Direct Wholesale", competitor: "Bundled pricing" },
+    ],
+    faqs: [
+      {
+        question: "Can I use WhatFlow for marketing and Gorgias for support?",
+        answer: "Yes! Many top Shopify brands use WhatFlow for automated outbound WhatsApp marketing, abandoned cart recovery, and review collection while managing generic support tickets in Gorgias.",
+      },
+    ],
   },
 };
 
@@ -184,9 +381,25 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
     return { title: "Comparison Not Found | WhatFlow" };
   }
 
+  const canonicalUrl = `${SITE_URL}/compare/${slug}`;
+
   return {
-    title: `${item.title} | WhatFlow`,
+    title: `${item.title}`,
     description: item.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: `${item.title}`,
+      description: item.description,
+      url: canonicalUrl,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${item.title}`,
+      description: item.description,
+    },
   };
 }
 
@@ -198,8 +411,27 @@ export default async function CompareDetailPage({ params }: ComparePageProps) {
     notFound();
   }
 
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Compare", url: "/compare" },
+    { name: `WhatFlow vs ${item.competitor}`, url: `/compare/${slug}` },
+  ]);
+
+  const faqSchema = item.faqs ? getFAQSchema(item.faqs) : null;
+
   return (
     <div className="min-h-screen bg-[#FAF7F0]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       {/* ─── Hero ─── */}
       <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
         <div className="max-w-[1080px] mx-auto">
@@ -299,6 +531,25 @@ export default async function CompareDetailPage({ params }: ComparePageProps) {
           </div>
         </div>
       </section>
+
+      {/* ─── FAQs ─── */}
+      {item.faqs && item.faqs.length > 0 && (
+        <section className="px-4 sm:px-6 pb-16 max-w-[1080px] mx-auto">
+          <div className="neo-box bg-white p-8 rounded-2xl space-y-6">
+            <h2 className="text-2xl font-display font-black uppercase text-black">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-4">
+              {item.faqs.map((faq) => (
+                <div key={faq.question} className="border-b border-gray-200 pb-4 last:border-b-0 space-y-1">
+                  <h3 className="text-sm font-extrabold uppercase text-black">{faq.question}</h3>
+                  <p className="text-xs text-gray-600 font-medium leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── Bottom CTA ─── */}
       <section className="px-4 sm:px-6 pb-20 max-w-[1080px] mx-auto">

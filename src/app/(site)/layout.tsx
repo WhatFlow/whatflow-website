@@ -1,9 +1,37 @@
 import type { Metadata } from "next";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "../globals.css";
 
+import { AnnouncementBar } from "@/components/AnnouncementBar";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
+import { getOrganizationSchema, getWebSiteSchema } from "@/lib/schema-org";
+
+const inter = Inter({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-inter",
+});
+
+const spaceGrotesk = Space_Grotesk({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-space-grotesk",
+});
+
+const siteUrl =
+	process.env.NEXT_PUBLIC_SITE_URL ||
+	(process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
+
 export const metadata: Metadata = {
-	title: "WhatFlow — WhatsApp Apps for Shopify Stores",
-	description: "Automate WhatsApp messages, recover abandoned carts, collect reviews, and grow your Shopify store with WhatFlow's suite of WhatsApp apps.",
+	metadataBase: new URL(siteUrl),
+	title: {
+		default: "WhatFlow — WhatsApp Apps & Automations for Shopify Stores",
+		template: "%s | WhatFlow",
+	},
+	description:
+		"Automate WhatsApp marketing, recover abandoned carts with 98% open rates, verify COD orders, and boost Shopify conversions with official Meta API.",
 	keywords: [
 		"Shopify WhatsApp app",
 		"WhatsApp automation Shopify",
@@ -11,28 +39,65 @@ export const metadata: Metadata = {
 		"WhatFlow",
 		"WhatsApp Business API Shopify",
 		"WhatsApp AI chatbot Shopify",
+		"COD verification Shopify WhatsApp",
+		"Shopify WhatsApp marketing",
 	],
+	alternates: {
+		canonical: "./",
+	},
+	openGraph: {
+		type: "website",
+		locale: "en_US",
+		url: siteUrl,
+		siteName: "WhatFlow",
+		title: "WhatFlow — WhatsApp Apps & Automations for Shopify Stores",
+		description:
+			"Automate WhatsApp marketing, recover abandoned carts, verify COD orders, and boost Shopify conversions with official Meta API.",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "WhatFlow — WhatsApp Apps & Automations for Shopify Stores",
+		description:
+			"Automate WhatsApp marketing, recover abandoned carts, verify COD orders, and boost Shopify conversions with official Meta API.",
+		creator: "@whatflow_io",
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			"max-video-preview": -1,
+			"max-image-preview": "large",
+			"max-snippet": -1,
+		},
+	},
 };
-
-import { AnnouncementBar } from "@/components/AnnouncementBar";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
 
 export default function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const orgSchema = getOrganizationSchema();
+	const websiteSchema = getWebSiteSchema();
+
 	return (
-		<html lang="en" className="scroll-smooth">
+		<html lang="en" className={`scroll-smooth ${inter.variable} ${spaceGrotesk.variable}`}>
 			<head>
 				<link rel="icon" href="/logo.svg" type="image/svg+xml" />
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-				<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700;800;900&display=swap" rel="stylesheet" />
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+				/>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+				/>
 			</head>
-			<body className="antialiased bg-[#FDFBF7] text-[#000000] selection:bg-[#00D261] selection:text-black" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif" }}>
+			<body
+				className="antialiased bg-[#FDFBF7] text-[#000000] selection:bg-[#00D261] selection:text-black font-sans"
+			>
 				<AnnouncementBar />
 				<Navbar />
 				<main className="min-h-screen">{children}</main>

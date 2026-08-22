@@ -33,9 +33,11 @@ export function Footer() {
 				<div className="space-y-3">
 					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">SOLUTIONS</h4>
 					<ul className="space-y-2 text-xs font-semibold text-gray-300">
-						<li><Link href="/integrations" className="hover:text-[#00D261] transition-colors">Integrations Directory</Link></li>
-						<li><Link href="/pricing" className="hover:text-[#00D261] transition-colors">Pricing &amp; Meta Rates</Link></li>
-						<li><Link href="/pricing#calculator" className="hover:text-[#00D261] transition-colors">Meta Rate Calculator</Link></li>
+						<li><Link href="/solutions" className="hover:text-[#00D261] transition-colors font-bold text-white">All Solutions ➔</Link></li>
+						<li><Link href="/solutions/abandoned-cart-recovery" className="hover:text-[#00D261] transition-colors">Abandoned Cart Recovery</Link></li>
+						<li><Link href="/solutions/cod-order-verification" className="hover:text-[#00D261] transition-colors">COD Anti-RTO Verification</Link></li>
+						<li><Link href="/solutions/order-tracking-notifications" className="hover:text-[#00D261] transition-colors">Order Tracking &amp; Shipping</Link></li>
+						<li><Link href="/solutions/whatsapp-reviews-ugc" className="hover:text-[#00D261] transition-colors">Reviews &amp; UGC Collection</Link></li>
 						<li><Link href="/compare" className="hover:text-[#00D261] transition-colors">Compare Alternatives</Link></li>
 					</ul>
 				</div>

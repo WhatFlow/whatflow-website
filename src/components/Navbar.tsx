@@ -125,6 +125,48 @@ export function Navbar() {
 							<div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 z-50">
 								<div className="neo-box bg-white p-2.5 rounded-xl shadow-[4px_4px_0px_0px_#000000] border-2 border-black space-y-1">
 									<Link
+										href="/solutions"
+										className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FAF7F0] transition-colors group"
+									>
+										<div className="w-8 h-8 rounded-lg bg-[#E8F8F0] border border-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#00D261] transition-colors">
+											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
+												<path d="M12 2L2 7l10 5 10-5-10-5z" />
+												<path d="M2 17l10 5 10-5" />
+												<path d="M2 12l10 5 10-5" />
+											</svg>
+										</div>
+										<div>
+											<div className="text-xs font-extrabold uppercase text-black group-hover:text-[#0A6B56] transition-colors">
+												SOLUTIONS HUB
+											</div>
+											<div className="text-[11px] text-gray-500 font-medium">
+												Cart recovery, COD verification &amp; tracking
+											</div>
+										</div>
+									</Link>
+
+									<Link
+										href="/compare"
+										className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FAF7F0] transition-colors group"
+									>
+										<div className="w-8 h-8 rounded-lg bg-[#D5F5E3] border border-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#00D261] transition-colors">
+											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
+												<circle cx="12" cy="12" r="10" />
+												<line x1="12" y1="8" x2="12" y2="12" />
+												<line x1="12" y1="16" x2="12.01" y2="16" />
+											</svg>
+										</div>
+										<div>
+											<div className="text-xs font-extrabold uppercase text-black group-hover:text-[#0A6B56] transition-colors">
+												APP COMPARISONS
+											</div>
+											<div className="text-[11px] text-gray-500 font-medium">
+												WhatFlow vs Wati, Interakt, Bitespeed &amp; more
+											</div>
+										</div>
+									</Link>
+
+									<Link
 										href="/blog"
 										className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FAF7F0] transition-colors group"
 									>
@@ -243,8 +285,29 @@ export function Navbar() {
 
 						<div className="pt-2 border-t border-black/10">
 							<div className="text-[10px] font-black uppercase text-gray-500 tracking-widest px-3 mb-2">
-								RESOURCES
+								SOLUTIONS &amp; RESOURCES
 							</div>
+							<Link
+								href="/solutions"
+								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
+							>
+								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
+									<path d="M12 2L2 7l10 5 10-5-10-5z" />
+									<path d="M2 17l10 5 10-5" />
+									<path d="M2 12l10 5 10-5" />
+								</svg>
+								<span>SOLUTIONS HUB</span>
+							</Link>
+							<Link
+								href="/compare"
+								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
+							>
+								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
+									<circle cx="12" cy="12" r="10" />
+									<line x1="12" y1="8" x2="12" y2="12" />
+								</svg>
+								<span>COMPARE ALTERNATIVES</span>
+							</Link>
 							<Link
 								href="/blog"
 								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"

@@ -21,6 +21,30 @@ import {
 } from "@/lib/payload-api";
 
 import { getShopifyAppUrl } from "@/lib/shopify-app";
+import { getSoftwareApplicationSchema, getFAQSchema } from "@/lib/schema-org";
+
+const HOMEPAGE_FAQS = [
+	{
+		question: "Which app should I start with?",
+		answer: "If you want instant setup without a Meta business account, start with WhatFlow Chat. For official Meta verification, AI chatbots, and Shopify Flow integration, choose WhatFlow Business API.",
+	},
+	{
+		question: "Do I need a Meta WhatsApp Business Account?",
+		answer: "Only for WhatFlow Business API, which connects directly to Meta's official Cloud API for certified message delivery. WhatFlow Chat requires no Meta account.",
+	},
+	{
+		question: "Can I use multiple WhatFlow apps together?",
+		answer: "Yes! Many merchants pair WhatFlow Business API for post-purchase WhatsApp notifications with WhatFlow AI for storefront customer support.",
+	},
+	{
+		question: "Is there a free trial for all plans?",
+		answer: "Yes, all plans come with a 14-day free trial. No credit card is required to get started.",
+	},
+	{
+		question: "Does WhatFlow integrate with Shopify Flow?",
+		answer: "Yes — WhatFlow Business API provides a native Shopify Flow action block, allowing you to trigger WhatsApp workflows from any Shopify event.",
+	},
+];
 
 
 
@@ -281,8 +305,19 @@ function AffiliateBanner() {
 
 // ─── Main Page Export (Server Component) ─────────────────────────────────────
 export default async function HomePage() {
+	const softwareSchema = getSoftwareApplicationSchema();
+	const faqSchema = getFAQSchema(HOMEPAGE_FAQS);
+
 	return (
 		<div className="bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+			/>
 			<HeroSection />
 			<FeaturesStatusSection />
 			{/* Interactive ROI Calculator on Homepage */}
