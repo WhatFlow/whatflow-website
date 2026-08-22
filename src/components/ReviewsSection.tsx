@@ -22,21 +22,21 @@ function ReviewCard({ review }: { review: ReviewItem }) {
 		.toUpperCase();
 
 	return (
-		<div className="w-[310px] sm:w-[360px] flex-shrink-0 neo-box bg-white p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_0px_#000000] transition-all duration-200 cursor-default select-none">
+		<figure className="w-[310px] sm:w-[360px] flex-shrink-0 neo-box bg-white p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_0px_#000000] transition-all duration-200 cursor-default select-none">
 			<div className="space-y-3">
-				<div className="flex items-center gap-1 text-[#FFC107] text-sm tracking-widest font-black">
+				<div className="flex items-center gap-1 text-[#FFC107] text-sm tracking-widest font-black" aria-label={`Rating: ${review.rating || 5} out of 5 stars`}>
 					{"★".repeat(Math.min(5, Math.max(1, review.rating || 5)))}
 				</div>
-				<p className="text-xs sm:text-sm font-medium text-black leading-relaxed">
+				<blockquote className="text-xs sm:text-sm font-medium text-black leading-relaxed">
 					"{review.body}"
-				</p>
+				</blockquote>
 			</div>
 
-			<div className="flex items-center gap-3 border-t border-gray-100 pt-3">
+			<figcaption className="flex items-center gap-3 border-t border-gray-100 pt-3">
 				{avatarUrl ? (
 					<Image
 						src={avatarUrl}
-						alt={review.author}
+						alt={`${review.author} avatar`}
 						width={36}
 						height={36}
 						className="w-9 h-9 rounded-xl neo-box object-contain bg-white p-1"
@@ -47,12 +47,12 @@ function ReviewCard({ review }: { review: ReviewItem }) {
 					</div>
 				)}
 				<div>
-					<div className="font-extrabold text-xs text-black uppercase tracking-wider">
+					<cite className="font-extrabold text-xs text-black uppercase tracking-wider not-italic">
 						{review.author}
-					</div>
+					</cite>
 				</div>
-			</div>
-		</div>
+			</figcaption>
+		</figure>
 	);
 }
 

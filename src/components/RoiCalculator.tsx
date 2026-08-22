@@ -46,7 +46,7 @@ export function RoiCalculator() {
           {/* Monthly Orders */}
           <div className="space-y-2">
             <div className="flex justify-between items-center">
-              <label className="text-xs font-extrabold uppercase tracking-wider text-black">
+              <label htmlFor="monthly-orders-input" className="text-xs font-extrabold uppercase tracking-wider text-black">
                 Monthly Completed Orders
               </label>
               <span className="neo-pill bg-[#FAF7F0] border-black px-3 py-1 text-sm font-black text-black">
@@ -54,6 +54,9 @@ export function RoiCalculator() {
               </span>
             </div>
             <input
+              id="monthly-orders-input"
+              name="monthlyOrders"
+              aria-label="Monthly Completed Orders"
               type="range"
               min={100}
               max={15000}
@@ -72,7 +75,7 @@ export function RoiCalculator() {
           {/* Average Order Value */}
           <div className="space-y-2">
             <div className="flex justify-between items-center">
-              <label className="text-xs font-extrabold uppercase tracking-wider text-black">
+              <label htmlFor="aov-input" className="text-xs font-extrabold uppercase tracking-wider text-black">
                 Average Order Value (AOV)
               </label>
               <span className="neo-pill bg-[#FAF7F0] border-black px-3 py-1 text-sm font-black text-black">
@@ -80,6 +83,9 @@ export function RoiCalculator() {
               </span>
             </div>
             <input
+              id="aov-input"
+              name="aov"
+              aria-label="Average Order Value in USD"
               type="range"
               min={15}
               max={350}
@@ -98,7 +104,7 @@ export function RoiCalculator() {
           {/* Cart Abandonment Rate */}
           <div className="space-y-2">
             <div className="flex justify-between items-center">
-              <label className="text-xs font-extrabold uppercase tracking-wider text-black">
+              <label htmlFor="abandonment-rate-input" className="text-xs font-extrabold uppercase tracking-wider text-black">
                 Estimated Cart Abandonment Rate
               </label>
               <span className="neo-pill bg-[#FAF7F0] border-black px-3 py-1 text-sm font-black text-black">
@@ -106,6 +112,9 @@ export function RoiCalculator() {
               </span>
             </div>
             <input
+              id="abandonment-rate-input"
+              name="abandonmentRate"
+              aria-label="Estimated Cart Abandonment Rate Percentage"
               type="range"
               min={40}
               max={85}
@@ -124,7 +133,7 @@ export function RoiCalculator() {
           {/* WhatsApp Recovery Conversion */}
           <div className="space-y-2">
             <div className="flex justify-between items-center">
-              <label className="text-xs font-extrabold uppercase tracking-wider text-black">
+              <label htmlFor="recovery-rate-input" className="text-xs font-extrabold uppercase tracking-wider text-black">
                 WhatsApp Recovery Rate
               </label>
               <span className="neo-pill bg-[#E8F8F0] text-[#0A6B56] border-black px-3 py-1 text-sm font-black">
@@ -132,6 +141,9 @@ export function RoiCalculator() {
               </span>
             </div>
             <input
+              id="recovery-rate-input"
+              name="recoveryRate"
+              aria-label="WhatsApp Recovery Rate Percentage"
               type="range"
               min={5}
               max={25}

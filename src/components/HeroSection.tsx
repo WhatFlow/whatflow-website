@@ -52,9 +52,9 @@ export function HeroSection() {
 						CONVERSATIONS.
 					</h1>
 
-					{/* Subtitle */}
-					<p className="text-[17px] sm:text-[18px] text-[#222222] font-medium leading-relaxed max-w-lg">
-						Official WhatsApp automation for confirmations, recovery and order updates.
+					{/* Subtitle / Definition Capsule */}
+					<p className="text-[16px] sm:text-[18px] text-[#222222] font-medium leading-relaxed max-w-lg">
+						WhatFlow is the official WhatsApp automation suite for Shopify stores. Automate abandoned checkout recovery, 1-click Cash on Delivery verification, delivery notifications, and 24/7 AI chat support with zero markup on Meta conversation rates.
 					</p>
 
 					{/* Action Buttons */}
