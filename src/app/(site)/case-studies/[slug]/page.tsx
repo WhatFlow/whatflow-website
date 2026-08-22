@@ -301,7 +301,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
             READY TO GROW YOUR STORE WITH WHATSAPP?
           </h2>
           <p className="text-black/70 font-medium text-sm max-w-lg mx-auto">
-            Join 1,000+ Shopify merchants already using WhatFlow. 14-day free trial, no credit card required.
+            Join 10,000+ Shopify merchants worldwide already using WhatFlow. 14-day free trial, no credit card required.
           </p>
           <div className="flex items-center justify-center gap-3 flex-wrap pt-2">
             <Link

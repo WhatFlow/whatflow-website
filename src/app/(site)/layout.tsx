@@ -15,6 +15,8 @@ export const metadata: Metadata = {
 };
 
 import { AnnouncementBar } from "@/components/AnnouncementBar";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
 
 export default function RootLayout({
@@ -32,7 +34,9 @@ export default function RootLayout({
 			</head>
 			<body className="antialiased bg-[#FDFBF7] text-[#000000] selection:bg-[#00D261] selection:text-black" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif" }}>
 				<AnnouncementBar />
-				{children}
+				<Navbar />
+				<main className="min-h-screen">{children}</main>
+				<Footer />
 				<FloatingWhatsAppButton />
 			</body>
 		</html>

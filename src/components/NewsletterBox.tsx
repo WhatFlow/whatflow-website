@@ -24,7 +24,7 @@ export function NewsletterBox({ className = "" }: { className?: string }) {
         </h3>
 
         <p className="text-xs sm:text-sm font-medium text-gray-700 leading-relaxed">
-          Join 2,500+ Shopify merchants receiving our weekly breakdown on abandoned cart recovery, AI support prompts, and WhatsApp conversion tactics.
+          Join 10,000+ Shopify merchants worldwide receiving our weekly breakdown on abandoned cart recovery, AI support prompts, and WhatsApp conversion tactics.
         </p>
 
         {status === "success" ? (

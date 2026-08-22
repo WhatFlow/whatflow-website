@@ -108,67 +108,6 @@ const PRICING_PLANS: PricingPlan[] = [
 	},
 ];
 
-function WhatFlowLogo({ lightMode = true }: { lightMode?: boolean }) {
-	return (
-		<Link href="/" className="flex items-center gap-2.5 group">
-			<div className="w-9 h-9 neo-box bg-[#00D261] flex items-center justify-center p-1.5 transition-transform group-hover:rotate-6">
-				<Image
-					src="/logo.svg"
-					alt="WhatFlow Logo"
-					width={32}
-					height={32}
-					className="w-full h-full object-contain"
-				/>
-			</div>
-			<span className={`text-2xl font-display font-black tracking-tight uppercase ${lightMode ? "text-black" : "text-white"}`}>
-				WHATFLOW
-			</span>
-		</Link>
-	);
-}
-
-function PricingNavbar() {
-	return (
-		<header className="sticky top-0 z-50 bg-[#FAF7F0] border-b-[2.5px] border-black">
-			<div className="max-w-[1280px] mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
-				<WhatFlowLogo />
-
-				<nav className="hidden lg:flex items-center gap-8">
-					<Link href="/" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						HOME
-					</Link>
-					<Link href="/#products" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						PRODUCTS
-					</Link>
-					<Link href="/pricing" className="text-xs font-extrabold uppercase tracking-wider text-[#00D261] relative py-1 border-b-2 border-black">
-						PRICING
-					</Link>
-					<Link href="/#features" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						FEATURES
-					</Link>
-					<Link href="/#faq" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						HELP
-					</Link>
-					<Link href="/#about" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						ABOUT
-					</Link>
-				</nav>
-
-				<div className="flex items-center gap-3">
-					<a
-						href={getShopifyAppUrl("pricing_nav")}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg flex items-center gap-2"
-					>
-						INSTALL APP
-					</a>
-				</div>
-			</div>
-		</header>
-	);
-}
-
 export default function PricingPage() {
 	// ─── Calculator State ───────────────────────────────────────────────────────
 	const [orders, setOrders] = useState<number>(1000);
@@ -291,8 +230,7 @@ export default function PricingPage() {
 	}, [ratesList, ratesSearch]);
 
 	return (
-		<div className="min-h-screen bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
-			<PricingNavbar />
+		<div className="bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
 
 			{/* ─── Top Hero & Interactive Calculator Section ────────────────── */}
 			<section className="py-12 sm:py-16 px-4 sm:px-6 border-b-[2.5px] border-black bg-[#FAF7F0]">
@@ -831,45 +769,6 @@ export default function PricingPage() {
 					</div>
 				</div>
 			</section>
-
-			{/* ─── Footer ──────────────────────────────────────────────────── */}
-			<footer className="bg-[#0A6B56] text-white py-12 px-4 sm:px-6">
-				<div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-white/20">
-					<div className="space-y-4 md:col-span-2">
-						<WhatFlowLogo lightMode={false} />
-						<p className="text-xs text-white/80 max-w-sm leading-relaxed">
-							Official Meta Business API integration for Shopify. Automated WhatsApp order confirmations, cart recovery, and customer engagement.
-						</p>
-					</div>
-
-					<div className="space-y-3">
-						<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">
-							NAVIGATION
-						</h4>
-						<ul className="space-y-2 text-xs font-semibold text-gray-300">
-							<li><Link href="/" className="hover:text-[#00D261]">Home</Link></li>
-							<li><Link href="/#products" className="hover:text-[#00D261]">Products</Link></li>
-							<li><Link href="/pricing" className="hover:text-[#00D261]">Pricing & Plans</Link></li>
-							<li><Link href="/#features" className="hover:text-[#00D261]">Features</Link></li>
-						</ul>
-					</div>
-
-					<div className="space-y-3">
-						<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">
-							SUPPORT & CMS
-						</h4>
-						<ul className="space-y-2 text-xs font-semibold text-gray-300">
-							<li><Link href="/#faq" className="hover:text-[#00D261]">FAQ & Help</Link></li>
-							<li><Link href="/admin" className="hover:text-[#00D261]">Admin Panel</Link></li>
-						</ul>
-					</div>
-				</div>
-
-				<div className="max-w-[1280px] mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 font-medium gap-2">
-					<span>© {new Date().getFullYear()} WhatFlow. All rights reserved.</span>
-					<span>Neo-brutalist theme for Shopify WhatsApp Apps.</span>
-				</div>
-			</footer>
 		</div>
 	);
 }

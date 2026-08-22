@@ -22,7 +22,7 @@ function ReviewCard({ review }: { review: ReviewItem }) {
 		.toUpperCase();
 
 	return (
-		<div className="w-[310px] sm:w-[360px] flex-shrink-0 neo-box bg-white p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:-translate-y-1 transition-transform">
+		<div className="w-[310px] sm:w-[360px] flex-shrink-0 neo-box bg-white p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_0px_#000000] transition-all duration-200 cursor-default select-none">
 			<div className="space-y-3">
 				<div className="flex items-center gap-1 text-[#FFC107] text-sm tracking-widest font-black">
 					{"★".repeat(Math.min(5, Math.max(1, review.rating || 5)))}
@@ -49,9 +49,6 @@ function ReviewCard({ review }: { review: ReviewItem }) {
 				<div>
 					<div className="font-extrabold text-xs text-black uppercase tracking-wider">
 						{review.author}
-					</div>
-					<div className="text-[10px] text-gray-500 font-bold uppercase">
-						Shopify Merchant
 					</div>
 				</div>
 			</div>
@@ -103,8 +100,8 @@ export function ReviewsSection() {
 			</div>
 
 			{/* Row 1: Forward Marquee */}
-			<div className="mb-6 overflow-hidden py-2">
-				<div className="animate-marquee-slow flex gap-6">
+			<div className="mb-6 overflow-hidden py-2 group">
+				<div className="animate-marquee-slow group-hover:[animation-play-state:paused] flex gap-6">
 					{[...row1, ...row1, ...row1].map((review, i) => (
 						<ReviewCard key={`r1-${review.id}-${i}`} review={review} />
 					))}
@@ -112,8 +109,8 @@ export function ReviewsSection() {
 			</div>
 
 			{/* Row 2: Reverse Marquee */}
-			<div className="overflow-hidden py-2">
-				<div className="animate-marquee-reverse flex gap-6">
+			<div className="overflow-hidden py-2 group">
+				<div className="animate-marquee-reverse group-hover:[animation-play-state:paused] flex gap-6">
 					{[...row2, ...row2, ...row2].map((review, i) => (
 						<ReviewCard key={`r2-${review.id}-${i}`} review={review} />
 					))}

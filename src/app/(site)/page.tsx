@@ -22,71 +22,7 @@ import {
 
 import { getShopifyAppUrl } from "@/lib/shopify-app";
 
-// ─── Logo Component ───────────────────────────────────────────────────────────
-function WhatFlowLogo({ lightMode = true }: { lightMode?: boolean }) {
-	return (
-		<a href="/" className="flex items-center gap-2.5 group" id="nav-logo">
-			<div className="w-10 h-10 rounded-xl bg-[#00D261] border-2 border-black shadow-[2px_2px_0px_#000] flex items-center justify-center relative p-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform overflow-hidden">
-				<Image
-					src="/logo.svg"
-					alt="WhatFlow Logo"
-					width={32}
-					height={32}
-					className="w-full h-full object-contain"
-				/>
-			</div>
-			<span className={`text-2xl font-display font-black tracking-tight uppercase ${lightMode ? "text-black" : "text-white"}`}>
-				WHATFLOW
-			</span>
-		</a>
-	);
-}
 
-// ─── Navbar Component ─────────────────────────────────────────────────────────
-function Navbar() {
-	return (
-		<header className="sticky top-0 z-50 bg-[#FAF7F0] border-b-[2.5px] border-black">
-			<div className="max-w-[1280px] mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
-				<WhatFlowLogo />
-
-				<nav className="hidden lg:flex items-center gap-5">
-					<Link href="/integrations" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						INTEGRATIONS
-					</Link>
-					<Link href="/pricing" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						PRICING
-					</Link>
-					<Link href="/calculator" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						CALCULATOR
-					</Link>
-					<Link href="/reviews" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						REVIEWS
-					</Link>
-					<Link href="/blog" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						BLOG
-					</Link>
-					<Link href="/case-studies" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						CASE STUDIES
-					</Link>
-					<Link href="/changelog" className="text-xs font-extrabold uppercase tracking-wider text-black hover:text-[#00D261] transition-colors">
-						CHANGELOG
-					</Link>
-				</nav>
-
-				<div className="flex items-center gap-3">
-					<a
-						href={getShopifyAppUrl("navbar_cta")}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg flex items-center gap-2"
-					>
-						INSTALL APP
-					</a>
-				</div>
-			</div>
-		</header>
-	);
-}
 
 // ─── CTA Banner ───────────────────────────────────────────────────────────────
 function CTABanner() {
@@ -100,7 +36,7 @@ function CTABanner() {
 					READY TO AUTOMATE YOUR STORE WITH <span className="text-stroke-green">WHATSAPP?</span>
 				</h2>
 				<p className="text-gray-300 font-medium text-base">
-					Join 1,000+ Shopify merchants using WhatFlow to recover carts, verify orders, and delight customers.
+					Join 10,000+ Shopify merchants worldwide using WhatFlow to recover carts, verify orders, and delight customers.
 				</p>
 				<div>
 					<a
@@ -311,77 +247,10 @@ async function BlogAndCaseStudiesSection() {
 	);
 }
 
-// ─── Footer Component ─────────────────────────────────────────────────────────
-function Footer() {
-	return (
-		<footer className="bg-[#091E17] text-white py-14 px-4 sm:px-6">
-			<div className="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 pb-10 border-b border-white/20">
-				<div className="col-span-2 md:col-span-1 space-y-3">
-					<WhatFlowLogo lightMode={false} />
-					<p className="text-xs text-gray-400 font-medium leading-relaxed">
-						WhatsApp marketing, customer support, and order automation suite built exclusively for Shopify merchants.
-					</p>
-					<div className="pt-2">
-						<span className="neo-pill bg-[#00D261] text-black text-[9px] font-black uppercase px-2.5 py-0.5 border border-black shadow-[1px_1px_0px_#000]">
-							OFFICIAL META TECH PARTNER
-						</span>
-					</div>
-				</div>
-
-				<div className="space-y-3">
-					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">AUTOMATIONS</h4>
-					<ul className="space-y-2 text-xs font-semibold text-gray-300">
-						<li><a href="#features" className="hover:text-[#00D261]">Order Confirmations</a></li>
-						<li><a href="#features" className="hover:text-[#00D261]">Abandoned Cart Recovery</a></li>
-						<li><a href="#features" className="hover:text-[#00D261]">Shipping &amp; Tracking</a></li>
-						<li><Link href="/calculator" className="hover:text-[#00D261]">Live Simulator</Link></li>
-					</ul>
-				</div>
-
-				<div className="space-y-3">
-					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">SOLUTIONS</h4>
-					<ul className="space-y-2 text-xs font-semibold text-gray-300">
-						<li><Link href="/integrations" className="hover:text-[#00D261]">Integrations Directory</Link></li>
-						<li><Link href="/calculator" className="hover:text-[#00D261]">ROI Calculator</Link></li>
-						<li><Link href="/pricing" className="hover:text-[#00D261]">Meta Rates &amp; Pricing</Link></li>
-						<li><Link href="/compare" className="hover:text-[#00D261]">Compare Alternatives</Link></li>
-					</ul>
-				</div>
-
-				<div className="space-y-3">
-					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">RESOURCES</h4>
-					<ul className="space-y-2 text-xs font-semibold text-gray-300">
-						<li><Link href="/blog" className="hover:text-[#00D261]">Blog &amp; Guides</Link></li>
-						<li><Link href="/case-studies" className="hover:text-[#00D261]">Case Studies</Link></li>
-						<li><Link href="/reviews" className="hover:text-[#00D261]">Wall of Love (Reviews)</Link></li>
-						<li><Link href="/changelog" className="hover:text-[#00D261]">Product Changelog</Link></li>
-					</ul>
-				</div>
-
-				<div className="space-y-3">
-					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">LEGAL &amp; TRUST</h4>
-					<ul className="space-y-2 text-xs font-semibold text-gray-300">
-						<li><Link href="/privacy" className="hover:text-[#00D261]">Privacy Policy</Link></li>
-						<li><Link href="/terms" className="hover:text-[#00D261]">Terms of Service</Link></li>
-						<li><Link href="/security" className="hover:text-[#00D261]">Security &amp; GDPR</Link></li>
-						<li><a href="/admin" className="hover:text-[#00D261]">Admin Panel</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div className="max-w-[1280px] mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 font-medium gap-2">
-				<span>© {new Date().getFullYear()} WhatFlow Inc. Built for Shopify Stores worldwide.</span>
-				<span>Official Meta Cloud API • Zero Markup Guarantee</span>
-			</div>
-		</footer>
-	);
-}
-
 // ─── Main Page Export (Server Component) ─────────────────────────────────────
 export default async function HomePage() {
 	return (
-		<div className="min-h-screen bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
-			<Navbar />
+		<div className="bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
 			<HeroSection />
 			<FeaturesStatusSection />
 			{/* Interactive ROI Calculator on Homepage */}
@@ -394,7 +263,6 @@ export default async function HomePage() {
 			<BlogAndCaseStudiesSection />
 			<FAQSection />
 			<CTABanner />
-			<Footer />
 		</div>
 	);
 }

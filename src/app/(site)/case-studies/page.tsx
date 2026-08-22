@@ -198,8 +198,8 @@ export default async function CaseStudiesPage({ searchParams }: CaseStudiesPageP
       <section className="bg-[#00D261] border-b-[2.5px] border-black px-4 sm:px-6 py-6">
         <div className="max-w-[1280px] mx-auto grid grid-cols-3 gap-4 text-center">
           <div>
-            <div className="font-display font-black text-[28px] sm:text-[40px] text-black leading-none">1,000+</div>
-            <div className="text-[10px] font-extrabold uppercase tracking-wider text-black/70">Merchants</div>
+            <div className="font-display font-black text-[28px] sm:text-[40px] text-black leading-none">10,000+</div>
+            <div className="text-[10px] font-extrabold uppercase tracking-wider text-black/70">Merchants Worldwide</div>
           </div>
           <div>
             <div className="font-display font-black text-[28px] sm:text-[40px] text-black leading-none">98%</div>

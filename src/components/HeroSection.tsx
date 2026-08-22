@@ -35,10 +35,6 @@ export function HeroSection() {
 				<div className="lg:col-span-6 space-y-6">
 					{/* Badges */}
 					<div className="flex flex-wrap items-center gap-3">
-						<div className="neo-pill bg-white px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-black">
-							<Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={48} height={15} alt="Meta" className="h-3.5 w-auto" />
-							<span>OFFICIAL META API</span>
-						</div>
 						<div className="neo-pill bg-[#F0F4FF] px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#1877F2]">
 							<Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={48} height={15} alt="Meta" className="h-3.5 w-auto" />
 							<span>TECH PARTNER</span>
@@ -144,21 +140,19 @@ export function HeroSection() {
 										<div className="space-y-1.5">
 											<button
 												onClick={() => setActiveAction("confirm")}
-												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${
-													activeAction === "confirm"
+												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${activeAction === "confirm"
 														? "bg-[#00D261] text-black"
 														: "bg-white text-[#00D261] hover:bg-[#E7FCE9]"
-												}`}
+													}`}
 											>
 												{activeAction === "confirm" ? "✓ CONFIRMED!" : "CONFIRM ORDER"}
 											</button>
 											<button
 												onClick={() => setActiveAction("cancel")}
-												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${
-													activeAction === "cancel"
+												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${activeAction === "cancel"
 														? "bg-[#FF4B4B] text-white"
 														: "bg-white text-[#FF4B4B] hover:bg-[#FFEBEB]"
-												}`}
+													}`}
 											>
 												{activeAction === "cancel" ? "✕ CANCELLED" : "CANCEL ORDER"}
 											</button>

@@ -350,7 +350,7 @@ export default async function BlogPostPage({ params }: PostPageProps) {
             <span className="text-stroke-green">WHATSAPP?</span>
           </h2>
           <p className="text-gray-300 text-sm font-medium">
-            Join 1,000+ Shopify merchants. 14-day free trial.
+            Join 10,000+ Shopify merchants worldwide. 14-day free trial.
           </p>
           <div className="flex items-center justify-center gap-3 flex-wrap">
             <Link
