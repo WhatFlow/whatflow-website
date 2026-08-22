@@ -247,6 +247,38 @@ async function BlogAndCaseStudiesSection() {
 	);
 }
 
+// ─── Affiliate Promo Section ──────────────────────────────────────────────────
+function AffiliateBanner() {
+	return (
+		<section className="bg-[#FAF7F0] py-14 px-4 sm:px-6 border-b-[2.5px] border-black">
+			<div className="max-w-[1280px] mx-auto">
+				<div className="neo-box bg-[#E8F8F0] p-8 sm:p-10 rounded-3xl border-[2.5px] border-black shadow-[6px_6px_0px_#000] flex flex-col md:flex-row items-center justify-between gap-8">
+					<div className="space-y-3 text-center md:text-left max-w-2xl">
+						<div className="neo-pill bg-[#00D261] text-black px-3.5 py-1 text-xs font-black uppercase tracking-wider inline-block">
+							TIER-BASED AFFILIATE PROGRAM
+						</div>
+						<h3 className="text-2xl sm:text-4xl font-display font-black uppercase text-black leading-tight">
+							GROW WITH WHATFLOW. EARN UP TO 50%.
+						</h3>
+						<p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
+							Recommend WhatFlow to Shopify stores and earn tiered recurring commissions for up to lifetime on every eligible referral.
+						</p>
+					</div>
+
+					<div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
+						<Link
+							href="/affiliate"
+							className="neo-btn w-full sm:w-auto bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-7 py-4 rounded-xl text-center shadow-[3px_3px_0px_#000] hover:bg-[#00be57] transition-colors whitespace-nowrap"
+						>
+							EXPLORE AFFILIATE PLAN ➔
+						</Link>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+}
+
 // ─── Main Page Export (Server Component) ─────────────────────────────────────
 export default async function HomePage() {
 	return (
@@ -262,6 +294,7 @@ export default async function HomePage() {
 			<ReviewsSection />
 			<BlogAndCaseStudiesSection />
 			<FAQSection />
+			<AffiliateBanner />
 			<CTABanner />
 		</div>
 	);

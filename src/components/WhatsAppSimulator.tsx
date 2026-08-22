@@ -26,7 +26,7 @@ export function WhatsAppSimulator() {
     abandoned_checkout: {
       label: "Abandoned Cart",
       category: "Marketing",
-      header: "🛍️ You left something behind!",
+      header: "You left something behind!",
       body: `Hey ${customerName}! We noticed you left the *${productName}* in your cart at *${storeName}*.\n\nItems are selling fast! Complete your purchase now and use code *${discountCode}* for 10% off today:`,
       ctaText: "Complete Checkout ➔",
       interactiveType: "link",
@@ -34,7 +34,7 @@ export function WhatsAppSimulator() {
     order_confirmation: {
       label: "COD / Order Confirmation",
       category: "Utility",
-      header: "📦 Confirm Your Order #4892",
+      header: "Confirm Your Order #4892",
       body: `Hi ${customerName}, thank you for ordering with *${storeName}*! Please confirm your Cash on Delivery order to expedite shipping:\n\n*Item:* ${productName}\n*Total:* $68.00\n*Address:* 42 Maple Ave, Brooklyn NY`,
       ctaText: "✓ Confirm Order",
       secondaryCta: "✕ Cancel Order",
@@ -43,17 +43,17 @@ export function WhatsAppSimulator() {
     order_fulfilled: {
       label: "Tracking & Delivery",
       category: "Utility",
-      header: "🚚 Your Order Has Shipped!",
+      header: "Your Order Has Shipped!",
       body: `Great news, ${customerName}! Your order from *${storeName}* is on its way with DHL Express.\n\n*Tracking Number:* 9400111899562810\n*Estimated Delivery:* Thursday, 3 PM`,
       ctaText: "Track Package ➔",
       interactiveType: "link",
     },
     review_request: {
-      label: "Judge.me Review Request",
+      label: "Review Request",
       category: "Marketing",
-      header: "⭐ How was your order?",
+      header: "How was your order?",
       body: `Hey ${customerName}, how are you enjoying your new *${productName}* from *${storeName}*?\n\nLeave a quick review and photo to get $10 off your next order:`,
-      ctaText: "Leave a 5★ Review ➔",
+      ctaText: "Leave a Review ➔",
       interactiveType: "link",
     },
   };

@@ -86,6 +86,15 @@ export function Navbar() {
 						PRICING
 					</Link>
 
+					<Link
+						href="/affiliate"
+						className={`text-xs font-extrabold uppercase tracking-wider transition-colors ${
+							pathname === "/affiliate" ? "text-[#00D261]" : "text-black hover:text-[#00D261]"
+						}`}
+					>
+						AFFILIATE
+					</Link>
+
 					{/* Resources Dropdown */}
 					<div
 						className="relative"
@@ -223,6 +232,14 @@ export function Navbar() {
 						>
 							PRICING
 						</Link>
+						<Link
+							href="/affiliate"
+							className={`text-sm font-extrabold uppercase tracking-wider px-3 py-2 rounded-lg transition-colors ${
+								pathname === "/affiliate" ? "bg-[#00D261] text-black" : "text-black hover:bg-white"
+							}`}
+						>
+							AFFILIATE
+						</Link>
 
 						<div className="pt-2 border-t border-black/10">
 							<div className="text-[10px] font-black uppercase text-gray-500 tracking-widest px-3 mb-2">
@@ -232,14 +249,19 @@ export function Navbar() {
 								href="/blog"
 								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
 							>
-								<span>📖</span>
+								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
+									<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+									<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+								</svg>
 								<span>BLOG &amp; GUIDES</span>
 							</Link>
 							<Link
 								href="/case-studies"
 								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
 							>
-								<span>⭐</span>
+								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
+									<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+								</svg>
 								<span>CASE STUDIES</span>
 							</Link>
 						</div>

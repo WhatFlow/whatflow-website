@@ -44,6 +44,7 @@ export function Footer() {
 				<div className="space-y-3">
 					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">RESOURCES</h4>
 					<ul className="space-y-2 text-xs font-semibold text-gray-300">
+						<li><Link href="/affiliate" className="hover:text-[#00D261] transition-colors">Affiliate Plan</Link></li>
 						<li><Link href="/blog" className="hover:text-[#00D261] transition-colors">Blog &amp; Guides</Link></li>
 						<li><Link href="/case-studies" className="hover:text-[#00D261] transition-colors">Case Studies</Link></li>
 						<li><Link href="/changelog" className="hover:text-[#00D261] transition-colors">Product Changelog</Link></li>

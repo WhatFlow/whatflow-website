@@ -5,8 +5,19 @@ import Image from "next/image";
 
 export function FloatingWhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
-  const supportNumber = "15550192834"; // Default support line
-  const defaultMessage = encodeURIComponent("Hi WhatFlow team, I have a question about setting up WhatsApp for my Shopify store!");
+  const supportNumber =
+    process.env.NEXT_PUBLIC_WHATSAPP_SUPPORT_NUMBER ||
+    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ||
+    "";
+
+  // Hide button if no support number environment variable is present
+  if (!supportNumber || supportNumber.trim() === "") {
+    return null;
+  }
+
+  const defaultMessage = encodeURIComponent(
+    "Hi WhatFlow team, I have a question about setting up WhatsApp for my Shopify store!"
+  );
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
@@ -22,7 +33,7 @@ export function FloatingWhatsAppButton() {
                 <div className="font-extrabold text-xs text-black uppercase tracking-tight">WhatFlow Support</div>
                 <div className="text-[10px] font-bold text-[#0A6B56] flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#00D261] animate-pulse" />
-                  ONLINE · TYPICALLY REPLIES IN &lt;5 MIN
+                  ONLINE · REPLIES IN &lt;5 MIN
                 </div>
               </div>
             </div>
@@ -40,7 +51,7 @@ export function FloatingWhatsAppButton() {
           </div>
 
           <p className="text-xs font-medium text-gray-700 leading-relaxed mb-4">
-            Need help integrating WhatFlow with your Shopify store or calculating WhatsApp Meta rates? Chat directly with our engineering team on WhatsApp.
+            Need help integrating WhatFlow with your Shopify store or calculating WhatsApp Meta rates? Chat directly with our team on WhatsApp.
           </p>
 
           <a
