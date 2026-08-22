@@ -2,6 +2,7 @@ import type { CollectionConfig } from "payload";
 
 export const Changelog: CollectionConfig = {
   slug: "changelog",
+  lockDocuments: false,
   labels: {
     singular: "Changelog Entry",
     plural: "Changelog Entries",

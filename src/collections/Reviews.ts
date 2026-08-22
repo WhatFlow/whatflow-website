@@ -2,6 +2,7 @@ import type { CollectionConfig } from "payload";
 
 export const Reviews: CollectionConfig = {
   slug: "reviews",
+  lockDocuments: false,
   admin: {
     useAsTitle: "author",
     defaultColumns: ["author", "rating", "body", "active"],

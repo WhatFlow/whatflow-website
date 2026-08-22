@@ -2,6 +2,7 @@ import type { CollectionConfig } from "payload";
 
 export const Integrations: CollectionConfig = {
   slug: "integrations",
+  lockDocuments: false,
   labels: {
     singular: "Integration",
     plural: "Integrations",

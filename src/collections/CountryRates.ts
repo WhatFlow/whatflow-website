@@ -2,6 +2,7 @@ import type { CollectionConfig } from "payload";
 
 export const CountryRates: CollectionConfig = {
 	slug: "country-rates",
+	lockDocuments: false,
 	admin: {
 		useAsTitle: "market",
 		defaultColumns: ["market", "currency", "utility", "marketing", "authentication", "active"],
