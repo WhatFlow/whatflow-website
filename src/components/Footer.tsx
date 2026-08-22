@@ -56,8 +56,9 @@ export function Footer() {
 
 				{/* Column 4: Legal & Trust */}
 				<div className="space-y-3">
-					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">LEGAL &amp; TRUST</h4>
+					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">COMPANY &amp; TRUST</h4>
 					<ul className="space-y-2 text-xs font-semibold text-gray-300">
+						<li><Link href="/about" className="hover:text-[#00D261] transition-colors">About WhatFlow</Link></li>
 						<li><Link href="/privacy" className="hover:text-[#00D261] transition-colors">Privacy Policy</Link></li>
 						<li><Link href="/terms" className="hover:text-[#00D261] transition-colors">Terms of Service</Link></li>
 						<li><Link href="/security" className="hover:text-[#00D261] transition-colors">Security &amp; GDPR</Link></li>

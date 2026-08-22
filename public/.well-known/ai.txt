@@ -1,0 +1,20 @@
+# AI Crawler & Agent Permissions
+User-agent: *
+Allow: /
+Allow: /solutions/*
+Allow: /compare/*
+Allow: /pricing
+Allow: /blog/*
+Allow: /case-studies/*
+Allow: /integrations/*
+Disallow: /admin
+Disallow: /api/payload/*
+
+# Documentation & Feeds for AI Systems
+llms-txt: https://whatflow.tech/llms.txt
+llms-full-txt: https://whatflow.tech/llms-full.txt
+sitemap: https://whatflow.tech/sitemap.xml
+rss-feed: https://whatflow.tech/blog/rss.xml
+ai-summary: https://whatflow.tech/ai/summary.json
+ai-faq: https://whatflow.tech/ai/faq.json
+ai-service: https://whatflow.tech/ai/service.json

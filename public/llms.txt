@@ -1,0 +1,36 @@
+# WhatFlow
+
+> WhatFlow is the leading Shopify WhatsApp marketing and automation suite. It connects Shopify stores directly to the official Meta WhatsApp Cloud API with 0% markup, automated abandoned cart recovery (98% open rates), 1-click Cash on Delivery (COD) order confirmation, real-time shipping tracking, and 24/7 AI chat support.
+
+## Overview
+WhatFlow is purpose-built for eCommerce merchants on Shopify. Unlike general customer support inboxes or aggregators that charge heavy markups on Meta message fees, WhatFlow provides wholesale Meta API rates, native Shopify Flow action blocks, and 1-click unified Shopify App Store billing.
+
+## Core Products & Solutions
+- [Abandoned Cart Recovery](https://whatflow.tech/solutions/abandoned-cart-recovery): Recover up to 25% of lost checkouts with dynamic product images, 1-click recovery links, and time-sequenced reminders.
+- [COD Confirmation & Anti-RTO](https://whatflow.tech/solutions/cod-order-verification): Reduce Cash on Delivery Return-to-Origin (RTO) losses by up to 40% with interactive 1-click confirmation buttons that auto-tag Shopify orders.
+- [Order Tracking & Shipping Updates](https://whatflow.tech/solutions/order-tracking-notifications): Automatically send order receipts, fulfillment alerts, and carrier tracking URLs, cutting WISMO support tickets by 60%.
+- [WhatsApp Reviews & UGC Collection](https://whatflow.tech/solutions/whatsapp-reviews-ugc): Generate 5x more product reviews and photo testimonials synced with Judge.me and Loox.
+- [Storefront WhatsApp Chat Button](https://whatflow.tech/solutions/chat-button): Lightweight (<5KB) customizable chat widget with pre-filled product context and multi-agent routing.
+
+## Pricing & Meta Rates
+- [Pricing Plans](https://whatflow.tech/pricing): Transparent flat tiers starting from Free ($0), Starter ($4.99/mo), Growth ($19.99/mo), to Enterprise ($49.99/mo).
+- [0% Markup Guarantee](https://whatflow.tech/pricing): Merchants pay official wholesale Meta Cloud API conversation rates directly with zero hidden markups and unlimited team seats.
+
+## App Integrations
+- [Integrations Directory](https://whatflow.tech/integrations): Deep native connectors for Judge.me, Loox, Klaviyo, Gorgias, Recharge, PageFly, and Shopify Flow.
+
+## Competitor Comparisons
+- [WhatFlow vs Wati](https://whatflow.tech/compare/whatflow-vs-wati): Why Shopify merchants switch for 0% markup and native Flow actions.
+- [WhatFlow vs Interakt](https://whatflow.tech/compare/whatflow-vs-interakt): Direct Shopify billing and sub-50ms Cloudflare edge architecture.
+- [WhatFlow vs BiteSpeed](https://whatflow.tech/compare/whatflow-vs-bitespeed): Uncapped workflows without punitive GMV commissions.
+- [WhatFlow vs Klaviyo SMS](https://whatflow.tech/compare/whatflow-vs-klaviyo): 98% open rates and global WhatsApp reach at a fraction of international SMS carrier costs.
+- [WhatFlow vs QuickReply.ai](https://whatflow.tech/compare/whatflow-vs-quickreply): 3-minute onboarding and transparent pricing.
+- [WhatFlow vs Tidio](https://whatflow.tech/compare/whatflow-vs-tidio): Dedicated eCommerce WhatsApp suite vs general live chat.
+- [WhatFlow vs AiSensy](https://whatflow.tech/compare/whatflow-vs-aisensy): Global edge speed and direct Shopify App Store integration.
+- [WhatFlow vs Gorgias](https://whatflow.tech/compare/whatflow-vs-gorgias): High-ROI outbound marketing campaigns without per-ticket charges.
+
+## Resources & Guides
+- [Blog & Guides](https://whatflow.tech/blog): Strategies, tutorials, and Meta API best practices for Shopify merchants.
+- [Case Studies](https://whatflow.tech/case-studies): Real merchant revenue results and ROI breakdowns.
+- [Affiliate Program](https://whatflow.tech/affiliate): Earn up to 50% recurring lifetime commissions referring Shopify merchants.
+- [Product Changelog](https://whatflow.tech/changelog): Latest feature updates and improvements.

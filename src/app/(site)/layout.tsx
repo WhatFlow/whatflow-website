@@ -22,7 +22,7 @@ const spaceGrotesk = Space_Grotesk({
 
 const siteUrl =
 	process.env.NEXT_PUBLIC_SITE_URL ||
-	(process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
+	(process.env.NODE_ENV === "production" ? "https://whatflow.tech" : "http://localhost:3000");
 
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
@@ -43,7 +43,10 @@ export const metadata: Metadata = {
 		"Shopify WhatsApp marketing",
 	],
 	alternates: {
-		canonical: "./",
+		canonical: "/",
+		types: {
+			"application/rss+xml": `${siteUrl}/blog/rss.xml`,
+		},
 	},
 	openGraph: {
 		type: "website",
@@ -53,6 +56,14 @@ export const metadata: Metadata = {
 		title: "WhatFlow — WhatsApp Apps & Automations for Shopify Stores",
 		description:
 			"Automate WhatsApp marketing, recover abandoned carts, verify COD orders, and boost Shopify conversions with official Meta API.",
+		images: [
+			{
+				url: "/opengraph-image",
+				width: 1200,
+				height: 630,
+				alt: "WhatFlow — WhatsApp Marketing & Automation Suite for Shopify",
+			},
+		],
 	},
 	twitter: {
 		card: "summary_large_image",
@@ -60,6 +71,7 @@ export const metadata: Metadata = {
 		description:
 			"Automate WhatsApp marketing, recover abandoned carts, verify COD orders, and boost Shopify conversions with official Meta API.",
 		creator: "@whatflow_io",
+		images: ["/opengraph-image"],
 	},
 	robots: {
 		index: true,
@@ -86,6 +98,12 @@ export default function RootLayout({
 		<html lang="en" className={`scroll-smooth ${inter.variable} ${spaceGrotesk.variable}`}>
 			<head>
 				<link rel="icon" href="/logo.svg" type="image/svg+xml" />
+				<link
+					rel="alternate"
+					type="application/rss+xml"
+					title="WhatFlow Blog RSS Feed"
+					href="/blog/rss.xml"
+				/>
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
@@ -96,7 +114,7 @@ export default function RootLayout({
 				/>
 			</head>
 			<body
-				className="antialiased bg-[#FDFBF7] text-[#000000] selection:bg-[#00D261] selection:text-black font-sans"
+				className="antialiased bg-[#FAF7F0] text-[#000000] selection:bg-[#00D261] selection:text-black font-sans"
 			>
 				<AnnouncementBar />
 				<Navbar />
