@@ -66,7 +66,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
 
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
+    (process.env.NODE_ENV === "production" ? "https://whatflow.tech" : "http://localhost:3000");
 
   const studyUrl = `${siteUrl}/case-studies/${study.slug}`;
 
@@ -224,12 +224,11 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       {study.metrics && study.metrics.length > 0 && (
         <section className="bg-[#091E17] border-b-[2.5px] border-black px-4 sm:px-6 py-8">
           <div className="max-w-[1080px] mx-auto">
-            <div className={`grid gap-6 ${
-              study.metrics.length === 1 ? "grid-cols-1 max-w-xs mx-auto" :
-              study.metrics.length === 2 ? "grid-cols-1 sm:grid-cols-2" :
-              study.metrics.length === 3 ? "grid-cols-1 sm:grid-cols-3" :
-              "grid-cols-2 sm:grid-cols-4"
-            }`}>
+            <div className={`grid gap-6 ${study.metrics.length === 1 ? "grid-cols-1 max-w-xs mx-auto" :
+                study.metrics.length === 2 ? "grid-cols-1 sm:grid-cols-2" :
+                  study.metrics.length === 3 ? "grid-cols-1 sm:grid-cols-3" :
+                    "grid-cols-2 sm:grid-cols-4"
+              }`}>
               {study.metrics.map((metric) => (
                 <div
                   key={metric.label}

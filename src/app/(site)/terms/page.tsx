@@ -33,7 +33,7 @@ export default function TermsPage() {
               1. ACCEPTANCE OF TERMS
             </h2>
             <p className="text-sm leading-relaxed text-gray-700">
-              By installing, accessing, or using the WhatFlow Shopify application or website (whatflow.io), you agree to be bound by these Terms of Service. If you are entering into these terms on behalf of a company or entity, you represent that you have the authority to bind such entity to these terms.
+              By installing, accessing, or using the WhatFlow Shopify application or website (whatflow.tech), you agree to be bound by these Terms of Service. If you are entering into these terms on behalf of a company or entity, you represent that you have the authority to bind such entity to these terms.
             </p>
           </div>
 
@@ -87,7 +87,7 @@ export default function TermsPage() {
             </p>
             <div className="mt-3 neo-box bg-[#FAF7F0] p-4 inline-block">
               <div className="text-xs font-black uppercase text-black">WhatFlow Legal Team</div>
-              <div className="text-xs text-gray-600 font-bold">Email: legal@whatflow.io</div>
+              <div className="text-xs text-gray-600 font-bold">Email: legal@whatflow.tech</div>
             </div>
           </div>
         </div>

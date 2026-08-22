@@ -94,7 +94,7 @@ export default function PrivacyPage() {
             </p>
             <div className="mt-3 neo-box bg-[#FAF7F0] p-4 inline-block">
               <div className="text-xs font-black uppercase text-black">WhatFlow Privacy Team</div>
-              <div className="text-xs text-gray-600 font-bold">Email: privacy@whatflow.io</div>
+              <div className="text-xs text-gray-600 font-bold">Email: privacy@whatflow.tech</div>
             </div>
           </div>
         </div>

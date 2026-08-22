@@ -118,8 +118,8 @@ export default async function IntegrationsPage({ searchParams }: IntegrationsPag
     cmsIntegrations.length > 0
       ? cmsIntegrations
       : (DEFAULT_INTEGRATIONS.filter(
-          (item) => selectedCategory === "all" || item.category === selectedCategory
-        ) as Integration[]);
+        (item) => selectedCategory === "all" || item.category === selectedCategory
+      ) as Integration[]);
 
   const categories = [
     { key: "all", label: "All Integrations" },
@@ -157,11 +157,10 @@ export default async function IntegrationsPage({ searchParams }: IntegrationsPag
               <Link
                 key={cat.key}
                 href={cat.key === "all" ? "/integrations" : `/integrations?category=${cat.key}`}
-                className={`neo-pill px-4 py-2 text-xs font-extrabold uppercase tracking-wider whitespace-nowrap transition-all ${
-                  isActive
+                className={`neo-pill px-4 py-2 text-xs font-extrabold uppercase tracking-wider whitespace-nowrap transition-all ${isActive
                     ? "bg-[#00D261] text-black shadow-[2px_2px_0px_#000]"
                     : "bg-[#FAF7F0] text-gray-700 hover:bg-gray-100"
-                }`}
+                  }`}
               >
                 {cat.label}
               </Link>
@@ -241,7 +240,7 @@ export default async function IntegrationsPage({ searchParams }: IntegrationsPag
           </p>
           <div className="pt-2">
             <a
-              href="mailto:support@whatflow.io"
+              href="mailto:support@whatflow.tech"
               className="neo-btn inline-flex items-center gap-2 bg-[#00D261] text-black font-extrabold text-xs uppercase px-6 py-3 rounded-lg shadow-[3px_3px_0px_#000]"
             >
               <span>REQUEST AN INTEGRATION</span>

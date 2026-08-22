@@ -109,7 +109,7 @@ export default function SecurityPage() {
           </p>
           <div className="pt-2">
             <a
-              href="mailto:security@whatflow.io"
+              href="mailto:security@whatflow.tech"
               className="neo-btn inline-flex items-center gap-2 bg-[#00D261] text-black font-extrabold text-xs uppercase px-6 py-3 rounded-lg shadow-[3px_3px_0px_#000]"
             >
               <span>REQUEST ENTERPRISE DPA</span>

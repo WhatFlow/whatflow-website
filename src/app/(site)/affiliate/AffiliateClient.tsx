@@ -159,7 +159,7 @@ export function AffiliateClient() {
                   </div>
                   <div>
                     <div className="text-[10px] font-black uppercase text-gray-500 tracking-wider">YOUR TRACKED LINK</div>
-                    <div className="text-xs sm:text-sm font-extrabold text-black font-mono">whatflow.io/aff/yourlink</div>
+                    <div className="text-xs sm:text-sm font-extrabold text-black font-mono">whatflow.tech/aff/yourlink</div>
                   </div>
                 </div>
                 <span className="neo-pill bg-[#E8F8F0] text-[#0A6B56] text-[10px] font-black px-2 py-0.5 border border-black">
@@ -521,7 +521,7 @@ export function AffiliateClient() {
                 APPLY AS AN AGENCY ➔
               </a>
               <a
-                href="mailto:partners@whatflow.io?subject=Agency%20Partnership%20Inquiry"
+                href="mailto:partners@whatflow.tech?subject=Agency%20Partnership%20Inquiry"
                 className="neo-btn bg-white text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-gray-50 transition-colors"
               >
                 TALK TO OUR TEAM

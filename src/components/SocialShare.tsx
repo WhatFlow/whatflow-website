@@ -13,7 +13,7 @@ export function SocialShare({ url, title, className = "" }: SocialShareProps) {
   const [copied, setCopied] = useState(false);
 
   const currentUrl =
-    url || (typeof window !== "undefined" ? window.location.href : "https://whatflow.io");
+    url || (typeof window !== "undefined" ? window.location.href : "https://whatflow.tech");
 
   const encodedUrl = encodeURIComponent(currentUrl);
   const encodedTitle = encodeURIComponent(title);

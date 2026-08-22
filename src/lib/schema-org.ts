@@ -31,14 +31,14 @@ export function getOrganizationSchema() {
       {
         "@type": "ContactPoint",
         contactType: "customer support",
-        email: "support@whatflow.io",
+        email: "support@whatflow.tech",
         telephone: "+1-800-WHATFLOW",
         availableLanguage: ["English", "Spanish", "Hindi", "Portuguese", "Arabic"],
       },
       {
         "@type": "ContactPoint",
         contactType: "sales",
-        email: "sales@whatflow.io",
+        email: "sales@whatflow.tech",
         availableLanguage: ["English"],
       },
     ],

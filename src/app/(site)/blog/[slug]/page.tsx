@@ -58,7 +58,7 @@ export default async function BlogPostPage({ params }: PostPageProps) {
 
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
+    (process.env.NODE_ENV === "production" ? "https://whatflow.tech" : "http://localhost:3000");
 
   const postUrl = `${siteUrl}/blog/${post.slug}`;
 
