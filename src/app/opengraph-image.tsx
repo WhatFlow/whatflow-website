@@ -1,6 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
 export const alt = "WhatFlow — WhatsApp Marketing & Automations for Shopify";
 export const size = {
   width: 1200,
