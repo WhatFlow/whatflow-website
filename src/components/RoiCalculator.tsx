@@ -27,7 +27,11 @@ export function RoiCalculator() {
   const roiMultiple = Math.max(1, Math.round(estimatedRecoveredRevenue / whatflowCostMonthly));
 
   return (
-    <div className="neo-box bg-white p-6 sm:p-10 rounded-2xl">
+    <div
+      className="neo-box bg-white p-6 sm:p-10 rounded-2xl"
+      data-tool-name="shopify_whatsapp_roi_calculator"
+      data-tool-description="Calculate estimated monthly recovered checkout revenue and ROI multiple for Shopify stores using WhatsApp automations"
+    >
       <div className="text-center max-w-2xl mx-auto mb-10">
         <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-3">
           ROI &amp; REVENUE ESTIMATOR

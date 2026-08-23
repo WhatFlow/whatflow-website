@@ -26,6 +26,9 @@ export function getOrganizationSchema() {
       "https://linkedin.com/company/whatflow",
       "https://www.crunchbase.com/organization/whatflow",
       "https://github.com/whatflow",
+      "https://www.producthunt.com/products/whatflow",
+      "https://www.g2.com/products/whatflow",
+      "https://www.capterra.com/p/whatflow",
     ],
     contactPoint: [
       {
@@ -103,7 +106,7 @@ export function getSoftwareApplicationSchema() {
       worstRating: "1",
     },
     description:
-      "Automate WhatsApp messages, recover abandoned carts with 98% open rates, collect photo reviews, and verify COD orders for Shopify stores with official Meta Cloud API integration.",
+      "Automate WhatsApp marketing, recover abandoned carts with 98% open rates, verify COD orders, and boost Shopify conversions with official Meta API.",
     publisher: {
       "@id": `${SITE_URL}/#organization`,
     },

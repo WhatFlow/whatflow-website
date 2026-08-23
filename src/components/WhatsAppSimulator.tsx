@@ -108,10 +108,13 @@ export function WhatsAppSimulator() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label className="text-[10px] font-extrabold uppercase text-gray-600 block mb-1">
+                <label htmlFor="sim-customer-name" className="text-[10px] font-extrabold uppercase text-gray-600 block mb-1">
                   Customer Name
                 </label>
                 <input
+                  id="sim-customer-name"
+                  name="customerName"
+                  aria-label="Sample Customer Name"
                   type="text"
                   value={customerName}
                   onChange={(e) => setCustomerName(e.target.value)}
@@ -119,10 +122,13 @@ export function WhatsAppSimulator() {
                 />
               </div>
               <div>
-                <label className="text-[10px] font-extrabold uppercase text-gray-600 block mb-1">
+                <label htmlFor="sim-store-name" className="text-[10px] font-extrabold uppercase text-gray-600 block mb-1">
                   Store Name
                 </label>
                 <input
+                  id="sim-store-name"
+                  name="storeName"
+                  aria-label="Sample Store Name"
                   type="text"
                   value={storeName}
                   onChange={(e) => setStoreName(e.target.value)}
@@ -133,10 +139,13 @@ export function WhatsAppSimulator() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label className="text-[10px] font-extrabold uppercase text-gray-600 block mb-1">
+                <label htmlFor="sim-product-name" className="text-[10px] font-extrabold uppercase text-gray-600 block mb-1">
                   Product Name
                 </label>
                 <input
+                  id="sim-product-name"
+                  name="productName"
+                  aria-label="Sample Product Name"
                   type="text"
                   value={productName}
                   onChange={(e) => setProductName(e.target.value)}
@@ -144,10 +153,13 @@ export function WhatsAppSimulator() {
                 />
               </div>
               <div>
-                <label className="text-[10px] font-extrabold uppercase text-gray-600 block mb-1">
+                <label htmlFor="sim-discount-code" className="text-[10px] font-extrabold uppercase text-gray-600 block mb-1">
                   Discount Code
                 </label>
                 <input
+                  id="sim-discount-code"
+                  name="discountCode"
+                  aria-label="Sample Discount Code"
                   type="text"
                   value={discountCode}
                   onChange={(e) => setDiscountCode(e.target.value)}

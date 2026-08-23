@@ -1,0 +1,25 @@
+{
+  "name": "WhatFlow",
+  "headline": "WhatsApp Marketing & Automation Suite for Shopify Stores",
+  "description": "Automate WhatsApp marketing, recover abandoned carts with 98% open rates, verify COD orders, and boost Shopify conversions with official Meta API.",
+  "url": "https://whatflow.tech",
+  "category": "eCommerce Software / Shopify App",
+  "platform": "Shopify",
+  "pricing": {
+    "free_tier": true,
+    "starting_price": "$0",
+    "paid_plans": ["Starter ($4.99/mo)", "Growth ($19.99/mo)", "Scale ($49.99/mo)"],
+    "meta_rates_markup": "0%",
+    "trial": "7-day full feature trial"
+  },
+  "capabilities": [
+    "Abandoned Cart Recovery (up to 25% recovery rate)",
+    "Cash on Delivery (COD) Order Verification & Anti-RTO",
+    "Automated Shipping Tracking & Delivery Updates",
+    "WhatsApp Review & UGC Collection (Judge.me & Loox)",
+    "Storefront WhatsApp Floating Chat Widget",
+    "Native Shopify Flow Action Blocks",
+    "2-Way Live Chat Support Inbox with 24/7 AI Auto-Replies"
+  ],
+  "official_partnerships": ["Meta Tech Partner (Cloud API)", "Shopify App Store"]
+}
