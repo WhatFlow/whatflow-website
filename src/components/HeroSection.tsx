@@ -116,7 +116,7 @@ export function HeroSection() {
 									<div className="bg-[#E7FCE9] border border-black p-2.5 rounded-lg shadow-sm">
 										<p className="font-medium text-[#111111] mb-1.5 leading-snug">
 											Hi Alex,<br />
-											Thanks for your order! We've received it and are getting it ready to ship.
+											Thanks for your purchase! We've received your package and are getting it ready to ship.
 										</p>
 										<div className="bg-white border border-black p-2 rounded flex items-center gap-2 text-[11px]">
 											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
@@ -125,7 +125,7 @@ export function HeroSection() {
 												<line x1="12" y1="22.08" x2="12" y2="12" />
 											</svg>
 											<div>
-												<div className="font-bold text-black">Order #1027</div>
+												<div className="font-bold text-black">Package #1027</div>
 												<div className="text-[#555] text-[10px]">2 items • $89.00</div>
 											</div>
 										</div>
@@ -135,7 +135,7 @@ export function HeroSection() {
 									{/* WhatsApp Action Bubble */}
 									<div className="bg-white border border-black p-2.5 rounded-lg space-y-2">
 										<p className="font-medium text-[#111111] text-[11px]">
-											Please confirm your order to continue.
+											Please confirm your delivery to continue.
 										</p>
 										<div className="space-y-1.5">
 											<button
@@ -145,7 +145,7 @@ export function HeroSection() {
 														: "bg-white text-[#00D261] hover:bg-[#E7FCE9]"
 													}`}
 											>
-												{activeAction === "confirm" ? "✓ CONFIRMED!" : "CONFIRM ORDER"}
+												{activeAction === "confirm" ? "✓ CONFIRMED!" : "CONFIRM DELIVERY"}
 											</button>
 											<button
 												onClick={() => setActiveAction("cancel")}
@@ -154,7 +154,7 @@ export function HeroSection() {
 														: "bg-white text-[#FF4B4B] hover:bg-[#FFEBEB]"
 													}`}
 											>
-												{activeAction === "cancel" ? "✕ CANCELLED" : "CANCEL ORDER"}
+												{activeAction === "cancel" ? "✕ CANCELLED" : "CANCEL PURCHASE"}
 											</button>
 										</div>
 										<div className="text-[9px] text-right text-[#666]">10:30 AM</div>

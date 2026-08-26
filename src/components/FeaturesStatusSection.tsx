@@ -32,7 +32,7 @@ export function FeaturesStatusSection() {
 					{/* Left Content */}
 					<div className="lg:col-span-6 space-y-6">
 						<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
-							FEATURE — ORDER CONFIRMATION
+							FEATURE — COD &amp; PURCHASE VERIFICATION
 						</div>
 
 						<div className="flex flex-wrap items-center gap-3">
@@ -46,12 +46,12 @@ export function FeaturesStatusSection() {
 						</div>
 
 						<h2 className="text-[38px] sm:text-[50px] lg:text-[56px] font-display font-black leading-[1.05] uppercase text-black tracking-tight">
-							KNOW WHICH ORDERS ARE{" "}
+							KNOW WHICH PURCHASES ARE{" "}
 							<span className="text-stroke-green">REAL.</span>
 						</h2>
 
 						<p className="text-[17px] text-[#222222] font-medium leading-relaxed max-w-md">
-							Ask customers to confirm or cancel on WhatsApp before your team starts fulfillment.
+							Ask customers to confirm or cancel via WhatsApp before your fulfillment team ships packages.
 						</p>
 
 						<div className="flex flex-wrap items-center gap-4 pt-2">
