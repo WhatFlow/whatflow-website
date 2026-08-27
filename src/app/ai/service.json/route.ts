@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   const service = {
     service_name: "WhatFlow Shopify WhatsApp Automation",
-    provider: "WhatFlow Inc.",
+    provider: "WhatFlow Solutions",
     api_standard: "Meta WhatsApp Cloud API",
     supported_frameworks: ["Shopify", "Shopify Plus"],
     features: [

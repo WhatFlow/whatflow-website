@@ -59,6 +59,7 @@ export function Footer() {
 					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">COMPANY &amp; TRUST</h4>
 					<ul className="space-y-2 text-xs font-semibold text-gray-300">
 						<li><Link href="/about" className="hover:text-[#00D261] transition-colors">About WhatFlow</Link></li>
+						<li><a href="mailto:support@whatflow.tech" className="hover:text-[#00D261] transition-colors">Contact Support</a></li>
 						<li><Link href="/privacy" className="hover:text-[#00D261] transition-colors">Privacy Policy</Link></li>
 						<li><Link href="/terms" className="hover:text-[#00D261] transition-colors">Terms of Service</Link></li>
 						<li><Link href="/security" className="hover:text-[#00D261] transition-colors">Security &amp; GDPR</Link></li>
@@ -67,7 +68,7 @@ export function Footer() {
 			</div>
 
 			<div className="max-w-[1280px] mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 font-medium gap-2">
-				<span>© {new Date().getFullYear()} WhatFlow Inc. Trusted by 10,000+ Shopify merchants worldwide.</span>
+				<span>© {new Date().getFullYear()} WhatFlow Solutions. Trusted by 10,000+ eCommerce merchants worldwide.</span>
 				<span>Official Meta Tech Partner • Zero Markup Guarantee</span>
 			</div>
 		</footer>

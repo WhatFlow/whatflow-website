@@ -71,6 +71,10 @@ export function getWebSiteSchema() {
     publisher: {
       "@id": `${SITE_URL}/#organization`,
     },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "#hero p", "#knowledge-benchmarks h2", "#knowledge-benchmarks article h3"],
+    },
     potentialAction: {
       "@type": "SearchAction",
       target: {
