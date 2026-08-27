@@ -211,6 +211,9 @@ export function RoiCalculator() {
               <div className="text-[10px] text-gray-400 font-medium mt-2">
                 14-day free trial • 5-minute Shopify installation • Zero risk
               </div>
+              <div className="text-[9px] text-[#A7F3D0]/70 font-semibold mt-1">
+                Pricing model &amp; Meta Cloud rates updated Q1 2026. Based on 70% average cart abandonment rate [2].
+              </div>
             </div>
           </div>
         </div>

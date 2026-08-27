@@ -40,7 +40,7 @@ export function FeaturesStatusSection() {
 								AUTOMATIC
 							</div>
 							<div className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black flex items-center gap-1.5">
-								<Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={14} height={14} alt="Shopify" />
+								<Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={14} height={14} alt="Shopify Two-Way Sync Connector" />
 								<span>SHOPIFY SYNC</span>
 							</div>
 						</div>
@@ -65,7 +65,7 @@ export function FeaturesStatusSection() {
 					</div>
 
 					{/* Right Visual Box */}
-					<div className="lg:col-span-6">
+					<div className="lg:col-span-6" data-tool-name="cod_order_verification_simulator" data-tool-description="Demonstrates one-tap Cash on Delivery verification and auto-tagging in Shopify store order management">
 						<div className="neo-box-teal p-6 sm:p-8 relative">
 							<div className="absolute top-0 left-6 -translate-y-1/2 neo-pill bg-[#FFC107] px-4 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
 								ONE-TAP RESPONSE
@@ -73,7 +73,7 @@ export function FeaturesStatusSection() {
 
 							<div className="bg-white border-2 border-black rounded-xl p-5 shadow-[4px_4px_0px_#000] space-y-4">
 								<div className="flex items-center gap-3 border-b border-gray-200 pb-3">
-									<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg" width={28} height={28} alt="WhatsApp" />
+									<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg" width={28} height={28} alt="WhatsApp Verified Customer Message Thread" />
 									<div className="flex-1">
 										<div className="font-extrabold text-black text-xs">Alex Johnson</div>
 										<div className="text-[10px] text-gray-500">10:30 AM</div>

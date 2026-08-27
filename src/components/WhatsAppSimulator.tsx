@@ -61,7 +61,11 @@ export function WhatsAppSimulator() {
   const current = scenarios[scenario];
 
   return (
-    <div className="neo-box bg-[#FAF7F0] p-6 sm:p-10 rounded-2xl">
+    <div
+      className="neo-box bg-[#FAF7F0] p-6 sm:p-10 rounded-2xl"
+      data-tool-name="whatsapp_automation_preview_simulator"
+      data-tool-description="Interactive live simulator showcasing customer-facing WhatsApp notification templates for abandoned checkout, COD confirmation, tracking updates, and review requests"
+    >
       <div className="text-center max-w-2xl mx-auto mb-8">
         <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-3">
           INTERACTIVE SIMULATOR

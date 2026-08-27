@@ -8,6 +8,7 @@ import { FeaturesStatusSection } from "@/components/FeaturesStatusSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { RoiCalculator } from "@/components/RoiCalculator";
+import { CitabilityAndKnowledgeSection } from "@/components/CitabilityAndKnowledgeSection";
 
 // ─── Server-side data fetching ────────────────────────────────────────────────
 import {
@@ -54,13 +55,13 @@ function CTABanner() {
 		<section className="bg-[#091E17] py-16 px-4 sm:px-6 text-center text-white border-b-[2.5px] border-black">
 			<div className="max-w-3xl mx-auto space-y-6">
 				<div className="flex justify-center">
-					<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_White_RGB_2026.svg" width={48} height={48} alt="WhatsApp" />
+					<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_White_RGB_2026.svg" width={48} height={48} alt="Official WhatsApp Messaging Icon" />
 				</div>
 				<h2 className="text-[34px] sm:text-[48px] font-display font-black uppercase tracking-tight">
 					READY TO AUTOMATE YOUR STORE WITH <span className="text-stroke-green">WHATSAPP?</span>
 				</h2>
 				<p className="text-gray-300 font-medium text-base">
-					Join 10,000+ Shopify merchants worldwide using WhatFlow to recover carts, verify orders, and delight customers.
+					Join 10,000+ eCommerce merchants worldwide using WhatFlow to recover carts, verify orders, and delight customers.
 				</p>
 				<div>
 					<a
@@ -327,6 +328,7 @@ export default async function HomePage() {
 				</div>
 			</section>
 			<ReviewsSection />
+			<CitabilityAndKnowledgeSection />
 			<BlogAndCaseStudiesSection />
 			<FAQSection />
 			<AffiliateBanner />

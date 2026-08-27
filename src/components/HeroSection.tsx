@@ -36,11 +36,11 @@ export function HeroSection() {
 					{/* Badges */}
 					<div className="flex flex-wrap items-center gap-3">
 						<div className="neo-pill bg-[#F0F4FF] px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#1877F2]">
-							<Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={48} height={15} alt="Meta" className="h-3.5 w-auto" />
+							<Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={48} height={15} alt="Official Meta Tech Partner Badge" className="h-3.5 w-auto" />
 							<span>TECH PARTNER</span>
 						</div>
 						<div className="neo-pill bg-[#E8F8F0] px-3.5 py-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-black">
-							<Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={18} height={18} alt="Shopify" />
+							<Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={18} height={18} alt="Shopify App Store Certified Partner Icon" />
 							<span>BUILT FOR SHOPIFY</span>
 						</div>
 					</div>
@@ -54,7 +54,7 @@ export function HeroSection() {
 
 					{/* Subtitle / Definition Capsule */}
 					<p className="text-[16px] sm:text-[18px] text-[#222222] font-medium leading-relaxed max-w-lg">
-						WhatFlow is the official WhatsApp automation suite for Shopify stores. Automate abandoned checkout recovery, 1-click Cash on Delivery verification, delivery notifications, and 24/7 AI chat support with zero markup on Meta conversation rates.
+						WhatFlow is the official WhatsApp automation suite for modern eCommerce stores. Automate abandoned checkout recovery, 1-click Cash on Delivery verification, delivery notifications, and 24/7 AI chat support with zero markup on Meta conversation rates.
 					</p>
 
 					{/* Action Buttons */}
@@ -90,7 +90,7 @@ export function HeroSection() {
 								{/* Phone Header */}
 								<div className="bg-[#075E54] text-white p-3 flex items-center justify-between border-b-2 border-black">
 									<div className="flex items-center gap-2">
-										<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg" width={24} height={24} alt="WhatsApp" />
+										<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg" width={24} height={24} alt="Official WhatsApp Business Verified Badge" />
 										<div>
 											<div className="flex items-center gap-1 font-bold text-xs">
 												<span>Store</span>
@@ -176,12 +176,12 @@ export function HeroSection() {
 							{/* Shopify Receipt Card */}
 							<div className="w-full sm:w-[220px] neo-box p-4 text-xs space-y-3 bg-white">
 								<div className="flex items-center justify-between border-b border-gray-200 pb-2">
-									<Image src="/shopify-brand-assets/01-logo/svg/logo-color-white-bg.svg" width={78} height={22} alt="Shopify" className="h-5 w-auto" />
+									<Image src="/shopify-brand-assets/01-logo/svg/logo-color-white-bg.svg" width={78} height={22} alt="Shopify Order Receipt Header Logo" className="h-5 w-auto" />
 								</div>
 								<div className="flex items-center justify-between">
 									<div>
 										<div className="font-extrabold text-black text-sm">Order #1027</div>
-										<div className="text-[10px] text-gray-500">May 12, 2024 at 10:30 AM</div>
+										<div className="text-[10px] text-gray-500">Today at 10:30 AM</div>
 									</div>
 									<span className="neo-pill bg-[#FFC107] px-2 py-0.5 text-[9px] font-bold text-black">• Paid</span>
 								</div>

@@ -8,15 +8,15 @@ export function getOrganizationSchema() {
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
     name: "WhatFlow",
-    legalName: "WhatFlow Inc.",
-    alternateName: ["WhatFlow WhatsApp", "WhatFlow Shopify App"],
+    legalName: "WhatFlow Solutions",
+    alternateName: ["WhatFlow WhatsApp", "WhatFlow Shopify App", "WhatFlow Automation"],
     url: SITE_URL,
     logo: {
       "@type": "ImageObject",
       url: `${SITE_URL}/logo.svg`,
       width: 512,
       height: 512,
-      caption: "WhatFlow Logo",
+      caption: "WhatFlow Official Logo",
     },
     foundingDate: "2024",
     sameAs: [
@@ -63,9 +63,10 @@ export function getWebSiteSchema() {
     "@id": `${SITE_URL}/#website`,
     url: SITE_URL,
     name: "WhatFlow",
+    inLanguage: "en",
     alternateName: [
       "WhatFlow — WhatsApp Marketing & Automation for Shopify",
-      "WhatFlow Shopify",
+      "WhatFlow Shopify Suite",
     ],
     publisher: {
       "@id": `${SITE_URL}/#organization`,
@@ -82,26 +83,66 @@ export function getWebSiteSchema() {
 }
 
 export function getSoftwareApplicationSchema() {
+  const today = new Date().toISOString().split("T")[0];
+
   return {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": ["SoftwareApplication", "WebApplication"],
     "@id": `${SITE_URL}/#software`,
     name: "WhatFlow",
-    alternateName: "WhatFlow WhatsApp Automation for Shopify",
-    operatingSystem: "Shopify Web, Cloudflare Edge",
+    alternateName: "WhatFlow WhatsApp Automation & Marketing Platform",
+    operatingSystem: "Shopify Web, Cloudflare Edge, Meta Cloud API",
     applicationCategory: "BusinessApplication",
-    softwareVersion: "2.4.0",
+    applicationSubCategory: "eCommerce Marketing & Customer Messaging",
+    softwareVersion: "2.5.0",
     datePublished: "2024-01-15",
-    dateModified: "2026-08-23",
+    dateModified: today,
+    inLanguage: "en",
+    isAccessibleForFree: true,
     url: SITE_URL,
-    offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "USD",
-      lowPrice: "0",
-      highPrice: "49.99",
-      offerCount: "4",
-      priceValidUntil: "2027-12-31",
-    },
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Free Plan",
+        price: "0",
+        priceCurrency: "USD",
+        priceValidUntil: "2027-12-31",
+        description: "Free tier including basic chat widget, manual recovery links, and community support.",
+      },
+      {
+        "@type": "Offer",
+        name: "Starter Plan",
+        price: "4.99",
+        priceCurrency: "USD",
+        priceValidUntil: "2027-12-31",
+        description: "Official Meta Cloud API connection, automated cart recovery, and COD verification.",
+      },
+      {
+        "@type": "Offer",
+        name: "Growth Plan",
+        price: "19.99",
+        priceCurrency: "USD",
+        priceValidUntil: "2027-12-31",
+        description: "Shopify Flow action blocks, unlimited broadcast campaigns, review sync, and AI support.",
+      },
+      {
+        "@type": "Offer",
+        name: "Scale Plan",
+        price: "49.99",
+        priceCurrency: "USD",
+        priceValidUntil: "2027-12-31",
+        description: "Dedicated Meta account manager, custom workflow automations, and priority 24/7 SLA.",
+      },
+    ],
+    featureList: [
+      "WhatsApp Abandoned Cart Recovery (98% open rates)",
+      "1-Click Cash on Delivery (COD) Verification with automated Shopify order tagging",
+      "Real-time Shipping Tracking & Fulfillment Notifications",
+      "WhatsApp Photo Review & UGC Collection (Judge.me & Loox sync)",
+      "Native Shopify Flow Trigger & Action Blocks",
+      "0% markup on official Meta Cloud API rates",
+      "24/7 AI Customer Support Auto-Replies with RAG Store Context",
+    ],
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
@@ -110,7 +151,7 @@ export function getSoftwareApplicationSchema() {
       worstRating: "1",
     },
     description:
-      "Automate WhatsApp marketing, recover abandoned carts with 98% open rates, verify COD orders, and boost Shopify conversions with official Meta API.",
+      "Automate WhatsApp marketing, recover abandoned carts with 98% open rates, verify COD orders, and boost eCommerce conversions with official Meta Cloud API.",
     publisher: {
       "@id": `${SITE_URL}/#organization`,
     },
