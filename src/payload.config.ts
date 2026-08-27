@@ -19,6 +19,7 @@ import {
   EXPERIMENTAL_TableFeature,
 } from "@payloadcms/richtext-lexical";
 import { r2Storage } from "@payloadcms/storage-r2";
+import { mcpPlugin } from "@payloadcms/plugin-mcp";
 import { buildConfig } from "payload";
 import type { CloudflareContext } from "@opennextjs/cloudflare";
 import { GetPlatformProxyOptions } from "wrangler";
@@ -124,6 +125,45 @@ export default (async () => {
       r2Storage({
         bucket: cloudflare.env.whatflow_payload_cms_assets,
         collections: { media: true },
+      }),
+      mcpPlugin({
+        collections: {
+          posts: {
+            enabled: true,
+            description:
+              "Blog posts and articles for WhatFlow covering WhatsApp marketing, ecommerce strategies, Shopify automation, recovery workflows, and guides. Supports full CRUD operations.",
+          },
+          "case-studies": {
+            enabled: true,
+            description:
+              "Customer success stories and case studies showcasing how brands scale with WhatFlow. Supports full CRUD operations.",
+          },
+          integrations: {
+            enabled: true,
+            description:
+              "Directory of software and platform integrations (Shopify, CRM tools, etc.) supported by WhatFlow. Supports full CRUD operations.",
+          },
+          changelog: {
+            enabled: true,
+            description:
+              "Product changelog entries, version releases, new features, and improvements for WhatFlow. Supports full CRUD operations.",
+          },
+          reviews: {
+            enabled: true,
+            description:
+              "Customer testimonials, reviews, ratings, and quotes for WhatFlow. Supports full CRUD operations.",
+          },
+          "country-rates": {
+            enabled: true,
+            description:
+              "WhatsApp conversation rates and pricing tier data by country code and category.",
+          },
+          media: {
+            enabled: true,
+            description:
+              "Uploaded media assets, images, icons, and blog post graphics.",
+          },
+        },
       }),
     ],
   });
