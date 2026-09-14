@@ -184,7 +184,7 @@ export function LiveConversationMock() {
                 </span>
               </div>
               <span className="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-gray-300">
-                WebSocket: Connected
+                Status: Live Online
               </span>
             </div>
 

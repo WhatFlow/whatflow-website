@@ -143,7 +143,7 @@ export function ComposerAndQuickReplies() {
               <button
                 type="button"
                 onClick={() => {
-                  alert(`Message dispatched via Cloudflare Worker: "${inputText}"`);
+                  alert(`Message sent to customer: "${inputText}"`);
                   setInputText("");
                 }}
                 disabled={!inputText.trim()}

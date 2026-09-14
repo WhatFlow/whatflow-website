@@ -17,8 +17,9 @@ import { FlowSenseOtp } from "@/components/features/FlowSenseOtp";
 import { AnalyticsDashboard } from "@/components/features/AnalyticsDashboard";
 import { TemplateEditorPreview } from "@/components/features/TemplateEditorPreview";
 import { StorefrontWidgets } from "@/components/features/StorefrontWidgets";
-import { CloudflareArchitecture } from "@/components/features/CloudflareArchitecture";
+import { SpeedAndUptime } from "@/components/features/SpeedAndUptime";
 import { FeatureBoardRoadmap } from "@/components/features/FeatureBoardRoadmap";
+import { ReviewsSection } from "@/components/ReviewsSection";
 
 export const metadata: Metadata = {
   title: "WhatFlow Features — 11+ Automations, 2-Way Inbox & Shopify Functions",
@@ -78,13 +79,16 @@ export default function FeaturesPage() {
       {/* 13. Storefront Growth Widgets (Chat Button & Order via WA) */}
       <StorefrontWidgets />
 
-      {/* 14. Enterprise Cloudflare Edge Architecture */}
-      <CloudflareArchitecture />
+      {/* 14. High-Volume Reliability & Speed */}
+      <SpeedAndUptime />
 
       {/* 15. Community Feature Board & Roadmap */}
       <FeatureBoardRoadmap />
 
-      {/* 16. High-Converting Bottom Conversion Banner */}
+      {/* 16. Real Merchant Reviews (Payload Collection) */}
+      <ReviewsSection />
+
+      {/* 17. High-Converting Bottom Conversion Banner */}
       <section className="bg-[#091E17] py-20 px-4 sm:px-6 text-center text-white border-t-[2.5px] border-black">
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex justify-center">

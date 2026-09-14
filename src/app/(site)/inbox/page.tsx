@@ -14,11 +14,12 @@ import { BroadcastAnalyticsDashboard } from "@/components/inbox-page/BroadcastAn
 import { SettingsAndMetaSync } from "@/components/inbox-page/SettingsAndMetaSync";
 import { InboxRoadmap } from "@/components/inbox-page/InboxRoadmap";
 import { InboxCTA } from "@/components/inbox-page/InboxCTA";
+import { ReviewsSection } from "@/components/ReviewsSection";
 
 export const metadata: Metadata = {
   title: "WhatFlow Inbox — 2-Way WhatsApp Support Chat & Shopify Customer Context",
   description:
-    "A dedicated, ultra-fast 2-way WhatsApp customer support inbox built for Shopify. Real-time WebSockets, 11 message types, 24-hour Meta care window countdown, customer order history sidebar, and zero cold starts.",
+    "A dedicated, ultra-fast 2-way WhatsApp customer support inbox built for Shopify. Instant live chat, 11 message types, 24-hour Meta care window countdown, customer order history sidebar, and 99.9% uptime.",
   keywords: [
     "WhatsApp Shopify live chat",
     "WhatsApp customer support inbox",
@@ -69,7 +70,10 @@ export default function InboxPage() {
       {/* 12. Upcoming Features Roadmap */}
       <InboxRoadmap />
 
-      {/* 13. High-Converting Bottom Conversion Banner */}
+      {/* 13. Real Merchant Reviews (Payload Collection) */}
+      <ReviewsSection darkMode={true} />
+
+      {/* 14. High-Converting Bottom Conversion Banner */}
       <InboxCTA />
     </div>
   );

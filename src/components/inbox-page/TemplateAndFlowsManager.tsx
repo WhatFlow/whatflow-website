@@ -52,7 +52,7 @@ export function TemplateAndFlowsManager() {
             {activeTab === "flows" ? (
               <>
                 <span className="text-xs font-mono bg-[#1ed760]/20 text-[#1ed760] px-2.5 py-1 rounded">
-                  JSON Flow Engine • Meta Cloud API
+                  Interactive Forms Engine
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white">
                   Multi-Screen Native Forms In-Chat
@@ -66,10 +66,10 @@ export function TemplateAndFlowsManager() {
                     <span className="text-[#1ed760]">✔</span> 8 supported categories: Survey, Lead Gen, Return, Appointment, etc.
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✔</span> End-to-end encrypted data exchange with Cloudflare Worker endpoint
+                    <span className="text-[#1ed760]">✔</span> Secure in-chat data submission directly to your store
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✔</span> Built-in JSON flow schema editor with live validator
+                    <span className="text-[#1ed760]">✔</span> Interactive flow creator with pre-built form templates
                   </li>
                 </ul>
               </>

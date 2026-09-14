@@ -16,7 +16,7 @@ export function InboxHero() {
         <div className="flex flex-wrap items-center justify-center gap-3">
           <div className="px-4 py-1.5 rounded-full bg-[#1ed760]/15 border border-[#1ed760]/30 text-[#1ed760] text-xs font-bold uppercase tracking-wider flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#1ed760] animate-ping" />
-            STANDALONE CLOUDFLARE WORKER INBOX
+            LIVE 2-WAY SUPPORT WORKSPACE
           </div>
 
           <div className="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-semibold flex items-center gap-2">
@@ -38,8 +38,8 @@ export function InboxHero() {
           </h1>
 
           <p className="text-base sm:text-xl text-gray-400 font-normal leading-relaxed max-w-2xl mx-auto">
-            Real-time WebSockets, sub-15ms edge latency via Hyperdrive, seamless 1-click Shopify Admin SSO,
-            and full customer order context at your fingertips.
+            Lightning-fast real-time chat, instant Shopify Admin 1-click access,
+            and full customer order history at your fingertips.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -66,8 +66,8 @@ export function InboxHero() {
         {/* 4 Feature Spec Badges */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto pt-4">
           <div className="p-4 rounded-2xl bg-[#181818] border border-white/10 text-center space-y-1">
-            <div className="text-2xl font-black font-display text-[#1ed760]">&lt; 15ms</div>
-            <div className="text-[11px] uppercase font-bold text-gray-400">WebSocket Latency</div>
+            <div className="text-2xl font-black font-display text-[#1ed760]">&lt; 1 Sec</div>
+            <div className="text-[11px] uppercase font-bold text-gray-400">Response Speed</div>
           </div>
           <div className="p-4 rounded-2xl bg-[#181818] border border-white/10 text-center space-y-1">
             <div className="text-2xl font-black font-display text-white">11 Types</div>
@@ -75,7 +75,7 @@ export function InboxHero() {
           </div>
           <div className="p-4 rounded-2xl bg-[#181818] border border-white/10 text-center space-y-1">
             <div className="text-2xl font-black font-display text-[#1ed760]">1-Click</div>
-            <div className="text-[11px] uppercase font-bold text-gray-400">Shopify SSO Token</div>
+            <div className="text-[11px] uppercase font-bold text-gray-400">Shopify Access</div>
           </div>
           <div className="p-4 rounded-2xl bg-[#181818] border border-white/10 text-center space-y-1">
             <div className="text-2xl font-black font-display text-white">24-Hour</div>

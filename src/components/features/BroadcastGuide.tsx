@@ -22,7 +22,7 @@ export function BroadcastGuide() {
     {
       num: 3,
       title: "Anti-Ban Safety Delay Pacing",
-      desc: "Our Cloudflare Queue engine spaces outbound messages automatically to comply with Meta WABA throughput limits and prevent spam flags.",
+      desc: "Intelligent rate pacing spaces outbound messages automatically to comply with Meta throughput limits and keep your WhatsApp number 100% safe.",
       tag: "PHONE PROTECTION",
     },
     {

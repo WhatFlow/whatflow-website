@@ -13,7 +13,7 @@ const NAV_ITEMS = [
   { id: "flowsense-otp", label: "AI & OTP" },
   { id: "analytics", label: "6-Tab Analytics" },
   { id: "message-editor", label: "Template Editor" },
-  { id: "edge-architecture", label: "Cloudflare Edge" },
+  { id: "edge-architecture", label: "Speed & Uptime" },
 ];
 
 export function SectionNav() {

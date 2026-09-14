@@ -58,21 +58,21 @@ export function InteractiveBuilderShowcase() {
             {activeTab === "buttons" && (
               <>
                 <span className="text-xs font-mono bg-[#1ed760]/20 text-[#1ed760] px-2.5 py-1 rounded">
-                  type: &quot;button&quot; (Meta API Spec)
+                  Quick-Reply Buttons
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white">
                   Quick Reply Buttons (Up to 3)
                 </h3>
                 <p className="text-sm text-gray-400 leading-relaxed">
                   Present up to 3 interactive pill buttons underneath any message. When the customer taps a button,
-                  their choice sends back instantly as a reply payload — eliminating typing on mobile keyboards.
+                  their selection sends back instantly as a message — eliminating typing on mobile keyboards.
                 </p>
                 <div className="space-y-2 text-xs text-gray-300">
                   <div className="flex items-center gap-2">
                     <span className="text-[#1ed760]">✓</span> Maximum 20 characters per button label
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✓</span> Immediate callback webhook received by Cloudflare Worker
+                    <span className="text-[#1ed760]">✓</span> Customer selection registers immediately in chat
                   </div>
                 </div>
               </>
@@ -81,7 +81,7 @@ export function InteractiveBuilderShowcase() {
             {activeTab === "cta" && (
               <>
                 <span className="text-xs font-mono bg-[#1ed760]/20 text-[#1ed760] px-2.5 py-1 rounded">
-                  type: &quot;cta_url&quot; &amp; &quot;cta_phone&quot;
+                  Action Links &amp; Phone Calls
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white">
                   Call-to-Action Buttons
@@ -104,7 +104,7 @@ export function InteractiveBuilderShowcase() {
             {activeTab === "list" && (
               <>
                 <span className="text-xs font-mono bg-[#1ed760]/20 text-[#1ed760] px-2.5 py-1 rounded">
-                  type: &quot;list&quot; (Up to 10 options)
+                  Multi-Option Menu List
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white">
                   Interactive Section List Menu
@@ -127,7 +127,7 @@ export function InteractiveBuilderShowcase() {
             {activeTab === "carousel" && (
               <>
                 <span className="text-xs font-mono bg-[#1ed760]/20 text-[#1ed760] px-2.5 py-1 rounded">
-                  type: &quot;carousel&quot; (Up to 10 cards)
+                  Product Showcase Cards
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white">
                   Product Carousel Cards

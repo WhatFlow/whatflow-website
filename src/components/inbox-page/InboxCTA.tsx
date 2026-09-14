@@ -31,7 +31,7 @@ export function InboxCTA() {
 
         <p className="text-gray-400 font-normal text-base sm:text-lg max-w-xl mx-auto">
           Start chatting with customers, recovering checkouts, and verifying COD orders in 3 minutes.
-          Zero Meta markup, enterprise Cloudflare edge reliability.
+          Zero Meta markup, 99.9% uptime guarantee.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-4">

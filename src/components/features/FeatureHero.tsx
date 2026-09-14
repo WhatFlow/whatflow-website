@@ -45,8 +45,8 @@ export function FeatureHero() {
           </h1>
 
           <p className="text-base sm:text-lg text-[#222222] font-medium leading-relaxed max-w-2xl">
-            From 1-click COD confirmation and 11-step fulfillment tracking to AI-powered auto-replies,
-            3-sequence cart recovery, and Shopify Functions. Powered by Cloudflare edge workers with zero cold starts.
+            From 1-click COD verification and 11-step fulfillment tracking to AI-powered auto-replies,
+            3-sequence cart recovery, and Shopify checkout rules. Delivered instantly with 99.9% uptime.
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
@@ -59,8 +59,8 @@ export function FeatureHero() {
               <div className="text-[10px] font-extrabold uppercase text-gray-600">Avg. Open Rate</div>
             </div>
             <div className="p-3 bg-white rounded-xl border-2 border-black shadow-[2px_2px_0px_#000]">
-              <div className="text-2xl font-black font-display text-[#2563EB]">&lt;15ms</div>
-              <div className="text-[10px] font-extrabold uppercase text-gray-600">Edge Latency</div>
+              <div className="text-2xl font-black font-display text-[#2563EB]">&lt;1 sec</div>
+              <div className="text-[10px] font-extrabold uppercase text-gray-600">Delivery Speed</div>
             </div>
             <div className="p-3 bg-white rounded-xl border-2 border-black shadow-[2px_2px_0px_#000]">
               <div className="text-2xl font-black font-display text-[#FFC107]">$0</div>

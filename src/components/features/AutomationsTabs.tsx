@@ -27,7 +27,7 @@ const AUTOMATIONS: AutomationItem[] = [
     name: "Order Confirmation",
     tag: "ANTI-RTO VERIFICATION",
     badgeColor: "bg-[#00D261] text-black",
-    trigger: "shopify/orders/create",
+    trigger: "New Order Placed",
     description:
       "Send an immediate WhatsApp message the second an order is placed. For Cash on Delivery (COD) merchants, interactive buttons allow customers to verify or cancel their purchase in 1 tap, automatically syncing tags to Shopify.",
     features: [
@@ -51,7 +51,7 @@ const AUTOMATIONS: AutomationItem[] = [
     name: "Order Fulfillment",
     tag: "LIVE TRACKING",
     badgeColor: "bg-[#2563EB] text-white",
-    trigger: "shopify/fulfillments/create",
+    trigger: "Fulfillment Created",
     description:
       "The instant a tracking number is added in Shopify, WhatFlow sends the customer an alert with the carrier name, real-time tracking link, and expected delivery date.",
     features: [
@@ -79,11 +79,11 @@ const AUTOMATIONS: AutomationItem[] = [
     name: "Order Notification",
     tag: "STATUS UPDATES",
     badgeColor: "bg-[#FFC107] text-black",
-    trigger: "shopify/orders/updated",
+    trigger: "Order / Address Updated",
     description:
       "Keep buyers informed when order details change — such as shipping address updates, item substitutions, or partial shipments.",
     features: [
-      "Real-time event synchronization from Shopify webhooks",
+      "Real-time event synchronization the moment order details change",
       "Detailed changelog sent cleanly into the existing WhatsApp thread",
       "Builds trust and eliminates customer anxiety post-purchase",
       "Includes customer service contact button for questions",
@@ -99,7 +99,7 @@ const AUTOMATIONS: AutomationItem[] = [
     name: "Order Cancellation",
     tag: "RETENTION & REFUND",
     badgeColor: "bg-[#FF4B4B] text-white",
-    trigger: "shopify/orders/cancelled",
+    trigger: "Order Cancelled",
     description:
       "Turn a cancelled order into a retention opportunity. Send transparent refund timelines, restock notifications, and an optional recovery discount code.",
     features: [
@@ -122,7 +122,7 @@ const AUTOMATIONS: AutomationItem[] = [
     name: "Order Paid",
     tag: "PAID-ONLY GATE",
     badgeColor: "bg-[#0A6B56] text-white",
-    trigger: "shopify/orders/paid",
+    trigger: "Payment Captured",
     description:
       "A dedicated automation that specifically waits until an order has been marked as fully paid in Shopify — preventing messages from firing on pending or draft checkouts.",
     features: [
@@ -147,7 +147,7 @@ const AUTOMATIONS: AutomationItem[] = [
     name: "Admin Notification",
     tag: "INTERNAL ALERTS",
     badgeColor: "bg-[#091E17] text-[#00D261]",
-    trigger: "Internal Risk & Value Alerts",
+    trigger: "High-Value Order Alert",
     description:
       "Alert your warehouse team, store manager, or fraud analyst directly on WhatsApp the moment a high-value or high-risk order is detected in Shopify.",
     features: [
@@ -217,7 +217,7 @@ export function AutomationsTabs() {
                 {current.tag}
               </span>
               <span className="text-xs font-mono bg-gray-100 text-gray-700 px-3 py-1 rounded-md border border-gray-300">
-                Trigger: {current.trigger}
+                Shopify Event: {current.trigger}
               </span>
             </div>
 

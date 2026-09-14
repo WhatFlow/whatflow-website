@@ -230,7 +230,7 @@ export function ShippingJourney() {
                 <span>Live Event: {activeStatus.key}</span>
               </div>
               <span className="text-[10px] font-mono bg-black/10 px-2 py-0.5 rounded">
-                Cloudflare Worker Webhook
+                Real-Time Tracking Sync
               </span>
             </div>
 

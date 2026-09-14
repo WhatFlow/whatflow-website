@@ -134,7 +134,7 @@ export function BroadcastWizardShowcase() {
                 </div>
                 <div className="flex justify-between text-gray-300">
                   <span>Estimated Time:</span>
-                  <span className="font-bold text-[#1ed760]">1m 45s via Cloudflare Queue</span>
+                  <span className="font-bold text-[#1ed760]">1m 45s (Anti-Ban Paced)</span>
                 </div>
                 <div className="flex justify-between text-gray-300">
                   <span>Estimated Meta Cost:</span>
