@@ -69,6 +69,16 @@ export function Navbar() {
 					</Link>
 
 					<Link
+						href="/inbox"
+						className={`text-xs font-extrabold uppercase tracking-wider transition-colors flex items-center gap-1.5 ${
+							pathname === "/inbox" ? "text-[#00D261]" : "text-black hover:text-[#00D261]"
+						}`}
+					>
+						<span>INBOX</span>
+						<span className="w-1.5 h-1.5 rounded-full bg-[#00D261] animate-pulse" />
+					</Link>
+
+					<Link
 						href="/integrations"
 						className={`text-xs font-extrabold uppercase tracking-wider transition-colors ${
 							pathname.startsWith("/integrations") ? "text-[#00D261]" : "text-black hover:text-[#00D261]"
@@ -257,6 +267,15 @@ export function Navbar() {
 							}`}
 						>
 							FEATURES
+						</Link>
+						<Link
+							href="/inbox"
+							className={`text-sm font-extrabold uppercase tracking-wider px-3 py-2 rounded-lg transition-colors flex items-center justify-between ${
+								pathname === "/inbox" ? "bg-[#00D261] text-black" : "text-black hover:bg-white"
+							}`}
+						>
+							<span>INBOX</span>
+							<span className="text-[10px] bg-black text-[#00D261] px-2 py-0.5 rounded-full font-bold">2-WAY</span>
 						</Link>
 						<Link
 							href="/integrations"

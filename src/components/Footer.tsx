@@ -23,9 +23,10 @@ export function Footer() {
 					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">PRODUCT</h4>
 					<ul className="space-y-2 text-xs font-semibold text-gray-300">
 						<li><Link href="/features" className="hover:text-[#00D261] transition-colors">Features &amp; Apps</Link></li>
-						<li><Link href="/features#abandoned-carts" className="hover:text-[#00D261] transition-colors">Abandoned Cart Recovery</Link></li>
-						<li><Link href="/features#order-confirmations" className="hover:text-[#00D261] transition-colors">Order Confirmations &amp; COD</Link></li>
-						<li><Link href="/features#chat-support" className="hover:text-[#00D261] transition-colors">2-Way Live Chat &amp; AI</Link></li>
+						<li><Link href="/inbox" className="hover:text-[#00D261] transition-colors text-white font-bold">WhatFlow 2-Way Inbox ➔</Link></li>
+						<li><Link href="/features#recovery" className="hover:text-[#00D261] transition-colors">Abandoned Cart Recovery</Link></li>
+						<li><Link href="/features#automations" className="hover:text-[#00D261] transition-colors">Order Confirmations &amp; COD</Link></li>
+						<li><Link href="/features#auto-replies" className="hover:text-[#00D261] transition-colors">Auto-Replies &amp; AI</Link></li>
 					</ul>
 				</div>
 
