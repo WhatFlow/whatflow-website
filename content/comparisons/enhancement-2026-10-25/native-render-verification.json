@@ -1,0 +1,532 @@
+[
+  {
+    "slug": "whatflow-chat-automation-vs-business-api",
+    "rendered": true,
+    "bytes": 13017
+  },
+  {
+    "slug": "whatflow-vs-sleekflow",
+    "rendered": true,
+    "bytes": 5637
+  },
+  {
+    "slug": "whatflow-vs-trengo",
+    "rendered": true,
+    "bytes": 5978
+  },
+  {
+    "slug": "whatflow-vs-timelinesai",
+    "rendered": true,
+    "bytes": 6221
+  },
+  {
+    "slug": "whatflow-vs-kommo",
+    "rendered": true,
+    "bytes": 5496
+  },
+  {
+    "slug": "whatflow-vs-freshchat",
+    "rendered": true,
+    "bytes": 5567
+  },
+  {
+    "slug": "whatflow-vs-zendesk",
+    "rendered": true,
+    "bytes": 5881
+  },
+  {
+    "slug": "whatflow-vs-intercom",
+    "rendered": true,
+    "bytes": 5408
+  },
+  {
+    "slug": "whatflow-vs-crisp",
+    "rendered": true,
+    "bytes": 5563
+  },
+  {
+    "slug": "whatflow-vs-chatwoot",
+    "rendered": true,
+    "bytes": 5535
+  },
+  {
+    "slug": "whatflow-vs-zoho-desk",
+    "rendered": true,
+    "bytes": 5288
+  },
+  {
+    "slug": "whatflow-vs-hubspot",
+    "rendered": true,
+    "bytes": 5902
+  },
+  {
+    "slug": "whatflow-vs-front",
+    "rendered": true,
+    "bytes": 5438
+  },
+  {
+    "slug": "whatflow-vs-help-scout",
+    "rendered": true,
+    "bytes": 5445
+  },
+  {
+    "slug": "whatflow-vs-livechat",
+    "rendered": true,
+    "bytes": 5852
+  },
+  {
+    "slug": "whatflow-vs-jivochat",
+    "rendered": true,
+    "bytes": 5675
+  },
+  {
+    "slug": "whatflow-vs-shopify-inbox",
+    "rendered": true,
+    "bytes": 5501
+  },
+  {
+    "slug": "whatflow-vs-omnisend",
+    "rendered": true,
+    "bytes": 5869
+  },
+  {
+    "slug": "whatflow-vs-brevo",
+    "rendered": true,
+    "bytes": 5656
+  },
+  {
+    "slug": "whatflow-vs-mailchimp",
+    "rendered": true,
+    "bytes": 5541
+  },
+  {
+    "slug": "whatflow-vs-attentive",
+    "rendered": true,
+    "bytes": 5407
+  },
+  {
+    "slug": "whatflow-vs-postscript",
+    "rendered": true,
+    "bytes": 5874
+  },
+  {
+    "slug": "whatflow-vs-highlevel",
+    "rendered": true,
+    "bytes": 5185
+  },
+  {
+    "slug": "whatflow-vs-pushowl",
+    "rendered": true,
+    "bytes": 5792
+  },
+  {
+    "slug": "whatflow-vs-onesignal",
+    "rendered": true,
+    "bytes": 5879
+  },
+  {
+    "slug": "whatflow-vs-sinch",
+    "rendered": true,
+    "bytes": 5483
+  },
+  {
+    "slug": "whatflow-vs-vonage",
+    "rendered": true,
+    "bytes": 5644
+  },
+  {
+    "slug": "whatflow-vs-plivo",
+    "rendered": true,
+    "bytes": 6115
+  },
+  {
+    "slug": "whatflow-vs-telnyx",
+    "rendered": true,
+    "bytes": 5545
+  },
+  {
+    "slug": "whatflow-vs-engati",
+    "rendered": true,
+    "bytes": 5335
+  },
+  {
+    "slug": "whatflow-vs-botpress",
+    "rendered": true,
+    "bytes": 5686
+  },
+  {
+    "slug": "whatflow-vs-landbot",
+    "rendered": true,
+    "bytes": 5420
+  },
+  {
+    "slug": "whatflow-vs-chatfuel",
+    "rendered": true,
+    "bytes": 5419
+  },
+  {
+    "slug": "whatflow-vs-rasayel",
+    "rendered": true,
+    "bytes": 5896
+  },
+  {
+    "slug": "whatflow-vs-userlike",
+    "rendered": true,
+    "bytes": 5303
+  },
+  {
+    "slug": "whatflow-vs-saysimple",
+    "rendered": true,
+    "bytes": 5869
+  },
+  {
+    "slug": "whatflow-vs-moengage",
+    "rendered": true,
+    "bytes": 5812
+  },
+  {
+    "slug": "whatflow-vs-webengage",
+    "rendered": true,
+    "bytes": 5374
+  },
+  {
+    "slug": "whatflow-vs-insider",
+    "rendered": true,
+    "bytes": 5822
+  },
+  {
+    "slug": "whatflow-vs-braze",
+    "rendered": true,
+    "bytes": 5522
+  },
+  {
+    "slug": "whatflow-vs-dondy",
+    "rendered": true,
+    "bytes": 7016
+  },
+  {
+    "slug": "whatflow-vs-chaty",
+    "rendered": true,
+    "bytes": 5658
+  },
+  {
+    "slug": "whatsapp-vs-sms",
+    "rendered": true,
+    "bytes": 6105
+  },
+  {
+    "slug": "whatsapp-vs-email",
+    "rendered": true,
+    "bytes": 5789
+  },
+  {
+    "slug": "whatsapp-vs-mms",
+    "rendered": true,
+    "bytes": 5013
+  },
+  {
+    "slug": "whatsapp-vs-rcs",
+    "rendered": true,
+    "bytes": 5396
+  },
+  {
+    "slug": "whatsapp-vs-web-push",
+    "rendered": true,
+    "bytes": 5474
+  },
+  {
+    "slug": "whatsapp-vs-mobile-push",
+    "rendered": true,
+    "bytes": 5128
+  },
+  {
+    "slug": "whatsapp-vs-website-live-chat",
+    "rendered": true,
+    "bytes": 5534
+  },
+  {
+    "slug": "whatsapp-vs-instagram-dm",
+    "rendered": true,
+    "bytes": 5509
+  },
+  {
+    "slug": "whatsapp-vs-facebook-messenger",
+    "rendered": true,
+    "bytes": 4941
+  },
+  {
+    "slug": "whatsapp-vs-phone-calls",
+    "rendered": true,
+    "bytes": 5431
+  },
+  {
+    "slug": "whatsapp-vs-telegram",
+    "rendered": true,
+    "bytes": 5494
+  },
+  {
+    "slug": "whatsapp-business-platform-vs-channels",
+    "rendered": true,
+    "bytes": 5141
+  },
+  {
+    "slug": "shopify-native-whatsapp-vs-external-dashboard",
+    "rendered": true,
+    "bytes": 5711
+  },
+  {
+    "slug": "shopify-flow-whatsapp-vs-zapier",
+    "rendered": true,
+    "bytes": 5327
+  },
+  {
+    "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+    "rendered": true,
+    "bytes": 4804
+  },
+  {
+    "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+    "rendered": true,
+    "bytes": 5136
+  },
+  {
+    "slug": "all-features-whatsapp-plans-vs-feature-gating",
+    "rendered": true,
+    "bytes": 5104
+  },
+  {
+    "slug": "free-whatsapp-button-vs-paid-chat-widget",
+    "rendered": true,
+    "bytes": 4580
+  },
+  {
+    "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+    "rendered": true,
+    "bytes": 5134
+  },
+  {
+    "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+    "rendered": true,
+    "bytes": 5232
+  },
+  {
+    "slug": "whatsapp-cod-confirmation-vs-sms",
+    "rendered": true,
+    "bytes": 4885
+  },
+  {
+    "slug": "whatsapp-cod-confirmation-vs-email",
+    "rendered": true,
+    "bytes": 5347
+  },
+  {
+    "slug": "whatsapp-cart-recovery-vs-email",
+    "rendered": true,
+    "bytes": 5419
+  },
+  {
+    "slug": "whatsapp-cart-recovery-vs-sms",
+    "rendered": true,
+    "bytes": 4791
+  },
+  {
+    "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+    "rendered": true,
+    "bytes": 5350
+  },
+  {
+    "slug": "whatsapp-order-updates-vs-email",
+    "rendered": true,
+    "bytes": 5349
+  },
+  {
+    "slug": "whatsapp-shipping-updates-vs-sms",
+    "rendered": true,
+    "bytes": 4889
+  },
+  {
+    "slug": "whatsapp-back-in-stock-vs-email",
+    "rendered": true,
+    "bytes": 5308
+  },
+  {
+    "slug": "whatsapp-review-requests-vs-email",
+    "rendered": true,
+    "bytes": 5370
+  },
+  {
+    "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+    "rendered": true,
+    "bytes": 5012
+  },
+  {
+    "slug": "shared-whatsapp-inbox-vs-personal-phones",
+    "rendered": true,
+    "bytes": 5029
+  },
+  {
+    "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+    "rendered": true,
+    "bytes": 5347
+  },
+  {
+    "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+    "rendered": true,
+    "bytes": 4680
+  },
+  {
+    "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+    "rendered": true,
+    "bytes": 4967
+  },
+  {
+    "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+    "rendered": true,
+    "bytes": 5068
+  },
+  {
+    "slug": "whatsapp-volume-plans-vs-contact-pricing",
+    "rendered": true,
+    "bytes": 5068
+  },
+  {
+    "slug": "whatsapp-free-plan-vs-free-trial",
+    "rendered": true,
+    "bytes": 5401
+  },
+  {
+    "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+    "rendered": true,
+    "bytes": 5416
+  },
+  {
+    "slug": "whatsapp-automation-vs-manual-order-copying",
+    "rendered": true,
+    "bytes": 4920
+  },
+  {
+    "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+    "rendered": true,
+    "bytes": 5376
+  },
+  {
+    "slug": "whatflow-vs-whatsapp-business-app",
+    "rendered": true,
+    "bytes": 6624
+  },
+  {
+    "slug": "whatflow-vs-bird",
+    "rendered": true,
+    "bytes": 6469
+  },
+  {
+    "slug": "whatflow-vs-infobip",
+    "rendered": true,
+    "bytes": 6286
+  },
+  {
+    "slug": "whatflow-vs-gupshup",
+    "rendered": true,
+    "bytes": 6169
+  },
+  {
+    "slug": "whatflow-vs-doubletick",
+    "rendered": true,
+    "bytes": 6167
+  },
+  {
+    "slug": "whatflow-vs-gallabox",
+    "rendered": true,
+    "bytes": 5971
+  },
+  {
+    "slug": "whatflow-vs-360dialog",
+    "rendered": true,
+    "bytes": 6283
+  },
+  {
+    "slug": "whatflow-vs-twilio",
+    "rendered": true,
+    "bytes": 7010
+  },
+  {
+    "slug": "whatflow-vs-manychat",
+    "rendered": true,
+    "bytes": 6304
+  },
+  {
+    "slug": "whatflow-vs-respond-io",
+    "rendered": true,
+    "bytes": 6857
+  },
+  {
+    "slug": "whatflow-vs-superlemon",
+    "rendered": true,
+    "bytes": 7017
+  },
+  {
+    "slug": "whatflow-vs-charles",
+    "rendered": true,
+    "bytes": 5738
+  },
+  {
+    "slug": "whatflow-vs-chatarmin",
+    "rendered": true,
+    "bytes": 6724
+  },
+  {
+    "slug": "whatflow-vs-limechat",
+    "rendered": true,
+    "bytes": 7049
+  },
+  {
+    "slug": "whatflow-vs-gorgias",
+    "rendered": true,
+    "bytes": 6384
+  },
+  {
+    "slug": "whatflow-vs-tidio",
+    "rendered": true,
+    "bytes": 6670
+  },
+  {
+    "slug": "whatflow-vs-klaviyo",
+    "rendered": true,
+    "bytes": 6899
+  },
+  {
+    "slug": "whatflow-vs-delightchat",
+    "rendered": true,
+    "bytes": 6089
+  },
+  {
+    "slug": "whatflow-vs-zoko",
+    "rendered": true,
+    "bytes": 5618
+  },
+  {
+    "slug": "whatflow-vs-aisensy",
+    "rendered": true,
+    "bytes": 5857
+  },
+  {
+    "slug": "whatflow-vs-quickreply",
+    "rendered": true,
+    "bytes": 6448
+  },
+  {
+    "slug": "whatflow-vs-bitespeed",
+    "rendered": true,
+    "bytes": 6169
+  },
+  {
+    "slug": "whatflow-vs-interakt",
+    "rendered": true,
+    "bytes": 6871
+  },
+  {
+    "slug": "whatflow-vs-wati",
+    "rendered": true,
+    "bytes": 6436
+  }
+]

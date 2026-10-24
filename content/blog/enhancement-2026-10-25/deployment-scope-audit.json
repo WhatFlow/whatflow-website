@@ -1,0 +1,25 @@
+{
+  "activeDeployment": {
+    "version": "f4dcad62-ad8b-48ea-9b34-536594506dec",
+    "createdOn": "2026-10-24T21:27:02.969394Z"
+  },
+  "previousPublicationRecord": "content/blog/PUBLICATION.md",
+  "previousDeploymentLog": "/tmp/whatflow-flow-deploy.log",
+  "previousDeploymentLogModifiedAt": "2026-10-24T21:27:07.921096+00:00",
+  "runtimeFilesModifiedAfterPreviousDeployment": [
+    {
+      "path": "src/app/(site)/blog/[slug]/page.tsx",
+      "modifiedAt": "2026-10-24T21:43:30.291669+00:00",
+      "sha256": "735b20da1348e50ecde02a02f08d1106728b4c8d2e8c9c701d63ab3a2e972d46"
+    }
+  ],
+  "assetsAddedAfterPreviousDeployment": [
+    "public/blog/enhancement/whatflow-flow-order-reply.webp",
+    "public/blog/enhancement/judge-me-widgets-demo.webp",
+    "public/blog/enhancement/shopify-product-search-demo.webp",
+    "public/blog/enhancement/shopify-product-search-demo.jpg",
+    "public/blog/enhancement/whatflow-template-editor.webp",
+    "public/blog/enhancement/judge-me-widgets-demo.jpg"
+  ],
+  "limits": "File timestamps corroborate session history, not a cryptographic diff against the deployed bundle. Earlier uncommitted comparison, CMS and Flow work is recorded as already published by the previous task."
+}

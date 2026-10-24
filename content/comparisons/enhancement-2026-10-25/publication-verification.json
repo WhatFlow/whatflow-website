@@ -1,0 +1,967 @@
+{
+  "checkedAt": "2026-10-24T23:02:10.191Z",
+  "comparisons": 106,
+  "passed": 106,
+  "blogsPreserved": 58,
+  "assets": 2,
+  "sitemap": true,
+  "directory": true,
+  "search": true,
+  "draftProtection": true,
+  "results": [
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-sleekflow",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-timelinesai",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-kommo",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-intercom",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-chatwoot",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-hubspot",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-livechat",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-jivochat",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-shopify-inbox",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-omnisend",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-brevo",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-mailchimp",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-attentive",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-postscript",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-highlevel",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-onesignal",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-pushowl",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-sinch",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-vonage",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-plivo",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-telnyx",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-engati",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-botpress",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-landbot",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-chatfuel",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-rasayel",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-userlike",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-saysimple",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-moengage",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-webengage",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-insider",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-braze",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-chaty",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-sms",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-email",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-mms",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-rcs",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-web-push",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-mobile-push",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-instagram-dm",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-website-live-chat",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-facebook-messenger",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-phone-calls",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-vs-telegram",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-business-platform-vs-channels",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-order-updates-vs-email",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-review-requests-vs-email",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-bird",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-infobip",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-gupshup",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-doubletick",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-gallabox",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-360dialog",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-twilio",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-manychat",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-superlemon",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-chatarmin",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-charles",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-limechat",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-tidio",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-klaviyo",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-quickreply",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "nativeCMS": true,
+      "byline": true,
+      "datesPreserved": true,
+      "metadata": true,
+      "schemas": true,
+      "cover": true
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-24T21:28:10.488Z",
+  "publishedFlowGuides": 6,
+  "totalPublicPosts": 58,
+  "screenshots": 10,
+  "comparisons": 106,
+  "results": [
+    {
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "canonical": true,
+      "author": true,
+      "articleSchema": true,
+      "faqSchema": true,
+      "screenshots": true
+    },
+    {
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "canonical": true,
+      "author": true,
+      "articleSchema": true,
+      "faqSchema": true,
+      "screenshots": true
+    },
+    {
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "canonical": true,
+      "author": true,
+      "articleSchema": true,
+      "faqSchema": true,
+      "screenshots": true
+    },
+    {
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "canonical": true,
+      "author": true,
+      "articleSchema": true,
+      "faqSchema": true,
+      "screenshots": true
+    },
+    {
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "canonical": true,
+      "author": true,
+      "articleSchema": true,
+      "faqSchema": true,
+      "screenshots": true
+    },
+    {
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "canonical": true,
+      "author": true,
+      "articleSchema": true,
+      "faqSchema": true,
+      "screenshots": true
+    }
+  ]
+}

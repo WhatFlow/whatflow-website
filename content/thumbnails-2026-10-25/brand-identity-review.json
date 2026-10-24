@@ -1,0 +1,893 @@
+{
+  "checkedAt": "2026-10-24T23:37:07.470060+00:00",
+  "manifest": "content/thumbnails-2026-10-25/brand-assets.json",
+  "manifestSha256": "e7f074accf3cd7e7450a2980efa98d2a6d72ba5fb3aa224455be1bc074e672d0",
+  "contactSheet": "/tmp/whatflow-logo-contact-sheet.png",
+  "method": "Visually inspected initial 61-mark contact sheet, current replacement HighLevel/Zoho assets, and added Intercom/Vonage assets. Read brand-assets and fetch-results manifests; independently checked selected suspect associations against primary vendor/platform pages. No image editing or code changes.",
+  "importantCorrection": "Shopify Inbox’s red-S is explicitly associated with Inbox on its current official listing. JivoChat copied that related-app icon; do not reject both merely because they match.",
+  "summary": {
+    "count": 63,
+    "decisions": {
+      "allow": 58,
+      "hold-product-specific": 3,
+      "reject": 2
+    }
+  },
+  "allow": [
+    "Trengo",
+    "TimelinesAI",
+    "Kommo",
+    "Zendesk",
+    "SleekFlow",
+    "Crisp",
+    "HubSpot Service Hub",
+    "Chatwoot",
+    "Front",
+    "Help Scout",
+    "LiveChat / Text",
+    "Omnisend",
+    "Attentive",
+    "Postscript",
+    "Mailchimp",
+    "OneSignal",
+    "PushOwl",
+    "Engati",
+    "Telnyx",
+    "Plivo",
+    "Landbot",
+    "Botpress",
+    "Lime Connect",
+    "Saysimple",
+    "Rasayel",
+    "Chatfuel",
+    "MoEngage",
+    "Insider One",
+    "Dondy",
+    "Braze",
+    "Chaty",
+    "Bird",
+    "Infobip",
+    "Gallabox",
+    "360dialog",
+    "Gupshup",
+    "DoubleTick",
+    "respond.io",
+    "SuperLemon",
+    "charles",
+    "LimeChat",
+    "Gorgias",
+    "Chatarmin",
+    "Twilio",
+    "Zoko",
+    "Klaviyo",
+    "DelightChat",
+    "AiSensy",
+    "Tidio",
+    "BiteSpeed",
+    "QuickReply.ai",
+    "Interakt",
+    "Wati",
+    "Sinch",
+    "HighLevel",
+    "Shopify Inbox",
+    "Intercom",
+    "Vonage"
+  ],
+  "reject": [
+    "WebEngage",
+    "JivoChat"
+  ],
+  "hold": [
+    "Freshchat",
+    "WhatsApp Business App",
+    "Zoho Desk"
+  ],
+  "assets": [
+    {
+      "brand": "Trengo",
+      "path": "public/thumbnails/brands/trengo.png",
+      "reviewedAssetURL": "https://cdn.prod.website-files.com/65b287adb93277a8f53ea884/65d25ba372af01bb6f40aff8_trengo-appicon.png",
+      "reviewedSha256": "78d5da20ead9fc5808f57d824aae49a09ec04c5af7085ae8fa7c74a7d7d8e405",
+      "sourcePage": "https://trengo.com/prices",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://trengo.com/prices"
+      ]
+    },
+    {
+      "brand": "TimelinesAI",
+      "path": "public/thumbnails/brands/timelinesai.png",
+      "reviewedAssetURL": "https://timelines.ai/apple-icon.png?a458b430d418f2f4",
+      "reviewedSha256": "2d3ee31b22b049d30326be75d3bcd589d02abe7d8faff71adb9ca4eaca3b2dfe",
+      "sourcePage": "https://timelines.ai/timelinesai-pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected against the first-party favicon and official presentation’s timeline/chat motif. Contact-sheet version is visibly pixelated; use ordinary text rather than enlarging it.",
+      "evidence": [
+        "https://timelines.ai/timelinesai-pricing",
+        "https://timelines.ai/wp-content/uploads/2024/01/TimelinesAI-Presentation-.pdf"
+      ]
+    },
+    {
+      "brand": "Kommo",
+      "path": "public/thumbnails/brands/kommo.png",
+      "reviewedAssetURL": "https://pcfcdn.kommo.com/favicon.ico",
+      "reviewedSha256": "661796c3394d66403106ad7f04295e944f8c8f299ee3b8fa35b2419bdafdd70c",
+      "sourcePage": "https://www.kommo.com/buy/tariff/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.kommo.com/buy/tariff/"
+      ]
+    },
+    {
+      "brand": "Zendesk",
+      "path": "public/thumbnails/brands/zendesk.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/d315fe70bcb98753afbe6aed7a9bffcd/icon/CLHzxd_0lu8CEAE%3D.png",
+      "reviewedSha256": "387fb5cf6f5efa288b0784307b9f59216655597cc8d11eeafbeb608dbd4da28e",
+      "sourcePage": "https://apps.shopify.com/zendesk",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/zendesk"
+      ]
+    },
+    {
+      "brand": "SleekFlow",
+      "path": "public/thumbnails/brands/sleekflow.png",
+      "reviewedAssetURL": "https://sleekflow.io/favicon/apple-touch-icon.png",
+      "reviewedSha256": "099222b5af46fcde973ca531608bb8ce8d86cebb354af01811b0ca86a7d4288a",
+      "sourcePage": "https://sleekflow.io/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://sleekflow.io/pricing"
+      ]
+    },
+    {
+      "brand": "Freshchat",
+      "path": "public/thumbnails/brands/freshchat.png",
+      "reviewedAssetURL": "https://www.freshworks.com/favicons/apple-touch-icon.png",
+      "reviewedSha256": "1b6f836ce198ac84ad15182970a74c25c692b17412df1dbfe2f2852f91c0779d",
+      "sourcePage": "https://www.freshworks.com/live-chat-software/pricing/",
+      "decision": "hold-product-specific",
+      "reason": "The rainbow leaf is fetched from Freshworks’ corporate favicon, not a verified Freshchat-specific product icon. Parent-company identity must not be silently represented as an exact product mark.",
+      "evidence": [
+        "https://www.freshworks.com/live-chat-software/",
+        "https://www.freshworks.com/favicons/apple-touch-icon.png"
+      ],
+      "replacement": "Prefer ordinary Freshchat text. Use this only if the cover explicitly identifies it as Freshworks corporate branding rather than a Freshchat product icon."
+    },
+    {
+      "brand": "Crisp",
+      "path": "public/thumbnails/brands/crisp.png",
+      "reviewedAssetURL": "https://crisp.chat/favicons/apple-touch-icon-144x144.png",
+      "reviewedSha256": "0273b8af70382d64d1d93b42b03021cdf25cf583893ea67a7ba0afdac03c194e",
+      "sourcePage": "https://crisp.chat/en/pricing/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://crisp.chat/en/pricing/"
+      ]
+    },
+    {
+      "brand": "HubSpot Service Hub",
+      "path": "public/thumbnails/brands/hubspot-service-hub.png",
+      "reviewedAssetURL": "https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png",
+      "reviewedSha256": "465840e6e9f011880f73a3606d156c91b765e7cd64ec0c6f198d6a302c862781",
+      "sourcePage": "https://www.hubspot.com/newsroom",
+      "decision": "allow",
+      "reason": "Recognizable official HubSpot corporate mark. Keep the explicit Service Hub text label; do not describe this as a unique Service Hub product icon.",
+      "evidence": [
+        "https://www.hubspot.com/newsroom"
+      ]
+    },
+    {
+      "brand": "Chatwoot",
+      "path": "public/thumbnails/brands/chatwoot.png",
+      "reviewedAssetURL": "https://www.chatwoot.com/favicon/apple-touch-icon.png",
+      "reviewedSha256": "43a76886655ff304f84c22921e42ecbf144724336a8ca78627d2f178660066e9",
+      "sourcePage": "https://www.chatwoot.com/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.chatwoot.com/pricing"
+      ]
+    },
+    {
+      "brand": "Front",
+      "path": "public/thumbnails/brands/front.png",
+      "reviewedAssetURL": "https://front.com/apple-icon.png",
+      "reviewedSha256": "10c0966b0f3147b71b5c68f14342f44e80eb64c0101003f7d201afbc9193d832",
+      "sourcePage": "https://front.com/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://front.com/pricing"
+      ]
+    },
+    {
+      "brand": "Help Scout",
+      "path": "public/thumbnails/brands/help-scout.png",
+      "reviewedAssetURL": "https://www.helpscout.com/images/favicon/apple-touch-icon.png",
+      "reviewedSha256": "ea98aa14271b591a72860b73b84358ff88449602f665b6b6932c4aa9d8f26e59",
+      "sourcePage": "https://www.helpscout.com/pricing/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.helpscout.com/pricing/"
+      ]
+    },
+    {
+      "brand": "LiveChat / Text",
+      "path": "public/thumbnails/brands/livechat-text.png",
+      "reviewedAssetURL": "https://www.livechat.com/text-by-livechat-logo.1340c1eaeab00399fae95333fe78b8dc08db762df5a93d735d4b6482f4f3772b.svg",
+      "reviewedSha256": "b27f5ffca67924208b7c61d233eff98d1e4faed5578a49a6b543b9b014bda41d",
+      "sourcePage": "https://www.livechat.com/pricing/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.livechat.com/pricing/"
+      ]
+    },
+    {
+      "brand": "Omnisend",
+      "path": "public/thumbnails/brands/omnisend.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/9b0c952ebdfd9d278f559665ecf48f5c/icon/CI_zwN7rmpYDEAE%3D.png",
+      "reviewedSha256": "278e4fdb488c88c40569a047e3ca8bb2c880c67ff3f23eff872a09907c615d99",
+      "sourcePage": "https://apps.shopify.com/omnisend",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/omnisend"
+      ]
+    },
+    {
+      "brand": "Attentive",
+      "path": "public/thumbnails/brands/attentive.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/5da194592c59cd145b825b53019db33c/icon/CIKipOGl7-8CEAE%3D.png",
+      "reviewedSha256": "15c9be06658ec561da2e7b16113ac3c9ebbfa233a48932d06b6cd54e31716a16",
+      "sourcePage": "https://apps.shopify.com/attentive",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/attentive"
+      ]
+    },
+    {
+      "brand": "Postscript",
+      "path": "public/thumbnails/brands/postscript.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/54fb9eb4e59e94fa0e3b1b173de78ca4/icon/CPDanN66poUDEAE%3D.jpeg",
+      "reviewedSha256": "9d6d6ee723279d6200611b77030a3d59a7cd8c3b669d7a6cbb11fa882f8b430a",
+      "sourcePage": "https://apps.shopify.com/postscript-sms-marketing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/postscript-sms-marketing"
+      ]
+    },
+    {
+      "brand": "Mailchimp",
+      "path": "public/thumbnails/brands/mailchimp.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/5a5385cf8a756c3fc55c4fb80706f9f6/icon/CLa98_yf6PMCEAE%3D.png",
+      "reviewedSha256": "6d94e15f21d1e22c7461f1d0939d9a3be359c7ae91ed53b585f247dc0b15209c",
+      "sourcePage": "https://apps.shopify.com/mailchimp",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/mailchimp"
+      ]
+    },
+    {
+      "brand": "OneSignal",
+      "path": "public/thumbnails/brands/onesignal.png",
+      "reviewedAssetURL": "https://onesignal.com/apple-touch-icon.png",
+      "reviewedSha256": "a88fef77c666f1a67438b40eef99ad8974b3827f29c0c3361eb97680f7786a62",
+      "sourcePage": "https://onesignal.com/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://onesignal.com/pricing"
+      ]
+    },
+    {
+      "brand": "PushOwl",
+      "path": "public/thumbnails/brands/pushowl.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/14711ad7477a3d0211488990623ad24c/icon/COHnkub2sZEDEAE=.png",
+      "reviewedSha256": "714a53ffd0cba9f03c2fc59fc2e394958302e7ddcb7eb3abb31def558f8e1c8b",
+      "sourcePage": "https://apps.shopify.com/pushowl",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/pushowl"
+      ]
+    },
+    {
+      "brand": "Engati",
+      "path": "public/thumbnails/brands/engati.png",
+      "reviewedAssetURL": "https://cdn.prod.website-files.com/5ef788f07804fb9e0aa41273/60a3b690dfe4089d15926c37_Engati-favicon-white-on-red-256x256.png",
+      "reviewedSha256": "544d10e8b7e806c5c90eaeecd448275423e206febd4ae63cb518a6eea7615d81",
+      "sourcePage": "https://www.engati.ai/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.engati.ai/pricing"
+      ]
+    },
+    {
+      "brand": "Telnyx",
+      "path": "public/thumbnails/brands/telnyx.png",
+      "reviewedAssetURL": "https://telnyx.com/favicon.ico",
+      "reviewedSha256": "f9ca8a823820afbe0be544f8cec806f0af6f9ce3af967333c6aecca527bd36f7",
+      "sourcePage": "https://telnyx.com/products/whatsapp-business-api",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://telnyx.com/products/whatsapp-business-api"
+      ]
+    },
+    {
+      "brand": "Plivo",
+      "path": "public/thumbnails/brands/plivo.png",
+      "reviewedAssetURL": "https://www.plivo.com/docs/_mintlify/favicons/plivo/jE_tEXMmXghIL4xh/_generated/favicon/apple-touch-icon.png",
+      "reviewedSha256": "6292fef8bdf124a51040f4505ba94e50273b3f665fccf18daae778a0ec86b4d3",
+      "sourcePage": "https://www.plivo.com/docs/messaging/concepts/whatsapp/prerequisites",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.plivo.com/docs/messaging/concepts/whatsapp/prerequisites"
+      ]
+    },
+    {
+      "brand": "Landbot",
+      "path": "public/thumbnails/brands/landbot.png",
+      "reviewedAssetURL": "https://cdn.prod.website-files.com/5e1c4fb5db4d5243c0021d34/61fbe5483be78212776f02c9_webclip.jpg",
+      "reviewedSha256": "2f403fb611430d4dfbe92c3ba4c78b2ab788457801c1bc8cab170bfd2de8b0d8",
+      "sourcePage": "https://landbot.io/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://landbot.io/pricing"
+      ]
+    },
+    {
+      "brand": "Botpress",
+      "path": "public/thumbnails/brands/botpress.png",
+      "reviewedAssetURL": "https://cdn.prod.website-files.com/635c4eeb78332f7971255095/6a887680628e755606a2406b_bp-logo.jpg",
+      "reviewedSha256": "7491c030679a753e71907f04caa88408d5675f44e9ecfd368624ba5301a4cb15",
+      "sourcePage": "https://botpress.com/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://botpress.com/pricing"
+      ]
+    },
+    {
+      "brand": "Lime Connect",
+      "path": "public/thumbnails/brands/lime-connect.png",
+      "reviewedAssetURL": "https://connect.lime-technologies.com/wp-content/uploads/2024/04/cropped-favicon-lime-180x180.png",
+      "reviewedSha256": "60004f3f7d71709e71308c38d6adaa770b4ff4638dee6492901e3c7d9c932e02",
+      "sourcePage": "https://connect.lime-technologies.com/en/pricing/",
+      "decision": "allow",
+      "reason": "Current first-party Lime Connect favicon and colorful conversational motif; rebranding announcement confirms the new identity after Userlike. Do not use the old name alone.",
+      "evidence": [
+        "https://connect.lime-technologies.com/en/",
+        "https://connect.lime-technologies.com/en/blog/userlike-rebranding-lime-connect/"
+      ]
+    },
+    {
+      "brand": "Saysimple",
+      "path": "public/thumbnails/brands/saysimple.png",
+      "reviewedAssetURL": "https://cdn.prod.website-files.com/65c13900854527089d094087/68c03fbbac7e41fc3195de58_saysimple-webclip.png",
+      "reviewedSha256": "7fde9afc01a0669b489b879ffcad474841bb6308283500bfd435448d821d5862",
+      "sourcePage": "https://www.saysimple.com/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.saysimple.com/pricing"
+      ]
+    },
+    {
+      "brand": "Rasayel",
+      "path": "public/thumbnails/brands/rasayel.png",
+      "reviewedAssetURL": "https://framerusercontent.com/images/HYuYjFZJXmPXgMkj3uUiUBoIiQ.svg",
+      "reviewedSha256": "322020990ff0d31f5c55950c7e8237812e41ee0cc7a3d4c40ce56fe739096c59",
+      "sourcePage": "https://www.rasayel.io/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.rasayel.io/pricing"
+      ]
+    },
+    {
+      "brand": "Chatfuel",
+      "path": "public/thumbnails/brands/chatfuel.png",
+      "reviewedAssetURL": "https://chatfuel.com/favicons/apple-touch-icon.png",
+      "reviewedSha256": "7a3fec5d379fd5a91364739c466859fcc3e3b952c70f625055f905dddd0ce86e",
+      "sourcePage": "https://chatfuel.com/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://chatfuel.com/pricing"
+      ]
+    },
+    {
+      "brand": "MoEngage",
+      "path": "public/thumbnails/brands/moengage.png",
+      "reviewedAssetURL": "https://nitrocdn.com/lPdPiSKyFszhocOmwSaWwELodnnFnZFA/assets/images/optimized/rev-f919169/www.moengage.com/wp-content/uploads/cropped-Favicon_MoEngage-180x180.png",
+      "reviewedSha256": "7d114f817ddb69ae9ce2fd9f34048ae574cfece912e61102a187fedb070a4a30",
+      "sourcePage": "https://www.moengage.com/",
+      "decision": "allow",
+      "reason": "Official rebranding article explains a user centered in the O. This supports the user-centered favicon motif; no mismatched partner mark detected.",
+      "evidence": [
+        "https://www.moengage.com/blog/introducing-a-brand-new-moengage/"
+      ]
+    },
+    {
+      "brand": "Insider One",
+      "path": "public/thumbnails/brands/insider-one.png",
+      "reviewedAssetURL": "https://insiderone.com/assets/favicon.png",
+      "reviewedSha256": "bee62e9ca78994a0e49e5fffdd1621ade6223953d3fb3da7e2ab9077acaeda33",
+      "sourcePage": "https://insiderone.com/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://insiderone.com/"
+      ]
+    },
+    {
+      "brand": "Dondy",
+      "path": "public/thumbnails/brands/dondy.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/3c2941147afa6bf42cc28f8033d21af0/icon/CMiHg6DXxZcDEAE%3D.png",
+      "reviewedSha256": "6c2be4ba7051c577aedece52ed75731d76092451641f942e6dcd710f853eb876",
+      "sourcePage": "https://apps.shopify.com/dondy-marketing-ai",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/dondy-marketing-ai"
+      ]
+    },
+    {
+      "brand": "Braze",
+      "path": "public/thumbnails/brands/braze.png",
+      "reviewedAssetURL": "https://www.braze.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.3zj52cl9b-j-1.png&w=256&q=75",
+      "reviewedSha256": "a1e4d6f4910561ad2a946d28a1bf6b2ae4bdd99a535dd53390b5b1b4878f3b07",
+      "sourcePage": "https://www.braze.com/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.braze.com/"
+      ]
+    },
+    {
+      "brand": "WebEngage",
+      "path": "public/thumbnails/brands/webengage.png",
+      "reviewedAssetURL": "https://docs.webengage.com/apple-touch-icon.png?v=2a3fbb9b2b0f",
+      "reviewedSha256": "45951bdd38c2107a08185992177755a837978ff32d3d12a8d192b4b588d44fc3",
+      "sourcePage": "https://docs.webengage.com/docs/whatsapp",
+      "decision": "reject",
+      "reason": "Purple bird from the documentation-site apple-touch icon does not establish WebEngage’s identity; it resembles the documentation host’s mascot. Do not use a hosted-docs favicon as a vendor mark without direct identity association.",
+      "evidence": [
+        "https://dev.webengage.com/media-kit/",
+        "https://rcsforbusiness.google/find-a-partner/webengage/"
+      ],
+      "replacement": "Use WebEngage’s media-kit black/white original logo, or ordinary WebEngage text. The Google RCS partner profile explicitly labels its separate image WebEngage logo.",
+      "replacementAssetCandidate": "https://www.gstatic.com/marketing-cms/assets/images/f2/02/bef3f22e4c6ca5c95e523a59a956/property-1-white-aniket-bodkay-inv.webp%3Ds80-fcrop64%3D1%2C00000000ffffffff-rw",
+      "replacementLimit": "Explicitly associated on Google partner profile, but image fetch returned cache miss; not visually cleared. Media-kit content indexed, direct page fetch timed out."
+    },
+    {
+      "brand": "WhatsApp Business App",
+      "path": "public/thumbnails/brands/whatsapp-business-app.png",
+      "reviewedAssetURL": "https://whatsappbusiness.com/wp-content/uploads/2026/03/cropped-Digital_Glyph_Green_RGB_2026.png?w=180",
+      "reviewedSha256": "b9ed5b5ac4d766dd5e9a6654bacf857d2fd109aac3d8e76b15264b0077d211db",
+      "sourcePage": "https://business.whatsapp.com/products/business-app",
+      "decision": "hold-product-specific",
+      "reason": "The current plain phone glyph is generic WhatsApp branding, not an independently confirmed current Business App icon. Official Business App announcement documents a distinct refreshed app icon.",
+      "evidence": [
+        "https://whatsappbusiness.com/blog/whatsapp-business-app-gets-a-new-icon/",
+        "https://apps.apple.com/us/app/whatsapp-business/id1386412985",
+        "https://www.meta.com/brand/resources/whatsapp/whatsapp-brand/"
+      ],
+      "replacement": "Use ordinary WhatsApp Business App text until an original current Business App icon is obtained. Generic glyph can represent the WhatsApp channel with an accurate generic label.",
+      "replacementAssetCandidate": "https://whatsappbusiness.com/wp-content/uploads/2025/03/app-icon-update-hero.jpg?w=604",
+      "replacementLimit": "Official announcement illustration, not cleared as a standalone app-icon file. Do not replace it with a gallery screenshot or crop without reviewing the actual source. Apple web extraction exposed only an artwork placeholder."
+    },
+    {
+      "brand": "Chaty",
+      "path": "public/thumbnails/brands/chaty.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/0dcf8a954268976191679efe5e8d1441/icon/COfu0qHKx5ADEAE%3D.png",
+      "reviewedSha256": "90590aed7b4f4d15a5831b75eeba1a84b52e69e9e25af2661bb41f41b8c5b5bf",
+      "sourcePage": "https://apps.shopify.com/chaty",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/chaty"
+      ]
+    },
+    {
+      "brand": "Bird",
+      "path": "public/thumbnails/brands/bird.png",
+      "reviewedAssetURL": "https://bird.com/favicon-light.png",
+      "reviewedSha256": "8265e6293de1fc1cd78b08d137aff7e83c085efb687b6a6c4f948eecdaf9ec3b",
+      "sourcePage": "https://bird.com/whatsapp-api/features/marketing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://bird.com/whatsapp-api/features/marketing"
+      ]
+    },
+    {
+      "brand": "Infobip",
+      "path": "public/thumbnails/brands/infobip.png",
+      "reviewedAssetURL": "https://cdn-web.infobip.com/uploads/2025/06/cropped-infobip-logo-favicon.png",
+      "reviewedSha256": "5a401a18feeb342215e8b59b71fd168a4de254761b8a5cc154cef9622551a7d9",
+      "sourcePage": "https://www.infobip.com/whatsapp-business",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.infobip.com/whatsapp-business"
+      ]
+    },
+    {
+      "brand": "Gallabox",
+      "path": "public/thumbnails/brands/gallabox.png",
+      "reviewedAssetURL": "https://cdn.prod.website-files.com/6a0c572d893039a7a1eb3465/6a0c572d893039a7a1eb354c_apple-touch-icon%20(1).png",
+      "reviewedSha256": "c1bdc4491faa7610ebebfda717f08879fd8953233f0864dcc132f66c9002b235",
+      "sourcePage": "https://gallabox.com/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://gallabox.com/"
+      ]
+    },
+    {
+      "brand": "360dialog",
+      "path": "public/thumbnails/brands/360dialog.png",
+      "reviewedAssetURL": "https://framerusercontent.com/images/jCsm2IXNOOfEvUqkW8uqby4EsJk.png",
+      "reviewedSha256": "15d310f8153005c8811dc715dcba736a6047b52882f8f85464f59ac17ef5561f",
+      "sourcePage": "https://360dialog.com/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://360dialog.com/"
+      ]
+    },
+    {
+      "brand": "Gupshup",
+      "path": "public/thumbnails/brands/gupshup.png",
+      "reviewedAssetURL": "https://www.gupshup.ai/apple-touch-icon.png",
+      "reviewedSha256": "8ca1983169ca6b15bd4da636a5628e20f6e304499d70819b4b53fa36f0606f02",
+      "sourcePage": "https://www.gupshup.ai/",
+      "decision": "allow",
+      "reason": "No wrong-identity substitution detected in the current first-party Gupshup favicon. Retain the current Gupshup label; a historical identity article is not proof that the old programmable-chat variant must still be used.",
+      "evidence": [
+        "https://www.gupshup.ai/",
+        "https://www.gupshup.ai/resources/press-releases/gupshup-rebrands-amidst-product-growth-and-global-expansion/"
+      ]
+    },
+    {
+      "brand": "DoubleTick",
+      "path": "public/thumbnails/brands/doubletick.png",
+      "reviewedAssetURL": "https://doubletick.io/apple-touch-icon.png",
+      "reviewedSha256": "b56b03e2d932353c87c996fbd80e2976610c09e834a2fc392bb8e56c5ae79ed3",
+      "sourcePage": "https://doubletick.io/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://doubletick.io/"
+      ]
+    },
+    {
+      "brand": "respond.io",
+      "path": "public/thumbnails/brands/respond-io.png",
+      "reviewedAssetURL": "https://assets.respond.io/favicon/apple-touch-icon.png",
+      "reviewedSha256": "05a3cdff2e6db9f3477c1e77b1c408e39878b922613969fff6492a6e93d4658f",
+      "sourcePage": "https://respond.io/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://respond.io/pricing"
+      ]
+    },
+    {
+      "brand": "SuperLemon",
+      "path": "public/thumbnails/brands/superlemon.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/9f753b7cdac01ee81beaeb9b1e52bf09/icon/CKWHrdK8lPsCEAE%3D.jpeg",
+      "reviewedSha256": "d0ba1ad0022bf20d707d3945289ea65f69d264a1a1314e21d20613590373d377",
+      "sourcePage": "https://apps.shopify.com/whatsapp-chat-button",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/whatsapp-chat-button"
+      ]
+    },
+    {
+      "brand": "charles",
+      "path": "public/thumbnails/brands/charles.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/493d15fc5967d7ea15fa462574fbb8da/icon/CLqmmND6gP8CEAE%3D.jpeg",
+      "reviewedSha256": "da803c9bbcfcc6c1339d374202094a250d5968d7254a223822b42308d5b9b83c",
+      "sourcePage": "https://apps.shopify.com/charles-1",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/charles-1"
+      ]
+    },
+    {
+      "brand": "LimeChat",
+      "path": "public/thumbnails/brands/limechat.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/29485637bf1ef6ce6aa0300cad4ca6ce/icon/CKrksK3TsvwCEAE%3D.jpeg",
+      "reviewedSha256": "b350beb3a2c6b1be14ef4763fafd4f2eba0fa0850fa7b2f04506cd64c6096ac7",
+      "sourcePage": "https://apps.shopify.com/limechat-shop",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/limechat-shop"
+      ]
+    },
+    {
+      "brand": "Gorgias",
+      "path": "public/thumbnails/brands/gorgias.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/d783d0d0ded4ab7a13c20f47533819a3/icon/CNOe1Y-4vocDEAE%3D.png",
+      "reviewedSha256": "f6eae09cd819f5a57e172145a62331d58f1d68574fae6cb7f682f38a8f9df914",
+      "sourcePage": "https://apps.shopify.com/helpdesk",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/helpdesk"
+      ]
+    },
+    {
+      "brand": "Chatarmin",
+      "path": "public/thumbnails/brands/chatarmin.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/6cf12620aa06e1734327f284e228d103/icon/CIPbn5CCx4UDEAE%3D.png",
+      "reviewedSha256": "fa63937d241dffb5460fb34dcfb938a7c942401ff68415ed2bfb5cca54eb2267",
+      "sourcePage": "https://apps.shopify.com/chatarmin-whatsapp",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/chatarmin-whatsapp"
+      ]
+    },
+    {
+      "brand": "Twilio",
+      "path": "public/thumbnails/brands/twilio.png",
+      "reviewedAssetURL": "https://www.twilio.com/content/dam/twilio-com/core-assets/social/apple-touch-icon.png",
+      "reviewedSha256": "670dc379960dc21314900efd6dfb01aa7ae6173d9c8a4383499ac248d372f5cc",
+      "sourcePage": "https://www.twilio.com/en-us/whatsapp/pricing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.twilio.com/en-us/whatsapp/pricing"
+      ]
+    },
+    {
+      "brand": "Zoko",
+      "path": "public/thumbnails/brands/zoko.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/a062193d60747a394630435afc6dfc74/icon/CInTl7beuvQCEAE%3D.png",
+      "reviewedSha256": "98f4c44f57a37118be211952ec5ee5945782a870b974fc52a3899f8fa346fe07",
+      "sourcePage": "https://apps.shopify.com/WhatsApp-button-chat",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/WhatsApp-button-chat"
+      ]
+    },
+    {
+      "brand": "Klaviyo",
+      "path": "public/thumbnails/brands/klaviyo.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/5edd9000b933a8fa88c152d1e498531f/icon/CP6B2OOv3PYCEAE%3D.png",
+      "reviewedSha256": "743487f79d60157091d9e9a5dc565269fa30868a96776a0180276ea2948e1e8f",
+      "sourcePage": "https://apps.shopify.com/klaviyo-email-marketing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/klaviyo-email-marketing"
+      ]
+    },
+    {
+      "brand": "DelightChat",
+      "path": "public/thumbnails/brands/delightchat.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/bdacc9165d0128d591d37773282df7f3/icon/CNufsrH0lu8CEAE%3D.png",
+      "reviewedSha256": "6d067b19b0b06ceb700fda991dadf6f99eb8c0bede4c1a9ee8821ebc2cc54409",
+      "sourcePage": "https://apps.shopify.com/delightchat-ecommerce-customer-service",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/delightchat-ecommerce-customer-service"
+      ]
+    },
+    {
+      "brand": "AiSensy",
+      "path": "public/thumbnails/brands/aisensy.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/3d4a70850c59bbc97d110b1090736d18/icon/CL6BsJu0v4YDEAE%3D.jpeg",
+      "reviewedSha256": "092c49121a8fe411340b5c7f5d3c7d971e9849bd184c5580a701a62203e2d6f3",
+      "sourcePage": "https://apps.shopify.com/aisensy-whatsapp-marketing",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/aisensy-whatsapp-marketing"
+      ]
+    },
+    {
+      "brand": "Tidio",
+      "path": "public/thumbnails/brands/tidio.png",
+      "reviewedAssetURL": "https://www.tidio.com/images/favicon/web-app-manifest-512x512.png",
+      "reviewedSha256": "449821856956d78c4556af8fe02d7b86f31c64c135e5d7af9afed882eff535b0",
+      "sourcePage": "https://www.tidio.com/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.tidio.com/"
+      ]
+    },
+    {
+      "brand": "BiteSpeed",
+      "path": "public/thumbnails/brands/bitespeed.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/de3d0eec6cc35360a277ea5c165e2708/icon/CPrPhZ6d9o8DEAE%3D.png",
+      "reviewedSha256": "fb794b435f8e48ee8f31b2c87b96e6cb7a155431ddb142ebcf99df58bd728361",
+      "sourcePage": "https://apps.shopify.com/bitespeed-fb-messenger-chatbot",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/bitespeed-fb-messenger-chatbot"
+      ]
+    },
+    {
+      "brand": "QuickReply.ai",
+      "path": "public/thumbnails/brands/quickreply-ai.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/ac3c0fd42cee9fe084b23c2284d01e77/icon/CNX4x4K8kooDEAE%3D.png",
+      "reviewedSha256": "fcba91778af6c53ef33813859adcb39dbe889e7e2d72731a983f6c3fe02a3844",
+      "sourcePage": "https://apps.shopify.com/helpdesk-livechat-chatbots",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://apps.shopify.com/helpdesk-livechat-chatbots"
+      ]
+    },
+    {
+      "brand": "Interakt",
+      "path": "public/thumbnails/brands/interakt.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/5c03162a9bcd0806ed635be1b2c8950d/icon/CPmRj_z2xIsDEAE%3D.jpeg",
+      "reviewedSha256": "130a89657d4e653b7e9de98517881bec0b305a56495992aa7c6efde84f8db615",
+      "sourcePage": "https://apps.shopify.com/interakt-marketing",
+      "decision": "allow",
+      "reason": "Current official Interakt Marketing listing explicitly associates this exact asset with its top app identity image. Do not reject the changed icon based on an older remembered brand.",
+      "evidence": [
+        "https://apps.shopify.com/interakt-marketing"
+      ],
+      "verifiedAssociationAsset": "https://cdn.shopify.com/app-store/listing_images/5c03162a9bcd0806ed635be1b2c8950d/icon/CPmRj_z2xIsDEAE%3D.jpeg"
+    },
+    {
+      "brand": "Wati",
+      "path": "public/thumbnails/brands/wati.png",
+      "reviewedAssetURL": "https://www.wati.io/wp-content/uploads/2023/05/cropped-Favicon-512px-180x180.png",
+      "reviewedSha256": "2a81eb538c7f87417d4b641d5a45daa7cd15b39c77e847917bbf957d50580243",
+      "sourcePage": "https://www.wati.io/en/pricing/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.wati.io/en/pricing/"
+      ]
+    },
+    {
+      "brand": "Sinch",
+      "path": "public/thumbnails/brands/sinch.png",
+      "reviewedAssetURL": "https://www.group.sinch.com/images/cc81de2a-a38f-4873-9ef2-13b0a7cd82ff/sinch-logo.svg",
+      "reviewedSha256": "8d36011e63aad86c4cbaed022a6cd48ff31836f2034c919754ffb330674fb707",
+      "sourcePage": "https://www.group.sinch.com/media/press-material/",
+      "decision": "allow",
+      "reason": "No identity mismatch detected in visual contact-sheet inspection and the supplied first-party asset record. This is visual/provenance QA, not a claim every page/asset was freshly re-fetched or that usage rights were assessed.",
+      "evidence": [
+        "https://www.group.sinch.com/media/press-material/"
+      ]
+    },
+    {
+      "brand": "HighLevel",
+      "path": "public/thumbnails/brands/highlevel.png",
+      "reviewedAssetURL": "https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/62b48689c85eccb36ca941fc.png",
+      "reviewedSha256": "ec59a252f0923719a73e5a329dc702d8b0d5bbe8c5297715794be09bcdc8c70b",
+      "sourcePage": "https://www.gohighlevel.com/pricing",
+      "decision": "allow",
+      "reason": "The original sheet’s Printful partner logo is rejected. Root replaced it during the audit with the recognizable HighLevel three-arrow mark; this current identity matches the official brand-kit arrow description. Prefer a sharper original for large use.",
+      "evidence": [
+        "https://marketing.gohighlevel.com/brandkit",
+        "https://help.gohighlevel.com/support/solutions/articles/48001205362-brand-kit-using-the-highlevel-logo-and-brand"
+      ],
+      "replacement": "Use the current arrow at a size it can support or obtain the official original from the brand kit.",
+      "replacementAssetCandidates": [
+        "https://assets.cdn.filesafe.space/zELBHkVp0JPbbLvKIlF5/media/690a5f4a57ea175183408da2.png",
+        "https://assets.cdn.filesafe.space/zELBHkVp0JPbbLvKIlF5/media/68b886aa315ac7ff9d3dbb94.png",
+        "https://assets.cdn.filesafe.space/zELBHkVp0JPbbLvKIlF5/media/ca39cd02-9fb4-4b95-bdd7-61421e046003.png"
+      ],
+      "replacementLimit": "Direct images linked in official brand kit, not independently rendered in this audit. Preserve original proportions/colors."
+    },
+    {
+      "brand": "Zoho Desk",
+      "path": "public/thumbnails/brands/zoho-desk.png",
+      "reviewedAssetURL": "https://www.zohowebstatic.com/sites/zweb/images/favicon.ico",
+      "reviewedSha256": "f1ba43df544ff46fc85490d1e0b3f1c0ac26af8c1f6b2d433f63a2787d306d21",
+      "sourcePage": "https://www.zoho.com/desk/pricing.html",
+      "decision": "hold-product-specific",
+      "reason": "The contact sheet showed Zoho Service Plus, a different product. During audit, the asset changed to the generic Zoho corporate favicon. That fixes the Service Plus mismatch but still does not establish an exact Desk mark.",
+      "evidence": [
+        "https://www.zoho.com/desk/",
+        "https://www.zohowebstatic.com/sites/zweb/images/productlogos/desk.svg"
+      ],
+      "replacement": "Prefer the actual Desk product logo or ordinary Zoho Desk text. Current generic Zoho corporate mark requires explicit parent-company labeling.",
+      "replacementAssetCandidate": "https://www.zohowebstatic.com/sites/zweb/images/productlogos/desk.svg",
+      "replacementLimit": "Web fetch reached image/svg+xml; tool could not render SVG. Root must inspect the actual graphic before treating it as visually cleared."
+    },
+    {
+      "brand": "JivoChat",
+      "path": "public/thumbnails/brands/jivochat.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/5c413ee331721e49374ce06d0a7edc1b/icon/CPrw4d6I5fECEAE=.png",
+      "reviewedSha256": "431f6cf09bc337c633886013b8d8961ed50fd2c116b33ecd428f389a2c8a1ad8",
+      "sourcePage": "https://apps.shopify.com/jivochat",
+      "decision": "reject",
+      "reason": "The current red-S image is the Shopify Inbox top icon, not JivoChat. JivoChat’s unavailable Shopify listing exposes a different top product image on storage.googleapis.com; Shopify Inbox appears later in More apps like this. Matching hashes confirm the wrong related-app image was reused.",
+      "evidence": [
+        "https://apps.shopify.com/jivochat",
+        "https://apps.shopify.com/inbox",
+        "https://www.jivochat.com/"
+      ],
+      "replacement": "Use an original JivoChat mark from its own website, or ordinary JivoChat text. The signed original listing image expired in the web fetch; do not use the Shopify Inbox recommendation image."
+    },
+    {
+      "brand": "Shopify Inbox",
+      "path": "public/thumbnails/brands/shopify-inbox.png",
+      "reviewedAssetURL": "https://cdn.shopify.com/app-store/listing_images/5c413ee331721e49374ce06d0a7edc1b/icon/CPrw4d6I5fECEAE=.png",
+      "reviewedSha256": "431f6cf09bc337c633886013b8d8961ed50fd2c116b33ecd428f389a2c8a1ad8",
+      "sourcePage": "https://apps.shopify.com/inbox",
+      "decision": "allow",
+      "reason": "Despite visual suspicion, Shopify’s current official Inbox listing labels this exact red-S asset as its top Shopify Inbox product image before the gallery. The reuse for JivoChat is wrong; this association is affirmative primary evidence for Inbox.",
+      "evidence": [
+        "https://apps.shopify.com/inbox",
+        "https://help.shopify.com/en/manual/inbox"
+      ],
+      "verifiedAssociationAsset": "https://cdn.shopify.com/app-store/listing_images/5c413ee331721e49374ce06d0a7edc1b/icon/CPrw4d6I5fECEAE%3D.png"
+    },
+    {
+      "brand": "Intercom",
+      "path": "public/thumbnails/brands/intercom.png",
+      "reviewedAssetURL": "https://developers.intercom.com/assets/favicon.286f56791636e8382abf1d72b1e481c68874c05f76e399476b003e2da12d362a.8a5edab2.png",
+      "reviewedSha256": "7dddb8d93f9cf68a3351a60d71ae70099454a19da4158d746985c1bd7f97d688",
+      "sourcePage": "https://developers.intercom.com/",
+      "decision": "allow",
+      "reason": "Recognizable Intercom smile/window mark from first-party developer site. Current navy square and black glyph have weak internal contrast; choose a legible original variant rather than recoloring the asset.",
+      "evidence": [
+        "https://developers.intercom.com/"
+      ]
+    },
+    {
+      "brand": "Vonage",
+      "path": "public/thumbnails/brands/vonage.png",
+      "reviewedAssetURL": "https://developer.vonage.com/favicon.ico",
+      "reviewedSha256": "bde7fdc16e5d96f4a2d7be94b29b0d98ae758a550a81b38c170ff2c887cfde7c",
+      "sourcePage": "https://developer.vonage.com/en/home",
+      "decision": "allow",
+      "reason": "Recognizable Vonage V from official developer favicon; native source is only 48px and visibly soft when enlarged. Keep small or use ordinary text.",
+      "evidence": [
+        "https://developer.vonage.com/en/home"
+      ]
+    }
+  ],
+  "rejectedHistoricalAssets": [
+    {
+      "brand": "HighLevel",
+      "reason": "Printful partner wordmark shown in initial contact sheet; current replacement reviewed separately."
+    },
+    {
+      "brand": "Zoho Desk",
+      "assetURL": "https://www.zohowebstatic.com/sites/zweb/images/productlogos/serviceplus.svg",
+      "reason": "Different Zoho product (Service Plus), not Desk. Current generic corporate favicon remains conditional."
+    }
+  ],
+  "limitations": [
+    "Manifest changed while audit was underway. Decisions are bound to reviewedAssetURL/reviewedSha256; recheck later replacements rather than inheriting a blanket verified flag.",
+    "An official page can contain partner logos, recommended apps, documentation-host icons and corporate parent marks. HTTP success and a logo-like filename alone do not establish product identity.",
+    "For uncertainty or inadequate resolution, use the ordinary brand name. Do not create a substitute graphic.",
+    "Allow means no identity mismatch detected within this stated evidence; product-specific holds need an exact mark or accurate corporate labeling.",
+    "No artwork was downloaded, edited or composed during this review; image URLs are evidence/candidates, not newly accepted replacements."
+  ]
+}

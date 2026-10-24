@@ -1,0 +1,497 @@
+{
+  "Trengo": {
+    "path": "public/thumbnails/brands/trengo.png",
+    "source": "https://trengo.com/prices",
+    "assetURL": "https://cdn.prod.website-files.com/65b287adb93277a8f53ea884/65d25ba372af01bb6f40aff8_trengo-appicon.png",
+    "verified": true,
+    "sha256": "78d5da20ead9fc5808f57d824aae49a09ec04c5af7085ae8fa7c74a7d7d8e405",
+    "sourceWidth": 256,
+    "sourceHeight": 256
+  },
+  "Kommo": {
+    "path": "public/thumbnails/brands/kommo.png",
+    "source": "https://www.kommo.com/buy/tariff/",
+    "assetURL": "https://pcfcdn.kommo.com/favicon.ico",
+    "verified": true,
+    "sha256": "661796c3394d66403106ad7f04295e944f8c8f299ee3b8fa35b2419bdafdd70c",
+    "sourceWidth": 96,
+    "sourceHeight": 96
+  },
+  "Zendesk": {
+    "path": "public/thumbnails/brands/zendesk.png",
+    "source": "https://apps.shopify.com/zendesk",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/d315fe70bcb98753afbe6aed7a9bffcd/icon/CLHzxd_0lu8CEAE%3D.png",
+    "verified": true,
+    "sha256": "387fb5cf6f5efa288b0784307b9f59216655597cc8d11eeafbeb608dbd4da28e",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "SleekFlow": {
+    "path": "public/thumbnails/brands/sleekflow.png",
+    "source": "https://sleekflow.io/pricing",
+    "assetURL": "https://sleekflow.io/favicon/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "099222b5af46fcde973ca531608bb8ce8d86cebb354af01811b0ca86a7d4288a",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "Crisp": {
+    "path": "public/thumbnails/brands/crisp.png",
+    "source": "https://crisp.chat/en/pricing/",
+    "assetURL": "https://crisp.chat/favicons/apple-touch-icon-144x144.png",
+    "verified": true,
+    "sha256": "0273b8af70382d64d1d93b42b03021cdf25cf583893ea67a7ba0afdac03c194e",
+    "sourceWidth": 144,
+    "sourceHeight": 144
+  },
+  "HubSpot Service Hub": {
+    "path": "public/thumbnails/brands/hubspot-service-hub.png",
+    "source": "https://www.hubspot.com/newsroom",
+    "assetURL": "https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png",
+    "verified": true,
+    "sha256": "465840e6e9f011880f73a3606d156c91b765e7cd64ec0c6f198d6a302c862781",
+    "sourceWidth": 288,
+    "sourceHeight": 288
+  },
+  "Chatwoot": {
+    "path": "public/thumbnails/brands/chatwoot.png",
+    "source": "https://www.chatwoot.com/pricing",
+    "assetURL": "https://www.chatwoot.com/favicon/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "43a76886655ff304f84c22921e42ecbf144724336a8ca78627d2f178660066e9",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "Front": {
+    "path": "public/thumbnails/brands/front.png",
+    "source": "https://front.com/pricing",
+    "assetURL": "https://front.com/apple-icon.png",
+    "verified": true,
+    "sha256": "10c0966b0f3147b71b5c68f14342f44e80eb64c0101003f7d201afbc9193d832",
+    "sourceWidth": 192,
+    "sourceHeight": 192
+  },
+  "Help Scout": {
+    "path": "public/thumbnails/brands/help-scout.png",
+    "source": "https://www.helpscout.com/pricing/",
+    "assetURL": "https://www.helpscout.com/images/favicon/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "ea98aa14271b591a72860b73b84358ff88449602f665b6b6932c4aa9d8f26e59",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "LiveChat / Text": {
+    "path": "public/thumbnails/brands/livechat-text.png",
+    "source": "https://www.livechat.com/pricing/",
+    "assetURL": "https://www.livechat.com/text-by-livechat-logo.1340c1eaeab00399fae95333fe78b8dc08db762df5a93d735d4b6482f4f3772b.svg",
+    "verified": true,
+    "sha256": "b27f5ffca67924208b7c61d233eff98d1e4faed5578a49a6b543b9b014bda41d",
+    "sourceWidth": 103,
+    "sourceHeight": 42
+  },
+  "Omnisend": {
+    "path": "public/thumbnails/brands/omnisend.png",
+    "source": "https://apps.shopify.com/omnisend",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/9b0c952ebdfd9d278f559665ecf48f5c/icon/CI_zwN7rmpYDEAE%3D.png",
+    "verified": true,
+    "sha256": "278e4fdb488c88c40569a047e3ca8bb2c880c67ff3f23eff872a09907c615d99",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Attentive": {
+    "path": "public/thumbnails/brands/attentive.png",
+    "source": "https://apps.shopify.com/attentive",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/5da194592c59cd145b825b53019db33c/icon/CIKipOGl7-8CEAE%3D.png",
+    "verified": true,
+    "sha256": "15c9be06658ec561da2e7b16113ac3c9ebbfa233a48932d06b6cd54e31716a16",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Postscript": {
+    "path": "public/thumbnails/brands/postscript.png",
+    "source": "https://apps.shopify.com/postscript-sms-marketing",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/54fb9eb4e59e94fa0e3b1b173de78ca4/icon/CPDanN66poUDEAE%3D.jpeg",
+    "verified": true,
+    "sha256": "9d6d6ee723279d6200611b77030a3d59a7cd8c3b669d7a6cbb11fa882f8b430a",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Mailchimp": {
+    "path": "public/thumbnails/brands/mailchimp.png",
+    "source": "https://apps.shopify.com/mailchimp",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/5a5385cf8a756c3fc55c4fb80706f9f6/icon/CLa98_yf6PMCEAE%3D.png",
+    "verified": true,
+    "sha256": "6d94e15f21d1e22c7461f1d0939d9a3be359c7ae91ed53b585f247dc0b15209c",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "OneSignal": {
+    "path": "public/thumbnails/brands/onesignal.png",
+    "source": "https://onesignal.com/pricing",
+    "assetURL": "https://onesignal.com/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "a88fef77c666f1a67438b40eef99ad8974b3827f29c0c3361eb97680f7786a62",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "PushOwl": {
+    "path": "public/thumbnails/brands/pushowl.png",
+    "source": "https://apps.shopify.com/pushowl",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/14711ad7477a3d0211488990623ad24c/icon/COHnkub2sZEDEAE=.png",
+    "verified": true,
+    "sha256": "714a53ffd0cba9f03c2fc59fc2e394958302e7ddcb7eb3abb31def558f8e1c8b",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Engati": {
+    "path": "public/thumbnails/brands/engati.png",
+    "source": "https://www.engati.ai/pricing",
+    "assetURL": "https://cdn.prod.website-files.com/5ef788f07804fb9e0aa41273/60a3b690dfe4089d15926c37_Engati-favicon-white-on-red-256x256.png",
+    "verified": true,
+    "sha256": "544d10e8b7e806c5c90eaeecd448275423e206febd4ae63cb518a6eea7615d81",
+    "sourceWidth": 256,
+    "sourceHeight": 256
+  },
+  "Telnyx": {
+    "path": "public/thumbnails/brands/telnyx.png",
+    "source": "https://telnyx.com/products/whatsapp-business-api",
+    "assetURL": "https://telnyx.com/favicon.ico",
+    "verified": true,
+    "sha256": "f9ca8a823820afbe0be544f8cec806f0af6f9ce3af967333c6aecca527bd36f7",
+    "sourceWidth": 750,
+    "sourceHeight": 750
+  },
+  "Plivo": {
+    "path": "public/thumbnails/brands/plivo.png",
+    "source": "https://www.plivo.com/docs/messaging/concepts/whatsapp/prerequisites",
+    "assetURL": "https://www.plivo.com/docs/_mintlify/favicons/plivo/jE_tEXMmXghIL4xh/_generated/favicon/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "6292fef8bdf124a51040f4505ba94e50273b3f665fccf18daae778a0ec86b4d3",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "Landbot": {
+    "path": "public/thumbnails/brands/landbot.png",
+    "source": "https://landbot.io/pricing",
+    "assetURL": "https://cdn.prod.website-files.com/5e1c4fb5db4d5243c0021d34/61fbe5483be78212776f02c9_webclip.jpg",
+    "verified": true,
+    "sha256": "2f403fb611430d4dfbe92c3ba4c78b2ab788457801c1bc8cab170bfd2de8b0d8",
+    "sourceWidth": 256,
+    "sourceHeight": 256
+  },
+  "Botpress": {
+    "path": "public/thumbnails/brands/botpress.png",
+    "source": "https://botpress.com/pricing",
+    "assetURL": "https://cdn.prod.website-files.com/635c4eeb78332f7971255095/6a887680628e755606a2406b_bp-logo.jpg",
+    "verified": true,
+    "sha256": "7491c030679a753e71907f04caa88408d5675f44e9ecfd368624ba5301a4cb15",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "Lime Connect": {
+    "path": "public/thumbnails/brands/lime-connect.png",
+    "source": "https://connect.lime-technologies.com/en/pricing/",
+    "assetURL": "https://connect.lime-technologies.com/wp-content/uploads/2024/04/cropped-favicon-lime-180x180.png",
+    "verified": true,
+    "sha256": "60004f3f7d71709e71308c38d6adaa770b4ff4638dee6492901e3c7d9c932e02",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "Saysimple": {
+    "path": "public/thumbnails/brands/saysimple.png",
+    "source": "https://www.saysimple.com/pricing",
+    "assetURL": "https://cdn.prod.website-files.com/65c13900854527089d094087/68c03fbbac7e41fc3195de58_saysimple-webclip.png",
+    "verified": true,
+    "sha256": "7fde9afc01a0669b489b879ffcad474841bb6308283500bfd435448d821d5862",
+    "sourceWidth": 256,
+    "sourceHeight": 256
+  },
+  "Rasayel": {
+    "path": "public/thumbnails/brands/rasayel.png",
+    "source": "https://www.rasayel.io/pricing",
+    "assetURL": "https://framerusercontent.com/images/HYuYjFZJXmPXgMkj3uUiUBoIiQ.svg",
+    "verified": true,
+    "sha256": "322020990ff0d31f5c55950c7e8237812e41ee0cc7a3d4c40ce56fe739096c59",
+    "sourceWidth": 67,
+    "sourceHeight": 73
+  },
+  "Chatfuel": {
+    "path": "public/thumbnails/brands/chatfuel.png",
+    "source": "https://chatfuel.com/pricing",
+    "assetURL": "https://chatfuel.com/favicons/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "7a3fec5d379fd5a91364739c466859fcc3e3b952c70f625055f905dddd0ce86e",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "MoEngage": {
+    "path": "public/thumbnails/brands/moengage.png",
+    "source": "https://www.moengage.com/",
+    "assetURL": "https://nitrocdn.com/lPdPiSKyFszhocOmwSaWwELodnnFnZFA/assets/images/optimized/rev-f919169/www.moengage.com/wp-content/uploads/cropped-Favicon_MoEngage-180x180.png",
+    "verified": true,
+    "sha256": "7d114f817ddb69ae9ce2fd9f34048ae574cfece912e61102a187fedb070a4a30",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "Insider One": {
+    "path": "public/thumbnails/brands/insider-one.png",
+    "source": "https://insiderone.com/",
+    "assetURL": "https://insiderone.com/assets/favicon.png",
+    "verified": true,
+    "sha256": "bee62e9ca78994a0e49e5fffdd1621ade6223953d3fb3da7e2ab9077acaeda33",
+    "sourceWidth": 192,
+    "sourceHeight": 192
+  },
+  "Dondy": {
+    "path": "public/thumbnails/brands/dondy.png",
+    "source": "https://apps.shopify.com/dondy-marketing-ai",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/3c2941147afa6bf42cc28f8033d21af0/icon/CMiHg6DXxZcDEAE%3D.png",
+    "verified": true,
+    "sha256": "6c2be4ba7051c577aedece52ed75731d76092451641f942e6dcd710f853eb876",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Braze": {
+    "path": "public/thumbnails/brands/braze.png",
+    "source": "https://www.braze.com/",
+    "assetURL": "https://www.braze.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.3zj52cl9b-j-1.png&w=256&q=75",
+    "verified": true,
+    "sha256": "a1e4d6f4910561ad2a946d28a1bf6b2ae4bdd99a535dd53390b5b1b4878f3b07",
+    "sourceWidth": 256,
+    "sourceHeight": 120
+  },
+  "Chaty": {
+    "path": "public/thumbnails/brands/chaty.png",
+    "source": "https://apps.shopify.com/chaty",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/0dcf8a954268976191679efe5e8d1441/icon/COfu0qHKx5ADEAE%3D.png",
+    "verified": true,
+    "sha256": "90590aed7b4f4d15a5831b75eeba1a84b52e69e9e25af2661bb41f41b8c5b5bf",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Bird": {
+    "path": "public/thumbnails/brands/bird.png",
+    "source": "https://bird.com/whatsapp-api/features/marketing",
+    "assetURL": "https://bird.com/favicon-light.png",
+    "verified": true,
+    "sha256": "8265e6293de1fc1cd78b08d137aff7e83c085efb687b6a6c4f948eecdaf9ec3b",
+    "sourceWidth": 200,
+    "sourceHeight": 200
+  },
+  "Infobip": {
+    "path": "public/thumbnails/brands/infobip.png",
+    "source": "https://www.infobip.com/whatsapp-business",
+    "assetURL": "https://cdn-web.infobip.com/uploads/2025/06/cropped-infobip-logo-favicon.png",
+    "verified": true,
+    "sha256": "5a401a18feeb342215e8b59b71fd168a4de254761b8a5cc154cef9622551a7d9",
+    "sourceWidth": 512,
+    "sourceHeight": 512
+  },
+  "Gallabox": {
+    "path": "public/thumbnails/brands/gallabox.png",
+    "source": "https://gallabox.com/",
+    "assetURL": "https://cdn.prod.website-files.com/6a0c572d893039a7a1eb3465/6a0c572d893039a7a1eb354c_apple-touch-icon%20(1).png",
+    "verified": true,
+    "sha256": "c1bdc4491faa7610ebebfda717f08879fd8953233f0864dcc132f66c9002b235",
+    "sourceWidth": 256,
+    "sourceHeight": 256
+  },
+  "360dialog": {
+    "path": "public/thumbnails/brands/360dialog.png",
+    "source": "https://360dialog.com/",
+    "assetURL": "https://framerusercontent.com/images/jCsm2IXNOOfEvUqkW8uqby4EsJk.png",
+    "verified": true,
+    "sha256": "15d310f8153005c8811dc715dcba736a6047b52882f8f85464f59ac17ef5561f",
+    "sourceWidth": 800,
+    "sourceHeight": 800
+  },
+  "Gupshup": {
+    "path": "public/thumbnails/brands/gupshup.png",
+    "source": "https://www.gupshup.ai/",
+    "assetURL": "https://www.gupshup.ai/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "8ca1983169ca6b15bd4da636a5628e20f6e304499d70819b4b53fa36f0606f02",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "DoubleTick": {
+    "path": "public/thumbnails/brands/doubletick.png",
+    "source": "https://doubletick.io/",
+    "assetURL": "https://doubletick.io/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "b56b03e2d932353c87c996fbd80e2976610c09e834a2fc392bb8e56c5ae79ed3",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "respond.io": {
+    "path": "public/thumbnails/brands/respond-io.png",
+    "source": "https://respond.io/pricing",
+    "assetURL": "https://assets.respond.io/favicon/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "05a3cdff2e6db9f3477c1e77b1c408e39878b922613969fff6492a6e93d4658f",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "SuperLemon": {
+    "path": "public/thumbnails/brands/superlemon.png",
+    "source": "https://apps.shopify.com/whatsapp-chat-button",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/9f753b7cdac01ee81beaeb9b1e52bf09/icon/CKWHrdK8lPsCEAE%3D.jpeg",
+    "verified": true,
+    "sha256": "d0ba1ad0022bf20d707d3945289ea65f69d264a1a1314e21d20613590373d377",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "charles": {
+    "path": "public/thumbnails/brands/charles.png",
+    "source": "https://apps.shopify.com/charles-1",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/493d15fc5967d7ea15fa462574fbb8da/icon/CLqmmND6gP8CEAE%3D.jpeg",
+    "verified": true,
+    "sha256": "da803c9bbcfcc6c1339d374202094a250d5968d7254a223822b42308d5b9b83c",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "LimeChat": {
+    "path": "public/thumbnails/brands/limechat.png",
+    "source": "https://apps.shopify.com/limechat-shop",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/29485637bf1ef6ce6aa0300cad4ca6ce/icon/CKrksK3TsvwCEAE%3D.jpeg",
+    "verified": true,
+    "sha256": "b350beb3a2c6b1be14ef4763fafd4f2eba0fa0850fa7b2f04506cd64c6096ac7",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Gorgias": {
+    "path": "public/thumbnails/brands/gorgias.png",
+    "source": "https://apps.shopify.com/helpdesk",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/d783d0d0ded4ab7a13c20f47533819a3/icon/CNOe1Y-4vocDEAE%3D.png",
+    "verified": true,
+    "sha256": "f6eae09cd819f5a57e172145a62331d58f1d68574fae6cb7f682f38a8f9df914",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Chatarmin": {
+    "path": "public/thumbnails/brands/chatarmin.png",
+    "source": "https://apps.shopify.com/chatarmin-whatsapp",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/6cf12620aa06e1734327f284e228d103/icon/CIPbn5CCx4UDEAE%3D.png",
+    "verified": true,
+    "sha256": "fa63937d241dffb5460fb34dcfb938a7c942401ff68415ed2bfb5cca54eb2267",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Twilio": {
+    "path": "public/thumbnails/brands/twilio.png",
+    "source": "https://www.twilio.com/en-us/whatsapp/pricing",
+    "assetURL": "https://www.twilio.com/content/dam/twilio-com/core-assets/social/apple-touch-icon.png",
+    "verified": true,
+    "sha256": "670dc379960dc21314900efd6dfb01aa7ae6173d9c8a4383499ac248d372f5cc",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "Zoko": {
+    "path": "public/thumbnails/brands/zoko.png",
+    "source": "https://apps.shopify.com/WhatsApp-button-chat",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/a062193d60747a394630435afc6dfc74/icon/CInTl7beuvQCEAE%3D.png",
+    "verified": true,
+    "sha256": "98f4c44f57a37118be211952ec5ee5945782a870b974fc52a3899f8fa346fe07",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Klaviyo": {
+    "path": "public/thumbnails/brands/klaviyo.png",
+    "source": "https://apps.shopify.com/klaviyo-email-marketing",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/5edd9000b933a8fa88c152d1e498531f/icon/CP6B2OOv3PYCEAE%3D.png",
+    "verified": true,
+    "sha256": "743487f79d60157091d9e9a5dc565269fa30868a96776a0180276ea2948e1e8f",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "DelightChat": {
+    "path": "public/thumbnails/brands/delightchat.png",
+    "source": "https://apps.shopify.com/delightchat-ecommerce-customer-service",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/bdacc9165d0128d591d37773282df7f3/icon/CNufsrH0lu8CEAE%3D.png",
+    "verified": true,
+    "sha256": "6d067b19b0b06ceb700fda991dadf6f99eb8c0bede4c1a9ee8821ebc2cc54409",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "AiSensy": {
+    "path": "public/thumbnails/brands/aisensy.png",
+    "source": "https://apps.shopify.com/aisensy-whatsapp-marketing",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/3d4a70850c59bbc97d110b1090736d18/icon/CL6BsJu0v4YDEAE%3D.jpeg",
+    "verified": true,
+    "sha256": "092c49121a8fe411340b5c7f5d3c7d971e9849bd184c5580a701a62203e2d6f3",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Tidio": {
+    "path": "public/thumbnails/brands/tidio.png",
+    "source": "https://www.tidio.com/",
+    "assetURL": "https://www.tidio.com/images/favicon/web-app-manifest-512x512.png",
+    "verified": true,
+    "sha256": "449821856956d78c4556af8fe02d7b86f31c64c135e5d7af9afed882eff535b0",
+    "sourceWidth": 512,
+    "sourceHeight": 512
+  },
+  "BiteSpeed": {
+    "path": "public/thumbnails/brands/bitespeed.png",
+    "source": "https://apps.shopify.com/bitespeed-fb-messenger-chatbot",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/de3d0eec6cc35360a277ea5c165e2708/icon/CPrPhZ6d9o8DEAE%3D.png",
+    "verified": true,
+    "sha256": "fb794b435f8e48ee8f31b2c87b96e6cb7a155431ddb142ebcf99df58bd728361",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "QuickReply.ai": {
+    "path": "public/thumbnails/brands/quickreply-ai.png",
+    "source": "https://apps.shopify.com/helpdesk-livechat-chatbots",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/ac3c0fd42cee9fe084b23c2284d01e77/icon/CNX4x4K8kooDEAE%3D.png",
+    "verified": true,
+    "sha256": "fcba91778af6c53ef33813859adcb39dbe889e7e2d72731a983f6c3fe02a3844",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Interakt": {
+    "path": "public/thumbnails/brands/interakt.png",
+    "source": "https://apps.shopify.com/interakt-marketing",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/5c03162a9bcd0806ed635be1b2c8950d/icon/CPmRj_z2xIsDEAE%3D.jpeg",
+    "verified": true,
+    "sha256": "130a89657d4e653b7e9de98517881bec0b305a56495992aa7c6efde84f8db615",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Wati": {
+    "path": "public/thumbnails/brands/wati.png",
+    "source": "https://www.wati.io/en/pricing/",
+    "assetURL": "https://www.wati.io/wp-content/uploads/2023/05/cropped-Favicon-512px-180x180.png",
+    "verified": true,
+    "sha256": "2a81eb538c7f87417d4b641d5a45daa7cd15b39c77e847917bbf957d50580243",
+    "sourceWidth": 180,
+    "sourceHeight": 180
+  },
+  "Sinch": {
+    "path": "public/thumbnails/brands/sinch.png",
+    "source": "https://www.group.sinch.com/media/press-material/",
+    "assetURL": "https://www.group.sinch.com/images/cc81de2a-a38f-4873-9ef2-13b0a7cd82ff/sinch-logo.svg",
+    "verified": true,
+    "sha256": "8d36011e63aad86c4cbaed022a6cd48ff31836f2034c919754ffb330674fb707",
+    "sourceWidth": 202,
+    "sourceHeight": 42
+  },
+  "Shopify Inbox": {
+    "path": "public/thumbnails/brands/shopify-inbox.png",
+    "source": "https://apps.shopify.com/inbox",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/5c413ee331721e49374ce06d0a7edc1b/icon/CPrw4d6I5fECEAE=.png",
+    "verified": true,
+    "sha256": "431f6cf09bc337c633886013b8d8961ed50fd2c116b33ecd428f389a2c8a1ad8",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "Intercom": {
+    "path": "public/thumbnails/brands/intercom.png",
+    "source": "https://developers.intercom.com/",
+    "assetURL": "https://developers.intercom.com/assets/favicon.286f56791636e8382abf1d72b1e481c68874c05f76e399476b003e2da12d362a.8a5edab2.png",
+    "verified": true,
+    "sha256": "7dddb8d93f9cf68a3351a60d71ae70099454a19da4158d746985c1bd7f97d688",
+    "sourceWidth": 232,
+    "sourceHeight": 228
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "brand": "HighLevel",
+    "reason": "Partner Printful logo, not HighLevel",
+    "path": "public/thumbnails/brands/highlevel.png",
+    "source": "https://www.gohighlevel.com/pricing",
+    "assetURL": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/67ab96a506eacd2a0b72e015.png",
+    "verified": false,
+    "sha256": "c3f31182ae5feae03ae2c191419f0ef16a7d5151e573dd21b0a35a6ae79d7546",
+    "sourceWidth": 500,
+    "sourceHeight": 108
+  },
+  {
+    "brand": "Shopify Inbox",
+    "reason": "Unrelated red S chat mark",
+    "path": "public/thumbnails/brands/shopify-inbox.png",
+    "source": "https://apps.shopify.com/inbox",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/5c413ee331721e49374ce06d0a7edc1b/icon/CPrw4d6I5fECEAE%3D.png",
+    "verified": false,
+    "sha256": "431f6cf09bc337c633886013b8d8961ed50fd2c116b33ecd428f389a2c8a1ad8",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  {
+    "brand": "JivoChat",
+    "reason": "Unrelated red S chat mark",
+    "path": "public/thumbnails/brands/jivochat.png",
+    "source": "https://apps.shopify.com/jivochat",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/5c413ee331721e49374ce06d0a7edc1b/icon/CPrw4d6I5fECEAE=.png",
+    "verified": false,
+    "sha256": "431f6cf09bc337c633886013b8d8961ed50fd2c116b33ecd428f389a2c8a1ad8",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  {
+    "brand": "Zoho Desk",
+    "reason": "Related Service Plus product, not Desk",
+    "path": "public/thumbnails/brands/zoho-desk.png",
+    "source": "https://www.zoho.com/desk/pricing.html",
+    "assetURL": "https://www.zohowebstatic.com/sites/zweb/images/productlogos/serviceplus.svg",
+    "verified": false,
+    "sha256": "2d00c75ae48d76e238a468c9dffebb08f6e8b5e492fcca12b283c342790db00a",
+    "sourceWidth": 1300,
+    "sourceHeight": 296
+  }
+]

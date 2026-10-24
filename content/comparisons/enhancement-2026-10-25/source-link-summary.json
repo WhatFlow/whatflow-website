@@ -1,0 +1,453 @@
+{
+  "recordedAt": "2026-10-24T22:46:34.355355+00:00",
+  "distinctBibliographyURLs": 89,
+  "allReachable": true,
+  "limits": "HTTP reachability is separate from factual support; see article-specific research packets. These probes precede the per-article strict integrity checks.",
+  "checks": [
+    {
+      "url": "https://360dialog.com/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:31:50Z"
+    },
+    {
+      "url": "https://aisensy.com/integrations/shopify",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:31:50Z"
+    },
+    {
+      "url": "https://apps.shopify.com/chaty",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:31:51Z"
+    },
+    {
+      "url": "https://apps.shopify.com/dondy-marketing-ai",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:31:52Z"
+    },
+    {
+      "url": "https://apps.shopify.com/inbox",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:31:53Z"
+    },
+    {
+      "url": "https://apps.shopify.com/whatflow",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:31:54Z"
+    },
+    {
+      "url": "https://apps.shopify.com/whatflow-official-api",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:31:55Z"
+    },
+    {
+      "url": "https://apps.shopify.com/whatsapp-chat-button",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:41:14Z"
+    },
+    {
+      "url": "https://bird.com/whatsapp-api/features/marketing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:31:55Z"
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:41:15Z"
+    },
+    {
+      "url": "https://blog.whatsapp.com/introducing-whatsapp-channels-a-private-way-to-follow-what-matters",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:41:16Z"
+    },
+    {
+      "url": "https://botpress.com/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:31:57Z"
+    },
+    {
+      "url": "https://business.whatsapp.com/policy",
+      "status": 301,
+      "checkedAt": "2026-10-24T22:31:58Z"
+    },
+    {
+      "url": "https://business.whatsapp.com/products/business-app",
+      "status": 301,
+      "checkedAt": "2026-10-24T22:31:58Z"
+    },
+    {
+      "url": "https://business.whatsapp.com/products/platform-pricing",
+      "status": 301,
+      "checkedAt": "2026-10-24T22:31:59Z"
+    },
+    {
+      "url": "https://chatarmin.com/en",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:00Z"
+    },
+    {
+      "url": "https://chatarmin.com/en/",
+      "status": 308,
+      "checkedAt": "2026-10-24T22:32:01Z"
+    },
+    {
+      "url": "https://chatfuel.com/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:02Z"
+    },
+    {
+      "url": "https://connect.lime-technologies.com/en/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:02Z"
+    },
+    {
+      "url": "https://crisp.chat/en/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:03Z"
+    },
+    {
+      "url": "https://docs.quickreply.ai/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:04Z"
+    },
+    {
+      "url": "https://docs.quickreply.ai/product-modules/journeys/concepts",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:41:17Z"
+    },
+    {
+      "url": "https://docs.webengage.com/docs/whatsapp",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:06Z"
+    },
+    {
+      "url": "https://doubletick.io/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:07Z"
+    },
+    {
+      "url": "https://faq.whatsapp.com/809740894165112",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:07Z"
+    },
+    {
+      "url": "https://front.com/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:08Z"
+    },
+    {
+      "url": "https://gallabox.com/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:09Z"
+    },
+    {
+      "url": "https://help.brevo.com/hc/en-us/articles/4409354969746-Customize-your-plan-with-add-ons",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:41:18Z"
+    },
+    {
+      "url": "https://help.shopify.com/en/manual/shopify-flow",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:10Z"
+    },
+    {
+      "url": "https://helpcenter.gorgias.com/en-US/handle-tickets-in-gorgias-whatsapp-8200191",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:10Z"
+    },
+    {
+      "url": "https://insiderone.com/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:11Z"
+    },
+    {
+      "url": "https://judge.me/help/en/articles/8376284-verified-reviews",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:41:19Z"
+    },
+    {
+      "url": "https://knowledge.hubspot.com/inbox/connect-whatsapp-to-the-conversations-inbox",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:41:20Z"
+    },
+    {
+      "url": "https://landbot.io/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:12Z"
+    },
+    {
+      "url": "https://mailchimp.com/pricing/marketing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:12Z"
+    },
+    {
+      "url": "https://manychat.com/product/whatsapp",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:13Z"
+    },
+    {
+      "url": "https://onesignal.com/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:14Z"
+    },
+    {
+      "url": "https://postscript.io/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:14Z"
+    },
+    {
+      "url": "https://pushowl.com/pricing",
+      "status": 301,
+      "checkedAt": "2026-10-24T22:32:15Z"
+    },
+    {
+      "url": "https://respond.io/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:16Z"
+    },
+    {
+      "url": "https://respond.io/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:16Z"
+    },
+    {
+      "url": "https://sleekflow.io/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:18Z"
+    },
+    {
+      "url": "https://support.sinch.com/hc/en-us/articles/53898882029971-What-is-Conversation-API",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:20Z"
+    },
+    {
+      "url": "https://support.wati.io/en/articles/11463127-how-to-integrate-and-use-the-wati-shopify-app-with-wati-paid-account",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:21Z"
+    },
+    {
+      "url": "https://telnyx.com/products/whatsapp-business-api",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:22Z"
+    },
+    {
+      "url": "https://timelines.ai/timelinesai-pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:23Z"
+    },
+    {
+      "url": "https://trengo.com/prices",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:23Z"
+    },
+    {
+      "url": "https://whatflow.tech/compare/whatflow-chat-automation-vs-business-api",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:25Z"
+    },
+    {
+      "url": "https://www.attentive.com/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:25Z"
+    },
+    {
+      "url": "https://www.bitespeed.co/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:26Z"
+    },
+    {
+      "url": "https://www.braze.com/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:27Z"
+    },
+    {
+      "url": "https://www.brevo.com/features/whatsapp-campaigns/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:27Z"
+    },
+    {
+      "url": "https://www.brevo.com/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:27Z"
+    },
+    {
+      "url": "https://www.chatwoot.com/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:28Z"
+    },
+    {
+      "url": "https://www.circeus.com/blogs/acquire/dondy-joins-circeus",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:29Z"
+    },
+    {
+      "url": "https://www.delightchat.io/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:30Z"
+    },
+    {
+      "url": "https://www.delightchat.io/help-center/integrate-whatsapp-on-delightchat",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:30Z"
+    },
+    {
+      "url": "https://www.dondy.net/post/dondy-is-joining-circeus",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:31Z"
+    },
+    {
+      "url": "https://www.engati.ai/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:31Z"
+    },
+    {
+      "url": "https://www.freshworks.com/live-chat-software/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:32Z"
+    },
+    {
+      "url": "https://www.gohighlevel.com/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:33Z"
+    },
+    {
+      "url": "https://www.gupshup.ai/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:34Z"
+    },
+    {
+      "url": "https://www.hello-charles.com/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:35Z"
+    },
+    {
+      "url": "https://www.helpscout.com/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:35Z"
+    },
+    {
+      "url": "https://www.hubspot.com/products/service",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:36Z"
+    },
+    {
+      "url": "https://www.infobip.com/whatsapp-business",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:41:20Z"
+    },
+    {
+      "url": "https://www.interakt.shop/integrations/integrating-whatsapp-business-api-with-shopify/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:48Z"
+    },
+    {
+      "url": "https://www.intercom.com/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:49Z"
+    },
+    {
+      "url": "https://www.jivochat.com/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:50Z"
+    },
+    {
+      "url": "https://www.klaviyo.com/products/whatsapp",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:52Z"
+    },
+    {
+      "url": "https://www.kommo.com/blog/kommo-pricing-update/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:55Z"
+    },
+    {
+      "url": "https://www.kommo.com/buy/tariff/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:55Z"
+    },
+    {
+      "url": "https://www.limechat.ai/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:56Z"
+    },
+    {
+      "url": "https://www.livechat.com/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:57Z"
+    },
+    {
+      "url": "https://www.moengage.com/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:57Z"
+    },
+    {
+      "url": "https://www.omnisend.com/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:58Z"
+    },
+    {
+      "url": "https://www.plivo.com/docs/messaging/concepts/whatsapp/prerequisites",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:32:59Z"
+    },
+    {
+      "url": "https://www.rasayel.io/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:00Z"
+    },
+    {
+      "url": "https://www.saysimple.com/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:01Z"
+    },
+    {
+      "url": "https://www.tidio.com/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:01Z"
+    },
+    {
+      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:02Z"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/messaging/channels/whatsapp",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:04Z"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/whatsapp/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:06Z"
+    },
+    {
+      "url": "https://www.vonage.com/communications-apis/messages/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:06Z"
+    },
+    {
+      "url": "https://www.wati.io/en/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:09Z"
+    },
+    {
+      "url": "https://www.zendesk.com/pricing/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:10Z"
+    },
+    {
+      "url": "https://www.zoho.com/desk/pricing.html",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:11Z"
+    },
+    {
+      "url": "https://www.zoko.io/",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:33:12Z"
+    },
+    {
+      "url": "https://www.zoko.io/pricing",
+      "status": 200,
+      "checkedAt": "2026-10-24T22:41:21Z"
+    }
+  ]
+}

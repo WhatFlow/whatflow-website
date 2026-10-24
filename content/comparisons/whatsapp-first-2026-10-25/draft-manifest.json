@@ -1,0 +1,1081 @@
+{
+  "preparedAt": "2026-10-24T23:12:36.809Z",
+  "comparisons": 106,
+  "published": false,
+  "stage": "Copy draft awaiting diverse app screenshots and final independent review",
+  "changed": [
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 0,
+      "toneReplacements": 0,
+      "rationale": "Makes the official API the positive default while retaining accurate older-product limits and historical evidence."
+    },
+    {
+      "slug": "whatflow-vs-sleekflow",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Retains documented Pro/Premium differences and avoids implying every SleekFlow edition lacks Shopify. All-feature access is not stretched into support for every external system."
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Uses verified bundled packaging and no-seat facts. Preserves conversation units, different billing commitments and legitimate multichannel requirements."
+    },
+    {
+      "slug": "whatflow-vs-timelinesai",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Preserves the critical verified TimelinesAI seat definition. Recommends WhatFlow without presenting CRM synchronization as useless or charging every collaborator a fictional fee."
+    },
+    {
+      "slug": "whatflow-vs-kommo",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Makes the post-checkout recommendation decisive without dismissing a valid pre-purchase CRM requirement."
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Centers the no-seat full-feature workflow and retains the important Freshchat free-agent qualification."
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Preserves the verified Suite/Support distinction and scope. Makes a focused recommendation rather than claiming WhatFlow replaces all Zendesk governance or reporting."
+    },
+    {
+      "slug": "whatflow-vs-intercom",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Prioritizes straightforward operational messaging without dismissing genuine AI-service requirements."
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Emphasizes the full-feature entry model while retaining the important Crisp workspace-bundle exception."
+    },
+    {
+      "slug": "whatflow-vs-chatwoot",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Leads with maintained application value and avoids false cloud-versus-self-hosted pricing claims."
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Uses existing local-edition and system-of-record evidence. Does not deny Zoho Desk WhatsApp support or introduce a global dollar price."
+    },
+    {
+      "slug": "whatflow-vs-hubspot",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Makes WhatFlow the complementary operating recommendation without claiming CRM replacement or universal HubSpot gaps."
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Prioritizes occasional operational collaboration without claiming WhatFlow replaces every Front service capability."
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Sharpens occasional-contributor value without removing the competitor’s verified WhatsApp and helpdesk scope."
+    },
+    {
+      "slug": "whatflow-vs-livechat",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Adds a concrete continuing-conversation reason to favor WhatsApp while preserving useful website-service tradeoffs."
+    },
+    {
+      "slug": "whatflow-vs-jivochat",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Makes WhatsApp order conversation the default without overclaiming replacement of telephony or wider channels."
+    },
+    {
+      "slug": "whatflow-vs-shopify-inbox",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Preserves free Shopify Inbox and optional AI facts. Does not assert that Shopify Inbox necessarily loses history or cannot support later follow-up; the recommendation is about the chosen WhatsApp route."
+    },
+    {
+      "slug": "whatflow-vs-omnisend",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Makes conversational WhatsApp the positive addition while preserving valid retention-channel roles and synchronization cautions."
+    },
+    {
+      "slug": "whatflow-vs-brevo",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Makes the focused WhatFlow purchase explicit while preserving the documented Brevo entitlement and billing cautions."
+    },
+    {
+      "slug": "whatflow-vs-mailchimp",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Prioritizes the reply-capable WhatsApp task while preserving email’s valid editorial role and consent distinctions."
+    },
+    {
+      "slug": "whatflow-vs-attentive",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Recommends the incremental WhatFlow rollout while preserving genuine lifecycle-platform scope."
+    },
+    {
+      "slug": "whatflow-vs-postscript",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "The page already documents Postscript’s Shopify focus and minimum spending. Recommend WhatsApp for conversation quality and operating scope, without inventing cheaper global delivery or dismissing SMS integration."
+    },
+    {
+      "slug": "whatflow-vs-highlevel",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Keeps the recommendation decisive while explicitly avoiding a false unlimited-users differentiation."
+    },
+    {
+      "slug": "whatflow-vs-pushowl",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Existing body and listing support push/email retention capabilities. The recommendation differentiates a continuing conversation from a browser visit without claiming browser alerts cannot assist sales."
+    },
+    {
+      "slug": "whatflow-vs-onesignal",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Provides a concrete reply-driven reason to favor WhatsApp without denying app and push use cases."
+    },
+    {
+      "slug": "whatflow-vs-sinch",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "The existing API-versus-application distinction supports a decisive recommendation without claiming Sinch has no surrounding products or inventing an inbox-seat charge."
+    },
+    {
+      "slug": "whatflow-vs-vonage",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Strengthens the existing API-versus-application decision without denying Vonage’s channel breadth or asserting an unverified inbox entitlement."
+    },
+    {
+      "slug": "whatflow-vs-plivo",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "The existing Plivo prerequisites support the commercial distinction. Preserve the across-products commitment, excluded pass-through fees and November 1 timing; do not relabel a minimum spend as a setup fee."
+    },
+    {
+      "slug": "whatflow-vs-telnyx",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Maintains the verified calling-versus-messaging correction and makes no claim that Telnyx universally charges a monthly subscription or lacks portal tools."
+    },
+    {
+      "slug": "whatflow-vs-engati",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Gives the supported human-and-event process priority while preserving real Engati ecommerce functionality."
+    },
+    {
+      "slug": "whatflow-vs-botpress",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Prioritizes the supported store workflow while retaining accurate unlimited-seat and custom-agent distinctions."
+    },
+    {
+      "slug": "whatflow-vs-landbot",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Puts supported store journeys before optional builder scope without fabricating usability or entitlement differences."
+    },
+    {
+      "slug": "whatflow-vs-chatfuel",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Positions ordinary store work ahead of optional AI scope while retaining precise billing distinctions."
+    },
+    {
+      "slug": "whatflow-vs-rasayel",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Uses existing verified minimum-user and CRM-tier distinctions. Does not claim every Rasayel workflow is unavailable in Shopify or that its broader sales tools have no value."
+    },
+    {
+      "slug": "whatflow-vs-userlike",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Retains current product identity and carefully qualified license-unit discussion. Does not assume the displayed Lime Connect rate covers an entire team or assert unsupported WhatsApp feature gaps."
+    },
+    {
+      "slug": "whatflow-vs-saysimple",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Uses verified no-seat/all-feature facts against documented modular packaging. Retention remains an acceptance question for both products; no unsupported WhatFlow history guarantee is introduced."
+    },
+    {
+      "slug": "whatflow-vs-moengage",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Emphasizes immediate operational ownership while retaining legitimate centralized engagement scope."
+    },
+    {
+      "slug": "whatflow-vs-webengage",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Uses the documented WSP architecture and existing suppression exercise. Does not claim all WebEngage implementations are difficult or that WhatFlow duplicates every lifecycle capability."
+    },
+    {
+      "slug": "whatflow-vs-insider",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Gives the immediate Shopify conversation priority without denying enterprise personalization value."
+    },
+    {
+      "slug": "whatflow-vs-braze",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Keeps WhatFlow first for Shopify operations without overstating replacement of enterprise orchestration."
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 1,
+      "rationale": "Uses the strongest verified feature-access and price evidence while preserving acquisition facts and competitor strengths."
+    },
+    {
+      "slug": "whatflow-vs-chaty",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Gives the free complete WhatsApp route priority without misrepresenting Chaty’s contact-widget specialization."
+    },
+    {
+      "slug": "whatsapp-vs-sms",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Makes the supported rich-conversation case decisive while retaining SMS reach, localization and customer-preference facts. No universal cheapest claim is added."
+    },
+    {
+      "slug": "whatsapp-vs-email",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Reframes email as a specific supporting role without denying its valid strengths. Avoids unsupported claims about inbox placement, universal open rates or channel obsolescence."
+    },
+    {
+      "slug": "whatsapp-vs-mms",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Keeps the existing market-specific MMS qualifications. Does not infer MMS pricing from SMS documentation or claim every carrier route lacks two-way replies."
+    },
+    {
+      "slug": "whatsapp-vs-rcs",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Strengthens the existing Shopify application recommendation while keeping all RCS coverage and fallback statements conditional on the actual provider."
+    },
+    {
+      "slug": "whatsapp-vs-web-push",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Builds on the existing destination-versus-conversation exercise. Does not promise higher retention, equate a browser subscriber with a WhatsApp contact or deny useful push notifications."
+    },
+    {
+      "slug": "whatsapp-vs-mobile-push",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "The recommendation is scoped to the merchant application effort, not a claim that WhatsApp needs no customer app or that every mobile-push implementation is expensive."
+    },
+    {
+      "slug": "whatsapp-vs-website-live-chat",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Uses confirmed WhatFlow scope and preserves configured live-chat continuity. Does not assert that every live chat loses history, requires a paid seat or cannot follow up later."
+    },
+    {
+      "slug": "whatsapp-vs-instagram-dm",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Favors the supported WhatsApp operating workflow without dismissing Instagram’s creator-led selling role or inventing social-channel technical limitations."
+    },
+    {
+      "slug": "whatsapp-vs-facebook-messenger",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Makes a clear operational recommendation based on verified WhatFlow scope while preserving customer choice and avoiding claims that Messenger lacks order integrations or conversation history."
+    },
+    {
+      "slug": "whatsapp-vs-phone-calls",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Uses existing asynchronous-follow-up logic. Does not promise instant replies, eliminate urgent calls or invent labor-reduction measurements."
+    },
+    {
+      "slug": "whatsapp-vs-telegram",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 3,
+      "toneReplacements": 0,
+      "rationale": "Preserves Telegram audience value and avoids claiming all Telegram deployments require custom software. The stronger recommendation rests on verified WhatFlow packaging."
+    },
+    {
+      "slug": "whatsapp-business-platform-vs-channels",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Strengthens the Business Platform recommendation and corrects blanket public-channel wording to follower updates. Preserves the privacy and audience distinction established by official WhatsApp material."
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Strengthens Shopify context as the decision criterion without claiming measured time savings."
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Recommends the supported native workflow first while respecting external-system and Shopify plan limitations."
+    },
+    {
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Provides a decisive buy-before-build recommendation grounded in the complete application scope."
+    },
+    {
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Gives a direct no-seat-fee recommendation while preserving accurate competitor access models."
+    },
+    {
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Leads with the concrete entitlement advantage rather than treating feature gates as an equally useful default."
+    },
+    {
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Makes the free WhatsApp-to-inbox route the recommendation while retaining a clear paid-widget exception."
+    },
+    {
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Favors the free integrated contact route while retaining evidence-based placement choices."
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Supported by existing asynchronous confirmation and exception guidance. Does not predict staff savings, response rates or fewer returned shipments."
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Leads with documented Shopify context and shared replies. Keeps fallback behavior as configured process rather than promising an automatic WhatFlow SMS failover feature."
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Recommends the existing COD messaging workflow without guaranteeing response speed or claiming receipt delivery is confirmation. Preserves dispatch authority and late-reply rules."
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Leads with the documented conversation and recovery workflow while preserving overlap control, channel permission and the difference between attribution and incrementality."
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Prioritizes the supported richer conversation without claiming universal recovery, reach or delivery-cost superiority. Preserves segmentation and purchase-exit checks."
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "The existing body supports direct help versus advertising exposure. Avoids an invented cost-per-acquisition advantage and retains the need for eligible messaging audiences and causal measurement."
+    },
+    {
+      "slug": "whatsapp-order-updates-vs-email",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Uses verified order/fulfillment messaging and existing event-ledger guidance. Does not claim every hypothetical event already has a turnkey trigger or that email is routinely ignored."
+    },
+    {
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Uses documented fulfillment messaging and the existing stale-link exercise. Does not claim carrier updates are universally real-time or that all customers can be reached in WhatsApp."
+    },
+    {
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Builds on documented back-in-stock support and the existing stale-availability exercise. Does not claim faster opens, guaranteed inventory or that email subscribers authorized WhatsApp."
+    },
+    {
+      "slug": "whatsapp-review-requests-vs-email",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Uses existing follow-up scope and Judge.me source. Avoids claiming a WhatsApp link guarantees a verified review or inventing a review-rate improvement."
+    },
+    {
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Strengthens WhatsApp priority while preserving the existing fair-targeting analysis. No universal email disadvantage, open-rate benchmark or guaranteed conversion gain is introduced."
+    },
+    {
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Frames the shared inbox as the operational recommendation rather than balancing it against informal forwarding."
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Recommends a focused inbox without claiming WhatFlow implements every ticket status, retention, SLA or formal governance requirement."
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Changes an abstract scope comparison into a clear first-purchase recommendation with verified entry pricing."
+    },
+    {
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Prioritizes team participation and growth without misrepresenting bundled or unlimited-user alternatives."
+    },
+    {
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Centers stable customer service and zero seat fees without inventing contract flexibility."
+    },
+    {
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Grounds the recommendation in confirmed billing policy. Keeps provider-specific contact definitions and does not claim message-based pricing is universally cheaper."
+    },
+    {
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Uses confirmed ongoing Free, all-feature and button policies. Does not imply a trial is always paid or that Free delivery has no usage or Meta charges."
+    },
+    {
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Uses the existing documented product scope and screenshot disclaimers. Does not promise checkout customization eligibility for every Shopify plan or automatic fulfillment authority."
+    },
+    {
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Replaces neutral automation language with a clear recommendation based on existing field-mapping evidence. Keeps changed-data checks and avoids quantified labor claims."
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 1,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Strengthens the existing targeted-outreach recommendation without asserting unsupported segment-building features, automatic permission or a guaranteed profit advantage."
+    },
+    {
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Distinguishes Meta’s standalone Business app from the separate older WhatFlow linked-device product. No claim of ban-proof messaging or universal number migration is introduced."
+    },
+    {
+      "slug": "whatflow-vs-bird",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "States the complete Shopify application as the default without dismissing Bird’s actual campaign and inbox scope."
+    },
+    {
+      "slug": "whatflow-vs-infobip",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Advocates the complete store application without treating an infrastructure portfolio as deficient."
+    },
+    {
+      "slug": "whatflow-vs-gupshup",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Makes packaged Shopify operation the default while preserving legitimate larger-platform implementation scope."
+    },
+    {
+      "slug": "whatflow-vs-doubletick",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Prioritizes the store workflow without inventing limits in DoubleTick’s departmental capabilities."
+    },
+    {
+      "slug": "whatflow-vs-gallabox",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Favoring the Shopify order layer does not deny the alternative’s genuine pre-purchase strengths."
+    },
+    {
+      "slug": "whatflow-vs-360dialog",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Prioritizes the finished merchant workflow without denying 360dialog’s partner ecosystem or no-markup positioning."
+    },
+    {
+      "slug": "whatflow-vs-twilio",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "The documented platform-fee example supports a scoped price comparison; does not extrapolate universal savings or promise that either product eliminates delivery uncertainty."
+    },
+    {
+      "slug": "whatflow-vs-manychat",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Leads with order-aware operation without denying Manychat’s genuine WhatsApp automation capabilities."
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Supported by the current package and billing-unit discussion. Preserves Enterprise’s unlimited-user exception and does not characterize all respond.io plans as universally per-seat."
+    },
+    {
+      "slug": "whatflow-vs-superlemon",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Uses the verified SuperLemon listing distinction and WhatFlow product policy. Preserves the fact that SuperLemon offers free tools and actual ecommerce automation."
+    },
+    {
+      "slug": "whatflow-vs-charles",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Gives direct ownership and consistent access first billing while respecting the value of specialist services."
+    },
+    {
+      "slug": "whatflow-vs-chatarmin",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Strengthens the entry recommendation without denying Chatarmin’s Shopify integration or service modules."
+    },
+    {
+      "slug": "whatflow-vs-limechat",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Leads with a tangible maintained workflow while keeping broader agent implementation an honest exception."
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Gives focused WhatsApp economics first billing while retaining accurate Gorgias capabilities and usage definitions."
+    },
+    {
+      "slug": "whatflow-vs-tidio",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Acknowledges existing Tidio WhatsApp support and Lyro. Does not invent AI capabilities for WhatFlow or claim that Tidio cannot automate ecommerce."
+    },
+    {
+      "slug": "whatflow-vs-klaviyo",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Favors the focused WhatFlow addition while preserving current Klaviyo WhatsApp and service-integration facts."
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Makes the WhatFlow recommendation explicit while preserving truthful direct-competitor capabilities."
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Keeps the verified Starter unlimited-agent correction and direct Shopify-competitor recognition while strengthening the recommendation. No unsupported universal cost advantage is claimed."
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Advocates WhatFlow through verified workflow and access benefits without inventing a competitor integration gap."
+    },
+    {
+      "slug": "whatflow-vs-quickreply",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Preserves documented QuickReply.ai journey capabilities and existing acceptance exercise; leads with WhatFlow’s verified feature policy rather than suggesting the competitor lacks Shopify automation."
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Leads with practical channel addition and preserves the article’s valuable attribution analysis."
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 1,
+      "toneReplacements": 0,
+      "rationale": "Centers the order-response process and access policy while preserving truthful direct-competitor scope."
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "verdict": true,
+      "takeaways": true,
+      "recommendation": true,
+      "tableCells": 0,
+      "boilerplateParagraphsRemoved": 2,
+      "toneReplacements": 0,
+      "rationale": "Preserves verified Wati automations, tier-specific users and plugin requirement. Does not imply that Wati universally charges each user or has no Shopify integration."
+    }
+  ],
+  "preserved": [
+    "IDs",
+    "URLs",
+    "bylines",
+    "publication dates",
+    "relationships",
+    "competitor table facts",
+    "FAQs",
+    "source arrays",
+    "SEO metadata",
+    "source-review timestamps"
+  ],
+  "protectedBlogs": 58
+}

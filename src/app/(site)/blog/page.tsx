@@ -48,10 +48,10 @@ function PostCard({ post }: { post: Post }) {
       className="neo-box bg-white flex flex-col overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
     >
       {/* Cover Image */}
-      <div className="relative w-full h-52 bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
+      <div className="relative w-full aspect-[1200/630] bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
         {post.coverImageUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={post.coverImageUrl} alt={post.coverImageAlt || post.title} className="w-full h-full object-cover" loading="lazy" />
+          <img src={post.coverImageUrl} alt={post.coverImageAlt || post.title} width={1200} height={630} className="w-full h-full object-cover" loading="lazy" />
         ) : post.coverImage?.url ? (
           <Image
             src={post.coverImage.url}

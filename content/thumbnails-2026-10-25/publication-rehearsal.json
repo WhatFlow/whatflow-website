@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-24T23:35:46.124940+00:00",
+  "posts": 58,
+  "comparisons": 106,
+  "historicalComparisonRevisions": 325,
+  "totalComparisonRevisions": 431,
+  "newComparisonRevisions": 106,
+  "foreignKeyViolations": 0,
+  "blogChildArraysPreserved": true,
+  "comparisonOnlyScopeVerifiedSeparately": "comparison-sql-rehearsal.json",
+  "idempotent": true,
+  "writtenTables": [
+    "_comparisons_v",
+    "_comparisons_v_rels",
+    "_comparisons_v_version_faqs",
+    "_comparisons_v_version_feature_table",
+    "_comparisons_v_version_sources",
+    "comparisons",
+    "comparisons_feature_table",
+    "posts"
+  ],
+  "schemaWrites": false,
+  "inputs": {
+    "/tmp/whatflow-before-thumbnails.sql": "7c22bceeb784cddec91241b3f09bf2c875e622fc8a7ec94fc2ee8b56e6fb2e4c",
+    "/tmp/whatflow-thumbnail-comparisons.sql": "1f3a8c94e33bc23884afa8d91754c432806304d20163ada137fdc4c0b5cf923d",
+    "/tmp/whatflow-thumbnail-posts.sql": "be009b0ee637baefdba7b7624f69768b065fb079a57a4f0fa3d989e91add8a1c"
+  }
+}

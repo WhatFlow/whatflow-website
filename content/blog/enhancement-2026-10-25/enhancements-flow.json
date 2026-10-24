@@ -1,0 +1,311 @@
+[
+  {
+    "slug": "sidekick-shopify-flow-whatsapp-workflows",
+    "metaTitle": "Draft WhatsApp Shopify Flow Workflows with Sidekick",
+    "metaDescription": "Use Sidekick to draft an inactive WhatFlow workflow in Shopify Flow. Review the selected trigger, order context, branches and recipients before activation.",
+    "answer": "Use Shopify Sidekick on desktop to draft an inactive Flow workflow from a precise event, condition and intended action. Then inspect the actual WhatFlow Business API tasks, recipient variables and order references in Flow. Keep the draft inactive while checking positive, nonmatching and repeated-event cases; the generated diagram and configuration screenshots do not establish message delivery.",
+    "takeaways": [
+      "Describe the intended business rule and explicitly request an inactive draft.",
+      "Select a missing WhatFlow task manually rather than accepting a substitute.",
+      "Review generated fields and branches separately from any later delivery check."
+    ],
+    "practicalHeading": "Keep a prompt-to-configuration review note",
+    "practicalParagraphs": [
+      "Beside the inactive draft, record three lines: requested rule, actual selected steps and remaining gaps. For the supplied DELIVERY_INFO demo, inspect the exact text condition and fromPhoneNumber recipient. Keep the separate order-tagging exercise in its own note so a colleague does not mistake the demonstrated text workflow for a completed order-confirmation process."
+    ],
+    "checklist": [
+      "Keep the generated workflow inactive during review.",
+      "Confirm the installed trigger and recipient variable in the editor.",
+      "Check false, repeated-event and missing-data cases.",
+      "Record which checks inspect logic and which would require a separate controlled end-to-end exercise."
+    ],
+    "changes": [
+      "Added an intent-specific Sidekick answer and operational checklist.",
+      "Added a concise prompt-to-configuration handoff note without duplicating screenshots.",
+      "Added two contextual links and an inline existing official-source reference."
+    ],
+    "contextualLinks": [
+      {
+        "afterHeading": "Step 2: inspect the event and the available order reference",
+        "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+        "anchor": "order-reply configuration",
+        "sentenceBefore": "For the order-aware exercise, follow the ",
+        "sentenceAfter": " rather than substituting a generic button event."
+      },
+      {
+        "afterHeading": "A second prompt: draft an outbound message workflow",
+        "slug": "send-whatsapp-templates-shopify-flow",
+        "anchor": "template field mapping",
+        "sentenceBefore": "Use the separate ",
+        "sentenceAfter": " walkthrough when reviewing an outbound draft."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "What Sidekick does, and what you should check yourself",
+        "url": "https://help.shopify.com/en/manual/shopify-flow/create/create-workflow",
+        "label": "Generate a workflow with Sidekick",
+        "sentenceBefore": "Shopify’s ",
+        "sentenceAfter": " documents generation, inactive drafts and the review process."
+      }
+    ]
+  },
+  {
+    "slug": "shopify-flow-whatsapp-app-integrations",
+    "metaTitle": "Connect WhatsApp and Shopify Apps with Flow Tasks",
+    "metaDescription": "Compose WhatFlow WhatsApp workflows with compatible Shopify app tasks. Check connector requirements, recipient lookups and ownership before enabling a blueprint.",
+    "answer": "Connect WhatFlow Business API to another Shopify app through Flow when the installed apps expose compatible triggers and actions and supply the identifiers each step needs. Verify the connector setup, any separate plan requirement and the recipient mapping. Treat the guide’s app combinations as blueprints; the inactive screenshots do not prove that every third-party route has executed.",
+    "takeaways": [
+      "An app listing or integration logo does not expose every feature as a Flow task.",
+      "A customer ID needs a supported recipient lookup before a WhatsApp send.",
+      "Third-party app plans remain separate from WhatFlow’s all-feature plans."
+    ],
+    "practicalHeading": "Record the missing field before extending a blueprint",
+    "practicalParagraphs": [
+      "For the documented Judge.me blueprint, write down the paid-plan and Send Verified Trigger requirements beside the installed event. Then record that its inspected variables omit a buyer phone number. Leave the draft inactive until a supported lookup supplies the intended permitted recipient; the order.phone mapping in a different screenshot is not a completed solution to that gap."
+    ],
+    "checklist": [
+      "Confirm the exact installed trigger and action.",
+      "Verify third-party plan and connection requirements.",
+      "Map every required identifier and recipient field.",
+      "Assign one owner to the reminder schedule and exception path."
+    ],
+    "changes": [
+      "Added a connector-composition answer and a missing-recipient operational check.",
+      "Preserved the documented Judge.me plan and phone-field limitations.",
+      "Added two contextual links and an inline existing official-source reference."
+    ],
+    "contextualLinks": [
+      {
+        "afterHeading": "Your store already has useful automation building blocks",
+        "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+        "anchor": "WhatFlow Flow foundations",
+        "sentenceBefore": "Review the ",
+        "sentenceAfter": " before combining installed app tasks."
+      },
+      {
+        "afterHeading": "Blueprint 2: an order reply changes the store’s next step",
+        "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+        "anchor": "order-aware reply recipe",
+        "sentenceBefore": "Use the ",
+        "sentenceAfter": " when the next action needs a specific order."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Check three things before combining apps",
+        "url": "https://help.shopify.com/en/manual/shopify-flow/reference/connectors/manage-connections",
+        "label": "Shopify Flow connectors",
+        "sentenceBefore": "Check ",
+        "sentenceAfter": " for installation and connection requirements alongside the actual app tasks."
+      }
+    ]
+  },
+  {
+    "slug": "send-whatsapp-templates-shopify-flow",
+    "metaTitle": "Send WhatsApp Templates from Shopify Flow with WhatFlow",
+    "metaDescription": "Configure WhatFlow Send WhatsApp Template in Shopify Flow. Match an approved template, recipient and variables to the event, then review missing data and duplicates.",
+    "answer": "To configure a WhatsApp template in Shopify Flow, choose an event supplying the required data, add WhatFlow Business API’s Send WhatsApp Template action and map the intended recipient. Use the exact approved template name, language and matching variables. Review missing values and repeated events while inactive; an accepted Flow step is not proof of delivery or reading.",
+    "takeaways": [
+      "Choose the event around what the message can truthfully establish.",
+      "Map only the variables required by the actual approved template.",
+      "Keep request acceptance, delivery and reading as separate outcomes."
+    ],
+    "practicalHeading": "Compare the approved preview with each mapped input",
+    "practicalParagraphs": [
+      "For the inactive six-placeholder order-confirmation demo, keep the approved preview beside the Flow editor and label each input by its meaning: name, order number, subtotal, total, address and city. Check currency formatting and missing-value handling at the same time. The sample template name belongs to the documented demo; use the approved structure from your own account."
+    ],
+    "checklist": [
+      "Confirm the actual template approval, name and language.",
+      "Choose a recipient field and handle missing phone data.",
+      "Match every input to its placeholder and formatting needs.",
+      "Check duplicate notifications and split-fulfillment behavior.",
+      "Keep the sample inactive until configuration review is complete."
+    ],
+    "changes": [
+      "Added a template-specific direct answer and field-mapping checklist.",
+      "Added a compact preview-to-input review method while retaining the documented demo.",
+      "Added two contextual links and an inline existing official-source reference."
+    ],
+    "contextualLinks": [
+      {
+        "afterHeading": "Step 1: prepare the template before building the workflow",
+        "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+        "anchor": "message action overview",
+        "sentenceBefore": "Use the ",
+        "sentenceAfter": " to choose between templates and active-window formats."
+      },
+      {
+        "afterHeading": "Step 4: match each variable to the approved message",
+        "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+        "anchor": "order-aware reply handling",
+        "sentenceBefore": "Retain supported order context for later ",
+        "sentenceAfter": " when a customer answers."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "A successful Flow step is not a delivery receipt",
+        "url": "https://help.shopify.com/en/manual/shopify-flow/manage/test-workflow",
+        "label": "Testing workflows in Shopify Flow",
+        "sentenceBefore": "Shopify’s ",
+        "sentenceAfter": " explains why a logic preview cannot establish an actual customer send."
+      }
+    ]
+  },
+  {
+    "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+    "metaTitle": "Route Incoming WhatsApp Messages in Shopify Flow",
+    "metaDescription": "Build a narrow WhatsApp first-response workflow with WhatFlow and Shopify Flow. Map the sender, review keyword conditions and leave clear paths for team help.",
+    "answer": "Route incoming WhatsApp messages in Shopify Flow by selecting WhatFlow Business API’s text-message trigger, checking a narrow condition and mapping the reply recipient from the incoming sender field. Keep order changes on an order-aware path. Review nonmatching text, repeated messages and human handoffs while inactive, and use free-form replies only within the applicable customer-service window.",
+    "takeaways": [
+      "An incoming sender number is not a resolved Shopify order.",
+      "Start with a narrow request condition before broadening intent matching.",
+      "An invitation to reply TEAM does not itself assign a colleague."
+    ],
+    "practicalHeading": "Give the sample keyword an explicit no-reply case",
+    "practicalParagraphs": [
+      "Keep DELIVERY_INFO as the exact controlled condition in the inactive demonstration. Add a review note showing that an unrelated complaint should not receive the sample delivery-policy answer. Replace the sample delivery estimate with the store’s maintained policy before any later use, and name the inbox process that handles TEAM rather than implying an assignment action already exists."
+    ],
+    "checklist": [
+      "Inspect Message Body and sender-number mapping.",
+      "Check a matching keyword and a nonmatching complaint.",
+      "Review repeats, overlapping rules and STOP handling.",
+      "Assign ownership of TEAM replies and attachments."
+    ],
+    "changes": [
+      "Added a routing-specific answer and operational exception checklist.",
+      "Clarified the sample keyword, sample policy and manual TEAM handoff.",
+      "Added two contextual links and an inline existing official-source reference."
+    ],
+    "contextualLinks": [
+      {
+        "afterHeading": "Step 1: select WhatsApp Text Message Received",
+        "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+        "anchor": "order-specific reply trigger",
+        "sentenceBefore": "Choose the ",
+        "sentenceAfter": " when a branch needs an identified order."
+      },
+      {
+        "afterHeading": "Make the human handoff understandable",
+        "slug": "shared-team-inbox-small-shopify-business",
+        "anchor": "shared inbox ownership",
+        "sentenceBefore": "Set up ",
+        "sentenceAfter": " before promising a team handoff."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Test for silence as well as the expected reply",
+        "url": "https://help.shopify.com/en/manual/shopify-flow/manage/test-workflow",
+        "label": "Testing workflows in Shopify Flow",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " to distinguish inspecting a branch from executing an external reply."
+      }
+    ]
+  },
+  {
+    "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+    "metaTitle": "Tag Shopify Orders from WhatsApp Confirmation Replies",
+    "metaDescription": "Use WhatFlow WhatsApp Order Reply in Shopify Flow to match the configured answer and tag the correct order. Review negative replies, older messages and repeats.",
+    "answer": "Use WhatFlow Business API’s WhatsApp Order Reply trigger when a customer’s response must update an identified Shopify order. Match the reply type and the configured button text or payload, then add a meaningful tag to the order supplied by that trigger. Keep nonmatching replies for review and test repeats and older messages without treating confirmation as automatic fulfillment authority.",
+    "takeaways": [
+      "Use the order-specific trigger rather than a generic button event.",
+      "Match the actual configured answer before adding an order tag.",
+      "A confirmation tag does not itself authorize charging, refunding or fulfillment."
+    ],
+    "practicalHeading": "Write expected results for the same buyer’s two orders",
+    "practicalParagraphs": [
+      "For a hypothetical review case, give one controlled buyer two test orders and an older confirmation message. Record which order each reply is expected to reference before inspecting the inactive workflow’s mapping. Add a repeated-tap case with the expected already-handled behavior. This checks the association and business rule rather than assuming that a familiar confirmation label identifies the newest order."
+    ],
+    "checklist": [
+      "Confirm WhatsApp Order Reply supplies the intended order reference.",
+      "Match the real reply type and configured button value.",
+      "Select the trigger’s order in the tagging action.",
+      "Review negative, typed, repeated and older-message replies.",
+      "Keep the demo inactive and consequential actions outside this tagging recipe."
+    ],
+    "changes": [
+      "Added an order-association answer and a two-order review case.",
+      "Made the distinction between recording confirmation and consequential actions explicit.",
+      "Added two contextual links and an inline existing official-source reference."
+    ],
+    "contextualLinks": [
+      {
+        "afterHeading": "Step 1: define the outbound message and its context",
+        "slug": "send-whatsapp-templates-shopify-flow",
+        "anchor": "outbound template configuration",
+        "sentenceBefore": "Review ",
+        "sentenceAfter": " when establishing the message’s supported order context."
+      },
+      {
+        "afterHeading": "Keep the nonmatching branch useful",
+        "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+        "anchor": "incoming message routing",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " for intent and support branches that do not identify an order."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Use WhatsApp Order Reply when the next action needs an order",
+        "url": "https://help.shopify.com/en/manual/shopify-flow/reference/triggers",
+        "label": "Choosing the right Flow trigger",
+        "sentenceBefore": "Shopify’s ",
+        "sentenceAfter": " explains why the selected starting event determines the available workflow data."
+      }
+    ]
+  },
+  {
+    "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+    "metaTitle": "WhatFlow and Shopify Flow: WhatsApp Automation Guide",
+    "metaDescription": "Build WhatsApp automations visually with WhatFlow and Shopify Flow. Choose incoming triggers, message actions and clear conditions, then review an inactive workflow.",
+    "answer": "Build a WhatsApp automation visually by selecting a Shopify or WhatFlow Business API trigger, adding a condition and choosing a supported action in Shopify Flow. Match the event’s data to the intended outcome and message rules. Start with an inactive, narrow workflow; inspect logic and field mapping before any separate controlled check of an actual external action.",
+    "takeaways": [
+      "A trigger supplies context, a condition selects a branch and an action performs the task.",
+      "Choose order-aware events for order work and eligible formats for messages.",
+      "All WhatFlow Business API plans include features and no inbox seat fees; allowances and rates differ."
+    ],
+    "practicalHeading": "Choose the next recipe by the outcome you need",
+    "practicalParagraphs": [
+      "Use a short routing exercise when the aim is to recognize a question and prepare a relevant reply. Use the order-reply recipe when the aim is to record an answer against a specific order. Keep these as separate inactive drafts initially so the team can see which fields each trigger provides and avoid mistaking a sender number for an order reference."
+    ],
+    "checklist": [
+      "Write one event, one rule and one intended outcome.",
+      "Inspect the selected trigger’s actual fields.",
+      "Map the recipient or target order from the proper context.",
+      "Check missing data, repeats and a human exception path.",
+      "Record that built-in test previews do not prove delivery."
+    ],
+    "changes": [
+      "Added an overview answer and a concise recipe-selection rule.",
+      "Retained the tutorial’s distinction between inactive configuration and execution.",
+      "Added two contextual links and an inline existing official-source reference."
+    ],
+    "contextualLinks": [
+      {
+        "afterHeading": "Eight actions for sending the right message",
+        "slug": "send-whatsapp-templates-shopify-flow",
+        "anchor": "approved template workflow",
+        "sentenceBefore": "Follow the ",
+        "sentenceAfter": " for eligible messages outside the active service window."
+      },
+      {
+        "afterHeading": "You can also start with a plain-language Sidekick request",
+        "slug": "sidekick-shopify-flow-whatsapp-workflows",
+        "anchor": "Sidekick drafting walkthrough",
+        "sentenceBefore": "Use the ",
+        "sentenceAfter": " to turn a plain-language rule into a reviewable inactive draft."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "The three pieces: trigger, condition and action",
+        "url": "https://help.shopify.com/en/manual/shopify-flow/getting-started",
+        "label": "Flow concepts and visual editor",
+        "sentenceBefore": "Shopify’s ",
+        "sentenceAfter": " describes the trigger, condition and action model used throughout these recipes."
+      }
+    ]
+  }
+]

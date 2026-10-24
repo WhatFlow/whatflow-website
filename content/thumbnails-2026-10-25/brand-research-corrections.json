@@ -1,0 +1,106 @@
+[
+  {
+    "brand": "Shopify Inbox",
+    "slug": "whatflow-vs-shopify-inbox",
+    "officialURL": "https://apps.shopify.com/inbox",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/5c413ee331721e49374ce06d0a7edc1b/icon/CPrw4d6I5fECEAE%3D.png",
+    "status": "retain_correct_official_icon",
+    "provenance": "Official listing's header app identity image directly declares this exact asset. Official listing banner also shows coral/red chat bubble with white S next to Inbox. This mark is correct for Shopify Inbox, but must not be reused for JivoChat.",
+    "assetPurpose": "Current Shopify Inbox app icon; retains original mark.",
+    "limits": "Root already fetched 1200x1200. Visual appearance reviewed in local contact sheet and individual image."
+  },
+  {
+    "brand": "HighLevel",
+    "slug": "whatflow-vs-highlevel",
+    "officialURL": "https://www.gohighlevel.com/",
+    "assetURL": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https%3A//assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/6a3d48e8e4daecfbb47f2a0b.svg",
+    "status": "exact_official_header_asset_identified",
+    "provenance": "Official homepage redirected to https://www.gohighlevel.com/7648b9. Its first header image is explicitly labeled HighLevel and declares this exact SVG URL. Web fetch reports unsupported SVG content type, not 404.",
+    "assetPurpose": "HighLevel header logo; replace wrong Printful partner logo.",
+    "limits": "Root must fetch/rasterize and visually verify original SVG. Printful asset https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/67ab96a506eacd2a0b72e015.png is rejected."
+  },
+  {
+    "brand": "JivoChat",
+    "slug": "whatflow-vs-jivochat",
+    "officialURL": "https://apps.shopify.com/jivochat",
+    "assetURL": null,
+    "status": "explicit_name_fallback_pending_fresh_official_icon",
+    "provenance": "Official Shopify listing header explicitly labels JivoChat: Live Chat & WhatsApp and points to a GoogleStorage partner upload: /uploads/cf3f991a-7c32-4d6e-a0f9-198b963def9c/d09431c7-15a2-4921-9b87-3f574c17b803.png with signed query parameters. Cached signature has expired; not supplying a fabricated unsigned asset URL.",
+    "alternateOfficialPages": [
+      "https://www.jivochat.com/"
+    ],
+    "assetPurpose": "Ordinary JivoChat name until fresh header identity asset can be extracted.",
+    "limits": "Reject the Shopify Inbox red-S URL for JivoChat. A recommendation/related-app icon elsewhere on listing is not the header identity icon."
+  },
+  {
+    "brand": "Zoho Desk",
+    "slug": "whatflow-vs-zoho-desk",
+    "officialURL": "https://www.zoho.com/desk/",
+    "assetURL": null,
+    "status": "explicit_name_fallback_pending_product_header_asset",
+    "provenance": "Official Desk homepage verified readable; text extraction omits its header mark. Official Zoho branding guidelines expose corporate Zoho assets, not a verified Desk-specific logo.",
+    "alternateOfficialPages": [
+      "https://www.zoho.com/branding/visual-guidelines.html"
+    ],
+    "assetPurpose": "Ordinary Zoho Desk name until exact Desk product logo can be extracted.",
+    "limits": "Reject https://www.zohowebstatic.com/sites/zweb/images/productlogos/serviceplus.svg: it is Zoho Service Plus, a different product. Do not substitute corporate or related-product mark without labeling."
+  },
+  {
+    "brand": "Intercom",
+    "officialURL": "https://www.intercom.com/legal/trademark-usage",
+    "assetURL": null,
+    "alternateOfficialPages": [
+      "https://developers.intercom.com/"
+    ],
+    "candidateBrandPortal": "https://brandfolder.com/intercom/brandkit",
+    "assetPurpose": "Unresolved original mark; use ordinary brand-name fallback until an exact original asset is extracted and checked.",
+    "provenance": "Official trademark page and official developer homepage verified readable. Search finds a public Brandfolder titled Intercom Brand Kit with 21 assets; text browser exposes no asset/download href and I did not establish a first-party outbound link to that portal.",
+    "status": "explicit_name_fallback_no_verified_asset",
+    "limits": "Do not treat third-party logo repositories or the unrelated Japanese intercom.co.jp company as Intercom Inc. logos. Existing homepage ICO/small images failed root size/format checks. Developer page may contain original header inline SVG omitted by text extraction.",
+    "checkedAt": "2026-10-24 23:30:01 UTC",
+    "slug": "whatflow-vs-intercom"
+  },
+  {
+    "brand": "Vonage",
+    "officialURL": "https://www.vonage.com/about-us/newsroom/press-releases/Vonage-Announces-Brand-Revitalization-10-30-2019/6167b665-a5e0-457e-afdd-8dd8dd406116/",
+    "assetURL": null,
+    "alternateOfficialPages": [
+      "https://developer.vonage.com/en/home"
+    ],
+    "assetPurpose": "Unresolved standalone current mark; use ordinary brand name unless exact original header/press asset can be extracted.",
+    "provenance": "Official 2019 rebrand announcement names an image New Vonage logo and links to media on mma.prnewswire.com, but web click failed without exposing its exact asset URL. Current official developer homepage is readable.",
+    "status": "explicit_name_fallback_no_verified_asset",
+    "limits": "The press image is historically dated; confirm it matches current identity before use. No Wikimedia-converted SVG or guessed asset paths supplied. Official developer header inline SVG may be available to root HTML inspection.",
+    "checkedAt": "2026-10-24 23:30:01 UTC",
+    "slug": "whatflow-vs-vonage"
+  },
+  {
+    "brand": "Brevo",
+    "officialURL": "https://help.brevo.com/hc/en-us",
+    "assetURL": null,
+    "alternateOfficialPages": [
+      "https://www.brevo.com/press/"
+    ],
+    "assetPurpose": "Unresolved standalone original mark; ordinary brand-name fallback.",
+    "provenance": "Official Brevo help center is readable and links to its official Press Room. Press Room resolves but text browser exposes only a metrics.brevo.com iframe, with no logo download.",
+    "status": "explicit_name_fallback_no_verified_asset",
+    "limits": "Do not substitute the Brevo PushOwl app icon for Brevo's corporate mark. Existing asset URLs returned 404 or undersized images in root audit. Help-center header SVG, if present in source HTML, must be retained exactly and checked before use.",
+    "checkedAt": "2026-10-24 23:30:01 UTC",
+    "slug": "whatflow-vs-brevo"
+  },
+  {
+    "brand": "Manychat",
+    "officialURL": "https://manychat.com/blog/meet-manychats-new-brand-identity/",
+    "assetURL": null,
+    "alternateOfficialPages": [
+      "https://help.manychat.com/hc/en-us",
+      "https://manychat.com/press"
+    ],
+    "assetPurpose": "Unresolved standalone original mark; ordinary brand-name fallback.",
+    "provenance": "Official 2022 rebrand article describes its m logo. Article gallery links are JPEG marketing artwork rather than verified standalone PNG/SVG marks; official current newsroom and help center are readable.",
+    "status": "explicit_name_fallback_no_verified_asset",
+    "limits": "No guessed paths or recreated graphics. Pushdaddy Many Chat Shopify listing belongs to Pushdaddy, not Manychat, so its icon is not acceptable. Current official help/newsroom header original inline SVG may be available to root HTML inspection.",
+    "checkedAt": "2026-10-24 23:30:01 UTC",
+    "slug": "whatflow-vs-manychat"
+  }
+]

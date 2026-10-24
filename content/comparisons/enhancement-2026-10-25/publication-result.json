@@ -1,0 +1,10 @@
+{
+  "published": true,
+  "comparisons": 106,
+  "queriesExecuted": 933,
+  "worker": "f70db1c3-d5fc-4dcd-9d6e-40415819ca83",
+  "strictGatesPassed": 106,
+  "verification": "publication-verification.json",
+  "history": "database-verification.json",
+  "reviewedCandidateSHA256": "0d02c21e61028cdf1d27f614e1300df4f837549df053bdaea48714e2e4c30b85"
+}

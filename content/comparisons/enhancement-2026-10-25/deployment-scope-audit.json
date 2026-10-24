@@ -1,0 +1,14 @@
+{
+  "previousPublishedWorker": "bd64447d-3328-48c1-b99a-796d839b78bf",
+  "previousPublicationRecord": "content/blog/enhancement-2026-10-25/REPORT.md",
+  "previousDeploymentLog": "/tmp/whatflow-enhance-deploy-output.txt",
+  "runtimeFilesModifiedSincePreviousDeployment": [
+    {
+      "path": "src/app/(site)/compare/[slug]/page.tsx",
+      "modifiedAt": "2026-10-24T22:28:01.842074+00:00",
+      "sha256": "e86f32cb1812bf47e06f9fa1242fb110e6dee9631b36c899dd43b138a758c7c3"
+    }
+  ],
+  "change": "Comparison article labelled with its H1; horizontal comparison table is a labelled keyboard-focusable scroll region. No content schema or binding changes.",
+  "limits": "Timestamps corroborate session history, not a cryptographic diff against the deployed bundle."
+}

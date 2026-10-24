@@ -18,7 +18,7 @@ export function AnnouncementBar() {
             NEW
           </span>
           <span className="text-gray-200">
-            Official Meta Cloud API • Zero markup on WhatsApp conversation rates • 14-day free trial
+            Official Meta Cloud API • Tight Shopify integration • Free plan available
           </span>
           <Link
             href={getShopifyAppUrl("announcement_bar")}

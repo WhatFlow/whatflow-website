@@ -1,0 +1,1099 @@
+{
+  "preparedAt": "2026-10-24T23:30:43.794Z",
+  "posts": 58,
+  "comparisons": 106,
+  "thumbnails": 164,
+  "changes": [
+    {
+      "collection": "posts",
+      "slug": "product-variant-review-context",
+      "thumbnail": "/thumbnails/blog/product-variant-review-context.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "influencer-campaign-small-store-plan",
+      "thumbnail": "/thumbnails/blog/influencer-campaign-small-store-plan.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "define-store-audience-brand-promise",
+      "thumbnail": "/thumbnails/blog/define-store-audience-brand-promise.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "choose-ecommerce-platform-customer-workflows",
+      "thumbnail": "/thumbnails/blog/choose-ecommerce-platform-customer-workflows.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "evaluate-shopify-app-workflow-connectors",
+      "thumbnail": "/thumbnails/blog/evaluate-shopify-app-workflow-connectors.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "dropshipping-customer-trust-communication",
+      "thumbnail": "/thumbnails/blog/dropshipping-customer-trust-communication.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "helpful-cross-sell-product-recommendations",
+      "thumbnail": "/thumbnails/blog/helpful-cross-sell-product-recommendations.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "small-shopify-store-metrics-review-routine",
+      "thumbnail": "/thumbnails/blog/small-shopify-store-metrics-review-routine.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "ai-support-drafts-small-shopify-team",
+      "thumbnail": "/thumbnails/blog/ai-support-drafts-small-shopify-team.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "choose-review-app-and-messaging-app-shopify",
+      "thumbnail": "/thumbnails/blog/choose-review-app-and-messaging-app-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "migrate-review-app-preserve-customer-feedback",
+      "thumbnail": "/thumbnails/blog/migrate-review-app-preserve-customer-feedback.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "multilingual-customer-messaging-shopify",
+      "thumbnail": "/thumbnails/blog/multilingual-customer-messaging-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "reuse-customer-reviews-social-media",
+      "thumbnail": "/thumbnails/blog/reuse-customer-reviews-social-media.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "customer-referral-messages-shopify",
+      "thumbnail": "/thumbnails/blog/customer-referral-messages-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "loyalty-messages-customer-value-shopify",
+      "thumbnail": "/thumbnails/blog/loyalty-messages-customer-value-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "qr-code-review-requests-product-packaging",
+      "thumbnail": "/thumbnails/blog/qr-code-review-requests-product-packaging.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "maintain-shopify-blog-content-library",
+      "thumbnail": "/thumbnails/blog/maintain-shopify-blog-content-library.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "customer-review-insights-product-copy",
+      "thumbnail": "/thumbnails/blog/customer-review-insights-product-copy.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "write-useful-product-faqs-shopify",
+      "thumbnail": "/thumbnails/blog/write-useful-product-faqs-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "product-review-schema-rich-results-explained",
+      "thumbnail": "/thumbnails/blog/product-review-schema-rich-results-explained.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "shopify-content-plan-customer-questions",
+      "thumbnail": "/thumbnails/blog/shopify-content-plan-customer-questions.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "prepare-customer-support-black-friday-shopify",
+      "thumbnail": "/thumbnails/blog/prepare-customer-support-black-friday-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "choose-first-automation-shopify-small-team",
+      "thumbnail": "/thumbnails/blog/choose-first-automation-shopify-small-team.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+      "thumbnail": "/thumbnails/blog/audit-shopify-app-costs-feature-gates-seat-fees.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "customer-service-saved-replies-without-robotic-tone",
+      "thumbnail": "/thumbnails/blog/customer-service-saved-replies-without-robotic-tone.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "shared-team-inbox-small-shopify-business",
+      "thumbnail": "/thumbnails/blog/shared-team-inbox-small-shopify-business.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "whatsapp-customer-optouts-store-process",
+      "thumbnail": "/thumbnails/blog/whatsapp-customer-optouts-store-process.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "whatsapp-quick-reply-buttons-customer-choices",
+      "thumbnail": "/thumbnails/blog/whatsapp-quick-reply-buttons-customer-choices.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "whatsapp-campaign-preflight-checklist",
+      "thumbnail": "/thumbnails/blog/whatsapp-campaign-preflight-checklist.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "whatsapp-message-budget-cost-per-outcome",
+      "thumbnail": "/thumbnails/blog/whatsapp-message-budget-cost-per-outcome.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "thumbnail": "/thumbnails/blog/whatsapp-campaign-segmentation-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "whatsapp-marketing-plan-small-shopify-store",
+      "thumbnail": "/thumbnails/blog/whatsapp-marketing-plan-small-shopify-store.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "coordinate-email-sms-whatsapp-customer-messages",
+      "thumbnail": "/thumbnails/blog/coordinate-email-sms-whatsapp-customer-messages.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "customer-feedback-loop-product-improvements",
+      "thumbnail": "/thumbnails/blog/customer-feedback-loop-product-improvements.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "customer-winback-campaign-shopify",
+      "thumbnail": "/thumbnails/blog/customer-winback-campaign-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "replenishment-reminders-shopify-consumables",
+      "thumbnail": "/thumbnails/blog/replenishment-reminders-shopify-consumables.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "repeat-purchase-campaign-without-constant-discounts",
+      "thumbnail": "/thumbnails/blog/repeat-purchase-campaign-without-constant-discounts.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "post-purchase-customer-journey-shopify",
+      "thumbnail": "/thumbnails/blog/post-purchase-customer-journey-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "test-social-proof-product-page",
+      "thumbnail": "/thumbnails/blog/test-social-proof-product-page.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "mobile-store-review-widget-chat-button-layout",
+      "thumbnail": "/thumbnails/blog/mobile-store-review-widget-chat-button-layout.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "product-questions-whatsapp-prepurchase-support",
+      "thumbnail": "/thumbnails/blog/product-questions-whatsapp-prepurchase-support.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "reduce-cart-abandonment-with-clear-information",
+      "thumbnail": "/thumbnails/blog/reduce-cart-abandonment-with-clear-information.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "abandoned-checkout-whatsapp-conversation",
+      "thumbnail": "/thumbnails/blog/abandoned-checkout-whatsapp-conversation.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "shopify-product-page-trust-checklist",
+      "thumbnail": "/thumbnails/blog/shopify-product-page-trust-checklist.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "review-moderation-policy-small-store",
+      "thumbnail": "/thumbnails/blog/review-moderation-policy-small-store.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "review-collection-rate-measurement-shopify",
+      "thumbnail": "/thumbnails/blog/review-collection-rate-measurement-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "product-reviews-vs-store-reviews",
+      "thumbnail": "/thumbnails/blog/product-reviews-vs-store-reviews.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "photo-video-reviews-customer-permission",
+      "thumbnail": "/thumbnails/blog/photo-video-reviews-customer-permission.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "respond-negative-product-reviews-shopify",
+      "thumbnail": "/thumbnails/blog/respond-negative-product-reviews-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "review-request-messages-examples-whatsapp-email",
+      "thumbnail": "/thumbnails/blog/review-request-messages-examples-whatsapp-email.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "best-time-review-request-after-delivery",
+      "thumbnail": "/thumbnails/blog/best-time-review-request-after-delivery.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "collect-first-product-reviews-shopify",
+      "thumbnail": "/thumbnails/blog/collect-first-product-reviews-shopify.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "thumbnail": "/thumbnails/blog/sidekick-shopify-flow-whatsapp-workflows.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "thumbnail": "/thumbnails/blog/shopify-flow-whatsapp-app-integrations.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "thumbnail": "/thumbnails/blog/send-whatsapp-templates-shopify-flow.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "thumbnail": "/thumbnails/blog/whatsapp-incoming-messages-shopify-flow-routing.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "thumbnail": "/thumbnails/blog/whatsapp-order-replies-shopify-flow-cod-confirmation.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "posts",
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "thumbnail": "/thumbnails/blog/whatflow-shopify-flow-whatsapp-automation-guide.webp",
+      "previousCoverPreservedInBody": true
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "thumbnail": "/thumbnails/compare/whatflow-chat-automation-vs-business-api.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "api"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-sleekflow",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-sleekflow.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-trengo",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-trengo.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-timelinesai",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-timelinesai.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-kommo",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-kommo.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-freshchat",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-freshchat.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-zendesk",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-zendesk.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-intercom",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-intercom.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-crisp",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-crisp.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-chatwoot",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-chatwoot.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-zoho-desk",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-zoho-desk.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-hubspot",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-hubspot.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-front",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-front.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-help-scout",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-help-scout.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-livechat",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-livechat.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-jivochat",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-jivochat.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-shopify-inbox",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-shopify-inbox.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "button"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-omnisend",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-omnisend.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-brevo",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-brevo.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-mailchimp",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-mailchimp.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-attentive",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-attentive.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-postscript",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-postscript.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-highlevel",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-highlevel.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-pushowl",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-pushowl.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-onesignal",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-onesignal.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-sinch",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-sinch.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-vonage",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-vonage.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-plivo",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-plivo.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-telnyx",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-telnyx.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-engati",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-engati.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-botpress",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-botpress.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-landbot",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-landbot.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-chatfuel",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-chatfuel.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-rasayel",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-rasayel.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-userlike",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-userlike.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-saysimple",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-saysimple.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-moengage",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-moengage.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-webengage",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-webengage.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-insider",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-insider.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-braze",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-braze.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-dondy",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-dondy.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-chaty",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-chaty.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "button"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-sms",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-sms.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-email",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-email.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-mms",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-mms.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-rcs",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-rcs.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-web-push",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-web-push.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-mobile-push",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-mobile-push.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-website-live-chat",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-website-live-chat.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "button"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-instagram-dm",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-instagram-dm.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "button"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-facebook-messenger",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-facebook-messenger.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "button"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-phone-calls",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-phone-calls.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-vs-telegram",
+      "thumbnail": "/thumbnails/compare/whatsapp-vs-telegram.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-business-platform-vs-channels",
+      "thumbnail": "/thumbnails/compare/whatsapp-business-platform-vs-channels.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "thumbnail": "/thumbnails/compare/shopify-native-whatsapp-vs-external-dashboard.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "thumbnail": "/thumbnails/compare/shopify-flow-whatsapp-vs-zapier.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "thumbnail": "/thumbnails/compare/shopify-whatsapp-app-vs-custom-cloud-api.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "api"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "thumbnail": "/thumbnails/compare/no-seat-fee-whatsapp-inbox-vs-per-seat.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "plans"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "thumbnail": "/thumbnails/compare/all-features-whatsapp-plans-vs-feature-gating.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "plans"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "thumbnail": "/thumbnails/compare/free-whatsapp-button-vs-paid-chat-widget.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "button"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "thumbnail": "/thumbnails/compare/theme-matched-whatsapp-button-vs-floating-widget.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "button"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "thumbnail": "/thumbnails/compare/whatsapp-cod-confirmation-vs-phone-calls.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "cod"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "thumbnail": "/thumbnails/compare/whatsapp-cod-confirmation-vs-sms.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "cod"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "thumbnail": "/thumbnails/compare/whatsapp-cod-confirmation-vs-email.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "cod"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "thumbnail": "/thumbnails/compare/whatsapp-cart-recovery-vs-email.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "cart"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "thumbnail": "/thumbnails/compare/whatsapp-cart-recovery-vs-sms.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "cart"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "thumbnail": "/thumbnails/compare/whatsapp-cart-recovery-vs-retargeting-ads.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "cart"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-order-updates-vs-email",
+      "thumbnail": "/thumbnails/compare/whatsapp-order-updates-vs-email.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "order"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "thumbnail": "/thumbnails/compare/whatsapp-shipping-updates-vs-sms.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "order"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "thumbnail": "/thumbnails/compare/whatsapp-back-in-stock-vs-email.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "restock"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-review-requests-vs-email",
+      "thumbnail": "/thumbnails/compare/whatsapp-review-requests-vs-email.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "reviews"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "thumbnail": "/thumbnails/compare/whatsapp-segmented-broadcasts-vs-email-blasts.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "thumbnail": "/thumbnails/compare/shared-whatsapp-inbox-vs-personal-phones.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "thumbnail": "/thumbnails/compare/whatsapp-inbox-vs-helpdesk-tickets.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "inbox"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "thumbnail": "/thumbnails/compare/small-shopify-store-whatsapp-vs-enterprise-suite.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "handoff"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "thumbnail": "/thumbnails/compare/growing-shopify-team-whatsapp-vs-seat-upgrades.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "plans"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "thumbnail": "/thumbnails/compare/seasonal-shopify-whatsapp-vs-fixed-contract.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "plans"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "thumbnail": "/thumbnails/compare/whatsapp-volume-plans-vs-contact-pricing.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "plans"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "thumbnail": "/thumbnails/compare/whatsapp-free-plan-vs-free-trial.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "plans"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "thumbnail": "/thumbnails/compare/whatsapp-cod-rules-vs-confirmation-messages.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "cod"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "thumbnail": "/thumbnails/compare/whatsapp-automation-vs-manual-order-copying.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "order"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "thumbnail": "/thumbnails/compare/whatsapp-customer-segments-vs-generic-bulk-sending.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-whatsapp-business-app.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-bird",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-bird.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-infobip",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-infobip.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-gupshup",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-gupshup.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-doubletick",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-doubletick.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-gallabox",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-gallabox.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-360dialog",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-360dialog.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-twilio",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-twilio.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-manychat",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-manychat.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-respond-io",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-respond-io.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-superlemon",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-superlemon.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-charles",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-charles.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-chatarmin",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-chatarmin.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-limechat",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-limechat.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-gorgias",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-gorgias.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-tidio",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-tidio.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-klaviyo",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-klaviyo.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-delightchat",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-delightchat.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-zoko",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-zoko.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-aisensy",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-aisensy.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-quickreply",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-quickreply.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-bitespeed",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-bitespeed.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "segments"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-interakt",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-interakt.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-wati",
+      "thumbnail": "/thumbnails/compare/whatflow-vs-wati.webp",
+      "previousCoverPreservedInBody": true,
+      "supportingScreenshotTheme": "flow"
+    }
+  ],
+  "freshAppCaptures": "Chrome focus commands time out; existing verified demo captures are reused and labelled accurately. New inbox/campaign/button/plan views remain pending browser access."
+}

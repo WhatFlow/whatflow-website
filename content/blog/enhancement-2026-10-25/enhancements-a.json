@@ -1,0 +1,1354 @@
+[
+  {
+    "metaTitle": "Abandoned Checkout Recovery with WhatsApp on Shopify",
+    "metaDescription": "Recover abandoned Shopify checkouts with helpful WhatsApp conversations, clear stop rules and replies that address delivery, sizing or payment questions.",
+    "answer": "Recover an abandoned Shopify checkout by confirming the checkout event, contacting an eligible customer with the appropriate WhatsApp message format, and asking what prevented the purchase. Offer help for the stated obstacle, then stop follow-ups after purchase or opt-out. Measure useful replies, attributable orders and costs together rather than treating every recovered order as incremental revenue.",
+    "takeaways": [
+      "Use checkout context rather than treating a product view as an abandoned order.",
+      "Resolve sizing, delivery or payment uncertainty before offering a discount.",
+      "Coordinate purchase and opt-out exits across every recovery channel."
+    ],
+    "practicalHeading": "A delivery question recovery example",
+    "practicalParagraphs": [
+      "Hypothetical example: a homeware buyer leaves checkout after viewing delivery options. An eligible recovery message asks whether they need help, and the buyer replies that they cannot tell whether the parcel will arrive before a move. The colleague checks the destination and current shipping options before answering; a coupon would not resolve that uncertainty.",
+      "Record the obstacle as delivery information, the answer supplied and whether the buyer later orders within your stated attribution window. Review similar replies before changing the sequence. If the same destination question repeats, improve the public shipping explanation. WhatFlow Business API can keep the WhatsApp reply with the team while the store fixes the underlying information gap."
+    ],
+    "checklist": [
+      "Verify the checkout record and recovery destination.",
+      "Test purchase suppression before the next reminder.",
+      "Assign delivery and payment questions to an inbox owner."
+    ],
+    "changes": [
+      "Added an obstacle-led recovery example and measurement rule.",
+      "Separated checkout recovery intent from general cart prevention.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "abandoned-checkout-whatsapp-conversation",
+    "contextualLinks": [
+      {
+        "afterHeading": "Establish what the customer left behind",
+        "slug": "reduce-cart-abandonment-with-clear-information",
+        "anchor": "prevent checkout uncertainty",
+        "sentenceBefore": "Before adding another follow-up, identify ways to ",
+        "sentenceAfter": " on the page itself."
+      },
+      {
+        "afterHeading": "Coordinate recovery across apps",
+        "slug": "coordinate-email-sms-whatsapp-customer-messages",
+        "anchor": "coordinate email, SMS and WhatsApp",
+        "sentenceBefore": "Use one customer timeline to ",
+        "sentenceAfter": " around the same checkout."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Ask a question that gives the buyer a reason to reply",
+        "url": "https://business.whatsapp.com/policy",
+        "label": "WhatsApp Business messaging policy",
+        "sentenceBefore": "Check ",
+        "sentenceAfter": " before choosing the outbound recovery format."
+      }
+    ]
+  },
+  {
+    "metaTitle": "AI Support Drafts for Shopify: A Human Review Process",
+    "metaDescription": "Use AI to draft Shopify support replies from verified information. Check facts, customer context and promised actions before a colleague sends the answer.",
+    "answer": "Use AI for Shopify support by giving it verified policy or product information and a narrowly defined writing task, then having a colleague review the draft against the customer’s question. Check live order facts separately. The person sending the reply should verify every promised action, link and exception instead of treating fluent wording as evidence.",
+    "takeaways": [
+      "Separate reusable policy wording from live order information.",
+      "Give the reviewer specific facts and promises to check.",
+      "Evaluate correction time alongside drafting time saved."
+    ],
+    "practicalHeading": "Turn a return question into a reviewable draft",
+    "practicalParagraphs": [
+      "Hypothetical example: a customer asks whether an opened accessory can be returned. Supply the drafting tool with the approved return conditions and a generalized version of the question. Ask for a short explanation that preserves the opened-item restriction and identifies anything still unknown. Leave names, addresses and unrelated order history out of this writing task.",
+      "The reviewer checks the product category, the policy version and the proposed next step. If an exception needs authorization, the reply should explain that review rather than promise acceptance. Keep a simple log of drafting time, review time and factual corrections for the first group of replies. Expand the task only when review remains useful and manageable."
+    ],
+    "checklist": [
+      "Attach the maintained policy source to the drafting task.",
+      "Check that no planned action is described as completed.",
+      "Record recurring errors and narrow the prompt accordingly."
+    ],
+    "changes": [
+      "Added a concrete return-policy drafting and review process.",
+      "Kept wording assistance separate from operational authority.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "ai-support-drafts-small-shopify-team",
+    "contextualLinks": [
+      {
+        "afterHeading": "Start from verified information",
+        "slug": "customer-service-saved-replies-without-robotic-tone",
+        "anchor": "maintained saved replies",
+        "sentenceBefore": "Start the source material with ",
+        "sentenceAfter": " for common questions."
+      },
+      {
+        "afterHeading": "Use natural language to describe workflow intent carefully",
+        "slug": "sidekick-shopify-flow-whatsapp-workflows",
+        "anchor": "Sidekick workflow drafting",
+        "sentenceBefore": "Apply the same review discipline to ",
+        "sentenceAfter": " before enabling a generated sequence."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Use natural language to describe workflow intent carefully",
+        "url": "https://help.shopify.com/en/manual/shopify-flow",
+        "label": "Shopify Flow overview",
+        "sentenceBefore": "Use the ",
+        "sentenceAfter": " to check supported workflow concepts before accepting generated steps."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Audit Shopify App Costs, Seat Fees and Feature Gates",
+    "metaDescription": "Compare the full cost of a Shopify app workflow: required features, inbox seats, usage, connectors and maintenance across quiet, normal and peak workloads.",
+    "answer": "Audit Shopify app costs by defining one complete workflow, listing its required features and users, then calculating subscriptions, usage, connector costs and maintenance under the same workload. Compare quiet, normal and peak scenarios. Check feature gates and seat fees explicitly, because the cheapest advertised plan may not support the task your team actually needs to complete.",
+    "takeaways": [
+      "Price the completed workflow rather than isolated subscriptions.",
+      "Translate the same workload into each provider’s billing units.",
+      "Check required features and colleagues before choosing a tier."
+    ],
+    "practicalHeading": "Build a comparable monthly cost worksheet",
+    "practicalParagraphs": [
+      "Hypothetical example: a store needs three colleagues to answer WhatsApp questions and expects 800 outbound messages in an ordinary month. Put the subscription, required automation tier, any extra seats and applicable message charges on separate rows. Repeat the calculation for 300 and 2,000 messages, using each provider’s actual allowances rather than assuming all sends have the same price.",
+      "Show maintenance separately as estimated staff hours, then record which assumptions could change the result. WhatFlow Business API includes all features on all plans and has no inbox seat fees, so its comparison should focus on the appropriate allowance and rates. A competing setup may package costs differently; the worksheet should make those differences visible without pretending that one headline price settles the decision."
+    ],
+    "checklist": [
+      "List required tasks and every colleague needing access.",
+      "Calculate quiet, normal and peak usage from the same assumptions.",
+      "Record connector subscriptions and expected maintenance time."
+    ],
+    "changes": [
+      "Added an explicit three-scenario cost worksheet.",
+      "Explained how no-seat-fee pricing changes the comparison.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+    "contextualLinks": [
+      {
+        "afterHeading": "Count usage on the same basis",
+        "slug": "whatsapp-message-budget-cost-per-outcome",
+        "anchor": "WhatsApp message budgeting",
+        "sentenceBefore": "For category and outcome assumptions, use the ",
+        "sentenceAfter": " process."
+      },
+      {
+        "afterHeading": "Include the connecting tools",
+        "slug": "evaluate-shopify-app-workflow-connectors",
+        "anchor": "connector evaluation checklist",
+        "sentenceBefore": "Verify the connection with a ",
+        "sentenceAfter": " before including it as a working capability."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Count usage on the same basis",
+        "url": "https://business.whatsapp.com/products/platform-pricing",
+        "label": "WhatsApp Platform pricing",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " when checking the charging assumptions behind each scenario."
+      }
+    ]
+  },
+  {
+    "metaTitle": "When to Send Review Requests After Product Delivery",
+    "metaDescription": "Choose a review request delay based on delivery evidence and product use. Test timing with comparable orders and track replies saying the request was early.",
+    "answer": "Send a product review request after the customer has a reasonable opportunity to receive and use the item. Start from reliable delivery information where available, then choose a delay suited to the product’s learning or usage cycle. Compare similar orders and monitor premature-request replies; there is no single delay that fits every Shopify catalog.",
+    "takeaways": [
+      "Fulfillment and delivery are different scheduling events.",
+      "Group products by how long a meaningful experience takes.",
+      "Treat “not used it yet” replies as timing feedback."
+    ],
+    "practicalHeading": "Create a product-use timing table",
+    "practicalParagraphs": [
+      "Hypothetical example: group a catalog into a ready-to-use tote and a self-assembly shelf. Begin a timing test from a supported delivery signal and allow the shelf more time because assembly must happen first. Record the chosen delay, the reason for it and how the workflow handles a missing delivery event. These are test choices, not recommended universal waiting periods.",
+      "When reviewing results, separate product groups and keep the reporting window consistent. Count eligible orders, invitations, submissions and replies saying the request arrived too soon. If the shelf group needs more time, adjust that group rather than delaying every request. Keep email and WhatsApp invitations on the same schedule so a timing experiment does not accidentally become a frequency experiment."
+    ],
+    "checklist": [
+      "Name the actual event starting the timer.",
+      "Document the usage reason for each product group’s delay.",
+      "Review early-request replies before adding reminders."
+    ],
+    "changes": [
+      "Added a product-use timing table method.",
+      "Distinguished schedule testing from increasing message frequency.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "best-time-review-request-after-delivery",
+    "contextualLinks": [
+      {
+        "afterHeading": "Group products by how they are experienced",
+        "slug": "collect-first-product-reviews-shopify",
+        "anchor": "first product review process",
+        "sentenceBefore": "Build the schedule into a ",
+        "sentenceAfter": " that includes the form and support path."
+      },
+      {
+        "afterHeading": "Test a single timing change",
+        "slug": "review-collection-rate-measurement-shopify",
+        "anchor": "review collection measurement",
+        "sentenceBefore": "Use consistent denominators from ",
+        "sentenceAfter": " when comparing timing tests."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Separate order date, fulfillment and delivery",
+        "url": "https://judge.me/help/en/articles/8287254-how-do-we-collect-reviews",
+        "label": "How Judge.me collects reviews",
+        "sentenceBefore": "Consult ",
+        "sentenceAfter": " to distinguish collection routes before attributing their results to timing."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Choose an Ecommerce Platform by Customer Workflow",
+    "metaDescription": "Evaluate an ecommerce platform with a realistic customer journey, app connections, ownership costs and migration requirements instead of a generic feature list.",
+    "answer": "Choose an ecommerce platform by testing the purchase, support and post-purchase workflows your business needs, under realistic team and budget constraints. Compare required app connections, ongoing maintenance and data portability alongside storefront features. A representative pilot with an exception case will reveal practical gaps that a feature checklist or app-directory count can miss.",
+    "takeaways": [
+      "Define essential customer tasks before comparing platforms.",
+      "Test the installed app connection and its required data.",
+      "Include maintenance and migration effort in the decision."
+    ],
+    "practicalHeading": "Use one customer scenario across the shortlist",
+    "practicalParagraphs": [
+      "Hypothetical example: a two-person accessories store needs a buyer to choose a compatible variant, ask a question, receive tracking and later submit a review. Run that same scenario on each shortlisted setup. Add one exception, such as a split shipment, and record who investigates it. Use the actual people and tools expected to maintain the store after launch.",
+      "For each stage, mark whether the platform supplies the capability, a supported app completes it or custom work is required. Then attach the relevant subscription and maintenance assumptions. If Shopify is selected, WhatFlow Business API can provide Shopify-oriented WhatsApp messaging and a shared inbox. Keep the review provider and any other connected services in the total rather than assuming the messaging app completes every stage."
+    ],
+    "checklist": [
+      "Write one representative purchase and support scenario.",
+      "Include an exception and a mobile journey in the pilot.",
+      "Identify the owner and cost of every required connection."
+    ],
+    "changes": [
+      "Added a repeatable platform pilot scenario.",
+      "Separated platform suitability from app-directory size.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "choose-ecommerce-platform-customer-workflows",
+    "contextualLinks": [
+      {
+        "afterHeading": "Test the app workflow, not just the app directory",
+        "slug": "choose-review-app-and-messaging-app-shopify",
+        "anchor": "review and messaging responsibilities",
+        "sentenceBefore": "Separate ",
+        "sentenceAfter": " before comparing the app setup."
+      },
+      {
+        "afterHeading": "Compare the full commercial model",
+        "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+        "anchor": "full workflow costs",
+        "sentenceBefore": "Compare ",
+        "sentenceAfter": " using the same requirements on each shortlist."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Test the app workflow, not just the app directory",
+        "url": "https://help.shopify.com/en/manual/shopify-flow",
+        "label": "Shopify Flow overview",
+        "sentenceBefore": "The ",
+        "sentenceAfter": " provides the relevant workflow baseline when evaluating Shopify-based connections."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Choose a First Shopify Automation for a Small Team",
+    "metaDescription": "Pick a small Shopify automation with a clear trigger, reliable data and a visible outcome. Include missing fields, repeated events and human ownership in review.",
+    "answer": "Choose a first Shopify automation that removes one repeated handoff, starts from reliable data and produces an outcome the team can inspect. Keep the action modest, such as applying a meaningful tag, and define what happens when fields are missing or events repeat. Document an owner before adding further branches or consequential order actions.",
+    "takeaways": [
+      "Start with one repeated manual decision and one outcome.",
+      "Choose a trigger that supplies the record the action needs.",
+      "Include missing data and repeated events in the first review."
+    ],
+    "practicalHeading": "Write the rule before drawing the workflow",
+    "practicalParagraphs": [
+      "Hypothetical example: the team manually marks an order after a customer confirms it through an order-related WhatsApp reply. Write the rule as: when the supported order-reply event supplies an order reference and the reply matches the confirmation choice, add the agreed order tag. Leave cancellation and fulfillment outside this first task because they require separate business rules.",
+      "Review four cases: matching reply, nonmatching reply, missing order context and repeated event. Record the expected outcome for each before inspecting the configured Shopify Flow steps. WhatFlow Business API’s order-reply event is useful when that order context is required. If the workflow cannot identify the intended order, send the case to review rather than substituting a generic phone-number match."
+    ],
+    "checklist": [
+      "State the rule in one sentence before configuring steps.",
+      "Inspect the trigger’s actual order context.",
+      "Document the expected result for repeated and nonmatching events."
+    ],
+    "changes": [
+      "Added a limited confirmation-tag workflow example.",
+      "Included a four-case review matrix for the first automation.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "choose-first-automation-shopify-small-team",
+    "contextualLinks": [
+      {
+        "afterHeading": "Check that the trigger provides the right data",
+        "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+        "anchor": "order reply workflow guide",
+        "sentenceBefore": "Use the ",
+        "sentenceAfter": " when the action requires an identified order."
+      },
+      {
+        "afterHeading": "Design the exception path early",
+        "slug": "shared-team-inbox-small-shopify-business",
+        "anchor": "shared inbox ownership",
+        "sentenceBefore": "Define ",
+        "sentenceAfter": " for replies that need a person."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Check that the trigger provides the right data",
+        "url": "https://help.shopify.com/en/manual/shopify-flow",
+        "label": "Shopify Flow overview",
+        "sentenceBefore": "Check the ",
+        "sentenceAfter": " when reviewing trigger, condition and action roles."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Review App vs Messaging App: Shopify Workflow Roles",
+    "metaDescription": "Choose Shopify review and messaging apps by their actual roles: invitation, conversation, form, verification and display. Check connectors and total workflow cost.",
+    "answer": "Choose a Shopify review app for collecting, storing, moderating and displaying feedback, and a messaging app for delivering eligible invitations and handling conversations. Verify how the two connect, including the review destination and required identifiers. Compare their combined cost and maintenance needs; a WhatsApp message link does not itself establish review verification or replace the provider’s form.",
+    "takeaways": [
+      "Assign form, verification and display to the review provider.",
+      "Assign invitation delivery and replies to the messaging workflow.",
+      "Test the real link and identifiers before choosing the combination."
+    ],
+    "practicalHeading": "Map the handoff from invitation to published review",
+    "practicalParagraphs": [
+      "Hypothetical example: an accessories store wants an eligible buyer to receive a WhatsApp invitation after delivery, leave feedback on the purchased item and ask a question if needed. Draw five boxes: qualifying event, invitation, form, publication and support reply. Name the system responsible for each box and the identifier or link passed into the next one.",
+      "Open the form from a controlled invitation and check the product association on the resulting review. Then reply to the invitation and confirm that a colleague can find the conversation. WhatFlow Business API can supply the WhatsApp and inbox stages; the review provider controls its collection and verification rules. If either route breaks, fix the specific handoff before comparing optional widgets or planning more reminders."
+    ],
+    "checklist": [
+      "Name one owner for each stage of the review journey.",
+      "Test product association from invitation to storefront.",
+      "Compare allowances, required tiers and inbox access together."
+    ],
+    "changes": [
+      "Added a five-stage responsibility map and controlled handoff check.",
+      "Kept review verification distinct from message delivery.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "choose-review-app-and-messaging-app-shopify",
+    "contextualLinks": [
+      {
+        "afterHeading": "Check the connection before buying the promise",
+        "slug": "shopify-flow-whatsapp-app-integrations",
+        "anchor": "Shopify Flow app connections",
+        "sentenceBefore": "Inspect the supported tasks in ",
+        "sentenceAfter": " before relying on the handoff."
+      },
+      {
+        "afterHeading": "Consider the operating process",
+        "slug": "migrate-review-app-preserve-customer-feedback",
+        "anchor": "review migration safeguards",
+        "sentenceBefore": "Consider future ",
+        "sentenceAfter": " when assessing data ownership."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Define the review provider’s responsibilities",
+        "url": "https://judge.me/help/en/articles/8376284-verified-reviews",
+        "label": "Judge.me verified-review requirements",
+        "sentenceBefore": "Check ",
+        "sentenceAfter": " before promising what verification labels a collection route will retain."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Collect Your First Shopify Product Reviews Honestly",
+    "metaDescription": "Build your first Shopify review process with real buyers, useful timing, a direct form link and clear tracking from eligible order to published feedback.",
+    "answer": "Collect your first Shopify product reviews by inviting real buyers after they have had time to use the item, linking directly to the correct review form and asking for honest feedback. Give support replies an owner and check product associations. Track eligible orders, invitations and submissions separately so early problems can be fixed before increasing request volume.",
+    "takeaways": [
+      "Invite real buyers without scripting a positive verdict.",
+      "Make the correct product review form easy to reach.",
+      "Trace the whole process before adding more reminders."
+    ],
+    "practicalHeading": "Diagnose a first batch of invitations",
+    "practicalParagraphs": [
+      "Hypothetical example: 20 orders qualify for a first invitation batch, 16 invitations are sent, and three submissions reach the provider. The missing four sends and the gap between invitations and submissions are separate questions. Check contact eligibility and event mapping first, then follow the form on a phone. These example counts describe a diagnostic exercise, not a review-rate benchmark.",
+      "Inspect each submission’s product, date and source label before checking its storefront display. Ask a colleague to reply to one controlled invitation as though a part were missing; the conversation should reach a monitored route. WhatFlow Business API can support that WhatsApp conversation while the review provider retains responsibility for the form, publication and verification. Fix the earliest broken stage before increasing audience size."
+    ],
+    "checklist": [
+      "Follow one invitation link on a phone.",
+      "Confirm the submitted review belongs to the intended product.",
+      "Give customer questions from invitations a named owner."
+    ],
+    "changes": [
+      "Added a transparent first-batch funnel diagnosis.",
+      "Avoided presenting hypothetical submission counts as a benchmark.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "collect-first-product-reviews-shopify",
+    "contextualLinks": [
+      {
+        "afterHeading": "Give the customer time to experience the product",
+        "slug": "best-time-review-request-after-delivery",
+        "anchor": "review request timing",
+        "sentenceBefore": "Choose ",
+        "sentenceAfter": " around a meaningful product experience."
+      },
+      {
+        "afterHeading": "Measure the process from eligible order to published review",
+        "slug": "review-collection-rate-measurement-shopify",
+        "anchor": "review funnel denominators",
+        "sentenceBefore": "Use the right ",
+        "sentenceAfter": " to identify where the process breaks."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Keep reviews and support connected",
+        "url": "https://judge.me/help/en/articles/8376284-verified-reviews",
+        "label": "Judge.me verified-review requirements",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " when explaining what the provider can label as verified."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Coordinate Email, SMS and WhatsApp on Shopify",
+    "metaDescription": "Map Shopify customer messages across email, SMS and WhatsApp. Assign channel roles, check purchase exits and remove duplicate reminders from the combined journey.",
+    "answer": "Coordinate email, SMS and WhatsApp by mapping every message around the same customer event, assigning each channel a useful job and defining shared exits where supported. Check preferences and purchase status before follow-ups. Review the combined timeline from the buyer’s perspective, because sensible sequences in separate apps can still create duplicate or contradictory contact.",
+    "takeaways": [
+      "Map built-in notifications alongside app campaigns.",
+      "Assign one system to each reminder decision and exit.",
+      "Review total customer contact rather than channel dashboards alone."
+    ],
+    "practicalHeading": "Reconstruct one checkout across all channels",
+    "practicalParagraphs": [
+      "Hypothetical example: a shopper receives a recovery email, completes checkout and later receives a scheduled WhatsApp reminder. Put the email send, purchase event, order confirmation and WhatsApp send on one timeline. Check which system knew about the purchase and when. That makes the failure actionable: the problem may be an unavailable exit signal rather than the reminder’s wording.",
+      "Choose one owner for the next recovery step and verify that it can check the purchase state at the required moment. If the tools cannot support that coordination, simplify the sequence. Keep channel preferences alongside the timeline, and make broad stop requests visible to the responsible team. WhatFlow Business API can handle WhatsApp replies without adding inbox seat fees as another colleague investigates."
+    ],
+    "checklist": [
+      "List every message for one event across all tools.",
+      "Test a purchase occurring between two reminders.",
+      "Assign ownership of broad stop requests and unresolved overlaps."
+    ],
+    "changes": [
+      "Added a cross-channel timeline with a purchase-between-reminders case.",
+      "Made suppression ownership explicit.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "coordinate-email-sms-whatsapp-customer-messages",
+    "contextualLinks": [
+      {
+        "afterHeading": "Map messages by customer event",
+        "slug": "post-purchase-customer-journey-shopify",
+        "anchor": "post-purchase event map",
+        "sentenceBefore": "Extend the timeline with a ",
+        "sentenceAfter": " after checkout."
+      },
+      {
+        "afterHeading": "Keep preference handling clear",
+        "slug": "whatsapp-customer-optouts-store-process",
+        "anchor": "WhatsApp opt-out process",
+        "sentenceBefore": "Document the ",
+        "sentenceAfter": " alongside each channel’s preferences."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Keep preference handling clear",
+        "url": "https://business.whatsapp.com/policy",
+        "label": "WhatsApp Business messaging policy",
+        "sentenceBefore": "Consult ",
+        "sentenceAfter": " when checking which WhatsApp contacts and formats are appropriate."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Turn Shopify Customer Feedback into Product Fixes",
+    "metaDescription": "Create a customer feedback loop that groups actionable themes, separates severity from frequency and assigns a product or service improvement with a review date.",
+    "answer": "Turn customer feedback into improvements by recording the specific decision or problem behind each comment, grouping related cases and assigning a concrete action to an owner. Consider severity as well as frequency. Review comparable feedback after the change, while keeping individual support cases separate from the broader product or process fix.",
+    "takeaways": [
+      "Group feedback around a decision the team can improve.",
+      "Treat a serious isolated defect differently from a repeated minor question.",
+      "Close individual support cases separately from systemic changes."
+    ],
+    "practicalHeading": "Give one feedback theme a complete action record",
+    "practicalParagraphs": [
+      "Hypothetical example: buyers repeatedly ask whether a bottle fits a particular cup holder. Create a theme called cup-holder compatibility, attach references to the original cases and assign the product owner to verify the base dimensions. The action is to publish those measurements and a clear compatibility explanation, rather than a vague task to improve satisfaction.",
+      "Record the publication date and update the relevant saved reply. During the next review, count related questions alongside orders for that product and read what customers still cannot determine. A lower count alone does not establish causation. WhatFlow Business API can keep the original WhatsApp conversations available to the team while the improvement record contains only the necessary theme and case references."
+    ],
+    "checklist": [
+      "Name the customer decision behind the theme.",
+      "Assign a specific change, owner and review date.",
+      "Compare new questions with relevant order volume."
+    ],
+    "changes": [
+      "Added a complete compatibility-theme action record.",
+      "Included order volume when evaluating later question counts.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "customer-feedback-loop-product-improvements",
+    "contextualLinks": [
+      {
+        "afterHeading": "Group by the decision the customer was trying to make",
+        "slug": "customer-review-insights-product-copy",
+        "anchor": "review-led product copy",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " when the improvement belongs on the product page."
+      },
+      {
+        "afterHeading": "Give the improvement an owner and a date",
+        "slug": "customer-service-saved-replies-without-robotic-tone",
+        "anchor": "saved reply maintenance",
+        "sentenceBefore": "Include ",
+        "sentenceAfter": " in the same change task."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Capture the issue without spreading private details",
+        "url": "https://judge.me/help/en/articles/8287254-how-do-we-collect-reviews",
+        "label": "How Judge.me collects reviews",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " to preserve the distinction between feedback collection sources."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Write Clear Shopify Customer Referral Messages",
+    "metaDescription": "Explain both sides of a Shopify referral offer, test the shared destination and prepare support for qualifying purchases and reward questions before sending.",
+    "answer": "Write a Shopify referral message that explains what the customer and their friend receive, the conditions for earning the benefit and the supported referral destination. Ask after a credible product experience and use an appropriate permitted channel. Keep participation optional, then measure qualifying purchases and rewards separately from link clicks or shares.",
+    "takeaways": [
+      "Distinguish sharing a link from earning a reward.",
+      "Explain the referrer and friend benefits separately.",
+      "Let the referral provider establish tracking and reward state."
+    ],
+    "practicalHeading": "Check the offer from both customers’ perspectives",
+    "practicalParagraphs": [
+      "Hypothetical example: a referral program gives the friend a discount on a qualifying first purchase and credits the original customer after that purchase meets the program’s conditions. Draft the two benefits as separate sentences. Include the important minimum spend and waiting condition where applicable. Avoid saying “earn instantly” if sharing alone does not create an earned reward.",
+      "Test the friend’s landing page, code conditions and the provider’s resulting status with controlled data. Give support a reference for explaining pending rewards without exposing the friend’s private order information. WhatFlow Business API can carry the eligible invitation and the subsequent question, while the referral app remains the source of reward eligibility. Review qualified purchases and issued rewards before describing the campaign as successful."
+    ],
+    "checklist": [
+      "Write each party’s benefit and qualifying conditions.",
+      "Test the shared destination and supported attribution route.",
+      "Prepare a pending-reward response that protects private order details."
+    ],
+    "changes": [
+      "Added a two-sided referral-offer example and check.",
+      "Separated provider reward state from message delivery.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "customer-referral-messages-shopify",
+    "contextualLinks": [
+      {
+        "afterHeading": "Ask at a sensible moment",
+        "slug": "post-purchase-customer-journey-shopify",
+        "anchor": "post-purchase contact plan",
+        "sentenceBefore": "Place the referral request within the ",
+        "sentenceAfter": " after a meaningful experience."
+      },
+      {
+        "afterHeading": "Measure completed participation, not just shares",
+        "slug": "loyalty-messages-customer-value-shopify",
+        "anchor": "loyalty reward explanations",
+        "sentenceBefore": "Apply the same clarity used in ",
+        "sentenceAfter": " to pending and earned benefits."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Keep the sending channel appropriate",
+        "url": "https://business.whatsapp.com/policy",
+        "label": "WhatsApp Business messaging policy",
+        "sentenceBefore": "Check ",
+        "sentenceAfter": " before treating a previous support contact as eligible for a referral campaign."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Use Customer Review Insights to Improve Product Copy",
+    "metaDescription": "Turn Shopify review themes into accurate product explanations. Verify specifications, preserve customer context and update support answers alongside public copy.",
+    "answer": "Use customer reviews to find repeated use cases, questions and expectation gaps, then verify the underlying product detail before changing the copy. Translate themes into useful specifications or explanations instead of universal promises. Preserve quotation context and permissions, and update saved support answers whenever the public product information changes.",
+    "takeaways": [
+      "Use reviews to find information gaps, not technical guarantees.",
+      "Verify dimensions and compatibility before publishing a new claim.",
+      "Keep product copy and saved support explanations aligned."
+    ],
+    "practicalHeading": "Convert a review theme into a verifiable sentence",
+    "practicalParagraphs": [
+      "Hypothetical example: several bag reviews say a laptop fits comfortably. Before adding a compatibility claim, measure the usable compartment and check the relevant device dimensions, including cases where necessary. Replace a broad “fits every laptop” statement with the actual compartment measurements and any verified limits. Customer experience can illustrate the point without becoming a guarantee for every device.",
+      "Keep a change record with the review theme, verified specification and final sentence. Update the compatibility reply used by the support team on the same day. Then review later questions about fit and the versions customers mention. WhatFlow Business API’s inbox can help identify unresolved questions, but the published copy should stand on maintained product facts rather than a private conversation alone."
+    ],
+    "checklist": [
+      "Sample mixed and critical feedback as well as praise.",
+      "Verify the product fact behind the proposed sentence.",
+      "Update the matching support answer and review later questions."
+    ],
+    "changes": [
+      "Added a review-to-specification copy example.",
+      "Preserved the boundary between customer experience and compatibility claims.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "customer-review-insights-product-copy",
+    "contextualLinks": [
+      {
+        "afterHeading": "Verify the underlying detail",
+        "slug": "product-variant-review-context",
+        "anchor": "product variant review context",
+        "sentenceBefore": "Check ",
+        "sentenceAfter": " before generalizing from a reviewer’s device or product version."
+      },
+      {
+        "afterHeading": "Align public copy and support answers",
+        "slug": "write-useful-product-faqs-shopify",
+        "anchor": "useful product FAQs",
+        "sentenceBefore": "Turn remaining repeat questions into ",
+        "sentenceAfter": " alongside the revised description."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Translate the theme into a useful explanation",
+        "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "label": "Google Search: creating helpful content",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " as a baseline for making the explanation useful to buyers."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Write Saved Shopify Support Replies That Feel Human",
+    "metaDescription": "Build saved Shopify replies around real customer questions. Mark facts to verify, preserve policy conditions and maintain a compact library with clear owners.",
+    "answer": "Write saved support replies around specific customer questions, with the direct answer first and obvious fields for facts a colleague must verify. Keep policy summaries current and allow staff to adapt the wording to the actual concern. Distinguish these working drafts from approved outbound WhatsApp templates, and retire replies that repeatedly create avoidable follow-up questions.",
+    "takeaways": [
+      "Organize replies by task rather than generic reassurance.",
+      "Mark current order facts as required checks before sending.",
+      "Maintain the policy source and owner with each important reply."
+    ],
+    "practicalHeading": "Give a tracking reply clear boundaries",
+    "practicalParagraphs": [
+      "Hypothetical example: create separate replies for “I cannot find tracking” and “tracking has stopped changing.” The first points to the verified tracking destination. The second requires the colleague to inspect the current status and choose an investigation step. Label placeholders such as [checked status] and [next review time] so a sample value cannot accidentally look ready to send.",
+      "Store a short “do not use when” note with each reply, such as a cancelled order or an open delivery investigation. Have another colleague choose the right reply from a few anonymized questions before adding it to the library. WhatFlow Business API can support the conversation in its team inbox; the colleague still needs to confirm the facts and choose a message format appropriate to the interaction."
+    ],
+    "checklist": [
+      "Separate questions requiring different investigations.",
+      "Mark every field that needs a current factual check.",
+      "Assign the reply a source, owner and review trigger."
+    ],
+    "changes": [
+      "Added two distinct tracking reply cases and a selection check.",
+      "Included use boundaries alongside editable placeholders.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "customer-service-saved-replies-without-robotic-tone",
+    "contextualLinks": [
+      {
+        "afterHeading": "Start with the questions that repeat",
+        "slug": "shared-team-inbox-small-shopify-business",
+        "anchor": "shared inbox handoffs",
+        "sentenceBefore": "Pair the library with clear ",
+        "sentenceAfter": " so a saved answer has a responsible sender."
+      },
+      {
+        "afterHeading": "Give the library a maintenance routine",
+        "slug": "ai-support-drafts-small-shopify-team",
+        "anchor": "reviewing AI support drafts",
+        "sentenceBefore": "Use the same factual checks when ",
+        "sentenceAfter": " before sending."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Distinguish manual replies from WhatsApp templates",
+        "url": "https://business.whatsapp.com/policy",
+        "label": "WhatsApp Business messaging policy",
+        "sentenceBefore": "Consult ",
+        "sentenceAfter": " when distinguishing staff replies from eligible business-initiated templates."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Plan a Shopify Win-Back Campaign Around Customer Need",
+    "metaDescription": "Define inactivity by product buying cycle, choose a credible reason to return and limit the win-back sequence. Review costs, replies and margin alongside orders.",
+    "answer": "Plan a Shopify win-back campaign by defining inactivity against the product’s normal buying cycle, selecting an eligible audience and offering a credible reason to return. Check stock, unresolved service issues and channel preferences before sending. Set a limited sequence with purchase and opt-out exits, then evaluate margin, costs and customer replies alongside attributed orders.",
+    "takeaways": [
+      "A normal repurchase gap depends on the product category.",
+      "Use a relevant update or product fit before defaulting to discounts.",
+      "Limit the sequence and stop when eligibility changes."
+    ],
+    "practicalHeading": "Distinguish a missed refill from normal inactivity",
+    "practicalParagraphs": [
+      "Hypothetical example: a store sells refill packs and durable dispensers. A long gap after buying a dispenser may be normal, while a similar gap for someone who regularly buys refills may merit review. Create separate groups using observed order history rather than one store-wide inactivity threshold. Check whether the refill is still compatible and available in the customer’s market.",
+      "Give the refill group a relevant explanation of the current option and a straightforward destination. Keep a note of the audience rule, offer conditions and sequence end so the campaign can be reviewed later. WhatFlow Business API can support the eligible WhatsApp message and replies. If customers explain a product problem, route that feedback to support before treating it as an objection to the offer."
+    ],
+    "checklist": [
+      "Define inactivity separately for materially different buying cycles.",
+      "Verify the return destination, availability and offer conditions.",
+      "Document the final contact and purchase exit."
+    ],
+    "changes": [
+      "Added an inactivity example distinguishing durable products from refills.",
+      "Made the sequence end and customer feedback route concrete.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "customer-winback-campaign-shopify",
+    "contextualLinks": [
+      {
+        "afterHeading": "Define the audience before choosing the offer",
+        "slug": "replenishment-reminders-shopify-consumables",
+        "anchor": "replenishment reminder logic",
+        "sentenceBefore": "For regularly consumed products, compare the audience with ",
+        "sentenceAfter": " before calling a buyer inactive."
+      },
+      {
+        "afterHeading": "Limit the sequence and define the exit",
+        "slug": "coordinate-email-sms-whatsapp-customer-messages",
+        "anchor": "cross-channel coordination",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " to keep the win-back sequence finite across apps."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Acknowledge the gap without guilt",
+        "url": "https://business.whatsapp.com/policy",
+        "label": "WhatsApp Business messaging policy",
+        "sentenceBefore": "Check ",
+        "sentenceAfter": " when selecting the eligible audience and outbound format."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Define a Shopify Store Audience and Credible Promise",
+    "metaDescription": "Build a store promise around a customer task you can support. Connect audience needs to verified product details, useful content and consistent support answers.",
+    "answer": "Define your store audience around a practical customer task, then choose a promise the product and operation can substantiate. Show the details that help a suitable buyer assess fit, including relevant limitations. Check that product pages, support answers and fulfillment reinforce the same promise, and revise it when actual feedback reveals an expectation gap.",
+    "takeaways": [
+      "Describe the customer’s task without inventing a personality profile.",
+      "Back the store promise with verifiable product or service details.",
+      "Use support questions to detect an overbroad promise."
+    ],
+    "practicalHeading": "Replace a broad promise with a testable fit",
+    "practicalParagraphs": [
+      "Hypothetical example: a lunch-container store begins with “perfect for every busy day.” Narrow the promise to a specific commuter use case, then verify the container dimensions, capacity and care requirements that matter to that task. Show those details beside suitable product images. A buyer carrying a smaller bag should be able to recognize the limitation before ordering.",
+      "Write the same factual explanation into the product page, relevant buying guide and support reply. Review questions about fit after publication and check whether customers still misunderstand the offer. WhatFlow Business API can give shoppers a convenient Shopify-oriented WhatsApp route to ask those questions; the positioning becomes credible when the team’s answer and the delivered product agree with the page."
+    ],
+    "checklist": [
+      "State one customer task the product serves well.",
+      "Attach evidence to each meaningful promise.",
+      "Update public copy and support wording together."
+    ],
+    "changes": [
+      "Added a commuter-container positioning example.",
+      "Connected audience definition to product evidence and support consistency.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "define-store-audience-brand-promise",
+    "contextualLinks": [
+      {
+        "afterHeading": "Describe the job the customer is trying to complete",
+        "slug": "customer-feedback-loop-product-improvements",
+        "anchor": "customer feedback loop",
+        "sentenceBefore": "Test audience assumptions through a ",
+        "sentenceAfter": " rather than a fictional persona alone."
+      },
+      {
+        "afterHeading": "Build content around the audience’s real questions",
+        "slug": "shopify-content-plan-customer-questions",
+        "anchor": "question-led content planning",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " to keep the library within the audience’s real needs."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Connect the promise to the product page",
+        "url": "https://judge.me/help/en/articles/8287316-guidelines-on-reviews-content",
+        "label": "Judge.me review content guidelines",
+        "sentenceBefore": "Review ",
+        "sentenceAfter": " before using customer quotations to illustrate the promise."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Dropshipping Trust: Accurate Updates and Support",
+    "metaDescription": "Build dropshipping customer trust with verified product details, realistic delivery wording and monitored support. Test split shipments and missing tracking data.",
+    "answer": "Build dropshipping customer trust by verifying product details, explaining realistic processing and shipping expectations, and taking responsibility for support even when a supplier fulfills the parcel. Tie updates to events your systems can establish. Test split shipments and missing tracking information, then use reviews and support themes to correct recurring gaps between the promise and the experience.",
+    "takeaways": [
+      "The store remains the customer’s support point after purchase.",
+      "A fulfillment event does not prove final delivery.",
+      "Correct the source of an expectation gap before scaling promotion."
+    ],
+    "practicalHeading": "Write split-shipment updates from known facts",
+    "practicalParagraphs": [
+      "Hypothetical example: a buyer orders two items supplied from different locations. The first parcel receives tracking while the second is still processing. Check what the actual order and shipment records establish, then explain that the order has separate parcels and identify the known tracking destination. Avoid describing the entire order as shipped simply because one item moved.",
+      "Keep a support note for the remaining item, its information source and the person responsible for the next check. Review the public shipping explanation if buyers repeatedly misunderstand separate parcels. WhatFlow Business API can keep WhatsApp questions in a shared inbox without seat fees, making it easier for another colleague to investigate. The reply should still reflect the supplier and carrier evidence available at that moment."
+    ],
+    "checklist": [
+      "Verify product version and specifications before publishing them.",
+      "Test an order with separate parcels and incomplete tracking.",
+      "Assign a next check when the supplier cannot establish a status."
+    ],
+    "changes": [
+      "Added a split-shipment communication example.",
+      "Kept supplier evidence and store support responsibility connected.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "dropshipping-customer-trust-communication",
+    "contextualLinks": [
+      {
+        "afterHeading": "Give order updates a reliable event source",
+        "slug": "post-purchase-customer-journey-shopify",
+        "anchor": "post-purchase event mapping",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " to keep each shipment message tied to the right evidence."
+      },
+      {
+        "afterHeading": "Use reviews to detect expectation gaps",
+        "slug": "customer-feedback-loop-product-improvements",
+        "anchor": "feedback improvement process",
+        "sentenceBefore": "Send repeated expectation gaps into the ",
+        "sentenceAfter": " with a named owner."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Verify the product information you publish",
+        "url": "https://judge.me/help/en/articles/8376284-verified-reviews",
+        "label": "Judge.me verified-review requirements",
+        "sentenceBefore": "Consult ",
+        "sentenceAfter": " before presenting imported or supplier-related feedback as verified purchase evidence."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Evaluate Shopify App Connectors with a Workflow Test",
+    "metaDescription": "Check Shopify app connectors by exact trigger, action and mapped data. Review missing records, duplicate events and target-system outcomes before relying on a flow.",
+    "answer": "Evaluate a Shopify app connector by checking the exact trigger, the exact action and the fields required to join them. Confirm installed-app and plan requirements, then inspect missing, ambiguous and repeated-event cases. Verify the outcome in the destination system; an integration logo, plausible diagram or accepted request does not prove the workflow completed its intended task.",
+    "takeaways": [
+      "Match connector fields by their meaning, not similar names.",
+      "Check the action’s actual effect and required inputs.",
+      "Observe the destination outcome and define who handles failures."
+    ],
+    "practicalHeading": "Build a small connector acceptance table",
+    "practicalParagraphs": [
+      "Hypothetical example: an incoming order-related reply should add a tag to the identified Shopify order. Create a table with the event field, destination input, expected tag and evidence of completion. Check that the order reference belongs to the intended order rather than selecting the customer’s latest order. A phone number alone cannot resolve every multi-order case.",
+      "Add rows for a missing reference, a repeated reply and a response that does not match the condition. Decide whether each stops or needs a person. Review the actual supported WhatFlow Business API event and Shopify Flow task rather than assuming a generic button event provides equivalent context. After a controlled check, inspect the target order and record the result separately from request acceptance."
+    ],
+    "checklist": [
+      "Inspect actual trigger fields in the installed connector.",
+      "Map every required action input to a supported source.",
+      "Check the target record and recovery behavior after review."
+    ],
+    "changes": [
+      "Added a connector acceptance table method.",
+      "Included multi-order ambiguity and destination outcome checks.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "evaluate-shopify-app-workflow-connectors",
+    "contextualLinks": [
+      {
+        "afterHeading": "Check the exact trigger",
+        "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+        "anchor": "order-aware reply workflows",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " when the destination action needs a specific order."
+      },
+      {
+        "afterHeading": "Observe the result in the target system",
+        "slug": "choose-first-automation-shopify-small-team",
+        "anchor": "first automation scope",
+        "sentenceBefore": "Keep the ",
+        "sentenceAfter": " small enough to inspect each outcome."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Check the exact trigger",
+        "url": "https://help.shopify.com/en/manual/shopify-flow",
+        "label": "Shopify Flow overview",
+        "sentenceBefore": "The ",
+        "sentenceAfter": " explains the workflow structure to check alongside installed app tasks."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Plan Helpful Cross-Sells for Shopify Customers",
+    "metaDescription": "Recommend Shopify products that solve a real next need. Verify compatibility, distinguish optional accessories and check margin alongside returns and questions.",
+    "answer": "Make a Shopify cross-sell useful by recommending an item with a verified relationship to the customer’s purchase and explaining why it helps. Distinguish essential components from optional convenience, choose a sensible moment and check the destination. Evaluate additional margin alongside returns and confused replies so a larger basket does not hide an unsuitable recommendation.",
+    "takeaways": [
+      "Verify compatibility for the actual product version.",
+      "Explain whether an accessory is necessary or optional.",
+      "Review returns and support questions alongside additional margin."
+    ],
+    "practicalHeading": "Use a compatibility map before writing the offer",
+    "practicalParagraphs": [
+      "Hypothetical example: a store sells two dispenser generations and their refill packs. Build a simple map from each dispenser version to its supported refill, then check the destination variant in the recommendation. The message should explain which version it suits and how the buyer can confirm their model. Do not infer compatibility from the shared product name alone.",
+      "Keep an owner for the map and review it whenever the catalog changes. If the buyer asks about an unknown version, pause the recommendation until someone can check it. WhatFlow Business API can provide the eligible WhatsApp message and shared reply route. Review sales of the recommended refill alongside compatibility questions and returns before extending the same rule to another product family."
+    ],
+    "checklist": [
+      "Confirm the original product version before selecting an accessory.",
+      "Label an optional benefit without implying a false requirement.",
+      "Test the destination variant and relevant market availability."
+    ],
+    "changes": [
+      "Added a version-specific refill compatibility map.",
+      "Connected recommendation evaluation to returns and support signals.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "helpful-cross-sell-product-recommendations",
+    "contextualLinks": [
+      {
+        "afterHeading": "Distinguish required and optional items",
+        "slug": "write-useful-product-faqs-shopify",
+        "anchor": "product compatibility FAQs",
+        "sentenceBefore": "Answer repeat fit questions in ",
+        "sentenceAfter": " before expanding the offer."
+      },
+      {
+        "afterHeading": "Choose a sensible moment",
+        "slug": "repeat-purchase-campaign-without-constant-discounts",
+        "anchor": "repeat-purchase campaign planning",
+        "sentenceBefore": "Include recommendations in ",
+        "sentenceAfter": " only when they address a credible next need."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Support questions through a real conversation",
+        "url": "https://business.whatsapp.com/policy",
+        "label": "WhatsApp Business messaging policy",
+        "sentenceBefore": "Check ",
+        "sentenceAfter": " before sending an outbound accessory offer."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Plan a Small Store Influencer Campaign on Shopify",
+    "metaDescription": "Plan a creator campaign around product fit, a clear deliverable and a tested Shopify destination. Include support readiness, costs and attribution limits.",
+    "answer": "Plan a small-store influencer campaign by matching the creator’s audience to a concrete product use case, agreeing the deliverable and preparing the destination before publication. Verify claims, offer conditions and reuse rights, then brief support on likely questions. Measure visits, qualifying purchases and total campaign costs with clear attribution limits rather than relying on reach alone.",
+    "takeaways": [
+      "Assess product and audience fit before follower count.",
+      "Test the specific destination and offer before publication.",
+      "Include samples, fees, discounts and support effort in costs."
+    ],
+    "practicalHeading": "Build a one-page creator campaign brief",
+    "practicalParagraphs": [
+      "Hypothetical example: a travel-accessory store works with a packing creator to demonstrate an organizer’s actual capacity. The brief names the product version, verified dimensions, intended use, destination page and publication window. Record any agreed reuse rights separately from delivery of the video file. The creator should have the facts needed to avoid implying that every bag or device will fit.",
+      "Open the destination on a phone and check stock, selected variant, campaign code and the questions raised by the demonstration. Give support the same brief before publication. WhatFlow Business API’s theme-fitting WhatsApp entry point can provide a conversation route for shoppers who need a detail confirmed. Afterward, compare the defined costs and attributed purchases while reading support themes that reveal missing or misleading information."
+    ],
+    "checklist": [
+      "Confirm the product version and demonstrable claims in the brief.",
+      "Test the exact mobile destination and campaign conditions.",
+      "Brief support and record total costs before assessing the result."
+    ],
+    "changes": [
+      "Added a concrete creator brief and destination review process.",
+      "Included reuse rights and support readiness in campaign planning.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "influencer-campaign-small-store-plan",
+    "contextualLinks": [
+      {
+        "afterHeading": "Check audience and product fit",
+        "slug": "define-store-audience-brand-promise",
+        "anchor": "store audience and promise",
+        "sentenceBefore": "Ground creator selection in the ",
+        "sentenceAfter": " the campaign can credibly serve."
+      },
+      {
+        "afterHeading": "Prepare the destination before publishing",
+        "slug": "shopify-product-page-trust-checklist",
+        "anchor": "product-page trust checks",
+        "sentenceBefore": "Run ",
+        "sentenceAfter": " before sending the creator’s audience to the page."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Agree on the intended deliverable",
+        "url": "https://judge.me/help/en/articles/8287316-guidelines-on-reviews-content",
+        "label": "Judge.me review content guidelines",
+        "sentenceBefore": "Review ",
+        "sentenceAfter": " before reusing review-style customer material in the campaign."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Write Shopify Loyalty Messages Customers Understand",
+    "metaDescription": "Explain loyalty points, tiers and redeemable rewards clearly. Check account data, conditions and destinations before adding Shopify WhatsApp notifications.",
+    "answer": "Write Shopify loyalty messages around the benefit a customer can actually use, distinguishing points earned, tier changes and available rewards. Confirm the loyalty provider’s current account data and redemption conditions, then link to the right destination. Coordinate existing notifications and prepare support for reward questions before adding a permitted WhatsApp message to the sequence.",
+    "takeaways": [
+      "Points, tier changes and redeemable rewards are different events.",
+      "Place important redemption conditions beside the benefit.",
+      "Use the loyalty provider as the source of account state."
+    ],
+    "practicalHeading": "Trace a reward from event to redemption",
+    "practicalParagraphs": [
+      "Hypothetical example: a shopper reaches a higher loyalty tier, but the program does not issue a discount until a separate points threshold is met. A tier-change message should explain the actual tier benefit rather than announce a voucher. Check which fields the installed connector supplies and whether the destination account page displays the current state consistently.",
+      "Keep a short test record containing the triggering event, customer identifier, message claim and expected redemption destination. Ask a colleague to explain the benefit using only the received message. If they need hidden conditions to understand it, revise the copy. WhatFlow Business API can supply the WhatsApp action and inbox, while the loyalty provider remains responsible for balance, reward eligibility and redemption rules."
+    ],
+    "checklist": [
+      "Name the specific loyalty event behind the message.",
+      "Verify the claim against current provider data.",
+      "Test the destination and explain any minimum spend or expiry."
+    ],
+    "changes": [
+      "Added a tier-versus-voucher example and redemption trace.",
+      "Made provider account state the source of the message claim.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "loyalty-messages-customer-value-shopify",
+    "contextualLinks": [
+      {
+        "afterHeading": "Coordinate with the loyalty app’s existing messages",
+        "slug": "evaluate-shopify-app-workflow-connectors",
+        "anchor": "connector data checks",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " to establish which reward fields can reach the message."
+      },
+      {
+        "afterHeading": "Prepare for ordinary reward questions",
+        "slug": "customer-referral-messages-shopify",
+        "anchor": "referral benefit wording",
+        "sentenceBefore": "Keep ",
+        "sentenceAfter": " equally clear when the programs overlap."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Coordinate with the loyalty app’s existing messages",
+        "url": "https://help.shopify.com/en/manual/shopify-flow",
+        "label": "Shopify Flow overview",
+        "sentenceBefore": "Use the ",
+        "sentenceAfter": " when checking how installed app tasks exchange event data."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Maintain a Shopify Blog Library with Clear Ownership",
+    "metaDescription": "Keep a Shopify blog useful with topic boundaries, owners, review triggers and relevant links. Check product claims and retire duplicate answers deliberately.",
+    "answer": "Maintain a Shopify blog by giving each article a distinct reader task, an owner and review triggers tied to product or policy changes. Check metadata, source links and commercial claims alongside the body. Improve, merge or retire overlapping answers deliberately, preserving useful destinations and keeping substantive update records instead of refreshing dates without meaningful work.",
+    "takeaways": [
+      "Assign a distinct reader task to every article.",
+      "Review product claims when the underlying capability changes.",
+      "Preserve useful destinations when merging or retiring content."
+    ],
+    "practicalHeading": "Use a maintenance register that leads to action",
+    "practicalParagraphs": [
+      "Hypothetical example: a store has separate articles about review timing, request wording and collection measurement. Keep their boundaries in a register with the main question, owner, key product claims and links to related posts. If the timing article starts duplicating the wording guide, move the detailed example to its proper destination and link to it from the schedule discussion.",
+      "Add a review trigger for any changing product claim, such as plan access or an installed integration. Record what was checked and the source used when an update is made. For WhatFlow Business API, keep all-feature plan access, no inbox seat fees and differing message allowances or rates consistent wherever they appear. The register should help an editor locate affected articles without rewriting the entire library on every review."
+    ],
+    "checklist": [
+      "Give each article one primary question and a named owner.",
+      "Identify claims affected by product and policy changes.",
+      "Check incoming links before consolidating an existing destination."
+    ],
+    "changes": [
+      "Added a practical article maintenance register.",
+      "Linked overlapping topic boundaries to specific review triggers.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "maintain-shopify-blog-content-library",
+    "contextualLinks": [
+      {
+        "afterHeading": "Define topic boundaries before expanding",
+        "slug": "shopify-content-plan-customer-questions",
+        "anchor": "customer-question content plan",
+        "sentenceBefore": "Use a ",
+        "sentenceAfter": " to define the boundaries of future articles."
+      },
+      {
+        "afterHeading": "Keep commercial claims consistent",
+        "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+        "anchor": "workflow cost explanations",
+        "sentenceBefore": "Review ",
+        "sentenceAfter": " whenever pricing or plan claims change."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Retire or merge pages deliberately",
+        "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "label": "Google Search: creating helpful content",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " to assess whether an older page still serves its reader’s task."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Migrate Shopify Reviews Without Losing Their Context",
+    "metaDescription": "Plan a Shopify review migration around product matching, source labels, media and working destinations. Check sample records before retiring the old tool.",
+    "answer": "Migrate Shopify reviews by preserving supported exports, matching products deliberately and checking how the destination handles sources, verification, media and merchant replies. Validate representative records on the storefront before completing the switch. Update message and printed destinations, and reconcile feedback collected during the transition so an accepted row count does not conceal incorrect associations or missing context.",
+    "takeaways": [
+      "Preserve review meaning alongside the export count.",
+      "Check product and variant associations on the destination storefront.",
+      "Update invitation links and reconcile cutover-period submissions."
+    ],
+    "practicalHeading": "Reconcile a small sample before switching providers",
+    "practicalParagraphs": [
+      "Hypothetical example: a migration file contains a current product review, an older variant review, one photo review and a store-level review. Build a sample ledger with the original record, destination record, product association, date, source label and media result. Check each independently; the same total count can conceal a review attached to the wrong item or a photo that no longer opens.",
+      "Set a cutover point and record submissions that arrive in either tool around that time. Update the supported review destinations used by WhatFlow Business API invitations and any printed QR routes before retiring the previous collection path. Keep the original supported export protected while discrepancies are investigated. Verification badges should follow the destination provider’s criteria rather than a desire to keep the old page looking unchanged."
+    ],
+    "checklist": [
+      "Check current, old-variant, media and store-review examples.",
+      "Compare source labels and working media after import.",
+      "Reconcile transition submissions and update customer-facing destinations."
+    ],
+    "changes": [
+      "Added a representative-record reconciliation ledger.",
+      "Included transition submissions and printed review destinations.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "migrate-review-app-preserve-customer-feedback",
+    "contextualLinks": [
+      {
+        "afterHeading": "Match products deliberately",
+        "slug": "product-variant-review-context",
+        "anchor": "variant review associations",
+        "sentenceBefore": "Review ",
+        "sentenceAfter": " before deciding where older product feedback belongs."
+      },
+      {
+        "afterHeading": "Test the storefront before switching fully",
+        "slug": "qr-code-review-requests-product-packaging",
+        "anchor": "printed review QR destinations",
+        "sentenceBefore": "Check ",
+        "sentenceAfter": " alongside app-generated invitation links."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Preserve source and verification distinctions",
+        "url": "https://judge.me/help/en/articles/8376284-verified-reviews",
+        "label": "Judge.me verified-review requirements",
+        "sentenceBefore": "Consult ",
+        "sentenceAfter": " when comparing the meaning of badges before and after import."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Check Review Widgets and WhatsApp Buttons on Mobile",
+    "metaDescription": "Audit Shopify mobile layouts for review widgets, WhatsApp buttons, cart drawers and sticky purchase bars. Test opened states, text size and reachable controls.",
+    "answer": "Place review widgets and WhatsApp buttons so shoppers can still read product information, select variants and reach purchase controls on a phone. Test the combined layout with cart drawers, banners, opened reviews and the keyboard. Check labels, close controls and larger text, then repeat the same mobile journey after theme or app changes.",
+    "takeaways": [
+      "Judge the combined mobile page, including sticky and floating elements.",
+      "Open every widget and overlay before approving its placement.",
+      "Repeat the same checks after changing the theme or apps."
+    ],
+    "practicalHeading": "Create a short collision test for a product page",
+    "practicalParagraphs": [
+      "Hypothetical example: a long product title pushes the variant selector lower while a sticky purchase bar, consent banner and chat button occupy the bottom of the screen. Start with the banner visible, select a variant, open the cart and then open a photo review. Check which controls overlap and whether every opened layer has a reachable close action.",
+      "Record the failing state, screen size and the element covering the control, then adjust the available theme or app settings and repeat that state. Include larger text and a visible keyboard where an input is present. WhatFlow Business API’s Shopify-oriented button styling can help the entry point fit the theme, but the placement still needs to work alongside the store’s other real components."
+    ],
+    "checklist": [
+      "Test long titles and products with several variants.",
+      "Open the cart, review media and chat entry point.",
+      "Check larger text, keyboard space and reachable close controls."
+    ],
+    "changes": [
+      "Added a specific multi-overlay mobile collision test.",
+      "Included opened states, larger text and keyboard conditions.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "mobile-store-review-widget-chat-button-layout",
+    "contextualLinks": [
+      {
+        "afterHeading": "Start with the main purchase controls",
+        "slug": "shopify-product-page-trust-checklist",
+        "anchor": "product-page trust checklist",
+        "sentenceBefore": "Use the ",
+        "sentenceAfter": " to keep layout changes tied to buyer decisions."
+      },
+      {
+        "afterHeading": "Give reviews enough context to be useful",
+        "slug": "test-social-proof-product-page",
+        "anchor": "social proof placement tests",
+        "sentenceBefore": "Plan ",
+        "sentenceAfter": " only after the mobile controls work reliably."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Give reviews enough context to be useful",
+        "url": "https://judge.me/help/en/articles/8415708-judge-me-widgets",
+        "label": "Judge.me widget reference",
+        "sentenceBefore": "Check the ",
+        "sentenceAfter": " for supported display options before adjusting review placement."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Plan Multilingual Shopify WhatsApp Customer Messages",
+    "metaDescription": "Match Shopify customer messages to language preferences, accurate translations and working destinations. Plan who handles replies before expanding language coverage.",
+    "answer": "Build multilingual Shopify messaging by choosing a supported language preference, reviewing the message’s meaning and checking the destination and reply process in that language. Verify units, offer conditions and template settings separately. Use a clear fallback when language data is missing, and update every affected translation when the source policy or product information changes.",
+    "takeaways": [
+      "A shipping country does not establish preferred language.",
+      "Review message, destination and support readiness together.",
+      "Maintain translation ownership when the source information changes."
+    ],
+    "practicalHeading": "Trace one translated journey from preference to reply",
+    "practicalParagraphs": [
+      "Hypothetical example: a store offers English and French support. A review invitation uses a recorded French preference, an eligible French WhatsApp template and the provider’s supported French form destination. Check all three settings separately rather than assuming one translated widget controls the entire route. Where the preference is absent, follow the documented fallback instead of guessing from the customer’s name.",
+      "Test a long product name, a missing personal field and a date near a month boundary so units and formatting receive proper review. Ask the designated colleague to handle a sample product question in the same language. WhatFlow Business API’s shared inbox can keep that conversation accessible without seat fees, but the store should describe its actual language coverage and response expectations honestly."
+    ],
+    "checklist": [
+      "Document the language source and missing-data fallback.",
+      "Review the actual template, form destination and offer conditions.",
+      "Assign an owner for each translation and reply language."
+    ],
+    "changes": [
+      "Added a preference-to-template-to-form language trace.",
+      "Included translation edge cases and a staffed reply check.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "multilingual-customer-messaging-shopify",
+    "contextualLinks": [
+      {
+        "afterHeading": "Match the message to the destination",
+        "slug": "review-request-messages-examples-whatsapp-email",
+        "anchor": "review invitation wording",
+        "sentenceBefore": "Check the meaning of ",
+        "sentenceAfter": " before adapting it across languages."
+      },
+      {
+        "afterHeading": "Plan the reply before promising language support",
+        "slug": "shared-team-inbox-small-shopify-business",
+        "anchor": "inbox ownership process",
+        "sentenceBefore": "Include language handoffs in the ",
+        "sentenceAfter": " so translated replies have an owner."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Test edge cases with controlled examples",
+        "url": "https://business.whatsapp.com/policy",
+        "label": "WhatsApp Business messaging policy",
+        "sentenceBefore": "Consult ",
+        "sentenceAfter": " when checking the format and eligibility of translated outbound messages."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Collect Photo and Video Reviews with Clear Permission",
+    "metaDescription": "Request useful customer photo and video reviews with optional uploads, correct product context and clear reuse permission. Keep support attachments separate.",
+    "answer": "Collect useful photo and video reviews by requesting a specific product detail, keeping upload optional and preserving the correct product association. Explain the intended use and establish appropriate reuse permission before moving material into other marketing placements. Check private details and the mobile upload path, and keep support attachments separate from public review submissions.",
+    "takeaways": [
+      "Ask for useful product context without scripting praise.",
+      "A support attachment is not automatically a public review asset.",
+      "Check the intended reuse, permission record and final presentation."
+    ],
+    "practicalHeading": "Keep the submission and reuse decision together",
+    "practicalParagraphs": [
+      "Hypothetical example: a customer submits a photo showing what fits inside an organizer. The review provider associates it with the product. If the store wants to use that image in a campaign, record the proposed placement, caption, permission status and approved asset separately from the original submission. Check the background for address labels or personal documents before preparing the final version.",
+      "A similar image arriving through WhatsApp support may help answer a question without being cleared for publication. WhatFlow Business API can receive that conversation media, but the store still needs the appropriate collection and permission process for public use. Keep a clear decision record so a later colleague can tell why one image is available for the campaign while another remains private support evidence."
+    ],
+    "checklist": [
+      "Ask for one useful visual detail and allow text-only feedback.",
+      "Preserve the product association and original submission context.",
+      "Check permission, private details and caption meaning before reuse."
+    ],
+    "changes": [
+      "Added a submission-versus-campaign reuse decision record.",
+      "Kept private support media separate from public review assets.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "photo-video-reviews-customer-permission",
+    "contextualLinks": [
+      {
+        "afterHeading": "Preserve the product and experience context",
+        "slug": "reuse-customer-reviews-social-media",
+        "anchor": "reusing reviews on social media",
+        "sentenceBefore": "Use the same permission checks when ",
+        "sentenceAfter": " in another placement."
+      },
+      {
+        "afterHeading": "Design the upload experience for a phone",
+        "slug": "mobile-store-review-widget-chat-button-layout",
+        "anchor": "mobile widget checks",
+        "sentenceBefore": "Include the upload journey in ",
+        "sentenceAfter": " so optional media remains manageable."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Design the upload experience for a phone",
+        "url": "https://judge.me/help/en/articles/11419250-customizing-your-review-form",
+        "label": "Customizing the review form",
+        "sentenceBefore": "Consult ",
+        "sentenceAfter": " for the provider’s supported photo and video prompts."
+      }
+    ]
+  },
+  {
+    "metaTitle": "Map a Clear Shopify Post-Purchase Customer Journey",
+    "metaDescription": "Build a Shopify post-purchase journey around reliable events, useful messages and clear owners. Coordinate review requests, replies and purchase follow-ups.",
+    "answer": "Build a Shopify post-purchase journey by mapping reliable order and shipment events, giving each message one useful purpose and assigning an owner to every stage. Include replies, missing events and exceptions in the design. Coordinate notifications across apps, then distinguish essential service information from later marketing that requires its own relevance, permissions and stopping rules.",
+    "takeaways": [
+      "Map known events before writing order and delivery messages.",
+      "Give each contact a purpose and each exception an owner.",
+      "Review the complete sequence across apps and channels."
+    ],
+    "practicalHeading": "Walk one order through five customer questions",
+    "practicalParagraphs": [
+      "Hypothetical example: a customer buys an item requiring setup. Map five questions: was the purchase recorded, where is the parcel, how is the item assembled, where can help be requested and when can feedback be shared? For each question, name the reliable event, message owner and destination. Keep the setup guide separate from the invitation to review the product.",
+      "Add a missing-delivery-event branch and a split-shipment branch before expanding the journey. An appropriate manual check may be sufficient when the systems cannot establish the next state. WhatFlow Business API can support WhatsApp messages and shared replies within the Shopify process, while compatible Shopify Flow tasks connect supported stages. Review one complete customer timeline across all tools before adding a repeat-purchase offer."
+    ],
+    "checklist": [
+      "List the customer question answered by each message.",
+      "Assign the event source, tool owner and exception owner.",
+      "Review split shipments and missing events across channels."
+    ],
+    "changes": [
+      "Added a five-question order journey and exception review.",
+      "Made message ownership and reliable event sources explicit.",
+      "Added a direct answer, specific takeaways and an action checklist.",
+      "Added contextual internal links and an inline existing-source reference."
+    ],
+    "slug": "post-purchase-customer-journey-shopify",
+    "contextualLinks": [
+      {
+        "afterHeading": "Map the events before writing the messages",
+        "slug": "coordinate-email-sms-whatsapp-customer-messages",
+        "anchor": "cross-channel message coordination",
+        "sentenceBefore": "Use ",
+        "sentenceAfter": " when mapping which tool owns each contact."
+      },
+      {
+        "afterHeading": "Respect the transition from service to marketing",
+        "slug": "best-time-review-request-after-delivery",
+        "anchor": "product review request timing",
+        "sentenceBefore": "Choose ",
+        "sentenceAfter": " after the buyer can meaningfully assess the item."
+      }
+    ],
+    "sourceLinks": [
+      {
+        "afterHeading": "Map the events before writing the messages",
+        "url": "https://help.shopify.com/en/manual/shopify-flow",
+        "label": "Shopify Flow overview",
+        "sentenceBefore": "The ",
+        "sentenceAfter": " helps identify the event, condition and action structure for supported stages."
+      }
+    ]
+  }
+]

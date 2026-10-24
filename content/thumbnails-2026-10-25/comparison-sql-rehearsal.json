@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-24T23:35:08.093614+00:00",
+  "database": "isolated in-memory SQLite",
+  "inputs": {
+    "sql": {
+      "path": "/tmp/whatflow-thumbnail-comparisons.sql",
+      "sha256": "1f3a8c94e33bc23884afa8d91754c432806304d20163ada137fdc4c0b5cf923d"
+    },
+    "backup": {
+      "path": "/tmp/whatflow-before-thumbnails-comparisons.sql",
+      "sha256": "aa5008f9f157d556661cdeef2fba5b7b0a5258f291723abf1d501c5ad2df915d"
+    },
+    "schema": {
+      "path": "/Users/safwan/ShopifyApps/whatflowApps/whatflow-web/scripts/comparisons-schema.sql",
+      "sha256": "9f5334025ba888117d29d82b7bdf3b7c1d4242273e0d3a7ef48ba778a51cf59f"
+    },
+    "candidates": {
+      "path": "content/comparisons/whatsapp-first-2026-10-25/candidate-documents.json",
+      "sha256": "ec22e1700d3e5d0e564138cbca0f4661fc10b7947bfb36c1c795a6578303046c"
+    }
+  },
+  "firstApply": {
+    "phase": "first apply",
+    "comparisons": 106,
+    "historicalVersionsPreserved": 325,
+    "newVersions": 106,
+    "totalVersions": 431,
+    "arrayCellsChecked": 3279,
+    "foreignKeyViolations": 0,
+    "latestPublishedSnapshotsMatched": 106
+  },
+  "repeatApply": {
+    "phase": "repeat apply",
+    "comparisons": 106,
+    "historicalVersionsPreserved": 325,
+    "newVersions": 106,
+    "totalVersions": 431,
+    "arrayCellsChecked": 3279,
+    "foreignKeyViolations": 0,
+    "latestPublishedSnapshotsMatched": 106
+  },
+  "idempotent": true,
+  "sqlScope": {
+    "writtenTables": [
+      "_comparisons_v",
+      "_comparisons_v_rels",
+      "_comparisons_v_version_faqs",
+      "_comparisons_v_version_feature_table",
+      "_comparisons_v_version_sources",
+      "comparisons",
+      "comparisons_feature_table"
+    ],
+    "rejectedOperations": [],
+    "schemaWritesAllowed": false,
+    "nonComparisonWritesAllowed": false
+  },
+  "protected": [
+    "original IDs/slugs/publication and creation dates/authors/status",
+    "all original comparison relations",
+    "all historical version content and metadata except latest flags",
+    "all historical version child arrays and relations"
+  ]
+}

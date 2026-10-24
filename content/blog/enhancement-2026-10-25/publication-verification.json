@@ -1,0 +1,475 @@
+{
+  "checkedAt": "2026-10-24T22:10:19.021Z",
+  "posts": 58,
+  "comparisons": 106,
+  "passed": 58,
+  "coverAssets": 11,
+  "sitemap": true,
+  "rss": true,
+  "results": [
+    {
+      "slug": "influencer-campaign-small-store-plan",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "product-variant-review-context",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "choose-ecommerce-platform-customer-workflows",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "evaluate-shopify-app-workflow-connectors",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "define-store-audience-brand-promise",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "dropshipping-customer-trust-communication",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "helpful-cross-sell-product-recommendations",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "small-shopify-store-metrics-review-routine",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "ai-support-drafts-small-shopify-team",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "choose-review-app-and-messaging-app-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "migrate-review-app-preserve-customer-feedback",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "multilingual-customer-messaging-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "reuse-customer-reviews-social-media",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "customer-referral-messages-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "loyalty-messages-customer-value-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "qr-code-review-requests-product-packaging",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "maintain-shopify-blog-content-library",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "customer-review-insights-product-copy",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "write-useful-product-faqs-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "product-review-schema-rich-results-explained",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "prepare-customer-support-black-friday-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "shopify-content-plan-customer-questions",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "choose-first-automation-shopify-small-team",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "customer-service-saved-replies-without-robotic-tone",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "shared-team-inbox-small-shopify-business",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "whatsapp-quick-reply-buttons-customer-choices",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "whatsapp-customer-optouts-store-process",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "whatsapp-campaign-preflight-checklist",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "whatsapp-message-budget-cost-per-outcome",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "whatsapp-marketing-plan-small-shopify-store",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "customer-feedback-loop-product-improvements",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "coordinate-email-sms-whatsapp-customer-messages",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "customer-winback-campaign-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "replenishment-reminders-shopify-consumables",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "repeat-purchase-campaign-without-constant-discounts",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "post-purchase-customer-journey-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "test-social-proof-product-page",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "mobile-store-review-widget-chat-button-layout",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "product-questions-whatsapp-prepurchase-support",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "reduce-cart-abandonment-with-clear-information",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "abandoned-checkout-whatsapp-conversation",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "shopify-product-page-trust-checklist",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "review-moderation-policy-small-store",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "review-collection-rate-measurement-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "product-reviews-vs-store-reviews",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "photo-video-reviews-customer-permission",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "respond-negative-product-reviews-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "review-request-messages-examples-whatsapp-email",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "best-time-review-request-after-delivery",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "collect-first-product-reviews-shopify",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    },
+    {
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "nativeCMS": true,
+      "metadata": true,
+      "schema": true,
+      "publicationDatePreserved": true,
+      "headings": true
+    }
+  ]
+}

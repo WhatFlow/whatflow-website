@@ -1,0 +1,126 @@
+---
+title: "WhatFlow vs Saysimple: Shopify features, inbox and pricing"
+description: "Compare WhatFlow with Saysimple’s channel packages. Review conversation history, included users and the modules needed for flows and broadcasts."
+date: "2026-10-24"
+lastUpdated: "2026-10-24T23:12:36.809Z"
+author: "Safwan Adnan"
+authorRole: "Co-founder and CEO of WhatFlow"
+canonical: "https://whatflow.tech/compare/whatflow-vs-saysimple"
+slug: "whatflow-vs-saysimple"
+site_name: "WhatFlow"
+lang: "en"
+og_image_alt: "WhatFlow template editor in the Shopify demo store with mapped checkout fields and a sample WhatsApp preview"
+category: "whatsapp"
+---
+
+## The short answer
+
+WhatFlow is the stronger starting point for a Shopify team that wants WhatsApp automations and shared replies without selecting separate feature modules. All features remain available across plans, including Free, and inbox participation carries no seat fee. Consider Saysimple for a defined multichannel service workspace whose history, modules and packaged allowances are needed. For ordinary Shopify messaging, start with the work WhatFlow already packages and let sending needs determine the plan.
+
+Publisher disclosure: this comparison is written by WhatFlow. Competitor capabilities are based on linked public documentation. Screenshots show our demo store and examples are illustrative.
+
+Real WhatFlow demo-store screenshot. The editor maps Shopify data into a WhatsApp template; preview values are samples, not customer records or performance results.
+
+## WhatFlow and Saysimple at a glance
+
+| Consideration | WhatFlow | Saysimple |
+|---|---|---|
+| What the product is built around | Shopify-connected WhatsApp automation, native-feeling extensions and a team inbox | Saysimple offers multichannel conversations and WhatsApp with packaged user, contact and number allowances. Its modular structure makes it important to identify which automation and integration capabilities belong to the chosen plan. |
+| Pricing and billing units | Free plan; paid plans from $4.99. Allowances and overage rates vary. Meta fees are separate where applicable. | Saysimple displays Grow at €139 monthly with three users, 2,000 contacts and one WhatsApp number, and Scale at €349 with five users and 5,000 contacts. Annual equivalents are lower. Check add-ons such as flow building and broadcasts, and the edition needed for API or webhook access. No Meta markup does not mean no software or module charge. |
+| Feature access | All features on every plan, including Free. Plans differ by messaging allowances and rates. | Flow Builder is listed as an add-on or included with Scale; broadcasting is separately priced. Scope API and webhook actions against the actual proposed module. |
+| Team access | No seat fees for the team inbox | Grow lists three users and Scale five, with different contact/channel/history allowances. Confirm expansion terms and billing period instead of treating the package as unlimited team access. |
+| Storefront entry point | Free-forever WhatsApp buttons that can fit the Shopify theme | Confirm the storefront experience and any separate widget or connector requirements. |
+
+## Key takeaways
+
+- WhatFlow keeps feature access independent of the message tier.
+- Add colleagues to the WhatFlow inbox without seat fees.
+- Scope Saysimple’s history and modules only where the service process needs them.
+
+## The decision behind this comparison
+
+Saysimple offers multichannel conversations and WhatsApp with packaged user, contact and number allowances. Its modular structure makes it important to identify which automation and integration capabilities belong to the chosen plan.
+
+For an older customer case that needs conversation history, distinguish [inbox versus helpdesk responsibilities](https://whatflow.tech/compare/whatsapp-inbox-vs-helpdesk-tickets) before deciding which service system the store needs.
+
+## Pricing: what belongs in the comparison
+
+Saysimple displays Grow at €139 monthly with three users, 2,000 contacts and one WhatsApp number, and Scale at €349 with five users and 5,000 contacts. Annual equivalents are lower. Check add-ons such as flow building and broadcasts, and the edition needed for API or webhook access. No Meta markup does not mean no software or module charge.
+
+Check the [Saysimple official product and pricing information](https://www.saysimple.com/pricing) for the applicable package and billing term; a product capability does not establish that every plan includes it.
+
+## A realistic Shopify scenario
+
+A merchant fits the initial contact allowance but later needs a workflow integration. Price that next operational requirement before committing to the cheapest visible package.
+
+## Why WhatFlow is a strong fit for store operations
+
+WhatFlow keeps features available across all message plans and charges no seat fees. A store can adopt additional Shopify workflows without moving to another edition just to unlock access.
+
+## Feature access and the people who use the inbox
+
+The storefront WhatsApp buttons remain free forever and can fit the Shopify theme and design. The button is an entry point, not a promise of unlimited free automated sends. Automated messaging still follows the selected allowance and applicable delivery rules. Keeping those two costs separate makes the free offering easier to understand.
+
+Compare [inbox access and seat costs](https://whatflow.tech/compare/no-seat-fee-whatsapp-inbox-vs-per-seat) using the permissions each colleague actually needs.
+
+## A worked WhatFlow cost example
+
+For a concrete baseline, consider 20,000 sent messages in a month. Among the listed WhatFlow plans, Growth produces an app-side cost of $29.00 at that volume. This calculation uses its $29.00 base, 20,000 included sends and $0.0025 rate above the allowance. It assumes a single monthly allowance and does not include tax or Meta delivery charges. It is a planning example, not a combined quote for every possible message category or destination.
+
+Keep three lines in the budget: the application, applicable WhatsApp delivery fees, and any separate implementation or services. Meta pricing varies by destination and category, and some service or qualifying utility messages have different treatment. An app allowance does not override Meta’s rules. The current installation terms and rate pages should be checked before committing a campaign budget.
+
+## Check a return case against conversation-history limits
+
+Use a hypothetical customer returning long after an initial conversation. Ask the proposed Saysimple package to retrieve the earlier discussion and identify whether its history allowance fits the store’s actual support period. Grow and Scale advertise different retention windows, so a shared-inbox demo alone does not answer this requirement. Then identify any Flow Builder or broadcast module used to continue the process and include that scope in the quote. Compare WhatFlow for the Shopify conversation while checking its actual required retention behavior too. Record the old case, the new message and the next owner; historical context matters only if the team can still access it when needed.
+
+Prepare the operating process with [shared inbox ownership](https://whatflow.tech/blog/shared-team-inbox-small-shopify-business) so the trial checks the work your team will maintain.
+
+For a related decision, compare [WebEngage](https://whatflow.tech/compare/whatflow-vs-webengage): Compare WhatFlow and WebEngage for Shopify: pricing, team costs, WhatsApp workflows, feature access and the tradeoffs that matter in daily use.
+
+## Why WhatFlow is my Shopify recommendation
+
+Choose the Shopify workflow and its next responsible colleague before choosing a larger channel bundle. WhatFlow provides a focused foundation for that work. Retain a broader service platform where its documented history or channel requirements matter, after confirming those requirements rather than assuming WhatFlow replaces them.
+
+## Before you choose a platform
+
+- Compare history retention with the service period.
+- Identify included versus additional automation modules.
+- A channel allowance does not include every workflow module.
+
+## About the author
+
+Safwan Adnan is co-founder and CEO of WhatFlow. This comparison explains our product’s fit and the alternative’s tradeoffs. [About WhatFlow](https://whatflow.tech/about) · [Contact the team](https://whatflow.tech/contact) with a question or correction.
+
+## Questions worth asking
+
+### Is WhatFlow a practical Saysimple alternative for Shopify?
+
+WhatFlow keeps features available across all message plans and charges no seat fees. A store can adopt additional Shopify workflows without moving to another edition just to unlock access. Saysimple can make sense when its broader channel workspace and packaged allowances match the business.
+
+### How should I compare Saysimple pricing with WhatFlow?
+
+Saysimple displays Grow at €139 monthly with three users, 2,000 contacts and one WhatsApp number, and Scale at €349 with five users and 5,000 contacts. Annual equivalents are lower. Check add-ons such as flow building and broadcasts, and the edition needed for API or webhook access. No Meta markup does not mean no software or module charge.
+
+### Does WhatFlow charge per inbox seat?
+
+No. WhatFlow’s team inbox has no seat fees. Adding colleagues does not create a per-user subscription; the messaging plan and actual usage still apply.
+
+### Are WhatFlow features restricted on the free plan?
+
+No. All plans have the same feature access. Message allowances and rates differ, and applicable Meta delivery charges are separate. Theme-matched WhatsApp buttons are free forever.
+
+## Sources and methodology
+
+Vendor pages describe advertised capabilities, not independent performance tests. Confirm current pricing, allowances and availability with the provider. Sources checked 2026-10-24.
+
+- [Saysimple: official product and commercial information](https://www.saysimple.com/pricing): Primary source for the alternative’s advertised capabilities and the stated commercial terms. Public pages are not independent performance tests.
+- [WhatFlow plans and Shopify integrations](https://apps.shopify.com/whatflow-official-api): Published subscription prices, included sends, usage tiers and advertised Shopify workflows. No-seat-fee and all-features policies are confirmed by WhatFlow.
+- [WhatsApp Business Platform pricing](https://business.whatsapp.com/products/platform-pricing): Delivery pricing depends on the destination and message category; eligibility rules and current rates must be checked separately from app costs.
+
+## Give your Shopify customers a useful WhatsApp conversation
+
+Start free with every feature available, a theme-matched WhatsApp button and a team inbox without seat fees. Choose a message plan as your sending needs grow.
+
+[Try WhatFlow on Shopify](https://apps.shopify.com/whatflow-official-api)
+
+[Current WhatFlow pricing](https://whatflow.tech/pricing) · [WhatFlow features](https://whatflow.tech/features)

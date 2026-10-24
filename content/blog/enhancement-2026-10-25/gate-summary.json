@@ -1,0 +1,702 @@
+{
+  "posts": 58,
+  "allFiveGatesPassed": true,
+  "results": [
+    {
+      "slug": "abandoned-checkout-whatsapp-conversation",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/abandoned-checkout-whatsapp-conversation"
+    },
+    {
+      "slug": "ai-support-drafts-small-shopify-team",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/ai-support-drafts-small-shopify-team"
+    },
+    {
+      "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/audit-shopify-app-costs-feature-gates-seat-fees"
+    },
+    {
+      "slug": "best-time-review-request-after-delivery",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 95,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/best-time-review-request-after-delivery"
+    },
+    {
+      "slug": "choose-ecommerce-platform-customer-workflows",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 92,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/choose-ecommerce-platform-customer-workflows"
+    },
+    {
+      "slug": "choose-first-automation-shopify-small-team",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 96,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/choose-first-automation-shopify-small-team"
+    },
+    {
+      "slug": "choose-review-app-and-messaging-app-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 95,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/choose-review-app-and-messaging-app-shopify"
+    },
+    {
+      "slug": "collect-first-product-reviews-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 96,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/collect-first-product-reviews-shopify"
+    },
+    {
+      "slug": "coordinate-email-sms-whatsapp-customer-messages",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 95,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/coordinate-email-sms-whatsapp-customer-messages"
+    },
+    {
+      "slug": "customer-feedback-loop-product-improvements",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/customer-feedback-loop-product-improvements"
+    },
+    {
+      "slug": "customer-referral-messages-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/customer-referral-messages-shopify"
+    },
+    {
+      "slug": "customer-review-insights-product-copy",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 95,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/customer-review-insights-product-copy"
+    },
+    {
+      "slug": "customer-service-saved-replies-without-robotic-tone",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/customer-service-saved-replies-without-robotic-tone"
+    },
+    {
+      "slug": "customer-winback-campaign-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 95,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/customer-winback-campaign-shopify"
+    },
+    {
+      "slug": "define-store-audience-brand-promise",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 91,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/define-store-audience-brand-promise"
+    },
+    {
+      "slug": "dropshipping-customer-trust-communication",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 92,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/dropshipping-customer-trust-communication"
+    },
+    {
+      "slug": "evaluate-shopify-app-workflow-connectors",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/evaluate-shopify-app-workflow-connectors"
+    },
+    {
+      "slug": "helpful-cross-sell-product-recommendations",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 91,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/helpful-cross-sell-product-recommendations"
+    },
+    {
+      "slug": "influencer-campaign-small-store-plan",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 91,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/influencer-campaign-small-store-plan"
+    },
+    {
+      "slug": "loyalty-messages-customer-value-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 92,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/loyalty-messages-customer-value-shopify"
+    },
+    {
+      "slug": "maintain-shopify-blog-content-library",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 92,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/maintain-shopify-blog-content-library"
+    },
+    {
+      "slug": "migrate-review-app-preserve-customer-feedback",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/migrate-review-app-preserve-customer-feedback"
+    },
+    {
+      "slug": "mobile-store-review-widget-chat-button-layout",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/mobile-store-review-widget-chat-button-layout"
+    },
+    {
+      "slug": "multilingual-customer-messaging-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 92,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/multilingual-customer-messaging-shopify"
+    },
+    {
+      "slug": "photo-video-reviews-customer-permission",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/photo-video-reviews-customer-permission"
+    },
+    {
+      "slug": "post-purchase-customer-journey-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/post-purchase-customer-journey-shopify"
+    },
+    {
+      "slug": "prepare-customer-support-black-friday-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/prepare-customer-support-black-friday-shopify"
+    },
+    {
+      "slug": "product-questions-whatsapp-prepurchase-support",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/product-questions-whatsapp-prepurchase-support"
+    },
+    {
+      "slug": "product-review-schema-rich-results-explained",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/product-review-schema-rich-results-explained"
+    },
+    {
+      "slug": "product-reviews-vs-store-reviews",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/product-reviews-vs-store-reviews"
+    },
+    {
+      "slug": "product-variant-review-context",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/product-variant-review-context"
+    },
+    {
+      "slug": "qr-code-review-requests-product-packaging",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/qr-code-review-requests-product-packaging"
+    },
+    {
+      "slug": "reduce-cart-abandonment-with-clear-information",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/reduce-cart-abandonment-with-clear-information"
+    },
+    {
+      "slug": "repeat-purchase-campaign-without-constant-discounts",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/repeat-purchase-campaign-without-constant-discounts"
+    },
+    {
+      "slug": "replenishment-reminders-shopify-consumables",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/replenishment-reminders-shopify-consumables"
+    },
+    {
+      "slug": "respond-negative-product-reviews-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/respond-negative-product-reviews-shopify"
+    },
+    {
+      "slug": "reuse-customer-reviews-social-media",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/reuse-customer-reviews-social-media"
+    },
+    {
+      "slug": "review-collection-rate-measurement-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/review-collection-rate-measurement-shopify"
+    },
+    {
+      "slug": "review-moderation-policy-small-store",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/review-moderation-policy-small-store"
+    },
+    {
+      "slug": "review-request-messages-examples-whatsapp-email",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/review-request-messages-examples-whatsapp-email"
+    },
+    {
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/send-whatsapp-templates-shopify-flow"
+    },
+    {
+      "slug": "shared-team-inbox-small-shopify-business",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/shared-team-inbox-small-shopify-business"
+    },
+    {
+      "slug": "shopify-content-plan-customer-questions",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/shopify-content-plan-customer-questions"
+    },
+    {
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/shopify-flow-whatsapp-app-integrations"
+    },
+    {
+      "slug": "shopify-product-page-trust-checklist",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 92,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/shopify-product-page-trust-checklist"
+    },
+    {
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/sidekick-shopify-flow-whatsapp-workflows"
+    },
+    {
+      "slug": "small-shopify-store-metrics-review-routine",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/small-shopify-store-metrics-review-routine"
+    },
+    {
+      "slug": "test-social-proof-product-page",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/test-social-proof-product-page"
+    },
+    {
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/whatflow-shopify-flow-whatsapp-automation-guide"
+    },
+    {
+      "slug": "whatsapp-campaign-preflight-checklist",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 92,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/whatsapp-campaign-preflight-checklist"
+    },
+    {
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/whatsapp-campaign-segmentation-shopify"
+    },
+    {
+      "slug": "whatsapp-customer-optouts-store-process",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 92,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/whatsapp-customer-optouts-store-process"
+    },
+    {
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/whatsapp-incoming-messages-shopify-flow-routing"
+    },
+    {
+      "slug": "whatsapp-marketing-plan-small-shopify-store",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/whatsapp-marketing-plan-small-shopify-store"
+    },
+    {
+      "slug": "whatsapp-message-budget-cost-per-outcome",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/whatsapp-message-budget-cost-per-outcome"
+    },
+    {
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 94,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/whatsapp-order-replies-shopify-flow-cod-confirmation"
+    },
+    {
+      "slug": "whatsapp-quick-reply-buttons-customer-choices",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/whatsapp-quick-reply-buttons-customer-choices"
+    },
+    {
+      "slug": "write-useful-product-faqs-shopify",
+      "passedGates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reviewScore": 93,
+      "artifactDirectory": "/tmp/whatflow-blog-delivery/candidate/write-useful-product-faqs-shopify"
+    }
+  ]
+}

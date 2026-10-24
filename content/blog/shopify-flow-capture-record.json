@@ -1,0 +1,92 @@
+{
+  "capturedOn": "2026-10-25",
+  "store": "WhatFlow Demo Store",
+  "browser": "Existing logged-in Chrome session",
+  "workflowState": "Inactive; no messages sent; no orders changed",
+  "workflows": [
+    {
+      "name": "WhatFlow demo \u2014 COD reply tagging (inactive)",
+      "id": "01a16fc2-de20-7a26-88fe-c9a33d46dc9a"
+    },
+    {
+      "name": "WhatFlow demo \u2014 delivery information",
+      "id": "01a16fc7-33cc-7e29-ada1-dc9fe2ca5804"
+    },
+    {
+      "name": "WhatFlow demo \u2014 template mapping (inactive)",
+      "id": "01a16fc8-61b1-7032-a4e3-fc6b2a03ea6e"
+    }
+  ],
+  "screenshots": [
+    {
+      "filename": "whatflow-flow-actions-more.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 115493,
+      "sha256": "6151348df73a3fdf4fba284354b55321dade0c37174d0e345503baee6ed5aa7f"
+    },
+    {
+      "filename": "whatflow-flow-actions.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 115834,
+      "sha256": "0775a4ee4bc4bf8ebb748ce03f8b7e7336c6d4ff9183a898e3386c6f99959576"
+    },
+    {
+      "filename": "whatflow-flow-ecosystem.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 67344,
+      "sha256": "5d4b7f0cd2fbb32589a84af08e5762ce570a87dfbf066d5f5489db896ee8332e"
+    },
+    {
+      "filename": "whatflow-flow-order-reply.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 74300,
+      "sha256": "780ace337845c2a3f77387ca7ea1a0f6df40385ac8ead8493869f228d53f5a2d"
+    },
+    {
+      "filename": "whatflow-flow-sidekick.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 116372,
+      "sha256": "e8d214ee8c652452797f94c8621f24b8242bd1d4160b191a527d97ab703e9447"
+    },
+    {
+      "filename": "whatflow-flow-template-mapping.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 99355,
+      "sha256": "f70e82b6766217b98097a0984ff9be69a15b75fb6865611cc00fc7f7dc7e6fe7"
+    },
+    {
+      "filename": "whatflow-flow-template-variables.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 107364,
+      "sha256": "aa5b408942d907e800149815d46ecbd2af57e772a19ad98a3686ebaad620f7d5"
+    },
+    {
+      "filename": "whatflow-flow-text-fields.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 105660,
+      "sha256": "a5b769f0b716f082472a60d359513a3ceb6272e29d777ee540bfec30eca83a76"
+    },
+    {
+      "filename": "whatflow-flow-text-routing.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 67334,
+      "sha256": "67ceee40121975a761891add99f3ec0193aa0ab9333ca1a58f27d0de4fd0bebe"
+    },
+    {
+      "filename": "whatflow-flow-triggers.jpg",
+      "width": 1512,
+      "height": 787,
+      "bytes": 88477,
+      "sha256": "43cc9d04408c33dfb9b885ba9a70f14bc592a0b385341f9d32dde6ecda00970b"
+    }
+  ]
+}

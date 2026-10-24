@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-24T22:36:40.975428+00:00",
+  "database": "isolated in-memory SQLite",
+  "inputs": {
+    "sql": {
+      "path": "/tmp/whatflow-comparison-enhancements.sql",
+      "sha256": "899e647022e61971097a3daa949d71a837fd8015ef95b31a0f49c43c8084f3ec"
+    },
+    "backup": {
+      "path": "/tmp/whatflow-before-comparison-enhancement.sql",
+      "sha256": "e19f5ef50e84e82e8f31a075ab2aaafadb4e3ea6576b75affcc60d9821deaf9c"
+    },
+    "schema": {
+      "path": "/Users/safwan/ShopifyApps/whatflowApps/whatflow-web/scripts/comparisons-schema.sql",
+      "sha256": "9f5334025ba888117d29d82b7bdf3b7c1d4242273e0d3a7ef48ba778a51cf59f"
+    },
+    "candidates": {
+      "path": "/Users/safwan/ShopifyApps/whatflowApps/whatflow-web/content/comparisons/enhancement-2026-10-25/candidate-documents.json",
+      "sha256": "0d02c21e61028cdf1d27f614e1300df4f837549df053bdaea48714e2e4c30b85"
+    }
+  },
+  "firstApply": {
+    "phase": "first apply",
+    "comparisons": 106,
+    "historicalVersionsPreserved": 219,
+    "newVersions": 106,
+    "totalVersions": 325,
+    "arrayCellsChecked": 3279,
+    "foreignKeyViolations": 0,
+    "latestPublishedSnapshotsMatched": 106
+  },
+  "repeatApply": {
+    "phase": "repeat apply",
+    "comparisons": 106,
+    "historicalVersionsPreserved": 219,
+    "newVersions": 106,
+    "totalVersions": 325,
+    "arrayCellsChecked": 3279,
+    "foreignKeyViolations": 0,
+    "latestPublishedSnapshotsMatched": 106
+  },
+  "idempotent": true,
+  "sqlScope": {
+    "writtenTables": [
+      "_comparisons_v",
+      "_comparisons_v_rels",
+      "_comparisons_v_version_faqs",
+      "_comparisons_v_version_feature_table",
+      "_comparisons_v_version_sources",
+      "comparisons",
+      "comparisons_faqs",
+      "comparisons_feature_table",
+      "comparisons_sources"
+    ],
+    "rejectedOperations": [],
+    "schemaWritesAllowed": false,
+    "nonComparisonWritesAllowed": false
+  },
+  "protected": [
+    "original IDs/slugs/publication and creation dates/authors/status",
+    "all original comparison relations",
+    "all historical version content and metadata except latest flags",
+    "all historical version child arrays and relations"
+  ]
+}

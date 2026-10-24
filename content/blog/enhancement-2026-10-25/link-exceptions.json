@@ -1,0 +1,9 @@
+{
+  "exactUrls": [
+    "https://help.shopify.com/en/manual/shopify-flow",
+    "https://help.shopify.com/en/manual/shopify-flow/create/create-workflow"
+  ],
+  "observedStatus": 403,
+  "independentVerification": "Official pages were readable and their contents verified by source researcher; source-verification.md",
+  "scope": "Skill-documented exact403 exception only. DNS/redirect safety remains enforced. Rate limits are not excepted."
+}

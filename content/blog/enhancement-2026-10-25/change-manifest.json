@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-10-24T21:47:46.236Z",
+  "posts": 58,
+  "normalizedHeadings": 312,
+  "inlineLinks": 174,
+  "contextualOrphansRepaired": [
+    "influencer-campaign-small-store-plan",
+    "choose-ecommerce-platform-customer-workflows",
+    "dropshipping-customer-trust-communication",
+    "small-shopify-store-metrics-review-routine",
+    "multilingual-customer-messaging-shopify",
+    "product-review-schema-rich-results-explained",
+    "whatsapp-quick-reply-buttons-customer-choices",
+    "whatsapp-marketing-plan-small-shopify-store",
+    "customer-winback-campaign-shopify",
+    "abandoned-checkout-whatsapp-conversation"
+  ],
+  "unchangedCollections": [
+    "comparisons"
+  ],
+  "preserved": [
+    "id",
+    "slug",
+    "publishedAt",
+    "createdAt",
+    "author",
+    "authorRole",
+    "status",
+    "faqs",
+    "sources",
+    "tags"
+  ],
+  "reviewerScoreRange": [
+    91,
+    96
+  ],
+  "reviewerScoreAverage": 93.3,
+  "reviewedPosts": 58,
+  "criticalIssues": 0,
+  "allMetaTitlesUnique": true,
+  "allMetaDescriptionsUnique": true,
+  "workerVersion": "bd64447d-3328-48c1-b99a-796d839b78bf",
+  "publicationStatus": "published and verified",
+  "verifiedAt": "2026-10-24T22:10:19.021Z",
+  "livePosts": 58,
+  "liveComparisons": 106,
+  "fiveGatesPassed": 58
+}

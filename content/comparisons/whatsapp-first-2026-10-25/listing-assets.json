@@ -1,0 +1,47 @@
+[
+  {
+    "name": "dashboard",
+    "url": "https://cdn.shopify.com/app-store/listing_images/7352e5ca3f1e68f6cd2718eadaa6f9bb/desktop_screenshot/CIen59y99pQDEAE%3D.png?height=720&width=1280",
+    "path": "content/comparisons/whatsapp-first-2026-10-25/listing-assets/dashboard.png",
+    "bytes": 662208,
+    "sha256": "ce1d6e663b0f84f9f69a92cf823b5bd4dba223ca9d436b45e434b0fd3935c31d",
+    "source": "https://apps.shopify.com/whatflow-official-api",
+    "provenance": "WhatFlow-owned public app-listing artwork; not a fresh demo-store capture"
+  },
+  {
+    "name": "order-confirmation",
+    "url": "https://cdn.shopify.com/app-store/listing_images/7352e5ca3f1e68f6cd2718eadaa6f9bb/desktop_screenshot/CIjt8ty99pQDEAE%3D.png?height=720&width=1280",
+    "path": "content/comparisons/whatsapp-first-2026-10-25/listing-assets/order-confirmation.png",
+    "bytes": 275823,
+    "sha256": "3be4db7ce4dd2f5c3005bccb7301fba0a18b5893d55e879f3bf0d2a2efe27aa2",
+    "source": "https://apps.shopify.com/whatflow-official-api",
+    "provenance": "WhatFlow-owned public app-listing artwork; not a fresh demo-store capture"
+  },
+  {
+    "name": "cart-recovery",
+    "url": "https://cdn.shopify.com/app-store/listing_images/7352e5ca3f1e68f6cd2718eadaa6f9bb/desktop_screenshot/COSv-9y99pQDEAE%3D.png?height=720&width=1280",
+    "path": "content/comparisons/whatsapp-first-2026-10-25/listing-assets/cart-recovery.png",
+    "bytes": 704233,
+    "sha256": "a9c870cdcebdadc831cdbe3b06c7d4012a63f7265aed7d094d0229716932346d",
+    "source": "https://apps.shopify.com/whatflow-official-api",
+    "provenance": "WhatFlow-owned public app-listing artwork; not a fresh demo-store capture"
+  },
+  {
+    "name": "back-in-stock",
+    "url": "https://cdn.shopify.com/app-store/listing_images/7352e5ca3f1e68f6cd2718eadaa6f9bb/desktop_screenshot/CMGGhN299pQDEAE%3D.png?height=720&width=1280",
+    "path": "content/comparisons/whatsapp-first-2026-10-25/listing-assets/back-in-stock.png",
+    "bytes": 716395,
+    "sha256": "133f35ac9760786fc83dca050b29e26e6cf0be9188ed6c0977a1440455855f01",
+    "source": "https://apps.shopify.com/whatflow-official-api",
+    "provenance": "WhatFlow-owned public app-listing artwork; not a fresh demo-store capture"
+  },
+  {
+    "name": "cloud-api-setup",
+    "url": "https://cdn.shopify.com/app-store/listing_images/7352e5ca3f1e68f6cd2718eadaa6f9bb/desktop_screenshot/CKzIjN299pQDEAE%3D.png?height=720&width=1280",
+    "path": "content/comparisons/whatsapp-first-2026-10-25/listing-assets/cloud-api-setup.png",
+    "bytes": 722467,
+    "sha256": "89f0087055cc06df58622001e9cb344087e41db5a76ee5131e07407016e7c833",
+    "source": "https://apps.shopify.com/whatflow-official-api",
+    "provenance": "WhatFlow-owned public app-listing artwork; not a fresh demo-store capture"
+  }
+]

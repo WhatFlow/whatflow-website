@@ -1,0 +1,98 @@
+[
+  {
+    "brand": "WebEngage",
+    "path": "public/thumbnails/brands/webengage.png",
+    "source": "https://docs.webengage.com/docs/whatsapp",
+    "assetURL": "https://docs.webengage.com/apple-touch-icon.png?v=2a3fbb9b2b0f",
+    "verified": false,
+    "sha256": "45951bdd38c2107a08185992177755a837978ff32d3d12a8d192b4b588d44fc3",
+    "sourceWidth": 180,
+    "sourceHeight": 180,
+    "decision": "Ordinary name and thematic illustration",
+    "reason": "Purple bird from the documentation-site apple-touch icon does not establish WebEngage’s identity; it resembles the documentation host’s mascot. Do not use a hosted-docs favicon as a vendor mark without direct identity association."
+  },
+  {
+    "brand": "JivoChat",
+    "path": "public/thumbnails/brands/jivochat.png",
+    "source": "https://apps.shopify.com/jivochat",
+    "assetURL": "https://cdn.shopify.com/app-store/listing_images/5c413ee331721e49374ce06d0a7edc1b/icon/CPrw4d6I5fECEAE=.png",
+    "verified": false,
+    "sha256": "431f6cf09bc337c633886013b8d8961ed50fd2c116b33ecd428f389a2c8a1ad8",
+    "sourceWidth": 1200,
+    "sourceHeight": 1200,
+    "decision": "Ordinary name and thematic illustration",
+    "reason": "The current red-S image is the Shopify Inbox top icon, not JivoChat. JivoChat’s unavailable Shopify listing exposes a different top product image on storage.googleapis.com; Shopify Inbox appears later in More apps like this. Matching hashes confirm the wrong related-app image was reused."
+  },
+  {
+    "brand": "Freshchat",
+    "path": "public/thumbnails/brands/freshchat.png",
+    "source": "https://www.freshworks.com/live-chat-software/pricing/",
+    "assetURL": "https://www.freshworks.com/favicons/apple-touch-icon.png",
+    "verified": false,
+    "sha256": "1b6f836ce198ac84ad15182970a74c25c692b17412df1dbfe2f2852f91c0779d",
+    "sourceWidth": 180,
+    "sourceHeight": 180,
+    "decision": "Ordinary name and thematic illustration",
+    "reason": "The rainbow leaf is fetched from Freshworks’ corporate favicon, not a verified Freshchat-specific product icon. Parent-company identity must not be silently represented as an exact product mark."
+  },
+  {
+    "brand": "WhatsApp Business App",
+    "path": "public/thumbnails/brands/whatsapp-business-app.png",
+    "source": "https://business.whatsapp.com/products/business-app",
+    "assetURL": "https://whatsappbusiness.com/wp-content/uploads/2026/03/cropped-Digital_Glyph_Green_RGB_2026.png?w=180",
+    "verified": false,
+    "sha256": "b9ed5b5ac4d766dd5e9a6654bacf857d2fd109aac3d8e76b15264b0077d211db",
+    "sourceWidth": 180,
+    "sourceHeight": 180,
+    "decision": "Ordinary name and thematic illustration",
+    "reason": "The current plain phone glyph is generic WhatsApp branding, not an independently confirmed current Business App icon. Official Business App announcement documents a distinct refreshed app icon."
+  },
+  {
+    "brand": "Zoho Desk",
+    "path": "public/thumbnails/brands/zoho-desk.png",
+    "source": "https://www.zoho.com/desk/pricing.html",
+    "assetURL": "https://www.zohowebstatic.com/sites/zweb/images/favicon.ico",
+    "verified": false,
+    "sha256": "f1ba43df544ff46fc85490d1e0b3f1c0ac26af8c1f6b2d433f63a2787d306d21",
+    "sourceWidth": 48,
+    "sourceHeight": 48,
+    "decision": "Ordinary name and thematic illustration",
+    "reason": "The contact sheet showed Zoho Service Plus, a different product. During audit, the asset changed to the generic Zoho corporate favicon. That fixes the Service Plus mismatch but still does not establish an exact Desk mark."
+  },
+  {
+    "brand": "TimelinesAI",
+    "path": "public/thumbnails/brands/timelinesai.png",
+    "source": "https://timelines.ai/timelinesai-pricing",
+    "assetURL": "https://timelines.ai/apple-icon.png?a458b430d418f2f4",
+    "verified": false,
+    "sha256": "2d3ee31b22b049d30326be75d3bcd589d02abe7d8faff71adb9ca4eaca3b2dfe",
+    "sourceWidth": 180,
+    "sourceHeight": 180,
+    "decision": "Ordinary name and thematic illustration",
+    "reason": "No identity mismatch detected against the first-party favicon and official presentation’s timeline/chat motif. Contact-sheet version is visibly pixelated; use ordinary text rather than enlarging it."
+  },
+  {
+    "brand": "Vonage",
+    "path": "public/thumbnails/brands/vonage.png",
+    "source": "https://developer.vonage.com/en/home",
+    "assetURL": "https://developer.vonage.com/favicon.ico",
+    "verified": false,
+    "sha256": "bde7fdc16e5d96f4a2d7be94b29b0d98ae758a550a81b38c170ff2c887cfde7c",
+    "sourceWidth": 48,
+    "sourceHeight": 48,
+    "decision": "Ordinary name and thematic illustration",
+    "reason": "Recognizable Vonage V from official developer favicon; native source is only 48px and visibly soft when enlarged. Keep small or use ordinary text."
+  },
+  {
+    "brand": "HighLevel",
+    "path": "public/thumbnails/brands/highlevel.png",
+    "source": "https://www.gohighlevel.com/pricing",
+    "assetURL": "https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/62b48689c85eccb36ca941fc.png",
+    "verified": false,
+    "sha256": "ec59a252f0923719a73e5a329dc702d8b0d5bbe8c5297715794be09bcdc8c70b",
+    "sourceWidth": 32,
+    "sourceHeight": 32,
+    "decision": "Ordinary name and thematic illustration",
+    "reason": "The original sheet’s Printful partner logo is rejected. Root replaced it during the audit with the recognizable HighLevel three-arrow mark; this current identity matches the official brand-kit arrow description. Prefer a sharper original for large use."
+  }
+]

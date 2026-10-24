@@ -1,0 +1,1974 @@
+{
+  "generatedAt": "2026-10-24T22:36:25.980Z",
+  "posts": 106,
+  "boilerplateParagraphsRemoved": 456,
+  "inlineLinks": 396,
+  "contextualOrphansRepaired": [
+    "whatflow-vs-sleekflow",
+    "whatflow-vs-trengo",
+    "whatflow-vs-timelinesai",
+    "whatflow-vs-kommo",
+    "whatflow-vs-intercom",
+    "whatflow-vs-chatwoot",
+    "whatflow-vs-zoho-desk",
+    "whatflow-vs-hubspot",
+    "whatflow-vs-help-scout",
+    "whatflow-vs-livechat",
+    "whatflow-vs-jivochat",
+    "whatflow-vs-shopify-inbox",
+    "whatflow-vs-omnisend",
+    "whatflow-vs-brevo",
+    "whatflow-vs-mailchimp",
+    "whatflow-vs-attentive",
+    "whatflow-vs-postscript",
+    "whatflow-vs-highlevel",
+    "whatflow-vs-pushowl",
+    "whatflow-vs-onesignal",
+    "whatflow-vs-sinch",
+    "whatflow-vs-plivo",
+    "whatflow-vs-telnyx",
+    "whatflow-vs-engati",
+    "whatflow-vs-landbot",
+    "whatflow-vs-chatfuel",
+    "whatflow-vs-rasayel",
+    "whatflow-vs-userlike",
+    "whatflow-vs-saysimple",
+    "whatflow-vs-webengage",
+    "whatflow-vs-insider",
+    "whatflow-vs-dondy",
+    "whatsapp-vs-rcs",
+    "whatsapp-review-requests-vs-email",
+    "whatflow-vs-bird",
+    "whatflow-vs-infobip",
+    "whatflow-vs-gupshup",
+    "whatflow-vs-gallabox",
+    "whatflow-vs-manychat",
+    "whatflow-vs-respond-io",
+    "whatflow-vs-superlemon",
+    "whatflow-vs-limechat",
+    "whatflow-vs-gorgias",
+    "whatflow-vs-tidio",
+    "whatflow-vs-klaviyo",
+    "whatflow-vs-aisensy",
+    "whatflow-vs-quickreply",
+    "whatflow-vs-interakt"
+  ],
+  "changes": [
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "boilerplateParagraphsRemoved": 1,
+      "corrections": [
+        {
+          "find": "Why does WhatFlow have a 3.9-star rating?",
+          "replace": "Why do the two WhatFlow listings have different ratings?",
+          "reason": "A current-sounding heading should not present the older snapshot rating as today’s rating.",
+          "url": "https://apps.shopify.com/whatflow",
+          "matches": 2
+        },
+        {
+          "find": "The 3.9-star rating belongs to WhatFlow: Whatsapp Automation, our older linked-device app at apps.shopify.com/whatflow. As of October 24, 2026, that listing shows 336 reviews. It launched on October 21, 2024, so it has more than two years of merchant history.",
+          "replace": "WhatFlow: Whatsapp Automation is the older linked-device app at apps.shopify.com/whatflow. When checked on October 25, 2026, the listing displayed 4.0 stars from 332 reviews. It launched on October 21, 2024, giving this app a separate review history of more than two years. The comparison table retains the explicitly dated October 24 snapshot rather than treating it as the current count.",
+          "reason": "Refresh the current rating and review count while keeping the original dated snapshot distinct. Capture differences do not establish why counts changed.",
+          "url": "https://apps.shopify.com/whatflow",
+          "matches": 1
+        },
+        {
+          "find": "A search result that attaches the older app’s 3.9 rating to the newer Business API product is mixing two separate listings.",
+          "replace": "A rating attached to the older listing should not be transferred to the separate Business API product.",
+          "reason": "Preserve the identity distinction without repeating a superseded current-sounding number.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        },
+        {
+          "find": "The 3.9-star rating belongs to the older WhatFlow: Whatsapp Automation app, launched October 21, 2024. WhatFlow WhatsApp Business API is a separate app, launched May 8, 2026, with a 5.0-star rating when checked October 24, 2026. The older app uses a linked-device connection; the newer app uses the official Meta Cloud API. Read the correct listing rather than treating one app’s rating as a brand-wide score.",
+          "replace": "The ratings belong to separate Shopify apps with different connection methods and review histories. The older WhatFlow: Whatsapp Automation listing launched October 21, 2024; WhatFlow WhatsApp Business API launched May 8, 2026. The October 25, 2026 check showed 4.0 stars for the older linked-device app and 5.0 for Business API. The dated October 24 table remains a historical snapshot. Read the correct listing rather than treating either score as brand-wide.",
+          "reason": "Align the FAQ with the fresh listing check and distinguish historical ratings.",
+          "url": "https://apps.shopify.com/whatflow",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference.",
+        "Updated the current rating discussion and FAQ; retained the explicitly dated historical comparison snapshot."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-sleekflow",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-timelinesai",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        },
+        {
+          "find": "TimelinesAI displays Starter at $35 per seat per month and Pro at $49. Five Starter seats therefore cost $175 per month before any separately applicable services or delivery charges. Automation credits also vary by package. This is a seat-subscription example, not a complete delivery-cost comparison.",
+          "replace": "TimelinesAI displays Starter at $35 per connecting seat monthly and Pro at $49, with lower annual-billing equivalents. A seat is defined as a user connecting a WhatsApp account; the page also lists shared-inbox access for all team members. Five connecting Starter seats would cost $175 monthly before separately applicable charges, but five inbox collaborators do not automatically imply five such seats. Automation allowances differ by package.",
+          "reason": "Corrected the seat definition so shared-inbox collaborators are not automatically counted as paid connecting users.",
+          "url": "https://timelines.ai/timelinesai-pricing",
+          "matches": 3
+        },
+        {
+          "find": "WhatFlow’s no-seat-fee inbox gives Shopify support and operations staff access without multiplying a $35 user subscription. Its plans change messaging allowances, not access to the app’s features.",
+          "replace": "WhatFlow’s inbox has no seat fees and its plans change messaging allowances rather than feature access. Compare this policy with TimelinesAI’s connected-account seat definition, instead of assuming that every shared-inbox collaborator requires a separate subscription.",
+          "reason": "Removed the implication that every TimelinesAI inbox helper requires a paid connected-account seat.",
+          "url": "https://timelines.ai/timelinesai-pricing",
+          "matches": 4
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Corrected the seat definition so shared-inbox collaborators are not automatically counted as paid connecting users.",
+        "Removed the implication that every TimelinesAI inbox helper requires a paid connected-account seat.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-kommo",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct brand capitalization in the retained recommendation.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-intercom",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-chatwoot",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct brand capitalization in the retained recommendation.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-hubspot",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-livechat",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-jivochat",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-shopify-inbox",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-omnisend",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-brevo",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-mailchimp",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-attentive",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-postscript",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-highlevel",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-pushowl",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-onesignal",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-sinch",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-vonage",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct brand capitalization in the retained recommendation.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-plivo",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        },
+        {
+          "find": "The WhatsApp prerequisites state a $1,000 monthly minimum commitment for the US region or ₹100,000 for India, and that WhatsApp is not enabled by default. Confirm the current contract and region. Any announced future fee changes should be checked for their effective date rather than treated as already active.",
+          "replace": "Plivo’s prerequisites require sales-provisioned WhatsApp access and a minimum monthly commitment of $1,000 in the US data region or ₹100,000 in India. This commitment spans Plivo products and excludes pass-through fees; it is not a setup fee. The page also announces platform-message and registered WhatsApp-account fees effective November 1, 2026. Those are future terms at this review, so confirm the rollout date, regional contract and eligible spend before budgeting.",
+          "reason": "Clarified the cross-product minimum commitment and dated future fee changes rather than treating them as active.",
+          "url": "https://www.plivo.com/docs/messaging/concepts/whatsapp/prerequisites",
+          "matches": 3
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Clarified the cross-product minimum commitment and dated future fee changes rather than treating them as active.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-telnyx",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        },
+        {
+          "find": "Telnyx describes channel access without a monthly subscription for that offering, but usage charges still apply. That can be attractive to developers; it does not remove the cost of building and operating Shopify automation and a support interface.",
+          "replace": "Telnyx’s product page describes WhatsApp messaging and calling, but its no-monthly-subscription statement appears specifically under calling. Obtain the messaging terms for the proposed account separately. Include the Shopify integration and staff interface in the total operating budget rather than treating a calling statement as a complete messaging quote.",
+          "reason": "Narrowed the no-monthly-subscription statement to its supported calling context.",
+          "url": "https://telnyx.com/products/whatsapp-business-api",
+          "matches": 3
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Narrowed the no-monthly-subscription statement to its supported calling context.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-engati",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-botpress",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-landbot",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-chatfuel",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-rasayel",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-userlike",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-saysimple",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-moengage",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-webengage",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct brand capitalization in the retained recommendation.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-insider",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-braze",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-chaty",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-sms",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-email",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "https://support.google.com/mail/answer/81126",
+          "replace": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "reason": "Use a readable official historical announcement supporting the limited email-maintenance context. Original guidelines return GET200 but HEAD404, a helper-method limitation rather than a dead source.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Google email sender guidance",
+          "replace": "Google: New Gmail protections for a safer, less spammy inbox (October 3, 2023)",
+          "reason": "Name the replacement primary article and its historical publication date accurately.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Technical sender requirements and delivery considerations; this is not evidence of a guaranteed inbox placement or performance difference.",
+          "replace": "Google’s October 3, 2023 announcement provides historical context on bulk-sender authentication, easy unsubscribe and wanted email. It is not the complete current policy or evidence of a guaranteed inbox placement or channel-performance difference.",
+          "reason": "Limit the source to announcement-era authentication/unsubscribe context; do not present it as the complete current sender policy.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source.",
+        "Use the dated Google primary announcement for limited email-maintenance context; retain current-policy and performance limits."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-mms",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-rcs",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-web-push",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-mobile-push",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-website-live-chat",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-instagram-dm",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-facebook-messenger",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-phone-calls",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-telegram",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-business-platform-vs-channels",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "https://support.google.com/mail/answer/81126",
+          "replace": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "reason": "Use a readable official historical announcement supporting the limited email-maintenance context. Original guidelines return GET200 but HEAD404, a helper-method limitation rather than a dead source.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Google email sender guidance",
+          "replace": "Google: New Gmail protections for a safer, less spammy inbox (October 3, 2023)",
+          "reason": "Name the replacement primary article and its historical publication date accurately.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Technical sender requirements and delivery considerations; this is not evidence of a guaranteed inbox placement or performance difference.",
+          "replace": "Google’s October 3, 2023 announcement provides historical context on bulk-sender authentication, easy unsubscribe and wanted email. It is not the complete current policy or evidence of a guaranteed inbox placement or channel-performance difference.",
+          "reason": "Limit the source to announcement-era authentication/unsubscribe context; do not present it as the complete current sender policy.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source.",
+        "Use the dated Google primary announcement for limited email-maintenance context; retain current-policy and performance limits."
+      ]
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "https://support.google.com/mail/answer/81126",
+          "replace": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "reason": "Use a readable official historical announcement supporting the limited email-maintenance context. Original guidelines return GET200 but HEAD404, a helper-method limitation rather than a dead source.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Google email sender guidance",
+          "replace": "Google: New Gmail protections for a safer, less spammy inbox (October 3, 2023)",
+          "reason": "Name the replacement primary article and its historical publication date accurately.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Technical sender requirements and delivery considerations; this is not evidence of a guaranteed inbox placement or performance difference.",
+          "replace": "Google’s October 3, 2023 announcement provides historical context on bulk-sender authentication, easy unsubscribe and wanted email. It is not the complete current policy or evidence of a guaranteed inbox placement or channel-performance difference.",
+          "reason": "Limit the source to announcement-era authentication/unsubscribe context; do not present it as the complete current sender policy.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source.",
+        "Use the dated Google primary announcement for limited email-maintenance context; retain current-policy and performance limits."
+      ]
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-order-updates-vs-email",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "https://support.google.com/mail/answer/81126",
+          "replace": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "reason": "Use a readable official historical announcement supporting the limited email-maintenance context. Original guidelines return GET200 but HEAD404, a helper-method limitation rather than a dead source.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Google email sender guidance",
+          "replace": "Google: New Gmail protections for a safer, less spammy inbox (October 3, 2023)",
+          "reason": "Name the replacement primary article and its historical publication date accurately.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Technical sender requirements and delivery considerations; this is not evidence of a guaranteed inbox placement or performance difference.",
+          "replace": "Google’s October 3, 2023 announcement provides historical context on bulk-sender authentication, easy unsubscribe and wanted email. It is not the complete current policy or evidence of a guaranteed inbox placement or channel-performance difference.",
+          "reason": "Limit the source to announcement-era authentication/unsubscribe context; do not present it as the complete current sender policy.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source.",
+        "Use the dated Google primary announcement for limited email-maintenance context; retain current-policy and performance limits."
+      ]
+    },
+    {
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "https://support.google.com/mail/answer/81126",
+          "replace": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "reason": "Use a readable official historical announcement supporting the limited email-maintenance context. Original guidelines return GET200 but HEAD404, a helper-method limitation rather than a dead source.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Google email sender guidance",
+          "replace": "Google: New Gmail protections for a safer, less spammy inbox (October 3, 2023)",
+          "reason": "Name the replacement primary article and its historical publication date accurately.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Technical sender requirements and delivery considerations; this is not evidence of a guaranteed inbox placement or performance difference.",
+          "replace": "Google’s October 3, 2023 announcement provides historical context on bulk-sender authentication, easy unsubscribe and wanted email. It is not the complete current policy or evidence of a guaranteed inbox placement or channel-performance difference.",
+          "reason": "Limit the source to announcement-era authentication/unsubscribe context; do not present it as the complete current sender policy.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source.",
+        "Use the dated Google primary announcement for limited email-maintenance context; retain current-policy and performance limits."
+      ]
+    },
+    {
+      "slug": "whatsapp-review-requests-vs-email",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "https://support.google.com/mail/answer/81126",
+          "replace": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "reason": "Use a readable official historical announcement supporting the limited email-maintenance context. Original guidelines return GET200 but HEAD404, a helper-method limitation rather than a dead source.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Google email sender guidance",
+          "replace": "Google: New Gmail protections for a safer, less spammy inbox (October 3, 2023)",
+          "reason": "Name the replacement primary article and its historical publication date accurately.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Technical sender requirements and delivery considerations; this is not evidence of a guaranteed inbox placement or performance difference.",
+          "replace": "Google’s October 3, 2023 announcement provides historical context on bulk-sender authentication, easy unsubscribe and wanted email. It is not the complete current policy or evidence of a guaranteed inbox placement or channel-performance difference.",
+          "reason": "Limit the source to announcement-era authentication/unsubscribe context; do not present it as the complete current sender policy.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source.",
+        "Use the dated Google primary announcement for limited email-maintenance context; retain current-policy and performance limits."
+      ]
+    },
+    {
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "https://support.google.com/mail/answer/81126",
+          "replace": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "reason": "Use a readable official historical announcement supporting the limited email-maintenance context. Original guidelines return GET200 but HEAD404, a helper-method limitation rather than a dead source.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Google email sender guidance",
+          "replace": "Google: New Gmail protections for a safer, less spammy inbox (October 3, 2023)",
+          "reason": "Name the replacement primary article and its historical publication date accurately.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        },
+        {
+          "find": "Technical sender requirements and delivery considerations; this is not evidence of a guaranteed inbox placement or performance difference.",
+          "replace": "Google’s October 3, 2023 announcement provides historical context on bulk-sender authentication, easy unsubscribe and wanted email. It is not the complete current policy or evidence of a guaranteed inbox placement or channel-performance difference.",
+          "reason": "Limit the source to announcement-era authentication/unsubscribe context; do not present it as the complete current sender policy.",
+          "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source.",
+        "Use the dated Google primary announcement for limited email-maintenance context; retain current-policy and performance limits."
+      ]
+    },
+    {
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 0,
+      "editorialChanges": [
+        "Replaced the verdict with a direct, task-specific decision.",
+        "Added distinct takeaways, a concrete evaluation exercise and an operational checklist.",
+        "Added two contextual comparison links and an inline official-source reference."
+      ]
+    },
+    {
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct brand capitalization in the retained recommendation.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-bird",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-infobip",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-gupshup",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-doubletick",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-gallabox",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-360dialog",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-twilio",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-manychat",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-superlemon",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        },
+        {
+          "find": "SuperLemon's website describes a Shopify offering with a chat button, abandoned cart recovery, order notifications, broadcasts and customer segmentation. It also presents a free entry tier. Confirm which functions are included in the particular plan and connection setup you intend to use.",
+          "replace": "SuperLemon’s official Shopify listing describes a chat widget, manual tools, cart recovery, order updates and WhatsApp campaigns. The Free, Automate and Scale packages have different scope and sender-number arrangements. Confirm the exact package and number connection used for the proposed workflow.",
+          "reason": "Used the readable official Shopify listing when the original product website could not be retrieved.",
+          "url": "https://apps.shopify.com/whatsapp-chat-button",
+          "matches": 1
+        },
+        {
+          "find": "https://superlemon.xyz/",
+          "replace": "https://apps.shopify.com/whatsapp-chat-button",
+          "reason": "Replace failed original website link with readable official developer listing.",
+          "url": "https://apps.shopify.com/whatsapp-chat-button",
+          "matches": 2
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Used the readable official Shopify listing when the original product website could not be retrieved.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-charles",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-chatarmin",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-limechat",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-tidio",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-klaviyo",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Clarified the distinct buying decision and preserved truthful competitor scope.",
+        "Added a concrete hypothetical exercise, takeaways and checklist.",
+        "Replaced a generic table cell using current official product evidence.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct brand capitalization in the retained recommendation.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        },
+        {
+          "find": "Ask Zoko for the current subscription, usage model, included users and automation allowances. Keep any WhatsApp charges visible. Do not assume that a particular package includes every module merely because the product site advertises it.",
+          "replace": "Zoko’s pricing page, checked October 25, 2026, describes unlimited agents on Starter, while higher tiers use their own included-agent allowances and additional-agent charges. Its subscription, usage and channel charges remain separate inputs. Do not assume that Zoko always charges per seat, or that every tier has the same feature and usage terms.",
+          "reason": "Replace a generic pricing instruction with the verified tier-dependent agent distinction; Starter is not universally per-seat.",
+          "url": "https://www.zoko.io/pricing",
+          "matches": 3
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-quickreply",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [],
+      "tableCellsUpdated": 1,
+      "editorialChanges": [
+        "Sharpened the buying decision around the vendor’s actual scope.",
+        "Added a distinct hypothetical exercise and concrete checklist.",
+        "Replaced a generic competitor table cell with verified product or commercial detail.",
+        "Added contextual comparison links and an inline official reference."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "boilerplateParagraphsRemoved": 4,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct inherited brand capitalization.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Added a scope-based verdict and practical purchase checklist.",
+        "Added a provider-specific acceptance exercise rather than another generic demo request.",
+        "Replaced generic matrix cells where official evidence establishes concrete scope.",
+        "Added contextual comparison links and an inline official-source reference.",
+        "Made search metadata and the first comparison transition specific to this provider’s tradeoff.",
+        "Varied the decision language around the provider’s actual billing and operating model."
+      ]
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "boilerplateParagraphsRemoved": 5,
+      "corrections": [
+        {
+          "find": "whatFlow",
+          "replace": "WhatFlow",
+          "reason": "Correct brand capitalization in the retained recommendation.",
+          "url": "https://apps.shopify.com/whatflow-official-api",
+          "matches": 1
+        }
+      ],
+      "tableCellsUpdated": 2,
+      "editorialChanges": [
+        "Preserve the useful original body, its hypothetical cost example and explicit limits.",
+        "Add a focused acceptance exercise, takeaways and final checks.",
+        "Replace two generic alternative table cells with specific operational distinctions.",
+        "Add contextual comparison links, a relevant implementation guide and an official inline source."
+      ]
+    }
+  ],
+  "preserved": [
+    "id",
+    "slug",
+    "publishedAt",
+    "createdAt",
+    "author",
+    "authorRole",
+    "relatedComparisons",
+    "_status"
+  ],
+  "unchangedCollections": [
+    "posts"
+  ]
+}

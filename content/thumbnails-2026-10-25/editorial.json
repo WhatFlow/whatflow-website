@@ -1,0 +1,2045 @@
+[
+  {
+    "collection": "blog",
+    "slug": "abandoned-checkout-whatsapp-conversation",
+    "title": "Start a Helpful WhatsApp Conversation",
+    "lines": [
+      "Start a Helpful",
+      "WhatsApp Conversation"
+    ],
+    "eyebrow": "Checkout Recovery",
+    "motif": "cart",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "ai-support-drafts-small-shopify-team",
+    "title": "AI Support Drafts Accurate Answers",
+    "lines": [
+      "AI Support Drafts",
+      "Accurate Answers"
+    ],
+    "eyebrow": "Customer Support",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+    "title": "Beyond the Monthly App Price",
+    "lines": [
+      "Beyond the",
+      "Monthly App Price"
+    ],
+    "eyebrow": "App Costs",
+    "motif": "pricing",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "best-time-review-request-after-delivery",
+    "title": "When to Ask for a Review",
+    "lines": [
+      "When to Ask",
+      "for a Review"
+    ],
+    "eyebrow": "Product Reviews",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "choose-ecommerce-platform-customer-workflows",
+    "title": "Choose a Platform Around Your Customers",
+    "lines": [
+      "Choose a Platform",
+      "Around Your Customers"
+    ],
+    "eyebrow": "Store Operations",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "choose-first-automation-shopify-small-team",
+    "title": "Your First Shopify Automation",
+    "lines": [
+      "Your First",
+      "Shopify Automation"
+    ],
+    "eyebrow": "Shopify Automation",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "choose-review-app-and-messaging-app-shopify",
+    "title": "Review Apps Messaging Apps Different Jobs",
+    "lines": [
+      "Review Apps",
+      "Messaging Apps",
+      "Different Jobs"
+    ],
+    "eyebrow": "App Selection",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "collect-first-product-reviews-shopify",
+    "title": "Collect Your First Product Reviews",
+    "lines": [
+      "Collect Your First",
+      "Product Reviews"
+    ],
+    "eyebrow": "Product Reviews",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "coordinate-email-sms-whatsapp-customer-messages",
+    "title": "Email, SMS, WhatsApp One Contact Plan",
+    "lines": [
+      "Email, SMS, WhatsApp",
+      "One Contact Plan"
+    ],
+    "eyebrow": "Customer Messaging",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "customer-feedback-loop-product-improvements",
+    "title": "Turn Feedback Into Improvements",
+    "lines": [
+      "Turn Feedback",
+      "Into Improvements"
+    ],
+    "eyebrow": "Customer Feedback",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "customer-referral-messages-shopify",
+    "title": "Referral Messages Clear Rewards",
+    "lines": [
+      "Referral Messages",
+      "Clear Rewards"
+    ],
+    "eyebrow": "Customer Referrals",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "customer-review-insights-product-copy",
+    "title": "Turn Review Themes Into Product Copy",
+    "lines": [
+      "Turn Review Themes",
+      "Into Product Copy"
+    ],
+    "eyebrow": "Product Content",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "customer-service-saved-replies-without-robotic-tone",
+    "title": "Saved Replies That Answer Well",
+    "lines": [
+      "Saved Replies",
+      "That Answer Well"
+    ],
+    "eyebrow": "Customer Support",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "customer-winback-campaign-shopify",
+    "title": "Give Customers a Reason to Return",
+    "lines": [
+      "Give Customers",
+      "a Reason to Return"
+    ],
+    "eyebrow": "Customer Retention",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "define-store-audience-brand-promise",
+    "title": "Your Audience Your Brand Promise",
+    "lines": [
+      "Your Audience",
+      "Your Brand Promise"
+    ],
+    "eyebrow": "Store Strategy",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "dropshipping-customer-trust-communication",
+    "title": "Dropshipping Trust Clear Communication",
+    "lines": [
+      "Dropshipping Trust",
+      "Clear Communication"
+    ],
+    "eyebrow": "Customer Trust",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "evaluate-shopify-app-workflow-connectors",
+    "title": "Check Connectors Before Building",
+    "lines": [
+      "Check Connectors",
+      "Before Building"
+    ],
+    "eyebrow": "Shopify Integrations",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "helpful-cross-sell-product-recommendations",
+    "title": "Helpful Cross-Sells For the Buyer",
+    "lines": [
+      "Helpful Cross-Sells",
+      "For the Buyer"
+    ],
+    "eyebrow": "Product Recommendations",
+    "motif": "cart",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "influencer-campaign-small-store-plan",
+    "title": "Influencer Campaigns A Customer Journey",
+    "lines": [
+      "Influencer Campaigns",
+      "A Customer Journey"
+    ],
+    "eyebrow": "Campaign Planning",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "loyalty-messages-customer-value-shopify",
+    "title": "Loyalty Messages Beyond Points",
+    "lines": [
+      "Loyalty Messages",
+      "Beyond Points"
+    ],
+    "eyebrow": "Customer Loyalty",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "maintain-shopify-blog-content-library",
+    "title": "Keep Your Blog Useful and Current",
+    "lines": [
+      "Keep Your Blog",
+      "Useful and Current"
+    ],
+    "eyebrow": "Content Maintenance",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "migrate-review-app-preserve-customer-feedback",
+    "title": "Move Review Apps Preserve the Meaning",
+    "lines": [
+      "Move Review Apps",
+      "Preserve the Meaning"
+    ],
+    "eyebrow": "Review Migration",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "mobile-store-review-widget-chat-button-layout",
+    "title": "Review Widgets WhatsApp Buttons One Mobile Layout",
+    "lines": [
+      "Review Widgets",
+      "WhatsApp Buttons",
+      "One Mobile Layout"
+    ],
+    "eyebrow": "Mobile Storefront",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "multilingual-customer-messaging-shopify",
+    "title": "Multilingual Messages Keep Details Clear",
+    "lines": [
+      "Multilingual Messages",
+      "Keep Details Clear"
+    ],
+    "eyebrow": "Customer Messaging",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "photo-video-reviews-customer-permission",
+    "title": "Collect Photo and Video Reviews",
+    "lines": [
+      "Collect Photo",
+      "and Video Reviews"
+    ],
+    "eyebrow": "Product Reviews",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "post-purchase-customer-journey-shopify",
+    "title": "After the Purchase Plan the Next Step",
+    "lines": [
+      "After the Purchase",
+      "Plan the Next Step"
+    ],
+    "eyebrow": "Customer Journey",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "prepare-customer-support-black-friday-shopify",
+    "title": "Prepare Your Team Keep Customer Context",
+    "lines": [
+      "Prepare Your Team",
+      "Keep Customer Context"
+    ],
+    "eyebrow": "Busy Sale Support",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "product-questions-whatsapp-prepurchase-support",
+    "title": "WhatsApp Questions Better Product Pages",
+    "lines": [
+      "WhatsApp Questions",
+      "Better Product Pages"
+    ],
+    "eyebrow": "Product Questions",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "product-review-schema-rich-results-explained",
+    "title": "Review Schema Search Stars Explained",
+    "lines": [
+      "Review Schema",
+      "Search Stars Explained"
+    ],
+    "eyebrow": "Review Schema",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "product-reviews-vs-store-reviews",
+    "title": "Product Reviews vs Store Reviews",
+    "lines": [
+      "Product Reviews",
+      "vs Store Reviews"
+    ],
+    "eyebrow": "Review Types",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "product-variant-review-context",
+    "title": "Keep Reviews in Variant Context",
+    "lines": [
+      "Keep Reviews",
+      "in Variant Context"
+    ],
+    "eyebrow": "Product Variants",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "qr-code-review-requests-product-packaging",
+    "title": "QR Review Requests A Useful Destination",
+    "lines": [
+      "QR Review Requests",
+      "A Useful Destination"
+    ],
+    "eyebrow": "Review Requests",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "reduce-cart-abandonment-with-clear-information",
+    "title": "Clear Information Before Another Popup",
+    "lines": [
+      "Clear Information",
+      "Before Another Popup"
+    ],
+    "eyebrow": "Checkout Clarity",
+    "motif": "cart",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "repeat-purchase-campaign-without-constant-discounts",
+    "title": "Repeat Purchases Beyond Discounts",
+    "lines": [
+      "Repeat Purchases",
+      "Beyond Discounts"
+    ],
+    "eyebrow": "Customer Retention",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "replenishment-reminders-shopify-consumables",
+    "title": "Plan Useful Refill Reminders",
+    "lines": [
+      "Plan Useful",
+      "Refill Reminders"
+    ],
+    "eyebrow": "Replenishment",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "respond-negative-product-reviews-shopify",
+    "title": "Respond to Negative Reviews",
+    "lines": [
+      "Respond to",
+      "Negative Reviews"
+    ],
+    "eyebrow": "Review Responses",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "reuse-customer-reviews-social-media",
+    "title": "Share Reviews Keep Their Meaning",
+    "lines": [
+      "Share Reviews",
+      "Keep Their Meaning"
+    ],
+    "eyebrow": "Social Proof",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "review-collection-rate-measurement-shopify",
+    "title": "Measure Review Collection Clearly",
+    "lines": [
+      "Measure Review",
+      "Collection Clearly"
+    ],
+    "eyebrow": "Review Measurement",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "review-moderation-policy-small-store",
+    "title": "Set a Clear Review Policy",
+    "lines": [
+      "Set a Clear",
+      "Review Policy"
+    ],
+    "eyebrow": "Review Moderation",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "review-request-messages-examples-whatsapp-email",
+    "title": "Review Requests WhatsApp and Email",
+    "lines": [
+      "Review Requests",
+      "WhatsApp and Email"
+    ],
+    "eyebrow": "Review Invitations",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "send-whatsapp-templates-shopify-flow",
+    "title": "Send WhatsApp Templates With Flow",
+    "lines": [
+      "Send WhatsApp",
+      "Templates With Flow"
+    ],
+    "eyebrow": "Shopify Flow Guide",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow",
+    "secondaryBrandLabel": "Shopify Flow"
+  },
+  {
+    "collection": "blog",
+    "slug": "shared-team-inbox-small-shopify-business",
+    "title": "Shared Inbox Clear Ownership",
+    "lines": [
+      "Shared Inbox",
+      "Clear Ownership"
+    ],
+    "eyebrow": "Team Inbox",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "shopify-content-plan-customer-questions",
+    "title": "Customer Questions Your Content Plan",
+    "lines": [
+      "Customer Questions",
+      "Your Content Plan"
+    ],
+    "eyebrow": "Content Planning",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "shopify-flow-whatsapp-app-integrations",
+    "title": "Connect WhatsApp to App Workflows",
+    "lines": [
+      "Connect WhatsApp",
+      "to App Workflows"
+    ],
+    "eyebrow": "Shopify Flow Guide",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow",
+    "secondaryBrandLabel": "Shopify Flow"
+  },
+  {
+    "collection": "blog",
+    "slug": "shopify-product-page-trust-checklist",
+    "title": "Build Trust on Product Pages",
+    "lines": [
+      "Build Trust",
+      "on Product Pages"
+    ],
+    "eyebrow": "Product Page Checklist",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "sidekick-shopify-flow-whatsapp-workflows",
+    "title": "Draft WhatsApp Workflows With Sidekick",
+    "lines": [
+      "Draft WhatsApp",
+      "Workflows With Sidekick"
+    ],
+    "eyebrow": "Shopify Sidekick Guide",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow",
+    "secondaryBrandLabel": "Shopify Sidekick"
+  },
+  {
+    "collection": "blog",
+    "slug": "small-shopify-store-metrics-review-routine",
+    "title": "Store Metrics Useful Decisions",
+    "lines": [
+      "Store Metrics",
+      "Useful Decisions"
+    ],
+    "eyebrow": "Store Measurement",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "test-social-proof-product-page",
+    "title": "Test Social Proof Measure the Result",
+    "lines": [
+      "Test Social Proof",
+      "Measure the Result"
+    ],
+    "eyebrow": "Social Proof Testing",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+    "title": "Build WhatsApp Automations With Flow",
+    "lines": [
+      "Build WhatsApp",
+      "Automations With Flow"
+    ],
+    "eyebrow": "Shopify Flow Guide",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow",
+    "secondaryBrandLabel": "Shopify Flow"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatsapp-campaign-preflight-checklist",
+    "title": "Before You Send Your WhatsApp Campaign",
+    "lines": [
+      "Before You Send",
+      "Your WhatsApp Campaign"
+    ],
+    "eyebrow": "Campaign Checklist",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatsapp-campaign-segmentation-shopify",
+    "title": "Customer Needs Better Campaign Segments",
+    "lines": [
+      "Customer Needs",
+      "Better Campaign Segments"
+    ],
+    "eyebrow": "Campaign Segmentation",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatsapp-customer-optouts-store-process",
+    "title": "Build a Clear WhatsApp Opt-Out Process",
+    "lines": [
+      "Build a Clear",
+      "WhatsApp Opt-Out Process"
+    ],
+    "eyebrow": "Customer Preferences",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+    "title": "Route Incoming WhatsApp Messages",
+    "lines": [
+      "Route Incoming",
+      "WhatsApp Messages"
+    ],
+    "eyebrow": "Shopify Flow Guide",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow",
+    "secondaryBrandLabel": "Shopify Flow"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatsapp-marketing-plan-small-shopify-store",
+    "title": "Your Shopify WhatsApp Marketing Plan",
+    "lines": [
+      "Your Shopify",
+      "WhatsApp Marketing Plan"
+    ],
+    "eyebrow": "Marketing Planning",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatsapp-message-budget-cost-per-outcome",
+    "title": "WhatsApp Costs Useful Outcomes",
+    "lines": [
+      "WhatsApp Costs",
+      "Useful Outcomes"
+    ],
+    "eyebrow": "Messaging Budget",
+    "motif": "pricing",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+    "title": "Order Replies Into Shopify Actions",
+    "lines": [
+      "Order Replies",
+      "Into Shopify Actions"
+    ],
+    "eyebrow": "Shopify Flow Guide",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow",
+    "secondaryBrandLabel": "Shopify Flow"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatsapp-quick-reply-buttons-customer-choices",
+    "title": "Clear Choices A Clear Next Step",
+    "lines": [
+      "Clear Choices",
+      "A Clear Next Step"
+    ],
+    "eyebrow": "WhatsApp Quick Replies",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "blog",
+    "slug": "write-useful-product-faqs-shopify",
+    "title": "Answer Real Buying Questions",
+    "lines": [
+      "Answer Real",
+      "Buying Questions"
+    ],
+    "eyebrow": "Product FAQs",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "all-features-whatsapp-plans-vs-feature-gating",
+    "title": "Full Feature Access vs Feature Gates",
+    "lines": [
+      "Full Feature Access",
+      "vs Feature Gates"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "pricing",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "free-whatsapp-button-vs-paid-chat-widget",
+    "title": "Free WhatsApp Button vs Paid Widget",
+    "lines": [
+      "Free WhatsApp Button",
+      "vs Paid Widget"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+    "title": "Grow Your Team Without Seat Upgrades",
+    "lines": [
+      "Grow Your Team",
+      "Without Seat Upgrades"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+    "title": "WhatsApp Inbox vs Per-Seat Pricing",
+    "lines": [
+      "WhatsApp Inbox",
+      "vs Per-Seat Pricing"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "pricing",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+    "title": "Seasonal Messaging vs Fixed Commitments",
+    "lines": [
+      "Seasonal Messaging",
+      "vs Fixed Commitments"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "pricing",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "shared-whatsapp-inbox-vs-personal-phones",
+    "title": "Shared Inbox vs Personal Phones",
+    "lines": [
+      "Shared Inbox",
+      "vs Personal Phones"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "shopify-flow-whatsapp-vs-zapier",
+    "title": "Shopify Flow vs a Zapier Chain",
+    "lines": [
+      "Shopify Flow",
+      "vs a Zapier Chain"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "shopify-native-whatsapp-vs-external-dashboard",
+    "title": "Shopify Workflow vs External Dashboard",
+    "lines": [
+      "Shopify Workflow",
+      "vs External Dashboard"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+    "title": "Shopify App vs Custom Cloud API",
+    "lines": [
+      "Shopify App",
+      "vs Custom Cloud API"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+    "title": "Small Store vs Enterprise Suite",
+    "lines": [
+      "Small Store",
+      "vs Enterprise Suite"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+    "title": "Theme-Matched Button vs Floating Widget",
+    "lines": [
+      "Theme-Matched Button",
+      "vs Floating Widget"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-chat-automation-vs-business-api",
+    "title": "WhatFlow Business API vs Chat Automation",
+    "lines": [
+      "WhatFlow Business API",
+      "vs Chat Automation"
+    ],
+    "eyebrow": "Two Separate WhatFlow Apps",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "WhatFlow Chat Automation"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-360dialog",
+    "title": "WhatFlow vs 360dialog",
+    "lines": [
+      "WhatFlow vs",
+      "360dialog"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "360dialog"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-aisensy",
+    "title": "WhatFlow vs AiSensy",
+    "lines": [
+      "WhatFlow vs",
+      "AiSensy"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "AiSensy"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-attentive",
+    "title": "WhatFlow vs Attentive",
+    "lines": [
+      "WhatFlow vs",
+      "Attentive"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Attentive"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-bird",
+    "title": "WhatFlow vs Bird",
+    "lines": [
+      "WhatFlow vs",
+      "Bird"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Bird"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-bitespeed",
+    "title": "WhatFlow vs BiteSpeed",
+    "lines": [
+      "WhatFlow vs",
+      "BiteSpeed"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "BiteSpeed"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-botpress",
+    "title": "WhatFlow vs Botpress",
+    "lines": [
+      "WhatFlow vs",
+      "Botpress"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Botpress"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-braze",
+    "title": "WhatFlow vs Braze",
+    "lines": [
+      "WhatFlow vs",
+      "Braze"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Braze"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-brevo",
+    "title": "WhatFlow vs Brevo",
+    "lines": [
+      "WhatFlow vs",
+      "Brevo"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Brevo"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-charles",
+    "title": "WhatFlow vs charles",
+    "lines": [
+      "WhatFlow vs",
+      "charles"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "charles"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-chatarmin",
+    "title": "WhatFlow vs Chatarmin",
+    "lines": [
+      "WhatFlow vs",
+      "Chatarmin"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Chatarmin"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-chatfuel",
+    "title": "WhatFlow vs Chatfuel",
+    "lines": [
+      "WhatFlow vs",
+      "Chatfuel"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Chatfuel"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-chatwoot",
+    "title": "WhatFlow vs Chatwoot",
+    "lines": [
+      "WhatFlow vs",
+      "Chatwoot"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Chatwoot"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-chaty",
+    "title": "WhatFlow vs Chaty",
+    "lines": [
+      "WhatFlow vs",
+      "Chaty"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Chaty"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-crisp",
+    "title": "WhatFlow vs Crisp",
+    "lines": [
+      "WhatFlow vs",
+      "Crisp"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Crisp"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-delightchat",
+    "title": "WhatFlow vs DelightChat",
+    "lines": [
+      "WhatFlow vs",
+      "DelightChat"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "DelightChat"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-dondy",
+    "title": "WhatFlow vs Dondy",
+    "lines": [
+      "WhatFlow vs",
+      "Dondy"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "pricing",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Dondy"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-doubletick",
+    "title": "WhatFlow vs DoubleTick",
+    "lines": [
+      "WhatFlow vs",
+      "DoubleTick"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "DoubleTick"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-engati",
+    "title": "WhatFlow vs Engati",
+    "lines": [
+      "WhatFlow vs",
+      "Engati"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Engati"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-freshchat",
+    "title": "WhatFlow vs Freshchat",
+    "lines": [
+      "WhatFlow vs",
+      "Freshchat"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Freshchat"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-front",
+    "title": "WhatFlow vs Front",
+    "lines": [
+      "WhatFlow vs",
+      "Front"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Front"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-gallabox",
+    "title": "WhatFlow vs Gallabox",
+    "lines": [
+      "WhatFlow vs",
+      "Gallabox"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Gallabox"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-gorgias",
+    "title": "WhatFlow vs Gorgias",
+    "lines": [
+      "WhatFlow vs",
+      "Gorgias"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Gorgias"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-gupshup",
+    "title": "WhatFlow vs Gupshup",
+    "lines": [
+      "WhatFlow vs",
+      "Gupshup"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Gupshup"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-help-scout",
+    "title": "WhatFlow vs Help Scout",
+    "lines": [
+      "WhatFlow vs",
+      "Help Scout"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Help Scout"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-highlevel",
+    "title": "WhatFlow vs HighLevel",
+    "lines": [
+      "WhatFlow vs",
+      "HighLevel"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "HighLevel"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-hubspot",
+    "title": "WhatFlow vs HubSpot Service Hub",
+    "lines": [
+      "WhatFlow vs",
+      "HubSpot Service Hub"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "HubSpot Service Hub"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-infobip",
+    "title": "WhatFlow vs Infobip",
+    "lines": [
+      "WhatFlow vs",
+      "Infobip"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Infobip"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-insider",
+    "title": "WhatFlow vs Insider One",
+    "lines": [
+      "WhatFlow vs",
+      "Insider One"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Insider One"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-interakt",
+    "title": "WhatFlow vs Interakt",
+    "lines": [
+      "WhatFlow vs",
+      "Interakt"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Interakt"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-intercom",
+    "title": "WhatFlow vs Intercom",
+    "lines": [
+      "WhatFlow vs",
+      "Intercom"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Intercom"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-jivochat",
+    "title": "WhatFlow vs JivoChat",
+    "lines": [
+      "WhatFlow vs",
+      "JivoChat"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "JivoChat"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-klaviyo",
+    "title": "WhatFlow vs Klaviyo",
+    "lines": [
+      "WhatFlow vs",
+      "Klaviyo"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Klaviyo"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-kommo",
+    "title": "WhatFlow vs Kommo",
+    "lines": [
+      "WhatFlow vs",
+      "Kommo"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Kommo"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-landbot",
+    "title": "WhatFlow vs Landbot",
+    "lines": [
+      "WhatFlow vs",
+      "Landbot"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Landbot"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-limechat",
+    "title": "WhatFlow vs LimeChat",
+    "lines": [
+      "WhatFlow vs",
+      "LimeChat"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "LimeChat"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-livechat",
+    "title": "WhatFlow vs LiveChat / Text",
+    "lines": [
+      "WhatFlow vs",
+      "LiveChat / Text"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "LiveChat / Text"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-mailchimp",
+    "title": "WhatFlow vs Mailchimp",
+    "lines": [
+      "WhatFlow vs",
+      "Mailchimp"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Mailchimp"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-manychat",
+    "title": "WhatFlow vs Manychat",
+    "lines": [
+      "WhatFlow vs",
+      "Manychat"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Manychat"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-moengage",
+    "title": "WhatFlow vs MoEngage",
+    "lines": [
+      "WhatFlow vs",
+      "MoEngage"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "MoEngage"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-omnisend",
+    "title": "WhatFlow vs Omnisend",
+    "lines": [
+      "WhatFlow vs",
+      "Omnisend"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Omnisend"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-onesignal",
+    "title": "WhatFlow vs OneSignal",
+    "lines": [
+      "WhatFlow vs",
+      "OneSignal"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "OneSignal"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-plivo",
+    "title": "WhatFlow vs Plivo",
+    "lines": [
+      "WhatFlow vs",
+      "Plivo"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Plivo"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-postscript",
+    "title": "WhatFlow vs Postscript",
+    "lines": [
+      "WhatFlow vs",
+      "Postscript"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Postscript"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-pushowl",
+    "title": "WhatFlow vs PushOwl",
+    "lines": [
+      "WhatFlow vs",
+      "PushOwl"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "growth",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "PushOwl"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-quickreply",
+    "title": "WhatFlow vs QuickReply.ai",
+    "lines": [
+      "WhatFlow vs",
+      "QuickReply.ai"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "cart",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "QuickReply.ai"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-rasayel",
+    "title": "WhatFlow vs Rasayel",
+    "lines": [
+      "WhatFlow vs",
+      "Rasayel"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Rasayel"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-respond-io",
+    "title": "WhatFlow vs respond.io",
+    "lines": [
+      "WhatFlow vs",
+      "respond.io"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "respond.io"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-saysimple",
+    "title": "WhatFlow vs Saysimple",
+    "lines": [
+      "WhatFlow vs",
+      "Saysimple"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Saysimple"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-shopify-inbox",
+    "title": "WhatFlow vs Shopify Inbox",
+    "lines": [
+      "WhatFlow vs",
+      "Shopify Inbox"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Shopify Inbox"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-sinch",
+    "title": "WhatFlow vs Sinch",
+    "lines": [
+      "WhatFlow vs",
+      "Sinch"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Sinch"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-sleekflow",
+    "title": "WhatFlow vs SleekFlow",
+    "lines": [
+      "WhatFlow vs",
+      "SleekFlow"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "SleekFlow"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-superlemon",
+    "title": "WhatFlow vs SuperLemon",
+    "lines": [
+      "WhatFlow vs",
+      "SuperLemon"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "SuperLemon"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-telnyx",
+    "title": "WhatFlow vs Telnyx",
+    "lines": [
+      "WhatFlow vs",
+      "Telnyx"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Telnyx"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-tidio",
+    "title": "WhatFlow vs Tidio",
+    "lines": [
+      "WhatFlow vs",
+      "Tidio"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Tidio"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-timelinesai",
+    "title": "WhatFlow vs TimelinesAI",
+    "lines": [
+      "WhatFlow vs",
+      "TimelinesAI"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "TimelinesAI"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-trengo",
+    "title": "WhatFlow vs Trengo",
+    "lines": [
+      "WhatFlow vs",
+      "Trengo"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Trengo"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-twilio",
+    "title": "WhatFlow vs Twilio",
+    "lines": [
+      "WhatFlow vs",
+      "Twilio"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Twilio"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-userlike",
+    "title": "WhatFlow vs Lime Connect formerly Userlike",
+    "lines": [
+      "WhatFlow vs",
+      "Lime Connect",
+      "formerly Userlike"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Lime Connect"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-vonage",
+    "title": "WhatFlow vs Vonage",
+    "lines": [
+      "WhatFlow vs",
+      "Vonage"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "integration",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Vonage"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-wati",
+    "title": "WhatFlow vs Wati",
+    "lines": [
+      "WhatFlow vs",
+      "Wati"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Wati"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-webengage",
+    "title": "WhatFlow vs WebEngage",
+    "lines": [
+      "WhatFlow vs",
+      "WebEngage"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "WebEngage"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-whatsapp-business-app",
+    "title": "WhatFlow vs WhatsApp Business App",
+    "lines": [
+      "WhatFlow vs",
+      "WhatsApp Business App"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "WhatsApp Business App"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-zendesk",
+    "title": "WhatFlow vs Zendesk",
+    "lines": [
+      "WhatFlow vs",
+      "Zendesk"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Zendesk"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-zoho-desk",
+    "title": "WhatFlow vs Zoho Desk",
+    "lines": [
+      "WhatFlow vs",
+      "Zoho Desk"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Zoho Desk"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatflow-vs-zoko",
+    "title": "WhatFlow vs Zoko",
+    "lines": [
+      "WhatFlow vs",
+      "Zoko"
+    ],
+    "eyebrow": "App Comparison",
+    "motif": "cart",
+    "primaryBrandLabel": "WhatFlow Business API",
+    "secondaryBrandLabel": "Zoko"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-automation-vs-manual-order-copying",
+    "title": "WhatsApp Automation vs Copying Order Details",
+    "lines": [
+      "WhatsApp Automation",
+      "vs Copying Order Details"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-back-in-stock-vs-email",
+    "title": "Back-in-Stock Alerts WhatsApp vs Email",
+    "lines": [
+      "Back-in-Stock Alerts",
+      "WhatsApp vs Email"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-business-platform-vs-channels",
+    "title": "Business Platform vs WhatsApp Channels",
+    "lines": [
+      "Business Platform",
+      "vs WhatsApp Channels"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-cart-recovery-vs-email",
+    "title": "Cart Recovery WhatsApp vs Email",
+    "lines": [
+      "Cart Recovery",
+      "WhatsApp vs Email"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "cart",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+    "title": "WhatsApp Recovery vs Retargeting Ads",
+    "lines": [
+      "WhatsApp Recovery",
+      "vs Retargeting Ads"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "cart",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-cart-recovery-vs-sms",
+    "title": "Cart Recovery WhatsApp vs SMS",
+    "lines": [
+      "Cart Recovery",
+      "WhatsApp vs SMS"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "cart",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-cod-confirmation-vs-email",
+    "title": "COD Confirmations WhatsApp vs Email",
+    "lines": [
+      "COD Confirmations",
+      "WhatsApp vs Email"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+    "title": "WhatsApp COD Replies vs Calling Every Buyer",
+    "lines": [
+      "WhatsApp COD Replies",
+      "vs Calling Every Buyer"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-cod-confirmation-vs-sms",
+    "title": "COD Confirmations WhatsApp vs SMS",
+    "lines": [
+      "COD Confirmations",
+      "WhatsApp vs SMS"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+    "title": "COD Checkout Rules vs Confirmation Messages",
+    "lines": [
+      "COD Checkout Rules",
+      "vs Confirmation Messages"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "automation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+    "title": "Customer Segments vs Generic Bulk Sending",
+    "lines": [
+      "Customer Segments",
+      "vs Generic Bulk Sending"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-free-plan-vs-free-trial",
+    "title": "Ongoing Free Plan vs Temporary Trial",
+    "lines": [
+      "Ongoing Free Plan",
+      "vs Temporary Trial"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "pricing",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+    "title": "WhatsApp Inbox vs Helpdesk Tickets",
+    "lines": [
+      "WhatsApp Inbox",
+      "vs Helpdesk Tickets"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "inbox",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-order-updates-vs-email",
+    "title": "Order Updates WhatsApp vs Email",
+    "lines": [
+      "Order Updates",
+      "WhatsApp vs Email"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "shipping",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-review-requests-vs-email",
+    "title": "Review Requests WhatsApp vs Email",
+    "lines": [
+      "Review Requests",
+      "WhatsApp vs Email"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "review",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+    "title": "Segmented WhatsApp vs Email Blasts",
+    "lines": [
+      "Segmented WhatsApp",
+      "vs Email Blasts"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-shipping-updates-vs-sms",
+    "title": "Shipping Updates WhatsApp vs SMS",
+    "lines": [
+      "Shipping Updates",
+      "WhatsApp vs SMS"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "shipping",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-volume-plans-vs-contact-pricing",
+    "title": "Message Volume vs Contact Pricing",
+    "lines": [
+      "Message Volume",
+      "vs Contact Pricing"
+    ],
+    "eyebrow": "Workflow Comparison",
+    "motif": "pricing",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-email",
+    "title": "WhatsApp vs Email",
+    "lines": [
+      "WhatsApp",
+      "vs Email"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-facebook-messenger",
+    "title": "WhatsApp vs Messenger",
+    "lines": [
+      "WhatsApp",
+      "vs Messenger"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-instagram-dm",
+    "title": "WhatsApp vs Instagram DMs",
+    "lines": [
+      "WhatsApp",
+      "vs Instagram DMs"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-mms",
+    "title": "WhatsApp vs MMS",
+    "lines": [
+      "WhatsApp",
+      "vs MMS"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-mobile-push",
+    "title": "WhatsApp vs Mobile App Push",
+    "lines": [
+      "WhatsApp",
+      "vs Mobile App Push"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-phone-calls",
+    "title": "WhatsApp vs Phone Calls",
+    "lines": [
+      "WhatsApp",
+      "vs Phone Calls"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-rcs",
+    "title": "WhatsApp vs RCS",
+    "lines": [
+      "WhatsApp",
+      "vs RCS"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-sms",
+    "title": "WhatsApp vs SMS",
+    "lines": [
+      "WhatsApp",
+      "vs SMS"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-telegram",
+    "title": "WhatsApp vs Telegram",
+    "lines": [
+      "WhatsApp",
+      "vs Telegram"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-web-push",
+    "title": "WhatsApp vs Web Push",
+    "lines": [
+      "WhatsApp",
+      "vs Web Push"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  },
+  {
+    "collection": "comparisons",
+    "slug": "whatsapp-vs-website-live-chat",
+    "title": "WhatsApp vs Website Live Chat",
+    "lines": [
+      "WhatsApp",
+      "vs Website Live Chat"
+    ],
+    "eyebrow": "Channel Comparison",
+    "motif": "conversation",
+    "primaryBrandLabel": "WhatFlow Business API"
+  }
+]

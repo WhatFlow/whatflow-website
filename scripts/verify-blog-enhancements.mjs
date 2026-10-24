@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {readFile,writeFile} from 'node:fs/promises';
+const root='content/blog/enhancement-2026-10-25';
+const wanted=JSON.parse(await readFile(`${root}/candidate-documents.json`));
+const before=JSON.parse(await readFile(`${root}/source-documents.json`));
+const base=process.env.VERIFY_SITE_URL||'https://whatflow.tech';
+const get=async path=>{const r=await fetch(base+path,{signal:AbortSignal.timeout(45000)});assert.equal(r.status,200,path);return r;};
+const live=await (await get('/api/posts?limit=100&depth=0')).json();assert.equal(live.totalDocs,58);
+const compare=await (await get('/api/comparisons?limit=1&depth=0')).json();assert.equal(compare.totalDocs,106);
+const results=[],queue=[...wanted];const assets=new Set();
+const flat=n=>n.text??(n.children||[]).map(flat).join('');
+await Promise.all(Array.from({length:3},async()=>{while(queue.length){const p=queue.shift();const actual=live.docs.find(d=>d.slug===p.slug);assert(actual,p.slug);
+ for(const field of ['content','seo','coverImageUrl','coverImageAlt','coverImageCaption','reviewedAt'])assert.deepEqual(actual[field],p[field],`${p.slug} ${field}`);
+ const old=before.find(d=>d.slug===p.slug);for(const field of ['publishedAt','createdAt','author','authorRole','faqs','sources','tags','status'])assert.deepEqual(actual[field],old[field],`${p.slug} preserved ${field}`);
+ for(const n of p.content.root.children.filter(n=>n.type==='heading'))assert(!flat(n).includes('\n'),p.slug+' malformed heading');
+ let html='';for(let attempt=0;attempt<3;attempt++){html=await (await get('/blog/'+p.slug)).text();if(html.includes('Key takeaways')&&html.includes('property="og:image" content="'+base+p.coverImageUrl+'"'))break;await new Promise(resolve=>setTimeout(resolve,3000));}
+ assert(html.includes(`rel="canonical" href="${base}/blog/${p.slug}"`));
+ assert(html.includes(p.seo.metaTitle.replaceAll('&','&amp;')),p.slug+' meta title');
+ assert(html.includes('property="og:image" content="'+base+p.coverImageUrl+'"'),p.slug+' cover OG');
+ assert(html.includes('name="twitter:image" content="'+base+p.coverImageUrl+'"'),p.slug+' cover Twitter');
+ assert(html.includes('Key takeaways'));assert(html.includes('Before you put this into practice'));assert(html.includes('About the author'));
+ assert(html.includes('aria-labelledby="article-title"'));assert(!/name="robots" content="[^"]*noindex/.test(html));
+ const schemas=[...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
+ const blog=schemas.find(s=>s['@type']==='BlogPosting');assert(blog);assert.equal(blog.author.name,'Safwan Adnan');assert.equal(blog.datePublished,old.publishedAt);assert.equal(blog.dateModified,p.updatedAt);assert(blog.publisher['@type']==='Organization');assert(schemas.some(s=>s['@type']==='BreadcrumbList'));
+ for(const s of p.sources)assert(html.includes(s.url));assets.add(p.coverImageUrl);
+ results.push({slug:p.slug,nativeCMS:true,metadata:true,schema:true,publicationDatePreserved:true,headings:true});
+}}));
+for(const path of assets){const r=await get(path);assert(r.headers.get('content-type')?.startsWith('image/'));assert((await r.arrayBuffer()).byteLength>10000);}
+const sitemap=await (await get('/sitemap.xml')).text();for(const p of wanted)assert(sitemap.includes('/blog/'+p.slug));
+const rss=await (await get('/blog/rss.xml')).text();assert.equal((rss.match(/<item>/g)||[]).length,50);
+const report={checkedAt:new Date().toISOString(),posts:58,comparisons:106,passed:results.length,coverAssets:assets.size,sitemap:true,rss:true,results};
+await writeFile(`${root}/publication-verification.json`,JSON.stringify(report,null,2));console.log(JSON.stringify({...report,results:undefined}));

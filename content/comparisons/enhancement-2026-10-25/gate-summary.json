@@ -1,0 +1,1389 @@
+{
+  "checkedAt": "2026-10-24T23:00:49.964427+00:00",
+  "comparisons": 106,
+  "allFiveStrictGatesPassed": true,
+  "scoreRange": [
+    90,
+    96
+  ],
+  "reports": [
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "passed": true,
+      "score": 96,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-sleekflow",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-timelinesai",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-kommo",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-intercom",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-chatwoot",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-hubspot",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-livechat",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-jivochat",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-shopify-inbox",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-omnisend",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-brevo",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-mailchimp",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-attentive",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-postscript",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-highlevel",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-pushowl",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-onesignal",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-sinch",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-vonage",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-plivo",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-telnyx",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-engati",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-botpress",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-landbot",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-chatfuel",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-rasayel",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-userlike",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-saysimple",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-moengage",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-webengage",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-insider",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-braze",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-chaty",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-sms",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-email",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-mms",
+      "passed": true,
+      "score": 91,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-rcs",
+      "passed": true,
+      "score": 91,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-web-push",
+      "passed": true,
+      "score": 91,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-mobile-push",
+      "passed": true,
+      "score": 91,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-website-live-chat",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-instagram-dm",
+      "passed": true,
+      "score": 90,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-facebook-messenger",
+      "passed": true,
+      "score": 90,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-phone-calls",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-vs-telegram",
+      "passed": true,
+      "score": 90,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-business-platform-vs-channels",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-order-updates-vs-email",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-review-requests-vs-email",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-bird",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-infobip",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-gupshup",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-doubletick",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-gallabox",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-360dialog",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-twilio",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-manychat",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-superlemon",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-charles",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-chatarmin",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-limechat",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "passed": true,
+      "score": 95,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-tidio",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-klaviyo",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-quickreply",
+      "passed": true,
+      "score": 93,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "passed": true,
+      "score": 92,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "passed": true,
+      "score": 94,
+      "warnings": [
+        {
+          "gate": 3,
+          "warnings": [
+            "backend: playwright"
+          ]
+        }
+      ]
+    }
+  ]
+}

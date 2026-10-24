@@ -1,0 +1,181 @@
+[
+  {
+    "url": "https://www.vonage.com/communications-apis/messages/",
+    "title": "Vonage Messages API: A Messaging API For Meaningful CX",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Programmable messaging spans WhatsApp, SMS, MMS, RCS and other channels; callbacks include status and error information. Supports comparing a custom communications application with an installed Shopify operating layer.",
+    "limits": "Does not establish a particular Shopify connector, included inbox seats, implementation cost, labor saving or channel performance advantage."
+  },
+  {
+    "url": "https://www.wati.io/en/pricing/",
+    "title": "Wati Pricing | WhatsApp Business API",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Published Growth includes three users with no additional users; Pro and Business include five with plan-specific additional-user charges. Plan capabilities and integrations differ. The page identifies a Shopify addon.",
+    "limits": "Dynamic subscription base amounts were not extracted; do not invent them. The selected tier and current regional/account quote control. No blanket claim that Wati lacks Shopify automation."
+  },
+  {
+    "url": "https://support.wati.io/en/articles/11463127-how-to-integrate-and-use-the-wati-shopify-app-with-wati-paid-account",
+    "title": "How to integrate and use the Wati Shopify app (with Wati paid account)",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Dated July 29, 2026. Documents storefront chat icon, abandoned-cart and COD messages, shipping updates, catalog and analytics. Describes additional $4.99/month Shopify plugin payment outside Wati subscription.",
+    "limits": "Documented charge is current vendor guidance, not a quote for every account or guarantee of platform performance. New content avoids repeating numeric pricing unnecessarily."
+  },
+  {
+    "url": "https://docs.webengage.com/docs/whatsapp",
+    "title": "WhatsApp: WebEngage channel configuration",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "WebEngage creates/analyzes WhatsApp campaigns while a connected WhatsApp Service Provider delivers them. Supports separating orchestration, transport responsibilities and proposal costs.",
+    "limits": "The guide contains legacy number/onboarding and policy language. Do not use it for current Meta pricing, universal coexistence rules, included seats or claims of missing Shopify functionality."
+  },
+  {
+    "url": "https://business.whatsapp.com/products/business-app",
+    "title": "WhatsApp Business App",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Describes a small-business conversation product, business profile, product presentation and greeting/away functionality; newer AI features appear on the page.",
+    "limits": "Does not establish universal feature rollout, Shopify event automation, a shared-inbox quote, device limits or migration eligibility. Do not turn a free entry point into unlimited free automated delivery.",
+    "canonicalUrl": "https://whatsappbusiness.com/products/business-app/"
+  },
+  {
+    "url": "https://www.zendesk.com/pricing/",
+    "title": "Zendesk Pricing Plans",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Support Team displays $19 per agent/month paid yearly for core email/ticketing. Suite Team displays $55 per agent/month paid yearly and adds messaging/live chat, omnichannel routing and other capabilities. Five Suite Team agents imply $275 on that monthly-equivalent basis.",
+    "limits": "Annual monthly-equivalent arithmetic is not a month-to-month staffing contract. Separate add-ons, usage and eligibility; lowest Support price is not the same package as Suite. No claim that Zendesk cannot support WhatsApp."
+  },
+  {
+    "url": "https://www.zoho.com/desk/pricing.html",
+    "title": "Zoho Desk Pricing & Editions",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Extracted local pricing is per user with monthly/yearly and currency choices. Standard lists instant messaging including WhatsApp; editions add capabilities above Express.",
+    "limits": "Extraction showed INR rather than a universal USD quote. No global price or identical edition/channel availability inferred; verify regional setup and current quote."
+  },
+  {
+    "url": "https://www.zoko.io/",
+    "title": "WhatsApp Marketing & Commerce for Shopify | Zoko",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Advertises Shopify catalog sync, shared inbox and automation flows, including COD and workflows involving apps such as Judge.me. Supports treating Zoko as a direct Shopify commerce competitor.",
+    "limits": "Vendor performance figures and superlatives lack suitable independent methodology here and are not imported. Homepage does not establish a universal plan entitlement or team charge."
+  },
+  {
+    "url": "https://www.zoko.io/pricing",
+    "title": "Zoko Pricing | WhatsApp for Shopify, No Meta Markups",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Starter explicitly advertises unlimited agents. Plus includes five then additional-agent charges; higher tiers have their own allowances. Subscription, provider usage and channel/platform charges are separate.",
+    "limits": "Do not state that all Zoko plans charge per seat or that every tier offers unlimited agents. Provider-defined conversation usage is not a substitute for Meta current delivered-message pricing. Tier terms can change."
+  },
+  {
+    "url": "https://apps.shopify.com/whatflow-official-api",
+    "title": "WhatFlow WhatsApp Business API | Shopify App Store",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Official app lists Shopify Flow, order/fulfillment alerts, template mapping, cart recovery, back-in-stock, tagging and storefront button. Free: first 100 sends then $0.01; Starter $4.99/2000 then $0.005; Plus $9.99/5000 then $0.004; Growth $29/20000 then $0.0025; Scale $49.99/40000 then $0.002; Ultimate $99/75000 then $0.0015. USD recurring/usage charges every 30 days. These support retained app-side examples at 1000, 5000, 10000, 20000 and 40000 sends.",
+    "limits": "No-seat-fee, all-feature-tier and free-forever theme-matched-button policies are explicitly confirmed first-party project information, not independently established by every listing bullet. Applicable Meta fees and tax excluded from example calculations. Listing marketing outcomes are not evidence of guaranteed results."
+  },
+  {
+    "url": "https://business.whatsapp.com/products/platform-pricing",
+    "title": "WhatsApp Business Platform Pricing",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Meta describes per-delivered-message category/destination pricing and qualifying free-message exceptions. Supports keeping platform delivery fees separate from app allowances.",
+    "limits": "No universal country rate or guaranteed effective cost. Avoid older Meta conversation-based pricing; a vendor may separately define its own commercial conversation unit.",
+    "canonicalUrl": "https://whatsappbusiness.com/products/platform-pricing/"
+  },
+  {
+    "url": "https://business.whatsapp.com/policy",
+    "title": "WhatsApp Business Messaging Policy",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Policy updated September 23, 2026: recipient permission, opt-outs, approved business-initiated templates and 24-hour customer-service window that resets on user messages. Supports channel-specific eligibility cautions.",
+    "limits": "Platform policy is not legal advice or a legal-compliance guarantee. Channel preference or another platform subscription does not establish WhatsApp campaign permission.",
+    "canonicalUrl": "https://whatsappbusiness.com/policy/"
+  },
+  {
+    "url": "https://faq.whatsapp.com/809740894165112",
+    "title": "About channels on the WhatsApp Business app",
+    "status": "unavailable_text",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Title resolved but web extraction returned zero content lines. Existing Channel distinction was checked against the official introduction blog instead.",
+    "limits": "Unavailable text does not establish a dead link or permission to bypass any challenge. Not treated as verified body support."
+  },
+  {
+    "url": "https://blog.whatsapp.com/introducing-whatsapp-channels-a-private-way-to-follow-what-matters",
+    "title": "Introducing WhatsApp Channels. A Private Way to Follow What Matters",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Official introduction describes follower updates in the Updates area and one-way broadcasts containing text/media/polls, separate from ordinary private chats. Supports public/follower updates versus private order conversations.",
+    "limits": "An introduction is not a complete current product feature catalog, pricing page or claim that every Channel is public. Use follower-update terminology and do not expose customer order details."
+  },
+  {
+    "url": "https://support.google.com/mail/answer/81126",
+    "title": "Email sender guidelines | Gmail Help",
+    "status": "web_readable_get200_head404_helper_limitation",
+    "checkDate": "2026-10-25",
+    "method": "Official body readable through web. Orchestrator follow-up established bounded normal GET200 and HEAD404; the initial direct-HTTP404 report was HEAD-specific. Source is not dead. Current helper does not fall back from HEAD404.",
+    "support": "Documents authentication, sender behavior and unsubscribe requirements for delivery to personal Gmail accounts. Supports treating email as a maintained technical program rather than inherently obsolete.",
+    "limits": "Official live guidelines remain useful for current policy and are GET-readable, but HEAD404 causes a helper-specific integrity failure. Published comparisons instead use Google’s dated announcement only for limited historical email-maintenance context. No helper bypass or fictional 403/405 exception is used. Neither source establishes comparative channel performance.",
+    "replacementUrl": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/"
+  },
+  {
+    "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+    "title": "How long can a message be? | Twilio",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "SMS encoding affects segmentation: GSM-7 and UCS-2 have different single/multipart limits, and Twilio bills SMS by sent segment. Supports calculating final localized copy instead of a nominal SMS unit.",
+    "limits": "Not a universal SMS price or MMS/RCS commercial quote. Provider/market exceptions apply. MMS proposals need their own media delivery and pricing terms; no media cost inferred from this SMS page."
+  },
+  {
+    "url": "https://judge.me/help/en/articles/8376284-verified-reviews",
+    "title": "Verified reviews | Judge.me Help Center",
+    "status": "readable",
+    "checkDate": "2026-10-25",
+    "method": "Official page opened with web tool; status describes extracted content, not a claimed HTTP response code.",
+    "support": "Readable official help content checked earlier in this same 2026-10-25 work session. Verification follows collection and purchase-linkage criteria; confirmed widget/link/QR submissions and certain linked imports can qualify. A WhatsApp form link alone does not establish verified status.",
+    "limits": "Do not generalize that all imports or all WhatsApp routes are unverified. Judge.me controls the label; source check is not an executed review-submission test."
+  },
+  {
+    "url": "https://support.google.com/a/answer/81126",
+    "title": "Email sender guidelines | Google official help",
+    "status": "web_readable_get200_head404_helper_limitation",
+    "checkDate": "2026-10-25",
+    "method": "Official body readable through web. Orchestrator follow-up established bounded normal GET200 and HEAD404; the initial direct-HTTP404 report was HEAD-specific. Source is not dead. Current helper does not fall back from HEAD404.",
+    "support": "Google personal-Gmail sender requirements include authentication, DNS/TLS, bulk-sender DMARC and unsubscribe handling. Supports preserving email as a maintained technical program rather than a channel guaranteed to fail.",
+    "limits": "Official live guidelines remain useful for current policy and are GET-readable, but HEAD404 causes a helper-specific integrity failure. Published comparisons instead use Google’s dated announcement only for limited historical email-maintenance context. No helper bypass or fictional 403/405 exception is used. Neither source establishes comparative channel performance.",
+    "replaces": "https://support.google.com/mail/answer/81126",
+    "replacementUrl": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/"
+  },
+  {
+    "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+    "title": "New Gmail protections for a safer, less spammy inbox",
+    "publicationDate": "2023-10-03",
+    "checkDate": "2026-10-25",
+    "status": "readable",
+    "method": "Official Google article opened with web tool; title, publication date and authentication/unsubscribe discussion inspected. HTTP HEAD status belongs to the orchestrator audit.",
+    "support": "Historical announcement explains bulk-sender authentication, easy unsubscribe and wanted-email expectations starting in 2024. All seven assigned email comparison bodies were checked and contain no exact current Gmail thresholds or authentication specifications requiring a current-policy citation. The article supports only the limited email-program maintenance context.",
+    "limits": "Not the complete latest policy; do not imply 2026 enforcement details or a universal inbox-placement, open-rate, conversion or channel advantage. Historical date is disclosed in replacement source titles and notes.",
+    "replacesForPublication": "https://support.google.com/mail/answer/81126"
+  }
+]

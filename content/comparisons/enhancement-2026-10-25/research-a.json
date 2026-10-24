@@ -1,0 +1,268 @@
+[
+  {
+    "url": "https://apps.shopify.com/whatflow-official-api",
+    "checkedAt": "2026-10-25",
+    "support": "Official Meta API connection; Shopify event templates, Flow and storefront button. Rating 5.0 from 51 reviews; launched May 8, 2026. USD per 30 days: Free 100 included then $0.01; Starter $4.99/2,000 then $0.005; Plus $9.99/5,000 then $0.004; Growth $29/20,000 then $0.0025; Scale $49.99/40,000 then $0.002; Ultimate $99/75,000 then $0.0015.",
+    "limits": "Assigned price examples match. All-feature, no-seat-fee and free-forever-button policies are explicitly authorized first-party product information. No performance guarantees.",
+    "status": "verified"
+  },
+  {
+    "url": "https://apps.shopify.com/whatflow",
+    "checkedAt": "2026-10-25",
+    "support": "Separate Scrptble linked-device app. Current rating 4.0 from 332 reviews; launched October 21, 2024. USD per 30 days: Free 50 included then $0.01; Starter $4.99/1,000; Growth $9.99/2,000; Professional $14.99/4,000; Enterprise $24.99/7,500, each with $0.01 overage. Ultimate $49.99 has unclear usage terms.",
+    "limits": "The existing 3.9/336 capture is explicitly historical, dated October 24. Capture variation does not establish why counts changed. Founder-reported interruptions are attributed experience; a historical developer response promising 100% uptime is not evidence to adopt.",
+    "status": "verified"
+  },
+  {
+    "url": "https://business.whatsapp.com/products/platform-pricing",
+    "checkedAt": "2026-10-25",
+    "support": "Meta charges by delivered message, destination market and category, with service and qualifying utility exemptions and conditional free entry points.",
+    "limits": "Redirects to whatsappbusiness.com. Separate provider fees can still apply; no universal rate or zero-total-cost claim follows.",
+    "status": "verified"
+  },
+  {
+    "url": "https://business.whatsapp.com/policy",
+    "checkedAt": "2026-10-25",
+    "support": "Business messaging requirements include opt-in, opt-outs, approved business-initiated templates and the 24-hour customer-service window.",
+    "limits": "Redirects to whatsappbusiness.com. Official API access is not immunity from restrictions or evidence of legal compliance.",
+    "status": "verified"
+  },
+  {
+    "url": "https://help.shopify.com/en/manual/shopify-flow",
+    "checkedAt": "2026-10-25",
+    "support": "Flow uses triggers, conditions and actions. Available on Basic, Grow, Advanced and Plus; HTTP action requires Grow or above; custom partner-app tasks require Plus.",
+    "limits": "Installed connectors, supplied data and plan limits determine actual capability. Do not claim all app features are exposed.",
+    "status": "verified"
+  },
+  {
+    "url": "https://360dialog.com/",
+    "checkedAt": "2026-10-25",
+    "support": "Advertises WhatsApp API access, webhooks, a partner ecosystem, marketplace and no markup on Meta fees.",
+    "limits": "Homepage does not establish the complete Shopify application, inbox or partner quote. Transport charges are not total operating costs.",
+    "status": "verified"
+  },
+  {
+    "url": "https://aisensy.com/integrations/shopify",
+    "checkedAt": "2026-10-25",
+    "support": "Advertises Shopify order/shipping notifications, campaign flows, dynamic product images and dashboard metrics.",
+    "limits": "No regional price or universal package entitlement established. Do not imply Shopify integration is exclusive to WhatFlow.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.attentive.com/pricing",
+    "checkedAt": "2026-10-25",
+    "support": "Describes modular pricing by messages, subscriber list, channels and selected AI tools, including SMS, email, RCS, push and journeys.",
+    "limits": "No fixed comparable quote established. Vendor performance headlines are not evidence of WhatFlow savings.",
+    "status": "verified"
+  },
+  {
+    "url": "https://bird.com/whatsapp-api/features/marketing",
+    "checkedAt": "2026-10-25",
+    "support": "Describes WhatsApp broadcasts, approved templates, opt-out handling and replies routed to an inbox or AI agent within a broader messaging platform.",
+    "limits": "No universal Bird package or account entitlement established. Specify the selected application and integration.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.bitespeed.co/",
+    "checkedAt": "2026-10-25",
+    "support": "Describes ecommerce marketing, sales and support across WhatsApp, email, SMS, voice and social, with a multichannel journey builder.",
+    "limits": "Homepage outcome claims are not adopted. A complete account-specific deployment quote was not established.",
+    "status": "verified"
+  },
+  {
+    "url": "https://botpress.com/pricing",
+    "checkedAt": "2026-10-25",
+    "support": "Conversation-based tiers with AI usage and additional conversation packs. Free and Plus include three seats; Team and Enterprise advertise unlimited seats. WhatsApp is listed.",
+    "limits": "Billing selection and usage definitions matter. Do not apply a universal per-user model or equate conversations with sent messages.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.braze.com/",
+    "checkedAt": "2026-10-25",
+    "support": "Describes a customer data platform, journey orchestration and channels including WhatsApp, email, mobile/web and SMS/RCS.",
+    "limits": "Homepage does not establish an account-specific price, implementation effort or guaranteed outcome.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.brevo.com/features/whatsapp-campaigns/",
+    "checkedAt": "2026-10-25",
+    "support": "The assigned feature URL fetched, but readable extraction contained only a metrics iframe.",
+    "limits": "Insufficient for factual feature verification. Official help documentation in this packet provides usable alternative evidence.",
+    "status": "limited_render"
+  },
+  {
+    "url": "https://www.brevo.com/pricing/",
+    "checkedAt": "2026-10-25",
+    "support": "The assigned pricing URL fetched, but readable extraction contained only a metrics iframe.",
+    "limits": "No prices verified from this landing page. Official plan and add-on help pages provide usable evidence.",
+    "status": "limited_render"
+  },
+  {
+    "url": "https://www.hello-charles.com/",
+    "checkedAt": "2026-10-25",
+    "support": "Lists subscriber collection, click-to-message ads, campaigns, service, cart recovery, restock and transactional updates.",
+    "limits": "No exact quote or guaranteed strategic-service scope established. Use-case menus do not prove purchased entitlement.",
+    "status": "verified"
+  },
+  {
+    "url": "https://chatarmin.com/en/",
+    "checkedAt": "2026-10-25",
+    "support": "Redirects to /en. Lists WhatsApp marketing, Shopify integration, AI/service, ticketing, an omnichannel inbox, analytics and workflows.",
+    "limits": "No package price or European-only restriction established. Performance headlines are not adopted.",
+    "status": "verified"
+  },
+  {
+    "url": "https://chatarmin.com/en",
+    "checkedAt": "2026-10-25",
+    "support": "Lists WhatsApp marketing, Shopify integration, AI/service, ticketing, an omnichannel inbox, analytics and workflows.",
+    "limits": "Same canonical content as /en/; not independent corroboration. No universal commercial quote established.",
+    "status": "verified"
+  },
+  {
+    "url": "https://chatfuel.com/pricing",
+    "checkedAt": "2026-10-25",
+    "support": "Business displays $18 per month billed $216 yearly with an AI-credit allowance; social/WhatsApp automation and agency packages are described.",
+    "limits": "Existing $18/$216 statement matches the displayed annual setting. Credits are not assumed equivalent to sent notifications.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.chatwoot.com/pricing",
+    "checkedAt": "2026-10-25",
+    "support": "Lists cloud and self-hosted options. Free Hacker includes two agents and live chat; paid cloud plans use agent pricing with differing channels and automation/team entitlements.",
+    "limits": "Self-hosting requires infrastructure and maintenance. Cloud agent fees are not universal open-source license fees; billing selection and fair-use terms matter.",
+    "status": "verified"
+  },
+  {
+    "url": "https://apps.shopify.com/chaty",
+    "checkedAt": "2026-10-25",
+    "support": "Shopify listing describes multiple contact channels, preset WhatsApp messages, styling, position, targeting, analytics and a free plan.",
+    "limits": "A contact widget does not establish a complete outbound API and inbox product. No unsupported deficiency is inferred.",
+    "status": "verified"
+  },
+  {
+    "url": "https://crisp.chat/en/pricing/",
+    "checkedAt": "2026-10-25",
+    "support": "Workspace packages: Free with two seats; Mini $45 with four; Essentials $95 with ten and WhatsApp omnichannel inbox; Plus $295 with 20+ seats.",
+    "limits": "Existing numeric claims match. Do not invent a per-agent penalty for a team within the bundle; AI and channel terms remain separate.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.delightchat.io/",
+    "checkedAt": "2026-10-25",
+    "support": "Describes an omnichannel inbox, official WhatsApp marketing, order notifications, recovery and Shopify order data with collaborative support work.",
+    "limits": "Homepage performance claims are not adopted. No complete account-specific price established.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.delightchat.io/help-center/integrate-whatsapp-on-delightchat",
+    "checkedAt": "2026-10-25",
+    "support": "Documents WhatsApp API setup, multi-agent support, paid-plan availability, broadcasts, order tracking, COD and cart automation.",
+    "limits": "Use the account-specific setup wizard. Do not generalize this provider’s coexistence wording to every WhatsApp arrangement.",
+    "status": "verified"
+  },
+  {
+    "url": "https://apps.shopify.com/dondy-marketing-ai",
+    "checkedAt": "2026-10-25",
+    "support": "Shopify listing: Built for Shopify, Flow integrations, Free button, Pro $6.99, Power Automation $79.99, Elite $159.99; API/inbox at automation tier and five agents listed on Elite. Current rating 4.9 from 829 reviews.",
+    "limits": "Existing prices match. Message rates depend on market/tier. Do not infer absent Shopify integration, absent free access or universal per-seat fees.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.dondy.net/post/dondy-is-joining-circeus",
+    "checkedAt": "2026-10-25",
+    "support": "Dondy announces joining Circeus and Shop Circle, with product/team/support/account continuity and a broader AI, channel and upmarket roadmap.",
+    "limits": "Roadmap statements are announced intentions, not proven delivery or future pricing changes. Ranking and AI-resolution headlines are not adopted as established comparative facts.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.circeus.com/blogs/acquire/dondy-joins-circeus",
+    "checkedAt": "2026-10-25",
+    "support": "The acquirer confirms Dondy joining its Shop Circle division and describes AI, enterprise and new-market direction.",
+    "limits": "An acquisition party is not independent performance corroboration. No future pricing deterioration or support outcome is established.",
+    "status": "verified"
+  },
+  {
+    "url": "https://whatflow.tech/compare/whatflow-chat-automation-vs-business-api",
+    "checkedAt": "2026-10-25",
+    "support": "The web tool returned an inaccessible URL. The native document was supplied and read in full.",
+    "limits": "Do not claim live-URL verification. App identity is checked against the separate Shopify listings; internal destination existence follows the 106-document inventory.",
+    "status": "unavailable"
+  },
+  {
+    "url": "https://doubletick.io/",
+    "checkedAt": "2026-10-25",
+    "support": "Advertises a unified WhatsApp operation across numbers/departments, with inbox, AI, automation, broadcasts, governance and notes.",
+    "limits": "No universal quote or account-specific access entitlement established. Shopify integration is not presumed absent.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.engati.ai/pricing",
+    "checkedAt": "2026-10-25",
+    "support": "Lists WhatsApp/omnichannel packages, agent allowances and license add-ons, plus ecommerce integration for Shopify/WooCommerce with order and cart capabilities.",
+    "limits": "Exact proposal required. Do not generalize headline daily cost or legacy conversation pricing.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.freshworks.com/live-chat-software/pricing/",
+    "checkedAt": "2026-10-25",
+    "support": "Free for up to ten agents; Growth $19 per agent/month billed annually, with higher tiers and separately listed AI/session, connector and day-pass extras.",
+    "limits": "Five Growth agents equal $95 per month on the annual basis, not a complete WhatsApp bill. Free agent access does not establish every channel entitlement.",
+    "status": "verified"
+  },
+  {
+    "url": "https://front.com/pricing",
+    "checkedAt": "2026-10-25",
+    "support": "Per-seat tiers distinguish single-channel Starter, omnichannel Professional and broader Enterprise governance/automation; AI terms vary.",
+    "limits": "Annual pricing selection matters. General pricing does not establish every WhatsApp integration or third-party cost.",
+    "status": "verified"
+  },
+  {
+    "url": "https://gallabox.com/",
+    "checkedAt": "2026-10-25",
+    "support": "Describes inquiry capture, qualification, nurture, conversion and retention across WhatsApp, Instagram, web chat and voice.",
+    "limits": "Broad use cases do not prove every account includes each channel. Quote and integration scope still require confirmation.",
+    "status": "verified"
+  },
+  {
+    "url": "https://helpcenter.gorgias.com/en-US/handle-tickets-in-gorgias-whatsapp-8200191",
+    "checkedAt": "2026-10-25",
+    "support": "Updated September 16, 2026. Documents WhatsApp tickets, attachments, approved-template initiation and billing after a public agent reply. Ticket continuation is distinct from Meta’s 24-hour window.",
+    "limits": "Do not claim proactive WhatsApp is unavailable. No complete account-specific bill is established; existing public-reply billing claim is supported.",
+    "status": "verified"
+  },
+  {
+    "url": "https://www.gupshup.ai/",
+    "checkedAt": "2026-10-25",
+    "support": "Describes Conversation Cloud, AI agents, sales/marketing/support, orchestration and human escalation across messaging channels.",
+    "limits": "No single standardized Shopify application, partner implementation or complete price is established.",
+    "status": "verified"
+  },
+  {
+    "url": "https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans",
+    "checkedAt": "2026-10-25",
+    "support": "Current official plan help includes WhatsApp campaign/transactional add-on scope on Professional, with prepaid WhatsApp-credit availability on Professional and Enterprise.",
+    "limits": "An email entry price is not a WhatsApp deployment price. Prefer exact entitlement over unnecessary repetition of changeable entry amounts.",
+    "status": "verified"
+  },
+  {
+    "url": "https://help.brevo.com/hc/en-us/articles/4409354969746-Customize-your-plan-with-add-ons",
+    "checkedAt": "2026-10-25",
+    "support": "Documents prepaid WhatsApp credits for Professional and Enterprise, separately purchased; consumption depends on destination and template type.",
+    "limits": "Confirm the current account offer. Credits are not assumed equivalent one-for-one to message sends.",
+    "status": "verified"
+  },
+  {
+    "url": "https://help.brevo.com/hc/en-us/articles/4416961286674-Supported-countries-and-pricing-for-WhatsApp-messages",
+    "checkedAt": "2026-10-25",
+    "support": "Current opened body describes country/category credit pricing and provider charges for service/utility messages within the window from October 1, 2026.",
+    "limits": "Its attribution to Meta conflicts with Meta’s current service/qualifying-utility exemptions. Treat the credit charge as provider-specific and request reconciliation; the older search snippet differs from the opened body.",
+    "status": "verified_with_conflict"
+  },
+  {
+    "url": "https://zapier.com/apps/shopify/integrations/whatsapp-notifications",
+    "checkedAt": "2026-10-25",
+    "support": "Official integration catalogue describes Shopify triggers and WhatsApp-notification action patterns within Zapier’s wider app connections.",
+    "limits": "Specific connectors, partners and actions apply. A catalogue pairing is not proof of a complete reply inbox or a universal WhatFlow connector.",
+    "status": "verified"
+  }
+]

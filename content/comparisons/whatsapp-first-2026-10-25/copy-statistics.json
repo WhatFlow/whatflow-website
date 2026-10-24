@@ -1,0 +1,435 @@
+{
+  "articles": 106,
+  "bodyWords": 77779,
+  "previousBodyWords": 79069,
+  "minBodyWords": 592,
+  "maxBodyWords": 1937,
+  "uniqueVerdicts": 106,
+  "stage": "Copy draft; final visual and publishing checks pending",
+  "articlesDetail": [
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "bodyWords": 1937
+    },
+    {
+      "slug": "whatflow-vs-sleekflow",
+      "bodyWords": 677
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "bodyWords": 734
+    },
+    {
+      "slug": "whatflow-vs-timelinesai",
+      "bodyWords": 766
+    },
+    {
+      "slug": "whatflow-vs-kommo",
+      "bodyWords": 703
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "bodyWords": 745
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "bodyWords": 726
+    },
+    {
+      "slug": "whatflow-vs-intercom",
+      "bodyWords": 715
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "bodyWords": 751
+    },
+    {
+      "slug": "whatflow-vs-chatwoot",
+      "bodyWords": 716
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "bodyWords": 660
+    },
+    {
+      "slug": "whatflow-vs-hubspot",
+      "bodyWords": 780
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "bodyWords": 723
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "bodyWords": 703
+    },
+    {
+      "slug": "whatflow-vs-livechat",
+      "bodyWords": 776
+    },
+    {
+      "slug": "whatflow-vs-jivochat",
+      "bodyWords": 733
+    },
+    {
+      "slug": "whatflow-vs-shopify-inbox",
+      "bodyWords": 684
+    },
+    {
+      "slug": "whatflow-vs-omnisend",
+      "bodyWords": 752
+    },
+    {
+      "slug": "whatflow-vs-brevo",
+      "bodyWords": 716
+    },
+    {
+      "slug": "whatflow-vs-mailchimp",
+      "bodyWords": 687
+    },
+    {
+      "slug": "whatflow-vs-attentive",
+      "bodyWords": 702
+    },
+    {
+      "slug": "whatflow-vs-postscript",
+      "bodyWords": 732
+    },
+    {
+      "slug": "whatflow-vs-highlevel",
+      "bodyWords": 661
+    },
+    {
+      "slug": "whatflow-vs-pushowl",
+      "bodyWords": 708
+    },
+    {
+      "slug": "whatflow-vs-onesignal",
+      "bodyWords": 762
+    },
+    {
+      "slug": "whatflow-vs-sinch",
+      "bodyWords": 650
+    },
+    {
+      "slug": "whatflow-vs-vonage",
+      "bodyWords": 692
+    },
+    {
+      "slug": "whatflow-vs-plivo",
+      "bodyWords": 743
+    },
+    {
+      "slug": "whatflow-vs-telnyx",
+      "bodyWords": 662
+    },
+    {
+      "slug": "whatflow-vs-engati",
+      "bodyWords": 689
+    },
+    {
+      "slug": "whatflow-vs-botpress",
+      "bodyWords": 740
+    },
+    {
+      "slug": "whatflow-vs-landbot",
+      "bodyWords": 701
+    },
+    {
+      "slug": "whatflow-vs-chatfuel",
+      "bodyWords": 721
+    },
+    {
+      "slug": "whatflow-vs-rasayel",
+      "bodyWords": 748
+    },
+    {
+      "slug": "whatflow-vs-userlike",
+      "bodyWords": 670
+    },
+    {
+      "slug": "whatflow-vs-saysimple",
+      "bodyWords": 726
+    },
+    {
+      "slug": "whatflow-vs-moengage",
+      "bodyWords": 757
+    },
+    {
+      "slug": "whatflow-vs-webengage",
+      "bodyWords": 635
+    },
+    {
+      "slug": "whatflow-vs-insider",
+      "bodyWords": 736
+    },
+    {
+      "slug": "whatflow-vs-braze",
+      "bodyWords": 697
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "bodyWords": 959
+    },
+    {
+      "slug": "whatflow-vs-chaty",
+      "bodyWords": 717
+    },
+    {
+      "slug": "whatsapp-vs-sms",
+      "bodyWords": 752
+    },
+    {
+      "slug": "whatsapp-vs-email",
+      "bodyWords": 711
+    },
+    {
+      "slug": "whatsapp-vs-mms",
+      "bodyWords": 640
+    },
+    {
+      "slug": "whatsapp-vs-rcs",
+      "bodyWords": 664
+    },
+    {
+      "slug": "whatsapp-vs-web-push",
+      "bodyWords": 641
+    },
+    {
+      "slug": "whatsapp-vs-mobile-push",
+      "bodyWords": 633
+    },
+    {
+      "slug": "whatsapp-vs-website-live-chat",
+      "bodyWords": 696
+    },
+    {
+      "slug": "whatsapp-vs-instagram-dm",
+      "bodyWords": 694
+    },
+    {
+      "slug": "whatsapp-vs-facebook-messenger",
+      "bodyWords": 619
+    },
+    {
+      "slug": "whatsapp-vs-phone-calls",
+      "bodyWords": 686
+    },
+    {
+      "slug": "whatsapp-vs-telegram",
+      "bodyWords": 595
+    },
+    {
+      "slug": "whatsapp-business-platform-vs-channels",
+      "bodyWords": 626
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "bodyWords": 755
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "bodyWords": 695
+    },
+    {
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "bodyWords": 624
+    },
+    {
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "bodyWords": 676
+    },
+    {
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "bodyWords": 670
+    },
+    {
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "bodyWords": 602
+    },
+    {
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "bodyWords": 673
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "bodyWords": 656
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "bodyWords": 602
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "bodyWords": 671
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "bodyWords": 663
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "bodyWords": 600
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "bodyWords": 657
+    },
+    {
+      "slug": "whatsapp-order-updates-vs-email",
+      "bodyWords": 670
+    },
+    {
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "bodyWords": 592
+    },
+    {
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "bodyWords": 667
+    },
+    {
+      "slug": "whatsapp-review-requests-vs-email",
+      "bodyWords": 656
+    },
+    {
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "bodyWords": 611
+    },
+    {
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "bodyWords": 680
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "bodyWords": 668
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "bodyWords": 618
+    },
+    {
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "bodyWords": 653
+    },
+    {
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "bodyWords": 662
+    },
+    {
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "bodyWords": 606
+    },
+    {
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "bodyWords": 677
+    },
+    {
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "bodyWords": 677
+    },
+    {
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "bodyWords": 612
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "bodyWords": 675
+    },
+    {
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "bodyWords": 863
+    },
+    {
+      "slug": "whatflow-vs-bird",
+      "bodyWords": 869
+    },
+    {
+      "slug": "whatflow-vs-infobip",
+      "bodyWords": 801
+    },
+    {
+      "slug": "whatflow-vs-gupshup",
+      "bodyWords": 799
+    },
+    {
+      "slug": "whatflow-vs-doubletick",
+      "bodyWords": 790
+    },
+    {
+      "slug": "whatflow-vs-gallabox",
+      "bodyWords": 792
+    },
+    {
+      "slug": "whatflow-vs-360dialog",
+      "bodyWords": 818
+    },
+    {
+      "slug": "whatflow-vs-twilio",
+      "bodyWords": 902
+    },
+    {
+      "slug": "whatflow-vs-manychat",
+      "bodyWords": 806
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "bodyWords": 865
+    },
+    {
+      "slug": "whatflow-vs-superlemon",
+      "bodyWords": 892
+    },
+    {
+      "slug": "whatflow-vs-charles",
+      "bodyWords": 760
+    },
+    {
+      "slug": "whatflow-vs-chatarmin",
+      "bodyWords": 879
+    },
+    {
+      "slug": "whatflow-vs-limechat",
+      "bodyWords": 928
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "bodyWords": 847
+    },
+    {
+      "slug": "whatflow-vs-tidio",
+      "bodyWords": 895
+    },
+    {
+      "slug": "whatflow-vs-klaviyo",
+      "bodyWords": 893
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "bodyWords": 818
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "bodyWords": 714
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "bodyWords": 787
+    },
+    {
+      "slug": "whatflow-vs-quickreply",
+      "bodyWords": 822
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "bodyWords": 801
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "bodyWords": 917
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "bodyWords": 804
+    }
+  ]
+}

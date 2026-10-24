@@ -1,0 +1,2742 @@
+{
+  "checkedAt": "2026-10-24T11:35:02.627Z",
+  "sourceEntries": 273,
+  "originalArticles": 52,
+  "oneToOneReplication": false,
+  "counts": {
+    "related-original-guide": 208,
+    "source-specific-reference": 65
+  },
+  "entries": [
+    {
+      "source": {
+        "category": "Recommended",
+        "title": "How to improve SEO on Shopify: 10 strategies for merchants",
+        "url": "https://judge.me/blog/how-to-improve-seo-on-shopify"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-review-schema-rich-results-explained",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "AI, systems & processes: scaling creative without hiring a big team",
+        "url": "https://judge.me/blog/scaling-creative-with-ai-for-shopify-businesses"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Growth Unlocked presents Stop or scale: operator honesty at $1-10M",
+        "url": "https://judge.me/blog/stop-or-scale-ecommerce-operator-lessons"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/small-shopify-store-metrics-review-routine",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Judge.me's vision: what's coming next for our customers",
+        "url": "https://judge.me/blog/judge-me-vision-whats-coming-next"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How to get better reviews with Judge.me customization",
+        "url": "https://judge.me/blog/how-to-get-better-reviews"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/collect-first-product-reviews-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How to get more reviews: 5 ways to increase your review collection rate with Judge.me",
+        "url": "https://judge.me/blog/how-to-get-more-reviews"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/review-collection-rate-measurement-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Everything you need to know about benchmarking review collection rate for Shopify businesses",
+        "url": "https://judge.me/blog/benchmarking-review-collection-rate"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/review-collection-rate-measurement-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How to use AI for business: a practical guide for Shopify merchants",
+        "url": "https://judge.me/blog/how-to-use-ai-for-business-shopify-store-guide"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Master guide: How to collect reviews for your Shopify business",
+        "url": "https://judge.me/blog/how-to-collect-reviews-guide"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/collect-first-product-reviews-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How to respond to negative reviews: Examples, templates, and best practices",
+        "url": "https://judge.me/blog/how-to-respond-to-negative-reviews-guide"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/respond-negative-product-reviews-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "What shoppers told us about trusting an online store",
+        "url": "https://judge.me/blog/what-shoppers-told-us-about-trusting-an-online-store"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Incentivized reviews and loyalty: A retention guide for Shopify stores",
+        "url": "https://judge.me/blog/using-incentivized-reviews-trust-loyalty-loop"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "What is schema markup for SEO? A beginner's guide for Shopify store owners",
+        "url": "https://judge.me/blog/beginners-guide-to-schema-markup-seo"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-review-schema-rich-results-explained",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Review Marketing 101: How to Turn Customer Feedback into Brand Growth",
+        "url": "https://judge.me/blog/review-marketing-101-how-to-turn-customer-feedback-into-brand-growth"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/customer-review-insights-product-copy",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Build trust faster: 3 easy ways to collect more reviews",
+        "url": "https://judge.me/blog/build-trust-faster-3-easy-ways-to-collect-more-reviews"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/collect-first-product-reviews-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "The State of Consumer Trust 2025: What 600,000+ merchants reveal about customer confidence",
+        "url": "https://judge.me/blog/state-of-consumer-trust-2025"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "What’s New at Judge.me: November Feature Highlights",
+        "url": "https://judge.me/blog/what-s-new-at-judge-me-november-feature-highlights"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Judge.me Ali Reviews Importer secures Built for Shopify badge! 💎",
+        "url": "https://judge.me/blog/judge-me-ali-reviews-importer-secures-built-for-shopify-badge"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/migrate-review-app-preserve-customer-feedback",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "How dropshippers can actually win Black Friday / Cyber Monday",
+        "url": "https://judge.me/blog/how-dropshippers-can-actually-win-black-friday-cyber-monday"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/prepare-customer-support-black-friday-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Side hustlers: Here’s how to hack BFCM with high-ROI, low-effort tactics",
+        "url": "https://judge.me/blog/side-hustlers-here-s-how-to-hack-bfcm-with-high-roi-low-effort-tactics"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/prepare-customer-support-black-friday-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Win at BFCM on your first try: 5 trust-building steps for new stores",
+        "url": "https://judge.me/blog/5-trust-building-steps-for-new-stores-bcfm-2025"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/prepare-customer-support-black-friday-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "What’s New at Judge.me: October Feature Highlights",
+        "url": "https://judge.me/blog/what-s-new-at-judge-me-october-feature-highlights"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "What’s New at Judge.me: September Feature Highlights",
+        "url": "https://judge.me/blog/what-s-new-at-judge-me-september-feature-highlights"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Selling on Shopify: Your guide to getting started in 2025",
+        "url": "https://judge.me/blog/selling-on-shopify-your-definitive-2025-2026-guide"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/choose-ecommerce-platform-customer-workflows",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "What’s New at Judge.me: August 2025",
+        "url": "https://judge.me/blog/whats-new-at-judge-me-august-2025"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "How Fit Kit Bodycare grew 900% in three years",
+        "url": "https://judge.me/blog/growth-unlocked-fit-kit-bodycare-900-percent-in-three-years"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How to choose your product review app",
+        "url": "https://judge.me/blog/how-to-choose-your-product-review-app"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/choose-review-app-and-messaging-app-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Shopify vs Wix: Which ecommerce platform is better for your business in 2025?",
+        "url": "https://judge.me/blog/shopify-vs-wix"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/choose-ecommerce-platform-customer-workflows",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Shopify vs Square: Which ecommerce platform is better for your business in 2025?",
+        "url": "https://judge.me/blog/shopify-vs-square"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/choose-ecommerce-platform-customer-workflows",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Shopify vs Squarespace: Which ecommerce platform is better for your business in 2025?",
+        "url": "https://judge.me/blog/shopify-vs-squarespace"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/choose-ecommerce-platform-customer-workflows",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Shopify vs WooCommerce",
+        "url": "https://judge.me/blog/shopify-vs-woocommerce"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/choose-ecommerce-platform-customer-workflows",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Shopify vs BigCommerce",
+        "url": "https://judge.me/blog/shopify-vs-bigcommerce"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/choose-ecommerce-platform-customer-workflows",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How to use rewards to get more reviews and loyal customers",
+        "url": "https://judge.me/blog/using-rewards-to-get-more-reviews-and-loyal-customers"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Understanding how trust badges can increase your conversion rates",
+        "url": "https://judge.me/blog/trust-badges-can-increase-your-conversion-rates"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "What’s New at Judge.me: July Feature Highlights",
+        "url": "https://judge.me/blog/what-s-new-at-judge-me-july-feature-highlights"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Start Syncing Your Etsy Reviews to Shopify with Judge.me",
+        "url": "https://judge.me/blog/sync-your-etsy-reviews-to-shopify-with-judge-me"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/migrate-review-app-preserve-customer-feedback",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "How to add reviews to Shopify and start collecting social proof",
+        "url": "https://judge.me/blog/how-to-add-reviews-to-shopify-start-collecting-social-proof"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Yotpo vs Loox: Which product review app is best?",
+        "url": "https://judge.me/blog/yotpo-vs-loox-which-review-app-is-right-for-your-shopify-store"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/choose-review-app-and-messaging-app-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Your Brand. Your Emails. One Central Place.",
+        "url": "https://judge.me/blog/your-brand-your-emails-one-central-place"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "The untapped value of product reviews on social media",
+        "url": "https://judge.me/blog/untapped-value-of-product-reviews-on-social-media"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/reuse-customer-reviews-social-media",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "How to get more reviews for your business with Email, SMS & QR Codes",
+        "url": "https://judge.me/blog/how-to-get-more-reviews-for-your-business-email-sms-qr-codes"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/qr-code-review-requests-product-packaging",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "How Beardbrand built a 7-Figure ecommerce business",
+        "url": "https://judge.me/blog/growth-unlocked-how-beardbrand-built-a-7-figure-ecommerce-business"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Review requests: 4 tips to get more responses and better reviews",
+        "url": "https://judge.me/blog/review-requests-4-key-points-to-get-more-responses-and-better-reviews"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/collect-first-product-reviews-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Store reviews: Everything you need to know and how they help ecommerce brands",
+        "url": "https://judge.me/blog/everything-you-need-to-know-store-reviews-in-2025"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-reviews-vs-store-reviews",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "The Verdict roundup: 8 ecommerce experts share tips to grow your store",
+        "url": "https://judge.me/blog/the-verdict-roundup-8-ecommerce-experts-share-tips-to-grow-your-store"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Why first reviews are important and how you should handle them",
+        "url": "https://judge.me/blog/why-first-reviews-matter-for-your-business-and-how-you-should-handle-them"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/migrate-review-app-preserve-customer-feedback",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Your Google Reviews Deserve the Spotlight - Now They’ve Got It",
+        "url": "https://judge.me/blog/your-google-reviews-deserve-the-spotlight-now-they-ve-got-it"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "How to choose a product reviews app for your Shopify store in 2025",
+        "url": "https://judge.me/blog/how-to-choose-a-product-reviews-app-for-your-shopify-store"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/choose-review-app-and-messaging-app-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Connect Worldwide with Multilingual Review Widgets and Emails",
+        "url": "https://judge.me/blog/connect-worldwide-with-multilingual-reviews-widgets-emails"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Judge.me Widget Branding Gets A Fresh New Look",
+        "url": "https://judge.me/blog/judge-me-widget-branding-gets-a-fresh-new-look"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/mobile-store-review-widget-chat-button-layout",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Farewell to Checkout Comments: Sunsetting Our Legacy App",
+        "url": "https://judge.me/blog/farewell-to-checkout-comments-sunsetting-our-legacy-app"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Product Variants in Reviews: More Clarity, More Confidence, More Sales",
+        "url": "https://judge.me/blog/product-variants-in-reviews-more-clarity-more-confidence-more-sales"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-variant-review-context",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Judge.me Now Syncs Reviews to TikTok Shop – Let’s Get Social!",
+        "url": "https://judge.me/blog/judge-me-now-syncs-reviews-to-tiktok-shop-let-s-get-social"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/migrate-review-app-preserve-customer-feedback",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Don’t Let a Language Barrier Block Sales - Introducing Multilingual Sorting",
+        "url": "https://judge.me/blog/don-t-let-a-language-barrier-block-sales-introducing-multilingual-sorting"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/multilingual-customer-messaging-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Boost Your Duda Store with Judge.me Product Reviews",
+        "url": "https://judge.me/blog/boost-your-duda-store-with-judge-me-product-reviews"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Collect Reviews Directly from Shopify Customer Accounts with Judge.me",
+        "url": "https://judge.me/blog/collect-reviews-directly-from-shopify-customer-accounts-with-judge-me"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/collect-first-product-reviews-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Build Trust Straightaway With Our Review Snippets Widget",
+        "url": "https://judge.me/blog/build-trust-with-review-snippets"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Enhance Your Branding With Our Customizable Rating Icons",
+        "url": "https://judge.me/blog/take-your-review-branding-to-the-next-level-with-our-customizable-rating-icons"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/mobile-store-review-widget-chat-button-layout",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "More Social Proof, Less Effort: Import Reviews from Etsy and Amazon",
+        "url": "https://judge.me/blog/more-social-proof-less-effort-import-reviews-from-etsy-and-amazon"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/migrate-review-app-preserve-customer-feedback",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Boost Your Review Collection with QR Codes",
+        "url": "https://judge.me/blog/boost-your-review-collection-with-qr-codes"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/qr-code-review-requests-product-packaging",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "3 Easy Ways to Make Your Reviews Shine",
+        "url": "https://judge.me/blog/3-easy-ways-to-make-your-reviews-shine"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How LINE FRIENDS Used Judge.me to Boost Customer Engagement and Trust",
+        "url": "https://judge.me/blog/how-line-friends-used-judge-me-to-boost-customer-engagement-and-trust"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "With Our AI Review Summaries, Your Shoppers Can Decide to Buy Faster than Ever",
+        "url": "https://judge.me/blog/with-our-ai-review-summaries-your-shoppers-can-decide-to-buy-faster-than-ever"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Show Off Your Top Reviews with the Pop-Up Widget",
+        "url": "https://judge.me/blog/show-off-your-top-reviews-with-the-pop-up-widget"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/mobile-store-review-widget-chat-button-layout",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Your Reviews Dashboard Just Got Even Better",
+        "url": "https://judge.me/blog/your-reviews-dashboard-just-got-even-better"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/review-collection-rate-measurement-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Make More Informed Decisions with the Revamped Reporting Dashboard",
+        "url": "https://judge.me/blog/make-more-informed-decisions-with-the-revamped-reporting-dashboard"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/review-collection-rate-measurement-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Tips for Shopify Social Proof 2024",
+        "url": "https://judge.me/blog/tips-for-shopify-social-proof-2024"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Show Off Your Best Reviews and Boost the Chance of Sale with the New Carousel Theme",
+        "url": "https://judge.me/blog/show-off-your-best-products-and-increase-the-chance-of-sale-with-the-new-carousel-theme"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/mobile-store-review-widget-chat-button-layout",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Boost Your SEO with Review Schema Markup",
+        "url": "https://judge.me/blog/boost-your-seo-with-review-schema-markup"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-review-schema-rich-results-explained",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "We’ve Been Awarded the Built for Shopify Badge!",
+        "url": "https://judge.me/blog/weve-been-awarded-the-built-for-shopify-badge"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Shopify Is Sunsetting Its Product Reviews App. Judge.me Is a Great Alternative.",
+        "url": "https://judge.me/blog/shopify-sunsetting-judge-me-great-alternative"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/migrate-review-app-preserve-customer-feedback",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Sync Your Customers with Shopify",
+        "url": "https://judge.me/blog/sync-your-customers-with-shopify"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/migrate-review-app-preserve-customer-feedback",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Refresh Your Review Requests with the Email Template Gallery",
+        "url": "https://judge.me/blog/refresh-your-review-requests-with-the-email-template-gallery"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "The Judge.me App Is Getting an Upgrade!",
+        "url": "https://judge.me/blog/the-judge-me-app-is-getting-an-upgrade"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "How to Add Reviews to Shopify to Increase Your Brand Trust",
+        "url": "https://judge.me/blog/how-to-add-reviews-to-shopify-to-increase-your-brand-trust"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Reply to Reviews Quickly with Our AI Tool",
+        "url": "https://judge.me/blog/reply-to-reviews-quickly-with-our-ai-tool"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/respond-negative-product-reviews-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Automate Tasks with Shopify Flow",
+        "url": "https://judge.me/blog/automate-tasks-with-shopify-flow"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "We’ve Revamped Our Settings to Give You a Better User Experience",
+        "url": "https://judge.me/blog/weve-revamped-our-settings-to-give-you-a-better-user-experience"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Offer Discounts in Judge.me When Customers Refer Your Stores",
+        "url": "https://judge.me/blog/discounts-customers-refer-stores"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/customer-referral-messages-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Get More from Custom Forms with Our New Features",
+        "url": "https://judge.me/blog/get-more-from-custom-forms-with-our-new-features"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/write-useful-product-faqs-shopify",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Display Judge.me Star Ratings, Top Reviews and UGC on Klaviyo Emails",
+        "url": "https://judge.me/blog/judge-me-star-reviews-ugc-klaviyo"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/reuse-customer-reviews-social-media",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Tidio - Create Support Tickets & Engage with Reviews via Chatbot",
+        "url": "https://judge.me/blog/new-integration-tidio"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Awesome Product Review Examples from Top Brands",
+        "url": "https://judge.me/blog/awesome-product-review-examples-from-top-brands"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/collect-first-product-reviews-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "November Shopify Tech Partners Event: 'How to Grow Your E-commerce Store' and 'Black Friday Discounts'",
+        "url": "https://judge.me/blog/november-shopify-tech-partners-event-growth-in-e-commerce-and-black-friday-discounts"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/prepare-customer-support-black-friday-shopify",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Boost Reviewer Loyalty with Froonze Customer Accounts Concierge",
+        "url": "https://judge.me/blog/new-integration-boost-reviewer-loyalty-with-froonze-customer-accounts-concierge"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Level Up Your User Experience with Three Powerful FoxEcom Integrations",
+        "url": "https://judge.me/blog/new-integration-foxecom"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Send Review Requests for Amazon Orders Automatically",
+        "url": "https://judge.me/blog/new-integration-send-review-requests-for-amazon-orders-automatically"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Translate Judge.me Widgets with Hextom",
+        "url": "https://judge.me/blog/new-integration-translate-judge-me-widgets-with-hextom"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/multilingual-customer-messaging-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Review Site Improvements: Get Featured and Enjoy Product and Store Page Improvements",
+        "url": "https://judge.me/blog/new-review-site-features-appear-on-the-homepage-enjoy-product-and-store-page-improvements-and-see-the-origin-of-reviews"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Turn More Visitors into Buyers with Brevi Chat",
+        "url": "https://judge.me/blog/new-integration-turn-more-visitors-into-buyers-with-brevi-chat"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Reward Reviewers and Build Loyalty with Kangaroo",
+        "url": "https://judge.me/blog/new-integration-reward-reviewers-and-build-loyalty-with-kangaroo"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "August Shopify Tech Partners Event: 'The Power of Branding' and 'Creating Meaningful Partnerships'",
+        "url": "https://judge.me/blog/august-shopify-tech-partners-event-the-power-of-branding-and-creating-meaningful-partnerships"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Improvement: Review Dashboard",
+        "url": "https://judge.me/blog/improvement-review-dashboard"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/review-collection-rate-measurement-shopify",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "We’re Making Some Changes to Boost Consumer Trust",
+        "url": "https://judge.me/blog/were-making-some-changes-to-boost-consumer-trust"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Why Use Content Marketing for Your Online Store",
+        "url": "https://judge.me/blog/why-use-content-marketing-for-your-online-store"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-content-plan-customer-questions",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Add Judge.me Widgets in Veda Builder",
+        "url": "https://judge.me/blog/new-integration-add-judge-me-widgets-in-veda-builder"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Judge.me Product Reviews Is Now Integrated with Square!",
+        "url": "https://judge.me/blog/square-integration"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "June Shopify Tech Partners Event: 'Build, Analyze, Iterate' for Shopify and 'How to Lose $200k in One Day'",
+        "url": "https://judge.me/blog/june-shopify-tech-partners-event"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Make Your Reviews Stand Out with Eye-Catching New Widget Designs",
+        "url": "https://judge.me/blog/make-your-reviews-stand-out-with-eye-catching-new-widget-designs"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Turn Casual Shoppers into Lifelong Customers with Appstle Loyalty",
+        "url": "https://judge.me/blog/new-integration-appstle"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Reward Your Reviewers with Offerwhere",
+        "url": "https://judge.me/blog/new-integration-offerwhere"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Judge.me Spotlight: Dave Spanton, Optizio",
+        "url": "https://judge.me/blog/judge-me-spotlight-dave-spanton-optizio"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "May Shopify Tech Partners Event: 5 Actionable Ways to Build a Great Remote Team Culture and Gadget, the Easiest Way to Build a Shopify App.",
+        "url": "https://judge.me/blog/may-shopify-tech-partners-event-5-actionable-ways-to-build-a-great-remote-team-culture-and-gadget-the-easiest-way-to-build-a-shopify-app"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Boost Your Brand with the New Tone of Voice Feature",
+        "url": "https://judge.me/blog/build-trust-with-judge-mes-tone-of-voice-feature"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Judge.me Spotlight: Guillaume Faure, LiveMeUp",
+        "url": "https://judge.me/blog/judge-me-spotlight-guillaume-faure-livemeup"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "April Shopify Tech Partners Event: What E-commerce Stores Can Expect from Google Analytics 4",
+        "url": "https://judge.me/blog/april-shopify-tech-partner-event-what-ecommerce-stores-can-expect-from-google-analytics-4"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "What Social Proof Means (and Why It Matters)",
+        "url": "https://judge.me/blog/what-social-proof-means"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Judge.me Has Participated #EmbraceEquity Hosted by PageFly",
+        "url": "https://judge.me/blog/judge-me-embraceequity-pagefly"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Judge.me's January Events: eCom Collab Club™ and London Shopify Tech Partners Meetup",
+        "url": "https://judge.me/blog/judge-me-january-events"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Boost Localization with Multi-language Coupons and Translate & Adapt",
+        "url": "https://judge.me/blog/localization-multi-language-coupons"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Display Judge.me Stars and Ratings on Qikify Checkout Page",
+        "url": "https://judge.me/blog/new-integration-qikify"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Seguno - Add Star Ratings Featured Products & Collections",
+        "url": "https://judge.me/blog/new-integration-seguno"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Shopify Tech Partners Meetup February: App marketing for bootstrapped businesses",
+        "url": "https://judge.me/blog/shopify-tech-partners-meetup-february"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: AVADA Marketing Automation",
+        "url": "https://judge.me/blog/new-integration-avada"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Our March Event: No More Boring Job Posts, A Brand-New E-Commerce Book Club, and More 🤓",
+        "url": "https://judge.me/blog/march-2023-shopify-partner-meetup"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Syndicate Judge.me Product Reviews with the Shopify Shop App",
+        "url": "https://judge.me/blog/syndicate-judge-me-product-reviews-with-the-shopify-shop-app"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/migrate-review-app-preserve-customer-feedback",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Send Judge.me Review Requests via Klaviyo",
+        "url": "https://judge.me/blog/judge-me-review-requests-klaviyo"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Syndicate Judge.me Reviews with Shops on Facebook and Instagram",
+        "url": "https://judge.me/blog/syndicate-judge-me-reviews-with-shops-on-facebook-and-instagram"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/reuse-customer-reviews-social-media",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Vajro - Mobile App Builder",
+        "url": "https://judge.me/blog/integration-vajro-page-builder"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Create Support Tickets & Manager New Reviews in Gorgias",
+        "url": "https://judge.me/blog/new-integration-gorgias"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Judge.me at Silicon Milkroundabout Tech Job Fair",
+        "url": "https://judge.me/blog/judge-me-at-silicon-milkroundabout"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Frank Tufano | Founder at Frankie’s Free Range Meats",
+        "url": "https://judge.me/blog/frank-tufano-founder-at-frankies-free-range-meats"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "5 Tips to Understand Your Customers Better with Custom Forms",
+        "url": "https://judge.me/blog/5-tips-custom-forms"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/write-useful-product-faqs-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Send Automatic Reminder Emails Before Your Judge.me Coupons Expire",
+        "url": "https://judge.me/blog/automatic-reminder-emails-coupons"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "How Judge.me Optimized Our App Navigation for Shopify's Best Practices",
+        "url": "https://judge.me/blog/judge-me-optimized-app-navigation-shopify-best-practices"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Install Judge.me Widgets in EComposer Page Builder",
+        "url": "https://judge.me/blog/new-integration-ecomposer"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Judge.me’s New Widget Version: Trendy Design, New Theme & More Customizations",
+        "url": "https://judge.me/blog/judge-me-widget-3-0"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/mobile-store-review-widget-chat-button-layout",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Judge.me Product Reviews is Officially on Squarespace!",
+        "url": "https://judge.me/blog/judge-me-product-reviews-squarespace"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Smart SEO",
+        "url": "https://judge.me/blog/new-integration-smart-seo"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-review-schema-rich-results-explained",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Customize Your Widget and Review Settings to be Compliant with the EU Consumer Protection Act",
+        "url": "https://judge.me/blog/widget-review-compliant-eu-consumer-protection-act"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/review-moderation-policy-small-store",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Nothing New Under the Sun: On \"Stealing\" Ideas for Your Shopify Store",
+        "url": "https://judge.me/blog/nothing-new-under-the-sun-on-stealing-ideas-for-your-shopify-store"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-content-plan-customer-questions",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Flash Search",
+        "url": "https://judge.me/blog/new-integration-flash-search"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Yoast SEO",
+        "url": "https://judge.me/blog/new-integration-yoast-seo"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-review-schema-rich-results-explained",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "UGC Media Grid: Showcase Instagram Photos and Videos on Your Shopify Stores",
+        "url": "https://judge.me/blog/ugc-media-grid-instagram"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/reuse-customer-reviews-social-media",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Rajdeep Gahir | Wing It Cosmetics",
+        "url": "https://judge.me/blog/rajdeep-gahir-wing-it-cosmetics"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Make",
+        "url": "https://judge.me/blog/new-integration-make"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Bring a Little Sunshine to Your Feed with Osinachi Okoye",
+        "url": "https://judge.me/blog/bring-a-little-sunshine-to-your-feed-with-osinachi-okoye"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "From Fashion Designer to Fashion Influencer: Elena Greensill",
+        "url": "https://judge.me/blog/fashion-designer-influencer-elena-greensill"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/influencer-campaign-small-store-plan",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "When Beauty and Archaeology Meet: Valentina Chirico",
+        "url": "https://judge.me/blog/beauty-archaeology-valentina-chirico"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "Influencer Marketing vs. Traditional Marketing: Which Is Better for SMEs?",
+        "url": "https://judge.me/blog/influencer-vs-traditional-marketing"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/influencer-campaign-small-store-plan",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "4 Tips to Build Good Personal Branding for Influencers",
+        "url": "https://judge.me/blog/tips-personal-branding-influencers"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/influencer-campaign-small-store-plan",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How BundleBums Uses Social Proof to Promote Eco-friendly Products",
+        "url": "https://judge.me/blog/bundlebums-social-proof-eco-friendly"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/helpful-cross-sell-product-recommendations",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Instagram Social Push: Distribute Your Reviews to Reach More Potential Customers",
+        "url": "https://judge.me/blog/instagram-social-push"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/reuse-customer-reviews-social-media",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Media Grid: Display a Gallery of Review Photos and Videos in the Widgets",
+        "url": "https://judge.me/blog/media-grid-photos-videos"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/reuse-customer-reviews-social-media",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Showcasing Your Reviews on Social Media with Judge.me: Social Push and Facebook Reviews Tab",
+        "url": "https://judge.me/blog/reviews-social-sharing"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/reuse-customer-reviews-social-media",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: GemPages - Flexible Page Builder",
+        "url": "https://judge.me/blog/new-integration-gempages"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "How Upselling Can Double the Sales of Your Shopify Store",
+        "url": "https://judge.me/blog/upselling-shopify-double-sales"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/helpful-cross-sell-product-recommendations",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Censor Reviews Containing Personal Identifiable Information",
+        "url": "https://judge.me/blog/personal-identifiable-information-censor"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Profanity Filter: Get Rid of Reviews With Improper Language",
+        "url": "https://judge.me/blog/profanity-filter"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/multilingual-customer-messaging-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: EcomSolid Theme & Page Builder",
+        "url": "https://judge.me/blog/new-integration-ecomsolid"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Checkout Promotions & Upsells",
+        "url": "https://judge.me/blog/new-integration-checkout-promotions-upsells"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: MBC Bundles",
+        "url": "https://judge.me/blog/new-integration-mbc-bundles"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Obviyo (formerly HiConversion)",
+        "url": "https://judge.me/blog/new-integration-obviyo"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Display Your Judge.me Widgets With Automatic Default Translations",
+        "url": "https://judge.me/blog/automatic-default-translations-judge-me-widgets"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/multilingual-customer-messaging-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Judge.me is Featured on Shopify French App Store!",
+        "url": "https://judge.me/blog/featured-shopify-french"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Work With Influencers to Promote Your Products via Judge.me Recommendations",
+        "url": "https://judge.me/blog/influencers-judge-me-recommendations"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/influencer-campaign-small-store-plan",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: ActiveCampaign",
+        "url": "https://judge.me/blog/new-integration-activecampaign"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Appy Pie",
+        "url": "https://judge.me/blog/new-integration-appy-pie"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Gratisfaction",
+        "url": "https://judge.me/blog/new-integration-gratisfaction"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: iCart Cart Drawer Cart Upsell",
+        "url": "https://judge.me/blog/new-integration-icart"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Omnisend Email Marketing",
+        "url": "https://judge.me/blog/new-integration-omnisend"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Reviewbit",
+        "url": "https://judge.me/blog/new-integration-reviewbit"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: SEO Booster",
+        "url": "https://judge.me/blog/new-integration-seo-booster"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-review-schema-rich-results-explained",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Reviewers Can Add Review Videos From YouTube",
+        "url": "https://judge.me/blog/review-videos-youtube"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/photo-video-reviews-customer-permission",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Showcase Your Social Proof With Judge.me Medals",
+        "url": "https://judge.me/blog/social-proof-judge-me-medals"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "How Do Customer Reviews Contribute to Your SEO Performance?",
+        "url": "https://judge.me/blog/customer-reviews-seo-performance"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-review-schema-rich-results-explained",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: AVADA Boost Sales",
+        "url": "https://judge.me/blog/avada-boost-sales"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "WooCommerce to Shopify: The Ultimate Migration Solution (2020)",
+        "url": "https://judge.me/blog/woocommerce-to-shopify-migration"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/migrate-review-app-preserve-customer-feedback",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "4 Tips To Make Your Store Listing Stand Out on the Judge.Me Review Site",
+        "url": "https://judge.me/blog/4-tips-store-listing-judge-me"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Create Review Cards To Showcase Your Products And User-generated Content",
+        "url": "https://judge.me/blog/review-cards-user-generated-content"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/reuse-customer-reviews-social-media",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Reviewers Can Automatically Display Profile Image from Facebook, Google or Gravatar",
+        "url": "https://judge.me/blog/reviewers-profile-images-facebook-google-gravatar"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/review-moderation-policy-small-store",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Newly Launched: Judge.me Review Site",
+        "url": "https://judge.me/blog/judge-me-review-site"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Nextsale Social Proof",
+        "url": "https://judge.me/blog/new-integration-nextsale"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: PRO Frequently Bought Together",
+        "url": "https://judge.me/blog/new-integration-pro-frequently-bought-together"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Product Bundles & Discounts +",
+        "url": "https://judge.me/blog/new-integration-product-bundles-discounts"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "4 Ways to Grab New Visitors For Your Online Stores",
+        "url": "https://judge.me/blog/grab-new-visitors-online-stores"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-content-plan-customer-questions",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: ProveSource - Social Proof Notifications",
+        "url": "https://judge.me/blog/new-integration-provesource"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Zipify Pages",
+        "url": "https://judge.me/blog/new-integration-zipify"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "3 Ways to Use Social Proof To Advertise Your Online Store",
+        "url": "https://judge.me/blog/social-proof-to-advertise-your-online-store"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Spocket | Dropshipping",
+        "url": "https://judge.me/blog/spocket-how-an-entrepreneurs-frustration-made-the-world-of-dropshipping-so-much-easier"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/dropshipping-customer-trust-communication",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Feature: Product Dashboard",
+        "url": "https://judge.me/blog/new-feature-product-dashboard-2"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Build an Email Sequence for Review Requests and Reminders",
+        "url": "https://judge.me/blog/email-sequence-review-requests-reminders"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "8 Tips to Gather More Reviews (and Beyond That) with Email Templates",
+        "url": "https://judge.me/blog/8-tips-email-templates"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "Limit Email Requests to Specific Conditions with Shopify Tags and Zapier",
+        "url": "https://judge.me/blog/bulk-shopify-tags-with-zapier"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How Vikle Liv Reassures the Customers of Product Safety with User-Generated Content",
+        "url": "https://judge.me/blog/vikle-liv-user-generated-content"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-content-plan-customer-questions",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "6 Automated Workflows with Judge.me - Zapier Integration",
+        "url": "https://judge.me/blog/judge-me-zapier-automation"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Asking Your Customers to Update Their Reviews: When and How",
+        "url": "https://judge.me/blog/ask-for-reviews-update"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/respond-negative-product-reviews-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Marketing",
+        "title": "How Headphone Zone Builds Trust with Music Lovers",
+        "url": "https://judge.me/blog/headphone-zone-maintain-trust"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Reviews",
+        "title": "3 Tips to Increase Customer Engagement with Judge.me: Q&A, Custom Forms and Rewards",
+        "url": "https://judge.me/blog/increase-customer-engagement-with-judge-me"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Rebecca Worsley | Rainy City Agency",
+        "url": "https://judge.me/blog/rebecca-worsley-rainy-city-agency"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Localization 101: Translate Your Judge.me Widgets, Review Request Emails and Admin Dashboard",
+        "url": "https://judge.me/blog/translate-judge-me-widgets-and-emails"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/multilingual-customer-messaging-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Searchanise | The Evolution of a Smart Search for Better Sales",
+        "url": "https://judge.me/blog/searchanise-the-evolution-of-a-smart-search-for-better-sales"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Mechanic",
+        "url": "https://judge.me/blog/new-integration-mechanic-app"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Wiser - Personalized Recommendations",
+        "url": "https://judge.me/blog/new-integration-wiser-personalized-recommendations"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Smart Search & Instant Search by Searchanise",
+        "url": "https://judge.me/blog/smart-search-instant-search-by-searchanise"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "2020 Simple Hiring Guide for Shopify Stores | Part 2",
+        "url": "https://judge.me/blog/2020-simple-hiring-guide-for-shopify-stores-part-2"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "2020 Simple Hiring Guide for Shopify Stores | Part 3",
+        "url": "https://judge.me/blog/2020-simple-hiring-guide-for-shopify-stores-part-3"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "3 Critical Content Marketing Tactics for Shopify Entrepreneurs",
+        "url": "https://judge.me/blog/3-critical-content-marketing-tactics-for-shopify-entrepreneurs"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-content-plan-customer-questions",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "4 Lessons for Creating a Winning F&B Shopify Brand",
+        "url": "https://judge.me/blog/4-lessons-for-creating-a-winning-food-and-beverage-shopify-brand"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/define-store-audience-brand-promise",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "5 Key Tactics to Raise Prices and Increase Revenue for Shopify Stores",
+        "url": "https://judge.me/blog/5-key-tactics-to-raise-prices-and-increase-revenue-for-shopify-stores"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Advice from Colin McIntosh | Founder at Sheets & Giggles",
+        "url": "https://judge.me/blog/advice-from-colin-mcintosh-founder-at-sheets-giggles"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Advice from John Sherwin | Co-founder at Hydrant",
+        "url": "https://judge.me/blog/advice-from-john-sherwin-co-founder-at-hydrant"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Advice from Jonathan Kennedy | Value Propositions & Delegating Weaknesses",
+        "url": "https://judge.me/blog/advice-from-jonathan-kennedy-value-propositions-delegating-weaknesses"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Amy Waldman | Purée Juice Bar",
+        "url": "https://judge.me/blog/amy-waldman-how-a-quest-for-healthy-living-created-raving-fans-and-led-this-local-juice-bar-to-start-selling-online"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Bart Kloosterhuis | Co-founder at Vertellis",
+        "url": "https://judge.me/blog/bart-kloosterhuis-co-founder-at-vertellis"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: BoostCommerce Product Filter and Search",
+        "url": "https://judge.me/blog/boostcommerce-product-filter-and-search"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Brandon Bates | Founder at Rural Cloth",
+        "url": "https://judge.me/blog/brandon-bates-founder-at-rural-cloth"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Brian Thron | Marketing at Yardbird",
+        "url": "https://judge.me/blog/brian-thron-how-this-digital-marketing-expert-helped-take-yardbirds-sales-through-the-roof"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Building a Great Brand",
+        "url": "https://judge.me/blog/build-a-great-brand-fallacies-experiences-consistency-and-the-brand-experience-triangle"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/define-store-audience-brand-promise",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Building a Foundation of Trust for Massive & Sustainable Growth",
+        "url": "https://judge.me/blog/building-a-foundation-of-trust-for-massive-sustainable-growth"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Carrie Thornsbury | Founder At Nurture Soap",
+        "url": "https://judge.me/blog/carrie-thornsbury-founder-at-nurture-soap"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Chip Malt | Co-founder and CEO at Made In Cookware",
+        "url": "https://judge.me/blog/chip-malt-co-founder-and-ceo-at-made-in-cookware"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Colin McIntosh | Founder & CEO at Sheets & Giggles",
+        "url": "https://judge.me/blog/colin-mcintosh-founder-ceo-at-sheets-giggles"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Collin Gray | Founder at Fable Beard Co.",
+        "url": "https://judge.me/blog/collin-gray-founder-at-fable-beard-co"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Defining Your Audience, Content Goals, and Platform Personas",
+        "url": "https://judge.me/blog/content-marketing-audience-goals-and-platform-personas-for-ecommerce-brands"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-content-plan-customer-questions",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Content Marketing Media Types",
+        "url": "https://judge.me/blog/content-marketing-media-types-and-their-advantages-for-online-shops"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-content-plan-customer-questions",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Dealing with COVID-19: We are 100% operational",
+        "url": "https://judge.me/blog/covid-19-we-are-100-operational"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Strategizing a Proper Niche for Your Shopify Store",
+        "url": "https://judge.me/blog/creating-a-proper-niche-for-your-shopify-store"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/define-store-audience-brand-promise",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Daniel Gray | Founder at Warpaint",
+        "url": "https://judge.me/blog/daniel-gray-founder-at-warpaint"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Darin Hager | Heyday Footwear",
+        "url": "https://judge.me/blog/darin-hager-from-industrial-design-co-op-to-founder-and-chief-everything-officer-at-heyday-footwear"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Darin Hager | Heyday Footwear Part Two",
+        "url": "https://judge.me/blog/darin-hager-heyday-footwear-part-two"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Don’t Let Your Ego Ruin Customer Relationships",
+        "url": "https://judge.me/blog/dont-let-your-ego-ruin-customer-relationships"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shared-team-inbox-small-shopify-business",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "How to Send Effective A/B Testing Email Campaigns",
+        "url": "https://judge.me/blog/effective-a-b-testing-email-campaigns"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Eric Birkemeier | ShredLights Makes Skateboarding Safe (And Cool)",
+        "url": "https://judge.me/blog/eric-birkemeier-shredlights-makes-skateboarding-safe-and-cool"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Frankie - AI Recommendations",
+        "url": "https://judge.me/blog/frankie-ai"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Aaron Marino | Pete & Pedro",
+        "url": "https://judge.me/blog/from-mens-lifestyle-influencer-to-e-commerce-rockstar-a-shopify-entrepreneur-story"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Getting a Grip on Your Numbers: Must-know Metrics for New Shopify Stores",
+        "url": "https://judge.me/blog/getting-a-grip-on-your-numbers-must-know-metrics-for-new-shopify-stores"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/small-shopify-store-metrics-review-routine",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Great Customer Service Means Tough Choices",
+        "url": "https://judge.me/blog/great-customer-service-means-tough-choices"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shared-team-inbox-small-shopify-business",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Helen Guo | The Cereal School",
+        "url": "https://judge.me/blog/helen-guo-the-cereal-school"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "How to Delight Online Customers with \"Face to Face\" Sales Tactics",
+        "url": "https://judge.me/blog/how-to-delight-online-customers-with-face-to-face-sales-tactics"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-questions-whatsapp-prepurchase-support",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Content Distribution Methods",
+        "url": "https://judge.me/blog/how-to-distribute-content-without-getting-overwhelmed-for-shopify-entrepreneurs"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-content-plan-customer-questions",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Improvement: Custom Forms",
+        "url": "https://judge.me/blog/improvement-custom-forms"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/write-useful-product-faqs-shopify",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Improvement: Review Carousel Themes",
+        "url": "https://judge.me/blog/improvement-review-carousel-themes"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/mobile-store-review-widget-chat-button-layout",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Influencers: Are They Worth it for Ecommerce Marketing?",
+        "url": "https://judge.me/blog/influencers-are-they-worth-it-for-ecommerce-marketing"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/influencer-campaign-small-store-plan",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: LayoutHub - Easy Page Builder",
+        "url": "https://judge.me/blog/integration-layouthub-page-builder"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: PageFly - Advanced Page Builder",
+        "url": "https://judge.me/blog/integration-pagefly"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Jan Sapper | PaperLike",
+        "url": "https://judge.me/blog/jan-sapper-building-a-product-on-experience-trust-and-being-lean"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Jessica Chan | Best Self Co.",
+        "url": "https://judge.me/blog/jessica-chan-how-this-self-improvement-powerhouse-brand-develops-paper-products-that-transform-people-into-their-best-selves"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "John Sherwin | Co-founder at Hydrant",
+        "url": "https://judge.me/blog/john-sherwin-co-founder-at-hydrant"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Jonathan Kennedy | Founder & CEO at HeyCarson & Storetasker",
+        "url": "https://judge.me/blog/jonathan-kennedy-founder-ceo-at-heycarson-storetasker"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Email Templates: User-friendly Drag-and-Drop Blocks & Flexible Customization",
+        "url": "https://judge.me/blog/judge-me-email-templates-user-friendly-drag-and-drop-blocks-flexible-customization"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Kenny Azama | Founder at The Wander Club",
+        "url": "https://judge.me/blog/kenny-azama-founder-at-the-wander-club"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Kurt Elster | Ethercycle & The Unofficial Shopify Podcast",
+        "url": "https://judge.me/blog/kurt-elster-ethercycle-the-unofficial-shopify-podcast"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Matt Dukes | From Lawyer to Entrepreneur & Wine Aficionado",
+        "url": "https://judge.me/blog/matt-dukes-from-lawyer-to-entrepreneur-wine-aficionado"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Measuring Content Marketing ROI: Why trust is the #1 metric",
+        "url": "https://judge.me/blog/measuring-content-marketing-roi-why-trust-is-the-1-metric"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-content-plan-customer-questions",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Michael Potters | Parachute Coffee",
+        "url": "https://judge.me/blog/michael-potters-how-this-canadian-coffee-company-is-bringing-the-cafe-experience-home-one-bag-of-fresh-beans-at-a-time"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Michael Levy | Pete & Pedro",
+        "url": "https://judge.me/blog/mike-levy-how-simple-marketing-tweaks-can-have-outsized-impacts-and-why-experience-is-king"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New App: Facebook Messenger Bot",
+        "url": "https://judge.me/blog/new-app-facebook-messenger-bot-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/coordinate-email-sms-whatsapp-customer-messages",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Feature: Blacklist Automation by Tags",
+        "url": "https://judge.me/blog/new-feature-2"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Feature: Q&A Badge",
+        "url": "https://judge.me/blog/new-feature-q-a-badge-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/write-useful-product-faqs-shopify",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Also Bought - Recommendations",
+        "url": "https://judge.me/blog/new-integration-also-bought-recommendations-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Daily Deals",
+        "url": "https://judge.me/blog/new-integration-daily-deals-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/ai-support-drafts-small-shopify-team",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Fomo - Social Proof Marketing",
+        "url": "https://judge.me/blog/new-integration-fomo"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Frequently Bought Together",
+        "url": "https://judge.me/blog/new-integration-frequently-bought-together-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Gameball - Gamified Loyalty and Badges",
+        "url": "https://judge.me/blog/new-integration-gameball-badges-and-rewards-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/loyalty-messages-customer-value-shopify",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Personalizer by Limespot",
+        "url": "https://judge.me/blog/new-integration-personalizer-by-limespot-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: ReConvert Post-Purchase Upsell",
+        "url": "https://judge.me/blog/new-integration-reconvert-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: SEO Manager",
+        "url": "https://judge.me/blog/new-integration-seo-manager-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/product-review-schema-rich-results-explained",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Shopney",
+        "url": "https://judge.me/blog/new-integration-shopney-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Sparq Instant & Smart Search",
+        "url": "https://judge.me/blog/new-integration-sparq-instant-smart-search-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Weglot - Translate Your Store and Widgets",
+        "url": "https://judge.me/blog/new-integration-weglot"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/multilingual-customer-messaging-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: Zapier",
+        "url": "https://judge.me/blog/new-integration-zapier-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Integration: SMS Notifications",
+        "url": "https://judge.me/blog/new-integrations-for-sms-request-2"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/evaluate-shopify-app-workflow-connectors",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Newly Launched: Revamped WooCommerce Plugin",
+        "url": "https://judge.me/blog/newly-launched-revamped-woocommerce-plugin"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Pricing Control, Understanding Economics, and the Power of Brand",
+        "url": "https://judge.me/blog/pricing-control-understanding-economics-and-the-power-of-brand"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/small-shopify-store-metrics-review-routine",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Raghav Somani | Headphone Zone",
+        "url": "https://judge.me/blog/raghav-somani-headphone-zone"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "Reports: Get Better Insights on Your Product Reviews",
+        "url": "https://judge.me/blog/reports-get-better-insights-on-your-product-reviews"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/review-collection-rate-measurement-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Features",
+        "title": "New Feature: Review Request Order",
+        "url": "https://judge.me/blog/review-request-order"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/collect-first-product-reviews-shopify",
+      "reason": "An original guide covers the reusable merchant task. It does not claim the source announcement is a WhatFlow feature."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "The Passion Hack | How Successful Shopify Merchants Build Winning Products",
+        "url": "https://judge.me/blog/successful-shopify-stores-are-built-on-cultivated-passion"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Tate Glasgow | VP of Marketing at Killer Creamery",
+        "url": "https://judge.me/blog/tate-glasgow-vp-of-marketing-at-killer-creamery"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "The Economics of Trust for Shopify Stores",
+        "url": "https://judge.me/blog/the-economics-of-trust-for-shopify-stores"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/shopify-product-page-trust-checklist",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "Entrepreneurship",
+        "title": "Why You Should DOUBLE Your Prices for Black Friday",
+        "url": "https://judge.me/blog/why-you-should-double-your-prices-on-black-friday"
+      },
+      "disposition": "related-original-guide",
+      "target": "/blog/prepare-customer-support-black-friday-shopify",
+      "reason": "An original guide addresses a related reader task. This is a topic adaptation, not a rewrite or a claim of equivalent scope."
+    },
+    {
+      "source": {
+        "category": "News",
+        "title": "Judge.me Is Now a Shopify Plus Certified App Partner",
+        "url": "https://judge.me/blog/judge-me-shopify-plus-certified"
+      },
+      "disposition": "source-specific-reference",
+      "target": null,
+      "reason": "A company event, interview, case study or award cannot be rewritten as a WhatFlow experience. Preserve attribution; no invented substitute was published."
+    }
+  ]
+}
