@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "payload": "payload",
     "generate:types": "payload generate:types",
     "generate:importmap": "payload generate:importmap",
@@ -14,7 +14,12 @@
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
+    "seed:comparisons": "tsx scripts/seed-comparisons.ts",
+    "publish:comparisons": "tsx scripts/publish-comparisons.ts",
+    "expand:comparisons": "tsx scripts/expand-comparisons.ts",
+    "audit:comparisons": "node scripts/audit-comparison-content.mjs",
+    "verify:comparisons": "node scripts/verify-comparisons.mjs"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.19.9",
@@ -42,5 +47,6 @@
     "tailwindcss": "^4",
     "typescript": "^5.7.4",
     "wrangler": "^4.118.0"
-  }
+  },
+  "type": "module"
 }

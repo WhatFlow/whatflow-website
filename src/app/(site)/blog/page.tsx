@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { BLOG_CATEGORIES, getBlogCategory } from "@/lib/blog-taxonomy";
+import { SITE_URL } from "@/lib/schema-org";
 import {
   getPosts,
   formatDate,
@@ -10,7 +12,7 @@ import {
   type Post,
 } from "@/lib/payload-api";
 
-export const metadata: Metadata = {
+const blogMetadata: Metadata = {
   title: "Blog — WhatFlow",
   description:
     "Tips, guides, and updates on WhatsApp marketing for Shopify merchants. Learn how to automate your store with WhatFlow.",
@@ -23,14 +25,17 @@ export const metadata: Metadata = {
   ],
 };
 
-const CATEGORIES = [
-  { value: "all", label: "All Posts" },
-  { value: "guides", label: "Guides" },
-  { value: "tips", label: "Tips & Tricks" },
-  { value: "whatsapp", label: "WhatsApp" },
-  { value: "updates", label: "Updates" },
-  { value: "shopify", label: "Shopify" },
-] as const;
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ category?: string; page?: string; q?: string }> }): Promise<Metadata> {
+  const params = await searchParams;
+  const query = new URLSearchParams();
+  const category = getBlogCategory(params.category);
+  if (category) query.set("category", category.value);
+  const page = Number(params.page);
+  if (Number.isInteger(page) && page > 1) query.set("page", String(page));
+  return { ...blogMetadata, ...(category ? { title: `${category.label} — WhatFlow Blog`, description: category.description } : {}), ...(params.q?.trim() ? { robots: { index: false, follow: true } } : {}), alternates: { canonical: `${SITE_URL}/blog${query.size ? `?${query}` : ""}` } };
+}
+
+const CATEGORIES = [{ value: "all", label: "All Posts" }, ...BLOG_CATEGORIES];
 
 function PostCard({ post }: { post: Post }) {
   const colorClass = CATEGORY_COLORS[post.category] ?? "bg-gray-100 text-gray-700";
@@ -44,7 +49,10 @@ function PostCard({ post }: { post: Post }) {
     >
       {/* Cover Image */}
       <div className="relative w-full h-52 bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
-        {post.coverImage?.url ? (
+        {post.coverImageUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={post.coverImageUrl} alt={post.coverImageAlt || post.title} className="w-full h-full object-cover" loading="lazy" />
+        ) : post.coverImage?.url ? (
           <Image
             src={post.coverImage.url}
             alt={post.coverImage.alt || post.title}
@@ -115,7 +123,7 @@ function PostCard({ post }: { post: Post }) {
   );
 }
 
-function EmptyState() {
+function EmptyState({ searching = false }: { searching?: boolean }) {
   return (
     <div className="neo-box bg-white text-center py-20 px-6 col-span-full space-y-3">
       <div className="w-12 h-12 mx-auto bg-[#FAF7F0] border-2 border-black rounded-xl flex items-center justify-center shadow-[2px_2px_0px_#000]">
@@ -125,32 +133,44 @@ function EmptyState() {
         </svg>
       </div>
       <h3 className="font-display font-black text-2xl text-black uppercase">
-        No posts yet
+        {searching ? "No matching articles" : "No posts yet"}
       </h3>
       <p className="text-gray-500 font-medium text-sm">
-        Check back soon — our first posts are on the way.
+        {searching ? "Try a shorter search or choose another topic." : "Check back soon — our first posts are on the way."}
       </p>
     </div>
   );
 }
 
 interface BlogPageProps {
-  searchParams: Promise<{ category?: string; page?: string }>;
+  searchParams: Promise<{ category?: string; page?: string; q?: string }>;
 }
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
   const params = await searchParams;
-  const selectedCategory = params.category ?? "all";
-  const currentPage = parseInt(params.page ?? "1", 10);
+  const selectedCategory = getBlogCategory(params.category)?.value ?? "all";
+  const pageNumber = Number(params.page);
+  const currentPage = Number.isInteger(pageNumber) && pageNumber > 0 ? pageNumber : 1;
+  const search = params.q?.trim().slice(0, 120) || "";
+  const pageHref = (page: number) => {
+    const query = new URLSearchParams();
+    if (selectedCategory !== "all") query.set("category", selectedCategory);
+    if (search) query.set("q", search);
+    if (page > 1) query.set("page", String(page));
+    return `/blog${query.size ? `?${query}` : ""}`;
+  };
 
   let postsData;
+  let loadFailed = false;
   try {
     postsData = await getPosts({
       category: selectedCategory !== "all" ? (selectedCategory as Post["category"]) : undefined,
       page: currentPage,
-      limit: 9,
+      limit: 12,
+      q: search,
     });
   } catch {
+    loadFailed = true;
     postsData = { docs: [], totalPages: 0, totalDocs: 0, page: 1, hasNextPage: false, hasPrevPage: false };
   }
 
@@ -170,7 +190,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
               <span className="text-stroke-green">UPDATES.</span>
             </h1>
             <p className="text-[17px] text-[#222] font-medium max-w-xl">
-              Everything you need to know about WhatsApp marketing for your Shopify store.
+              Practical guides to reviews, trust, retention, WhatsApp and growing your Shopify store.
             </p>
           </div>
 
@@ -198,7 +218,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
             return (
               <Link
                 key={cat.value}
-                href={cat.value === "all" ? "/blog" : `/blog?category=${cat.value}`}
+                href={`${cat.value === "all" ? "/blog" : `/blog?category=${cat.value}`}${search ? `${cat.value === "all" ? "?" : "&"}q=${encodeURIComponent(search)}` : ""}`}
                 id={`category-filter-${cat.value}`}
                 className={`neo-btn px-4 py-2 text-xs font-extrabold uppercase tracking-wider rounded-lg whitespace-nowrap transition-all ${
                   isActive
@@ -216,27 +236,35 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
       {/* ─── Posts Grid ─── */}
       <section className="px-4 sm:px-6 py-14">
         <div className="max-w-[1280px] mx-auto">
+          <form action="/blog" method="get" role="search" className="flex flex-wrap gap-3 mb-8">
+            {selectedCategory !== "all" && <input type="hidden" name="category" value={selectedCategory} />}
+            <label htmlFor="blog-search" className="sr-only">Search the blog</label>
+            <input key={search || "all"} id="blog-search" name="q" type="search" defaultValue={search} maxLength={120} placeholder="Search reviews, retention, WhatsApp…" className="neo-box bg-white px-4 py-3 flex-1 min-w-48 text-sm" />
+            <button type="submit" className="neo-btn bg-[#00D261] px-6 py-3 font-bold text-sm">Search</button>
+            {search && <Link href={selectedCategory === "all" ? "/blog" : `/blog?category=${selectedCategory}`} className="py-3 text-sm underline">Clear search</Link>}
+          </form>
           <div className="flex items-center justify-between mb-8">
-            <p className="text-xs font-bold text-gray-500 uppercase tracking-wider">
+            <p role="status" className="text-xs font-bold text-gray-500 uppercase tracking-wider">
               {postsData.totalDocs} {postsData.totalDocs === 1 ? "Post" : "Posts"}
               {selectedCategory !== "all" && ` in ${CATEGORY_LABELS[selectedCategory] ?? selectedCategory}`}
+              {search && ` matching “${search}”`}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {loadFailed ? <p role="alert" className="neo-box bg-white p-8">We couldn’t load the articles. <Link href={pageHref(currentPage)} className="underline">Try again</Link></p> : <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.length > 0 ? (
               posts.map((post) => <PostCard key={post.id} post={post} />)
             ) : (
-              <EmptyState />
+              <EmptyState searching={Boolean(search)} />
             )}
-          </div>
+          </div>}
 
           {/* ─── Pagination ─── */}
           {(postsData.hasPrevPage || postsData.hasNextPage) && (
             <div className="flex items-center justify-center gap-4 mt-14">
               {postsData.hasPrevPage && (
                 <Link
-                  href={`/blog?${selectedCategory !== "all" ? `category=${selectedCategory}&` : ""}page=${currentPage - 1}`}
+                  href={pageHref(currentPage - 1)}
                   className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
                 >
                   ← PREV PAGE
@@ -247,7 +275,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
               </span>
               {postsData.hasNextPage && (
                 <Link
-                  href={`/blog?${selectedCategory !== "all" ? `category=${selectedCategory}&` : ""}page=${currentPage + 1}`}
+                  href={pageHref(currentPage + 1)}
                   className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
                 >
                   NEXT PAGE →
@@ -265,7 +293,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
             READY TO AUTOMATE YOUR STORE?
           </h2>
           <p className="text-gray-300 text-sm font-medium">
-            14-day free trial. No credit card required.
+            Free plan available. All features included across WhatFlow Business API plans; no inbox seat fees.
           </p>
           <Link
             href="/#products"

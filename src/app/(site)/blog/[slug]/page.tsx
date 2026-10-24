@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { SITE_URL, getFAQSchema } from "@/lib/schema-org";
+import { safeJSON } from "@/lib/comparisons-api";
 import {
   getPost,
   getRelatedPosts,
@@ -9,6 +11,7 @@ import {
   calculateReadingTime,
   CATEGORY_LABELS,
   CATEGORY_COLORS,
+  type Post,
 } from "@/lib/payload-api";
 import { RichText } from "@/lib/RichText";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
@@ -20,6 +23,18 @@ interface PostPageProps {
   params: Promise<{ slug: string }>;
 }
 
+function getCoverImage(post: Post) {
+  const source = post.coverImageUrl || post.coverImage?.url;
+  if (!source) return undefined;
+
+  return {
+    url: new URL(source, SITE_URL).href,
+    alt: post.coverImageUrl
+      ? post.coverImageAlt || post.title
+      : post.coverImage?.alt || post.title,
+  };
+}
+
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPost(slug);
@@ -27,21 +42,27 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
 
   const title = post.seo?.metaTitle || `${post.title} — WhatFlow Blog`;
   const description = post.seo?.metaDescription || post.excerpt;
+  const coverImage = getCoverImage(post);
 
   return {
     title,
     description,
+    alternates: { canonical: `${SITE_URL}/blog/${post.slug}` },
     openGraph: {
       title,
       description,
       type: "article",
+      url: `${SITE_URL}/blog/${post.slug}`,
+      modifiedTime: post.updatedAt,
       publishedTime: post.publishedAt ?? undefined,
-      authors: [post.author || "WhatFlow Team"],
+      authors: [post.author || "Safwan Adnan"],
+      images: coverImage ? [coverImage] : undefined,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: coverImage ? [coverImage] : undefined,
     },
   };
 }
@@ -55,6 +76,7 @@ export default async function BlogPostPage({ params }: PostPageProps) {
   const categoryLabel = CATEGORY_LABELS[post.category] ?? post.category;
   const categoryColor = CATEGORY_COLORS[post.category] ?? "bg-gray-100 text-gray-700";
   const readingTime = calculateReadingTime(post.content, post.excerpt);
+  const coverImage = getCoverImage(post);
 
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
@@ -68,10 +90,13 @@ export default async function BlogPostPage({ params }: PostPageProps) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    datePublished: post.publishedAt || new Date().toISOString(),
+    datePublished: post.publishedAt || undefined,
+    dateModified: post.updatedAt,
+    citation: post.sources?.map(source => source.url),
     author: {
       "@type": "Person",
-      name: post.author || "WhatFlow Team",
+      name: post.author || "Safwan Adnan",
+      jobTitle: post.authorRole,
     },
     publisher: {
       "@type": "Organization",
@@ -82,7 +107,7 @@ export default async function BlogPostPage({ params }: PostPageProps) {
         url: `${siteUrl}/logo.svg`,
       },
     },
-    image: post.coverImage?.url ? [post.coverImage.url] : undefined,
+    image: coverImage ? [coverImage.url] : undefined,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": postUrl,
@@ -121,16 +146,20 @@ export default async function BlogPostPage({ params }: PostPageProps) {
       {/* JSON-LD Schemas */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: safeJSON(jsonLd) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: safeJSON(breadcrumbJsonLd) }}
       />
 
+      {!!post.faqs?.length && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJSON(getFAQSchema(post.faqs)) }} />}
       {/* ─── Cover Image Banner ─── */}
-      <div className="relative w-full h-[340px] sm:h-[440px] bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
-        {post.coverImage?.url ? (
+      {(post.coverImageUrl || post.coverImage?.url) && <div className="relative w-full aspect-[1200/630] sm:max-h-[500px] bg-[#FAF7F0] border-b-[2.5px] border-black overflow-hidden">
+        {post.coverImageUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={post.coverImageUrl} alt={post.coverImageAlt || post.title} width={1200} height={630} fetchPriority="high" className="w-full h-full object-contain" />
+        ) : post.coverImage?.url ? (
           <Image
             src={post.coverImage.url}
             alt={post.coverImage.alt || post.title}
@@ -151,6 +180,8 @@ export default async function BlogPostPage({ params }: PostPageProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-[#091E17]/60 via-transparent to-transparent" />
       </div>
 
+      }
+      {post.coverImageCaption && <p className="max-w-[1080px] mx-auto px-4 pt-3 text-sm text-gray-600">{post.coverImageCaption}</p>}
       {/* ─── Article Header ─── */}
       <section className="px-4 sm:px-6 py-10 border-b-[2.5px] border-black bg-[#FAF7F0]">
         <div className="max-w-[1080px] mx-auto">
@@ -199,7 +230,7 @@ export default async function BlogPostPage({ params }: PostPageProps) {
           </div>
 
           {/* Title */}
-          <h1 className="text-[34px] sm:text-[48px] lg:text-[58px] font-display font-black uppercase text-black tracking-tight leading-tight mb-6">
+          <h1 id="article-title" className="text-[34px] sm:text-[48px] lg:text-[58px] font-display font-black uppercase text-black tracking-tight leading-tight mb-6">
             {post.title}
           </h1>
 
@@ -226,8 +257,17 @@ export default async function BlogPostPage({ params }: PostPageProps) {
       <section className="px-4 sm:px-6 py-12">
         <div className="max-w-[1080px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* Main Article Body */}
-          <div className="lg:col-span-8 space-y-8">
+          <article aria-labelledby="article-title" className="lg:col-span-8 space-y-8">
             <RichText content={post.content} />
+            {!!post.faqs?.length && <section className="space-y-4" aria-label="Frequently asked questions">
+              <h2 className="font-display text-3xl font-black">Frequently asked questions</h2>
+              {post.faqs.map((faq, i) => <details key={i} className="neo-box bg-white p-5 rounded-xl"><summary className="font-bold cursor-pointer">{faq.question}</summary><p className="mt-3 leading-relaxed text-gray-700">{faq.answer}</p></details>)}
+            </section>}
+            {!!post.sources?.length && <section className="space-y-4 border-t border-black/20 pt-8" aria-label="Sources and demonstration notes">
+              <h2 className="font-display text-2xl font-black">Sources and demonstration notes</h2>
+              {post.reviewedAt && <p className="text-sm text-gray-600">Sources checked {formatDate(post.reviewedAt)}.</p>}
+              <ul className="space-y-4">{post.sources.map((source, i) => <li key={i}><a href={source.url} className="underline font-semibold text-[#0A6B56]" rel="noopener noreferrer">{source.title}</a>{source.note && <p className="mt-1 text-sm text-gray-600">{source.note}</p>}</li>)}</ul>
+            </section>}
 
             {/* Newsletter CTA Box */}
             <NewsletterBox />
@@ -254,7 +294,7 @@ export default async function BlogPostPage({ params }: PostPageProps) {
                 ))}
               </div>
             )}
-          </div>
+          </article>
 
           {/* Sidebar (TOC & Fast App CTA) */}
           <div className="hidden lg:block lg:col-span-4 space-y-6">
@@ -264,9 +304,9 @@ export default async function BlogPostPage({ params }: PostPageProps) {
               <div className="neo-pill inline-block bg-[#00D261] px-2.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-black">
                 SHOPIFY APPS
               </div>
-              <h4 className="font-display font-black text-lg uppercase leading-tight">
+              <h2 className="font-display font-black text-lg uppercase leading-tight">
                 AUTOMATE YOUR STORE WITH WHATSAPP.
-              </h4>
+              </h2>
               <p className="text-xs text-[#D5F5E3] font-medium leading-relaxed">
                 Cart recovery, order alerts, AI support, and official Meta API badges.
               </p>
@@ -310,7 +350,10 @@ export default async function BlogPostPage({ params }: PostPageProps) {
                   className="neo-box bg-white overflow-hidden group hover:-translate-y-1 transition-transform"
                 >
                   <div className="relative h-40 bg-[#E8F8F0] border-b-[2.5px] border-black overflow-hidden">
-                    {related.coverImage?.url ? (
+                    {related.coverImageUrl ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={related.coverImageUrl} alt={related.coverImageAlt || related.title} loading="lazy" className="w-full h-full object-cover" />
+                    ) : related.coverImage?.url ? (
                       <Image
                         src={related.coverImage.url}
                         alt={related.coverImage.alt || related.title}
@@ -350,7 +393,7 @@ export default async function BlogPostPage({ params }: PostPageProps) {
             <span className="text-stroke-green">WHATSAPP?</span>
           </h2>
           <p className="text-gray-300 text-sm font-medium">
-            Join 10,000+ Shopify merchants worldwide. 14-day free trial.
+            Start with WhatFlow Business API’s free plan. All features included across plans, with no inbox seat fees.
           </p>
           <div className="flex items-center justify-center gap-3 flex-wrap">
             <Link

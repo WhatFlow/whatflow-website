@@ -1,214 +1,80 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getBreadcrumbSchema, SITE_URL } from "@/lib/schema-org";
+import { COMPARISON_CATEGORIES, getComparisons } from "@/lib/comparisons-api";
+import { SITE_URL } from "@/lib/schema-org";
 
-export const metadata: Metadata = {
-  title: "Compare WhatFlow vs Top Shopify WhatsApp Alternatives",
-  description:
-    "See how WhatFlow compares to Wati, Interakt, BiteSpeed, Klaviyo SMS, QuickReply.ai, Tidio, AiSensy, and Gorgias for Shopify WhatsApp marketing.",
-  keywords: [
-    "Shopify WhatsApp app comparison",
-    "WhatFlow vs Wati",
-    "WhatFlow vs Interakt",
-    "WhatFlow vs BiteSpeed",
-    "WhatFlow vs Klaviyo",
-    "WhatFlow vs QuickReply",
-    "WhatFlow vs Tidio",
-    "best Shopify WhatsApp app 2026",
-  ],
-  alternates: {
-    canonical: "/compare",
-  },
-  openGraph: {
-    title: "Compare WhatFlow vs Top Shopify WhatsApp Alternatives",
-    description:
-      "See how WhatFlow compares to Wati, Interakt, BiteSpeed, Klaviyo SMS, QuickReply.ai, Tidio, AiSensy, and Gorgias for Shopify WhatsApp marketing.",
-    url: `${SITE_URL}/compare`,
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Compare WhatFlow vs Top Shopify WhatsApp Alternatives",
-    description:
-      "See how WhatFlow compares to Wati, Interakt, BiteSpeed, Klaviyo SMS, QuickReply.ai, Tidio, AiSensy, and Gorgias for Shopify WhatsApp marketing.",
-  },
-};
+type SearchParams = Promise<{ category?: string; page?: string; q?: string }>;
+export async function generateMetadata({ searchParams }: { searchParams: SearchParams }): Promise<Metadata> {
+  const params = await searchParams;
+  const category = params.category && COMPARISON_CATEGORIES[params.category] ? params.category : undefined;
+  const page = Number(params.page);
+  const canonicalParams = new URLSearchParams();
+  if (category) canonicalParams.set("category", category);
+  if (Number.isInteger(page) && page > 1) canonicalParams.set("page", String(page));
+  const suffix = canonicalParams.size ? `?${canonicalParams}` : "";
+  return {
+    title: `${category ? COMPARISON_CATEGORIES[category] : "WhatsApp & Shopify"} Comparisons${page > 1 ? ` · Page ${page}` : ""} | WhatFlow`,
+    description: "Compare provider pricing, WhatsApp vs email and SMS, team inbox costs and Shopify workflows. Detailed guides by Safwan Adnan, co-founder and CEO of WhatFlow.",
+    alternates: { canonical: `${SITE_URL}/compare${suffix}` },
+    ...(params.q?.trim() ? { robots: { index: false, follow: true } } : {}),
+  };
+}
 
-const COMPARISONS = [
-  {
-    slug: "whatflow-vs-wati",
-    competitor: "Wati",
-    headline: "Why Shopify Merchants Switch from Wati to WhatFlow",
-    tagline: "Official Meta Cloud API • Zero Markup • Native Shopify Flow Triggers",
-    keyDiffs: [
-      "Zero markup on Meta conversation rates (Wati adds 20-30% markup)",
-      "Native Shopify Flow Action triggers & automatic 1-click tagging",
-      "No per-agent seat licenses or hidden overage fees",
-      "Instant 3-minute Meta Embedded Signup onboarding",
-    ],
-  },
-  {
-    slug: "whatflow-vs-interakt",
-    competitor: "Interakt",
-    headline: "WhatFlow vs Interakt: The High-Performance Shopify Alternative",
-    tagline: "Ultra-Fast Edge Architecture • Transparent Billing • Real-Time Webhooks",
-    keyDiffs: [
-      "Direct Shopify Billing integration (no separate Indian GST/credit card gateways)",
-      "Automated COD verification and 1-click cancellation tagging",
-      "Judge.me, Loox, and Klaviyo native ecosystem connectors",
-      "Modern neo-brutalist interface designed exclusively for Shopify",
-    ],
-  },
-  {
-    slug: "whatflow-vs-bitespeed",
-    competitor: "BiteSpeed",
-    headline: "WhatFlow vs BiteSpeed: Built for Scale & Conversion",
-    tagline: "Uncapped Workflows • Real-Time ROI Analytics • Transparent Pricing",
-    keyDiffs: [
-      "Transparent flat-rate pricing without punitive GMV commissions",
-      "Unlimited automated workflows across all paid tiers",
-      "Enterprise-grade AES-256 token encryption and 99.9% uptime SLA",
-      "Official Meta Tech Partner infrastructure",
-    ],
-  },
-  {
-    slug: "whatflow-vs-klaviyo",
-    competitor: "Klaviyo SMS",
-    headline: "WhatFlow vs Klaviyo SMS & WhatsApp",
-    tagline: "98% Open Rates • 4x Higher ROI • Global WhatsApp Reach",
-    keyDiffs: [
-      "Worldwide WhatsApp deliverability vs expensive US-only SMS carrier fees",
-      "Interactive 2-way quick reply buttons and rich media cards",
-      "Seamless two-way contact synchronization with your existing Klaviyo account",
-      "Significantly lower cost per message delivered internationally",
-    ],
-  },
-  {
-    slug: "whatflow-vs-quickreply",
-    competitor: "QuickReply.ai",
-    headline: "WhatFlow vs QuickReply.ai: Modern, Clean & Affordable",
-    tagline: "Zero Markup • 3-Min Onboarding • 1-Click Shopify App Store Billing",
-    keyDiffs: [
-      "Zero markups on official Meta conversation rates",
-      "Direct unified Shopify App Store billing with no separate card needed",
-      "Clean, intuitive neo-brutalist dashboard without overwhelming complexity",
-      "Instant launch with 20+ pre-approved WhatsApp message templates",
-    ],
-  },
-  {
-    slug: "whatflow-vs-tidio",
-    competitor: "Tidio",
-    headline: "WhatFlow vs Tidio: Deep Shopify WhatsApp Automations",
-    tagline: "Purpose-Built for eCommerce • COD Verification • Unlimited Seats",
-    keyDiffs: [
-      "Purpose-built for Shopify store workflows vs general live-chat widget",
-      "Automated COD 1-click verification buttons with automatic order tagging",
-      "Deep integration with Judge.me and Loox review platforms",
-      "Unlimited agent seats included on all plans",
-    ],
-  },
-  {
-    slug: "whatflow-vs-aisensy",
-    competitor: "AiSensy",
-    headline: "WhatFlow vs AiSensy: Global Edge Speed for Shopify",
-    tagline: "Sub-50ms Edge Webhooks • Dynamic Cart Recovery • Shopify Flow",
-    keyDiffs: [
-      "Direct Shopify App Store installation and currency billing",
-      "Native Shopify Flow triggers and automated cart abandonment sequences",
-      "Cloudflare edge computing ensuring global sub-50ms webhook responses",
-      "Seamless customer review requests triggered on delivery",
-    ],
-  },
-  {
-    slug: "whatflow-vs-gorgias",
-    competitor: "Gorgias WhatsApp",
-    headline: "WhatFlow vs Gorgias: High-ROI Proactive Marketing",
-    tagline: "Outbound Marketing Campaigns • Cart Recovery • Zero Per-Ticket Fees",
-    keyDiffs: [
-      "Full outbound marketing campaigns & automated cart recovery",
-      "Predictable subscription tiers with zero per-ticket surcharges",
-      "Direct Meta wholesale conversation pricing",
-      "Can be used alongside Gorgias to power revenue-generating WhatsApp flows",
-    ],
-  },
-];
+export default async function ComparePage({ searchParams }: { searchParams: SearchParams }) {
+  const params = await searchParams;
+  const category = params.category && COMPARISON_CATEGORIES[params.category] ? params.category : undefined;
+  const parsedPage = Number(params.page);
+  const page = Number.isInteger(parsedPage) && parsedPage > 0 ? parsedPage : 1;
+  const query = params.q?.trim().slice(0, 120) || undefined;
+  const data = await getComparisons({ category, query, page });
+  const categoryUrl = (value?: string) => {
+    const next = new URLSearchParams({ ...(value ? { category: value } : {}), ...(query ? { q: query } : {}) });
+    return `/compare${next.size ? `?${next}` : ""}`;
+  };
+  const pageUrl = (n: number) => `/compare?${new URLSearchParams({ ...(category ? { category } : {}), ...(query ? { q: query } : {}), page: String(n) })}`;
 
-export default function CompareHubPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    { name: "Home", url: "/" },
-    { name: "Compare", url: "/compare" },
-  ]);
-
-  return (
-    <div className="min-h-screen bg-[#FAF7F0]">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-
-      {/* ─── Hero ─── */}
-      <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
-        <div className="max-w-[1080px] mx-auto text-center space-y-4">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
-            APP COMPARISONS
-          </div>
-          <h1 className="text-[36px] sm:text-[52px] lg:text-[64px] font-display font-black uppercase text-black tracking-tight leading-none">
-            HOW WHATFLOW COMPARES.
-          </h1>
-          <p className="text-base sm:text-lg text-gray-700 font-medium max-w-2xl mx-auto leading-relaxed">
-            See how WhatFlow stacks up against other Shopify WhatsApp tools on pricing, features, and ease of use.
-          </p>
-        </div>
-      </section>
-
-      {/* ─── Cards Grid ─── */}
-      <section className="px-4 sm:px-6 py-16 max-w-[1280px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {COMPARISONS.map((item) => (
-            <div
-              key={item.slug}
-              className="neo-box bg-white p-8 rounded-2xl flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-transform"
-            >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="neo-pill bg-[#FAF7F0] border-black px-3 py-1 text-xs font-black uppercase text-black">
-                    VS {item.competitor.toUpperCase()}
-                  </span>
-                  <span className="text-xs font-extrabold text-[#0A6B56] uppercase tracking-wide">
-                    SHOPIFY READY
-                  </span>
-                </div>
-
-                <h2 className="text-xl sm:text-2xl font-display font-black uppercase text-black leading-tight">
-                  {item.headline}
-                </h2>
-
-                <p className="text-xs font-bold text-gray-500 uppercase tracking-wider">
-                  {item.tagline}
-                </p>
-
-                <ul className="space-y-2 pt-2 border-t border-gray-100">
-                  {item.keyDiffs.map((diff, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs text-gray-700 font-medium leading-relaxed">
-                      <span className="text-[#00D261] font-black text-sm leading-none mt-0.5">✓</span>
-                      <span>{diff}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="pt-4">
-                <Link
-                  href={`/compare/${item.slug}`}
-                  className="neo-btn w-full bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider py-3 rounded-lg text-center block shadow-[3px_3px_0px_#000] hover:bg-[#00be57] transition-colors"
-                >
-                  VIEW FULL COMPARISON ➔
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </div>
-  );
+  return <main className="bg-[#FAF7F0] text-black min-h-screen">
+    <header className="border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-24">
+      <div className="max-w-5xl mx-auto space-y-6">
+        <span className="neo-pill bg-[#00D261] px-3 py-1 text-xs font-black uppercase">The comparison library</span>
+        <h1 className="font-display text-4xl sm:text-6xl font-black uppercase tracking-tight max-w-4xl">Find the right WhatsApp tool for your store.</h1>
+        <p className="text-lg text-gray-700 max-w-3xl">Compare provider pricing, inbox costs, Shopify integration and customer workflows. Explore WhatsApp alongside email, SMS, push and social channels, with practical cost examples.</p>
+        <p className="text-sm text-gray-600 max-w-3xl">These guides are published by WhatFlow. Each article names its author, links to primary sources and explains when the other product may be a better fit.</p>
+      </div>
+    </header>
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <nav aria-label="Comparison categories" className="flex flex-wrap gap-3 mb-8">
+        <Link href={categoryUrl()} aria-current={!category ? "page" : undefined} className={`neo-pill px-4 py-2 text-sm font-bold ${!category ? "bg-[#00D261]" : "bg-white"}`}>All comparisons</Link>
+        {Object.entries(COMPARISON_CATEGORIES).map(([key, label]) => <Link key={key} href={categoryUrl(key)} aria-current={category === key ? "page" : undefined} className={`neo-pill px-4 py-2 text-sm font-bold ${category === key ? "bg-[#00D261]" : "bg-white"}`}>{label}</Link>)}
+      </nav>
+      <form action="/compare" method="get" role="search" className="flex flex-wrap gap-3 mb-6">
+        {category && <input type="hidden" name="category" value={category} />}
+        <label htmlFor="comparison-search" className="sr-only">Search comparisons</label>
+        <input key={query || "all"} id="comparison-search" type="search" name="q" defaultValue={query} placeholder="Search providers, pricing or workflows" maxLength={120} className="bg-white border-2 border-black rounded-lg px-4 py-3 flex-1 min-w-0" />
+        <button type="submit" className="neo-btn bg-[#00D261] px-5 py-3 rounded-lg font-bold">Search</button>
+        {query && <Link href={category ? `/compare?category=${category}` : "/compare"} className="self-center underline">Clear</Link>}
+      </form>
+      <p role="status" className="text-sm text-gray-600 mb-6">{data.totalDocs} {data.totalDocs === 1 ? "guide" : "guides"}{query && <> matching “{query}”</>}</p>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {data.docs.map(item => <article key={item.id} className="neo-box bg-white rounded-2xl p-6 flex flex-col gap-4">
+          {(item.imageUrl || item.coverImage?.url) && <Link href={`/compare/${item.slug}`} tabIndex={-1} aria-hidden="true" className="-mx-6 -mt-6 mb-2 block overflow-hidden rounded-t-2xl border-b-2 border-black">
+            {/* Owned CMS cover, shared by the article and its social preview. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={item.imageUrl || item.coverImage?.url} alt="" width={1200} height={630} loading="lazy" className="w-full h-auto aspect-[1200/630] object-cover" />
+          </Link>}
+          <span className="text-xs font-bold uppercase text-[#0A6B56]">{COMPARISON_CATEGORIES[item.category]}</span>
+          <h2 className="font-display font-black text-xl leading-snug"><Link href={`/compare/${item.slug}`} className="hover:underline">{item.title}</Link></h2>
+          <p className="text-sm text-gray-600 leading-relaxed flex-1">{item.excerpt}</p>
+          <p className="text-xs text-gray-500">By {item.author}</p>
+          <Link href={`/compare/${item.slug}`} className="neo-btn bg-[#00D261] text-sm font-extrabold p-3 rounded-lg text-center">Read the comparison →</Link>
+        </article>)}
+      </div>
+      {!data.docs.length && <p className="py-12">{query ? "No matching comparisons. Try fewer words or another category." : "No published comparisons in this category yet."}</p>}
+      {data.totalPages > 1 && <nav aria-label="Comparison pages" className="flex gap-6 justify-center mt-12">
+        {data.page > 1 && <Link href={pageUrl(data.page - 1)} className="underline">Previous</Link>}
+        <span>Page {data.page} of {data.totalPages}</span>
+        {data.hasNextPage && <Link href={pageUrl(data.page + 1)} className="underline">Next</Link>}
+      </nav>}
+    </section>
+  </main>;
 }

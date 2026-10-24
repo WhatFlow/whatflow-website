@@ -1,6 +1,8 @@
+import { getAllIndexableComparisons } from "@/lib/comparisons-api";
+export const dynamic = "force-dynamic";
 import type { MetadataRoute } from "next";
 import {
-  getPosts,
+  getAllPublishedPosts,
   getCaseStudies,
   getIntegrations,
   getChangelogEntries,
@@ -93,54 +95,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/compare/whatflow-vs-wati`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/compare/whatflow-vs-interakt`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/compare/whatflow-vs-bitespeed`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/compare/whatflow-vs-klaviyo`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/compare/whatflow-vs-quickreply`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/compare/whatflow-vs-tidio`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/compare/whatflow-vs-aisensy`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/compare/whatflow-vs-gorgias`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: "daily",
@@ -181,10 +135,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Blog posts
   let postRoutes: MetadataRoute.Sitemap = [];
   try {
-    const postsData = await getPosts({ limit: 100 });
-    postRoutes = postsData.docs.map((post) => ({
+    const posts = await getAllPublishedPosts();
+    postRoutes = posts.map((post) => ({
       url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
+      lastModified: new Date(post.updatedAt || post.publishedAt || Date.now()),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
@@ -220,5 +174,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     integrationRoutes = [];
   }
 
-  return [...staticRoutes, ...postRoutes, ...studyRoutes, ...integrationRoutes];
+  const comparisons = await getAllIndexableComparisons();
+  const comparisonRoutes: MetadataRoute.Sitemap = comparisons.map(item => ({
+    url: `${baseUrl}/compare/${item.slug}`,
+    lastModified: new Date(item.updatedAt || item.publishedAt),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+  return [...staticRoutes, ...postRoutes, ...studyRoutes, ...integrationRoutes, ...comparisonRoutes];
 }

@@ -1,3 +1,5 @@
+import type { BlogCategory } from "./blog-taxonomy";
+import { searchPublishedContent } from "./content-search";
 /**
  * Payload CMS REST API utilities.
  * These run on the server using the internal Next.js API routes served by Payload.
@@ -12,7 +14,7 @@ type FetchOptions = {
   revalidate?: number;
 };
 
-async function payloadFetch<T>(path: string, options: FetchOptions = {}): Promise<T> {
+export async function payloadFetch<T>(path: string, options: FetchOptions = {}): Promise<T> {
   const url = `${BASE_URL}${path}`;
   const res = await fetch(url, {
     next: { revalidate: options.revalidate ?? 60 },
@@ -39,7 +41,14 @@ export type Post = {
   slug: string;
   excerpt: string;
   coverImage?: MediaDoc;
-  category: "tips" | "guides" | "updates" | "whatsapp" | "shopify";
+  coverImageUrl?: string;
+  coverImageAlt?: string;
+  coverImageCaption?: string;
+  reviewedAt?: string;
+  updatedAt?: string;
+  faqs?: { question: string; answer: string }[];
+  sources?: { title: string; url: string; note?: string }[];
+  category: BlogCategory;
   tags?: { tag: string }[];
   author: string;
   authorRole?: string;
@@ -96,6 +105,7 @@ export type PostsFilter = {
   limit?: number;
   page?: number;
   featured?: boolean;
+  q?: string;
 };
 
 export async function getPosts(filter: PostsFilter = {}): Promise<CollectionResponse<Post>> {
@@ -117,7 +127,31 @@ export async function getPosts(filter: PostsFilter = {}): Promise<CollectionResp
     params.set("page", String(filter.page));
   }
 
+  if (filter.q?.trim()) {
+    return searchPublishedContent<Post>({ query: filter.q, page: filter.page ?? 1, limit: filter.limit ?? 12,
+      fetchPage: (page, limit) => {
+        const searchParams = new URLSearchParams(params);
+        searchParams.set("page", String(page)); searchParams.set("limit", String(limit));
+        return payloadFetch<CollectionResponse<Post>>(`/api/posts?${searchParams}`);
+      },
+    });
+  }
+
   return payloadFetch<CollectionResponse<Post>>(`/api/posts?${params.toString()}`);
+}
+
+/** Walk every published page so sitemap coverage does not stop at 100 articles. */
+export async function getAllPublishedPosts(): Promise<Post[]> {
+  const posts: Post[] = [];
+  let page = 1;
+  let more = true;
+  while (more) {
+    const data = await getPosts({ limit: 100, page });
+    posts.push(...data.docs);
+    more = data.hasNextPage;
+    page++;
+  }
+  return posts;
 }
 
 export async function getPost(slug: string): Promise<Post | null> {
@@ -207,6 +241,11 @@ export function formatDate(dateStr?: string | null): string {
 
 export const CATEGORY_LABELS: Record<string, string> = {
   tips: "Tips & Tricks",
+  reviews: "Reviews & trust",
+  conversion: "Conversion",
+  retention: "Retention",
+  operations: "Store operations",
+  seo: "SEO & content",
   guides: "Guides",
   updates: "Product Updates",
   whatsapp: "WhatsApp Marketing",
@@ -232,6 +271,11 @@ export const APP_LABELS: Record<string, string> = {
 
 export const CATEGORY_COLORS: Record<string, string> = {
   tips: "bg-[#FFF3CD] text-[#856404]",
+  reviews: "bg-[#FFF3CD] text-[#856404]",
+  conversion: "bg-[#E8F0FF] text-[#2563EB]",
+  retention: "bg-[#F3E8FF] text-[#6B21A8]",
+  operations: "bg-[#D4EDDA] text-[#155724]",
+  seo: "bg-[#E8F8F0] text-[#0A6B56]",
   guides: "bg-[#D4EDDA] text-[#155724]",
   updates: "bg-[#D1ECF1] text-[#0C5460]",
   whatsapp: "bg-[#E8F8F0] text-[#0A6B56]",
@@ -240,13 +284,13 @@ export const CATEGORY_COLORS: Record<string, string> = {
 
 // ─── Reading Time & Text Extraction ──────────────────────────────────────────
 
-export function extractTextFromLexical(node: any): string {
+export function extractTextFromLexical(node: unknown): string {
   if (!node) return "";
   if (typeof node === "string") return node;
   if (typeof node === "object") {
     if ("text" in node && typeof node.text === "string") return node.text;
     if ("root" in node) return extractTextFromLexical(node.root);
-    if (Array.isArray(node.children)) {
+    if ("children" in node && Array.isArray(node.children)) {
       return node.children.map(extractTextFromLexical).join(" ");
     }
   }
@@ -403,6 +447,5 @@ export async function getChangelogEntries(
 
   return payloadFetch<CollectionResponse<ChangelogEntry>>(`/api/changelog?${params.toString()}`);
 }
-
 
 
