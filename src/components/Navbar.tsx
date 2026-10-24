@@ -26,16 +26,18 @@ export function WhatFlowLogo({ lightMode = true }: { lightMode?: boolean }) {
 }
 
 export function Navbar() {
+	const pathname = usePathname();
+	return <NavbarMenu key={pathname} pathname={pathname} />;
+}
+
+function NavbarMenu({ pathname }: { pathname: string }) {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
 	const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-	const pathname = usePathname();
-
-	// Close mobile menu on route change
-	useEffect(() => {
-		setMobileMenuOpen(false);
-		setResourcesDropdownOpen(false);
-	}, [pathname]);
+	// Route-keyed remounts close menus before the new page is painted.
+	useEffect(() => () => {
+		if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+	}, []);
 
 	const handleMouseEnter = () => {
 		if (dropdownTimeoutRef.current) {
@@ -58,7 +60,7 @@ export function Navbar() {
 				<WhatFlowLogo />
 
 				{/* Desktop Navigation */}
-				<nav className="hidden md:flex items-center gap-6 lg:gap-8">
+				<nav className="hidden lg:flex items-center gap-8">
 					<Link
 						href="/features"
 						className={`text-xs font-extrabold uppercase tracking-wider transition-colors ${
@@ -221,7 +223,7 @@ export function Navbar() {
 				</nav>
 
 				{/* Desktop Right CTA */}
-				<div className="hidden md:flex items-center gap-3">
+				<div className="hidden lg:flex items-center gap-3">
 					<a
 						href={getShopifyAppUrl("navbar_cta")}
 						target="_blank"
@@ -233,7 +235,7 @@ export function Navbar() {
 				</div>
 
 				{/* Mobile Hamburger Button */}
-				<div className="flex md:hidden items-center gap-2">
+				<div className="flex lg:hidden items-center gap-2">
 					<button
 						type="button"
 						onClick={() => setMobileMenuOpen((prev) => !prev)}
@@ -258,7 +260,7 @@ export function Navbar() {
 
 			{/* Mobile Menu Dropdown */}
 			{mobileMenuOpen && (
-				<div className="md:hidden bg-[#FAF7F0] border-t-2 border-black px-4 py-6 space-y-4 shadow-lg animate-slide-down">
+				<div className="lg:hidden bg-[#FAF7F0] border-t-2 border-black px-4 py-6 space-y-4 shadow-lg animate-slide-down">
 					<div className="flex flex-col space-y-3">
 						<Link
 							href="/features"
