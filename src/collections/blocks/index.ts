@@ -71,7 +71,7 @@ export const CtaBlock: Block = {
       name: "badge",
       type: "text",
       label: "Top Badge (Optional)",
-      defaultValue: "14-Day Free Trial",
+      defaultValue: "Free plan available",
     },
     {
       name: "style",
@@ -223,6 +223,19 @@ export const CodeSnippetBlock: Block = {
   ],
 };
 
+export const ScreenshotBlock: Block = {
+  slug: "screenshot",
+  labels: { singular: "Screenshot with caption", plural: "Screenshots with captions" },
+  fields: [
+    { name: "url", type: "text", required: true, label: "Screenshot URL" },
+    { name: "alt", type: "text", required: true, label: "Image description" },
+    { name: "caption", type: "textarea", required: true },
+    { name: "sourceUrl", type: "text", label: "Source or demo app" },
+    { name: "width", type: "number", defaultValue: 1440 },
+    { name: "height", type: "number", defaultValue: 900 },
+  ],
+};
+
 export const allEditorBlocks: Block[] = [
   CalloutBlock,
   CtaBlock,
@@ -230,4 +243,5 @@ export const allEditorBlocks: Block[] = [
   StatHighlightBlock,
   VideoEmbedBlock,
   CodeSnippetBlock,
+  ScreenshotBlock,
 ];

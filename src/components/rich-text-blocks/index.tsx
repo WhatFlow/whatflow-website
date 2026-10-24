@@ -65,7 +65,7 @@ export function CtaRenderer({
   description,
   buttonText = "Get Started ➔",
   buttonUrl = "/#products",
-  badge = "14-Day Free Trial",
+  badge = "Free plan available",
   style = "green",
 }: {
   heading?: string;
@@ -343,4 +343,19 @@ export function InlineUploadRenderer({
       )}
     </figure>
   );
+}
+
+
+export function ScreenshotRenderer({ url, alt, caption, sourceUrl, width = 1440, height = 900 }: {
+  url?: string; alt?: string; caption?: string; sourceUrl?: string; width?: number; height?: number;
+}) {
+  if (!url) return null;
+  return <figure className="my-10 not-prose space-y-3">
+    <a href={url} target="_blank" rel="noopener noreferrer" aria-label="Open full-size screenshot" className="block border-2 border-black rounded-xl overflow-hidden bg-white">
+      {/* Screenshots are editable CMS URLs, including owned local assets. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={url} alt={alt || "Workflow screenshot"} width={width} height={height} loading="lazy" className="w-full h-auto" />
+    </a>
+    <figcaption className="text-sm text-gray-600 leading-relaxed">{caption}{sourceUrl && <> <a href={sourceUrl} className="underline" rel="noopener noreferrer">Source</a></>}</figcaption>
+  </figure>;
 }

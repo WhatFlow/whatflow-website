@@ -32,6 +32,7 @@ import { Posts } from "./collections/Posts";
 import { CaseStudies } from "./collections/CaseStudies";
 import { Integrations } from "./collections/Integrations";
 import { Changelog } from "./collections/Changelog";
+import { Comparisons } from "./collections/Comparisons";
 import { allEditorBlocks } from "./collections/blocks";
 
 const filename = fileURLToPath(import.meta.url);
@@ -64,6 +65,7 @@ export default (async () => {
       CaseStudies,
       Integrations,
       Changelog,
+      Comparisons,
     ],
     editor: lexicalEditor({
       features: ({ defaultFeatures }) => [
@@ -72,7 +74,7 @@ export default (async () => {
         InlineToolbarFeature(),
         HeadingFeature({ enabledHeadingSizes: ["h1", "h2", "h3", "h4", "h5", "h6"] }),
         LinkFeature({
-          enabledCollections: ["posts", "case-studies", "integrations", "changelog"],
+          enabledCollections: ["posts", "case-studies", "integrations", "changelog", "comparisons"],
         }),
         ChecklistFeature(),
         HorizontalRuleFeature(),
@@ -120,6 +122,7 @@ export default (async () => {
     },
     db: sqliteD1Adapter({
       binding: cloudflare.env.whatflow_payload_cms,
+      push: false,
     }),
     plugins: [
       r2Storage({
@@ -128,6 +131,10 @@ export default (async () => {
       }),
       mcpPlugin({
         collections: {
+          comparisons: {
+            enabled: true,
+            description: "Research-backed WhatFlow competitor comparisons with author bylines, primary sources, screenshots, FAQs and SEO metadata.",
+          },
           posts: {
             enabled: true,
             description:
@@ -174,7 +181,7 @@ function getCloudflareContextFromWrangler(): Promise<CloudflareContext> {
     ({ getPlatformProxy }) =>
       getPlatformProxy({
         environment: process.env.CLOUDFLARE_ENV,
-        remoteBindings: isProduction,
+        remoteBindings: isProduction || process.env.PAYLOAD_REMOTE_BINDINGS === "true",
       } satisfies GetPlatformProxyOptions),
   );
 }

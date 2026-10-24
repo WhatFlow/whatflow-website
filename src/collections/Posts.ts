@@ -1,4 +1,5 @@
 import type { CollectionConfig } from "payload";
+import { BLOG_CATEGORIES } from "../lib/blog-taxonomy";
 
 export const Posts: CollectionConfig = {
   slug: "posts",
@@ -51,19 +52,26 @@ export const Posts: CollectionConfig = {
       relationTo: "media",
       label: "Cover Image",
     },
+    { name: "coverImageUrl", type: "text", label: "Cover image URL", admin: { description: "Owned cover or screenshot asset path; use when no media upload is needed." } },
+    { name: "coverImageAlt", type: "text", label: "Cover image description" },
+    { name: "coverImageCaption", type: "text", label: "Cover image caption" },
+    { name: "reviewedAt", type: "date", label: "Sources checked on" },
+    { name: "faqs", type: "array", fields: [
+      { name: "question", type: "text", required: true },
+      { name: "answer", type: "textarea", required: true },
+    ] },
+    { name: "sources", type: "array", fields: [
+      { name: "title", type: "text", required: true },
+      { name: "url", type: "text", required: true },
+      { name: "note", type: "textarea" },
+    ] },
     // ─── Taxonomy ───────────────────────────────────────────────────────────
     {
       name: "category",
       type: "select",
       required: true,
       label: "Category",
-      options: [
-        { label: "Tips & Tricks", value: "tips" },
-        { label: "Guides", value: "guides" },
-        { label: "Product Updates", value: "updates" },
-        { label: "WhatsApp Marketing", value: "whatsapp" },
-        { label: "Shopify", value: "shopify" },
-      ],
+      options: BLOG_CATEGORIES.map(({ value, label }) => ({ value, label })),
       defaultValue: "guides",
     },
     {
@@ -84,13 +92,13 @@ export const Posts: CollectionConfig = {
       type: "text",
       required: true,
       label: "Author Name",
-      defaultValue: "WhatFlow Team",
+      defaultValue: "Safwan Adnan",
     },
     {
       name: "authorRole",
       type: "text",
       label: "Author Role / Title",
-      defaultValue: "WhatFlow Team",
+      defaultValue: "Co-founder and CEO of WhatFlow",
     },
     {
       name: "publishedAt",

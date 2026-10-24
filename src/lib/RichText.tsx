@@ -11,6 +11,7 @@ import {
   VideoEmbedRenderer,
   CodeSnippetRenderer,
   InlineUploadRenderer,
+  ScreenshotRenderer,
 } from "@/components/rich-text-blocks";
 
 interface RichTextProps {
@@ -25,6 +26,7 @@ export function RichText({ content, className = "" }: RichTextProps) {
     ...defaultJSXConverters,
     // Custom block converters
     blocks: {
+      screenshot: ({ node }: any) => <ScreenshotRenderer {...(node?.fields || {})} />,
       callout: ({ node }: any) => <CalloutRenderer {...(node?.fields || {})} />,
       cta: ({ node }: any) => <CtaRenderer {...(node?.fields || {})} />,
       whatsappMockup: ({ node }: any) => (

@@ -1,0 +1,72 @@
+import type { CollectionConfig } from "payload";
+
+export const Comparisons: CollectionConfig = {
+  slug: "comparisons",
+  lockDocuments: false,
+  admin: {
+    useAsTitle: "title",
+    group: "Content",
+    defaultColumns: ["title", "competitor", "category", "_status", "reviewedAt"],
+    description: "Research-backed comparisons. All article content, sources, images and SEO are editable here.",
+  },
+  access: {
+    read: ({ req: { user } }) => user ? true : { _status: { equals: "published" } },
+    create: ({ req: { user } }) => Boolean(user),
+    update: ({ req: { user } }) => Boolean(user),
+    delete: ({ req: { user } }) => Boolean(user),
+  },
+  versions: { drafts: true, maxPerDoc: 20 },
+  fields: [
+    { name: "title", type: "text", required: true },
+    { name: "slug", type: "text", required: true, unique: true, index: true,
+      validate: (value: unknown) => typeof value === "string" && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value) || "Use lowercase letters, numbers and hyphens." },
+    { name: "competitor", type: "text", required: true },
+    { name: "competitorUrl", type: "text", required: true },
+    { name: "category", type: "select", required: true, options: [
+      { label: "Shopify & ecommerce", value: "shopify" },
+      { label: "WhatsApp platforms", value: "whatsapp" },
+      { label: "Messaging APIs", value: "api" },
+      { label: "Support & CRM", value: "support" },
+      { label: "Channel comparisons", value: "channels" },
+      { label: "Shopify workflows & costs", value: "usecases" },
+    ] },
+    { name: "excerpt", type: "textarea", required: true },
+    { name: "verdict", type: "textarea", required: true, label: "The short answer" },
+    { name: "author", type: "text", required: true, defaultValue: "Safwan Adnan" },
+    { name: "authorRole", type: "text", required: true, defaultValue: "Co-founder and CEO of WhatFlow" },
+    { name: "publishedAt", type: "date", required: true },
+    { name: "reviewedAt", type: "date", required: true, label: "Sources checked on" },
+    { name: "featured", type: "checkbox", defaultValue: false },
+    { name: "coverImage", type: "upload", relationTo: "media" },
+    { name: "imageUrl", type: "text", label: "Image URL (when not uploaded)", admin: { description: "Use an owned demo screenshot or an image you have permission to publish." } },
+    { name: "imageAlt", type: "text" },
+    { name: "imageCaption", type: "text" },
+    { name: "imageSourceUrl", type: "text" },
+    { name: "featureTable", type: "array", fields: [
+      { name: "feature", type: "text", required: true },
+      { name: "whatflow", type: "textarea", required: true },
+      { name: "competitor", type: "textarea", required: true },
+    ] },
+    { name: "content", type: "richText", required: true },
+    { name: "faqs", type: "array", fields: [
+      { name: "question", type: "text", required: true },
+      { name: "answer", type: "textarea", required: true },
+    ] },
+    { name: "sources", type: "array", required: true, minRows: 1, fields: [
+      { name: "title", type: "text", required: true },
+      { name: "url", type: "text", required: true },
+      { name: "note", type: "text", label: "What this source verifies" },
+    ] },
+    { name: "relatedComparisons", type: "relationship", relationTo: "comparisons", hasMany: true },
+    { name: "cta", type: "group", fields: [
+      { name: "heading", type: "text", defaultValue: "Try your own Shopify workflow" },
+      { name: "description", type: "textarea", defaultValue: "Start with one template and test the complete journey before switching platforms." },
+      { name: "label", type: "text", defaultValue: "Explore WhatFlow on Shopify" },
+    ] },
+    { name: "seo", type: "group", fields: [
+      { name: "metaTitle", type: "text" },
+      { name: "metaDescription", type: "textarea" },
+      { name: "noindex", type: "checkbox", defaultValue: false },
+    ] },
+  ],
+};

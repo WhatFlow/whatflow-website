@@ -39,6 +39,8 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+__pycache__/
+*.pyc
 next-env.d.ts
 
 # OpenNext
