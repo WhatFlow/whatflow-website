@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFile,writeFile} from 'node:fs/promises';
-const root='content/blog/enhancement-2026-10-25';
+const root=process.env.BLOG_ENHANCEMENT_ROOT||'content/blog/enhancement-2026-10-25';
 const wanted=JSON.parse(await readFile(`${root}/candidate-documents.json`));
 const before=JSON.parse(await readFile(`${root}/source-documents.json`));
 const base=process.env.VERIFY_SITE_URL||'https://whatflow.tech';

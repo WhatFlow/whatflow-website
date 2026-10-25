@@ -15,9 +15,14 @@ for(const group of groups){
  const queue=[...wanted];await Promise.all(Array.from({length:2},async()=>{while(queue.length){const d=queue.shift();const actual=live.find(p=>p.slug===d.slug);const old=before.find(p=>p.slug===d.slug);assert(actual,d.slug);
  for(const k of group.fields)assert.deepEqual(actual[k],d[k],`${d.slug} ${k}`);
  for(const k of group.preserved)assert.deepEqual(actual[k],old[k],`${d.slug} preserved ${k}`);
- const html=await(await get(`/${group.route}/${d.slug}`)).text();
- assert(html.includes(`rel="canonical" href="${base}/${group.route}/${d.slug}"`),d.slug+' canonical');
+ let html='';
  const cover=new URL(d[group.cover],base).href;
+ for(let attempt=0;attempt<4;attempt++){
+  html=await(await get(`/${group.route}/${d.slug}`)).text();
+  if(html.includes(`property="og:image" content="${cover}"`))break;
+  await new Promise(resolve=>setTimeout(resolve,3000));
+ }
+ assert(html.includes(`rel="canonical" href="${base}/${group.route}/${d.slug}"`),d.slug+' canonical');
  assert(html.includes(`property="og:image" content="${cover}"`),d.slug+' OG');assert(html.includes(`name="twitter:image" content="${cover}"`),d.slug+' Twitter');
  assert(!/name="robots" content="[^"]*noindex/.test(html));assert(html.includes('Key takeaways'));assert(html.includes('About the author'));
  const schemas=[...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));const article=schemas.find(s=>s['@type']===group.schema);assert(article,d.slug+' schema');assert.equal(article.author.name,'Safwan Adnan');assert.equal(article.datePublished,old.publishedAt);assert.equal(article.dateModified,d.updatedAt);assert(schemas.some(s=>s['@type']==='BreadcrumbList'));assert.equal(article.publisher['@type'],'Organization');
@@ -25,6 +30,10 @@ for(const group of groups){
  const record=manifest.records.find(r=>r.slug===d.slug);assert(record);const response=await get(record.url);assert(response.headers.get('content-type')?.includes('image/webp'));const bytes=Buffer.from(await response.arrayBuffer());assert.equal(createHash('sha256').update(bytes).digest('hex'),record.sha256,d.slug+' cover bytes');const meta=await sharp(bytes).metadata();assert.equal(meta.width,1200);assert.equal(meta.height,630);
  results.push({slug:d.slug,collection:group.collection,nativeCMS:true,preservedFields:true,schema:true,socialCover:true,coverHash:true});
  }}));
+ let directory='';
+ const pageSize=group.collection==='posts'?12:24;
+ for(let page=1;page<=Math.ceil(wanted.length/pageSize);page++)directory+=await(await get(`/${group.route}?page=${page}`)).text();
+ for(const d of wanted){assert(directory.includes(`/${group.route}/${d.slug}`),d.slug+' directory link');assert(directory.includes(d[group.cover]),d.slug+' directory cover');}
 }
 assert.equal(new Set(manifest.records.map(r=>r.url)).size,164);
 const sitemap=await(await get('/sitemap.xml')).text();for(const g of groups)for(const d of JSON.parse(await readFile(g.root+'/candidate-documents.json')))assert(sitemap.includes(`/${g.route}/${d.slug}`));

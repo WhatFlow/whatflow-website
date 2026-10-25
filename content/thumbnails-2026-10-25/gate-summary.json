@@ -1,0 +1,3125 @@
+{
+  "checkedAt": "2026-10-25T00:10:57.082453+00:00",
+  "expected": 164,
+  "passed": 164,
+  "pending": [],
+  "allPassed": true,
+  "results": [
+    {
+      "slug": "abandoned-checkout-whatsapp-conversation",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/abandoned-checkout-whatsapp-conversation",
+      "hashes": {
+        "abandoned-checkout-whatsapp-conversation.md": "93ee23b7d63f98f5d5081caf36a8956320f222adfe57ca8c3b865485568aca17",
+        "abandoned-checkout-whatsapp-conversation.html": "0bf51d2787e02789ca537b2d8657b78cb7d2195ef099780ff2bc6c3517571759",
+        "abandoned-checkout-whatsapp-conversation.pdf": "1e574e8c033c404c6139fb638e2a151751e64f02d6f542c928237769052688fd",
+        "hero.webp": "09feb6bf52ace4cfbb233b9af2f5af36b6ad04b18177cd8d37906ae886cae51d"
+      }
+    },
+    {
+      "slug": "ai-support-drafts-small-shopify-team",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/ai-support-drafts-small-shopify-team",
+      "hashes": {
+        "ai-support-drafts-small-shopify-team.md": "decf74e85f1656e736f254589d58ae4fafebdbc6b243888d081d90d6d619d527",
+        "ai-support-drafts-small-shopify-team.html": "fef8964ed5bd498d52bf2a8058482f31316a437f674d6e287f84edb8bcfb3a22",
+        "ai-support-drafts-small-shopify-team.pdf": "eb287bbab459506d27d3e2a23a242a5386827b81c5e6d05c66b345fefdfa7df6",
+        "hero.webp": "3c04981fe285adf3cbba442a872a348eb9cf622fa92338fe68bf37680ddbc58c"
+      }
+    },
+    {
+      "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/audit-shopify-app-costs-feature-gates-seat-fees",
+      "hashes": {
+        "audit-shopify-app-costs-feature-gates-seat-fees.md": "1dfd9938513ba07ce003a31962e7d5f489790e9fc376b2ab4c49f9c06c79fe89",
+        "audit-shopify-app-costs-feature-gates-seat-fees.html": "1cdf89f062287d76a3c3411c2c15bf1a310b7121623d235802f621a6b39261b6",
+        "audit-shopify-app-costs-feature-gates-seat-fees.pdf": "772810d9f460fd5eb2e1c70558fecfc248f9bc801d97302fa1067c414ee120fc",
+        "hero.webp": "3f3a785796a087cd7f4f8f4c5ca5b5f9c4487503862feef9ebe63798b5d84bbc"
+      }
+    },
+    {
+      "slug": "best-time-review-request-after-delivery",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/best-time-review-request-after-delivery",
+      "hashes": {
+        "best-time-review-request-after-delivery.md": "ff1e9f61c680ca3c06444664d1f43053b2df3ee658a5eca49766bd9bb7f822c4",
+        "best-time-review-request-after-delivery.html": "6a46379a707c63a18dd21886688a5189ce5968e1f5de667b0f9aac1ed8e3d393",
+        "best-time-review-request-after-delivery.pdf": "8c35e461f6d24d74ecc056c054fb6063e8f963fc38b6129a972ec8500d36e548",
+        "hero.webp": "0df4dc387e09bda25cde33fdbac79712c96b08bfeeb322b69937a9895f9ebb80"
+      }
+    },
+    {
+      "slug": "choose-ecommerce-platform-customer-workflows",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/choose-ecommerce-platform-customer-workflows",
+      "hashes": {
+        "choose-ecommerce-platform-customer-workflows.md": "2709bb0f78a2c04f0b18324e447c64f4cfe6cfd424caca36bda27741770267fd",
+        "choose-ecommerce-platform-customer-workflows.html": "97f4d2c67df33e51099c6c8d8f9f874038d50f6fd57c10a62a4bfca53a6d9014",
+        "choose-ecommerce-platform-customer-workflows.pdf": "c5d6215e9b22a868ff33c3569212991709b2e7cfe2888a434b85952cf3bb24a8",
+        "hero.webp": "bb8a9fbba77bee6d99168d2bc7d6fdf7bfdeacdc9730b3b5cf2b8b8a6951d71a"
+      }
+    },
+    {
+      "slug": "choose-first-automation-shopify-small-team",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/choose-first-automation-shopify-small-team",
+      "hashes": {
+        "choose-first-automation-shopify-small-team.md": "636e7476ba1bc4950f103fcb785779daf9ff0a0f57994d7cb8e83fc4c5957fb9",
+        "choose-first-automation-shopify-small-team.html": "7024fb4ca8c346b28345ba517d757a96e7aa368923dc9aea366607fed6e13fa1",
+        "choose-first-automation-shopify-small-team.pdf": "b0710d7ce9c3d8988f4ad5605780625495e8c2794d25c1da04b7af64686ab1ce",
+        "hero.webp": "0723d5468737e546e4ad9a9dacd1fe2c7a2bc083fb8e9983a8b5ed07041d383c"
+      }
+    },
+    {
+      "slug": "choose-review-app-and-messaging-app-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/choose-review-app-and-messaging-app-shopify",
+      "hashes": {
+        "choose-review-app-and-messaging-app-shopify.md": "836cfc75ab4a6dac61d1e342c0e431644e5f8e655979b5d1ee892fe3b8b3349f",
+        "choose-review-app-and-messaging-app-shopify.html": "a3f0da8d1c97d08bfe79f3509aba1c77f0d7c8ff9909fd8c1b660105f32c163e",
+        "choose-review-app-and-messaging-app-shopify.pdf": "82dfdc1d40ccc10deedabe78ad750fb9c5da5e1545f70da6135a4c804e1a6607",
+        "hero.webp": "56dac97cb5b98a847c1a243aec25dbe3c2fdfbb607481f5c19e35e0836343ff9"
+      }
+    },
+    {
+      "slug": "collect-first-product-reviews-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/collect-first-product-reviews-shopify",
+      "hashes": {
+        "collect-first-product-reviews-shopify.md": "b82183c112967d05107a89f1de965641a653dd54af315532032cc00bf533361a",
+        "collect-first-product-reviews-shopify.html": "904bd9e33e0058845cd1faf947c6a9fbdcfc5702b3fcce252144a8386f44d5f3",
+        "collect-first-product-reviews-shopify.pdf": "f77383f904ade65e950929fb83f5d0f067591aecdc85fe41acc66aedbf5c7bad",
+        "hero.webp": "aace19a833a12e3efa5084ef8676e9889bb5d4a61abfcd319e41aa868c1f33f6"
+      }
+    },
+    {
+      "slug": "coordinate-email-sms-whatsapp-customer-messages",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/coordinate-email-sms-whatsapp-customer-messages",
+      "hashes": {
+        "coordinate-email-sms-whatsapp-customer-messages.md": "9e1b72c7a9230991e8ee76111e22e8ca2c4f997d6357fa4b3611f5b995dc9ec7",
+        "coordinate-email-sms-whatsapp-customer-messages.html": "1e4077aa3346344b7d8911abee98a9b33513d0a11e8eae4e762d63aec7aab3c2",
+        "coordinate-email-sms-whatsapp-customer-messages.pdf": "7d21327287a1dc21d9482538644a1fdca5f7da6e68202047e130aa9b9fcc1dd6",
+        "hero.webp": "461d7a18eaa2e06bb4c2fb63017c151417d6afe3d71a7e7fbbb8168add6045a8"
+      }
+    },
+    {
+      "slug": "customer-feedback-loop-product-improvements",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/customer-feedback-loop-product-improvements",
+      "hashes": {
+        "customer-feedback-loop-product-improvements.md": "31650dc2c459feaac38992a754efa1a64b652b73c37af1c731c16674e432f7a4",
+        "customer-feedback-loop-product-improvements.html": "9c0dca47b7c528331d67c47f89a8e6b73ed645ad1edd40ceb978e4e3c7f7eada",
+        "customer-feedback-loop-product-improvements.pdf": "39f9a62edeb355e030aeb52b4b8530f694d7e459ffee3ba8091e25a553bceb8b",
+        "hero.webp": "224ec035d76c0ee2b3485c21ac39ac0c1fe623b549a63243e0d133d65634da05"
+      }
+    },
+    {
+      "slug": "customer-referral-messages-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/customer-referral-messages-shopify",
+      "hashes": {
+        "customer-referral-messages-shopify.md": "c89042170875bc9e8af82381490bc1947a50aaefb8c9f97be9a78ed616f7abd5",
+        "customer-referral-messages-shopify.html": "409e9edcb7ca51545964e60069f83294bb6e08e3ef0550f886d960559104f8f5",
+        "customer-referral-messages-shopify.pdf": "f310619798b54e46aa4f06b19f9472a5675e50b7d53b993fff3d9e7af57d7286",
+        "hero.webp": "357b1de8c6807edd3a3380f3aad45f72cbd98f7d464fa9a4f2bea8426487fe6d"
+      }
+    },
+    {
+      "slug": "customer-review-insights-product-copy",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/customer-review-insights-product-copy",
+      "hashes": {
+        "customer-review-insights-product-copy.md": "1e367150e84b6785a7851ebc28e18a412a7f73a179426bcd213977dcad2911a6",
+        "customer-review-insights-product-copy.html": "6087fd6497b06d73f96086e832f9be4a3fc257a84c43c440c14206a4c38aabb2",
+        "customer-review-insights-product-copy.pdf": "a0ae018b4a8be37c138e624f92f354999cbde68148e8e7044830623952ef6c50",
+        "hero.webp": "53beadf3bc2cb71bad83ff3232707608ef23c4afb3d03a15bcc467475addcde9"
+      }
+    },
+    {
+      "slug": "customer-service-saved-replies-without-robotic-tone",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/customer-service-saved-replies-without-robotic-tone",
+      "hashes": {
+        "customer-service-saved-replies-without-robotic-tone.md": "98d8a1047a2efc5044e22d9f914831940769be1871de99a962609de782315cbf",
+        "customer-service-saved-replies-without-robotic-tone.html": "5aa7cd44b9d2d21a3544846f73581a09334a3fb9f143ff9e8690817cc9b9ba35",
+        "customer-service-saved-replies-without-robotic-tone.pdf": "b1f34391a427d5ce94dce5e5298d79a7d9a0e53bcaeff3589a3a30de569d37b9",
+        "hero.webp": "9327768c3ba17b6606ac3e2b669f62223adf7611aa5ab8444688f6943e3b2989"
+      }
+    },
+    {
+      "slug": "customer-winback-campaign-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/customer-winback-campaign-shopify",
+      "hashes": {
+        "customer-winback-campaign-shopify.md": "379b0cc72b3e6e2f705105bb1b5cee81db0c866040f4064c789b78fd4f1620fe",
+        "customer-winback-campaign-shopify.html": "1ffc1ed8baeeee83310f3228e73f125f6cd9939874414918bfc848bd56b1a1ed",
+        "customer-winback-campaign-shopify.pdf": "b75dafeb79b40fc451cd6bdf3397adad42de677dd498856f2922f3162b6a5492",
+        "hero.webp": "f6a654c10fb422e003aef42de197c8ced329bf9173055bffb00171ce1ade51e6"
+      }
+    },
+    {
+      "slug": "define-store-audience-brand-promise",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/define-store-audience-brand-promise",
+      "hashes": {
+        "define-store-audience-brand-promise.md": "b0d17480b36639fb7d68aebe7aa4ca1e94b294155a5acbea4e0b25f6cb5856f8",
+        "define-store-audience-brand-promise.html": "4f7d0935d3390ed969354813d4203d11738e0002e9c591afa0364b0f984ab744",
+        "define-store-audience-brand-promise.pdf": "32d2b9bd554cf913d7f03856fc02ca41a4dbe140e31bd9ebd32160362ecf1593",
+        "hero.webp": "52e8c17a94325f14619b08144b2bd9734aa994d263a74515dacbcbc274287446"
+      }
+    },
+    {
+      "slug": "dropshipping-customer-trust-communication",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/dropshipping-customer-trust-communication",
+      "hashes": {
+        "dropshipping-customer-trust-communication.md": "141e99cdcea2929b6382b4196f9bc3128eda01e797d0e5e70dafc06096234a1b",
+        "dropshipping-customer-trust-communication.html": "ee690ff302c7b68fa828dca1e55b25cf81eaaa082488c8ef3b23f9061c903116",
+        "dropshipping-customer-trust-communication.pdf": "93b8ad5eb613f6761847d3be2669943dbdc6f5cf9614cfbb3fa97d87a6df5f7f",
+        "hero.webp": "1f21c13a2f36793cee394d92f5eac24606c100471e3502b4b253d31c17a3825c"
+      }
+    },
+    {
+      "slug": "evaluate-shopify-app-workflow-connectors",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/evaluate-shopify-app-workflow-connectors",
+      "hashes": {
+        "evaluate-shopify-app-workflow-connectors.md": "343467c794bc99612fefdb5f73ff9f6cb9c6b34bef776e4d64f2cffbfddde1e6",
+        "evaluate-shopify-app-workflow-connectors.html": "d3a70091f1eb1e8bb7943242ca832798c503e76ee2e8597914d105b568a213cf",
+        "evaluate-shopify-app-workflow-connectors.pdf": "1c8869887d1b9616df3d8fa7230e078ed23bd9966e9dd91da84fec292b6c8150",
+        "hero.webp": "de1714b72ff4cc04957a1e32151c64d5f207afc6eaf6bc5189e11dd9f917c0f1"
+      }
+    },
+    {
+      "slug": "helpful-cross-sell-product-recommendations",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/helpful-cross-sell-product-recommendations",
+      "hashes": {
+        "helpful-cross-sell-product-recommendations.md": "0f21c3471129b3e568c057dfc67164a11c5cb2c07991a3d2d2f67d6d3fd3681c",
+        "helpful-cross-sell-product-recommendations.html": "3049037f21e25ba1e2878190c643516430fd0f31d30f4abeceb0270ab2eb1b3d",
+        "helpful-cross-sell-product-recommendations.pdf": "e9a16218810c7f9a1d0c6a55a83a7f8ffcb9916c5aafcdecbe5d1bfebcbf6756",
+        "hero.webp": "5c002b4b5a0e736f830815b48d79d9a81c3ff1df9d43d882399362efae3c9487"
+      }
+    },
+    {
+      "slug": "influencer-campaign-small-store-plan",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/influencer-campaign-small-store-plan",
+      "hashes": {
+        "influencer-campaign-small-store-plan.md": "2583f82ec2b6219f79e0a656a2819b77126fdbfa683a8385ed154b3f6379b959",
+        "influencer-campaign-small-store-plan.html": "c956b48e20e760564623c3598054cea29cecbcb7a13089bdb9ccba5724993505",
+        "influencer-campaign-small-store-plan.pdf": "7350f721e8fef401f5c46201732a0d07fd7da2cf72f48bed7490e26845522c0d",
+        "hero.webp": "78f692df28c6eae0439857e4196b586ded1f64510d89a070ad8d597a6a9756f7"
+      }
+    },
+    {
+      "slug": "loyalty-messages-customer-value-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/loyalty-messages-customer-value-shopify",
+      "hashes": {
+        "loyalty-messages-customer-value-shopify.md": "fd0a33dc9bc3f2a4ca9a593496d595b9eff767f8ab581ea8401614b963b0a8ab",
+        "loyalty-messages-customer-value-shopify.html": "9a28311e826daf39f9f13f45ed44ae9d68071772df7a0e253e0c2e89c1fd8a16",
+        "loyalty-messages-customer-value-shopify.pdf": "2d13df4dabb632071a93e72cfb109535f0f84b2470fde30d6f898656c1c69fae",
+        "hero.webp": "70111af3b86fa296d325dcdfe8880e106c6a381f9766bf71e44afc722497a6f4"
+      }
+    },
+    {
+      "slug": "maintain-shopify-blog-content-library",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/maintain-shopify-blog-content-library",
+      "hashes": {
+        "maintain-shopify-blog-content-library.md": "f547bae746b058b5bbabfb60a704e02001cdbe44db3170881f34ca78345eabba",
+        "maintain-shopify-blog-content-library.html": "ea95f70199948775c7fdb3bb9343c5a969f926979cfe9392dce4742ff1a72216",
+        "maintain-shopify-blog-content-library.pdf": "2b925823834413088fce60b3eb131e8f0fe8599b8f991ed3e8d6a8f8c840f80e",
+        "hero.webp": "333702c51d81117b9a24278c4fd2304f8062e328439f68ba2bbfc0725e8e0475"
+      }
+    },
+    {
+      "slug": "migrate-review-app-preserve-customer-feedback",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/migrate-review-app-preserve-customer-feedback",
+      "hashes": {
+        "migrate-review-app-preserve-customer-feedback.md": "f34e99e6b8c9abcdd63441b80a83acdb9e1cfef97d4ce25104eefa52b4698af2",
+        "migrate-review-app-preserve-customer-feedback.html": "1fc42c76e97d64ecb63c82c22d361859e274910c37af5e80dfc202a2409db5f7",
+        "migrate-review-app-preserve-customer-feedback.pdf": "b0524e782d7384ca3a44a93c290efbaba37504c8ba4ed423a80535427e4f7c14",
+        "hero.webp": "9e9474172463e6474d7f2c2745ed9899a44c12a0c627d11b480c4e767df44894"
+      }
+    },
+    {
+      "slug": "mobile-store-review-widget-chat-button-layout",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/mobile-store-review-widget-chat-button-layout",
+      "hashes": {
+        "mobile-store-review-widget-chat-button-layout.md": "e83f34d32009b5ca91e8fc76f04315111fa77af6112ee79e09d962cea117249e",
+        "mobile-store-review-widget-chat-button-layout.html": "213026477e2839cb4558a3e1ff5b370fd4f622143a6b504e9783fa61870fd0f7",
+        "mobile-store-review-widget-chat-button-layout.pdf": "3591f742caa63e7435dd896d0bdaf91fbc8ad10ae67884698e0b2289313f0162",
+        "hero.webp": "3bf5188f7aa70fbe683734d7367ceb2f75023a089b608d995db9f07592924960"
+      }
+    },
+    {
+      "slug": "multilingual-customer-messaging-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/multilingual-customer-messaging-shopify",
+      "hashes": {
+        "multilingual-customer-messaging-shopify.md": "778b8aee446907e026d87f2d23dc04472f7a3a030d8047ccfa994e1b5d210617",
+        "multilingual-customer-messaging-shopify.html": "5184a77d25e36b0c1edd148ebe89f40828fc7620a44985b02d20b3563eac8e6a",
+        "multilingual-customer-messaging-shopify.pdf": "6aa30338eb69f28a31c1e52aad111e57ae7ce37ddd0d3066446b5fc802d4dfbc",
+        "hero.webp": "bc26fd8b57c3d3d8506dcfb7d1b40a1816bdf6f30e780a9773f2b73671b03040"
+      }
+    },
+    {
+      "slug": "photo-video-reviews-customer-permission",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/photo-video-reviews-customer-permission",
+      "hashes": {
+        "photo-video-reviews-customer-permission.md": "5d870ac2194631cd477c150180ae851193bde7547c9be587f7e5130540e6679d",
+        "photo-video-reviews-customer-permission.html": "1c2d7b3c9291ffbee533ea7ec20f9d117637714406244cac2ac580745a06bc5a",
+        "photo-video-reviews-customer-permission.pdf": "fa61679263ba4b146744a3aad2b8777efdc86843a988f795591fcdc47000a6a0",
+        "hero.webp": "c572756104e842e52e6472c0aff6815b6268ee2471dd6611d03f32323046e05d"
+      }
+    },
+    {
+      "slug": "post-purchase-customer-journey-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/post-purchase-customer-journey-shopify",
+      "hashes": {
+        "post-purchase-customer-journey-shopify.md": "2c56f68dbbf1f906ec7e14982ca927d4b94b35cb45e55f011e22e9ef268d70a1",
+        "post-purchase-customer-journey-shopify.html": "4eef72393abaa0a01c711a2ecebeecd44efbcb93f921e53eb8ca675f11b78c58",
+        "post-purchase-customer-journey-shopify.pdf": "c7b8352d9f30e50dde391125f66a2fb30f3995d6764fe6e9f3a971f391c0add9",
+        "hero.webp": "455112be172e8f6be59092bed002171088021beba14addbb282f759a60fe789d"
+      }
+    },
+    {
+      "slug": "prepare-customer-support-black-friday-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/prepare-customer-support-black-friday-shopify",
+      "hashes": {
+        "prepare-customer-support-black-friday-shopify.md": "a4bc0f455380a2c4fcd1b55c1f3d495acd9b82fb1d2bd079a296575b6d3d5517",
+        "prepare-customer-support-black-friday-shopify.html": "ddf6dec4fde136492b4f5f3e0c88ce161d8a5df82f9a2e20ec7a0c81a128ea42",
+        "prepare-customer-support-black-friday-shopify.pdf": "287d3d4bdfe9bee87d6fee12e0b39017ef26d6488131ce3ac6cfbbc3858c2275",
+        "hero.webp": "c4dd4deaa05734c4f2d87d263fc8c671e6390db2a2dbd79f37bfd20a26a300ed"
+      }
+    },
+    {
+      "slug": "product-questions-whatsapp-prepurchase-support",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/product-questions-whatsapp-prepurchase-support",
+      "hashes": {
+        "product-questions-whatsapp-prepurchase-support.md": "18d5c4bacb20137f81910556355164fe8331c0e7025655eb619543102078b548",
+        "product-questions-whatsapp-prepurchase-support.html": "7c85e13d84fbaa03ee785df0831bae56f8bca684329941a12f7baea2130cf593",
+        "product-questions-whatsapp-prepurchase-support.pdf": "c8f2abd19534ceefaa93d0accd7685c564859bc921c0c4034fd67d6c8ea933cc",
+        "hero.webp": "b03fbf6dbaa0831917d7218fc30d7cb711056e48396e4ae918a0ca1e94fb5c44"
+      }
+    },
+    {
+      "slug": "product-review-schema-rich-results-explained",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/product-review-schema-rich-results-explained",
+      "hashes": {
+        "product-review-schema-rich-results-explained.md": "7f275f45714626cfd41e35e90e7221ad1f2030afb42dc4a8739aded9a3d9c7cb",
+        "product-review-schema-rich-results-explained.html": "d65e7299c87b9011edef8b5b98ea4a02d51f73c0e5a37730a0281d0429994b8c",
+        "product-review-schema-rich-results-explained.pdf": "92731716efc9fd2c5c6d44f3515ff6d35aceb45bcedbde49f8bcb01e543b1165",
+        "hero.webp": "bea326689a374a6760551539381c181f22b036dcddca3789b71b8fe7cda93eb6"
+      }
+    },
+    {
+      "slug": "product-reviews-vs-store-reviews",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/product-reviews-vs-store-reviews",
+      "hashes": {
+        "product-reviews-vs-store-reviews.md": "b16b2da6e002c5b6bbdae246315db80840ac32893beaacfcc6724387004b985d",
+        "product-reviews-vs-store-reviews.html": "896fdc03bc620f3f9150cae6acf054bf5e374d70537457c773c8662e18207f72",
+        "product-reviews-vs-store-reviews.pdf": "6e564c4ab1eddc34560b86a0a52e44deca6db7b6e54f4ccad438d03d7df24081",
+        "hero.webp": "811a1c282417f7fb983793148c7a74b258ba9fb45c7320ac804a1d6ca01b287f"
+      }
+    },
+    {
+      "slug": "product-variant-review-context",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/product-variant-review-context",
+      "hashes": {
+        "product-variant-review-context.md": "4bf75d557b1050a0c15852cc681c9465490d65900eca23d019e3b1c0cd2b8c4a",
+        "product-variant-review-context.html": "871d458e40fed5cb92463c94c662bfb2699cffccc57277788be2118ea4b27563",
+        "product-variant-review-context.pdf": "ec8d498f65a3f77f1f888c41eb78f93bc15c94d21033b6b6e1e84f9c8802db5b",
+        "hero.webp": "af30bf300ce22e95917368649abf8d95c1f2348a8fc8265bd92640af16568f7f"
+      }
+    },
+    {
+      "slug": "qr-code-review-requests-product-packaging",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/qr-code-review-requests-product-packaging",
+      "hashes": {
+        "qr-code-review-requests-product-packaging.md": "a795d20e09b197d0c5e2bf6385777c27f2fbe86e63dc61a3a2a0b89cf87f6b7b",
+        "qr-code-review-requests-product-packaging.html": "30568de0f5c135477ef06181ca063c99dbb383f8066411945a29f91f78ec0184",
+        "qr-code-review-requests-product-packaging.pdf": "719fb487eab17f618f6a662e19756debc40d4e7ce4534dc0b8b8d84421c70019",
+        "hero.webp": "31bbc695ec31256e5dafabd59fd5d11c39ea27d84fd04d6a9690af3026ee659f"
+      }
+    },
+    {
+      "slug": "reduce-cart-abandonment-with-clear-information",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/reduce-cart-abandonment-with-clear-information",
+      "hashes": {
+        "reduce-cart-abandonment-with-clear-information.md": "6edd9fa5607713bc935a5441c845c8bf8c3bbec4e997e58ffdd4713187233e68",
+        "reduce-cart-abandonment-with-clear-information.html": "0aba36fb805578aa57f156504a1cd1631c052c952653611589c9478d77e40498",
+        "reduce-cart-abandonment-with-clear-information.pdf": "e0de3532498039289eb0b66a82653deae07b83acafeb9c38026a9a2b42c30685",
+        "hero.webp": "27e0305c45955d7fd46a7ad9f1fe39d6e88abad1c6e212b2c0fe3399f2dd1196"
+      }
+    },
+    {
+      "slug": "repeat-purchase-campaign-without-constant-discounts",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/repeat-purchase-campaign-without-constant-discounts",
+      "hashes": {
+        "repeat-purchase-campaign-without-constant-discounts.md": "f836f116f5568298ab077d4dbb843a1064f2239efcbe814f345ad23902c28f7a",
+        "repeat-purchase-campaign-without-constant-discounts.html": "1ce2844fdb9994ead6c5ab04583713615eb2d67f4ab0defaf568d272403ea6b9",
+        "repeat-purchase-campaign-without-constant-discounts.pdf": "f8218f1029d67fd85954e8c4616c55627ae61a65cc034748fd3717e310254abf",
+        "hero.webp": "f833ba5d9753b7fecdc6fe5e60f396924e9ac0600900ce26e903fbce8da4acd6"
+      }
+    },
+    {
+      "slug": "replenishment-reminders-shopify-consumables",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/replenishment-reminders-shopify-consumables",
+      "hashes": {
+        "replenishment-reminders-shopify-consumables.md": "2ff4febebb440f1b6232c00bf5bed7394eb26de96fcd98d9ead6d56c39f07375",
+        "replenishment-reminders-shopify-consumables.html": "703728a6a64bf558f6c2280733c2961f6262da8a483e587783be1c1959837768",
+        "replenishment-reminders-shopify-consumables.pdf": "0a64c8f4e1996bf9e5556e88a0225433d2711f60e6ce8189a2b07316111ab8e8",
+        "hero.webp": "46635088d88c517cf620e3390d2e26795058a37abebe19b6f2efa7e2f0f8d44f"
+      }
+    },
+    {
+      "slug": "respond-negative-product-reviews-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/respond-negative-product-reviews-shopify",
+      "hashes": {
+        "respond-negative-product-reviews-shopify.md": "57f79b32d29d41795a4548c9e66d74a8cf75a8027ec98fa247653878986fcd6d",
+        "respond-negative-product-reviews-shopify.html": "d267ccbdee3eccfc0a8a2a2baeccaa6ae2cbab5cf26d8054354786f81cb82cf5",
+        "respond-negative-product-reviews-shopify.pdf": "ee4e5e09b3863cde2395240b5b5924974327ad0933d3037fff8788ded05e8f7b",
+        "hero.webp": "aea3694d26d269e3709c947aa716eab2cdd7f2d00c6ef5fa3d214b83bce7f4b3"
+      }
+    },
+    {
+      "slug": "reuse-customer-reviews-social-media",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/reuse-customer-reviews-social-media",
+      "hashes": {
+        "reuse-customer-reviews-social-media.md": "148937215632fd3cf5847cfb2eb4d8f7f140a4625e7cdcaf6698cc48d84ef7d5",
+        "reuse-customer-reviews-social-media.html": "d89c4118621d7c9da440d8d201fadd40c4cdc28e59a0419f88faa34810a73aa4",
+        "reuse-customer-reviews-social-media.pdf": "522ae5798a1d1894a3f0cbf54485db1c520cefba94c535b9146b984f871a2e80",
+        "hero.webp": "b4758b267389800468588498f4eadf4e1d77ff46b216f9cbc73f05c210ae6e04"
+      }
+    },
+    {
+      "slug": "review-collection-rate-measurement-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/review-collection-rate-measurement-shopify",
+      "hashes": {
+        "review-collection-rate-measurement-shopify.md": "f5450c3e3d250aac9c1769daa3ab0eb9f3d3974258c003ae4e6d7f2f1203d5f7",
+        "review-collection-rate-measurement-shopify.html": "df04842f7b0b519920cdb0f0e143b4aee5a89a2186d0ee312f90db493f6f6d4e",
+        "review-collection-rate-measurement-shopify.pdf": "0c2120f03fdfb1b440dfaa69cff7011690db572748d9e6fd5c8b2dfc4fd750d8",
+        "hero.webp": "cac9b0b1a43210cf09df28171c72be62c886c6c118a87fe26e113b7ff408096d"
+      }
+    },
+    {
+      "slug": "review-moderation-policy-small-store",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/review-moderation-policy-small-store",
+      "hashes": {
+        "review-moderation-policy-small-store.md": "a6e01352f794980e0c4568f0c8a55ba69a9f59ecb509fa61b1f27ec7066b0e7d",
+        "review-moderation-policy-small-store.html": "376dab980721b6d4e3acb7ef67490a2e5a1b40a03fb2add76fa1c5bfd1237d11",
+        "review-moderation-policy-small-store.pdf": "fd6a0d0de5be74ecd78b6af485ab2c1dbc6a1d030450277b02010e88b09b9539",
+        "hero.webp": "c09b901f7df99e30e4cf6cc642198e33f48eb8effb2bbb4ce084b687c1f8cccd"
+      }
+    },
+    {
+      "slug": "review-request-messages-examples-whatsapp-email",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/review-request-messages-examples-whatsapp-email",
+      "hashes": {
+        "review-request-messages-examples-whatsapp-email.md": "a40ad1d30539f8e7874f0b8cfa39efb2898cb09631bea5a1e41f1b792bfae621",
+        "review-request-messages-examples-whatsapp-email.html": "8a207c668e501b9fe451b594af0cfcd5a7368291e53c1d5e4a514ff87fbfde6c",
+        "review-request-messages-examples-whatsapp-email.pdf": "1cade5475a1b3a74b1f859fbafb1577a2d58eab1a2d3096b3513f7e003486a1b",
+        "hero.webp": "083aa2b67e7b8fb643a59149817d1377992d92547b310b1ee05528f26792782d"
+      }
+    },
+    {
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 93,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/send-whatsapp-templates-shopify-flow",
+      "hashes": {
+        "send-whatsapp-templates-shopify-flow.md": "9b9f33e32756259898eb6b3e74647f3f70f252c3bd793fc608f7d1f501ef7194",
+        "send-whatsapp-templates-shopify-flow.html": "d03df996e38128d6edcd64b1f5f6ad91656c91005eacd81b3db9a03c46f899f7",
+        "send-whatsapp-templates-shopify-flow.pdf": "e1e6e7d83dbc865a1c003f6153eb291aa2fabc69ff8f20baf2de46ad1c741d22",
+        "hero.webp": "5f3b9403336befed114eae4d4acd8391e2eca5deab64572383096dbe71ea951f"
+      }
+    },
+    {
+      "slug": "shared-team-inbox-small-shopify-business",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/shared-team-inbox-small-shopify-business",
+      "hashes": {
+        "shared-team-inbox-small-shopify-business.md": "638905f0cb608fdc765bbbc26ebf5af01be727dd8154d061f6837796fd58b13c",
+        "shared-team-inbox-small-shopify-business.html": "85ac1729740d6d39fe668faafbad557f3d3e3fc7cf8a2259f8567fbe35e8754d",
+        "shared-team-inbox-small-shopify-business.pdf": "cea23a3dc524c4c2a25f1e0127772b79c2e14dfe218ce810e4aae1f10854f963",
+        "hero.webp": "2f992d53d1e95a25f8fbb1fcd5e76a5a6514dadb25314faf3103ad4dfbf35291"
+      }
+    },
+    {
+      "slug": "shopify-content-plan-customer-questions",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/shopify-content-plan-customer-questions",
+      "hashes": {
+        "shopify-content-plan-customer-questions.md": "dd026c8b6f91591cadd8c771a4a09ebb5be9a462317e382aa97ff893cea3e70d",
+        "shopify-content-plan-customer-questions.html": "4ed763dbbcc91a3ea6d3d4bafc3c3750c094a2516c5e6b4a0389d4c97156b89e",
+        "shopify-content-plan-customer-questions.pdf": "6f62207b9af37050258ee30dc11db75d9e4fdd07cdb43a47b527175e0eae0ef3",
+        "hero.webp": "ef0ac6f91f5b164f34c6d8a48e57ffe9447852c0f4e7a05029cb678513e7765f"
+      }
+    },
+    {
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 93,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/shopify-flow-whatsapp-app-integrations",
+      "hashes": {
+        "shopify-flow-whatsapp-app-integrations.md": "265bb5856bf2975de16a1b6c803c1352180179ac87d06a86ca139a9462b4dd38",
+        "shopify-flow-whatsapp-app-integrations.html": "633ba45f8b278daac465637a9387dbade181b99b56d50770cbc21447138af293",
+        "shopify-flow-whatsapp-app-integrations.pdf": "1e9e725ca5cd08857abe65ee21b9c004fd50f99cf4e8c8089edde15d4e458d69",
+        "hero.webp": "1604b1e510f4d3c48d0ed4a78bfd0e9d7c20234f711d21d43d57180f7cae52f2"
+      }
+    },
+    {
+      "slug": "shopify-product-page-trust-checklist",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/shopify-product-page-trust-checklist",
+      "hashes": {
+        "shopify-product-page-trust-checklist.md": "be269f7385d46d4edea459eb4d74c4fd48e58209a6ebd1fa2c3b10d0a9d7e3f9",
+        "shopify-product-page-trust-checklist.html": "5038658bd9a43e63a229225c4345e1e0adddf5f208267642c0252302834285fe",
+        "shopify-product-page-trust-checklist.pdf": "fcb72d2c557b3f3f112b795970ddc9e8bdbfad51e277dd9b8ef7c6385d0a8de1",
+        "hero.webp": "11d10af70cd7fc420e06594143482aa09fe951e0112931ced9b326b319ffed13"
+      }
+    },
+    {
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 93,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/sidekick-shopify-flow-whatsapp-workflows",
+      "hashes": {
+        "sidekick-shopify-flow-whatsapp-workflows.md": "ca9509f2ecc585aff48dfb772012e7c812d030c50e6463e14eb953699bdaf5d0",
+        "sidekick-shopify-flow-whatsapp-workflows.html": "ededba0c66af0726e37753e23e3e70ac31d938dddaf77f98541bd5798a5ab3fb",
+        "sidekick-shopify-flow-whatsapp-workflows.pdf": "c7a910d834809220540de71c0699c611bf4aa9168e5231bc3823332d0625117f",
+        "hero.webp": "031135f789f96ac9da343f8d85e4ce39f26f0660d06561f1e4a025d38be1bbf9"
+      }
+    },
+    {
+      "slug": "small-shopify-store-metrics-review-routine",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/small-shopify-store-metrics-review-routine",
+      "hashes": {
+        "small-shopify-store-metrics-review-routine.md": "db33c8f31decec5c1c106130e8e5c0c41d9c6cdd8d3cc00d9ec2b17923d93f41",
+        "small-shopify-store-metrics-review-routine.html": "3a7e55392061abd6c512ef8041b641206dceb322cb3edf65bb93dbc57b018da3",
+        "small-shopify-store-metrics-review-routine.pdf": "ad5733c1c88fa9966f4d721af2b7616e633d444303e8507271e4558d2c8f1163",
+        "hero.webp": "bcc45d296ddd77c7ef5bb40930e9053edfc230ce5814e3ad3412aa3df3d52fb6"
+      }
+    },
+    {
+      "slug": "test-social-proof-product-page",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/test-social-proof-product-page",
+      "hashes": {
+        "test-social-proof-product-page.md": "56afbd836f22b74f03f30fe719ba7464339280c807af0cb5b0fb529a0c32870e",
+        "test-social-proof-product-page.html": "d6b464bac82f7841491ee1c0cc02ca4c4b2353950dc89e3a957bf573fac2822e",
+        "test-social-proof-product-page.pdf": "308ff76ee538ac091855e9a85b8b06fc11be171f37778c620e3532b8a8b9bfa6",
+        "hero.webp": "feccbe80247fbaf4c62a6f9ec5c68532180627e7a0ff7ed935cdb0667eede136"
+      }
+    },
+    {
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 93,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-shopify-flow-whatsapp-automation-guide",
+      "hashes": {
+        "whatflow-shopify-flow-whatsapp-automation-guide.md": "a440bae6934030b3565d79b1b63953d3a8d93d534738d13d323541260021b518",
+        "whatflow-shopify-flow-whatsapp-automation-guide.html": "dd40e6b37832ac58d799169994f2e23fc7a41e1e0fa1d00e85bae464b4aa60c9",
+        "whatflow-shopify-flow-whatsapp-automation-guide.pdf": "ada4f257ee62ba46930a15ec7967e72f63d8dbc4b17312685b6211cef7e30388",
+        "hero.webp": "acb1f87972278f20826f22c4792ff8f9f576e1f0831619bf5295faf8baeb44ce"
+      }
+    },
+    {
+      "slug": "whatsapp-campaign-preflight-checklist",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-campaign-preflight-checklist",
+      "hashes": {
+        "whatsapp-campaign-preflight-checklist.md": "29c8efa686f5d1a1a2a454103401246aaffb070f2d761855580760f5485e3b5a",
+        "whatsapp-campaign-preflight-checklist.html": "da62d86e2a53ce98410d34d81931ccaf17239f0c5219ad95249a962ba3355c33",
+        "whatsapp-campaign-preflight-checklist.pdf": "9bba85437035a25ab9db625eb906abeb9d0cd9095b5c3e8f28b3253c1f3c5e55",
+        "hero.webp": "7c9aa104413865212fe6ceaf846c3e1ee3b0c3c7c7c5b7acdb18e269e11b8efb"
+      }
+    },
+    {
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-campaign-segmentation-shopify",
+      "hashes": {
+        "whatsapp-campaign-segmentation-shopify.md": "9d449bc757a2bd872f58bbbf641b2e536569461489e4d96062cd8e184a2b7186",
+        "whatsapp-campaign-segmentation-shopify.html": "4e3dd846efe26cac7e0e9c351f72b7688922355a4dfba3dbf585450cd99883d8",
+        "whatsapp-campaign-segmentation-shopify.pdf": "9788d4d06ce9792d33945e98150d020a886f2a9792a6ab78f70556ffabcff419",
+        "hero.webp": "b4b4202f0ce6d49aad0ffb8c87d3cac7b687759bacfc5ef7fd8411c5cb0dd18c"
+      }
+    },
+    {
+      "slug": "whatsapp-customer-optouts-store-process",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-customer-optouts-store-process",
+      "hashes": {
+        "whatsapp-customer-optouts-store-process.md": "b3ad5632494da00c7119e980157fa501ab8a4c5cb403b31ee9af9f7c6570071c",
+        "whatsapp-customer-optouts-store-process.html": "8d5340dba55ab618f86b54868f4c9c1bf43c5caa67f7814a2ec58aa7ab27523f",
+        "whatsapp-customer-optouts-store-process.pdf": "536cc4bc06e2071c0d97e0c98f6f20424b82f7ee73d41a75a3b7d60f74e8cca7",
+        "hero.webp": "f7e0fefdbc8853ae003b8cdedd036ad5d057333aeb240c6c13525b522ac5c378"
+      }
+    },
+    {
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 93,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-incoming-messages-shopify-flow-routing",
+      "hashes": {
+        "whatsapp-incoming-messages-shopify-flow-routing.md": "217623fc1e7da4f39ef8657a3fefd10d77d0fda83187e7ff44e1f7ae2c5f7c0c",
+        "whatsapp-incoming-messages-shopify-flow-routing.html": "983159426e3523ed0bae700e82b66599c9567c5e8aa0b67f6baa2a7242e6dde3",
+        "whatsapp-incoming-messages-shopify-flow-routing.pdf": "d656341b3191cf719cf75659652d1a2d5e67e7def0f739745aef57a4712139df",
+        "hero.webp": "9d31047cd626becd868caa16da8bfb3f1b38a5feb28d35fdf544fbf42ce87654"
+      }
+    },
+    {
+      "slug": "whatsapp-marketing-plan-small-shopify-store",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-marketing-plan-small-shopify-store",
+      "hashes": {
+        "whatsapp-marketing-plan-small-shopify-store.md": "de6851cd0829252388b6561a87d60774110962c80bf8d585b13fd7a57f5adf75",
+        "whatsapp-marketing-plan-small-shopify-store.html": "9e321795501d3276bbbda4f04cb41d17bd0ac5f7dca7e4d306312f813fdd21f7",
+        "whatsapp-marketing-plan-small-shopify-store.pdf": "859dc3a822b2fb9a602b85219ecec04da2b80eccc1bd39f64a819a78abf2bdbb",
+        "hero.webp": "d1dcebcaad0182a2e64601d215cdad35cf633d2995cebe3e186958a7df70592c"
+      }
+    },
+    {
+      "slug": "whatsapp-message-budget-cost-per-outcome",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-message-budget-cost-per-outcome",
+      "hashes": {
+        "whatsapp-message-budget-cost-per-outcome.md": "60bad3b7e18b3b66be5f2df085a5c8065433c6223a22e758012498c067bfb331",
+        "whatsapp-message-budget-cost-per-outcome.html": "0380ca1d6a8dd07422e580ee6a18cbfdbfe70add6fafbf5bc4ed909d448b3805",
+        "whatsapp-message-budget-cost-per-outcome.pdf": "bb9fbd35fd2ac19bed68a8ef9511413c01eb0803ecb21e6416df2c10ecbb616f",
+        "hero.webp": "51a751edb9900e2f1aeccb5c75a845beeec596239c69e389935514ebc28b3ad6"
+      }
+    },
+    {
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "hashes": {
+        "whatsapp-order-replies-shopify-flow-cod-confirmation.md": "6fef01dd1a46819740a0774daf51bbc4823be968ed464fb162195073cc9b78a9",
+        "whatsapp-order-replies-shopify-flow-cod-confirmation.html": "ab5c2063985205114c4433277433bfad98e36c68bd2ef2f887096537c96d385d",
+        "whatsapp-order-replies-shopify-flow-cod-confirmation.pdf": "10e1323b737137ab1626ac3314fae74a5cd12ab17490dac11639eb12435fc006",
+        "hero.webp": "b37f0944f286843f9afa0be3043a34d562123aa8445a2b3ca8f8a8a03486c38b"
+      }
+    },
+    {
+      "slug": "whatsapp-quick-reply-buttons-customer-choices",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-quick-reply-buttons-customer-choices",
+      "hashes": {
+        "whatsapp-quick-reply-buttons-customer-choices.md": "6eb9dd9b9fa40b215a8f6916f5c440bd6bb65a86192dd0049d91ccdd8989d9c7",
+        "whatsapp-quick-reply-buttons-customer-choices.html": "bfba08520c1c9e60685f654bfcd3fd409ca4d1444463db319a34f7a7ffee1335",
+        "whatsapp-quick-reply-buttons-customer-choices.pdf": "236752a5ceeb4afd6666565c2099f3c50dc15f5501c8f1fa4a802247f15bee85",
+        "hero.webp": "98f2e7ade407b205e89922ac9ae01b060861b0c24c12380f73afedde1c575b79"
+      }
+    },
+    {
+      "slug": "write-useful-product-faqs-shopify",
+      "collection": "blog",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/write-useful-product-faqs-shopify",
+      "hashes": {
+        "write-useful-product-faqs-shopify.md": "5e6ffc8eaec207c77951cea51cec29eed85111df445e8cab85acf596b715ae4f",
+        "write-useful-product-faqs-shopify.html": "1495eaa407316a4015a92ffa5a738317f176b6906d7771902b93161efb7d36bc",
+        "write-useful-product-faqs-shopify.pdf": "8fc82b8de43184cd1d2cb2b3207d28eab250b731e16c77b0d8b341da5471edee",
+        "hero.webp": "fb01043935beb93280b48b3d9122cd4f68def49ea131bae929a8ab87ee729531"
+      }
+    },
+    {
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/all-features-whatsapp-plans-vs-feature-gating",
+      "hashes": {
+        "all-features-whatsapp-plans-vs-feature-gating.md": "856d0582df568651c2a0ce12acf95b7b5912a7b727a22b8ba300abff7ebd8af8",
+        "all-features-whatsapp-plans-vs-feature-gating.html": "22f07f7629b83611e41872efefb052b4be6cd1fe2fbebeefca94058f0045b5c1",
+        "all-features-whatsapp-plans-vs-feature-gating.pdf": "b288abf4b8dbd72b511d73b8d237d222f809f1a4ed7868f0e928eb469087199b",
+        "hero.webp": "98609208be423d19f77a6a6e7e19141f629f123cb69a38f4ab8ef52235ed9b92"
+      }
+    },
+    {
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/free-whatsapp-button-vs-paid-chat-widget",
+      "hashes": {
+        "free-whatsapp-button-vs-paid-chat-widget.md": "9c015ccbe118b597df2db9f752bdd15d2bac3f57201575e9b159591d2892fbfd",
+        "free-whatsapp-button-vs-paid-chat-widget.html": "2e653f90f909c6d7839572e419522942af1484570a3b58e5f652d5925ef8ca1c",
+        "free-whatsapp-button-vs-paid-chat-widget.pdf": "9a3c5757e31f83f26a3f719123c97159a3927d896ea676174379212f7e91ef78",
+        "hero.webp": "104b00d5707032169a6299c212a2b4aa0ed7fffc6dc66e8ecdd098c3b5a1370e"
+      }
+    },
+    {
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "hashes": {
+        "growing-shopify-team-whatsapp-vs-seat-upgrades.md": "14fd1fad8ba9478dec97dcdd6c246ae40fac7e12f78bb8b7bbfc6b9e2888e2db",
+        "growing-shopify-team-whatsapp-vs-seat-upgrades.html": "6aabf5aaf00d250a3ec305e69311182860d50b56638bbfb414351ee6736fd00a",
+        "growing-shopify-team-whatsapp-vs-seat-upgrades.pdf": "577a79ce15596231cbb42734a284252349879cb5d376ffc010e27b3a38519cc0",
+        "hero.webp": "b89e475c6ceea5f32fdd1d4758e5d9efa0793f02c3c83491823e05f756c10fbf"
+      }
+    },
+    {
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "hashes": {
+        "no-seat-fee-whatsapp-inbox-vs-per-seat.md": "12e14daeea805d6641fe89e577b32dba1464e43e8ceea7ceb21f4bdb50627134",
+        "no-seat-fee-whatsapp-inbox-vs-per-seat.html": "6400ff65890920b640237cfd33d3dccab3714c1b3c8bb4edafa3c346a8f33dc7",
+        "no-seat-fee-whatsapp-inbox-vs-per-seat.pdf": "b930103dda68e478eedbb1d1ed4dd7616fa9ab2b31ea72b099a2aa1152f6613f",
+        "hero.webp": "32372ee7cdf0e14c4a0147093969ba1f3662853f0e44092fcaf6a5ce6e29a765"
+      }
+    },
+    {
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/seasonal-shopify-whatsapp-vs-fixed-contract",
+      "hashes": {
+        "seasonal-shopify-whatsapp-vs-fixed-contract.md": "d7e1adab1a8ff7f4475d6ee6b0608e5e642f8ee3a5fb76891cdcf7dc8c250dda",
+        "seasonal-shopify-whatsapp-vs-fixed-contract.html": "bad472f5043973e372a92603db649d1aa03bc17efc9c4a45d1984572d118d224",
+        "seasonal-shopify-whatsapp-vs-fixed-contract.pdf": "aa188d6b4cfe7bf3edf4def834c89a1ee7627c3e54763274b6a837c979a67f79",
+        "hero.webp": "644f1be3e2e000ba8f8c9095a12276108bd6b3454d093be78574cd9dc5ef80a2"
+      }
+    },
+    {
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/shared-whatsapp-inbox-vs-personal-phones",
+      "hashes": {
+        "shared-whatsapp-inbox-vs-personal-phones.md": "9e7ebdeeec6df4f01b72905a59f46e8af56f35ac41334094943dedcbf7600cd1",
+        "shared-whatsapp-inbox-vs-personal-phones.html": "49e589bba5b2f1b034f9d6da90aa820c4dc716e45538dee9147946fd199521d9",
+        "shared-whatsapp-inbox-vs-personal-phones.pdf": "12bb178ad6ea175df0ecf5996e99f36d5111f3e565f55093645bd9acbeb795db",
+        "hero.webp": "17853d57e2612e79f5d5ea278cc0ed384cca1dc659fd167ab205620c522795ce"
+      }
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/shopify-flow-whatsapp-vs-zapier",
+      "hashes": {
+        "shopify-flow-whatsapp-vs-zapier.md": "dccc2e70f4052a90f13b08bcb9156a744ca984a5992f26e6b97ec95677df6282",
+        "shopify-flow-whatsapp-vs-zapier.html": "8b8d582267d31bdb0c088b9536473074972a14c36f2964ae8617917fd7c4580c",
+        "shopify-flow-whatsapp-vs-zapier.pdf": "a9766dc98e2230bec2914857693440edd91a7c6c868f05619ca60d526b34df7f",
+        "hero.webp": "da6d8414b6da30912ca1c7a4968283fe23bcc75017698f9da835f9546a70540a"
+      }
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 90,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/shopify-native-whatsapp-vs-external-dashboard",
+      "hashes": {
+        "shopify-native-whatsapp-vs-external-dashboard.md": "a20f7312495dd4e572a7f7567065da659382b207da1966b116c18f7e6be313da",
+        "shopify-native-whatsapp-vs-external-dashboard.html": "266bfe28b34433932ef76dd32fd2bb21b57cae0061512c5d07a37b5bdeacf214",
+        "shopify-native-whatsapp-vs-external-dashboard.pdf": "f92ae5da7f78a024d79a0cc72d732f86cd20ed46e6e6bb90e7a7030588a61351",
+        "hero.webp": "0f8ac8d8a84527b44ec72f8443235ac7cae72b89180c3dd075acedbae1240060"
+      }
+    },
+    {
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/shopify-whatsapp-app-vs-custom-cloud-api",
+      "hashes": {
+        "shopify-whatsapp-app-vs-custom-cloud-api.md": "347784833392e0d495afd93b80a65ca73ca9aae80d2f38ceba6c3d0835f03bc2",
+        "shopify-whatsapp-app-vs-custom-cloud-api.html": "60f3311079d485a55230bdde3c67c7c03b5e17573c3baa43bbcc08bf28bb0e2a",
+        "shopify-whatsapp-app-vs-custom-cloud-api.pdf": "ffb98b57b3589895e29885c53c95e43adf239bc0b940cfd02644d8618fe1eaeb",
+        "hero.webp": "578d84d5ba99399f49d533f39a68b76e820a63eec410ce984e6d5a415eb9e906"
+      }
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/small-shopify-store-whatsapp-vs-enterprise-suite",
+      "hashes": {
+        "small-shopify-store-whatsapp-vs-enterprise-suite.md": "de422c15063ad0e5f225a9a83a27ffde3c0f386fb2f354d32673536dd2b903e9",
+        "small-shopify-store-whatsapp-vs-enterprise-suite.html": "6949518bf5ccca3f5bf32d8941f4a2e135ff9a79f0ce50c7d7bbb5eb1c336eb1",
+        "small-shopify-store-whatsapp-vs-enterprise-suite.pdf": "8e5f0f23784815336dde02f5e1bff8c307191f79d61b1c94ebc3e3b98a28b8b2",
+        "hero.webp": "c88e1913a9c3d9496c1bc9862b283ec8cb86e34e18d5c6b8db1043e669ba8d5e"
+      }
+    },
+    {
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/theme-matched-whatsapp-button-vs-floating-widget",
+      "hashes": {
+        "theme-matched-whatsapp-button-vs-floating-widget.md": "dd5c349c0f9f2afa81a9bdcde92d96d3cc1b2ee50016eb6fbdb4e744d09590ca",
+        "theme-matched-whatsapp-button-vs-floating-widget.html": "05e2c3ffd76d906f708587cacdf81c048fdefbdede3db8fcd305723727a30f20",
+        "theme-matched-whatsapp-button-vs-floating-widget.pdf": "e250827481c3266430463d4d5b394bda692d9828b875438bd8318ddc41224b8d",
+        "hero.webp": "7f6651d43605fb0a62aeb7363c160e1340bd5eaa778a1f498a543dc162e1b183"
+      }
+    },
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 94,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-chat-automation-vs-business-api",
+      "hashes": {
+        "whatflow-chat-automation-vs-business-api.md": "8a86cb492c0dd4abaaaf8ab11ed8bfddabd3d62e0f7c1bc1db2d41d5b76ffe4f",
+        "whatflow-chat-automation-vs-business-api.html": "a510b1d47733aeac93400ab9a267768e585eb93766cdb906f2d5082488fb01fe",
+        "whatflow-chat-automation-vs-business-api.pdf": "8d011979616e8edc06382a70b607451c0220bf9e9fdacad5a9c80fa3be580b23",
+        "hero.webp": "e5cec7f3ce20ea926c6a23677df239c0d65137525284689ebf94fc8104ab2ea8"
+      }
+    },
+    {
+      "slug": "whatflow-vs-360dialog",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-360dialog",
+      "hashes": {
+        "whatflow-vs-360dialog.md": "214f3df6d04f86dda11d700efe2836b7a335c326d713ac1b787b9220e92be91f",
+        "whatflow-vs-360dialog.html": "1d2cdd1ca03897912388a20cd744e32f528a3d533a58153d50477dfd7db8d38c",
+        "whatflow-vs-360dialog.pdf": "03fc5dae01506cea672b4d65fa81c2c5e54679a9fb881cacbe73a5f069864f92",
+        "hero.webp": "095dc9eb95ee5f81191dac782a3b8fe4dd3e9d5ac6931b2c2532a116a59df6ea"
+      }
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-aisensy",
+      "hashes": {
+        "whatflow-vs-aisensy.md": "5016c20ac6123c89ae7b179f91b6435217aa4a02f68d83166df3e10a17e3a08e",
+        "whatflow-vs-aisensy.html": "90bb315dd0f0a9f37e2dbf5299a5fb817ba19833e45441236d9670617ff89257",
+        "whatflow-vs-aisensy.pdf": "8f8151307c794489c2435102e9fed947cf4d0b6e621369707059c44da5730657",
+        "hero.webp": "c78cc95f220ec386fb5b9bed25e2f7f5cfceafb2364c51b93b51f7eec3e4d604"
+      }
+    },
+    {
+      "slug": "whatflow-vs-attentive",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-attentive",
+      "hashes": {
+        "whatflow-vs-attentive.md": "d72a87f22d2b4d1299b403112a8e0a2e19ece0219a8dba772b030b368c435135",
+        "whatflow-vs-attentive.html": "a751cf18eead28d04e501360a5a7a8ad7e681e94346d21310f4aa8d363b0f36c",
+        "whatflow-vs-attentive.pdf": "9d4c81653ec3f3c0f87f517b956a78810348421a87ce82ce783f18dec0fe80c1",
+        "hero.webp": "797717bf15a3c572e93c3e91ae97e6bbca8fe7bc8525403178a701de87df77d8"
+      }
+    },
+    {
+      "slug": "whatflow-vs-bird",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-bird",
+      "hashes": {
+        "whatflow-vs-bird.md": "1413b563e2117cd05ede4f7556d75f25f662d093b8877f2478b91af4b0eda238",
+        "whatflow-vs-bird.html": "e0fdb0b5b8c2be8c140de25350f823be301624dae2ffbdeb57f0cb3121639993",
+        "whatflow-vs-bird.pdf": "1ebe737f8f130caf4cbe8cc67c0d4d262e865ca08247dec82313b5cb056b83d9",
+        "hero.webp": "80aa1455e0353e9cbf56a8f013bfa292aa971b820268ad58956cfe723a3aa980"
+      }
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 90,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-bitespeed",
+      "hashes": {
+        "whatflow-vs-bitespeed.md": "beb1139bdb2b24c0d45a78bcb35952bd965b22b9c19005e039e225e9f5c3dcba",
+        "whatflow-vs-bitespeed.html": "0732a056898ecfab4f9610209f92b1a21defe25730159d3e539c1f69b356bc71",
+        "whatflow-vs-bitespeed.pdf": "0897d2e96869b33970893dcdf8a2ac4bc7d720297ebaa822711ed087a383e63f",
+        "hero.webp": "d6ae4f242ca0e0563b266c0c249b052726a1ed475ae5f13bd93c2063718ac438"
+      }
+    },
+    {
+      "slug": "whatflow-vs-botpress",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-botpress",
+      "hashes": {
+        "whatflow-vs-botpress.md": "d18272063eeafe4ff8df9078f2cf9325fc577fa09ee77ccd5dbacc1a7bd1f0b2",
+        "whatflow-vs-botpress.html": "1aa7d907a2b6c7d274a9f2cdf8d62b2bf78e662ce088f917082dbc74e2385e13",
+        "whatflow-vs-botpress.pdf": "c41cfb7fc14a82ea2578aca27566690ca8821cf3db166e013ada6d7445207635",
+        "hero.webp": "ef62f54b7c41492a46290cf026caa40bfd16d8185350fc536744188f044faf64"
+      }
+    },
+    {
+      "slug": "whatflow-vs-braze",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-braze",
+      "hashes": {
+        "whatflow-vs-braze.md": "aa3a42f98f60303db8b122870e2e540c0998a31e9b1e2bfb261cfa692e6632e3",
+        "whatflow-vs-braze.html": "bc38b95196e3dee2ff2c9cd623933fe39489cd4fe53111102ef9bd783cf56b30",
+        "whatflow-vs-braze.pdf": "416c7e253bb2a7d71a29c5c799e2fdb492cc1a4706a953b1b1468d04ddec4eee",
+        "hero.webp": "28df600f7a34db47d31ed1c52e4e2a51c1fb8e4a0c07a38c861e0cf2e2413650"
+      }
+    },
+    {
+      "slug": "whatflow-vs-brevo",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-brevo",
+      "hashes": {
+        "whatflow-vs-brevo.md": "b92d6425b39d8a9989a23868fc1323be6c8420b39113c16824f4eec9973c53da",
+        "whatflow-vs-brevo.html": "73f615c9343beb61036d064cd0c2dcfb6f2b9f220b22aee696735c7016b8f1cf",
+        "whatflow-vs-brevo.pdf": "db04271c88d48e6262a617fc53507ef13a7d9942fb509da77ac2534618b388bc",
+        "hero.webp": "2a26ccefe042985b9f843a8a2bc10a4e46779f55bbf29839e6bcbceeeac0b5da"
+      }
+    },
+    {
+      "slug": "whatflow-vs-charles",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-charles",
+      "hashes": {
+        "whatflow-vs-charles.md": "4b4cf81ad38b3a97c07c73b98ca93da720dbc06ed1ac8abaa45f082a2ef6d861",
+        "whatflow-vs-charles.html": "6835c0f775ea6cbf34550dda9c7bb5cefd90a8ba7988b2f04c093ec856d2e034",
+        "whatflow-vs-charles.pdf": "c6c3c6adfbd0fd4612d84a195e90e77ba42424b6415335729621780a200ade98",
+        "hero.webp": "afb9673cb46349f30fba1ed5c15e7a8fe7f631c5b775bff76106b799dfdb58aa"
+      }
+    },
+    {
+      "slug": "whatflow-vs-chatarmin",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-chatarmin",
+      "hashes": {
+        "whatflow-vs-chatarmin.md": "0ed6c3df864101fba9a6c889f26da3075c19c876a419cddbfc6a9b204237541f",
+        "whatflow-vs-chatarmin.html": "45ee0142c8712c09ce63618ed94dbee53a542135b05294883579b92c3957115b",
+        "whatflow-vs-chatarmin.pdf": "1244394399be39cf5c2d520125d9264f905e6b444c374663a58ccb65c9ac8be2",
+        "hero.webp": "63c0d52d26fdce3fe9cb8b07550a57cd9f98f02b93a69cf8b71c0202fd67e0ee"
+      }
+    },
+    {
+      "slug": "whatflow-vs-chatfuel",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-chatfuel",
+      "hashes": {
+        "whatflow-vs-chatfuel.md": "03774750ed173e99666a759e0b311563a72f9b5b2984eddb29add4845c5993c5",
+        "whatflow-vs-chatfuel.html": "9a7faba5b12d821ae4796ad325b92333c16d5185a66565af59a6ee26516d5b13",
+        "whatflow-vs-chatfuel.pdf": "19e2e481f81f09a583bb11a62e7023118c9a05a368d53334641b80d843184ee2",
+        "hero.webp": "83f5fb2f1cacebebbe68701b650171a25e6625080d6e195376d007910cda674c"
+      }
+    },
+    {
+      "slug": "whatflow-vs-chatwoot",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-chatwoot",
+      "hashes": {
+        "whatflow-vs-chatwoot.md": "f5c7155ac1d35668715107aec88dc25864ac3a358b7ba2a3a8800242d9df51a5",
+        "whatflow-vs-chatwoot.html": "b019df21dc6e7f403ba1d085a0e755eadd52a4c132be83d0fd06aa4fb349f994",
+        "whatflow-vs-chatwoot.pdf": "578c3f726677633e2be24b048038972296e7d13716627e8a4b1c08373e7d8fc0",
+        "hero.webp": "a1b7f49c180b2fe0fed1e23f99502c66e115143a037cfef73c1caf6a424a7019"
+      }
+    },
+    {
+      "slug": "whatflow-vs-chaty",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-chaty",
+      "hashes": {
+        "whatflow-vs-chaty.md": "40506e2970af07654f3f648fc9bfecf7097a80d85a2ad966a667aa0e3b061dd1",
+        "whatflow-vs-chaty.html": "7cf40b917e6950ff305a3706975923ecb301f8b4f7553237f9505c2d3ca7d040",
+        "whatflow-vs-chaty.pdf": "9863cb325d6af6093877e72d0827e5b2fab9521428a2b72bbfadc23bb9a4292e",
+        "hero.webp": "e645517346dec2849790a562cfcce4c58abd7c312e53326ffe55f016f020eb97"
+      }
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-crisp",
+      "hashes": {
+        "whatflow-vs-crisp.md": "8ec92cd3d68727b7bf81aa333d522c824bbbd4bce616350ff701eca99e9909b6",
+        "whatflow-vs-crisp.html": "1a20e4af7abd1e36dfdfc2451d6c51bc919b6a3611d9a669c30eb866273283aa",
+        "whatflow-vs-crisp.pdf": "2ce9bdac36276b4b415b6df394198712672872dc07736e512e11e66329e838af",
+        "hero.webp": "1e159c566799233caa8a5d980ab3cad82fa477f21b2bb0cb23f3397314c0035e"
+      }
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-delightchat",
+      "hashes": {
+        "whatflow-vs-delightchat.md": "655ab2f5f2e59efe63b628ecef8192d14bff2522ca3487a34dca222cb7a33356",
+        "whatflow-vs-delightchat.html": "21632327337be3648ebcbfe5ccb9fe147c09e4b18e2c70ae1ddca99a4cf281ef",
+        "whatflow-vs-delightchat.pdf": "de0fd1a425db5f70c8acc0a3deae09c48950a4d3c5b91a9bb72629d2187d7330",
+        "hero.webp": "5ff96869084d5186077852167b68e466e8c9c24069e9a2170589989b3cd4185b"
+      }
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 93,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-dondy",
+      "hashes": {
+        "whatflow-vs-dondy.md": "ba27c9d1c683db86fe675b7594a653a8f5ce3ae5e413ec80673c9e5bca7ab4fe",
+        "whatflow-vs-dondy.html": "69b32f65a9196b54c3274d47d0a57073a49ace1f63060a586dc2608012f5d216",
+        "whatflow-vs-dondy.pdf": "f1ad55051e15a701f9d081d971f9e76bce20aebebd972f66bf72bf55bcdce965",
+        "hero.webp": "ef53f9ee41153cd2ce707b955b1051a3597e14150d2e1faa4ddeb8f3929bf708"
+      }
+    },
+    {
+      "slug": "whatflow-vs-doubletick",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-doubletick",
+      "hashes": {
+        "whatflow-vs-doubletick.md": "eaa4ca557970ec1d52d970011eeeed16a7998f6c27fb30367f6cefe8dfa3872a",
+        "whatflow-vs-doubletick.html": "1261b1b03d740d8c2913d4e22dd0204345b9460eaa2c37c665aefffbd4470770",
+        "whatflow-vs-doubletick.pdf": "53b6fe88e1a707854f2faf70fe4f0de749ac45d6311dbb8bbcba9c353bdd53ee",
+        "hero.webp": "8fd7a6e56ef086d2ca6223319cf318f0bf863b252fb6b0ae6bfb6547b42dc9c0"
+      }
+    },
+    {
+      "slug": "whatflow-vs-engati",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-engati",
+      "hashes": {
+        "whatflow-vs-engati.md": "9aadd1bf53e90aa309dbb809fcf17908df6bf23af771cc63e16ba1e69eeae0a3",
+        "whatflow-vs-engati.html": "d1944b48c9579fab3cee6cd1f3327425f3359dbc2f7919e86cdd5c95f50c0aed",
+        "whatflow-vs-engati.pdf": "854ee8d027d4da895f331e34237f6f2c0c9519792e1dab018632ed3ee8d1ab60",
+        "hero.webp": "4caf52b93de5457df62a40957920a657c579585f0f28ffc29694f08d330fc117"
+      }
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-freshchat",
+      "hashes": {
+        "whatflow-vs-freshchat.md": "dae617343d85d9e4548da00377227746af06f99eef626fd52a42ad389192aa7c",
+        "whatflow-vs-freshchat.html": "e8560990e2be0262e6ae9759e33285125f24e04bdaf6decff09a7121dc6f4942",
+        "whatflow-vs-freshchat.pdf": "7c1a594e7430c172d23fc33577ffb1614f9e717a00ea27e81fd71e40c454b1ec",
+        "hero.webp": "a68f0c6028f38974f4f66c150e87abc0a324740ee4a404586847fcf65666244e"
+      }
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-front",
+      "hashes": {
+        "whatflow-vs-front.md": "b306f8dde04a0a3df539be2ba760d7a5bdab0b4417e9308bea7f068456fd9ff8",
+        "whatflow-vs-front.html": "deb9e56febf6f254ddf66a8eb46d50ea62bad50749c25522888cf23f98a2ab36",
+        "whatflow-vs-front.pdf": "4f3f6d2fd1cec773c1593804e9668be6931c404b7c0464794d6fb97ae4724c99",
+        "hero.webp": "65766a02ae0ccb2a384077c23759b22d547eaefb35047f7f611a68ee368c11fc"
+      }
+    },
+    {
+      "slug": "whatflow-vs-gallabox",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-gallabox",
+      "hashes": {
+        "whatflow-vs-gallabox.md": "97b11272090a4ca212c937066f9bb9726652072d0a765303adacbafce2b22d8c",
+        "whatflow-vs-gallabox.html": "30c11b49de3dff0df6b3cfc860db6cc610ae2bdf7d401e7204868d357406fbe4",
+        "whatflow-vs-gallabox.pdf": "aafe7f5f44f497888d797cf406474f4bf37d755fc88694b5fd3f40da1eeae8b0",
+        "hero.webp": "90d6c0bc6d9d305cd86d8f71a66e345cb6e031164e7ad5bd3c1c03f4da83bb02"
+      }
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-gorgias",
+      "hashes": {
+        "whatflow-vs-gorgias.md": "c2aad287a3e67bd6b216b4567e58be1c7c91866f93a6f51823ba2a64cbb872ef",
+        "whatflow-vs-gorgias.html": "1d48b3064d322781bb795e4888a053142d91edc77a775f82b623241597db62be",
+        "whatflow-vs-gorgias.pdf": "fe47268c9e5599523e897c9bf2450b3cef95de59aa278511da2334af45b025a1",
+        "hero.webp": "4987d0b6f674ca75ba5ebb20be3c1d75557365309c71d2548d1e9a883c08e572"
+      }
+    },
+    {
+      "slug": "whatflow-vs-gupshup",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-gupshup",
+      "hashes": {
+        "whatflow-vs-gupshup.md": "4f3c2c85044b2f34787fe38d4f60e1011167a4a49d8c45991f3f2746328ad182",
+        "whatflow-vs-gupshup.html": "2e89bfc86453b17fc7595567e263c35ee50e5b93f2544a66c575d5cdaac58a94",
+        "whatflow-vs-gupshup.pdf": "43ea13c0b47b9b280b32d9d3405baacb708c906f1b4a1afe956e1e32f54d524b",
+        "hero.webp": "2e8800644df5e1a69f19af1e15833faf97e3a7011b0a097033f0828ac1c0638b"
+      }
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-help-scout",
+      "hashes": {
+        "whatflow-vs-help-scout.md": "b51390eaf9777f75c2673816b2e67597fc4794239c6445ddca4fef8ce4c00180",
+        "whatflow-vs-help-scout.html": "e89cb8768f0dd105a9d0b0565b51809b5e59d24d9d8f709c9cef03b285a0721a",
+        "whatflow-vs-help-scout.pdf": "645c6fe9d8211644ff635944d6e15cf4978731939d55164e45f3e7f6fd26fa44",
+        "hero.webp": "eadd5bd74f226714300bf1e4c99033766ac61e32f0480a1b2a5d34ac174507b5"
+      }
+    },
+    {
+      "slug": "whatflow-vs-highlevel",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-highlevel",
+      "hashes": {
+        "whatflow-vs-highlevel.md": "5fe61faa103beccd72690e1ae74d5b5d7c28da238d67113d3b9afac6385d7be4",
+        "whatflow-vs-highlevel.html": "ebc72884b0f8edfbc8ea5fd536a0b8cb057604007d554136c6e1745a1f734d84",
+        "whatflow-vs-highlevel.pdf": "da92ce7771cd992288538a76b38867728b59536787aa34244d41d9f486c41cef",
+        "hero.webp": "4e72c76415c3db72b2cf4bb3dc6ca6fd9f04c1d51f734f03a7bd643d6dd64205"
+      }
+    },
+    {
+      "slug": "whatflow-vs-hubspot",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-hubspot",
+      "hashes": {
+        "whatflow-vs-hubspot.md": "45e7900597c8b011a25d3c317e7d737fbacda05aa675175b90751ba2237a3926",
+        "whatflow-vs-hubspot.html": "73980e30e04afb08003dcb7c10967787536d0c23ddb1bf0bb7138cc9b0a0ce0a",
+        "whatflow-vs-hubspot.pdf": "75b44724e8336559ee66793600a9ed64aa37dc8f1258608d6c5a35ecbd24f220",
+        "hero.webp": "81c2211e6a03541901783a298d77fb5f1931d2458cd20fbefe07aebc37af24fe"
+      }
+    },
+    {
+      "slug": "whatflow-vs-infobip",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-infobip",
+      "hashes": {
+        "whatflow-vs-infobip.md": "cb1e93e0e967313b90a83eb479a5e6bcc978cb37d5acfd724fde77bcdf022e0c",
+        "whatflow-vs-infobip.html": "c6f7d38354cea2ae748182710b436a093b2975af8b09c9bc8ac237ca9b100d9c",
+        "whatflow-vs-infobip.pdf": "dcfc49cdc0f042d9e9a0c0125405e091c61d6e371958bf2488a3ba631afffa3a",
+        "hero.webp": "c9e550487a95d3a950509d4ffdfcefd39355f69a601106995e278fd73e5668b2"
+      }
+    },
+    {
+      "slug": "whatflow-vs-insider",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-insider",
+      "hashes": {
+        "whatflow-vs-insider.md": "bc6d0f45fc2248b3855c826b9840c4538654655d8fd73971594d864af8ccb438",
+        "whatflow-vs-insider.html": "dde54be530bfd39fd0fc9d90a452afa2e89accab6a2603b7d87f4b6e7229afef",
+        "whatflow-vs-insider.pdf": "ef8da05c2edc5b1ee8bdf3885f98f9bf3149c5109989e0b97dbc6c6fcf506548",
+        "hero.webp": "8dc28fde517301d873876b2561e7d238db1539a23da8ecc8b4f1b5b80de14807"
+      }
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-interakt",
+      "hashes": {
+        "whatflow-vs-interakt.md": "015576523b6f405ab73a36c782255f8d7cf16c1336a15fb7209019f79a8442cf",
+        "whatflow-vs-interakt.html": "fb736da10e3fef35847e3e964d21a2937f8f9eb6df1c33bd7624317c18ce52dc",
+        "whatflow-vs-interakt.pdf": "39daec0b1c438d31a584b5b987cb01eda537835a40f72058f99141dd9d5597e9",
+        "hero.webp": "9288fe91cb80fbe5ae6c5a38ae445abc89b71053ab395d400608bbc29e0e9c5a"
+      }
+    },
+    {
+      "slug": "whatflow-vs-intercom",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-intercom",
+      "hashes": {
+        "whatflow-vs-intercom.md": "6b0c4c5f34c8aac770dc4a833f6252ac8b28be5e86aabc28dd6a6fd6c09b08e3",
+        "whatflow-vs-intercom.html": "673602d9df813d83c1c2162a3f136d9cf4d47843e107c8ccd8b1da4c0cf65e86",
+        "whatflow-vs-intercom.pdf": "62b5fb6479a818a56ff186fe6e061a7c6dc45e342f5280f672c865fff6e96678",
+        "hero.webp": "7102829d97e976f9caeef66f1fcb42bccb0866fc48185aa9aad5350939b7eae4"
+      }
+    },
+    {
+      "slug": "whatflow-vs-jivochat",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-jivochat",
+      "hashes": {
+        "whatflow-vs-jivochat.md": "763a606bc8d8ed4b949155db73e1ce458f7f98e280a939196e446fd0f5a4bb46",
+        "whatflow-vs-jivochat.html": "2c3c5c42fe45ceca00fbafc30f0c024819d447fe9f091a8a13cd0453cad3ece2",
+        "whatflow-vs-jivochat.pdf": "ba619421db55647d329db123f533da97b8220b1fd94bc4443245d6b5f4cdaeff",
+        "hero.webp": "81c60717ad6f1ec582d7eb368464ac038e4a8487d4530822ad47c37f4e8f05fc"
+      }
+    },
+    {
+      "slug": "whatflow-vs-klaviyo",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-klaviyo",
+      "hashes": {
+        "whatflow-vs-klaviyo.md": "8b1cab2fb7d2010e70d54390a8a48615ed549df1b869e1512169bc8bc0be5f8d",
+        "whatflow-vs-klaviyo.html": "4544bb160d7ca0f94073305d04269005b9bac3d545ff4b6889fdd0a2c8cd8867",
+        "whatflow-vs-klaviyo.pdf": "0607d409d8eaf989db57d063a001fff52ec8de95e070f2b48647458631adfbff",
+        "hero.webp": "28c9f08200718cc0c5fb74d2baf95abedb9abb83f8aa33876b31ff822d596863"
+      }
+    },
+    {
+      "slug": "whatflow-vs-kommo",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-kommo",
+      "hashes": {
+        "whatflow-vs-kommo.md": "1e110a58d0b7c14bc6f67810220dff48203059a23b0402576a45209815646916",
+        "whatflow-vs-kommo.html": "e1c837673c91c8b9ca082a20694a4790e86c387b1438beaef09cd68b9ca376fb",
+        "whatflow-vs-kommo.pdf": "84b1073f6e2852b80f4654142c93760924d2993817087bd7c364a2656442f1fa",
+        "hero.webp": "29fee8b80299418878509b73dd98f7d3b23b534e2151d4172636288313935476"
+      }
+    },
+    {
+      "slug": "whatflow-vs-landbot",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-landbot",
+      "hashes": {
+        "whatflow-vs-landbot.md": "e60650eef3eedf449a23a6bac08045174fc8d3629a59af28473212dccfea7c8a",
+        "whatflow-vs-landbot.html": "46005610825d410574db0f99ac4a209142f54a98bbd9176f490c950a817777a6",
+        "whatflow-vs-landbot.pdf": "323ba6e2458ca0c54a69bff9c525bb73b764b1ef6055920a900340284091a84c",
+        "hero.webp": "695942744dca656ff3d5cef9e5cb56a55904f472b45adaebf07d18bffe32cada"
+      }
+    },
+    {
+      "slug": "whatflow-vs-limechat",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-limechat",
+      "hashes": {
+        "whatflow-vs-limechat.md": "62f40d7707ec41fb3b28af7a7584cfd15c82956bb790925ddd0fda2a23b07c2d",
+        "whatflow-vs-limechat.html": "2fa6eb2b4d9c91bc7f34b64ad067528fa8d7fa828e1e480e79571c96d285dd87",
+        "whatflow-vs-limechat.pdf": "7e89a7ffb1762729a6bfc8fbced864ec9bd7d05b6de1e82d72a26838ef77cf6e",
+        "hero.webp": "d313356f49e098a0d5c5d35e7045e2f5c3cac168ea4cd562e828018cdadf8083"
+      }
+    },
+    {
+      "slug": "whatflow-vs-livechat",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-livechat",
+      "hashes": {
+        "whatflow-vs-livechat.md": "466647b6e974670b72b096be494dc2cf62d64f8c7bd0e7fc09199af1525bf50b",
+        "whatflow-vs-livechat.html": "9442c823f4f90fb060c0447c50d473239d1d2fbeea7ee1b44c80fcdb36884358",
+        "whatflow-vs-livechat.pdf": "b7676574c5aa5301f45f8cd406a92f2b378732ef97f03409164a3cb46b8f4d89",
+        "hero.webp": "de5271b920903a914944a8c7b4f6261f04fc2decfda02888d7deca1e533d4947"
+      }
+    },
+    {
+      "slug": "whatflow-vs-mailchimp",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-mailchimp",
+      "hashes": {
+        "whatflow-vs-mailchimp.md": "f290cee4e3fba264a0d58430841feb68f3de9d8bd4a44ba8fd01e2210c87cf3d",
+        "whatflow-vs-mailchimp.html": "39615a18cf62323a4d56d2a17b4bbe7e9bf99e58731a8b6b23c7d4a04d3c190b",
+        "whatflow-vs-mailchimp.pdf": "7f89a47a55f5bff40f056d275723ed580567e0d8bd457cbc7e9f37e91697914b",
+        "hero.webp": "e2793b863d59c5aa666b9e9f101ce7e7d313cd07ef8a3c3f067daa5cef473da0"
+      }
+    },
+    {
+      "slug": "whatflow-vs-manychat",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-manychat",
+      "hashes": {
+        "whatflow-vs-manychat.md": "50549194004d09c1d36d9d3d18a7ec70bd680f1557f03895c8ea2efea6446b01",
+        "whatflow-vs-manychat.html": "2641c12a0fca9b1f7522d7801b6706ecf5334669393a198fc5408386d362a385",
+        "whatflow-vs-manychat.pdf": "c420189bcd57fcefdea449e6ece0aa47419b86d4d25a52f0777a3af3db7ae504",
+        "hero.webp": "e2fccbfe0d5f63790ee74abe388efadecf253c3e64334873fdac86a91bbd1e0f"
+      }
+    },
+    {
+      "slug": "whatflow-vs-moengage",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-moengage",
+      "hashes": {
+        "whatflow-vs-moengage.md": "d24b0ce9ad01429f55c1685c07d27c6e5f235ff718b3bdd3bb35e0210cea1d85",
+        "whatflow-vs-moengage.html": "c4f16a7b5805337cb1655b6eda1991c1f1b716a24a1f7a0174a633da5aba76a1",
+        "whatflow-vs-moengage.pdf": "d03fcaaef2fafc17a2adfde8aa488630b3f3105e0d5d8aa0def0c9d7686fd727",
+        "hero.webp": "91e328f53edecd7a97054d87f55a940720082283afe48fc8a82b1ee6419d238f"
+      }
+    },
+    {
+      "slug": "whatflow-vs-omnisend",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-omnisend",
+      "hashes": {
+        "whatflow-vs-omnisend.md": "c10dd6a427ad3afa8763af3f24bd5795f00ddfbfe2191c7bb760074d079a9a31",
+        "whatflow-vs-omnisend.html": "7e1e50a541743796336cf7ffe615741cf694ec92a763d6cfd3c546843ebd6c80",
+        "whatflow-vs-omnisend.pdf": "92f2de8cbb56b8a1f1a5b728e8fa37416b340220278a401e7457489e2a2a11ee",
+        "hero.webp": "b7f705e084153bc74cdc08590c4768070d395f8ff938a66a86f77557879a3f45"
+      }
+    },
+    {
+      "slug": "whatflow-vs-onesignal",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-onesignal",
+      "hashes": {
+        "whatflow-vs-onesignal.md": "e05106ff14d666db6a1c044db793851f3fc6390e2e654691b945323269e8e79b",
+        "whatflow-vs-onesignal.html": "cce5afd0147fbd0071e71d206549baa4947ed783a429c7bb0e6078ad8d484bd8",
+        "whatflow-vs-onesignal.pdf": "bc794f85e89a9663d1a09c971f2eee32e0b7082fe78592edfd0634b6d5b2db1c",
+        "hero.webp": "3154017d003aaf0bc9d314dcec1d2a6fece8112e511df4e776d377b2a5786151"
+      }
+    },
+    {
+      "slug": "whatflow-vs-plivo",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 90,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-plivo",
+      "hashes": {
+        "whatflow-vs-plivo.md": "92abc88d61f20655ff524c6f3045fcc44f129c04c67859c53903e83ec6815c47",
+        "whatflow-vs-plivo.html": "7c558a4a04a081742c1bf7dcc7fdaed2cad665cd84951927cc76075baea84fc5",
+        "whatflow-vs-plivo.pdf": "cfcd2bbff126234533f78c3579176e3da3148d4b8c0128d04cdbda1b1cea8bfa",
+        "hero.webp": "74e329471256d61133f837f85fc26e3d59f43c174ebd851718f2b8ec415af317"
+      }
+    },
+    {
+      "slug": "whatflow-vs-postscript",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-postscript",
+      "hashes": {
+        "whatflow-vs-postscript.md": "e4d24023e11f3976059cf499039413473512702c1634d519765e9a34679dabeb",
+        "whatflow-vs-postscript.html": "5dd4d11aaf304bfb0e2dd83e5151dc8cbc9a8b682b2f0a06135e47c10aaa4a7a",
+        "whatflow-vs-postscript.pdf": "524a0599c35522594c0e129023abbcccd00f238f7a235db5c49aee92e6f8327e",
+        "hero.webp": "07528ae6ae824d422df6cf9dde1b8cb7ed219d3949dd6eadb9d9fd9aad9997cd"
+      }
+    },
+    {
+      "slug": "whatflow-vs-pushowl",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-pushowl",
+      "hashes": {
+        "whatflow-vs-pushowl.md": "b5f3350006a5e2dc938e9bebb5fcb6b0d9ad9f108325033371be877fb50e44ad",
+        "whatflow-vs-pushowl.html": "d131d0bcea9869a51268f77fcc59a71e0b15e78ac2b7acfb1a8abc97d8d08f2a",
+        "whatflow-vs-pushowl.pdf": "3c27279568f7b503d1ed1bb93f4bec2dd6c98f58e5bea7427dd373c4d5caef0d",
+        "hero.webp": "e563e07ed303833fa244601749ad83e0671a0f655524bc9cec89be541f45a157"
+      }
+    },
+    {
+      "slug": "whatflow-vs-quickreply",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-quickreply",
+      "hashes": {
+        "whatflow-vs-quickreply.md": "c151135145d5d380954772735b436f7e34f5eee9dd8c0cb3b39b67b3c286eade",
+        "whatflow-vs-quickreply.html": "74fcc059a1561f4e5f2c358e549ad4165f9e20e80141cf30827edbe1eb175642",
+        "whatflow-vs-quickreply.pdf": "e670253176238476aaf52c6c8d32607932b4213da8a0a3b38052fd7b98ec5726",
+        "hero.webp": "13cb6123e577a12c5a2f78d6a04e945aaccbd979bd4c147b0b63cee292cf3bdc"
+      }
+    },
+    {
+      "slug": "whatflow-vs-rasayel",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-rasayel",
+      "hashes": {
+        "whatflow-vs-rasayel.md": "34dcd55ea1f18eebc58741253645f3ec04a8b02e6dc879dba028271da0b0c583",
+        "whatflow-vs-rasayel.html": "1ba6921f601dd32b47da6cc57fbdce5baa6204ae729b5b733d427148e2fd2020",
+        "whatflow-vs-rasayel.pdf": "561ed8b561d15ef3d1e137078703d67ea69753f2e68a29fe9f6241de352c1c48",
+        "hero.webp": "dec698952a838fce51a91d51c8228bb4e90765e400d9561ab52db1d78470351d"
+      }
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-respond-io",
+      "hashes": {
+        "whatflow-vs-respond-io.md": "9385eb2c9a8f3042dc189160833c0929ccc3c09bc7f6c7c76dd56282ba16fb08",
+        "whatflow-vs-respond-io.html": "57e242b4fc21071d836e46b565e8cae185a0fec63b58ee0003469812fca12298",
+        "whatflow-vs-respond-io.pdf": "87195fa6825dcde6bf9bc3c3c94dbfc9babadef688d8ddd77f30ebefd1158532",
+        "hero.webp": "dfb75f492678ec6a705fab2019b86122f7ebaeda4f970b8e5ec1cce7a8f29ada"
+      }
+    },
+    {
+      "slug": "whatflow-vs-saysimple",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-saysimple",
+      "hashes": {
+        "whatflow-vs-saysimple.md": "782980b5aa654bd58fb136750109244c4e4267603ec1e00309528c4737f370c4",
+        "whatflow-vs-saysimple.html": "4010c6114e6284468389239e4608cb5ef2d70c82eb6f9502d49fe7ef3ee55afd",
+        "whatflow-vs-saysimple.pdf": "2089e8aec6b87e0fcc6861946ac9bde7e39a070f017da8aa480550a7a256651d",
+        "hero.webp": "df275bf72d4a111ba7a17749ac16bd96c831c64d639adca064ef57af353c38f3"
+      }
+    },
+    {
+      "slug": "whatflow-vs-shopify-inbox",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-shopify-inbox",
+      "hashes": {
+        "whatflow-vs-shopify-inbox.md": "435965688dbd3da80fab3ac555bde9e743788592ae53109cb17f07d665f8101d",
+        "whatflow-vs-shopify-inbox.html": "d323bc7823d6776c61fd13d49a7cf275231879f4ef420e6ab08d4e3848b2d0de",
+        "whatflow-vs-shopify-inbox.pdf": "884664d510996a7473d39fed474dbbf0d984de2a104d83e22cb945ab49886ee0",
+        "hero.webp": "62b6ad7f36e1adde069cae644ef252f115623622907a2c11e7556485e3e75e2b"
+      }
+    },
+    {
+      "slug": "whatflow-vs-sinch",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-sinch",
+      "hashes": {
+        "whatflow-vs-sinch.md": "729f0eff437f2088ddbe7aaa3e685428ca32ef39f92cc5f885c727486a6cc67c",
+        "whatflow-vs-sinch.html": "d0ad91bb17b869e221951c7a25b302fc45996a4c41fb39dc27757afbb902f3a8",
+        "whatflow-vs-sinch.pdf": "3b24f03a5ff1967e7441fa3b103f244d9fd996547be081716188017226d16b98",
+        "hero.webp": "4af682d8ca4e46ce57dfe445cea6f387fd674abcbde5ff715d31daefe7c3deba"
+      }
+    },
+    {
+      "slug": "whatflow-vs-sleekflow",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-sleekflow",
+      "hashes": {
+        "whatflow-vs-sleekflow.md": "542675b35c3cdd84382156d42b9d489c1135b3b841ee5c9f358160f4b52c8a25",
+        "whatflow-vs-sleekflow.html": "ebdd789b8453b413441a42474237dd74be2e8816e0043f06c1b5434216a615c1",
+        "whatflow-vs-sleekflow.pdf": "e79f97bbe4a97829d5eb3ca986e7a233a96a03082b96a92040100f65b4cbff37",
+        "hero.webp": "74a36cc93f0e18e78fc16b691188e7428b55f80655ae559fde5b52e1a732d82c"
+      }
+    },
+    {
+      "slug": "whatflow-vs-superlemon",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-superlemon",
+      "hashes": {
+        "whatflow-vs-superlemon.md": "1e9f9bf73709b9dfaf2e4972a3a35b8849335c924d922f6e3d7bb5d32afe2396",
+        "whatflow-vs-superlemon.html": "48455950d3073572821510881c79f645193fb7356cdb94909c27fc5c734a4bf9",
+        "whatflow-vs-superlemon.pdf": "9e23dc6528a244f27702818044e2ca94b3d9895dfc950413a68d0cc8dc7b9bbd",
+        "hero.webp": "c2bf6219f39d12d71f0a6dd31f99260459d5073b275fcf27fd115de40562ecd4"
+      }
+    },
+    {
+      "slug": "whatflow-vs-telnyx",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-telnyx",
+      "hashes": {
+        "whatflow-vs-telnyx.md": "da9d82c73afaae20ca5bdbfdc8a65cec7cefc1724a24b8f160b80e8b0601c810",
+        "whatflow-vs-telnyx.html": "2d9edf355f3e8fd0723ed95a3cedb4cdd56e66e30193b4510581f2d41d4dc02f",
+        "whatflow-vs-telnyx.pdf": "5670f4bc0347e662c8d7cbbb134908888b1cfb2e5dab2ba73d6d2a4ac66bb390",
+        "hero.webp": "bbe49bc310413145a518fdf395c02bcccc794dfca3e0c327914c911907efbe9e"
+      }
+    },
+    {
+      "slug": "whatflow-vs-tidio",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-tidio",
+      "hashes": {
+        "whatflow-vs-tidio.md": "0dd6fd686bcdcd5ec379536d22b8ad81e7e5bd45605900e199aab7340561f88e",
+        "whatflow-vs-tidio.html": "eb9cda195010671e57af825193714f504817103952cdbb8789ab904ea9715b40",
+        "whatflow-vs-tidio.pdf": "ffc8d6c60d1e257f9c30642bf90e910e323d3dca438511338ec2585d4b009b7d",
+        "hero.webp": "1681c0e739330ab3eaa319918de8f0a9f62755761b9b9f6bfc5573ace2ca896d"
+      }
+    },
+    {
+      "slug": "whatflow-vs-timelinesai",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-timelinesai",
+      "hashes": {
+        "whatflow-vs-timelinesai.md": "99271d0bfcb0d779516751d81f009a8c6ab8048a92d651ac35c839be4982805d",
+        "whatflow-vs-timelinesai.html": "15a6634538a98b2bb581e20cf5cb89babb71c15db5bf85f2f65f6e01c3a8a906",
+        "whatflow-vs-timelinesai.pdf": "ab93d55121c538ed6fac8d967111474414dcb82705b95dc1118505eded783437",
+        "hero.webp": "912885c548f416de1b8653df69bcb85459707ac9658b3fa89a19a64125e6eab3"
+      }
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-trengo",
+      "hashes": {
+        "whatflow-vs-trengo.md": "d0b1e0b2de7ea13e9e91e2c4b3d86ded00a5ebf55248e8049195655e6fa1faca",
+        "whatflow-vs-trengo.html": "6a95ff1735e8a614e31bd53eb89777639060b813358ff5b351a7a4bb50711c73",
+        "whatflow-vs-trengo.pdf": "24c5011e571d5bd6eacfe3d28b0856726bdde936e522685ae49f6948bf8fabad",
+        "hero.webp": "bd2748256e21140b1f76c03d24238c209aba6cddceee4158ea1e579a8008a13f"
+      }
+    },
+    {
+      "slug": "whatflow-vs-twilio",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 93,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-twilio",
+      "hashes": {
+        "whatflow-vs-twilio.md": "e66183b986fd8f4883a9ba9f1365ef94be4359d4e3f184030e55a5bfd246683e",
+        "whatflow-vs-twilio.html": "737c326e45ad2fd1ed9bac852a6d221ea252205ebbf688916a3618c2ae69bf23",
+        "whatflow-vs-twilio.pdf": "7467db4226ea3b3cc9fb28f6d52eee48adb4cbf64480370b65a7e7a5f97c5830",
+        "hero.webp": "122dd4e7b0bce4538b2a314d19302a03700a5b62a90483181e053646d9891d0e"
+      }
+    },
+    {
+      "slug": "whatflow-vs-userlike",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-userlike",
+      "hashes": {
+        "whatflow-vs-userlike.md": "344fcaefaae9da514d40f64ae55eee66d7f28b416e032f7672f8fb49dd93883c",
+        "whatflow-vs-userlike.html": "39b68c6c66bb2331a9841dca43306badb01c94cb6045c402204651dd1c490883",
+        "whatflow-vs-userlike.pdf": "aa4e279145e004764cb4ad0bc51c4203ec4081744c791d74eb6392363b13dd70",
+        "hero.webp": "cd4229235035099d51329f6353a53c851159d66cb2555bd4361cf011d6a8ae80"
+      }
+    },
+    {
+      "slug": "whatflow-vs-vonage",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-vonage",
+      "hashes": {
+        "whatflow-vs-vonage.md": "87adb3885aea7bd091bb1d6449312c39a873e10f96caa7edcc23f5a56d9eef15",
+        "whatflow-vs-vonage.html": "6a438191e45731aade2ffe948f692d802ab4b5190e957f2c0ae7e8b8ce821e0c",
+        "whatflow-vs-vonage.pdf": "ea7f22488caf72739a1e874a7d70226fa8a8a26643b62f008debb1c1ca3204c4",
+        "hero.webp": "db5b4182457adb926dbf2e150acfc74d0a4b3dc263cd49b5b621b777a7ec5e2d"
+      }
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-wati",
+      "hashes": {
+        "whatflow-vs-wati.md": "5b88099dac6c9199d652fbafa3dc5ebf63165f1b01b97a71e925ed6c4129a72c",
+        "whatflow-vs-wati.html": "aea243b5d9210fa73e92531f972f8f905325a3e226c8b776ead95f28d158759e",
+        "whatflow-vs-wati.pdf": "69d16c4b1021be7ddfdc94112dcc08705d73fc6da2726316160029486066e991",
+        "hero.webp": "ccb36221ff97bd91aa6b55a516a6bbc720184da50a79c42c928f9018613fef11"
+      }
+    },
+    {
+      "slug": "whatflow-vs-webengage",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-webengage",
+      "hashes": {
+        "whatflow-vs-webengage.md": "366bd16be17a50c5d77849405006ba51d9cb1159f0a6efe2a8e9f9b25ff6692e",
+        "whatflow-vs-webengage.html": "be5eb83969090a7ff96015161fada75310487338dbf26d2e3f3c7413c26859bc",
+        "whatflow-vs-webengage.pdf": "e5376730445465ed3c461bb013c2e5c77b96b8c4e1730287dcd133a0360ee8b2",
+        "hero.webp": "b0ffc545a05967e894107fb0038bab27ec89ba854f1303bae3bc3a1e017385d5"
+      }
+    },
+    {
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-whatsapp-business-app",
+      "hashes": {
+        "whatflow-vs-whatsapp-business-app.md": "7cfa0dfde3f3bf18f38165564db7caf57c0781a42dc09ae39498d93eb76bd782",
+        "whatflow-vs-whatsapp-business-app.html": "d6532e05c9e15c28da9e39cd6417887b03079f43de91a792908b43cac06e15c7",
+        "whatflow-vs-whatsapp-business-app.pdf": "39a76e932c1bb9948dbaf89d0f4e6c49610fb49b2f68033a6c18c428cc75a786",
+        "hero.webp": "ef0960318941ae582fc4b878da0fd38f49c3d83a1f565750017c74c800ba8845"
+      }
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-zendesk",
+      "hashes": {
+        "whatflow-vs-zendesk.md": "3e4d42920bf87981c63a4c800003175f54ade6a920045077017cbd883c52ddce",
+        "whatflow-vs-zendesk.html": "fce5d430922d0ca6baf388ae9e92c79dd79861f41a65fcfc1f7e2becd14487be",
+        "whatflow-vs-zendesk.pdf": "93aa284e43318e995c92a1f0e686f5c897a65f626408da761dd33603dfd41321",
+        "hero.webp": "7008d2aa0c3e25a0179836bdfc00a81903a844386ae3c5628c56f8ced8b04533"
+      }
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-zoho-desk",
+      "hashes": {
+        "whatflow-vs-zoho-desk.md": "92b5980590611b8d9fabdce6228319e8c6427496eea2007bd0b129085189b295",
+        "whatflow-vs-zoho-desk.html": "e7b11e8e1acf621c284a6a106cfd9342418d9422d1f245f6d8771a4a4ee02017",
+        "whatflow-vs-zoho-desk.pdf": "2900df9adcbdbc2b17e09dcbac15498cee290dfc176673ae4e96e6037fa777ec",
+        "hero.webp": "8133e6c7ffb28975b2ed9217d048a8400acfe22887676b30e0ad2735d84c1c37"
+      }
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatflow-vs-zoko",
+      "hashes": {
+        "whatflow-vs-zoko.md": "dad4c2b9d9f2445181bf9bffe9326b442cfca59c1c13d3f59c5440593ea3d0b1",
+        "whatflow-vs-zoko.html": "8332f376d569b03d3780f93235b0787c2b0c49cafed82d4f42c1a2867ea85580",
+        "whatflow-vs-zoko.pdf": "e702dbfef1ab3bed4cb6ef2ed3210c28a49e8c8e001def141635fc43dbbc0a0b",
+        "hero.webp": "f191bdc2f38aaf99e6badf8bfb9faeb00e2bc98bd784ef6bfce41230d37f7a13"
+      }
+    },
+    {
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-automation-vs-manual-order-copying",
+      "hashes": {
+        "whatsapp-automation-vs-manual-order-copying.md": "94c43f61fadffe9aebede7626641e18b04818ae047aabd3830952ba4201ff663",
+        "whatsapp-automation-vs-manual-order-copying.html": "8226fd4e381cd8e52e648344872388ed47ae18943ffd2b787ff527c4b63f8654",
+        "whatsapp-automation-vs-manual-order-copying.pdf": "6cad92efac2c66c2c9089f1e814dd308a5b78540ac55597d3fff9e15a1528d4f",
+        "hero.webp": "473d1fcad691f05cb0db609fba0a128c5e35ac14261021c83ab606116cd145cf"
+      }
+    },
+    {
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-back-in-stock-vs-email",
+      "hashes": {
+        "whatsapp-back-in-stock-vs-email.md": "7738539926037d94cbce73663be5e704cc8752f852171bb2d0bba6c87103c6e1",
+        "whatsapp-back-in-stock-vs-email.html": "0539b93d82390e3274bf161c86bb1bfcb04b5bbe15a21e4beddfc0eaed472a06",
+        "whatsapp-back-in-stock-vs-email.pdf": "ea24f4f565a13cc4fd1d536ad811716403f3a1e56c9cd81d1c6110356ccfb2bf",
+        "hero.webp": "5fa811f4f69a5966036a503a95323e8fd8c40fc54d61724755fd66459fa2177c"
+      }
+    },
+    {
+      "slug": "whatsapp-business-platform-vs-channels",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-business-platform-vs-channels",
+      "hashes": {
+        "whatsapp-business-platform-vs-channels.md": "e4ab517f9cc4f1d3b07fd0ae4111e0dd3a63fd5cf2677f8c52e2f512a042174b",
+        "whatsapp-business-platform-vs-channels.html": "a34843a3cf28ba18e6e4296f8481b5887ea1abeac1cae6651701b86c4fd0250b",
+        "whatsapp-business-platform-vs-channels.pdf": "70a0d0a321dca3b2844be13e0a405da7e7a1234b19f6554b15d27ee543b35c85",
+        "hero.webp": "3a58a242f0c48dd294434cdde76ec22fd14049cb2bf7d40547c11ddce5d6082a"
+      }
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-cart-recovery-vs-email",
+      "hashes": {
+        "whatsapp-cart-recovery-vs-email.md": "5ef1c023755146055eb1bf33be05f64528c1a6bc33b4bb35def9d1a8662bca8c",
+        "whatsapp-cart-recovery-vs-email.html": "d853fc690ac1805a5bb4146dbc2574138b49fb548865e4133cd66b13b59cd9b2",
+        "whatsapp-cart-recovery-vs-email.pdf": "0552041bccbae59a7758134ba170098eb02c4c08fc6aef5b6f7eb9e187374312",
+        "hero.webp": "fe08d747cd01ad414baf459a2efeb6948479127ee3eec33dbda9a56bd3468547"
+      }
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-cart-recovery-vs-retargeting-ads",
+      "hashes": {
+        "whatsapp-cart-recovery-vs-retargeting-ads.md": "eb7eeeb15b6e3acb1f5c374cca0e8d036e98f552458eefbc473d26241f586bef",
+        "whatsapp-cart-recovery-vs-retargeting-ads.html": "3bef1e0e50dd54cb1dea846726d5bfd05000f990e5134b544c324202ec23e1bf",
+        "whatsapp-cart-recovery-vs-retargeting-ads.pdf": "d630cfa2f1e18e66e6174d1031aae22737990cd90ee868e91845ced437ee3c33",
+        "hero.webp": "0acf97aef8b589b8f930eff1d308cee9513d7c3b87b42f9ea0145545499c7105"
+      }
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-cart-recovery-vs-sms",
+      "hashes": {
+        "whatsapp-cart-recovery-vs-sms.md": "11563dd9ec00154fe73be1b7204596c212ff589da623087d8f96bf14228d2eb6",
+        "whatsapp-cart-recovery-vs-sms.html": "75ff7e09aa50b26e463f7532cbcb1a5c77d9d3674d5c064cc6e99b6710ef7140",
+        "whatsapp-cart-recovery-vs-sms.pdf": "5fa3ada572c1f123cbc63d27b4cd4e6ea67e0113687ab4a78d1e41b56eb1e24c",
+        "hero.webp": "a47072383fe4bff2f2ec6b9493b8884a24b0a32c55858cb56b1c72b36242a65d"
+      }
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-cod-confirmation-vs-email",
+      "hashes": {
+        "whatsapp-cod-confirmation-vs-email.md": "bffd611f6e627568e785f304aa5efe003b19f231906cc5691fbe282e2ecd61ec",
+        "whatsapp-cod-confirmation-vs-email.html": "f6b696841be8996dd98c222242fd9cfa30a0c33d5c5b30dccf9a94206c06343f",
+        "whatsapp-cod-confirmation-vs-email.pdf": "7517e1220f65f578a790e67c7e2718be3f08bfb90f973de2375da4efd3c8f6d6",
+        "hero.webp": "70e43e50c630436889da3f40fd8dfbf6119f243f2eb3dd3e6e9f2829e82a28b6"
+      }
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-cod-confirmation-vs-phone-calls",
+      "hashes": {
+        "whatsapp-cod-confirmation-vs-phone-calls.md": "cb149e43c738a10efebb3d8324ec1f93b3ccf08b0a6fd5f43158c40e8994f57e",
+        "whatsapp-cod-confirmation-vs-phone-calls.html": "4cf4d39fd0c26afb28e800f8b334612dec5d27fbc740ce8b62351a91fc6dc245",
+        "whatsapp-cod-confirmation-vs-phone-calls.pdf": "94befc0b2dd5dff32acece8569836a331a2215d5bc97db32d94177981047c070",
+        "hero.webp": "4833fca7a6a63444832ce624658d425e58712b996e1d3b44a2eb681f1cfa65d7"
+      }
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-cod-confirmation-vs-sms",
+      "hashes": {
+        "whatsapp-cod-confirmation-vs-sms.md": "29afe57ffd4ac2ee3f8da82ace67185b9727a4ff4c6125a9707913e323496a1c",
+        "whatsapp-cod-confirmation-vs-sms.html": "fc9a8cc35e5d672ac95896b0b273fc1baa51be7724d943a0368ba833077da2e6",
+        "whatsapp-cod-confirmation-vs-sms.pdf": "b529eebcdd51aad4a381c50cb22c3eb2aeed115bfe2080e1423109d207b27400",
+        "hero.webp": "85d73751210a2317ad8e15ee27b3baa3d72682bcb2296f870c73739131369dc1"
+      }
+    },
+    {
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-cod-rules-vs-confirmation-messages",
+      "hashes": {
+        "whatsapp-cod-rules-vs-confirmation-messages.md": "961bdc47a8789e597d698aedd29488130611521e93387d455dc8e141c451aecc",
+        "whatsapp-cod-rules-vs-confirmation-messages.html": "389e6b19fd0826bb86bdfe327df048ac31dcf8aa86b43375a0110d9ccf6d300a",
+        "whatsapp-cod-rules-vs-confirmation-messages.pdf": "f168b7ccaf59b62946b58ffbc5e008f3b55c6049756934e535c5a3a7e3516a4f",
+        "hero.webp": "f537a9cde0b7350903ea6cc52330e3fa2439e59d9970a2c1daf02dd5278968b2"
+      }
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-customer-segments-vs-generic-bulk-sending",
+      "hashes": {
+        "whatsapp-customer-segments-vs-generic-bulk-sending.md": "05a5dc694911b35c14bae39aa7a2e369f42b76fd3079b8b7714a6540eebcf05c",
+        "whatsapp-customer-segments-vs-generic-bulk-sending.html": "cef6bbcae6770f4ab9a493fd50933bc94d00d3fe40291bcdc54512e5e902d80d",
+        "whatsapp-customer-segments-vs-generic-bulk-sending.pdf": "23edc04f30cf308380ad4c7eef44c560103d753297e4cc75bd4607ed451ff241",
+        "hero.webp": "056422e1ea9d11088f20fcbf8d9dc45403d263e20b6053e991d08e19abb222bc"
+      }
+    },
+    {
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-free-plan-vs-free-trial",
+      "hashes": {
+        "whatsapp-free-plan-vs-free-trial.md": "55ce7409260506d3e3dc226dcfe7a0f74797a129a3a1755885125336c259bc12",
+        "whatsapp-free-plan-vs-free-trial.html": "166a3c1f7ca2aaf4072b041968a5702b8528e44ca3e7c4ef2901a414d1a67bdb",
+        "whatsapp-free-plan-vs-free-trial.pdf": "3c237af53ea009eb149e9d8a8f83b4367ab89dd1dd46ebb2da5ecb15a7f126bd",
+        "hero.webp": "7942b6eeeec6a5a9d2225c33339a2375bb4772600ac50adceb48dbfe17919708"
+      }
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-inbox-vs-helpdesk-tickets",
+      "hashes": {
+        "whatsapp-inbox-vs-helpdesk-tickets.md": "61261d6eb353372156e624b5c6fa150db44116a8d91bb776f7d6663152467636",
+        "whatsapp-inbox-vs-helpdesk-tickets.html": "d95a59db431cfee4aa22cba7bfb6448e9c6bf26f8536346fbdb9f123abf35937",
+        "whatsapp-inbox-vs-helpdesk-tickets.pdf": "946b47c1ed30ed0ae424c57ac7c931469077718c507bf02ac046008eaf6aa99f",
+        "hero.webp": "96e45f2f76ecd97db36bcc1d4a31fd2e50bc241bdcc1f2381831c65882f9f8ab"
+      }
+    },
+    {
+      "slug": "whatsapp-order-updates-vs-email",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-order-updates-vs-email",
+      "hashes": {
+        "whatsapp-order-updates-vs-email.md": "6ab6d89a3ef4e859dcdce17b4aaa51bc36c1d0457b9df57d87efea28f5715c27",
+        "whatsapp-order-updates-vs-email.html": "2f58b168af239ff8b45e8053a4e90450134cb92c4beb60dc23868c7bac838d43",
+        "whatsapp-order-updates-vs-email.pdf": "8923583be2945a4bb935c7c638638dfa8262d925e7410de14ecc0c83e55741b2",
+        "hero.webp": "5eaf9958907fc450bad79c535ff91dbb27a9e2be8d0a0afc804f39dd7a15653d"
+      }
+    },
+    {
+      "slug": "whatsapp-review-requests-vs-email",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-review-requests-vs-email",
+      "hashes": {
+        "whatsapp-review-requests-vs-email.md": "5571bee4bf90b5b5198d924e06a7519d33cfa2636af795a899f2360b10be8bfe",
+        "whatsapp-review-requests-vs-email.html": "613640747f4f64de46414b2b551aa92109e59abbb0ea792dd7836d8dfcc36d31",
+        "whatsapp-review-requests-vs-email.pdf": "1c7a7a35fb53631e24360fde9291b5bf209d6bac38ce3f7b385335689f0ba94c",
+        "hero.webp": "e8a020170b6be02e8b111a3691bd41d63ecc992bf6a7ef47595279ddcc163a37"
+      }
+    },
+    {
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-segmented-broadcasts-vs-email-blasts",
+      "hashes": {
+        "whatsapp-segmented-broadcasts-vs-email-blasts.md": "c755c32bd3194d649ab014635e2b392d355cd0806b991c28624d4c55ca9f50ed",
+        "whatsapp-segmented-broadcasts-vs-email-blasts.html": "eb58d1a0c92763a348bb0f2287141ca3d7631e10e7186e54d4f9f3fba97460b4",
+        "whatsapp-segmented-broadcasts-vs-email-blasts.pdf": "32f112b337badadeff4fcb6cd02978e4c35ee07a66ff85df00dd483526535122",
+        "hero.webp": "b98a77481a08a50d446ba086954bf89f1ebf1e6b15009cbfc8a763cad8df7324"
+      }
+    },
+    {
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-shipping-updates-vs-sms",
+      "hashes": {
+        "whatsapp-shipping-updates-vs-sms.md": "4cefcbd6b6fe704356e528f746cb6406fa250e95aa0e106d2fa90040cc2a38f9",
+        "whatsapp-shipping-updates-vs-sms.html": "6aff2981e5d4c80047ae63040e32ca476ff8ab5267f2c7dae6588a068c318d53",
+        "whatsapp-shipping-updates-vs-sms.pdf": "c29795cce35be65c5bdb6390a1f9116c2d6679c42400ab4567b569c8a9dbfb70",
+        "hero.webp": "b84abc244bbbc34552260b93f365a8f7702b98fb30b12b9f7841b59904b2f6f5"
+      }
+    },
+    {
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-volume-plans-vs-contact-pricing",
+      "hashes": {
+        "whatsapp-volume-plans-vs-contact-pricing.md": "f6a076a9937a1b95292e195a95b7b60e847ab7fd051b724545a39a516405a376",
+        "whatsapp-volume-plans-vs-contact-pricing.html": "8b9413a77a85b702c56567786a834bead16609ba1abf09b4fa4e27b0bba33a4e",
+        "whatsapp-volume-plans-vs-contact-pricing.pdf": "a39055200b4e2dfce7edd1a5435f48c5ecb2a7e2122443b12b851b15b4fa20f1",
+        "hero.webp": "589a8968ce7c20a2f1145b14692eaddc2c84bf8949986918dac4e387cd29168d"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-email",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-email",
+      "hashes": {
+        "whatsapp-vs-email.md": "c25f8af6247cdbb3b8b098466b426228a71daa43a9a64cfc3f92fbb97f18ede1",
+        "whatsapp-vs-email.html": "da5a63cb5c6e2437c593a319c3aa4c23faf7bcbb088e1af08b2eb5f5b36b7590",
+        "whatsapp-vs-email.pdf": "0b46370a3b2d3c4f5a591ad372d3e59b57b5be2362b089c01c9c9de204018a3c",
+        "hero.webp": "760dd0f6594f1984598f6cad454c7ee7ac8c843bb226828fc41c125ce03e73f1"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-facebook-messenger",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-facebook-messenger",
+      "hashes": {
+        "whatsapp-vs-facebook-messenger.md": "3708dda963baa74c096b9cf4060e85bf3c786b13d5301cab36c9dcf4421e7528",
+        "whatsapp-vs-facebook-messenger.html": "82cceb763cde1d031492ca9fce9bd60bab7d88ba27c2a9831d9bdc82983a417f",
+        "whatsapp-vs-facebook-messenger.pdf": "c71c7e829534e43b32ce6dfb7809adf58456012475eb13aa08e990d46252084f",
+        "hero.webp": "4c99badf7d839d5edf229a1054c9a542d5e613b1dda0537bf0771818d48d9f4f"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-instagram-dm",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-instagram-dm",
+      "hashes": {
+        "whatsapp-vs-instagram-dm.md": "dde147fb82a47f6fcfba75bcac4a3e7dac4f90272399cc63468c11dc808d3719",
+        "whatsapp-vs-instagram-dm.html": "c5cad96dbb3795613940d868e370582d3638ab7607f737aab821249cfd68a358",
+        "whatsapp-vs-instagram-dm.pdf": "581a504206193dd90693c898f51f5cf92e9171c240408ce9499bcf63f15d47c4",
+        "hero.webp": "62510129ae82ab84ff872fd0470f909fb57a57d487063d9325a9e4fb0a07f426"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-mms",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-mms",
+      "hashes": {
+        "whatsapp-vs-mms.md": "eae446f7eb9e2fd0c414c4ebada17834fa72f9e30c5a09c0ed266a923c49596f",
+        "whatsapp-vs-mms.html": "4af421c9023d93c5247ef58a1d48794cc4c563de456dcad80b0d60dd79da5359",
+        "whatsapp-vs-mms.pdf": "0e7f86c6a0a557020a5e184720066e7b19a9dd14b846099d6572054e9391c7eb",
+        "hero.webp": "c1aaa87a09238e225f6287741931e564fbea78a2b92b351ae53d2306f87bca7d"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-mobile-push",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-mobile-push",
+      "hashes": {
+        "whatsapp-vs-mobile-push.md": "c1fc9cde07e7b31c4ab6111abbb48e0431b7c0e3b59010ac7ba7da7c11f99775",
+        "whatsapp-vs-mobile-push.html": "c049368349af08e539b23dd2671a0db3984b6952a58f2c591de81c9da5795635",
+        "whatsapp-vs-mobile-push.pdf": "1a861e20cd06ac793bb4a86e7f9523e9aa7ecd925e4f85f32a533c3ad519e514",
+        "hero.webp": "b5b86401c48657640efb6d1171cbca3aaa0facfe8c1ee8f2bc153e17f61edb57"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-phone-calls",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-phone-calls",
+      "hashes": {
+        "whatsapp-vs-phone-calls.md": "c6a2228cc8bc2f75b8504ef029ef988c27dc03d1de770c590213403d9da4d77f",
+        "whatsapp-vs-phone-calls.html": "baa0dec56efcd4f00417f2127e93f28507fe867a4841815b4873f46e42226d93",
+        "whatsapp-vs-phone-calls.pdf": "44e02d5cafdd76c5b2d0b5bfb1a32308f2997082cc4659dcf301f38667838f5e",
+        "hero.webp": "a60b4f78a3f6c2ab0e01e88a23a138afb69cb8bac803641a7e35a5c6128c00cf"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-rcs",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-rcs",
+      "hashes": {
+        "whatsapp-vs-rcs.md": "02ef3682d92a924305eafff2dd0b78e0e7289badb15e9da6240b626734c59798",
+        "whatsapp-vs-rcs.html": "6c1e8fc79ebcc0d4f60c3fefab5735d85238d16ed3842540a006bb2c39836be4",
+        "whatsapp-vs-rcs.pdf": "a8fd2149467b079a1640c2ddfaf5dbd1faff34978742e3fc58bc63336979f586",
+        "hero.webp": "0d3fbb86ec0221f9971b372cf91cb954131296239c580fed5b3066450e8f1c9f"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-sms",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-sms",
+      "hashes": {
+        "whatsapp-vs-sms.md": "88af89987cbf1f3fb70456add39d79e2fb7ffeec469c5734ced008b404ffe44f",
+        "whatsapp-vs-sms.html": "a318175437c0a721bd13318490d07c677286c016c51e8097439bda05960de78a",
+        "whatsapp-vs-sms.pdf": "516a5aefd5a50816180e84cddca948e56460e49174665454ff1e5e2ccbf34c39",
+        "hero.webp": "abb9e4a089a529b5254b45ff692c97424ca43b425428788145fb13b1253b4986"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-telegram",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 91,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-telegram",
+      "hashes": {
+        "whatsapp-vs-telegram.md": "e4808dbf9c9b4c635d7db2fdc9079c2ba81255e3ddcfb45f664bac695cea454b",
+        "whatsapp-vs-telegram.html": "185328f5f0a423258793835c03d975ad397ef27b39633b08c2f49a02da006efe",
+        "whatsapp-vs-telegram.pdf": "2712c4859909854d736d958b9cb92b6576d2fe148bb41b8bb35ebe2289e8f6d1",
+        "hero.webp": "f26acc5ea2c83f5bc4daa76b209cbb310ce83251783d657b12f0a2239b359903"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-web-push",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-web-push",
+      "hashes": {
+        "whatsapp-vs-web-push.md": "a12948d6a3f7e17620d0a8eda59f17bcd8ea9aabb634e385677706aedc59bb6a",
+        "whatsapp-vs-web-push.html": "516c1296204a692dc6f3a83d42f91e7d9e5520fa142b392a679cba2a0cb7fe2a",
+        "whatsapp-vs-web-push.pdf": "e6a3f06cd2d1c519ca443ffdb5f73873ea0eebf7f7ddff0e4219012b428748a6",
+        "hero.webp": "51d82a129f3fa31c508bf921f5d1f4139afaa5e3edfba13cc18bf8bc292fd170"
+      }
+    },
+    {
+      "slug": "whatsapp-vs-website-live-chat",
+      "collection": "comparisons",
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "score": 92,
+      "artifactDirectory": "/tmp/whatflow-release-delivery/candidate/whatsapp-vs-website-live-chat",
+      "hashes": {
+        "whatsapp-vs-website-live-chat.md": "ab0808c024f6c2ca59b961dc5d2f6e6a684ae5d5f9ddbcbd0dc24fd9488aa8f3",
+        "whatsapp-vs-website-live-chat.html": "4b6371b87af49948792ead15967cd1508189a5a18e6d30f5e13083b3e874f73d",
+        "whatsapp-vs-website-live-chat.pdf": "64d827d29ca530eab6ea58bb771e01cefaeb019dce42ae2260429ef624d00742",
+        "hero.webp": "770b027ba3e8482c743a0312f23d469be6a6e64dbcb965096c7d98af70838d34"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1490 @@
+{
+  "checkedAt": "2026-10-25T00:13:49.849Z",
+  "site": "https://whatflow.tech",
+  "passed": 164,
+  "uniqueCovers": 164,
+  "dimensions": "1200×630",
+  "sitemap": true,
+  "multiwordBodySearch": true,
+  "categorySearch": true,
+  "emptySearch": true,
+  "draftProtection": true,
+  "results": [
+    {
+      "slug": "product-variant-review-context",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "influencer-campaign-small-store-plan",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "define-store-audience-brand-promise",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "choose-ecommerce-platform-customer-workflows",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "evaluate-shopify-app-workflow-connectors",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "dropshipping-customer-trust-communication",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "helpful-cross-sell-product-recommendations",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "small-shopify-store-metrics-review-routine",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "ai-support-drafts-small-shopify-team",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "choose-review-app-and-messaging-app-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "migrate-review-app-preserve-customer-feedback",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "multilingual-customer-messaging-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "reuse-customer-reviews-social-media",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "customer-referral-messages-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "loyalty-messages-customer-value-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "qr-code-review-requests-product-packaging",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "maintain-shopify-blog-content-library",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "customer-review-insights-product-copy",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "write-useful-product-faqs-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "product-review-schema-rich-results-explained",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "shopify-content-plan-customer-questions",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "prepare-customer-support-black-friday-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "choose-first-automation-shopify-small-team",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "customer-service-saved-replies-without-robotic-tone",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "shared-team-inbox-small-shopify-business",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-customer-optouts-store-process",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-quick-reply-buttons-customer-choices",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-campaign-preflight-checklist",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-message-budget-cost-per-outcome",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-marketing-plan-small-shopify-store",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "coordinate-email-sms-whatsapp-customer-messages",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "customer-feedback-loop-product-improvements",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "customer-winback-campaign-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "replenishment-reminders-shopify-consumables",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "repeat-purchase-campaign-without-constant-discounts",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "post-purchase-customer-journey-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "test-social-proof-product-page",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "mobile-store-review-widget-chat-button-layout",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "product-questions-whatsapp-prepurchase-support",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "reduce-cart-abandonment-with-clear-information",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "abandoned-checkout-whatsapp-conversation",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "shopify-product-page-trust-checklist",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "review-moderation-policy-small-store",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "review-collection-rate-measurement-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "product-reviews-vs-store-reviews",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "photo-video-reviews-customer-permission",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "respond-negative-product-reviews-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "review-request-messages-examples-whatsapp-email",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "best-time-review-request-after-delivery",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "collect-first-product-reviews-shopify",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "collection": "posts",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-sleekflow",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-timelinesai",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-kommo",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-intercom",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-chatwoot",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-hubspot",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-livechat",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-jivochat",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-shopify-inbox",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-omnisend",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-brevo",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-mailchimp",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-attentive",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-postscript",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-highlevel",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-onesignal",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-pushowl",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-sinch",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-vonage",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-plivo",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-telnyx",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-engati",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-botpress",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-landbot",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-chatfuel",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-rasayel",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-userlike",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-saysimple",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-moengage",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-webengage",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-insider",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-braze",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-sms",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-chaty",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-email",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-mms",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-rcs",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-web-push",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-mobile-push",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-website-live-chat",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-facebook-messenger",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-instagram-dm",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-telegram",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-vs-phone-calls",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-business-platform-vs-channels",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-order-updates-vs-email",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-review-requests-vs-email",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-bird",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-infobip",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-gupshup",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-doubletick",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-gallabox",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-360dialog",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-twilio",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-manychat",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-superlemon",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-charles",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-chatarmin",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-limechat",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-tidio",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-klaviyo",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-quickreply",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "collection": "comparisons",
+      "nativeCMS": true,
+      "preservedFields": true,
+      "schema": true,
+      "socialCover": true,
+      "coverHash": true
+    }
+  ]
+}

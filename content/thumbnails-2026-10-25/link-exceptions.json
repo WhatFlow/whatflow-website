@@ -1,0 +1,148 @@
+{
+  "checkedAt": "2026-10-24T23:51:43.371334+00:00",
+  "observedStatus": 403,
+  "exactUrls": [
+    "https://help.shopify.com/en/manual/shopify-flow",
+    "https://help.shopify.com/en/manual/shopify-flow/create/create-workflow",
+    "https://help.shopify.com/en/manual/shopify-flow/manage/test-workflow",
+    "https://help.shopify.com/en/manual/shopify-flow/reference/connectors/manage-connections"
+  ],
+  "independentVerification": "All four current official pages opened and read through the web tool in this release. Flow plan availability, create/template/Sidekick instructions, no-mutation test mode, and installed connector/connection requirements match the article citations.",
+  "scope": "Trusted skill documented exact-URL 403/405 exception only. DNS and redirect safety remain active; no 0,404,429 or other statuses excepted.",
+  "affected": [
+    {
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow",
+        "https://help.shopify.com/en/manual/shopify-flow/create/create-workflow",
+        "https://help.shopify.com/en/manual/shopify-flow/manage/test-workflow",
+        "https://help.shopify.com/en/manual/shopify-flow/reference/connectors/manage-connections"
+      ]
+    },
+    {
+      "slug": "multilingual-customer-messaging-shopify",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "whatsapp-quick-reply-buttons-customer-choices",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "evaluate-shopify-app-workflow-connectors",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow",
+        "https://help.shopify.com/en/manual/shopify-flow/manage/test-workflow",
+        "https://help.shopify.com/en/manual/shopify-flow/reference/connectors/manage-connections"
+      ]
+    },
+    {
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow",
+        "https://help.shopify.com/en/manual/shopify-flow/create/create-workflow",
+        "https://help.shopify.com/en/manual/shopify-flow/manage/test-workflow"
+      ]
+    },
+    {
+      "slug": "ai-support-drafts-small-shopify-team",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "whatsapp-customer-optouts-store-process",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow",
+        "https://help.shopify.com/en/manual/shopify-flow/create/create-workflow",
+        "https://help.shopify.com/en/manual/shopify-flow/manage/test-workflow",
+        "https://help.shopify.com/en/manual/shopify-flow/reference/connectors/manage-connections"
+      ]
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "choose-ecommerce-platform-customer-workflows",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "choose-review-app-and-messaging-app-shopify",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "post-purchase-customer-journey-shopify",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "loyalty-messages-customer-value-shopify",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow",
+        "https://help.shopify.com/en/manual/shopify-flow/create/create-workflow",
+        "https://help.shopify.com/en/manual/shopify-flow/manage/test-workflow",
+        "https://help.shopify.com/en/manual/shopify-flow/reference/connectors/manage-connections"
+      ]
+    },
+    {
+      "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "customer-referral-messages-shopify",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    },
+    {
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow",
+        "https://help.shopify.com/en/manual/shopify-flow/manage/test-workflow"
+      ]
+    },
+    {
+      "slug": "choose-first-automation-shopify-small-team",
+      "exactUrls": [
+        "https://help.shopify.com/en/manual/shopify-flow"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "draft": "/private/tmp/whatflow-release-delivery/candidate/send-whatsapp-templates-shopify-flow",
+  "strict": true,
+  "blocked": false,
+  "gates": [
+    {
+      "gate": 1,
+      "name": "Capability Discovery",
+      "passed": true,
+      "violations": [],
+      "warnings": [],
+      "capabilities": {
+        "live_tools": [
+          "mcp__node_repl__js",
+          "collaboration.followup_task"
+        ],
+        "live_tools_source": "orchestrator",
+        "env_keys_present": {
+          "GOOGLE_AI_API_KEY": false,
+          "UNSPLASH_ACCESS_KEY": false,
+          "PEXELS_API_KEY": false,
+          "PIXABAY_API_KEY": false
+        },
+        "python_deps": {
+          "patchright": false,
+          "playwright": true,
+          "weasyprint": true,
+          "google.genai": false,
+          "requests": true,
+          "markdown": true
+        },
+        "project_root_files": {
+          "BRAND.md": false,
+          "VOICE.md": false,
+          "DISCOURSE.md": false
+        },
+        "agents": {
+          "blog-reviewer": true,
+          "blog-researcher": true,
+          "blog-writer": true,
+          "blog-seo": true,
+          "blog-translator": true
+        },
+        "scripts": {
+          "scripts/lint_prose.py": true,
+          "scripts/load_untrusted_root.py": true,
+          "scripts/analyze_blog.py": true
+        },
+        "image_gen_path_available": true,
+        "openverse_assumed_available": true
+      }
+    },
+    {
+      "gate": 2,
+      "name": "Format Completeness",
+      "passed": true,
+      "violations": [],
+      "warnings": [],
+      "artifacts": {
+        "slug": "send-whatsapp-templates-shopify-flow",
+        "md": [
+          "send-whatsapp-templates-shopify-flow.md"
+        ],
+        "html": [
+          "send-whatsapp-templates-shopify-flow.html"
+        ],
+        "pdf": [
+          "send-whatsapp-templates-shopify-flow.pdf"
+        ],
+        "hero": [
+          "hero.webp"
+        ],
+        "review_present": true
+      },
+      "hero_checks": [
+        {
+          "file": "hero.webp",
+          "format": "WEBP",
+          "width": 1200,
+          "height": 630,
+          "decoder": "pillow"
+        }
+      ],
+      "pdf_check": {
+        "file": "send-whatsapp-templates-shopify-flow.pdf",
+        "bytes": 689057,
+        "pages": 8
+      }
+    },
+    {
+      "gate": 3,
+      "name": "Visual Verification",
+      "passed": true,
+      "violations": [],
+      "warnings": [
+        "backend: playwright"
+      ],
+      "per_viewport": {
+        "mobile": {
+          "result": {
+            "hiddenText": {
+              "chars": 0,
+              "elements": 0,
+              "first": null
+            },
+            "overflows": [],
+            "bg": "rgb(250, 250, 249)",
+            "jsonLdValid": true,
+            "jsonLdType": "BlogPosting",
+            "jsonLdMissingFields": [],
+            "jsonLdVisibleConsistent": true,
+            "jsonLdConsistencyMismatches": [],
+            "jsonLdWordCount": 1767,
+            "jsonLdConsistencyDetails": {}
+          },
+          "console_errors": []
+        },
+        "tablet": {
+          "result": {
+            "hiddenText": {
+              "chars": 0,
+              "elements": 0,
+              "first": null
+            },
+            "overflows": [],
+            "bg": "rgb(250, 250, 249)",
+            "jsonLdValid": true,
+            "jsonLdType": "BlogPosting",
+            "jsonLdMissingFields": [],
+            "jsonLdVisibleConsistent": true,
+            "jsonLdConsistencyMismatches": [],
+            "jsonLdWordCount": 1767,
+            "jsonLdConsistencyDetails": {}
+          },
+          "console_errors": []
+        },
+        "desktop": {
+          "result": {
+            "hiddenText": {
+              "chars": 0,
+              "elements": 0,
+              "first": null
+            },
+            "overflows": [],
+            "bg": "rgb(250, 250, 249)",
+            "jsonLdValid": true,
+            "jsonLdType": "BlogPosting",
+            "jsonLdMissingFields": [],
+            "jsonLdVisibleConsistent": true,
+            "jsonLdConsistencyMismatches": [],
+            "jsonLdWordCount": 1767,
+            "jsonLdConsistencyDetails": {}
+          },
+          "console_errors": [],
+          "back_button": {
+            "attempted_back": true,
+            "observation_complete": true,
+            "returned_to_previous": true,
+            "before_url": "file:///private/tmp/whatflow-release-delivery/candidate/send-whatsapp-templates-shopify-flow/send-whatsapp-templates-shopify-flow.html",
+            "after_url": "about:blank",
+            "checked": true,
+            "conclusive": true,
+            "obstructed": false,
+            "violation": null
+          }
+        },
+        "desktop-dark": {
+          "bg": "rgb(24, 24, 27)",
+          "light_bg": "rgb(250, 250, 249)"
+        }
+      }
+    },
+    {
+      "gate": 4,
+      "name": "Content Review",
+      "passed": true,
+      "violations": [],
+      "warnings": [],
+      "blocking": false,
+      "reason": "93/100; no blocking defects",
+      "score": 93
+    },
+    {
+      "gate": 5,
+      "name": "Asset + Link Integrity",
+      "passed": true,
+      "violations": [],
+      "warnings": [],
+      "imgs": [
+        "hero.webp",
+        "image-98cdeaaaeb58.jpg",
+        "image-5d2dc84c0906.jpg",
+        "image-b1a97fe3dcad.jpg"
+      ],
+      "links_checked": 19,
+      "generated_links_skipped": 1,
+      "json_ld_valid": true,
+      "declared_word_count": 1767,
+      "schema_validation_source": "source_html",
+      "actual_word_count": 1767,
+      "googlebot_byte_check": {
+        "limit_bytes": 2097152,
+        "artifact_bytes": 22141,
+        "critical_positions": {
+          "title": 297,
+          "meta": 382,
+          "canonical": 584,
+          "json_ld": 2502,
+          "main_content": 7114
+        },
+        "critical_after_cutoff": [],
+        "inline_bloat_bytes": 4595
+      },
+      "discover_check": {
+        "enabled": false
+      }
+    }
+  ]
+}

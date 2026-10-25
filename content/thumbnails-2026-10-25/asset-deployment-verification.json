@@ -1,0 +1,837 @@
+{
+  "checkedAt": "2026-10-24T23:50:20.503Z",
+  "workerVersion": "afdff5e9-9177-46dd-b287-a4ab72a44c28",
+  "assets": 164,
+  "searches": [
+    {
+      "path": "/blog?q=Shopify+Flow+triggers",
+      "status": 200
+    },
+    {
+      "path": "/compare?q=no+seat+fee",
+      "status": 200
+    }
+  ],
+  "results": [
+    {
+      "slug": "abandoned-checkout-whatsapp-conversation",
+      "sha256": "09feb6bf52ace4cfbb233b9af2f5af36b6ad04b18177cd8d37906ae886cae51d",
+      "status": 200
+    },
+    {
+      "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+      "sha256": "3f3a785796a087cd7f4f8f4c5ca5b5f9c4487503862feef9ebe63798b5d84bbc",
+      "status": 200
+    },
+    {
+      "slug": "ai-support-drafts-small-shopify-team",
+      "sha256": "3c04981fe285adf3cbba442a872a348eb9cf622fa92338fe68bf37680ddbc58c",
+      "status": 200
+    },
+    {
+      "slug": "best-time-review-request-after-delivery",
+      "sha256": "0df4dc387e09bda25cde33fdbac79712c96b08bfeeb322b69937a9895f9ebb80",
+      "status": 200
+    },
+    {
+      "slug": "choose-first-automation-shopify-small-team",
+      "sha256": "0723d5468737e546e4ad9a9dacd1fe2c7a2bc083fb8e9983a8b5ed07041d383c",
+      "status": 200
+    },
+    {
+      "slug": "choose-ecommerce-platform-customer-workflows",
+      "sha256": "bb8a9fbba77bee6d99168d2bc7d6fdf7bfdeacdc9730b3b5cf2b8b8a6951d71a",
+      "status": 200
+    },
+    {
+      "slug": "choose-review-app-and-messaging-app-shopify",
+      "sha256": "56dac97cb5b98a847c1a243aec25dbe3c2fdfbb607481f5c19e35e0836343ff9",
+      "status": 200
+    },
+    {
+      "slug": "collect-first-product-reviews-shopify",
+      "sha256": "aace19a833a12e3efa5084ef8676e9889bb5d4a61abfcd319e41aa868c1f33f6",
+      "status": 200
+    },
+    {
+      "slug": "coordinate-email-sms-whatsapp-customer-messages",
+      "sha256": "461d7a18eaa2e06bb4c2fb63017c151417d6afe3d71a7e7fbbb8168add6045a8",
+      "status": 200
+    },
+    {
+      "slug": "customer-feedback-loop-product-improvements",
+      "sha256": "224ec035d76c0ee2b3485c21ac39ac0c1fe623b549a63243e0d133d65634da05",
+      "status": 200
+    },
+    {
+      "slug": "customer-referral-messages-shopify",
+      "sha256": "357b1de8c6807edd3a3380f3aad45f72cbd98f7d464fa9a4f2bea8426487fe6d",
+      "status": 200
+    },
+    {
+      "slug": "customer-review-insights-product-copy",
+      "sha256": "53beadf3bc2cb71bad83ff3232707608ef23c4afb3d03a15bcc467475addcde9",
+      "status": 200
+    },
+    {
+      "slug": "customer-service-saved-replies-without-robotic-tone",
+      "sha256": "9327768c3ba17b6606ac3e2b669f62223adf7611aa5ab8444688f6943e3b2989",
+      "status": 200
+    },
+    {
+      "slug": "customer-winback-campaign-shopify",
+      "sha256": "f6a654c10fb422e003aef42de197c8ced329bf9173055bffb00171ce1ade51e6",
+      "status": 200
+    },
+    {
+      "slug": "define-store-audience-brand-promise",
+      "sha256": "52e8c17a94325f14619b08144b2bd9734aa994d263a74515dacbcbc274287446",
+      "status": 200
+    },
+    {
+      "slug": "dropshipping-customer-trust-communication",
+      "sha256": "1f21c13a2f36793cee394d92f5eac24606c100471e3502b4b253d31c17a3825c",
+      "status": 200
+    },
+    {
+      "slug": "evaluate-shopify-app-workflow-connectors",
+      "sha256": "de1714b72ff4cc04957a1e32151c64d5f207afc6eaf6bc5189e11dd9f917c0f1",
+      "status": 200
+    },
+    {
+      "slug": "helpful-cross-sell-product-recommendations",
+      "sha256": "5c002b4b5a0e736f830815b48d79d9a81c3ff1df9d43d882399362efae3c9487",
+      "status": 200
+    },
+    {
+      "slug": "influencer-campaign-small-store-plan",
+      "sha256": "78f692df28c6eae0439857e4196b586ded1f64510d89a070ad8d597a6a9756f7",
+      "status": 200
+    },
+    {
+      "slug": "loyalty-messages-customer-value-shopify",
+      "sha256": "70111af3b86fa296d325dcdfe8880e106c6a381f9766bf71e44afc722497a6f4",
+      "status": 200
+    },
+    {
+      "slug": "maintain-shopify-blog-content-library",
+      "sha256": "333702c51d81117b9a24278c4fd2304f8062e328439f68ba2bbfc0725e8e0475",
+      "status": 200
+    },
+    {
+      "slug": "migrate-review-app-preserve-customer-feedback",
+      "sha256": "9e9474172463e6474d7f2c2745ed9899a44c12a0c627d11b480c4e767df44894",
+      "status": 200
+    },
+    {
+      "slug": "mobile-store-review-widget-chat-button-layout",
+      "sha256": "3bf5188f7aa70fbe683734d7367ceb2f75023a089b608d995db9f07592924960",
+      "status": 200
+    },
+    {
+      "slug": "photo-video-reviews-customer-permission",
+      "sha256": "c572756104e842e52e6472c0aff6815b6268ee2471dd6611d03f32323046e05d",
+      "status": 200
+    },
+    {
+      "slug": "multilingual-customer-messaging-shopify",
+      "sha256": "bc26fd8b57c3d3d8506dcfb7d1b40a1816bdf6f30e780a9773f2b73671b03040",
+      "status": 200
+    },
+    {
+      "slug": "product-questions-whatsapp-prepurchase-support",
+      "sha256": "b03fbf6dbaa0831917d7218fc30d7cb711056e48396e4ae918a0ca1e94fb5c44",
+      "status": 200
+    },
+    {
+      "slug": "prepare-customer-support-black-friday-shopify",
+      "sha256": "c4dd4deaa05734c4f2d87d263fc8c671e6390db2a2dbd79f37bfd20a26a300ed",
+      "status": 200
+    },
+    {
+      "slug": "post-purchase-customer-journey-shopify",
+      "sha256": "455112be172e8f6be59092bed002171088021beba14addbb282f759a60fe789d",
+      "status": 200
+    },
+    {
+      "slug": "product-reviews-vs-store-reviews",
+      "sha256": "811a1c282417f7fb983793148c7a74b258ba9fb45c7320ac804a1d6ca01b287f",
+      "status": 200
+    },
+    {
+      "slug": "product-review-schema-rich-results-explained",
+      "sha256": "bea326689a374a6760551539381c181f22b036dcddca3789b71b8fe7cda93eb6",
+      "status": 200
+    },
+    {
+      "slug": "product-variant-review-context",
+      "sha256": "af30bf300ce22e95917368649abf8d95c1f2348a8fc8265bd92640af16568f7f",
+      "status": 200
+    },
+    {
+      "slug": "reduce-cart-abandonment-with-clear-information",
+      "sha256": "27e0305c45955d7fd46a7ad9f1fe39d6e88abad1c6e212b2c0fe3399f2dd1196",
+      "status": 200
+    },
+    {
+      "slug": "qr-code-review-requests-product-packaging",
+      "sha256": "31bbc695ec31256e5dafabd59fd5d11c39ea27d84fd04d6a9690af3026ee659f",
+      "status": 200
+    },
+    {
+      "slug": "replenishment-reminders-shopify-consumables",
+      "sha256": "46635088d88c517cf620e3390d2e26795058a37abebe19b6f2efa7e2f0f8d44f",
+      "status": 200
+    },
+    {
+      "slug": "repeat-purchase-campaign-without-constant-discounts",
+      "sha256": "f833ba5d9753b7fecdc6fe5e60f396924e9ac0600900ce26e903fbce8da4acd6",
+      "status": 200
+    },
+    {
+      "slug": "respond-negative-product-reviews-shopify",
+      "sha256": "aea3694d26d269e3709c947aa716eab2cdd7f2d00c6ef5fa3d214b83bce7f4b3",
+      "status": 200
+    },
+    {
+      "slug": "review-collection-rate-measurement-shopify",
+      "sha256": "cac9b0b1a43210cf09df28171c72be62c886c6c118a87fe26e113b7ff408096d",
+      "status": 200
+    },
+    {
+      "slug": "review-moderation-policy-small-store",
+      "sha256": "c09b901f7df99e30e4cf6cc642198e33f48eb8effb2bbb4ce084b687c1f8cccd",
+      "status": 200
+    },
+    {
+      "slug": "reuse-customer-reviews-social-media",
+      "sha256": "b4758b267389800468588498f4eadf4e1d77ff46b216f9cbc73f05c210ae6e04",
+      "status": 200
+    },
+    {
+      "slug": "review-request-messages-examples-whatsapp-email",
+      "sha256": "083aa2b67e7b8fb643a59149817d1377992d92547b310b1ee05528f26792782d",
+      "status": 200
+    },
+    {
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "sha256": "5f3b9403336befed114eae4d4acd8391e2eca5deab64572383096dbe71ea951f",
+      "status": 200
+    },
+    {
+      "slug": "shared-team-inbox-small-shopify-business",
+      "sha256": "2f992d53d1e95a25f8fbb1fcd5e76a5a6514dadb25314faf3103ad4dfbf35291",
+      "status": 200
+    },
+    {
+      "slug": "shopify-content-plan-customer-questions",
+      "sha256": "ef0ac6f91f5b164f34c6d8a48e57ffe9447852c0f4e7a05029cb678513e7765f",
+      "status": 200
+    },
+    {
+      "slug": "shopify-product-page-trust-checklist",
+      "sha256": "11d10af70cd7fc420e06594143482aa09fe951e0112931ced9b326b319ffed13",
+      "status": 200
+    },
+    {
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "sha256": "1604b1e510f4d3c48d0ed4a78bfd0e9d7c20234f711d21d43d57180f7cae52f2",
+      "status": 200
+    },
+    {
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "sha256": "031135f789f96ac9da343f8d85e4ce39f26f0660d06561f1e4a025d38be1bbf9",
+      "status": 200
+    },
+    {
+      "slug": "small-shopify-store-metrics-review-routine",
+      "sha256": "bcc45d296ddd77c7ef5bb40930e9053edfc230ce5814e3ad3412aa3df3d52fb6",
+      "status": 200
+    },
+    {
+      "slug": "test-social-proof-product-page",
+      "sha256": "feccbe80247fbaf4c62a6f9ec5c68532180627e7a0ff7ed935cdb0667eede136",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "sha256": "acb1f87972278f20826f22c4792ff8f9f576e1f0831619bf5295faf8baeb44ce",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-campaign-preflight-checklist",
+      "sha256": "7c9aa104413865212fe6ceaf846c3e1ee3b0c3c7c7c5b7acdb18e269e11b8efb",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "sha256": "b4b4202f0ce6d49aad0ffb8c87d3cac7b687759bacfc5ef7fd8411c5cb0dd18c",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-customer-optouts-store-process",
+      "sha256": "f7e0fefdbc8853ae003b8cdedd036ad5d057333aeb240c6c13525b522ac5c378",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-marketing-plan-small-shopify-store",
+      "sha256": "d1dcebcaad0182a2e64601d215cdad35cf633d2995cebe3e186958a7df70592c",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "sha256": "9d31047cd626becd868caa16da8bfb3f1b38a5feb28d35fdf544fbf42ce87654",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "sha256": "b37f0944f286843f9afa0be3043a34d562123aa8445a2b3ca8f8a8a03486c38b",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-quick-reply-buttons-customer-choices",
+      "sha256": "98f2e7ade407b205e89922ac9ae01b060861b0c24c12380f73afedde1c575b79",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-message-budget-cost-per-outcome",
+      "sha256": "51a751edb9900e2f1aeccb5c75a845beeec596239c69e389935514ebc28b3ad6",
+      "status": 200
+    },
+    {
+      "slug": "write-useful-product-faqs-shopify",
+      "sha256": "fb01043935beb93280b48b3d9122cd4f68def49ea131bae929a8ab87ee729531",
+      "status": 200
+    },
+    {
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "sha256": "98609208be423d19f77a6a6e7e19141f629f123cb69a38f4ab8ef52235ed9b92",
+      "status": 200
+    },
+    {
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "sha256": "104b00d5707032169a6299c212a2b4aa0ed7fffc6dc66e8ecdd098c3b5a1370e",
+      "status": 200
+    },
+    {
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "sha256": "32372ee7cdf0e14c4a0147093969ba1f3662853f0e44092fcaf6a5ce6e29a765",
+      "status": 200
+    },
+    {
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "sha256": "b89e475c6ceea5f32fdd1d4758e5d9efa0793f02c3c83491823e05f756c10fbf",
+      "status": 200
+    },
+    {
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "sha256": "644f1be3e2e000ba8f8c9095a12276108bd6b3454d093be78574cd9dc5ef80a2",
+      "status": 200
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "sha256": "da6d8414b6da30912ca1c7a4968283fe23bcc75017698f9da835f9546a70540a",
+      "status": 200
+    },
+    {
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "sha256": "17853d57e2612e79f5d5ea278cc0ed384cca1dc659fd167ab205620c522795ce",
+      "status": 200
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "sha256": "0f8ac8d8a84527b44ec72f8443235ac7cae72b89180c3dd075acedbae1240060",
+      "status": 200
+    },
+    {
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "sha256": "578d84d5ba99399f49d533f39a68b76e820a63eec410ce984e6d5a415eb9e906",
+      "status": 200
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "sha256": "c88e1913a9c3d9496c1bc9862b283ec8cb86e34e18d5c6b8db1043e669ba8d5e",
+      "status": 200
+    },
+    {
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "sha256": "7f6651d43605fb0a62aeb7363c160e1340bd5eaa778a1f498a543dc162e1b183",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "sha256": "e5cec7f3ce20ea926c6a23677df239c0d65137525284689ebf94fc8104ab2ea8",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-360dialog",
+      "sha256": "095dc9eb95ee5f81191dac782a3b8fe4dd3e9d5ac6931b2c2532a116a59df6ea",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "sha256": "c78cc95f220ec386fb5b9bed25e2f7f5cfceafb2364c51b93b51f7eec3e4d604",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-attentive",
+      "sha256": "797717bf15a3c572e93c3e91ae97e6bbca8fe7bc8525403178a701de87df77d8",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-bird",
+      "sha256": "80aa1455e0353e9cbf56a8f013bfa292aa971b820268ad58956cfe723a3aa980",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-botpress",
+      "sha256": "ef62f54b7c41492a46290cf026caa40bfd16d8185350fc536744188f044faf64",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "sha256": "d6ae4f242ca0e0563b266c0c249b052726a1ed475ae5f13bd93c2063718ac438",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-braze",
+      "sha256": "28df600f7a34db47d31ed1c52e4e2a51c1fb8e4a0c07a38c861e0cf2e2413650",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-brevo",
+      "sha256": "2a26ccefe042985b9f843a8a2bc10a4e46779f55bbf29839e6bcbceeeac0b5da",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-charles",
+      "sha256": "afb9673cb46349f30fba1ed5c15e7a8fe7f631c5b775bff76106b799dfdb58aa",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-chatarmin",
+      "sha256": "63c0d52d26fdce3fe9cb8b07550a57cd9f98f02b93a69cf8b71c0202fd67e0ee",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-chatfuel",
+      "sha256": "83f5fb2f1cacebebbe68701b650171a25e6625080d6e195376d007910cda674c",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-chaty",
+      "sha256": "e645517346dec2849790a562cfcce4c58abd7c312e53326ffe55f016f020eb97",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-chatwoot",
+      "sha256": "a1b7f49c180b2fe0fed1e23f99502c66e115143a037cfef73c1caf6a424a7019",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "sha256": "1e159c566799233caa8a5d980ab3cad82fa477f21b2bb0cb23f3397314c0035e",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "sha256": "5ff96869084d5186077852167b68e466e8c9c24069e9a2170589989b3cd4185b",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "sha256": "ef53f9ee41153cd2ce707b955b1051a3597e14150d2e1faa4ddeb8f3929bf708",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-doubletick",
+      "sha256": "8fd7a6e56ef086d2ca6223319cf318f0bf863b252fb6b0ae6bfb6547b42dc9c0",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-engati",
+      "sha256": "4caf52b93de5457df62a40957920a657c579585f0f28ffc29694f08d330fc117",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "sha256": "a68f0c6028f38974f4f66c150e87abc0a324740ee4a404586847fcf65666244e",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "sha256": "65766a02ae0ccb2a384077c23759b22d547eaefb35047f7f611a68ee368c11fc",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-gallabox",
+      "sha256": "90d6c0bc6d9d305cd86d8f71a66e345cb6e031164e7ad5bd3c1c03f4da83bb02",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "sha256": "4987d0b6f674ca75ba5ebb20be3c1d75557365309c71d2548d1e9a883c08e572",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-gupshup",
+      "sha256": "2e8800644df5e1a69f19af1e15833faf97e3a7011b0a097033f0828ac1c0638b",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "sha256": "eadd5bd74f226714300bf1e4c99033766ac61e32f0480a1b2a5d34ac174507b5",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-highlevel",
+      "sha256": "4e72c76415c3db72b2cf4bb3dc6ca6fd9f04c1d51f734f03a7bd643d6dd64205",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-hubspot",
+      "sha256": "81c2211e6a03541901783a298d77fb5f1931d2458cd20fbefe07aebc37af24fe",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-infobip",
+      "sha256": "c9e550487a95d3a950509d4ffdfcefd39355f69a601106995e278fd73e5668b2",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-insider",
+      "sha256": "8dc28fde517301d873876b2561e7d238db1539a23da8ecc8b4f1b5b80de14807",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "sha256": "9288fe91cb80fbe5ae6c5a38ae445abc89b71053ab395d400608bbc29e0e9c5a",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-intercom",
+      "sha256": "7102829d97e976f9caeef66f1fcb42bccb0866fc48185aa9aad5350939b7eae4",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-jivochat",
+      "sha256": "81c60717ad6f1ec582d7eb368464ac038e4a8487d4530822ad47c37f4e8f05fc",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-klaviyo",
+      "sha256": "28c9f08200718cc0c5fb74d2baf95abedb9abb83f8aa33876b31ff822d596863",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-landbot",
+      "sha256": "695942744dca656ff3d5cef9e5cb56a55904f472b45adaebf07d18bffe32cada",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-kommo",
+      "sha256": "29fee8b80299418878509b73dd98f7d3b23b534e2151d4172636288313935476",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-limechat",
+      "sha256": "d313356f49e098a0d5c5d35e7045e2f5c3cac168ea4cd562e828018cdadf8083",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-livechat",
+      "sha256": "de5271b920903a914944a8c7b4f6261f04fc2decfda02888d7deca1e533d4947",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-mailchimp",
+      "sha256": "e2793b863d59c5aa666b9e9f101ce7e7d313cd07ef8a3c3f067daa5cef473da0",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-manychat",
+      "sha256": "e2fccbfe0d5f63790ee74abe388efadecf253c3e64334873fdac86a91bbd1e0f",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-moengage",
+      "sha256": "91e328f53edecd7a97054d87f55a940720082283afe48fc8a82b1ee6419d238f",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-omnisend",
+      "sha256": "b7f705e084153bc74cdc08590c4768070d395f8ff938a66a86f77557879a3f45",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-onesignal",
+      "sha256": "3154017d003aaf0bc9d314dcec1d2a6fece8112e511df4e776d377b2a5786151",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-plivo",
+      "sha256": "74e329471256d61133f837f85fc26e3d59f43c174ebd851718f2b8ec415af317",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-postscript",
+      "sha256": "07528ae6ae824d422df6cf9dde1b8cb7ed219d3949dd6eadb9d9fd9aad9997cd",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-pushowl",
+      "sha256": "e563e07ed303833fa244601749ad83e0671a0f655524bc9cec89be541f45a157",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-quickreply",
+      "sha256": "13cb6123e577a12c5a2f78d6a04e945aaccbd979bd4c147b0b63cee292cf3bdc",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-rasayel",
+      "sha256": "dec698952a838fce51a91d51c8228bb4e90765e400d9561ab52db1d78470351d",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "sha256": "dfb75f492678ec6a705fab2019b86122f7ebaeda4f970b8e5ec1cce7a8f29ada",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-saysimple",
+      "sha256": "df275bf72d4a111ba7a17749ac16bd96c831c64d639adca064ef57af353c38f3",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-shopify-inbox",
+      "sha256": "62b6ad7f36e1adde069cae644ef252f115623622907a2c11e7556485e3e75e2b",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-sinch",
+      "sha256": "4af682d8ca4e46ce57dfe445cea6f387fd674abcbde5ff715d31daefe7c3deba",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-sleekflow",
+      "sha256": "74a36cc93f0e18e78fc16b691188e7428b55f80655ae559fde5b52e1a732d82c",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-superlemon",
+      "sha256": "c2bf6219f39d12d71f0a6dd31f99260459d5073b275fcf27fd115de40562ecd4",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-telnyx",
+      "sha256": "bbe49bc310413145a518fdf395c02bcccc794dfca3e0c327914c911907efbe9e",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-tidio",
+      "sha256": "1681c0e739330ab3eaa319918de8f0a9f62755761b9b9f6bfc5573ace2ca896d",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-timelinesai",
+      "sha256": "912885c548f416de1b8653df69bcb85459707ac9658b3fa89a19a64125e6eab3",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-twilio",
+      "sha256": "122dd4e7b0bce4538b2a314d19302a03700a5b62a90483181e053646d9891d0e",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "sha256": "bd2748256e21140b1f76c03d24238c209aba6cddceee4158ea1e579a8008a13f",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-userlike",
+      "sha256": "cd4229235035099d51329f6353a53c851159d66cb2555bd4361cf011d6a8ae80",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-vonage",
+      "sha256": "db5b4182457adb926dbf2e150acfc74d0a4b3dc263cd49b5b621b777a7ec5e2d",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-webengage",
+      "sha256": "b0ffc545a05967e894107fb0038bab27ec89ba854f1303bae3bc3a1e017385d5",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "sha256": "ccb36221ff97bd91aa6b55a516a6bbc720184da50a79c42c928f9018613fef11",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "sha256": "ef0960318941ae582fc4b878da0fd38f49c3d83a1f565750017c74c800ba8845",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "sha256": "7008d2aa0c3e25a0179836bdfc00a81903a844386ae3c5628c56f8ced8b04533",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "sha256": "8133e6c7ffb28975b2ed9217d048a8400acfe22887676b30e0ad2735d84c1c37",
+      "status": 200
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "sha256": "f191bdc2f38aaf99e6badf8bfb9faeb00e2bc98bd784ef6bfce41230d37f7a13",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "sha256": "473d1fcad691f05cb0db609fba0a128c5e35ac14261021c83ab606116cd145cf",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "sha256": "5fa811f4f69a5966036a503a95323e8fd8c40fc54d61724755fd66459fa2177c",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-business-platform-vs-channels",
+      "sha256": "3a58a242f0c48dd294434cdde76ec22fd14049cb2bf7d40547c11ddce5d6082a",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "sha256": "fe08d747cd01ad414baf459a2efeb6948479127ee3eec33dbda9a56bd3468547",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "sha256": "0acf97aef8b589b8f930eff1d308cee9513d7c3b87b42f9ea0145545499c7105",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "sha256": "a47072383fe4bff2f2ec6b9493b8884a24b0a32c55858cb56b1c72b36242a65d",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "sha256": "4833fca7a6a63444832ce624658d425e58712b996e1d3b44a2eb681f1cfa65d7",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "sha256": "70e43e50c630436889da3f40fd8dfbf6119f243f2eb3dd3e6e9f2829e82a28b6",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "sha256": "f537a9cde0b7350903ea6cc52330e3fa2439e59d9970a2c1daf02dd5278968b2",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "sha256": "056422e1ea9d11088f20fcbf8d9dc45403d263e20b6053e991d08e19abb222bc",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "sha256": "85d73751210a2317ad8e15ee27b3baa3d72682bcb2296f870c73739131369dc1",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "sha256": "96e45f2f76ecd97db36bcc1d4a31fd2e50bc241bdcc1f2381831c65882f9f8ab",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "sha256": "7942b6eeeec6a5a9d2225c33339a2375bb4772600ac50adceb48dbfe17919708",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-order-updates-vs-email",
+      "sha256": "5eaf9958907fc450bad79c535ff91dbb27a9e2be8d0a0afc804f39dd7a15653d",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "sha256": "b98a77481a08a50d446ba086954bf89f1ebf1e6b15009cbfc8a763cad8df7324",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-review-requests-vs-email",
+      "sha256": "e8a020170b6be02e8b111a3691bd41d63ecc992bf6a7ef47595279ddcc163a37",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "sha256": "b84abc244bbbc34552260b93f365a8f7702b98fb30b12b9f7841b59904b2f6f5",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-email",
+      "sha256": "760dd0f6594f1984598f6cad454c7ee7ac8c843bb226828fc41c125ce03e73f1",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "sha256": "589a8968ce7c20a2f1145b14692eaddc2c84bf8949986918dac4e387cd29168d",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-facebook-messenger",
+      "sha256": "4c99badf7d839d5edf229a1054c9a542d5e613b1dda0537bf0771818d48d9f4f",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-instagram-dm",
+      "sha256": "62510129ae82ab84ff872fd0470f909fb57a57d487063d9325a9e4fb0a07f426",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-mms",
+      "sha256": "c1aaa87a09238e225f6287741931e564fbea78a2b92b351ae53d2306f87bca7d",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-mobile-push",
+      "sha256": "b5b86401c48657640efb6d1171cbca3aaa0facfe8c1ee8f2bc153e17f61edb57",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-phone-calls",
+      "sha256": "a60b4f78a3f6c2ab0e01e88a23a138afb69cb8bac803641a7e35a5c6128c00cf",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-rcs",
+      "sha256": "0d3fbb86ec0221f9971b372cf91cb954131296239c580fed5b3066450e8f1c9f",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-sms",
+      "sha256": "abb9e4a089a529b5254b45ff692c97424ca43b425428788145fb13b1253b4986",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-web-push",
+      "sha256": "51d82a129f3fa31c508bf921f5d1f4139afaa5e3edfba13cc18bf8bc292fd170",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-telegram",
+      "sha256": "f26acc5ea2c83f5bc4daa76b209cbb310ce83251783d657b12f0a2239b359903",
+      "status": 200
+    },
+    {
+      "slug": "whatsapp-vs-website-live-chat",
+      "sha256": "770b027ba3e8482c743a0312f23d469be6a6e64dbcb965096c7d98af70838d34",
+      "status": 200
+    }
+  ]
+}

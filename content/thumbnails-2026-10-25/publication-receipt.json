@@ -1,0 +1,108 @@
+{
+  "verifiedAt": "2026-10-25T00:13:49.849Z",
+  "site": "https://whatflow.tech",
+  "workerVersion": "afdff5e9-9177-46dd-b287-a4ab72a44c28",
+  "runtimeCommit": "32ee959",
+  "published": {
+    "posts": 58,
+    "comparisons": 106,
+    "covers": 164
+  },
+  "nativeCounts": {
+    "checkedAt": "2026-10-25T00:12:01.913107+00:00",
+    "counts": {
+      "comparisons": 106,
+      "versions": 431,
+      "latest_versions": 106,
+      "latest_drafts": 0,
+      "posts": 58
+    },
+    "foreignKeyViolations": 0
+  },
+  "strictChecks": {
+    "passed": 164,
+    "gatesPerArticle": 5,
+    "reviewScoreRange": [
+      90,
+      94
+    ]
+  },
+  "files": {
+    "/tmp/whatflow-before-thumbnails.sql": {
+      "sha256": "7c22bceeb784cddec91241b3f09bf2c875e622fc8a7ec94fc2ee8b56e6fb2e4c",
+      "bytes": 8846420
+    },
+    "/tmp/whatflow-thumbnail-posts.sql": {
+      "sha256": "be009b0ee637baefdba7b7624f69768b065fb079a57a4f0fa3d989e91add8a1c",
+      "bytes": 1146264
+    },
+    "/tmp/whatflow-thumbnail-comparisons.sql": {
+      "sha256": "1f3a8c94e33bc23884afa8d91754c432806304d20163ada137fdc4c0b5cf923d",
+      "bytes": 2192851
+    },
+    "/tmp/whatflow-thumbnail-publication.sql": {
+      "sha256": "eb3bbd7fbef9cfb84bd541a966a60c485d7912257bde9e407cbe2d18d9a91d74",
+      "bytes": 3339116
+    }
+  },
+  "executions": {
+    "posts": {
+      "success": true,
+      "results": [
+        {
+          "Total queries executed": 58,
+          "Rows read": 58,
+          "Rows written": 116,
+          "Database size (MB)": "9.62"
+        }
+      ],
+      "metadata": {
+        "served_by": "v3-prod",
+        "served_by_region": "APAC",
+        "served_by_colo": "SIN",
+        "served_by_primary": true,
+        "timings": {
+          "sql_duration_ms": 172.7422
+        },
+        "duration": 172.7422,
+        "changes": 59,
+        "last_row_id": 0,
+        "changed_db": true,
+        "size_after": 9621504,
+        "rows_read": 58,
+        "rows_written": 116,
+        "num_tables": 25,
+        "total_attempts": 1
+      }
+    },
+    "comparisons": {
+      "success": true,
+      "results": [
+        {
+          "Total queries executed": 777,
+          "Rows read": 29997,
+          "Rows written": 5260,
+          "Database size (MB)": "11.94"
+        }
+      ],
+      "metadata": {
+        "served_by": "v3-prod",
+        "served_by_region": "APAC",
+        "served_by_colo": "SIN",
+        "served_by_primary": true,
+        "timings": {
+          "sql_duration_ms": 378.3599
+        },
+        "duration": 378.3599,
+        "changes": 1597,
+        "last_row_id": 1187,
+        "changed_db": true,
+        "size_after": 11943936,
+        "rows_read": 29997,
+        "rows_written": 5260,
+        "num_tables": 25,
+        "total_attempts": 1
+      }
+    }
+  }
+}

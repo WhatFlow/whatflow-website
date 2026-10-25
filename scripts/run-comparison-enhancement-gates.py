@@ -15,8 +15,10 @@ def run(d):
    if p.returncode:(d/'preparation.log').write_text('\n'.join(logs));return {'slug':d.name,'ok':False,'diagnostic':logs[-1][-3000:]}
   p=call('blog_preflight.py','--draft',d,'--init-review-nonce');nonce=p.stdout.strip();(d/'preparation.log').write_text('\n'.join(logs));return {'slug':d.name,'ok':p.returncode==0,'nonce':nonce}
  options=['--draft',d,'--strict','--json','--tools-json','["mcp__node_repl__js","collaboration.followup_task"]']
- if args.phase=='repair':options+=['--repair-attempt']
- p=call('blog_preflight.py',*options);(d/'strict.log').write_text('\n'.join(logs));time.sleep(3)
+ prior_report=d/'preflight-report.json'
+ retry=args.phase=='repair' or (prior_report.exists() and json.loads(prior_report.read_text()).get('blocked',False))
+ if retry:options+=['--repair-attempt']
+ p=call('blog_preflight.py',*options);(d/'strict.log').write_text('\n'.join(logs));time.sleep(float(os.environ.get('BLOG_GATE_DELAY_SECONDS','3')))
  return {'slug':d.name,'ok':p.returncode==0,'diagnostic':p.stdout[-5000:] if p.returncode else ''}
 dirs=sorted(d for d in ROOT.iterdir() if d.is_dir())
 if args.slug:dirs=[d for d in dirs if d.name in args.slug]

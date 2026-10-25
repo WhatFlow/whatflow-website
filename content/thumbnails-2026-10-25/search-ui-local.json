@@ -1,0 +1,32 @@
+{
+  "site": "http://localhost:3102",
+  "passed": true,
+  "results": [
+    {
+      "route": "/blog",
+      "submit": true,
+      "results": true,
+      "clear": true,
+      "widths": [
+        375,
+        768,
+        1280
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/compare",
+      "submit": true,
+      "results": true,
+      "clear": true,
+      "widths": [
+        375,
+        768,
+        1280
+      ],
+      "overflow": false
+    }
+  ],
+  "emptySearch": true,
+  "scope": "Exact production build; isolated browser, not the logged-in demo store"
+}
