@@ -34,12 +34,16 @@ import { Integrations } from "./collections/Integrations";
 import { Changelog } from "./collections/Changelog";
 import { Comparisons } from "./collections/Comparisons";
 import { allEditorBlocks } from "./collections/blocks";
+import { payloadLoggerConfig } from "./lib/payload-logger";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
 const realpath = (value: string) => (fs.existsSync(value) ? fs.realpathSync(value) : "");
-const isCLI = process.argv.some((value) => realpath(value).endsWith(path.join("payload", "bin.js")));
+const isCLI = process.argv.some((value) => {
+  const resolved = realpath(value);
+  return resolved.endsWith(path.join("payload", "bin.js")) || resolved.endsWith(path.join("scripts", "migrate-cms.mjs"));
+});
 const isProduction = process.env.NODE_ENV === "production";
 
 export default (async () => {
@@ -50,6 +54,7 @@ export default (async () => {
         : getCloudflareContextFromWrangler());
 
   return buildConfig({
+    logger: payloadLoggerConfig(isProduction, isCLI),
     admin: {
       user: Users.slug,
       importMap: {
@@ -116,7 +121,7 @@ export default (async () => {
         }),
       ],
     }),
-    secret: (cloudflare.env as any)?.PAYLOAD_SECRET || process.env.PAYLOAD_SECRET || "",
+    secret: cloudflare.env.PAYLOAD_SECRET || process.env.PAYLOAD_SECRET || "",
     typescript: {
       outputFile: path.resolve(dirname, "payload-types.ts"),
     },
