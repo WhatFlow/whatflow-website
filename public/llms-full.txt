@@ -50,3 +50,5 @@
 
 ## Team Inbox and Feature Access
 WhatFlow Business API includes an enterprise-ready WhatsApp team inbox with no seat fees. All features are available across messaging plans; allowances and rates differ. AI is not currently included. Applicable Meta messaging charges are separate from app messaging allowances and usage fees. Theme-matched WhatsApp buttons are free forever.
+
+Meta product catalog sharing is available in WhatFlow Inbox. Shopify customer-segment/audience sync is upcoming and is not currently available.

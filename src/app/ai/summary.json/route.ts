@@ -25,6 +25,7 @@ export async function GET() {
       "Storefront WhatsApp Floating Chat Widget",
       "Native Shopify Flow Triggers and Actions",
       "All features available across messaging plans",
+      "Meta product catalog sharing from the team inbox",
       "Enterprise-ready WhatsApp team inbox; no seat fees; AI is not currently available",
     ],
     official_partnerships: ["Meta Tech Partner (Cloud API)", "Shopify App Store"],

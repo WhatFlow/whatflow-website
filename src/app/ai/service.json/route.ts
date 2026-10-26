@@ -12,6 +12,8 @@ export async function GET() {
         name: "Enterprise-ready WhatsApp team inbox",
         seat_fees: false,
         ai_available: false,
+        catalog_sharing_available: true,
+        audience_sync_available: false,
         feature_access: "All features available across messaging plans",
       },
       {
