@@ -31,3 +31,14 @@ Run `node --import tsx --test src/edge/marketing-cache.test.ts` to check request
 isolation, representation keys, failed-response handling and repeated-render
 avoidance. Production HIT/MISS verification demonstrates cache operation;
 CPU savings require subsequent production measurements.
+
+## Pre-rendered public templates
+
+OpenNext also reads the build-time HTML/Flight templates for eleven explicitly
+listed static public routes through the official Static Assets provider. The
+wrapper rejects `fetch` and composable entries, the revalidated homepage, CMS
+article routes and private/admin/API paths, and never writes runtime values.
+This preserves static-page navigation without caching app database reads.
+Use the existing `npm run deploy` / OpenNext deploy command so its built-in
+asset population step uploads these templates before Wrangler deploys them.
+The direct Wrangler command alone omits this required population step.
