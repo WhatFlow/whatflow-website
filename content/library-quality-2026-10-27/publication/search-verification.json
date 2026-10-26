@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "path": "/blog?q=catalog+sync",
+      "status": 200,
+      "expectedFound": true,
+      "noindex": true
+    },
+    {
+      "path": "/compare?q=Gorgias",
+      "status": 200,
+      "expectedFound": true,
+      "noindex": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "articles": 13,
+  "passed": true,
+  "reports": [
+    {
+      "slug": "shopify-whatsapp-catalog-support",
+      "allFiveGatesPassed": true,
+      "reportSha256": "2eb469992e6b2d8fadd9549dc4dfceb22738fa0744ae2293aacf900a443829cf"
+    },
+    {
+      "slug": "whatsapp-shipping-delays-shopify",
+      "allFiveGatesPassed": true,
+      "reportSha256": "b526b0c715136b6088f7eeb9a5e8faa1743579708174c1312130cca4ac62c831"
+    },
+    {
+      "slug": "whatsapp-returns-exchanges-shopify",
+      "allFiveGatesPassed": true,
+      "reportSha256": "be0373cc6e8cdb7e661da9c15bb2c475cafc35b92502636412fd5bc3d39329cb"
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "allFiveGatesPassed": true,
+      "reportSha256": "c91f7a941f246663b3400e119b78e31e3933fc470e01150f50301d7c94e10fd0"
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "allFiveGatesPassed": true,
+      "reportSha256": "3d5d2897bcc37cdbd0b8aa213bd1a01d24036fb2a9167dce6701b99a8273f692"
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "allFiveGatesPassed": true,
+      "reportSha256": "9c71add33b56d73a8ede2ac08685869002430bc2e30c378308b7841ba9dece26"
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "allFiveGatesPassed": true,
+      "reportSha256": "0ee0661efc162f9ecc543322d7afdaf4f6a47e8f78b81e9907530ec5b373756d"
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "allFiveGatesPassed": true,
+      "reportSha256": "6aba3d59808c17f5382b18cd3a640b4af917030385b20007969ed81d1a1996e4"
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "allFiveGatesPassed": true,
+      "reportSha256": "d674a907692c394d81d7e1916786e7132f8af16fa540ef6e4833d5813e921451"
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "allFiveGatesPassed": true,
+      "reportSha256": "450f1d292c21a97d559b91e8eddc08268c61ef55ee8343521a6be680c0ced109"
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "allFiveGatesPassed": true,
+      "reportSha256": "cd7fb97247a3f6f8313841b7d940550190fc4b286491741e24a715ada8771c34"
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "allFiveGatesPassed": true,
+      "reportSha256": "9f7b19349270a8f5349eb66a940dfe6013e57cd5a378b2c135996c7577b6f78d"
+    },
+    {
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "allFiveGatesPassed": true,
+      "reportSha256": "e96cdb7cef9d9eadd5e0917ff8a6e045210939df45ab8cd95984d997388202e5"
+    }
+  ]
+}

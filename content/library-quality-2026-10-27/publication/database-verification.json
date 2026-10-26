@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "counts": {
+    "posts": 61,
+    "comparisons": 106,
+    "revisions": 452,
+    "latest_published": 106,
+    "pending_drafts": 0
+  },
+  "foreignKeyViolations": 0
+}

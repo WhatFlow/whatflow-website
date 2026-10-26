@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-26T23:26:04.923430+00:00",
+  "workDate": "2026-10-27",
+  "workTimezone": "Asia/Karachi",
+  "site": "https://whatflow.tech",
+  "deployedWorkerVersion": "e675cde5-2c51-4b72-9753-ad629f428e3a",
+  "runtimeCommit": "19510ea",
+  "newPosts": 3,
+  "rewrittenPriorityComparisons": 8,
+  "availabilityClarifications": {
+    "posts": 1,
+    "comparisons": 1
+  },
+  "totalPublishedPosts": 61,
+  "totalPublishedComparisons": 106,
+  "unchangedExistingArticles": 154,
+  "allFiveGatesPassed": 13,
+  "reviewScores": {
+    "shopify-whatsapp-catalog-support": 92,
+    "whatsapp-shipping-delays-shopify": 93,
+    "whatsapp-returns-exchanges-shopify": 93,
+    "whatflow-vs-bitespeed": 93,
+    "whatflow-vs-zoko": 92,
+    "whatsapp-customer-segments-vs-generic-bulk-sending": 90,
+    "whatflow-vs-wati": 91,
+    "whatflow-vs-gorgias": 92,
+    "whatflow-vs-interakt": 91,
+    "whatflow-vs-aisensy": 93,
+    "whatflow-vs-dondy": 92,
+    "whatflow-vs-respond-io": 93,
+    "whatsapp-campaign-segmentation-shopify": 91
+  },
+  "automatedTests": {
+    "passed": 25,
+    "failed": 0
+  },
+  "buildPassed": true,
+  "typescriptPassed": true,
+  "focusedLintPassed": true,
+  "livePagesVerified": 13,
+  "publicAssetsVerified": 8,
+  "anonymousPagesVerified": 13,
+  "repeatedPublicPageCache": "HIT",
+  "comparisonRevisionsBefore": 443,
+  "comparisonRevisionsAfter": 452,
+  "latestPublishedSnapshots": 106,
+  "pendingDrafts": 0,
+  "foreignKeyViolations": 0,
+  "judgeMeResearch": {
+    "indexUrls": 273,
+    "bodyReadsThisRun": 3,
+    "completeBodyAudit": false
+  },
+  "backupSha256": "578c3492e416cde900b786481f26ecb2312bf45143a2a25b1c11c91d42f625c4",
+  "sqlSha256": {
+    "posts": "c656eda162eb28911e6d78d8193a6981a96f407d3b7e334386b3bbb2e2f487f8",
+    "comparisons": "c2decea8c2c9b72f2e49929a8e00d039475048460214863e827ec8f4496a9b0d"
+  },
+  "mobileCheck": {
+    "viewportWidth": 375,
+    "documentWidth": 375,
+    "pageOverflow": false
+  }
+}

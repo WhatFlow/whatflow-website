@@ -1,0 +1,202 @@
+[
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-bitespeed/preview/tablet-768.png",
+    "sha256": "065af469e68d37ad7a4833ead7430e20c5f3c64e63bfefce6235904bf63803f7",
+    "bytes": 1168029
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-bitespeed/preview/desktop-1280-dark.png",
+    "sha256": "e38163eacdf0a6fbd3ea96a8294b1bf6d86b729a6e9f17fb39d6103617a1e23d",
+    "bytes": 1192276
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-bitespeed/preview/desktop-1280.png",
+    "sha256": "c33b7392d1a739525f5e937ce4d0732a1d71dd1f27f77c30d4a254b579b77d2d",
+    "bytes": 1245169
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-bitespeed/preview/mobile-375.png",
+    "sha256": "cd519c3ad42625abb3510352dbfcc16752606a6b77c240d70896ecfe2ea5e08d",
+    "bytes": 1061134
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-zoko/preview/tablet-768.png",
+    "sha256": "1ab539ce3ea55d207be29d8d2b51b3a2d3c451ef82d02ef01748cff79e8f3753",
+    "bytes": 1128060
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-zoko/preview/desktop-1280-dark.png",
+    "sha256": "2276ed01abe6111a934879131f0e56b53c6b80ea4b97af8c71b8e811be880f0a",
+    "bytes": 1141308
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-zoko/preview/desktop-1280.png",
+    "sha256": "545b6904f48d0afda41018c6bec5931c09796ebf08478075f7208cb2cc74dd82",
+    "bytes": 1194858
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-zoko/preview/mobile-375.png",
+    "sha256": "ad7909382d6e6b1b7a4efadd1f37cef3dfdbd7bca4b95e00f19459bbe3c33ed0",
+    "bytes": 1030309
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatsapp-customer-segments-vs-generic-bulk-sending/preview/tablet-768.png",
+    "sha256": "fa462eba8fdf0cdc58af4bf7b308cb70141c8bd1715a149606c8d5caeefe4f1c",
+    "bytes": 1230909
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatsapp-customer-segments-vs-generic-bulk-sending/preview/desktop-1280-dark.png",
+    "sha256": "6cd084ade33cf37551f30d45912bac9c0553b7062e4031909c1a661be8763283",
+    "bytes": 1264695
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatsapp-customer-segments-vs-generic-bulk-sending/preview/desktop-1280.png",
+    "sha256": "87f01969d23e93afc52cfd1e4ff7c2b9166a2ade128b03905061e03fa054ceec",
+    "bytes": 1313820
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatsapp-customer-segments-vs-generic-bulk-sending/preview/mobile-375.png",
+    "sha256": "0e03c4ad73d43aa75e73918388c4d0563f83808c68206ae8774aa1e40eed59da",
+    "bytes": 1025345
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-wati/preview/tablet-768.png",
+    "sha256": "17f34e3233658c50f4d7773b87ab06036d42defb12d1bc75d9b5d7662bfed195",
+    "bytes": 1151402
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-wati/preview/desktop-1280-dark.png",
+    "sha256": "1906a64762181655f58268e4673b2179e04812fae6cd0602a1f2ca3d8add5f09",
+    "bytes": 1166822
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-wati/preview/desktop-1280.png",
+    "sha256": "07e91eba6c14d4121b1e89990f8c07316eb1029b88d7d82ce498da69f7000938",
+    "bytes": 1220259
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-wati/preview/mobile-375.png",
+    "sha256": "8c47fb535900983c99bc02cda2b3aaf2ac2857339fcf02e22d9267b68bc167a4",
+    "bytes": 1057822
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-gorgias/preview/tablet-768.png",
+    "sha256": "73a89adad952ea4872c82366d4bd7002c8e5734737bc00bc1890152b79fa1655",
+    "bytes": 1176304
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-gorgias/preview/desktop-1280-dark.png",
+    "sha256": "654437fe8b072424c011407a65916d6b1ebc8d6ef8e70af30a0938916ed16cf1",
+    "bytes": 1199878
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-gorgias/preview/desktop-1280.png",
+    "sha256": "c414f211bc583e197eef36731eb36fd3027f6eeea0410310938133e48e9a910b",
+    "bytes": 1254102
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-gorgias/preview/mobile-375.png",
+    "sha256": "0f550c2d578cd414d0dcee42e13a3bb21183d1efef295f45079f061098e6b86e",
+    "bytes": 1063466
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-interakt/preview/tablet-768.png",
+    "sha256": "7513cf8fb32874fa8cbc128f9949e14476fd352d94bd7203d447cd1c9ad80cc0",
+    "bytes": 1167685
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-interakt/preview/desktop-1280-dark.png",
+    "sha256": "97f12d27c1421cd6f45dcadc23b5f5d1fca22f4969fa1e800ea5ba2f978dbb99",
+    "bytes": 1183134
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-interakt/preview/desktop-1280.png",
+    "sha256": "ad8c6f2cba9b8c4d0b0633a16031c570d44c81dcb215a6ed661654fa9a1ddedc",
+    "bytes": 1239584
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-interakt/preview/mobile-375.png",
+    "sha256": "ed28558f163ca81f16a9682cd4537edef56800bc47995afccb41630e348c481a",
+    "bytes": 1077641
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-aisensy/preview/tablet-768.png",
+    "sha256": "a7829c6664813de85f242509a93f87c7887468733190da2f075da77668b2e83c",
+    "bytes": 1127872
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-aisensy/preview/desktop-1280-dark.png",
+    "sha256": "f8ab7979347bfe6e3c875f48ad7b3e7c2e21a2f03bb4983e45747f8df54c3ff6",
+    "bytes": 1142290
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-aisensy/preview/desktop-1280.png",
+    "sha256": "a89242c72342930f7d2d9cca98fa520ac75e3448461f2658c34cc454d57e2ac1",
+    "bytes": 1196903
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-aisensy/preview/mobile-375.png",
+    "sha256": "e7b89ae97a691498c5cc396ab641515a78c3b468d2537be62dcbeab0fe79ea56",
+    "bytes": 1044854
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-dondy/preview/tablet-768.png",
+    "sha256": "98415d7561e0f914df77569499c1d775c905c7ee6a63200363eb6806c5db9865",
+    "bytes": 1286101
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-dondy/preview/desktop-1280-dark.png",
+    "sha256": "d5750fc50a673cfdf28269329b12a8b2f8c9e182e41e80751a85eea00d07a88e",
+    "bytes": 1303825
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-dondy/preview/desktop-1280.png",
+    "sha256": "e58d37be85c89970d19cdacc92f3d0e322ad216d8c2596d05f025b2758918c68",
+    "bytes": 1366378
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-dondy/preview/mobile-375.png",
+    "sha256": "65b900e7b7882d8acf41e648994b2b89c0a0c8a546dea1362d26383977921f6e",
+    "bytes": 1155667
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-respond-io/preview/tablet-768.png",
+    "sha256": "c1c48d655dbee8e0d4307b48fc8374e3c39f454dadb0b1ffcf719fe959928262",
+    "bytes": 1158987
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-respond-io/preview/desktop-1280-dark.png",
+    "sha256": "fe71e8bcf842f3e8d822fc8b18deb246b030340e16e0a3d7cfd312685bb87476",
+    "bytes": 1174595
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-respond-io/preview/desktop-1280.png",
+    "sha256": "fa30ea19fcd762d66f621e8a85049e0fa3ceb6fcfa94967e7bb8791459b8dfc0",
+    "bytes": 1230521
+  },
+  {
+    "path": "/tmp/whatflow-quality-comparison-delivery/candidate/whatflow-vs-respond-io/preview/mobile-375.png",
+    "sha256": "21d12c49e79e9c053eaad42702a1f269ace8f22e46479d451589e5167ef26346",
+    "bytes": 1042538
+  },
+  {
+    "path": "/tmp/whatflow-quality-segmentation/candidate/whatsapp-campaign-segmentation-shopify/preview/tablet-768.png",
+    "sha256": "1377b8969058ee27350152eeae83bccbf244fb7b6a6915c6b71f0ae20bf87b40",
+    "bytes": 1066426
+  },
+  {
+    "path": "/tmp/whatflow-quality-segmentation/candidate/whatsapp-campaign-segmentation-shopify/preview/desktop-1280-dark.png",
+    "sha256": "c76f1f6d0d73e83d5a89160654bf485f856b4c16e6c591cd42f49bb6fc509967",
+    "bytes": 1085634
+  },
+  {
+    "path": "/tmp/whatflow-quality-segmentation/candidate/whatsapp-campaign-segmentation-shopify/preview/desktop-1280.png",
+    "sha256": "1b66bb35a7a41459cf113348b35e88ceb8de0120bc906a5f83eec29519aeb94f",
+    "bytes": 1130547
+  },
+  {
+    "path": "/tmp/whatflow-quality-segmentation/candidate/whatsapp-campaign-segmentation-shopify/preview/mobile-375.png",
+    "sha256": "dcd9afa9bd0c371f5a783f292703fd140b868958bb0a3dbc7214a5fd0aa58054",
+    "bytes": 916547
+  }
+]

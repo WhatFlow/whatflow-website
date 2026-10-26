@@ -1,0 +1,223 @@
+{
+  "checkedAt": "2026-10-26T23:21:30.297Z",
+  "passed": true,
+  "collections": [
+    {
+      "collection": "posts",
+      "count": 61,
+      "verifiedCandidates": 4,
+      "untouchedExisting": 57
+    },
+    {
+      "collection": "comparisons",
+      "count": 106,
+      "verifiedCandidates": 9,
+      "untouchedExisting": 97
+    }
+  ],
+  "pages": [
+    {
+      "path": "/blog/whatsapp-shipping-delays-shopify",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "cab7ba916c265ec9f21fb89219e5a7cb85668fd25f3109c67a9b5fb2a1650359",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/blog/whatsapp-returns-exchanges-shopify",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "be96925dd8b9b6a59618aaefa4042c9e22f82ebd45ae80797b4ca88547da08fd",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/blog/shopify-whatsapp-catalog-support",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "04f02ef19863efef895344ba5b284aa01213c551c884c23929c4c0965b00690c",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/blog/whatsapp-campaign-segmentation-shopify",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "4cd17b4173b529f94af9ff6abe429a007d5efa6e0c9e908c46b9a6e2baa29bdb",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/compare/whatflow-vs-wati",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "4cbaa40f7e3d22f7c7a9a18e7d4639358b8132911cd704c0b119eef60431c6a0",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/compare/whatflow-vs-interakt",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "d468022651e6cff169f634baa981e5f37eb2819a8020c9ba93669c618aa81eea",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/compare/whatflow-vs-zoko",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "371cc4db4fccf42da73cc0b7cd7576bc9e01419edda96a1e8ce8dd20dbc14934",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/compare/whatflow-vs-dondy",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "e62107db2115271d4002b6ac90b2d42f634aba397a99d40f5624a2b0a76405f0",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/compare/whatflow-vs-bitespeed",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "c434a8c91602acf8edf840e46aa2668715e6f4413147e6ccf539a2d190d70016",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/compare/whatflow-vs-aisensy",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "7c687e0fe165dbf733e2f3e7e8b51e65735e5a6c3ec339bcfc5675bb4962898a",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/compare/whatflow-vs-respond-io",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "9b22f48a09a419afe873012c63bc2cfb913e718ee46e583c834ea4bfe690d5c5",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/compare/whatflow-vs-gorgias",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "92d52a918385e90345a6badc832ef36cd46712ab7cdc30a4d26396373b810aa1",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    },
+    {
+      "path": "/compare/whatsapp-customer-segments-vs-generic-bulk-sending",
+      "status": 200,
+      "oneH1": true,
+      "selfCanonical": true,
+      "indexable": true,
+      "modifiedTime": "2026-10-26T22:54:49.860Z",
+      "sha256": "961316fda545abe4fc5fee1140007aeacfbfc91fe30cf7c122845caf687a4476",
+      "anonymousContentCurrent": true,
+      "anonymousCacheStatus": "MISS"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/blog/product-proof/catalog-sync-controls.jpg",
+      "status": 200,
+      "bytes": 41477,
+      "sha256": "17feb428750e7dab9f5f98492535bae51ee89f6ec803356c74b26bfaabcbe951"
+    },
+    {
+      "path": "/blog/product-proof/return-reply-draft.jpg",
+      "status": 200,
+      "bytes": 72023,
+      "sha256": "09931e6759f1aaffa1b1532fc6fb067c3b7e97afa1004ffd276f0725ad5e86bd"
+    },
+    {
+      "path": "/blog/product-proof/shipping-reply-draft.jpg",
+      "status": 200,
+      "bytes": 66205,
+      "sha256": "a8e30c94d83d069bd5f84066ce03feb28baea3d779073f4cb8f5a54ef2b8964b"
+    },
+    {
+      "path": "/blog/product-proof/theme-button-controls.jpg",
+      "status": 200,
+      "bytes": 81301,
+      "sha256": "98f3e7c92ad7492c30e8c8f9588f39aa10df2564deabf4ee5f32d27d925adbd0"
+    },
+    {
+      "path": "/blog/product-proof/inbox-assignment-filters.jpg",
+      "status": 200,
+      "bytes": 34512,
+      "sha256": "acff8a05c7fcdbac2b894f478d7778d05fb2b9533065a78c74c431d3e748a2b7"
+    },
+    {
+      "path": "/thumbnails/blog/shopify-whatsapp-catalog-support.webp",
+      "status": 200,
+      "bytes": 31028,
+      "sha256": "c6fc268308cd8f2517749c8a885010548c2577559453c951c4e3c7f184334ad3"
+    },
+    {
+      "path": "/thumbnails/blog/whatsapp-returns-exchanges-shopify.webp",
+      "status": 200,
+      "bytes": 32526,
+      "sha256": "15532d2296ccb3ac4610fe8c2813a99c7ed94a26708183cf0a9d063208cb5285"
+    },
+    {
+      "path": "/thumbnails/blog/whatsapp-shipping-delays-shopify.webp",
+      "status": 200,
+      "bytes": 33428,
+      "sha256": "fd066f538cf4ef5eb44fd00842356e4ca22ef6bf36c6dfdcca0dec473eff92b9"
+    }
+  ],
+  "payloadReadDefaults": {
+    "screenshot": {
+      "width": 1440,
+      "height": 900
+    },
+    "relationships": "compared by native IDs across API population depths"
+  },
+  "sitemapCoverage": true,
+  "missingRateEstimate": "software subtotal, Meta excluded",
+  "repeatedPublicPageCache": "HIT"
+}

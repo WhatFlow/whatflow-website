@@ -1,0 +1,36 @@
+(node:41849) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ the production schema gap is repaired without changing published rows or revision history (5.939666ms)
+✔ legacy media alt text is copied while existing files and IDs are preserved (5.856791ms)
+✔ schema validation blocks a deployment when migration history hides a missing table (2.853833ms)
+✔ matches words across title, body, FAQs and tags and ranks the exact title first (1.11125ms)
+✔ normalizes punctuation and accents without discarding non-English words (0.59475ms)
+✔ searches later CMS pages before paginating results and clamps stale page numbers (0.110292ms)
+✔ empty matches and broken pagination do not invent results or loop forever (0.186584ms)
+✔ blog and comparison searches retain published/category filters and use bounded shared CMS pages (13.839ms)
+✔ production warnings and full error stacks each occupy one JSON log line (2.589375ms)
+✔ local development and migration CLI retain their normal logger (0.086792ms)
+✔ an unavailable Meta rate produces a software subtotal rather than a zero-fee combined quote (13.856417ms)
+✔ preserves comparison facts, links, tables and quotes as native editable nodes (10.494292ms)
+✔ maps owned guide images and rejects active or unknown content (0.897833ms)
+✔ frontmatter preserves original dates and published body has no duplicate H1 (0.306875ms)
+✔ retains takeaway lists nested in Markdown blockquotes (0.283875ms)
+✔ decodes Markdown table entities before native text rendering (0.261042ms)
+Marketing page cache write failed
+✔ a repeated public page avoids rendering and preserves the body, Vary and security headers (13.338708ms)
+✔ navigation, authenticated, search, preview and unknown routes never read or populate the page cache (2.628959ms)
+✔ release, browser, content negotiation and theme variants cannot share rendered responses (1.074208ms)
+✔ only successful public representations are stored (0.552708ms)
+✔ HEAD can reuse GET but cannot seed an empty page; missing versions bypass (0.230125ms)
+✔ cache outages fail open without losing a successful origin response (0.507958ms)
+✔ pricing and listings have shorter freshness windows; feeds and details are cacheable (0.319584ms)
+✔ only public static templates reach the read-only build cache (1.4395ms)
+✔ runtime writes and invalidations cannot change the static store (0.213292ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1201.556167
