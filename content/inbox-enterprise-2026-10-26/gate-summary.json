@@ -1,0 +1,243 @@
+{
+  "checkedAt": "2026-10-26T15:50:13.993477+00:00",
+  "expected": 13,
+  "passed": 13,
+  "pending": [],
+  "allPassed": true,
+  "results": [
+    {
+      "slug": "shared-team-inbox-small-shopify-business",
+      "score": 92,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "shared-team-inbox-small-shopify-business.md": "73c9122703cbbc60cc158a129f9119ee5b539eaa38c371b66a41b16e4722cf1f",
+        "shared-team-inbox-small-shopify-business.html": "6f02aaeaf137d5d932fd1966014218009b1207629678b6336f880bb44e99a589",
+        "shared-team-inbox-small-shopify-business.pdf": "060926e2b740930c66c09cb15ec4d14cbb088ed23aeb8bcfa7554a708a66f2f5",
+        "hero.webp": "2f992d53d1e95a25f8fbb1fcd5e76a5a6514dadb25314faf3103ad4dfbf35291"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/shared-team-inbox-small-shopify-business"
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "score": 90,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "small-shopify-store-whatsapp-vs-enterprise-suite.md": "39e8f499ec6faa785c84471ca575fc2e04000a6ddeae401fdf5d9373f783ed96",
+        "small-shopify-store-whatsapp-vs-enterprise-suite.html": "52c2e699e12ba1b728ef46bcdb144c2082bdd28b7481df6ffdccf283d38aae85",
+        "small-shopify-store-whatsapp-vs-enterprise-suite.pdf": "84b5f9d9a7267bfdcb03ca912c9db314fcfc5c3648ea56b61b99b9ca743035b8",
+        "hero.webp": "c88e1913a9c3d9496c1bc9862b283ec8cb86e34e18d5c6b8db1043e669ba8d5e"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/small-shopify-store-whatsapp-vs-enterprise-suite"
+    },
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "score": 91,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-chat-automation-vs-business-api.md": "dd6591b756bd139632f75a19a56f4ddfc4011d99a023854b9ebe6e80402411f0",
+        "whatflow-chat-automation-vs-business-api.html": "f6710c3751b18c45d161d113a977dea7bec18e8c45afc56383a265c6b66ead79",
+        "whatflow-chat-automation-vs-business-api.pdf": "03c914de2529cf44b7265577867bef8ad690b899a6c03cbcab935e119263e80e",
+        "hero.webp": "e5cec7f3ce20ea926c6a23677df239c0d65137525284689ebf94fc8104ab2ea8"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-chat-automation-vs-business-api"
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "score": 90,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-vs-crisp.md": "788f435e6a4bd9e6b495328d186e6841d09ed3e7712fe6f47bb4b4a450202990",
+        "whatflow-vs-crisp.html": "b266ca71c6b7e0f57a6f1fc6490cf6ebf19473615a26986d573e88e1ac27fac4",
+        "whatflow-vs-crisp.pdf": "2a548d6bcca3171b85b60f6ec8a939b006e0b142ca8e6dd454533f84d7f501fe",
+        "hero.webp": "1e159c566799233caa8a5d980ab3cad82fa477f21b2bb0cb23f3397314c0035e"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-vs-crisp"
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "score": 91,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-vs-delightchat.md": "4d7fc089fbec66ca8ce11e2334449a494ea7de39a061a9b20036c535d65bf775",
+        "whatflow-vs-delightchat.html": "f59090f794553e4bf60900a9a9fa7dc4a35fac582111f0c422319b1758f671aa",
+        "whatflow-vs-delightchat.pdf": "2c913422cd854c933c679a071af765d7d936cba6a5969a6609b9cd15d4a7774a",
+        "hero.webp": "5ff96869084d5186077852167b68e466e8c9c24069e9a2170589989b3cd4185b"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-vs-delightchat"
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "score": 90,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-vs-freshchat.md": "ce7d291a2c32609fb53a0de3a32a8b0052acf2b01a3a3a8444f9e8b9a950e549",
+        "whatflow-vs-freshchat.html": "54a48e72c46e643b96302d700e8adc6578e6844a4666d872f315393248c0f4f1",
+        "whatflow-vs-freshchat.pdf": "c090ac05e498533d519ffbcf1edc61fb60f374a8b361863bb9f305fa7244a680",
+        "hero.webp": "a68f0c6028f38974f4f66c150e87abc0a324740ee4a404586847fcf65666244e"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-vs-freshchat"
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "score": 90,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-vs-front.md": "1173f041c2277c5600ad443b23f78321298f3f77c69f22efe2965241029817b3",
+        "whatflow-vs-front.html": "54c805d674f61c99f44be648ebd7afeb73f18e12fea447fe259e6de0af8f003d",
+        "whatflow-vs-front.pdf": "d8fa63e7cefc0f40f6e472bdc129e8a72295d00302ccb1db78407f4ea97d9aa8",
+        "hero.webp": "65766a02ae0ccb2a384077c23759b22d547eaefb35047f7f611a68ee368c11fc"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-vs-front"
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "score": 91,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-vs-gorgias.md": "8e2cf1876dd6c9c1ecf7ee7d8b481af469aec421df2f246294842f4b67c92403",
+        "whatflow-vs-gorgias.html": "d0672e82a70e25350fde8c8bca3540c69049e7a117dbb998c841a3193f2579ab",
+        "whatflow-vs-gorgias.pdf": "25024ffabafa799c8c0725621733bd634e5bee27961e98eee1d5ac9df5dc8f7b",
+        "hero.webp": "4987d0b6f674ca75ba5ebb20be3c1d75557365309c71d2548d1e9a883c08e572"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-vs-gorgias"
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "score": 90,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-vs-help-scout.md": "91801256a0e3011a1b45125a03b7d46bd56d6ec40547efd9f1c2b7c665af5384",
+        "whatflow-vs-help-scout.html": "1f558b8a40f050a56b23b7aa14498792f9e7ae332da6ddad8277528f75f33824",
+        "whatflow-vs-help-scout.pdf": "a0bb3e7983acf298cbe4712847c206cb9075351bf122ee9584f5ac04f005fc37",
+        "hero.webp": "eadd5bd74f226714300bf1e4c99033766ac61e32f0480a1b2a5d34ac174507b5"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-vs-help-scout"
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "score": 90,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-vs-trengo.md": "4d4529f60916fc056c42d6c02cb5f72df6da7782aeb8619113050129ca8480b9",
+        "whatflow-vs-trengo.html": "fcd5501bd24cf363c3666fb0f27cdd6c4eef0cf3d79ab50fe9da32995eca27bb",
+        "whatflow-vs-trengo.pdf": "ef559b66099f7b66b7981d3d2d75b4c5a4c1177ae7f55d1273bd166dbedcb646",
+        "hero.webp": "bd2748256e21140b1f76c03d24238c209aba6cddceee4158ea1e579a8008a13f"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-vs-trengo"
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "score": 91,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-vs-zendesk.md": "a044459d97e2a253ff198f1ab10a3e026164d82c0bcccb632a0512fbaf8ad942",
+        "whatflow-vs-zendesk.html": "ab447cbb9c045637e44f41ff8e4442e27c62cc0cc385c4446fa1cfb0afa5e82e",
+        "whatflow-vs-zendesk.pdf": "bacacc64ad03b9bc18bcb5c791ad99cc29ded4d836f86a1e1e3c43531b3cc0a4",
+        "hero.webp": "7008d2aa0c3e25a0179836bdfc00a81903a844386ae3c5628c56f8ced8b04533"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-vs-zendesk"
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "score": 90,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatflow-vs-zoho-desk.md": "e548c3fc751a3382d3e469aa7f88abc5c6fd33aa19be3371619ae371c35626aa",
+        "whatflow-vs-zoho-desk.html": "5cfde6f3d3d00c3f39a98a7c89673bea99a165424fa5136ef0af31527a3ed09f",
+        "whatflow-vs-zoho-desk.pdf": "8a557930f440dc1585c07e85d2b0554d3e5b8e61311297ac57d8b43d00d3575c",
+        "hero.webp": "8133e6c7ffb28975b2ed9217d048a8400acfe22887676b30e0ad2735d84c1c37"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatflow-vs-zoho-desk"
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "score": 90,
+      "gatesPassed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hashes": {
+        "whatsapp-inbox-vs-helpdesk-tickets.md": "c77001856948e7aeedca3a1134558b48e4ec6961bb793471e5336f0f5b7972b3",
+        "whatsapp-inbox-vs-helpdesk-tickets.html": "a8dacf248195d307a2cc71c62d98936f21de7a93a0b01709f751feb0e2a140a6",
+        "whatsapp-inbox-vs-helpdesk-tickets.pdf": "7de9a6afa1573a8774fecd1b6ff87a4ee96c1b578557cd550b0211c2682c590a",
+        "hero.webp": "96e45f2f76ecd97db36bcc1d4a31fd2e50bc241bdcc1f2381831c65882f9f8ab"
+      },
+      "artifactDirectory": "/tmp/whatflow-enterprise-delivery/candidate/whatsapp-inbox-vs-helpdesk-tickets"
+    }
+  ]
+}

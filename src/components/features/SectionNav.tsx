@@ -10,7 +10,7 @@ const NAV_ITEMS = [
   { id: "broadcasts", label: "Broadcast Engine" },
   { id: "shopify-functions", label: "COD & Functions" },
   { id: "flows-integration", label: "Shopify Flow" },
-  { id: "flowsense-otp", label: "AI & OTP" },
+  { id: "flowsense-otp", label: "Inbox & OTP" },
   { id: "analytics", label: "6-Tab Analytics" },
   { id: "message-editor", label: "Template Editor" },
   { id: "edge-architecture", label: "Speed & Uptime" },

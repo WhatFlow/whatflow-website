@@ -17,9 +17,9 @@ import { InboxCTA } from "@/components/inbox-page/InboxCTA";
 import { ReviewsSection } from "@/components/ReviewsSection";
 
 export const metadata: Metadata = {
-  title: "WhatFlow Inbox — 2-Way WhatsApp Support Chat & Shopify Customer Context",
+  title: "WhatFlow Inbox — Enterprise-Ready WhatsApp Support for Shopify",
   description:
-    "A dedicated, ultra-fast 2-way WhatsApp customer support inbox built for Shopify. Instant live chat, 11 message types, 24-hour Meta care window countdown, customer order history sidebar, and 99.9% uptime.",
+    "An enterprise-ready WhatsApp team inbox built for Shopify. Native extensions, customer order context, all features on every plan and no seat fees.",
   keywords: [
     "WhatsApp Shopify live chat",
     "WhatsApp customer support inbox",

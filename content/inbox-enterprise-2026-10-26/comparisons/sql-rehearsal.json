@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-26T15:38:57.039798+00:00",
+  "database": "isolated in-memory SQLite",
+  "inputs": {
+    "sql": {
+      "path": "/tmp/whatflow-enterprise-comparisons.sql",
+      "sha256": "30d40436acc1f5e114f1de18fbf022d08ff8217c0d016ffcc060792e5b51fe22"
+    },
+    "backup": {
+      "path": "/tmp/whatflow-before-enterprise-comparisons.sql",
+      "sha256": "b927d141514986c169e0b46e9c7599e56ce520e17cb6bceb895b77a7f67ae92d"
+    },
+    "schema": {
+      "path": "/Users/safwan/ShopifyApps/whatflowApps/whatflow-web/scripts/comparisons-schema.sql",
+      "sha256": "2f39f63c6ce7e92104bdd06c550c53c448071a12f57208b56fbbd3addb09efc2"
+    },
+    "candidates": {
+      "path": "content/inbox-enterprise-2026-10-26/comparisons/candidate-documents.json",
+      "sha256": "fedcb6e91a871966b31f446082ecfeb4e61a068e7303865130c2737517c1a470"
+    }
+  },
+  "firstApply": {
+    "phase": "first apply",
+    "comparisons": 106,
+    "historicalVersionsPreserved": 431,
+    "newVersions": 12,
+    "totalVersions": 443,
+    "arrayCellsChecked": 399,
+    "foreignKeyViolations": 0,
+    "latestPublishedSnapshotsMatched": 12
+  },
+  "repeatApply": {
+    "phase": "repeat apply",
+    "comparisons": 106,
+    "historicalVersionsPreserved": 431,
+    "newVersions": 12,
+    "totalVersions": 443,
+    "arrayCellsChecked": 399,
+    "foreignKeyViolations": 0,
+    "latestPublishedSnapshotsMatched": 12
+  },
+  "idempotent": true,
+  "sqlScope": {
+    "writtenTables": [
+      "_comparisons_v",
+      "_comparisons_v_rels",
+      "_comparisons_v_version_faqs",
+      "_comparisons_v_version_feature_table",
+      "_comparisons_v_version_sources",
+      "comparisons",
+      "comparisons_faqs",
+      "comparisons_feature_table"
+    ],
+    "rejectedOperations": [],
+    "schemaWritesAllowed": false,
+    "nonComparisonWritesAllowed": false
+  },
+  "protected": [
+    "original IDs/slugs/publication and creation dates/authors/status",
+    "all original comparison relations",
+    "all historical version content and metadata except latest flags",
+    "all historical version child arrays and relations"
+  ]
+}

@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
 
 export function InboxHero() {
@@ -16,7 +15,7 @@ export function InboxHero() {
         <div className="flex flex-wrap items-center justify-center gap-3">
           <div className="px-4 py-1.5 rounded-full bg-[#1ed760]/15 border border-[#1ed760]/30 text-[#1ed760] text-xs font-bold uppercase tracking-wider flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#1ed760] animate-ping" />
-            LIVE 2-WAY SUPPORT WORKSPACE
+            ENTERPRISE-READY SUPPORT WORKSPACE
           </div>
 
           <div className="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-semibold flex items-center gap-2">
@@ -34,12 +33,12 @@ export function InboxHero() {
         {/* Headline & Description */}
         <div className="text-center max-w-4xl mx-auto space-y-5">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-display font-black tracking-tight leading-[1.05] uppercase">
-            THE FASTEST 2-WAY <span className="text-[#1ed760]">WHATSAPP INBOX</span> FOR SHOPIFY.
+            ENTERPRISE-READY <span className="text-[#1ed760]">WHATSAPP INBOX.</span> BUILT FOR SHOPIFY.
           </h1>
 
           <p className="text-base sm:text-xl text-gray-400 font-normal leading-relaxed max-w-2xl mx-auto">
-            Lightning-fast real-time chat, instant Shopify Admin 1-click access,
-            and full customer order history at your fingertips.
+            Bring your whole support team together with Shopify order context,
+            native extensions and real-time conversations. Every feature on every plan. No seat fees.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -66,8 +65,8 @@ export function InboxHero() {
         {/* 4 Feature Spec Badges */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto pt-4">
           <div className="p-4 rounded-2xl bg-[#181818] border border-white/10 text-center space-y-1">
-            <div className="text-2xl font-black font-display text-[#1ed760]">&lt; 1 Sec</div>
-            <div className="text-[11px] uppercase font-bold text-gray-400">Response Speed</div>
+            <div className="text-2xl font-black font-display text-[#1ed760]">No Fees</div>
+            <div className="text-[11px] uppercase font-bold text-gray-400">Per Inbox Seat</div>
           </div>
           <div className="p-4 rounded-2xl bg-[#181818] border border-white/10 text-center space-y-1">
             <div className="text-2xl font-black font-display text-white">11 Types</div>

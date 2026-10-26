@@ -44,11 +44,11 @@ export function InboxRoadmap() {
           <div className="p-6 rounded-3xl bg-[#121212] border border-white/10 space-y-3 relative">
             <span className="text-2xl mb-2 block">🤖</span>
             <span className="text-[10px] font-mono bg-[#1ed760]/20 text-[#1ed760] px-2 py-0.5 rounded">
-              Q1 2027
+              PLANNED
             </span>
             <h3 className="font-display font-black text-lg uppercase text-white">AI Agent Copilot</h3>
             <p className="text-xs text-gray-400 leading-relaxed">
-              One-click AI response suggestions based on your return policy, order status, and inventory levels in Shopify.
+              AI is not available in the current inbox. Suggested replies are a planned enhancement; availability has not been announced.
             </p>
           </div>
         </div>

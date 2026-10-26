@@ -111,7 +111,7 @@ export function getSoftwareApplicationSchema() {
         price: "0",
         priceCurrency: "USD",
         priceValidUntil: "2027-12-31",
-        description: "Free tier including basic chat widget, manual recovery links, and community support.",
+        description: "All features included, with a free messaging allowance and no inbox seat fees. Applicable Meta messaging charges are separate.",
       },
       {
         "@type": "Offer",
@@ -119,7 +119,7 @@ export function getSoftwareApplicationSchema() {
         price: "4.99",
         priceCurrency: "USD",
         priceValidUntil: "2027-12-31",
-        description: "Official Meta Cloud API connection, automated cart recovery, and COD verification.",
+        description: "All features included, with Starter messaging allowances and rates. No inbox seat fees; applicable Meta messaging charges are separate.",
       },
       {
         "@type": "Offer",
@@ -127,7 +127,7 @@ export function getSoftwareApplicationSchema() {
         price: "19.99",
         priceCurrency: "USD",
         priceValidUntil: "2027-12-31",
-        description: "Shopify Flow action blocks, unlimited broadcast campaigns, review sync, and AI support.",
+        description: "All features included, with Growth messaging allowances and rates. No inbox seat fees; applicable Meta messaging charges are separate.",
       },
       {
         "@type": "Offer",
@@ -135,7 +135,7 @@ export function getSoftwareApplicationSchema() {
         price: "49.99",
         priceCurrency: "USD",
         priceValidUntil: "2027-12-31",
-        description: "Dedicated Meta account manager, custom workflow automations, and priority 24/7 SLA.",
+        description: "All features included, with Scale messaging allowances and rates. No inbox seat fees; applicable Meta messaging charges are separate.",
       },
     ],
     featureList: [
@@ -144,8 +144,9 @@ export function getSoftwareApplicationSchema() {
       "Real-time Shipping Tracking & Fulfillment Notifications",
       "WhatsApp Photo Review & UGC Collection (Judge.me & Loox sync)",
       "Native Shopify Flow Trigger & Action Blocks",
+      "All features available across plans; AI is not included",
       "0% markup on official Meta Cloud API rates",
-      "24/7 AI Customer Support Auto-Replies with RAG Store Context",
+      "Enterprise-ready WhatsApp team inbox with no seat fees",
     ],
     aggregateRating: {
       "@type": "AggregateRating",

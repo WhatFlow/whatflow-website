@@ -22,7 +22,7 @@ export function InboxCTA() {
         </div>
 
         <div className="px-3.5 py-1 rounded-full bg-[#1ed760]/15 border border-[#1ed760]/30 text-[#1ed760] text-xs font-bold uppercase tracking-wider inline-block">
-          14-DAY FREE TRIAL • NO CREDIT CARD REQUIRED
+          FREE PLAN AVAILABLE • NO SEAT FEES
         </div>
 
         <h2 className="text-[34px] sm:text-[50px] font-display font-black uppercase tracking-tight leading-tight">
@@ -30,8 +30,9 @@ export function InboxCTA() {
         </h2>
 
         <p className="text-gray-400 font-normal text-base sm:text-lg max-w-xl mx-auto">
-          Start chatting with customers, recovering checkouts, and verifying COD orders in 3 minutes.
-          Zero Meta markup, 99.9% uptime guarantee.
+          Give your team an enterprise-ready WhatsApp workspace connected to Shopify.
+          Every plan includes the full feature set; messaging allowances and rates vary.
+          Applicable Meta messaging charges are separate.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-4">

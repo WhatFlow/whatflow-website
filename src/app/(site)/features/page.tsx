@@ -67,7 +67,7 @@ export default function FeaturesPage() {
       {/* 9. Native Shopify Flow Action Blocks */}
       <ShopifyFlowIntegration />
 
-      {/* 10. FlowSense™ AI & Instant Meta OTP Verification */}
+      {/* 10. Team Inbox & Meta OTP Verification */}
       <FlowSenseOtp />
 
       {/* 11. 6-Tab Deep Analytics Suite */}

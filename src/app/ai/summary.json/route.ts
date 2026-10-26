@@ -5,7 +5,7 @@ export async function GET() {
     name: "WhatFlow",
     headline: "WhatsApp Marketing & Automation Suite for Shopify Stores",
     description:
-      "WhatFlow connects Shopify stores to the official Meta WhatsApp Cloud API with zero markup on Meta conversation rates, 98% open-rate abandoned cart recovery, 1-click COD confirmation, and 24/7 AI chatbot customer support.",
+      "WhatFlow connects Shopify stores to the official Meta WhatsApp Cloud API with zero markup on Meta conversation rates, 98% open-rate abandoned cart recovery, 1-click COD confirmation, and an enterprise-ready WhatsApp team inbox without seat fees.",
     url: "https://whatflow.tech",
     category: "eCommerce Software / Shopify App",
     platform: "Shopify",
@@ -14,7 +14,8 @@ export async function GET() {
       starting_price: "$0",
       paid_plans: ["Starter ($4.99/mo)", "Growth ($19.99/mo)", "Scale ($49.99/mo)"],
       meta_rates_markup: "0%",
-      trial: "7-day full feature trial",
+      feature_access: "All features available across plans",
+      inbox_seat_fees: "None",
     },
     capabilities: [
       "Abandoned Cart Recovery (up to 25% recovery rate)",
@@ -22,8 +23,9 @@ export async function GET() {
       "Automated Shipping Tracking & Delivery Updates",
       "WhatsApp Review & UGC Collection (Judge.me & Loox)",
       "Storefront WhatsApp Floating Chat Widget",
-      "Native Shopify Flow Action Blocks",
-      "2-Way Live Chat Support Inbox with 24/7 AI Auto-Replies",
+      "Native Shopify Flow Triggers and Actions",
+      "All features available across messaging plans",
+      "Enterprise-ready WhatsApp team inbox; no seat fees; AI is not currently available",
     ],
     official_partnerships: ["Meta Tech Partner (Cloud API)", "Shopify App Store"],
   };
@@ -31,7 +33,7 @@ export async function GET() {
   return NextResponse.json(data, {
     headers: {
       "Content-Type": "application/json",
-      "Cache-Control": "public, max-age=86400",
+      "Cache-Control": "public, max-age=300",
     },
   });
 }

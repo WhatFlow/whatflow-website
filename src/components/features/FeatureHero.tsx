@@ -45,8 +45,8 @@ export function FeatureHero() {
           </h1>
 
           <p className="text-base sm:text-lg text-[#222222] font-medium leading-relaxed max-w-2xl">
-            From 1-click COD verification and 11-step fulfillment tracking to AI-powered auto-replies,
-            3-sequence cart recovery, and Shopify checkout rules. Delivered instantly with 99.9% uptime.
+            Bring COD verification, fulfillment updates, cart recovery and customer replies together.
+            Native Shopify integration and an enterprise-ready inbox, with every feature on every plan.
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">

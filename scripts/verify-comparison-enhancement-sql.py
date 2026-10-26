@@ -62,17 +62,24 @@ def snapshot(db):
 def verify(db, candidates, before, phase):
     current = rows(db, 'comparisons')
     require(len(current) == 106, f'{phase}: expected 106 main rows')
-    require(len(candidates) == 106, 'Expected exactly 106 candidate documents')
+    require(0 < len(candidates) <= len(current), 'Expected a nonempty candidate subset')
     by_id = {row['id']: row for row in current}
     original = {row['id']: row for row in before['comparisons']}
     require(set(by_id) == set(original), f'{phase}: main IDs changed')
-    require({doc['id'] for doc in candidates} == set(by_id), 'Candidate IDs differ from backup')
+    candidate_ids = {doc['id'] for doc in candidates}
+    require(len(candidate_ids) == len(candidates) and candidate_ids <= set(by_id), 'Candidate IDs differ from backup')
+    for row_id in set(by_id) - candidate_ids:
+        require(by_id[row_id] == original[row_id], f'{phase}: untouched comparison changed: {row_id}')
+    for suffix in ['feature_table', 'faqs', 'sources']:
+        table = 'comparisons_' + suffix
+        untouched = lambda values: stable([r for r in values if r['_parent_id'] not in candidate_ids])
+        require(untouched(rows(db, table)) == untouched(before[table]), f'{phase}: untouched child rows changed: {table}')
     version_rows = rows(db, '_comparisons_v')
     expected_versions = len(before['_comparisons_v']) + len(candidates)
     require(len(version_rows) == expected_versions, f'{phase}: expected {expected_versions} versions, got {len(version_rows)}')
     versions = {row['id']: row for row in version_rows}
     old_versions = {row['id']: row for row in before['_comparisons_v']}
-    require(len(set(versions) - set(old_versions)) == 106, f'{phase}: expected 106 new versions')
+    require(len(set(versions) - set(old_versions)) == len(candidates), f'{phase}: wrong new version count')
     for version_id, old in old_versions.items():
         require(version_id in versions, f'{phase}: historical version removed: {version_id}')
         require({k:v for k,v in old.items() if k != 'latest'} ==
@@ -138,8 +145,8 @@ def verify(db, candidates, before, phase):
     violations = list(db.execute('PRAGMA foreign_key_check'))
     require(not violations, f'{phase}: foreign-key violations: {violations[:5]}')
     return {'phase': phase, 'comparisons':len(current), 'historicalVersionsPreserved':len(old_versions),
-            'newVersions':106, 'totalVersions':len(version_rows), 'arrayCellsChecked':checked_cells,
-            'foreignKeyViolations':0, 'latestPublishedSnapshotsMatched':106}
+            'newVersions':len(candidates), 'totalVersions':len(version_rows), 'arrayCellsChecked':checked_cells,
+            'foreignKeyViolations':0, 'latestPublishedSnapshotsMatched':len(candidates)}
 
 
 def guard(db, audit):

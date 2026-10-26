@@ -1,0 +1,304 @@
+{
+  "summary": {
+    "reviewedComparisons": 106,
+    "reviewedPosts": 58,
+    "affectedComparisons": 12,
+    "affectedPosts": 1,
+    "finding": "Some comparisons impose an unsupported ceiling on WhatFlow's inbox by reserving complex cases, larger teams or enterprise support for competing platforms. These targeted edits distinguish enterprise inbox capability from broader CRM, AI, voice and multichannel scope.",
+    "evidence": "Safwan Adnan, WhatFlow co-founder and CEO, confirmed on 2026-10-26 that WhatFlow Business API's inbox is enterprise-ready, with AI excluded. This founder clarification does not independently establish named certifications, specific governance controls, SLAs or individual feature parity. Keep this evidence date in the audit record rather than repeating it in public prose.",
+    "unchangedArticles": {
+      "comparisons": "All source comparisons except whatflow-chat-automation-vs-business-api, whatflow-vs-trengo, whatflow-vs-freshchat, whatflow-vs-zendesk, whatflow-vs-crisp, whatflow-vs-zoho-desk, whatflow-vs-front, whatflow-vs-help-scout, whatsapp-inbox-vs-helpdesk-tickets, small-shopify-store-whatsapp-vs-enterprise-suite, whatflow-vs-gorgias and whatflow-vs-delightchat.",
+      "posts": "All source posts except shared-team-inbox-small-shopify-business."
+    },
+    "preserved": "SMB tutorial intent, competitor facts and prices, source links, inline links, dates, titles, screenshots, bylines, AI distinctions and cautions about unconfigured Flow actions."
+  },
+  "edits": [
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "path": [
+        "content",
+        "root",
+        "children",
+        34,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "The Business API team inbox has no seat fees. A founder, support colleague and fulfillment operator can participate without adding a per-person subscription. Theme-matched WhatsApp buttons are free forever. Free feature access and a free storefront button are separate from the cost of automated sending and applicable Meta delivery fees.",
+      "new": "WhatFlow Business API includes an enterprise-ready team inbox without seat fees. AI is not included. All features remain available across plans, so a growing support operation does not need a higher feature edition or another per-person subscription. Theme-matched WhatsApp buttons are free forever. Free feature access and a free storefront button remain separate from automated sending costs and applicable Meta delivery fees.",
+      "reason": "Makes the important two-app distinction explicit: the startup recommendation applies to linked-device Chat Automation, not an assumed small-team ceiling on Business API's inbox."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-trengo",
+      "path": [
+        "faqs",
+        0,
+        "answer"
+      ],
+      "old": "WhatFlow allows a team to choose a messaging allowance rather than a bundled user package, while retaining all features and paying no seat fees. Trengo can be sensible for a larger multichannel support operation that will use the included users and broader service tooling.",
+      "new": "WhatFlow Business API combines an enterprise-ready WhatsApp inbox with all-plan feature access and no seat fees. It does not include AI. Trengo can be sensible when the team needs its particular multichannel setup and will use the bundled capacity. Team size alone is not a reason to rule out WhatFlow.",
+      "reason": "Removes the implication that larger support teams belong in Trengo regardless of their actual channel requirements."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-trengo",
+      "path": [
+        "content",
+        "root",
+        "children",
+        24,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "Launch the Shopify conversation in WhatFlow and keep the budget tied to its actual sending pattern. Consider Trengo when the larger service operation needs its documented scope. Compare conversation allowances with their own definitions rather than converting them into sends or quietly mixing currencies.",
+      "new": "Launch the Shopify conversation in WhatFlow and keep the budget tied to its actual sending pattern. A larger team can still choose WhatFlow's enterprise-ready inbox without seat charges. Consider Trengo for specific multichannel requirements its documented package meets, rather than assuming a larger support operation needs a different inbox. Compare conversation allowances with their own definitions rather than converting them into sends or quietly mixing currencies.",
+      "reason": "Bases the alternative on documented channel requirements rather than organizational size."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-freshchat",
+      "path": [
+        "content",
+        "root",
+        "children",
+        24,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "Use the sale-period helper as the practical test of the commercial model. In WhatFlow, bringing that colleague into the inbox adds no seat fee, and access to the feature set does not depend on selecting a higher edition. Match the actual Shopify message workload to a plan. Freshchat may offer useful wider support, routing or AI capabilities, but assess those benefits and the intended channel entitlement directly rather than assuming either that every agent is paid or that the free widget covers the whole WhatsApp job.",
+      "new": "Use the sale-period helper as the practical test of the commercial model. In WhatFlow, bringing that colleague into the inbox adds no seat fee, and access to the feature set does not depend on selecting a higher edition. Its enterprise-ready inbox can serve the regular support team as well as temporary cover; AI is not included. Match the actual Shopify message workload to a plan. Evaluate Freshchat for a particular Freshworks connection, channel configuration or AI requirement, rather than assuming its wider suite means a more capable WhatsApp inbox. Its free agent allowance remains real, and the quote still needs to cover the complete WhatsApp setup.",
+      "reason": "Replaces an unsupported general routing/support advantage with concrete ecosystem and AI distinctions while preserving Freshchat's free-agent context."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-zendesk",
+      "path": [
+        "verdict"
+      ],
+      "old": "Choose WhatFlow for the Shopify WhatsApp layer when staff need to answer order questions without adding an agent license for each participant. Its store automations and included inbox keep that work together, with every feature available across message plans. Zendesk remains justified for defined case-management, governance and cross-channel reporting requirements. Start from the focused WhatFlow workflow; buy the larger service suite when those additional responsibilities actually demand it.",
+      "new": "Choose WhatFlow Business API for an enterprise-ready WhatsApp inbox tightly connected to Shopify, with no agent seat fees and every feature available across message plans. AI is not included. Evaluate Zendesk when its particular cross-channel processes, existing service records or AI offering are requirements, and compare the exact configuration. WhatFlow's lower entry price makes capable WhatsApp support accessible without a separate license for every colleague.",
+      "reason": "Corrects the central positioning so enterprise service capability is not reserved for Zendesk."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-zendesk",
+      "path": [
+        "content",
+        "root",
+        "children",
+        13,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "WhatFlow includes a team inbox without seat fees and connects it to Shopify-focused automation. A merchant can add the colleagues handling orders without buying another service-suite license for each person.",
+      "new": "WhatFlow Business API has an enterprise-ready team inbox connected to Shopify automation and extensions. It does not include AI. All features are available across plans, without seat fees, so a merchant can involve the support and operations team without purchasing another inbox license for each person.",
+      "reason": "States the updated enterprise positioning without inventing individual controls or certifications."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-zendesk",
+      "path": [
+        "faqs",
+        0,
+        "answer"
+      ],
+      "old": "WhatFlow includes a team inbox without seat fees and connects it to Shopify-focused automation. A merchant can add the colleagues handling orders without buying another service-suite license for each person. Zendesk may be appropriate when a sophisticated service organization needs its broader case management, reporting and cross-channel governance.",
+      "new": "WhatFlow Business API offers an enterprise-ready WhatsApp inbox with tight Shopify integration, all-plan feature access and no seat fees. AI is not included. Zendesk may be appropriate for specific cross-channel, existing-system or AI requirements. A sophisticated support organization can still choose WhatFlow for its WhatsApp operation.",
+      "reason": "Removes the implication that sophisticated service organizations require the alternative."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-zendesk",
+      "path": [
+        "content",
+        "root",
+        "children",
+        24,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "Make WhatFlow the first home for ordinary WhatsApp order exchanges and involve the colleague who knows the shipment. Keep Zendesk where a multi-day investigation or service process needs it. The published Suite pricing must retain its annual-billing basis and must not be substituted with an email-oriented Support plan.",
+      "new": "Evaluate WhatFlow for the Shopify WhatsApp conversation, including cases that need several colleagues or more than one day to resolve. A longer investigation is not, by itself, a reason to move away from its enterprise-ready inbox. Keep Zendesk where a specific cross-channel process, existing service record or required capability makes that useful. The published Suite pricing must retain its annual-billing basis and must not be substituted with an email-oriented Support plan.",
+      "reason": "Removes the unsupported instruction to route multi-day investigations away from WhatFlow without promising unconfirmed case-management features."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-crisp",
+      "path": [
+        "content",
+        "root",
+        "children",
+        13,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "WhatFlow\u2019s appeal is its lower message-plan entry point and Shopify-focused feature access, alongside an inbox with no seat fees. The argument is about the complete store workflow, not a false claim that Crisp only sells individual seats.",
+      "new": "WhatFlow pairs its lower message-plan entry point with an enterprise-ready WhatsApp inbox, tight Shopify integration and no seat fees. It does not include AI, and every plan retains the full feature set. Evaluate Crisp's workspace bundles for their actual multichannel value. Its included users are real value where the package fits; WhatFlow's advantage is capable Shopify WhatsApp support with a lower entry point and consistent feature access.",
+      "reason": "Makes capability and price independent while retaining the accurate treatment of Crisp's bundled seats."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-zoho-desk",
+      "path": [
+        "content",
+        "root",
+        "children",
+        13,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "WhatFlow is a focused alternative when Shopify is the system staff already use. Its inbox has no seat fees, and access to order automation does not depend on a higher service-desk edition.",
+      "new": "WhatFlow Business API gives a Shopify team an enterprise-ready WhatsApp inbox closely connected to the store. AI is not included. Support teams can use its inbox alongside Shopify automation without seat fees or higher feature editions to unlock. Plans differ by messaging allowances and rates, so the commercial decision can follow actual sending needs as the operation grows.",
+      "reason": "Clarifies the difference between Shopify specialization and limited inbox capability."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-front",
+      "path": [
+        "content",
+        "root",
+        "children",
+        13,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "WhatFlow makes the WhatsApp team inbox available without seat charges and keeps the workflow close to Shopify orders. That is attractive when occasional operational contributors should not each become a new inbox subscription.",
+      "new": "WhatFlow Business API's enterprise-ready inbox keeps WhatsApp support close to Shopify orders without seat charges. AI is not included. The model works for the regular support team as well as occasional operations contributors, with the full feature set available across plans. Evaluate Front's wider channel workspace against the channels and processes the business actually needs.",
+      "reason": "Avoids reducing the product to occasional order helpers when it can serve an enterprise support team."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-help-scout",
+      "path": [
+        "verdict"
+      ],
+      "old": "Choose WhatFlow Business API for Shopify WhatsApp order conversations and shared replies. Its no-seat-fee inbox lets the colleague who knows the order help without another user subscription, and every plan retains the feature set. Keep Help Scout for a defined helpdesk, knowledge-base or escalation requirement; that broader service purchase should not be necessary just to establish the store\u2019s WhatsApp workflow.",
+      "new": "Choose WhatFlow Business API for enterprise-ready WhatsApp support closely connected to Shopify, with no inbox seat fees and every feature available across plans. AI is not included. Help Scout deserves consideration for specific knowledge-base, multichannel or existing service-system requirements. An escalation or a growing support team does not automatically require moving the WhatsApp conversation out of WhatFlow.",
+      "reason": "Removes escalation itself as an implied product gap while preserving genuine broader-system considerations."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-gorgias",
+      "path": [
+        "faqs",
+        0,
+        "answer"
+      ],
+      "old": "WhatFlow\u2019s included inbox and message-based plans are easy to understand for a merchant buying WhatsApp operations. There is no additional seat subscription to add the colleague who handles delivery exceptions. Gorgias may still be the right central helpdesk for a team with substantial ticket management needs across channels. That does not mean every Shopify store needs a full helpdesk purchase to start WhatsApp.",
+      "new": "WhatFlow Business API combines an enterprise-ready WhatsApp inbox with Shopify automation, all-plan feature access and no seat fees. AI is not included. Gorgias can remain valuable for a particular cross-channel ticket operation, but substantial support volume alone does not make WhatFlow's inbox a lesser option. Compare the actual workflows and billing units.",
+      "reason": "Separates cross-channel ticket architecture from an unsupported assumption about substantial support workloads."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatflow-vs-delightchat",
+      "path": [
+        "content",
+        "root",
+        "children",
+        19,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "WhatFlow gives the store an included team inbox alongside Shopify order automation, without charging each additional colleague. It is especially attractive when the missing piece is WhatsApp rather than a new multichannel support system.",
+      "new": "WhatFlow Business API includes an enterprise-ready WhatsApp inbox alongside Shopify automation, without charging for each additional colleague or restricting features to higher plans. AI is not included. The inbox can be the team's WhatsApp support workspace as the operation grows. DelightChat's multichannel consolidation deserves a separate evaluation where bringing those channels together solves a real operating need.",
+      "reason": "Corrects the limited-reply-layer implication while preserving DelightChat's documented multichannel role."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "path": [
+        "verdict"
+      ],
+      "old": "Use WhatFlow as the first home for Shopify WhatsApp order conversations that need context and an accountable human reply. Staff can participate without inbox seat fees, and store automations remain available across message plans. Introduce formal tickets when an investigation, escalation or cross-channel service requirement needs them. The routine clarification should not require a larger helpdesk purchase simply because a more complex case might occur elsewhere in the business.",
+      "new": "Choose WhatFlow Business API for an enterprise-ready WhatsApp inbox connected closely to Shopify, with all features available across plans and no seat fees. Include complex conversations and multi-day cases in the evaluation alongside quick clarifications. AI is not included. Add a separate ticket system when a specific cross-channel record or existing business process requires it, rather than assuming an inbox cannot support serious customer service.",
+      "reason": "Corrects the article's central false division between simple inbox conversations and serious support cases."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "path": [
+        "featureTable",
+        0,
+        "whatflow"
+      ],
+      "old": "WhatFlow can be an economical operational inbox for Shopify WhatsApp without requiring every participating colleague to hold a paid helpdesk seat.",
+      "new": "Enterprise-ready Shopify WhatsApp inbox, with AI excluded, all features available across plans and no per-seat charges.",
+      "reason": "Ensures the comparison table presents inbox capability as well as the commercial advantage."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "path": [
+        "content",
+        "root",
+        "children",
+        13,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "Keep the quick order exchange in WhatFlow with a named owner and next action. Define the handoff to a ticketing process for a multi-day dispute or formal investigation. That gives the customer a conversational route while preserving the records required for a more complex case.",
+      "new": "WhatFlow Business API has an enterprise-ready inbox, with AI excluded. A multi-day dispute or investigation should not automatically be handed to another product. Evaluate the case in WhatFlow with a named owner, the relevant order context and a clear next action. Use a separate ticket process when its particular record or cross-channel requirements are necessary, not simply because the conversation becomes more involved.",
+      "reason": "Removes the unsupported mandatory ticketing handoff without claiming specific unconfirmed case-management features."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "path": [
+        "content",
+        "root",
+        "children",
+        15,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "For a hypothetical support review, compare a simple delivery clarification with a replacement request that remains open over several days. Define what must survive the handover: the order reference, the next promised action, the responsible person and the evidence supporting the decision. Ask whether the current inbox provides a dependable record for that case or whether the store needs formal ticket processes. WhatFlow can serve the focused Shopify WhatsApp conversation without adding inbox seat fees. A helpdesk may still earn its cost when escalation and cross-channel reporting are required. Keep both requirements visible rather than selecting an interface solely because the first short exchange looked easier.",
+      "new": "For a hypothetical support review, compare a simple delivery clarification with a replacement request that remains open over several days. Define what must survive the handover: the order reference, the next promised action, the responsible person and the evidence supporting the decision. Evaluate both cases in WhatFlow's enterprise-ready inbox rather than restricting its demonstration to the easy exchange. Then inspect any separate ticket system against the same case, including the exact cross-channel records or reporting the business requires. WhatFlow adds no inbox seat fees, and its feature access stays the same across messaging plans. Choose the working process on its merits, with AI requirements assessed separately because WhatFlow does not provide AI.",
+      "reason": "Uses a fair acceptance exercise for complex cases without inventing specific inbox features."
+    },
+    {
+      "collection": "comparisons",
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "path": [
+        "content",
+        "root",
+        "children",
+        15,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "Record the gaps that would prevent launch, not every difference in the feature catalogue. WhatFlow Business API provides a focused starting scope with features included across plans. If a broader suite is justified, make the extra requirement explicit and budget its implementation, so the small immediate workflow is neither delayed nor mistaken for a complete enterprise transformation.",
+      "new": "Record the gaps that would prevent launch, not every difference in the feature catalogue. A small store can start with one workflow in WhatFlow Business API's enterprise-ready inbox and keep using it as support grows. AI is not included. All features are available across plans without seat fees. If a broader suite is justified by a particular data, channel or existing-system requirement, make that requirement explicit and budget its implementation. Keep the launch manageable while choosing support tools that can serve a growing operation.",
+      "reason": "Preserves the small-store article intent while distinguishing a small initial rollout from limited product capability."
+    },
+    {
+      "collection": "posts",
+      "slug": "shared-team-inbox-small-shopify-business",
+      "path": [
+        "content",
+        "root",
+        "children",
+        22,
+        "children",
+        0,
+        "text"
+      ],
+      "old": "WhatFlow Business API includes a team inbox without seat fees and provides features across plans. That can make it easier for a founder to involve another colleague without purchasing an additional inbox seat. Message allowances and rates still differ by plan.",
+      "new": "WhatFlow Business API includes an enterprise-ready team inbox without AI. A small team can begin with the simple ownership process described here and keep the same inbox as its support operation grows. There are no seat fees or feature gates across plans, so involving another colleague does not require an additional inbox subscription. Message allowances and rates still differ by plan.",
+      "reason": "Makes enterprise capability clear in the principal inbox guide while keeping its practical advice for small businesses."
+    }
+  ],
+  "unchangedCount": 151
+}

@@ -21,7 +21,7 @@ export function AutoRepliesDemo() {
             SMART AUTO-REPLIES & <span className="text-[#00D261]">RICH MESSAGE TYPES.</span>
           </h2>
           <p className="text-gray-300 text-base sm:text-lg font-medium">
-            Trigger lightning-fast responses based on keywords, regex rules, or AI intent.
+            Configure responses around keywords and rules, with your team available for customer questions.
             Deliver rich, tap-friendly interactive experiences instead of plain walls of text.
           </p>
         </div>
@@ -92,7 +92,7 @@ export function AutoRepliesDemo() {
             </div>
 
             <div className="p-4 bg-[#FAF7F0] rounded-xl border border-black/15 space-y-3">
-              <div className="text-xs font-black uppercase text-gray-900">4 Intelligent Matching Modes:</div>
+              <div className="text-xs font-black uppercase text-gray-900">Response Options:</div>
               <div className="grid grid-cols-2 gap-2 text-xs font-medium text-gray-700">
                 <div className="p-2 bg-white rounded border border-gray-200">
                   <strong className="block text-black">Exact Match</strong> Matches keyword precisely
@@ -104,7 +104,7 @@ export function AutoRepliesDemo() {
                   <strong className="block text-black">Regex Patterns</strong> Complex syntax matching
                 </div>
                 <div className="p-2 bg-white rounded border border-gray-200">
-                  <strong className="block text-black">AI Fallback</strong> Routes to agent if unknown
+                  <strong className="block text-black">Team Handoff</strong> Let a teammate handle unmatched questions
                 </div>
               </div>
             </div>

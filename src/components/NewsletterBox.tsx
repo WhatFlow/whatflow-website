@@ -28,12 +28,12 @@ export function NewsletterBox({ className = "" }: { className?: string }) {
         </h3>
 
         <p className="text-xs sm:text-sm font-medium text-gray-700 leading-relaxed">
-          Join 10,000+ merchants worldwide receiving our weekly breakdown on abandoned cart recovery, AI support prompts, and WhatsApp conversion tactics.
+          Join 10,000+ merchants worldwide receiving our weekly breakdown on abandoned cart recovery, team inbox workflows, and WhatsApp conversion tactics.
         </p>
 
         {status === "success" ? (
           <div className="neo-box bg-[#00D261] p-4 rounded-xl text-black font-extrabold text-xs sm:text-sm uppercase tracking-wide">
-            ✓ You're in! Welcome to the WhatFlow insider circle.
+            ✓ You&apos;re in! Welcome to the WhatFlow insider circle.
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 pt-1">

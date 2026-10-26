@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 import { getShopifyAppUrl } from "@/lib/shopify-app";
 
@@ -54,7 +53,7 @@ export function HeroSection() {
 
 					{/* Subtitle / Definition Capsule */}
 					<p className="text-[16px] sm:text-[18px] text-[#222222] font-medium leading-relaxed max-w-lg">
-						WhatFlow is the official WhatsApp automation suite for modern eCommerce stores. Automate abandoned checkout recovery, 1-click Cash on Delivery verification, delivery notifications, and 24/7 AI chat support with zero markup on Meta conversation rates.
+						WhatFlow is the official WhatsApp automation suite for modern eCommerce stores. Automate abandoned checkout recovery, 1-click Cash on Delivery verification, delivery notifications, and an enterprise-ready team inbox without seat fees with zero markup on Meta conversation rates.
 					</p>
 
 					{/* Action Buttons */}
@@ -116,7 +115,7 @@ export function HeroSection() {
 									<div className="bg-[#E7FCE9] border border-black p-2.5 rounded-lg shadow-sm">
 										<p className="font-medium text-[#111111] mb-1.5 leading-snug">
 											Hi Alex,<br />
-											Thanks for your purchase! We've received your package and are getting it ready to ship.
+											Thanks for your purchase! We&apos;ve received your package and are getting it ready to ship.
 										</p>
 										<div className="bg-white border border-black p-2 rounded flex items-center gap-2 text-[11px]">
 											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-26T15:39:29.292716+00:00",
+  "postsUpdated": 1,
+  "comparisonsUpdated": 12,
+  "untouchedArticles": 151,
+  "comparisonChecks": {
+    "phase": "targeted publication",
+    "comparisons": 106,
+    "historicalVersionsPreserved": 431,
+    "newVersions": 12,
+    "totalVersions": 443,
+    "arrayCellsChecked": 399,
+    "foreignKeyViolations": 0,
+    "latestPublishedSnapshotsMatched": 12
+  },
+  "allBlogChildArraysPreserved": true,
+  "idempotent": true,
+  "writtenTables": [
+    "_comparisons_v",
+    "_comparisons_v_rels",
+    "_comparisons_v_version_faqs",
+    "_comparisons_v_version_feature_table",
+    "_comparisons_v_version_sources",
+    "comparisons",
+    "comparisons_faqs",
+    "comparisons_feature_table",
+    "posts"
+  ],
+  "schemaWritesAllowed": false,
+  "inputs": {
+    "/tmp/whatflow-before-enterprise-inbox.sql": "5f8cb814221de495101d53e74f8e8b948bbb6d9c473742016194415b48459aae",
+    "/tmp/whatflow-enterprise-comparisons.sql": "30d40436acc1f5e114f1de18fbf022d08ff8217c0d016ffcc060792e5b51fe22",
+    "/tmp/whatflow-enterprise-posts.sql": "bf84083bff8427bc0dcb2c6e0983ec0b646cc9da814106bc7e9288b03bc0a4d0"
+  }
+}

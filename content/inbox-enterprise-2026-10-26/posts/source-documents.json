@@ -1,0 +1,1154 @@
+[
+  {
+    "id": 33,
+    "title": "Set up a shared team inbox without losing conversation ownership",
+    "slug": "shared-team-inbox-small-shopify-business",
+    "excerpt": "Define who reads new messages, how handoffs work and what a useful resolution looks like before adding more support tools.",
+    "coverImage": null,
+    "coverImageUrl": "/thumbnails/blog/shared-team-inbox-small-shopify-business.webp",
+    "coverImageAlt": "Shared Inbox Clear Ownership \u2014 WhatFlow guide cover",
+    "coverImageCaption": "Illustrated cover by WhatFlow. App screenshots and examples appear in the guide.",
+    "reviewedAt": "2026-10-24T21:47:46.236Z",
+    "faqs": [
+      {
+        "id": "1582e55a815d8741a8f0607a",
+        "question": "Does a shared inbox automatically assign every conversation?",
+        "answer": "Not necessarily. Use the supported features and configured workflow in your actual setup, and define ownership explicitly."
+      },
+      {
+        "id": "bb5694c18a338b52461c07a2",
+        "question": "Does WhatFlow Business API charge per inbox seat?",
+        "answer": "WhatFlow Business API has no inbox seat fees. Plans differ by messaging allowances and rates, with features included across plans."
+      }
+    ],
+    "sources": [
+      {
+        "id": "2bc266958da82bb504bbfe5f",
+        "title": "WhatFlow Business API on Shopify",
+        "url": "https://apps.shopify.com/whatflow-official-api",
+        "note": "WhatFlow product identity and Shopify integration. WhatFlow plan descriptions in these articles are first-party product information."
+      },
+      {
+        "id": "0e79e62db79b751cfe693a99",
+        "title": "WhatsApp Business messaging policy",
+        "url": "https://business.whatsapp.com/policy",
+        "note": "Messaging permission and channel requirements apply to campaigns and automations."
+      }
+    ],
+    "category": "operations",
+    "tags": [
+      {
+        "id": "0466159d663edfa784fae337",
+        "tag": "Team inbox"
+      },
+      {
+        "id": "281c83155ec2254a8671cd5e",
+        "tag": "Customer support"
+      },
+      {
+        "id": "d423466fbf1b9659676512ae",
+        "tag": "Small teams"
+      }
+    ],
+    "author": "Safwan Adnan",
+    "authorRole": "Co-founder and CEO of WhatFlow",
+    "publishedAt": "2026-10-24T11:28:39.907Z",
+    "status": "published",
+    "featured": true,
+    "content": {
+      "root": {
+        "type": "root",
+        "version": 1,
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "children": [
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "A shared team inbox works when each new conversation has an owner, handoffs explain the next step and unresolved cases receive a regular review. Define response hours, escalation decisions and accurate reference answers before adding complexity. WhatFlow Business API includes an inbox without seat fees across plans, including Free; messaging allowances and rates still differ.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Key takeaways",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "version": 1,
+            "listType": "bullet",
+            "tag": "ul",
+            "start": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "listitem",
+                "version": 1,
+                "value": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Shared access needs explicit conversation ownership.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "value": 2,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "A handoff should state known facts, missing facts and the next action.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "value": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Review unresolved dependencies as well as response speed.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "A shared inbox solves an access problem: more than one person can see the customer conversation. It does not automatically solve the ownership problem. If everyone assumes someone else is answering, the buyer still waits, only now several colleagues can see the delay.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Start with a small set of operational rules. Decide who checks new messages, what requires escalation and how the next person can understand an open case. A modest process that the team follows is more useful than elaborate routing no one maintains.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "block",
+            "version": 2,
+            "format": "",
+            "fields": {
+              "id": "0eda6dd80cc113cf7640a298",
+              "blockType": "screenshot",
+              "url": "/blog/enhancement/whatflow-flow-order-reply.webp",
+              "alt": "WhatFlow WhatsApp order reply trigger and condition in Shopify Flow",
+              "caption": "An inactive workflow in the WhatFlow demo store illustrates order-reply configuration. No customer messages or order changes were made.",
+              "width": 1512,
+              "height": 787
+            }
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Give new conversations an owner",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Define a person or rotation responsible for checking new messages during the store\u2019s working hours. Make the handover between shifts explicit. The customer should not need to repeat the question simply because one colleague finished for the day.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Describe response expectations honestly. If the store does not provide continuous support, avoid a greeting that promises an immediate human answer at all times. An automated acknowledgment can set context, but it should not create the impression that the issue has already been investigated.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Rehearse the rotation during ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/blog/prepare-customer-support-black-friday-shopify"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "peak-sale support preparation",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " before a busy period exposes ownership gaps.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Record the question and next step",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "A useful handoff explains what the buyer needs, what has been checked and what remains open. Keep it concise and tied to the conversation. Another colleague should not have to reconstruct the case from scattered screenshots in a private chat.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Use the note or handoff capabilities your actual tools provide. Do not promise automatic assignment or a particular ticket state unless the configured integration supports it. A shared view of the messages is not proof that a workflow created a separate operational task.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Keep product answers accurate",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Create a small reference set for common questions about fit, compatibility, delivery and returns. Give each answer a source and a review owner. Saved replies should make accurate help easier, not preserve an outdated promise indefinitely.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Encourage colleagues to adapt the answer to the question. A long generic policy pasted into every conversation can leave the buyer\u2019s specific concern unanswered. If the product is unsuitable or the team does not yet know the answer, say that clearly and explain the appropriate next step.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Maintain ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/blog/customer-service-saved-replies-without-robotic-tone"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "accurate saved replies",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " so colleagues share the same source without copying irrelevant policy text.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "The ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "https://apps.shopify.com/whatflow-official-api"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "WhatFlow Business API on Shopify",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " listing identifies the Shopify app behind the messaging and inbox workflow described here.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Define escalation around the decision needed",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "A refund question, a product defect and a technical compatibility issue may need different people. State which colleague can make the relevant decision and what information they need. Do not ask the buyer for unnecessary documents simply because the escalation checklist is vague.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Keep private information in controlled systems and avoid copying full conversations into broad-access reports. The escalation summary should help someone act while preserving the context and the customer\u2019s expectations about how their information is handled.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Use WhatFlow\u2019s commercial model appropriately",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "WhatFlow Business API includes a team inbox without seat fees and provides features across plans. That can make it easier for a founder to involve another colleague without purchasing an additional inbox seat. Message allowances and rates still differ by plan.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "The lack of a seat charge is a budgeting advantage, not an instruction to give unrestricted access to everyone. Use the access controls available in your actual setup and give colleagues the responsibility and context needed for their role.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Review unresolved cases, not only message volume",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "A busy inbox can look productive while the same cases remain open. Set aside time to review conversations awaiting a customer reply, an internal decision or an external update. Distinguish those states so a colleague knows what kind of follow-up is appropriate.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Track recurring causes and improve the underlying page or process. The strongest inbox operation does more than answer quickly: it keeps ownership clear, resolves the actual question and gradually reduces avoidable confusion for future customers.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Write a handoff another colleague can act on",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Imagine a fictional customer waiting for confirmation that an accessory fits an older product version. A useful handoff says: \u201cCustomer has version A; current accessory page lists version B only. Product owner is checking compatibility. Reply after that check; no compatibility promise made.\u201d Keep that note in the controlled conversation or supported handoff process. It tells the next colleague what is known, what is missing and why the case remains open.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "At the shift change, the receiving person should be able to identify the next action without asking the customer to repeat the question. Review waiting cases by dependency: customer information, an internal decision or an outside update. Where the tool does not support a desired state or automatic assignment, use a simple maintained procedure rather than describing an unconfigured feature. WhatFlow\u2019s no-seat-fee inbox can make collaboration easier to budget, but the handoff still needs a named owner.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Before you put this into practice",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "version": 1,
+            "listType": "bullet",
+            "tag": "ul",
+            "start": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "listitem",
+                "version": 1,
+                "value": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Assign the incoming-message rotation.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "value": 2,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Record realistic support hours.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "value": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Check open cases at each handover.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Related guides for your store",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/blog/customer-service-saved-replies-without-robotic-tone"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Write saved replies that still answer the customer\u2019s question",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/blog/audit-shopify-app-costs-feature-gates-seat-fees"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Audit Shopify app costs beyond the headline monthly price",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/blog/whatsapp-marketing-plan-small-shopify-store"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "A practical WhatsApp marketing plan for a small Shopify store",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "block",
+            "version": 2,
+            "format": "",
+            "fields": {
+              "id": "c0da01d7ab7e42346afcaaf6",
+              "blockType": "cta",
+              "heading": "Bring the customer conversation into Shopify",
+              "description": "Explore WhatFlow Business API for WhatsApp messaging and a team inbox with no seat fees. Features are included across plans, including Free; message allowances and rates differ.",
+              "buttonText": "Explore WhatFlow on Shopify",
+              "buttonUrl": "https://apps.shopify.com/whatflow-official-api?utm_source=whatflow_website&utm_medium=blog_cta&utm_campaign=merchant_guides",
+              "badge": "Free plan available",
+              "style": "green"
+            }
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "tag": "h2",
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "About the author",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Safwan Adnan is co-founder and CEO of WhatFlow. This guide is published by WhatFlow and includes its product where relevant. Worked examples are illustrative unless a caption identifies an actual demo-store configuration; they are not merchant performance results.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Learn more ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/about"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "about WhatFlow",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " or ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/contact"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "contact our team",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " with a question or correction.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "seo": {
+      "metaTitle": "Shared Team Inbox for Shopify: Ownership and Handoffs",
+      "metaDescription": "Set up a Shopify shared inbox with clear conversation ownership, concise handoffs, accurate answers and a routine for unresolved cases without seat fees."
+    },
+    "updatedAt": "2026-10-24T23:30:43.794Z",
+    "createdAt": "2026-10-24T10:45:22.945Z"
+  }
+]

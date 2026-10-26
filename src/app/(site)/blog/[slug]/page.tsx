@@ -308,7 +308,7 @@ export default async function BlogPostPage({ params }: PostPageProps) {
                 AUTOMATE YOUR STORE WITH WHATSAPP.
               </h2>
               <p className="text-xs text-[#D5F5E3] font-medium leading-relaxed">
-                Cart recovery, order alerts, AI support, and official Meta API badges.
+                Cart recovery, order alerts, an enterprise-ready team inbox, and official Meta Cloud API messaging.
               </p>
               <Link
                 href="/#products"

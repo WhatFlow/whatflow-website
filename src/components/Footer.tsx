@@ -26,7 +26,7 @@ export function Footer() {
 						<li><Link href="/inbox" className="hover:text-[#00D261] transition-colors text-white font-bold">WhatFlow 2-Way Inbox ➔</Link></li>
 						<li><Link href="/features#recovery" className="hover:text-[#00D261] transition-colors">Abandoned Cart Recovery</Link></li>
 						<li><Link href="/features#automations" className="hover:text-[#00D261] transition-colors">Order Confirmations &amp; COD</Link></li>
-						<li><Link href="/features#auto-replies" className="hover:text-[#00D261] transition-colors">Auto-Replies &amp; AI</Link></li>
+						<li><Link href="/features#auto-replies" className="hover:text-[#00D261] transition-colors">Auto-Replies &amp; Inbox</Link></li>
 					</ul>
 				</div>
 
@@ -51,7 +51,7 @@ export function Footer() {
 						<li><Link href="/blog" className="hover:text-[#00D261] transition-colors">Blog &amp; Guides</Link></li>
 						<li><Link href="/case-studies" className="hover:text-[#00D261] transition-colors">Case Studies</Link></li>
 						<li><Link href="/changelog" className="hover:text-[#00D261] transition-colors">Product Changelog</Link></li>
-						<li><a href="/admin" className="hover:text-[#00D261] transition-colors">Merchant Portal</a></li>
+						<li><Link href="/admin" className="hover:text-[#00D261] transition-colors">Merchant Portal</Link></li>
 					</ul>
 				</div>
 

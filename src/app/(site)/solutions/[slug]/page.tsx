@@ -221,7 +221,7 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
       {
         question: "Can customers reply to tracking messages for support?",
         answer:
-          "Yes! WhatFlow includes a 2-way live chat inbox and 24/7 AI auto-replier so customers can ask questions directly in the same WhatsApp thread.",
+          "Yes. Customers can reply in the same WhatsApp thread, and your team can respond from WhatFlow Business API's enterprise-ready inbox. There are no seat fees. AI replies are not currently included.",
       },
     ],
   },

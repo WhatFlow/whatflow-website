@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | WhatFlow",
@@ -62,7 +61,7 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed text-gray-700">
               <li>Sending transactional and marketing WhatsApp messages initiated by merchant store events.</li>
               <li>Providing real-time delivery status (sent, delivered, read, failed) and analytics.</li>
-              <li>Automating two-way conversational replies via WhatFlow Auto-Replier or AI Assistant.</li>
+              <li>Supporting two-way customer conversations through the team inbox and configured auto-replies.</li>
               <li>Calculating WhatsApp Cloud API consumption and billing without storing unnecessary customer personal data.</li>
             </ul>
           </div>

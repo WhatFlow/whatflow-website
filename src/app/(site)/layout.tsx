@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		"Abandoned cart recovery WhatsApp",
 		"WhatFlow",
 		"WhatsApp Business API Shopify",
-		"WhatsApp AI chatbot Shopify",
+		"enterprise WhatsApp inbox Shopify",
 		"COD verification Shopify WhatsApp",
 		"Shopify WhatsApp marketing",
 	],
