@@ -41,7 +41,7 @@ const PRICING_FAQS = [
   {
     question: "What makes WhatFlow pricing different from other WhatsApp apps?",
     answer:
-      "WhatFlow never marks up Meta's official conversation rates. You pay official wholesale rates directly with zero hidden fees, plus get unlimited team seats across all plans.",
+      "WhatFlow never marks up Meta's official messaging rates. You pay official wholesale rates directly with zero hidden fees, plus get unlimited team seats across all plans.",
   },
   {
     question: "What is included in the 7-day free trial?",
@@ -56,7 +56,7 @@ const PRICING_FAQS = [
   {
     question: "Do I need my own Meta Business API account?",
     answer:
-      "Yes, WhatFlow integrates directly with the Official Meta Cloud API. Our guided onboarding helps you connect your Meta Business account in under 3 minutes.",
+      "Yes, WhatFlow integrates directly with the Official Meta Cloud API. Our guided onboarding helps you connect your Meta Business account. Setup time depends on account readiness and Meta verification.",
   },
 ];
 

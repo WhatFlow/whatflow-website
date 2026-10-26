@@ -11,12 +11,12 @@ export async function GET() {
     {
       question: "How does WhatFlow WhatsApp Cart Recovery work?",
       answer:
-        "When a shopper abandons checkout on Shopify, WhatFlow sends a personalized WhatsApp message with the exact item thumbnails, dynamic discount codes, and a 1-click checkout recovery link, achieving up to 25% recovery rates.",
+        "When a shopper abandons checkout on Shopify, WhatFlow sends a personalized WhatsApp message with the exact item thumbnails, dynamic discount codes, and a 1-click checkout recovery link.",
     },
     {
       question: "How does WhatFlow reduce Cash on Delivery (COD) RTO?",
       answer:
-        "WhatFlow sends an automated WhatsApp message with interactive 'Confirm Order' and 'Cancel Order' buttons upon checkout. Once clicked, it updates Shopify order tags so merchants only ship verified packages, reducing RTO by up to 40%.",
+        "WhatFlow sends an automated WhatsApp message with interactive 'Confirm Order' and 'Cancel Order' buttons upon checkout. Once clicked, it updates Shopify order tags so merchants only ship verified packages.",
     },
     {
       question: "Does WhatFlow charge extra markup on Meta WhatsApp conversation fees?",
@@ -26,12 +26,12 @@ export async function GET() {
     {
       question: "Does WhatFlow integrate with Shopify Flow?",
       answer:
-        "Yes. WhatFlow includes native Shopify Flow action blocks to trigger custom WhatsApp automations based on any Shopify event or customer trigger.",
+        "Yes. WhatFlow includes native Shopify Flow action blocks to trigger custom WhatsApp automations using the triggers, actions and data supported by installed app connectors.",
     },
     {
       question: "How fast is onboarding with WhatFlow?",
       answer:
-        "Onboarding takes under 3 minutes using Meta's Embedded Signup directly from the Shopify App admin.",
+        "WhatFlow Business API uses Meta Embedded Signup from Shopify admin. Completion time depends on account readiness and any Meta verification requirements.",
     },
   ];
 

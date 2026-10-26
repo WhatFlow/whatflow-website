@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import type { CountryRateItem } from "@/lib/country-rates-data";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
 
@@ -128,38 +126,21 @@ export function PricingClient() {
 
 	// Fetch dynamic rates directly from Payload CMS API
 	useEffect(() => {
-		setRatesLoading(true);
-		fetch("/api/country-rates?limit=300")
+		const controller = new AbortController();
+		fetch("/api/country-rates?limit=300&where[active][equals]=true", { signal: controller.signal })
 			.then((res) => {
-				if (!res.ok) throw new Error("CMS endpoint returned error");
-				return res.json();
+				if (!res.ok) throw new Error("Country rates unavailable");
+				return res.json() as Promise<{ docs?: CountryRateItem[] }>;
 			})
-			.then((data: any) => {
-				if (data && data.docs && Array.isArray(data.docs) && data.docs.length > 0) {
+			.then((data) => {
+				if (!controller.signal.aborted && Array.isArray(data.docs) && data.docs.length) {
 					setRatesList(data.docs);
-					if (!selectedMarketName && data.docs[0]?.market) {
-						setSelectedMarketName(data.docs[0].market);
-					}
+					setSelectedMarketName(previous => previous || data.docs![0].market);
 				}
 			})
-			.catch(() => {
-				fetch("/api/rates/sync")
-					.then((res) => res.json())
-					.then((data: any) => {
-						if (data && data.docs && Array.isArray(data.docs) && data.docs.length > 0) {
-							setRatesList(data.docs);
-							if (!selectedMarketName && data.docs[0]?.market) {
-								setSelectedMarketName(data.docs[0].market);
-							}
-						}
-					})
-					.catch((err) => {
-						console.log("Country rates will be loaded from CMS API:", err);
-					});
-			})
-			.finally(() => {
-				setRatesLoading(false);
-			});
+			.catch(() => { /* Keep the software-only estimate when rates are unavailable. */ })
+			.finally(() => { if (!controller.signal.aborted) setRatesLoading(false); });
+		return () => controller.abort();
 	}, []);
 
 	// Active country rate object
@@ -176,15 +157,14 @@ export function PricingClient() {
 
 	// Meta Rate per message
 	const metaRatePerMsg = useMemo(() => {
-		if (!selectedCountryRate) return 0;
-		if (msgType === "marketing") return Number(selectedCountryRate.marketing ?? 0);
-		if (msgType === "utility") return Number(selectedCountryRate.utility ?? 0);
-		if (msgType === "authentication") return Number(selectedCountryRate.authentication ?? selectedCountryRate.utility ?? 0);
-		if (msgType === "service") return Number(selectedCountryRate.service ?? 0);
-		return Number(selectedCountryRate.utility ?? 0);
+		if (!selectedCountryRate) return null;
+		const raw = selectedCountryRate[msgType];
+		if (raw == null || String(raw).trim() === "") return null;
+		const rate = Number(raw);
+		return Number.isFinite(rate) && rate >= 0 ? rate : null;
 	}, [selectedCountryRate, msgType]);
 
-	const metaCostTotal = totalMessages * metaRatePerMsg;
+	const metaCostTotal = metaRatePerMsg === null ? null : totalMessages * metaRatePerMsg;
 
 	// Calculate optimal plan & cost breakdown for each plan
 	const planCalculations = useMemo(() => {
@@ -192,7 +172,7 @@ export function PricingClient() {
 			const overageMsgs = Math.max(0, totalMessages - plan.freeAllowance);
 			const overageFee = overageMsgs * plan.overageRate;
 			const whatflowTotal = plan.price + overageFee;
-			const grandTotal = whatflowTotal + metaCostTotal;
+			const grandTotal = whatflowTotal + (metaCostTotal ?? 0);
 			return {
 				...plan,
 				overageMsgs,
@@ -330,7 +310,7 @@ export function PricingClient() {
 										</label>
 										<select
 											value={msgType}
-											onChange={(e) => setMsgType(e.target.value as any)}
+											onChange={(e) => setMsgType(e.target.value as typeof msgType)}
 											className="w-full bg-[#FAF7F0] border-2 border-black rounded-lg px-3 py-2.5 text-xs font-extrabold text-black focus:outline-none focus:ring-2 focus:ring-[#00D261]"
 										>
 											<option value="utility">Utility (Order alerts & updates)</option>
@@ -361,7 +341,7 @@ export function PricingClient() {
 											</select>
 											<p className="text-[11px] text-gray-600 font-medium mt-1">
 												Official Meta rate for {selectedMarketName || selectedCountryRate?.market || "Selected Market"} ({msgType}):{" "}
-												<strong className="text-black">${metaRatePerMsg.toFixed(4)} / msg</strong>
+												<strong className="text-black">{metaRatePerMsg === null ? "Rate unavailable" : `$${metaRatePerMsg.toFixed(4)} / msg`}</strong>
 											</p>
 										</>
 									) : (
@@ -420,13 +400,13 @@ export function PricingClient() {
 										<div className="flex items-center justify-between text-xs">
 											<span className="font-semibold text-gray-700">Meta WhatsApp Direct Fee:</span>
 											<span className="font-extrabold text-black">
-												${metaCostTotal.toFixed(2)}
+												{metaCostTotal === null ? "Not included — rate unavailable" : `$${metaCostTotal.toFixed(2)}`}
 											</span>
 										</div>
 
 										<div className="border-t-2 border-black pt-2 flex items-center justify-between">
 											<span className="text-xs font-black uppercase text-black">
-												Total Estimated:
+												{metaCostTotal === null ? "WhatFlow subtotal:" : "Total estimated:"}
 											</span>
 											<span className="text-xl font-display font-black text-black">
 												${recCalc.grandTotal.toFixed(2)}
@@ -606,8 +586,7 @@ export function PricingClient() {
 								WHATSAPP RATES BY MARKET
 							</h2>
 							<p className="text-xs sm:text-sm text-gray-700 font-medium max-w-xl">
-								Meta charges per 24-hour conversation based on recipient market and message category.
-								Manageable dynamically via Payload CMS.
+								Meta charges depend on recipient market, message category and applicable messaging rules. Check the current Meta rate card before sending.
 							</p>
 						</div>
 
@@ -682,7 +661,7 @@ export function PricingClient() {
 									{ratesLoading ? "Loading country rates from CMS..." : "No country rates found."}
 								</p>
 								<p className="text-xs text-gray-500">
-									Rates can be imported via the API endpoint <code>POST /api/rates/sync</code> or managed in the Payload CMS Admin panel under <strong>Country Rates</strong>.
+									Current rates are available on the <a href="https://business.whatsapp.com/products/platform-pricing" className="underline" rel="noopener noreferrer">official WhatsApp pricing page</a>. If a rate is unavailable here, the calculator shows WhatFlow charges only.
 								</p>
 							</div>
 						)}
@@ -708,7 +687,7 @@ export function PricingClient() {
 								How does WhatsApp billing work?
 							</h3>
 							<p className="text-xs text-gray-700 leading-relaxed">
-								There are two parts: WhatFlow's monthly software plan (which includes your message allowance and automation platform) and Meta's direct conversation fees, billed based on your recipients' countries.
+								There are two parts: WhatFlow&apos;s monthly software plan (which includes your message allowance and automation platform) and applicable Meta messaging charges, which depend on market, category and messaging rules.
 							</p>
 						</div>
 
@@ -717,7 +696,7 @@ export function PricingClient() {
 								What is included in the 7-day free trial?
 							</h3>
 							<p className="text-xs text-gray-700 leading-relaxed">
-								You get full unlimited access to all features and templates. You won't be charged your WhatFlow subscription until the 7-day trial period ends, and you can cancel anytime with 1 click.
+								You get full unlimited access to all features and templates. You won&apos;t be charged your WhatFlow subscription until the 7-day trial period ends, and you can cancel anytime with 1 click.
 							</p>
 						</div>
 
@@ -726,7 +705,7 @@ export function PricingClient() {
 								Can I upgrade or downgrade plans anytime?
 							</h3>
 							<p className="text-xs text-gray-700 leading-relaxed">
-								Yes! You can switch tiers seamlessly in your WhatFlow dashboard or Shopify App settings as your store's order volume grows.
+								Yes! You can switch tiers seamlessly in your WhatFlow dashboard or Shopify App settings as your store&apos;s order volume grows.
 							</p>
 						</div>
 
@@ -735,7 +714,7 @@ export function PricingClient() {
 								Do I need my own Meta Business API account?
 							</h3>
 							<p className="text-xs text-gray-700 leading-relaxed">
-								Yes, WhatFlow integrates directly with the Official Meta Cloud API. Our guided onboarding helps you connect your Meta Business account in under 3 minutes.
+								Yes, WhatFlow integrates directly with the Official Meta Cloud API. Our guided onboarding helps you connect your Meta Business account. Setup time depends on account readiness and Meta verification.
 							</p>
 						</div>
 					</div>

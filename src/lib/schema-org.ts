@@ -8,8 +8,6 @@ export function getOrganizationSchema() {
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
     name: "WhatFlow",
-    legalName: "WhatFlow Solutions",
-    alternateName: ["WhatFlow WhatsApp", "WhatFlow Shopify App", "WhatFlow Automation"],
     url: SITE_URL,
     logo: {
       "@type": "ImageObject",
@@ -18,29 +16,16 @@ export function getOrganizationSchema() {
       height: 512,
       caption: "WhatFlow Official Logo",
     },
-    foundingDate: "2024",
     sameAs: [
       "https://apps.shopify.com/whatflow",
-      "https://twitter.com/whatflow_io",
-      "https://x.com/whatflow_io",
-      "https://linkedin.com/company/whatflow",
-      "https://www.crunchbase.com/organization/whatflow",
-      "https://github.com/whatflow",
-      "https://en.wikipedia.org/wiki/Shopify",
-      "https://www.wikidata.org/wiki/Q7501061",
-      "https://en.wikipedia.org/wiki/WhatsApp",
-      "https://www.wikidata.org/wiki/Q104927",
-      "https://www.producthunt.com/products/whatflow",
-      "https://www.g2.com/products/whatflow",
-      "https://www.capterra.com/p/whatflow",
+      "https://apps.shopify.com/whatflow-official-api",
     ],
     contactPoint: [
       {
         "@type": "ContactPoint",
         contactType: "customer support",
         email: "support@whatflow.tech",
-        telephone: "+1-800-WHATFLOW",
-        availableLanguage: ["English", "Spanish", "Hindi", "Portuguese", "Arabic"],
+        availableLanguage: ["English"],
       },
       {
         "@type": "ContactPoint",
@@ -49,10 +34,6 @@ export function getOrganizationSchema() {
         availableLanguage: ["English"],
       },
     ],
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "US",
-    },
   };
 }
 
@@ -79,7 +60,7 @@ export function getWebSiteSchema() {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${SITE_URL}/blog?search={search_term_string}`,
+        urlTemplate: `${SITE_URL}/blog?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },
@@ -87,76 +68,40 @@ export function getWebSiteSchema() {
 }
 
 export function getSoftwareApplicationSchema() {
-  const today = new Date().toISOString().split("T")[0];
-
   return {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication", "WebApplication"],
     "@id": `${SITE_URL}/#software`,
-    name: "WhatFlow",
-    alternateName: "WhatFlow WhatsApp Automation & Marketing Platform",
+    name: "WhatFlow Business API",
+    alternateName: "WhatFlow WhatsApp Business API for Shopify",
     operatingSystem: "Shopify Web, Cloudflare Edge, Meta Cloud API",
     applicationCategory: "BusinessApplication",
     applicationSubCategory: "eCommerce Marketing & Customer Messaging",
-    softwareVersion: "2.5.0",
-    datePublished: "2024-01-15",
-    dateModified: today,
     inLanguage: "en",
     isAccessibleForFree: true,
     url: SITE_URL,
-    offers: [
-      {
-        "@type": "Offer",
-        name: "Free Plan",
-        price: "0",
-        priceCurrency: "USD",
-        priceValidUntil: "2027-12-31",
-        description: "All features included, with a free messaging allowance and no inbox seat fees. Applicable Meta messaging charges are separate.",
-      },
-      {
-        "@type": "Offer",
-        name: "Starter Plan",
-        price: "4.99",
-        priceCurrency: "USD",
-        priceValidUntil: "2027-12-31",
-        description: "All features included, with Starter messaging allowances and rates. No inbox seat fees; applicable Meta messaging charges are separate.",
-      },
-      {
-        "@type": "Offer",
-        name: "Growth Plan",
-        price: "19.99",
-        priceCurrency: "USD",
-        priceValidUntil: "2027-12-31",
-        description: "All features included, with Growth messaging allowances and rates. No inbox seat fees; applicable Meta messaging charges are separate.",
-      },
-      {
-        "@type": "Offer",
-        name: "Scale Plan",
-        price: "49.99",
-        priceCurrency: "USD",
-        priceValidUntil: "2027-12-31",
-        description: "All features included, with Scale messaging allowances and rates. No inbox seat fees; applicable Meta messaging charges are separate.",
-      },
-    ],
+    // Only the verified free offering is described here. Paid prices and
+    // allowances belong to the CMS-backed pricing page and can change.
+    offers: {
+      "@type": "Offer",
+      name: "Free plan",
+      price: "0",
+      priceCurrency: "USD",
+      url: `${SITE_URL}/pricing`,
+      description: "All available features included, with a free messaging allowance and no inbox seat fees. Applicable Meta messaging charges are separate.",
+    },
     featureList: [
-      "WhatsApp Abandoned Cart Recovery (98% open rates)",
+      "WhatsApp abandoned checkout recovery",
       "1-Click Cash on Delivery (COD) Verification with automated Shopify order tagging",
       "Real-time Shipping Tracking & Fulfillment Notifications",
-      "WhatsApp Photo Review & UGC Collection (Judge.me & Loox sync)",
+      "WhatsApp review request workflows",
       "Native Shopify Flow Trigger & Action Blocks",
       "All features available across plans; AI is not included",
-      "0% markup on official Meta Cloud API rates",
+      "Live WhatsApp catalog sharing",
       "Enterprise-ready WhatsApp team inbox with no seat fees",
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      ratingCount: "148",
-      bestRating: "5",
-      worstRating: "1",
-    },
     description:
-      "Automate WhatsApp marketing, recover abandoned carts with 98% open rates, verify COD orders, and boost eCommerce conversions with official Meta Cloud API.",
+      "WhatsApp messaging for Shopify through the official Meta Cloud API, with a shared team inbox, catalog sharing and Shopify Flow automation. All available features are included across plans, with no inbox seat fees.",
     publisher: {
       "@id": `${SITE_URL}/#organization`,
     },

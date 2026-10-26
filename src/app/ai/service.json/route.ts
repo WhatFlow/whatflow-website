@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   const service = {
     service_name: "WhatFlow Shopify WhatsApp Automation",
-    provider: "WhatFlow Solutions",
+    provider: "WhatFlow",
     api_standard: "Meta WhatsApp Cloud API",
     supported_platforms: ["Shopify", "Shopify Plus"],
     features: [
@@ -19,29 +19,26 @@ export async function GET() {
       {
         id: "abandoned_cart_recovery",
         name: "WhatsApp Abandoned Cart Recovery",
-        average_roi: "4x - 8x",
-        supported_triggers: ["checkout_abandoned", "cart_abandoned"],
+        description: "Abandoned checkout messaging according to the configured workflow and WhatsApp messaging rules.",
       },
       {
         id: "cod_verification",
         name: "COD Order Verification & Anti-RTO",
-        average_rto_reduction: "40%",
         supported_actions: ["auto_tag_shopify_order", "cancel_unconfirmed_order"],
       },
       {
         id: "shipping_notifications",
         name: "Automated Shipping & Tracking Alerts",
-        supported_carriers: ["All Shopify fulfillment carriers"],
+        description: "Order messaging can use the tracking information available on the Shopify fulfillment.",
       },
       {
         id: "review_collection",
         name: "WhatsApp Review & Photo UGC Sync",
-        supported_integrations: ["Judge.me", "Loox"],
+        description: "Send customers a review request link through a configured WhatsApp workflow.",
       },
       {
         id: "chat_widget",
         name: "Storefront WhatsApp Floating Button",
-        script_payload_size: "<5KB",
       },
     ],
     documentation_urls: {

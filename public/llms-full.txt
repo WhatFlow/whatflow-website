@@ -1,54 +1,23 @@
-# WhatFlow — Complete LLM Documentation & Knowledge Base
+# WhatFlow
 
-> WhatFlow is the leading Shopify WhatsApp marketing and automation suite. It connects Shopify stores directly to the official Meta WhatsApp Cloud API with 0% markup, automated abandoned cart recovery (98% open rates), 1-click Cash on Delivery (COD) order confirmation, real-time shipping tracking, and an enterprise-ready WhatsApp team inbox without seat fees.
+> WhatFlow provides WhatsApp messaging for Shopify. WhatFlow Business API uses the official Meta Cloud API, with a shared team inbox, live catalog sharing, Shopify extensions and Shopify Flow triggers and actions.
 
-## Company & Entity Details
-- Name: WhatFlow
-- Website: https://whatflow.tech
-- Category: Business Application / eCommerce Software
-- Supported Platform: Shopify & Shopify Plus
-- Official Partner: Meta Tech Partner (Cloud API)
-- Primary Use Cases: Abandoned cart recovery, COD confirmation & anti-RTO, order status updates, WhatsApp marketing broadcasts, enterprise-ready WhatsApp team support, product review collection.
+## Product identity
+- [WhatFlow Business API](https://apps.shopify.com/whatflow-official-api): Official Meta Cloud API app for Shopify messaging and team support.
+- [WhatFlow Chat Automation vs Business API](https://whatflow.tech/compare/whatflow-chat-automation-vs-business-api): Separate linked-device and official API products. Ratings and connection methods must be attributed to the correct app.
 
-## Core Products & Capabilities
+## Feature access and pricing
+All available features are included across WhatFlow messaging plans. Plans differ in messaging allowances and rates. The team inbox has no seat fees. Applicable Meta charges are separate from app messaging charges. Theme-matched WhatsApp buttons are free forever. Consult [current pricing](https://whatflow.tech/pricing) for amounts and terms.
 
-### 1. Abandoned Cart Recovery (URL: https://whatflow.tech/solutions/abandoned-cart-recovery)
-- Average Recovery Rate: 25%
-- Open Rate: 98%
-- Features: 1-click pre-filled Shopify checkout link, dynamic discounts based on cart value, automated timed sequences (30 mins, 6 hours, 24 hours), quiet hours timezone compliance.
+Catalog sharing is live. Customer-segment/audience sync is upcoming. AI is not currently available. No fixed open rate, recovery rate, ROI or ranking outcome is promised.
 
-### 2. COD Verification & Anti-RTO (URL: https://whatflow.tech/solutions/cod-order-verification)
-- Average RTO Reduction: 40%
-- Features: 1-click interactive "Confirm Order" and "Cancel" buttons, automatic Shopify order tagging (`COD Confirmed`, `COD Cancelled`), address correction within chat, optional discount incentive to convert COD to prepaid.
+## Resources
+- [Blog and practical guides](https://whatflow.tech/blog)
+- [Platform and channel comparisons](https://whatflow.tech/compare)
+- [Shopify Flow walkthrough](https://whatflow.tech/blog/whatflow-shopify-flow-whatsapp-automation-guide)
+- [WhatsApp team inbox](https://whatflow.tech/inbox)
+- [Free storefront WhatsApp buttons](https://whatflow.tech/solutions/chat-button)
+- [Pricing and messaging allowances](https://whatflow.tech/pricing)
+- [About WhatFlow](https://whatflow.tech/about)
 
-### 3. Order Tracking & Notifications (URL: https://whatflow.tech/solutions/order-tracking-notifications)
-- Support Ticket Reduction: 60% fewer "Where is my order?" (WISMO) tickets
-- Features: Real-time fulfillment alerts with carrier tracking links, out-for-delivery day alerts, itemized receipts, repeat purchase cross-sell recommendations.
-
-### 4. Reviews & UGC Collection (URL: https://whatflow.tech/solutions/whatsapp-reviews-ugc)
-- Performance: 5x higher review submission rate vs email
-- Features: Native integration with Judge.me and Loox, 1-click star rating buttons in WhatsApp, photo and video testimonial collection, automated post-delivery review request timing.
-
-### 5. Storefront Chat Button (URL: https://whatflow.tech/solutions/chat-button)
-- Performance: <5KB lightweight script, 0ms render blocking
-- Features: Customizable positions and colors, pre-filled product context, multi-agent department routing, works seamlessly across iOS, Android, and Desktop WhatsApp Web.
-
-## Pricing Structure (URL: https://whatflow.tech/pricing)
-- Free: $0/month (100 free messages sent, all features, unlimited seats)
-- Starter: $4.99/month (2,000 free messages sent, $0.005/msg overage)
-- Growth: $19.99/month (10,000 free messages sent, $0.003/msg overage)
-- Scale: $49.99/month (40,000 included messages sent, $0.002/msg overage)
-- Meta Rates: 100% direct wholesale Meta Cloud API conversation rates with 0% markup.
-
-## Frequently Asked Questions
-- Q: Do I need a Meta WhatsApp Business Account?
-  A: For WhatFlow Business API, yes (connected in 3 minutes via Meta Embedded Signup). For WhatFlow Chat button, no Meta account is needed.
-- Q: Does WhatFlow take a cut of my recovered cart sales?
-  A: No, WhatFlow never takes a percentage cut of GMV. All recovered sales belong 100% to the merchant.
-- Q: Does WhatFlow integrate with Shopify Flow?
-  A: Yes, WhatFlow provides native Shopify Flow action blocks to trigger WhatsApp messages from any Shopify event.
-
-## Team Inbox and Feature Access
-WhatFlow Business API includes an enterprise-ready WhatsApp team inbox with no seat fees. All features are available across messaging plans; allowances and rates differ. AI is not currently included. Applicable Meta messaging charges are separate from app messaging allowances and usage fees. Theme-matched WhatsApp buttons are free forever.
-
-Meta product catalog sharing is available in WhatFlow Inbox. Shopify customer-segment/audience sync is upcoming and is not currently available.
+Articles are authored by Safwan Adnan, co-founder and CEO of WhatFlow. Product comparisons are published by WhatFlow; vendor claims should be checked against the primary sources linked in each article.

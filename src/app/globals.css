@@ -303,6 +303,13 @@ body {
 
 .prose-whatflow strong { font-weight: 800; }
 
+/* Keep CMS tables readable without widening the article on phones. */
+.prose-whatflow .lexical-table-container {
+	max-width: 100%;
+	overflow-x: auto;
+	padding: 0 6px 6px 0;
+}
+
 /* Tables in Rich Text */
 .prose-whatflow table {
 	width: 100%;

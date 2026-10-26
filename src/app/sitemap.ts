@@ -5,7 +5,6 @@ import {
   getAllPublishedPosts,
   getCaseStudies,
   getIntegrations,
-  getChangelogEntries,
   type Integration,
 } from "@/lib/payload-api";
 
@@ -18,115 +17,96 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
       url: `${baseUrl}/pricing`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/integrations`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/features`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/affiliate`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/solutions`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/solutions/abandoned-cart-recovery`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/solutions/cod-order-verification`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/solutions/order-tracking-notifications`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/solutions/whatsapp-reviews-ugc`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/solutions/chat-button`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/changelog`,
-      lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/compare`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/case-studies`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
     },
     {
       url: `${baseUrl}/terms`,
-      lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
     },
     {
       url: `${baseUrl}/security`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
     },
@@ -138,7 +118,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const posts = await getAllPublishedPosts();
     postRoutes = posts.map((post) => ({
       url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: new Date(post.updatedAt || post.publishedAt || Date.now()),
+      ...(post.updatedAt || post.publishedAt ? { lastModified: new Date(post.updatedAt || post.publishedAt!) } : {}),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
@@ -152,7 +132,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const studiesData = await getCaseStudies({ limit: 100 });
     studyRoutes = studiesData.docs.map((study) => ({
       url: `${baseUrl}/case-studies/${study.slug}`,
-      lastModified: study.publishedAt ? new Date(study.publishedAt) : new Date(),
+      ...(study.publishedAt ? { lastModified: new Date(study.publishedAt) } : {}),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
@@ -166,7 +146,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const integrationsData = await getIntegrations({ limit: 100 });
     integrationRoutes = integrationsData.docs.map((item: Integration) => ({
       url: `${baseUrl}/integrations/${item.slug}`,
-      lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
