@@ -1,0 +1,73 @@
+{
+  "verifiedAt": "2026-10-26T16:59:26.711512+00:00",
+  "site": "https://whatflow.tech",
+  "runtimeCommit": "393845c",
+  "workerVersion": "96a31dfb-1243-4a58-9628-fac4b28e1d50",
+  "migrations": [
+    {
+      "name": "20261023_220504_comparisons_initial",
+      "batch": 1
+    },
+    {
+      "name": "20261024_080000_posts_initial",
+      "batch": 1
+    },
+    {
+      "name": "20261026_170000_cms_schema_repair",
+      "batch": 1
+    }
+  ],
+  "nativeCounts": {
+    "posts": 58,
+    "comparisons": 106,
+    "revisions": 443,
+    "latest_drafts": 0
+  },
+  "foreignKeyViolations": 0,
+  "tablesAdded": [
+    "country_rates",
+    "case_studies_metrics",
+    "case_studies_apps_used",
+    "case_studies",
+    "integrations_key_features",
+    "integrations",
+    "changelog",
+    "payload_mcp_api_keys"
+  ],
+  "columnsAdded": [
+    "media.alt",
+    "payload_locked_documents_rels.payload_mcp_api_keys_id",
+    "payload_preferences_rels.payload_mcp_api_keys_id"
+  ],
+  "deploymentGuard": {
+    "before": "blocked pending migrations without writes",
+    "after": "passed with no pending migrations",
+    "predeploy": "verified no-op before production build"
+  },
+  "codeChecks": {
+    "testsPassed": 19,
+    "typescript": "passed",
+    "focusedESLint": "passed",
+    "productionBuild": "passed"
+  },
+  "logs": {
+    "before": {
+      "from": 1793032891121,
+      "to": 1793033191121,
+      "missingTableEntries": 66
+    },
+    "after": {
+      "from": 1793033549788,
+      "to": 1793033849788,
+      "missingTableEntries": 0
+    },
+    "windowSeconds": 300,
+    "originProbeRequests": 11,
+    "originProbeConsoleEvents": 0,
+    "originProbeExceptions": 0,
+    "productionJSONWarningObserved": true,
+    "warningsAndErrorsRetained": true,
+    "cloudflareSamplingChanged": false,
+    "measuredCPUReduction": null
+  }
+}

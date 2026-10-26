@@ -1,0 +1,157 @@
+{
+  "verifiedAt": "2026-10-26T16:56:36.924Z",
+  "site": "https://whatflow.tech",
+  "passed": true,
+  "requests": 11,
+  "defaultPopulationDepth": true,
+  "observedInvocations": 11,
+  "totalConsoleEvents": 0,
+  "missingTableErrors": 0,
+  "results": [
+    {
+      "path": "/api/case-studies?limit=1",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/api/posts?limit=1",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/api/comparisons?limit=1",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/api/integrations?limit=1",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/api/changelog?limit=1",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/api/country-rates?limit=1",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/api/media?limit=1",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/case-studies",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/compare",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "cache": "BYPASS"
+    }
+  ],
+  "invocations": [
+    {
+      "path": "/api/case-studies",
+      "outcome": "ok",
+      "cpuTimeMs": 13,
+      "wallTimeMs": 200,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/api/posts",
+      "outcome": "ok",
+      "cpuTimeMs": 11,
+      "wallTimeMs": 191,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/api/comparisons",
+      "outcome": "ok",
+      "cpuTimeMs": 29,
+      "wallTimeMs": 440,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/api/integrations",
+      "outcome": "ok",
+      "cpuTimeMs": 8,
+      "wallTimeMs": 191,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/api/changelog",
+      "outcome": "ok",
+      "cpuTimeMs": 9,
+      "wallTimeMs": 203,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/api/country-rates",
+      "outcome": "ok",
+      "cpuTimeMs": 6,
+      "wallTimeMs": 187,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/api/media",
+      "outcome": "ok",
+      "cpuTimeMs": 7,
+      "wallTimeMs": 201,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/case-studies",
+      "outcome": "ok",
+      "cpuTimeMs": 33,
+      "wallTimeMs": 225,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/blog",
+      "outcome": "ok",
+      "cpuTimeMs": 46,
+      "wallTimeMs": 396,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/compare",
+      "outcome": "ok",
+      "cpuTimeMs": 33,
+      "wallTimeMs": 750,
+      "consoleEvents": 0,
+      "exceptions": 0
+    },
+    {
+      "path": "/",
+      "outcome": "ok",
+      "cpuTimeMs": 44,
+      "wallTimeMs": 256,
+      "consoleEvents": 0,
+      "exceptions": 0
+    }
+  ]
+}
