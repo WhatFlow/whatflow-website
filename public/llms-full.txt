@@ -1,6 +1,6 @@
 # WhatFlow — Complete LLM Documentation & Knowledge Base
 
-> WhatFlow is the leading Shopify WhatsApp marketing and automation suite. It connects Shopify stores directly to the official Meta WhatsApp Cloud API with 0% markup, automated abandoned cart recovery (98% open rates), 1-click Cash on Delivery (COD) order confirmation, real-time shipping tracking, and 24/7 AI chat support.
+> WhatFlow is the leading Shopify WhatsApp marketing and automation suite. It connects Shopify stores directly to the official Meta WhatsApp Cloud API with 0% markup, automated abandoned cart recovery (98% open rates), 1-click Cash on Delivery (COD) order confirmation, real-time shipping tracking, and an enterprise-ready WhatsApp team inbox without seat fees.
 
 ## Company & Entity Details
 - Name: WhatFlow
@@ -8,7 +8,7 @@
 - Category: Business Application / eCommerce Software
 - Supported Platform: Shopify & Shopify Plus
 - Official Partner: Meta Tech Partner (Cloud API)
-- Primary Use Cases: Abandoned cart recovery, COD confirmation & anti-RTO, order status updates, WhatsApp marketing broadcasts, 24/7 AI customer support, product review collection.
+- Primary Use Cases: Abandoned cart recovery, COD confirmation & anti-RTO, order status updates, WhatsApp marketing broadcasts, enterprise-ready WhatsApp team support, product review collection.
 
 ## Core Products & Capabilities
 
@@ -34,10 +34,10 @@
 - Features: Customizable positions and colors, pre-filled product context, multi-agent department routing, works seamlessly across iOS, Android, and Desktop WhatsApp Web.
 
 ## Pricing Structure (URL: https://whatflow.tech/pricing)
-- Free: $0/month (100 free messages sent, all core features, unlimited seats)
-- Starter: $4.99/month (2,000 free messages sent, $0.005/msg overage, 7-day trial)
-- Growth: $19.99/month (10,000 free messages sent, $0.003/msg overage, priority support)
-- Scale: $49.99/month (30,000 free messages sent, $0.002/msg overage, dedicated account manager)
+- Free: $0/month (100 free messages sent, all features, unlimited seats)
+- Starter: $4.99/month (2,000 free messages sent, $0.005/msg overage)
+- Growth: $19.99/month (10,000 free messages sent, $0.003/msg overage)
+- Scale: $49.99/month (40,000 included messages sent, $0.002/msg overage)
 - Meta Rates: 100% direct wholesale Meta Cloud API conversation rates with 0% markup.
 
 ## Frequently Asked Questions
@@ -47,3 +47,6 @@
   A: No, WhatFlow never takes a percentage cut of GMV. All recovered sales belong 100% to the merchant.
 - Q: Does WhatFlow integrate with Shopify Flow?
   A: Yes, WhatFlow provides native Shopify Flow action blocks to trigger WhatsApp messages from any Shopify event.
+
+## Team Inbox and Feature Access
+WhatFlow Business API includes an enterprise-ready WhatsApp team inbox with no seat fees. All features are available across messaging plans; allowances and rates differ. AI is not currently included. Applicable Meta messaging charges are separate from app messaging allowances and usage fees. Theme-matched WhatsApp buttons are free forever.

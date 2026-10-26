@@ -5,8 +5,15 @@ export async function GET() {
     service_name: "WhatFlow Shopify WhatsApp Automation",
     provider: "WhatFlow Solutions",
     api_standard: "Meta WhatsApp Cloud API",
-    supported_frameworks: ["Shopify", "Shopify Plus"],
+    supported_platforms: ["Shopify", "Shopify Plus"],
     features: [
+      {
+        id: "team_inbox",
+        name: "Enterprise-ready WhatsApp team inbox",
+        seat_fees: false,
+        ai_available: false,
+        feature_access: "All features available across messaging plans",
+      },
       {
         id: "abandoned_cart_recovery",
         name: "WhatsApp Abandoned Cart Recovery",
@@ -46,7 +53,7 @@ export async function GET() {
   return NextResponse.json(service, {
     headers: {
       "Content-Type": "application/json",
-      "Cache-Control": "public, max-age=86400",
+      "Cache-Control": "public, max-age=300",
     },
   });
 }

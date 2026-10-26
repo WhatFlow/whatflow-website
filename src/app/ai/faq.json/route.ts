@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { HOMEPAGE_FAQS } from "@/lib/marketing-faqs";
 
 export async function GET() {
   const faqs = [
@@ -35,11 +36,11 @@ export async function GET() {
   ];
 
   return NextResponse.json(
-    { total: faqs.length, faqs },
+    { total: faqs.length + 2, faqs: [...faqs, ...HOMEPAGE_FAQS.filter(faq => ["Is AI included in the WhatFlow inbox?", "Are features restricted to paid plans?"].includes(faq.question))] },
     {
       headers: {
         "Content-Type": "application/json",
-        "Cache-Control": "public, max-age=86400",
+        "Cache-Control": "public, max-age=300",
       },
     }
   );
