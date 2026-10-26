@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-26T16:45:58.231Z",
+  "passed": true,
+  "pending": [
+    "20261023_220504_comparisons_initial",
+    "20261024_080000_posts_initial",
+    "20261026_170000_cms_schema_repair"
+  ],
+  "statements": 98,
+  "tablesCreated": [
+    "country_rates",
+    "case_studies_metrics",
+    "case_studies_apps_used",
+    "case_studies",
+    "integrations_key_features",
+    "integrations",
+    "changelog",
+    "payload_mcp_api_keys"
+  ],
+  "originalTablesPreserved": 26,
+  "posts": 58,
+  "comparisons": 106,
+  "comparisonRevisions": 443,
+  "newForeignKeyViolations": 0,
+  "externalParentRowsExcludedFromBackup": true,
+  "repeatedPlanningIsNoOp": true,
+  "backupHashes": {
+    "/tmp/whatflow-before-cms-schema-repair.sql": "684b36b3c714a7ceae1afc09ae27872869590a51636094a5f4035c4f99a97931",
+    "/tmp/whatflow-before-cms-schema-media.sql": "a922da5a23f59e8163cf633b063acf8109b4d729b24e47163bb3c2a92302b31e"
+  }
+}

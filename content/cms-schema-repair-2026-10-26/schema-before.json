@@ -1,0 +1,110 @@
+[
+  {
+    "name": "_cf_KV",
+    "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+  },
+  {
+    "name": "_comparisons_v",
+    "sql": "CREATE TABLE `_comparisons_v` (\n  \t`id` integer PRIMARY KEY NOT NULL,\n  \t`parent_id` integer,\n  \t`version_title` text,\n  \t`version_slug` text,\n  \t`version_competitor` text,\n  \t`version_competitor_url` text,\n  \t`version_category` text,\n  \t`version_excerpt` text,\n  \t`version_verdict` text,\n  \t`version_author` text DEFAULT 'Safwan Adna',\n  \t`version_author_role` text DEFAULT 'Co-founder and CEO of WhatFlow',\n  \t`version_published_at` text,\n  \t`version_reviewed_at` text,\n  \t`version_featured` integer DEFAULT false,\n  \t`version_cover_image_id` integer,\n  \t`version_image_url` text,\n  \t`version_image_alt` text,\n  \t`version_image_caption` text,\n  \t`version_image_source_url` text,\n  \t`version_content` text,\n  \t`version_cta_heading` text DEFAULT 'Try your own Shopify workflow',\n  \t`version_cta_description` text DEFAULT 'Start with one template and test the complete journey before switching platforms.',\n  \t`version_cta_label` text DEFAULT 'Explore WhatFlow on Shopify',\n  \t`version_seo_meta_title` text,\n  \t`version_seo_meta_description` text,\n  \t`version_seo_noindex` integer DEFAULT false,\n  \t`version_updated_at` text,\n  \t`version_created_at` text,\n  \t`version__status` text DEFAULT 'draft',\n  \t`created_at` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,\n  \t`updated_at` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,\n  \t`latest` integer,\n  \tFOREIGN KEY (`parent_id`) REFERENCES `comparisons`(`id`) ON UPDATE no action ON DELETE set null,\n  \tFOREIGN KEY (`version_cover_image_id`) REFERENCES `media`(`id`) ON UPDATE no action ON DELETE set null\n  )"
+  },
+  {
+    "name": "_comparisons_v_rels",
+    "sql": "CREATE TABLE `_comparisons_v_rels` (\n  \t`id` integer PRIMARY KEY NOT NULL,\n  \t`order` integer,\n  \t`parent_id` integer NOT NULL,\n  \t`path` text NOT NULL,\n  \t`comparisons_id` integer,\n  \tFOREIGN KEY (`parent_id`) REFERENCES `_comparisons_v`(`id`) ON UPDATE no action ON DELETE cascade,\n  \tFOREIGN KEY (`comparisons_id`) REFERENCES `comparisons`(`id`) ON UPDATE no action ON DELETE cascade\n  )"
+  },
+  {
+    "name": "_comparisons_v_version_faqs",
+    "sql": "CREATE TABLE `_comparisons_v_version_faqs` (\n  \t`_order` integer NOT NULL,\n  \t`_parent_id` integer NOT NULL,\n  \t`id` integer PRIMARY KEY NOT NULL,\n  \t`question` text,\n  \t`answer` text,\n  \t`_uuid` text,\n  \tFOREIGN KEY (`_parent_id`) REFERENCES `_comparisons_v`(`id`) ON UPDATE no action ON DELETE cascade\n  )"
+  },
+  {
+    "name": "_comparisons_v_version_feature_table",
+    "sql": "CREATE TABLE `_comparisons_v_version_feature_table` (\n  \t`_order` integer NOT NULL,\n  \t`_parent_id` integer NOT NULL,\n  \t`id` integer PRIMARY KEY NOT NULL,\n  \t`feature` text,\n  \t`whatflow` text,\n  \t`competitor` text,\n  \t`_uuid` text,\n  \tFOREIGN KEY (`_parent_id`) REFERENCES `_comparisons_v`(`id`) ON UPDATE no action ON DELETE cascade\n  )"
+  },
+  {
+    "name": "_comparisons_v_version_sources",
+    "sql": "CREATE TABLE `_comparisons_v_version_sources` (\n  \t`_order` integer NOT NULL,\n  \t`_parent_id` integer NOT NULL,\n  \t`id` integer PRIMARY KEY NOT NULL,\n  \t`title` text,\n  \t`url` text,\n  \t`note` text,\n  \t`_uuid` text,\n  \tFOREIGN KEY (`_parent_id`) REFERENCES `_comparisons_v`(`id`) ON UPDATE no action ON DELETE cascade\n  )"
+  },
+  {
+    "name": "api_keys",
+    "sql": "CREATE TABLE \"api_keys\" (\n\t\"id\" integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\"name\" text NOT NULL,\n\t\"scopes\" text NOT NULL,\n\t\"expires_at\" text,\n\t\"revoked\" integer DEFAULT 0,\n\t\"enable_api_key\" integer,\n\t\"api_key\" text,\n\t\"api_key_index\" text,\n\t\"updated_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\t\"created_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL\n)"
+  },
+  {
+    "name": "comparisons",
+    "sql": "CREATE TABLE `comparisons` (\n  \t`id` integer PRIMARY KEY NOT NULL,\n  \t`title` text,\n  \t`slug` text,\n  \t`competitor` text,\n  \t`competitor_url` text,\n  \t`category` text,\n  \t`excerpt` text,\n  \t`verdict` text,\n  \t`author` text DEFAULT 'Safwan Adna',\n  \t`author_role` text DEFAULT 'Co-founder and CEO of WhatFlow',\n  \t`published_at` text,\n  \t`reviewed_at` text,\n  \t`featured` integer DEFAULT false,\n  \t`cover_image_id` integer,\n  \t`image_url` text,\n  \t`image_alt` text,\n  \t`image_caption` text,\n  \t`image_source_url` text,\n  \t`content` text,\n  \t`cta_heading` text DEFAULT 'Try your own Shopify workflow',\n  \t`cta_description` text DEFAULT 'Start with one template and test the complete journey before switching platforms.',\n  \t`cta_label` text DEFAULT 'Explore WhatFlow on Shopify',\n  \t`seo_meta_title` text,\n  \t`seo_meta_description` text,\n  \t`seo_noindex` integer DEFAULT false,\n  \t`updated_at` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,\n  \t`created_at` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,\n  \t`_status` text DEFAULT 'draft',\n  \tFOREIGN KEY (`cover_image_id`) REFERENCES `media`(`id`) ON UPDATE no action ON DELETE set null\n  )"
+  },
+  {
+    "name": "comparisons_faqs",
+    "sql": "CREATE TABLE `comparisons_faqs` (\n  \t`_order` integer NOT NULL,\n  \t`_parent_id` integer NOT NULL,\n  \t`id` text PRIMARY KEY NOT NULL,\n  \t`question` text,\n  \t`answer` text,\n  \tFOREIGN KEY (`_parent_id`) REFERENCES `comparisons`(`id`) ON UPDATE no action ON DELETE cascade\n  )"
+  },
+  {
+    "name": "comparisons_feature_table",
+    "sql": "CREATE TABLE `comparisons_feature_table` (\n  \t`_order` integer NOT NULL,\n  \t`_parent_id` integer NOT NULL,\n  \t`id` text PRIMARY KEY NOT NULL,\n  \t`feature` text,\n  \t`whatflow` text,\n  \t`competitor` text,\n  \tFOREIGN KEY (`_parent_id`) REFERENCES `comparisons`(`id`) ON UPDATE no action ON DELETE cascade\n  )"
+  },
+  {
+    "name": "comparisons_rels",
+    "sql": "CREATE TABLE `comparisons_rels` (\n  \t`id` integer PRIMARY KEY NOT NULL,\n  \t`order` integer,\n  \t`parent_id` integer NOT NULL,\n  \t`path` text NOT NULL,\n  \t`comparisons_id` integer,\n  \tFOREIGN KEY (`parent_id`) REFERENCES `comparisons`(`id`) ON UPDATE no action ON DELETE cascade,\n  \tFOREIGN KEY (`comparisons_id`) REFERENCES `comparisons`(`id`) ON UPDATE no action ON DELETE cascade\n  )"
+  },
+  {
+    "name": "comparisons_sources",
+    "sql": "CREATE TABLE `comparisons_sources` (\n  \t`_order` integer NOT NULL,\n  \t`_parent_id` integer NOT NULL,\n  \t`id` text PRIMARY KEY NOT NULL,\n  \t`title` text,\n  \t`url` text,\n  \t`note` text,\n  \tFOREIGN KEY (`_parent_id`) REFERENCES `comparisons`(`id`) ON UPDATE no action ON DELETE cascade\n  )"
+  },
+  {
+    "name": "media",
+    "sql": "CREATE TABLE \"media\" (\n\t\"id\" integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\"updated_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\t\"created_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\t\"url\" text,\n\t\"thumbnail_u_r_l\" text,\n\t\"filename\" text,\n\t\"mime_type\" text,\n\t\"filesize\" numeric,\n\t\"width\" numeric,\n\t\"height\" numeric,\n\t\"focal_x\" numeric,\n\t\"focal_y\" numeric\n)"
+  },
+  {
+    "name": "payload_kv",
+    "sql": "CREATE TABLE payload_kv (\n\tid integer PRIMARY KEY NOT NULL,\n\tkey text NOT NULL,\n\tdata text NOT NULL\n)"
+  },
+  {
+    "name": "payload_locked_documents",
+    "sql": "CREATE TABLE \"payload_locked_documents\" (\n\t\"id\" integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\"global_slug\" text,\n\t\"updated_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\t\"created_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL\n)"
+  },
+  {
+    "name": "payload_locked_documents_rels",
+    "sql": "CREATE TABLE \"payload_locked_documents_rels\" (\n\t\"id\" integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\"order\" integer,\n\t\"parent_id\" integer NOT NULL,\n\t\"path\" text NOT NULL,\n\t\"users_id\" integer,\n\t\"media_id\" integer,\n\t\"reviews_id\" integer,\n\t\"api_keys_id\" integer,\n\tFOREIGN KEY (\"parent_id\") REFERENCES \"payload_locked_documents\"(\"id\") ON DELETE cascade ON UPDATE no action,\n\tFOREIGN KEY (\"users_id\") REFERENCES \"users\"(\"id\") ON DELETE cascade ON UPDATE no action,\n\tFOREIGN KEY (\"media_id\") REFERENCES \"media\"(\"id\") ON DELETE cascade ON UPDATE no action,\n\tFOREIGN KEY (\"reviews_id\") REFERENCES \"reviews\"(\"id\") ON DELETE cascade ON UPDATE no action,\n\tFOREIGN KEY (\"api_keys_id\") REFERENCES \"api_keys\"(\"id\") ON DELETE cascade ON UPDATE no action\n)"
+  },
+  {
+    "name": "payload_migrations",
+    "sql": "CREATE TABLE \"payload_migrations\" (\n\t\"id\" integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\"name\" text,\n\t\"batch\" numeric,\n\t\"updated_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\t\"created_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL\n)"
+  },
+  {
+    "name": "payload_preferences",
+    "sql": "CREATE TABLE \"payload_preferences\" (\n\t\"id\" integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\"key\" text,\n\t\"value\" text,\n\t\"updated_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\t\"created_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL\n)"
+  },
+  {
+    "name": "payload_preferences_rels",
+    "sql": "CREATE TABLE \"payload_preferences_rels\" (\n\t\"id\" integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\"order\" integer,\n\t\"parent_id\" integer NOT NULL,\n\t\"path\" text NOT NULL,\n\t\"users_id\" integer,\n\tFOREIGN KEY (\"parent_id\") REFERENCES \"payload_preferences\"(\"id\") ON DELETE cascade ON UPDATE no action,\n\tFOREIGN KEY (\"users_id\") REFERENCES \"users\"(\"id\") ON DELETE cascade ON UPDATE no action\n)"
+  },
+  {
+    "name": "posts",
+    "sql": "CREATE TABLE posts (\n id integer PRIMARY KEY NOT NULL,\n title text NOT NULL,\n slug text NOT NULL,\n excerpt text NOT NULL,\n cover_image_id integer,\n cover_image_url text,\n cover_image_alt text,\n cover_image_caption text,\n reviewed_at text,\n category text NOT NULL DEFAULT 'guides',\n author text NOT NULL DEFAULT 'Safwan Adnan',\n author_role text DEFAULT 'Co-founder and CEO of WhatFlow',\n published_at text,\n status text NOT NULL DEFAULT 'draft',\n featured integer DEFAULT false,\n content text NOT NULL,\n seo_meta_title text,\n seo_meta_description text,\n updated_at text NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),\n created_at text NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),\n FOREIGN KEY (cover_image_id) REFERENCES media(id) ON DELETE SET NULL\n)"
+  },
+  {
+    "name": "posts_faqs",
+    "sql": "CREATE TABLE posts_faqs (\n _order integer NOT NULL,\n _parent_id integer NOT NULL,\n id text PRIMARY KEY NOT NULL,\n question text NOT NULL,\n answer text NOT NULL,\n FOREIGN KEY (_parent_id) REFERENCES posts(id) ON DELETE CASCADE\n)"
+  },
+  {
+    "name": "posts_sources",
+    "sql": "CREATE TABLE posts_sources (\n _order integer NOT NULL,\n _parent_id integer NOT NULL,\n id text PRIMARY KEY NOT NULL,\n title text NOT NULL,\n url text NOT NULL,\n note text,\n FOREIGN KEY (_parent_id) REFERENCES posts(id) ON DELETE CASCADE\n)"
+  },
+  {
+    "name": "posts_tags",
+    "sql": "CREATE TABLE posts_tags (\n _order integer NOT NULL,\n _parent_id integer NOT NULL,\n id text PRIMARY KEY NOT NULL,\n tag text NOT NULL,\n FOREIGN KEY (_parent_id) REFERENCES posts(id) ON DELETE CASCADE\n)"
+  },
+  {
+    "name": "reviews",
+    "sql": "CREATE TABLE \"reviews\" (\n\t\"id\" integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\"author\" text NOT NULL,\n\t\"rating\" numeric NOT NULL,\n\t\"body\" text NOT NULL,\n\t\"favicon_url\" text,\n\t\"active\" integer DEFAULT 1,\n\t\"favicon_id\" integer,\n\t\"updated_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\t\"created_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\tFOREIGN KEY (\"favicon_id\") REFERENCES \"media\"(\"id\") ON DELETE set null ON UPDATE no action\n)"
+  },
+  {
+    "name": "sqlite_sequence",
+    "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+  },
+  {
+    "name": "users",
+    "sql": "CREATE TABLE \"users\" (\n\t\"id\" integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t\"updated_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\t\"created_at\" text DEFAULT (CURRENT_TIMESTAMP) NOT NULL,\n\t\"email\" text NOT NULL,\n\t\"reset_password_token\" text,\n\t\"reset_password_expiration\" text,\n\t\"salt\" text,\n\t\"hash\" text,\n\t\"login_attempts\" numeric DEFAULT 0,\n\t\"lock_until\" text,\n\t\"enable_api_key\" integer,\n\t\"api_key\" text,\n\t\"api_key_index\" text\n, enable_a_p_i_key integer)"
+  },
+  {
+    "name": "users_sessions",
+    "sql": "CREATE TABLE users_sessions (\n\t_order integer NOT NULL,\n\t_parent_id integer NOT NULL,\n\tid text PRIMARY KEY NOT NULL,\n\tcreated_at text,\n\texpires_at text NOT NULL,\n\tFOREIGN KEY (_parent_id) REFERENCES users(id) ON UPDATE no action ON DELETE cascade\n)"
+  }
+]
