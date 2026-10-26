@@ -1,0 +1,40 @@
+{
+  "runtimeCommit": "fbe32d8",
+  "workerVersion": "0a49511a-0356-4630-9d6d-e57f47e022c6",
+  "confirmation": "Safwan Adnan confirmed catalog sharing is live and audience sync is upcoming.",
+  "availability": {
+    "catalogSharing": "available",
+    "audienceSync": "upcoming",
+    "ai": "unavailable"
+  },
+  "changed": [
+    "Inbox available-now and roadmap sections",
+    "AI summary and service endpoints",
+    "llms.txt and llms-full.txt"
+  ],
+  "codeChecks": {
+    "focusedESLint": "passed",
+    "typescript": "passed",
+    "productionBuild": "passed"
+  },
+  "browserChecks": {
+    "verifiedAt": "2026-10-26T16:27:35.077698+00:00",
+    "site": "https://whatflow.tech",
+    "catalogSharingAvailable": true,
+    "audienceSyncUpcoming": true,
+    "aiCurrentlyUnavailable": true,
+    "viewports": [
+      375,
+      768,
+      1280
+    ],
+    "javascriptErrors": []
+  },
+  "publicChecks": {
+    "verifiedAt": "2026-10-26T16:27:02.663Z",
+    "machineSummaries": true,
+    "llmDocuments": true,
+    "pageCacheHit": true,
+    "rscBypass": true
+  }
+}
