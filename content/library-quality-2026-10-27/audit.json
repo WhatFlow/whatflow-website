@@ -1,0 +1,5017 @@
+{
+  "auditDate": "2026-10-27",
+  "scope": "Anonymous published CMS API snapshots and all164 public rendered article pages. Read-only; no CMS changes.",
+  "summary": {
+    "posts": 58,
+    "comparisons": 106,
+    "total": 164,
+    "analyzerMean": 71.3,
+    "analyzerBuckets": {
+      "90+": 0,
+      "70-89": 136,
+      "50-69": 28,
+      "<50": 0
+    },
+    "parseErrors": 0,
+    "http200": 164,
+    "articleOrphans": 0,
+    "deadEnds": 0,
+    "missingArticleTargets": 0,
+    "sitemapMissing": 0,
+    "schemaDateMismatches": 0
+  },
+  "scoringLimitations": [
+    "Canonical analyzer scores are internal editorial-readiness heuristics, not independent factual audits, Google rankings, probabilities or delivery-gate editorial scores.",
+    "Markdown exports omit runtime JSON-LD; all164 rendered pages contain Article/BlogPosting, Person author and BreadcrumbList. Analyzer missing-schema penalties are export artifacts and are not valid website defects.",
+    "CMS title rendered as sole H1 in exports; all164 live pages have exactly one H1.",
+    "No substantiated incorrect competitor quote was established by this audit; changing quotes were not exhaustively reverified. Do not represent this as a fresh commercial fact-check of106 comparisons.",
+    "Technical health does not prove originality, search demand, product superiority or conversion performance."
+  ],
+  "findings": [
+    {
+      "id": "P1-entity-schema",
+      "priority": 1,
+      "scope": "Global rendered Organization JSON-LD",
+      "evidence": "All164 sampled article pages contain sameAs links to Shopify/WhatsApp Wikipedia/Wikidata entities, +1-800-WHATFLOW placeholder, US address and unverified organization profiles.",
+      "action": "Remove false identity equivalences and unverified contact/entity properties; keep confirmed WhatFlow identities. Root implementing."
+    },
+    {
+      "id": "P1-search-schema",
+      "priority": 1,
+      "scope": "Global WebSite JSON-LD",
+      "evidence": "SearchAction target uses /blog?search= but real site search uses q.",
+      "action": "Use actual q parameter or remove unsupported action. Root implementing."
+    },
+    {
+      "id": "P1-visual-proof",
+      "priority": 1,
+      "scope": "All164 articles",
+      "evidence": "339 body screenshot placements use16 distinct screenshots. Template-editor WebP repeats119 times; Flow order-reply JPG60 times; Flow triggers JPG37 times.",
+      "action": "Capture real inbox, catalog, customer/order extensions, buttons and broadcast configuration; use only screenshots that show the actual claim. Prioritize inbox and catalog pages. Preserve honest sample-data captions."
+    },
+    {
+      "id": "P1-padded-comparisons",
+      "priority": 1,
+      "scope": "Comparison library",
+      "evidence": "105 comparisons share the same generic budget caveat paragraph;70 share free-button explanatory paragraph;65 share four generic section headings;64 titles end Shopify features, inbox and pricing.",
+      "action": "Retain short accurate common cost notes but replace unnecessary repetition with specific counterpart pricing inputs, concrete workflow boundaries and evidence. Give priority competitors unique titles/angles. Repeated legal/product truth alone is not proof of duplicate-content penalty."
+    },
+    {
+      "id": "P2-segmentation-boundary",
+      "priority": 2,
+      "scope": "whatsapp-customer-segments-vs-generic-bulk-sending; whatsapp-campaign-segmentation-shopify",
+      "evidence": "Pages discuss Shopify-derived audiences and WhatFlow workflows without explicitly stating native audience/customer-segment sync remains upcoming. They do not explicitly claim sync is live.",
+      "action": "Add precise current boundary near product recommendation: audience/segment sync is upcoming; describe only presently supported recipient-selection/import/Flow paths after verifying actual interface. Do not promise automatic synchronization."
+    },
+    {
+      "id": "P2-live-catalog-proof",
+      "priority": 2,
+      "scope": "Direct commerce competitors: Wati, Interakt, Zoko, AiSensy",
+      "evidence": "Vendor catalog features are described, but WhatFlow live catalog sharing has no dedicated genuine screenshot among16 body screenshot assets.",
+      "action": "Show current WhatFlow catalog-sharing workflow and distinguish catalog sharing from ongoing catalog or audience synchronization."
+    },
+    {
+      "id": "P2-search-intent",
+      "priority": 2,
+      "scope": "Cart recovery comparison cluster",
+      "evidence": "Email/SMS/retargeting comparisons share cart-recovery topic; token overlap is only a candidate signal. No GSC query-to-URL evidence exists.",
+      "action": "Preserve distinct channel buying intent, cross-link to implementation guide, avoid new near-identical cart articles. Do not merge or redirect from title overlap alone."
+    },
+    {
+      "id": "P2-conversion-evidence",
+      "priority": 2,
+      "scope": "Entire content library",
+      "evidence": "No merchant performance measurements validated in this audit; content correctly labels scenarios hypothetical.",
+      "action": "Add permissioned real merchant case studies and instrument article-to-install conversion; do not relabel hypothetical scenarios as merchant results."
+    },
+    {
+      "id": "P3-preview-length",
+      "priority": 3,
+      "scope": "Metadata",
+      "evidence": "9 meta titles exceed60 characters;31 descriptions exceed160 by1\u20135 characters. These are preview warnings, not indexing failures.",
+      "action": "Adjust only where meaning improves; avoid padded templates and avoid enforcing rigid character quotas."
+    }
+  ],
+  "actionQueue": [
+    {
+      "slug": "evaluate-shopify-app-workflow-connectors",
+      "collection": "posts",
+      "canonicalHeuristicScore": 64,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1002,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "multilingual-customer-messaging-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 64,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 946,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "collection": "posts",
+      "canonicalHeuristicScore": 64,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1273,
+      "bodyScreenshots": 3,
+      "sourceCount": 6
+    },
+    {
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "collection": "posts",
+      "canonicalHeuristicScore": 64,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1322,
+      "bodyScreenshots": 3,
+      "sourceCount": 6
+    },
+    {
+      "slug": "abandoned-checkout-whatsapp-conversation",
+      "collection": "posts",
+      "canonicalHeuristicScore": 65,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (34.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1005,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "best-time-review-request-after-delivery",
+      "collection": "posts",
+      "canonicalHeuristicScore": 65,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1025,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "customer-referral-messages-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 65,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 990,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "customer-winback-campaign-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 65,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1004,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "define-store-audience-brand-promise",
+      "collection": "posts",
+      "canonicalHeuristicScore": 65,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "2 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 995,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "loyalty-messages-customer-value-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 65,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 971,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "dropshipping-customer-trust-communication",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (34.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1015,
+      "bodyScreenshots": 1,
+      "sourceCount": 4
+    },
+    {
+      "slug": "helpful-cross-sell-product-recommendations",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (33.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 980,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "influencer-campaign-small-store-plan",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (35.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 985,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "photo-video-reviews-customer-permission",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1040,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "review-moderation-policy-small-store",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1040,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "shopify-product-page-trust-checklist",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1065,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-campaign-preflight-checklist",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1007,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-customer-optouts-store-process",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1081,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-message-budget-cost-per-outcome",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1026,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "write-useful-product-faqs-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 66,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.4) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "2 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1016,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "migrate-review-app-preserve-customer-feedback",
+      "collection": "posts",
+      "canonicalHeuristicScore": 67,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (29.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 960,
+      "bodyScreenshots": 1,
+      "sourceCount": 4
+    },
+    {
+      "slug": "mobile-store-review-widget-chat-button-layout",
+      "collection": "posts",
+      "canonicalHeuristicScore": 67,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1030,
+      "bodyScreenshots": 1,
+      "sourceCount": 2
+    },
+    {
+      "slug": "shared-team-inbox-small-shopify-business",
+      "collection": "posts",
+      "canonicalHeuristicScore": 68,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1015,
+      "bodyScreenshots": 1,
+      "sourceCount": 2
+    },
+    {
+      "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+      "collection": "posts",
+      "canonicalHeuristicScore": 69,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 997,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "choose-first-automation-shopify-small-team",
+      "collection": "posts",
+      "canonicalHeuristicScore": 69,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (43.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 968,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "customer-service-saved-replies-without-robotic-tone",
+      "collection": "posts",
+      "canonicalHeuristicScore": 69,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 985,
+      "bodyScreenshots": 1,
+      "sourceCount": 2
+    },
+    {
+      "slug": "review-request-messages-examples-whatsapp-email",
+      "collection": "posts",
+      "canonicalHeuristicScore": 69,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "No differentiated evidence or analysis found - add original data, a sourced synthesis, a case example, or a clearly labeled unique insight"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1075,
+      "bodyScreenshots": 1,
+      "sourceCount": 4
+    },
+    {
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "collection": "posts",
+      "canonicalHeuristicScore": 69,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (43.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1365,
+      "bodyScreenshots": 3,
+      "sourceCount": 6
+    },
+    {
+      "slug": "ai-support-drafts-small-shopify-team",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 974,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "choose-ecommerce-platform-customer-workflows",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 993,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "coordinate-email-sms-whatsapp-customer-messages",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 978,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "prepare-customer-support-black-friday-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 979,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "repeat-purchase-campaign-without-constant-discounts",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1074,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "replenishment-reminders-shopify-consumables",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1031,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "shopify-content-plan-customer-questions",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1035,
+      "bodyScreenshots": 1,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1016,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 677,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (43.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1229,
+      "bodyScreenshots": 3,
+      "sourceCount": 6
+    },
+    {
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "collection": "posts",
+      "canonicalHeuristicScore": 70,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1112,
+      "bodyScreenshots": 1,
+      "sourceCount": 6
+    },
+    {
+      "slug": "post-purchase-customer-journey-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1004,
+      "bodyScreenshots": 1,
+      "sourceCount": 4
+    },
+    {
+      "slug": "product-questions-whatsapp-prepurchase-support",
+      "collection": "posts",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1036,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "reuse-customer-reviews-social-media",
+      "collection": "posts",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 997,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "review-collection-rate-measurement-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1061,
+      "bodyScreenshots": 1,
+      "sourceCount": 2
+    },
+    {
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 624,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "small-shopify-store-metrics-review-routine",
+      "collection": "posts",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 999,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 612,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 657,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.4) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 675,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 692,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-marketing-plan-small-shopify-store",
+      "collection": "posts",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1042,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (35.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 606,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-vs-facebook-messenger",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 619,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-vs-instagram-dm",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 694,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-vs-mobile-push",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 633,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-vs-phone-calls",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (43.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 686,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-vs-rcs",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 664,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-vs-telegram",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 595,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-vs-web-push",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (43.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 641,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-vs-website-live-chat",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 71,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 696,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 670,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "choose-review-app-and-messaging-app-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1002,
+      "bodyScreenshots": 1,
+      "sourceCount": 5
+    },
+    {
+      "slug": "customer-feedback-loop-product-improvements",
+      "collection": "posts",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1000,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "customer-review-insights-product-copy",
+      "collection": "posts",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (35.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 961,
+      "bodyScreenshots": 1,
+      "sourceCount": 4
+    },
+    {
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 653,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 676,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "product-reviews-vs-store-reviews",
+      "collection": "posts",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1057,
+      "bodyScreenshots": 1,
+      "sourceCount": 4
+    },
+    {
+      "slug": "reduce-cart-abandonment-with-clear-information",
+      "collection": "posts",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1058,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "respond-negative-product-reviews-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1056,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 662,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 695,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 755,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 645,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "collection": "posts",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "high",
+          "issue": "First-hand testing claims need supporting methodology, measurements, or evidence"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "2 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1460,
+      "bodyScreenshots": 4,
+      "sourceCount": 7
+    },
+    {
+      "slug": "whatflow-vs-360dialog",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (34.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 818,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 787,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-bird",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.4) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 869,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 801,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-botpress",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 740,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-braze",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (35.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 697,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-chatwoot",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 716,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-chaty",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 717,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-engati",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (35.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 689,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 745,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-gallabox",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 792,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-infobip",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (33.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 801,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-insider",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (31.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 736,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.4) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 917,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-jivochat",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 733,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-klaviyo",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.4) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 893,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-limechat",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.4) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 928,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-livechat",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 776,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-mailchimp",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 687,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-manychat",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 806,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-moengage",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 757,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-omnisend",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 752,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-pushowl",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 708,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-sleekflow",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 677,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-superlemon",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 892,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatflow-vs-telnyx",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 662,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-tidio",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 895,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-vonage",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (35.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 692,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-webengage",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (32.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 635,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 863,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 686,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 600,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 656,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 602,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 677,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatsapp-quick-reply-buttons-customer-choices",
+      "collection": "posts",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (43.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1050,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.4) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 592,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-vs-sms",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 72,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 752,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "collect-first-product-reviews-shopify",
+      "collection": "posts",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1014,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "maintain-shopify-blog-content-library",
+      "collection": "posts",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1048,
+      "bodyScreenshots": 1,
+      "sourceCount": 2
+    },
+    {
+      "slug": "product-review-schema-rich-results-explained",
+      "collection": "posts",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 989,
+      "bodyScreenshots": 1,
+      "sourceCount": 4
+    },
+    {
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 680,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "test-social-proof-product-page",
+      "collection": "posts",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "content",
+          "severity": "low",
+          "issue": "1 sentences over 40 words - consider splitting"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1019,
+      "bodyScreenshots": 1,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-attentive",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 702,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-charles",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 760,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-chatarmin",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 879,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatflow-vs-chatfuel",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 721,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 781,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-doubletick",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (32.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 790,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (42.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 765,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-gupshup",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (35.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 799,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (43.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 703,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-highlevel",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 661,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-hubspot",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 780,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatflow-vs-intercom",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (43.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 715,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-landbot",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 701,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-onesignal",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.4) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 762,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-plivo",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.2) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 743,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-quickreply",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 822,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatflow-vs-rasayel",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 748,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-shopify-inbox",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 684,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-userlike",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 670,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 765,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.5) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 714,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 671,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-vs-mms",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 73,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (40.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 640,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 602,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "product-variant-review-context",
+      "collection": "posts",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 980,
+      "bodyScreenshots": 1,
+      "sourceCount": 4
+    },
+    {
+      "slug": "qr-code-review-requests-product-packaging",
+      "collection": "posts",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 2,
+      "action": "Replace generic operating advice with concrete examples, maintained templates or verified screenshots where topic warrants; preserve distinct purpose.",
+      "wordCount": 1025,
+      "bodyScreenshots": 1,
+      "sourceCount": 4
+    },
+    {
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 673,
+      "bodyScreenshots": 2,
+      "sourceCount": 2
+    },
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "high",
+          "issue": "First-hand testing claims need supporting methodology, measurements, or evidence"
+        },
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 1949,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatflow-vs-brevo",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.9) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 716,
+      "bodyScreenshots": 2,
+      "sourceCount": 5
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 841,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 847,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-kommo",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 703,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatflow-vs-postscript",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (44.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 732,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-saysimple",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 726,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-sinch",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 650,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-timelinesai",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 766,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 756,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-twilio",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 902,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.4) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 804,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatsapp-business-platform-vs-channels",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.6) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 626,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (37.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 663,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-order-updates-vs-email",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.3) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 670,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-review-requests-vs-email",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.1) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 656,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 74,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (36.8) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 611,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 75,
+      "canonicalIssues": [
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 959,
+      "bodyScreenshots": 2,
+      "sourceCount": 6
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 75,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (41.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 865,
+      "bodyScreenshots": 2,
+      "sourceCount": 4
+    },
+    {
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 75,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (38.0) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 667,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    },
+    {
+      "slug": "whatsapp-vs-email",
+      "collection": "comparisons",
+      "canonicalHeuristicScore": 75,
+      "canonicalIssues": [
+        {
+          "category": "content",
+          "severity": "medium",
+          "issue": "Flesch reading ease (39.7) outside acceptable range (55-75)"
+        },
+        {
+          "category": "technical",
+          "severity": "medium",
+          "issue": "No JSON-LD schema markup detected - add BlogPosting schema"
+        },
+        {
+          "category": "ai_citation",
+          "severity": "low",
+          "issue": "No entity definitions found - use **term** is/are patterns"
+        }
+      ],
+      "renderedSchemaPresent": true,
+      "priority": 1,
+      "action": "Differentiate vendor/scenario evidence, cost model and relevant product screenshots; verify changing vendor quotes before rewrite.",
+      "wordCount": 711,
+      "bodyScreenshots": 2,
+      "sourceCount": 3
+    }
+  ],
+  "cannibalizationCandidates": [
+    {
+      "a": "whatsapp-cart-recovery-vs-email",
+      "b": "whatsapp-cart-recovery-vs-sms",
+      "titleTokenJaccard": 0.5,
+      "common": [
+        "cart",
+        "recovery"
+      ],
+      "confidence": "candidate-only: no GSC query overlap or SERP evidence",
+      "recommendation": "Differentiate: preserve distinct scenario/platform/setup intent; do not redirect from token similarity alone"
+    },
+    {
+      "a": "whatsapp-cart-recovery-vs-email",
+      "b": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "titleTokenJaccard": 0.4,
+      "common": [
+        "cart",
+        "recovery"
+      ],
+      "confidence": "candidate-only: no GSC query overlap or SERP evidence",
+      "recommendation": "Differentiate: preserve distinct scenario/platform/setup intent; do not redirect from token similarity alone"
+    },
+    {
+      "a": "whatsapp-cart-recovery-vs-sms",
+      "b": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "titleTokenJaccard": 0.4,
+      "common": [
+        "cart",
+        "recovery"
+      ],
+      "confidence": "candidate-only: no GSC query overlap or SERP evidence",
+      "recommendation": "Differentiate: preserve distinct scenario/platform/setup intent; do not redirect from token similarity alone"
+    }
+  ],
+  "skipped": [
+    {
+      "check": "GSC query-to-URL cannibalization, indexing, CTR, ranking decay",
+      "reason": "Credentials/data not supplied"
+    },
+    {
+      "check": "GA4 conversion and attribution",
+      "reason": "Credentials/data not supplied"
+    },
+    {
+      "check": "Core Web Vitals field metrics",
+      "reason": "No field data available in this audit"
+    },
+    {
+      "check": "All external source URLs and each changing competitor quote",
+      "reason": "Not exhaustively reverified; review dates are recent, pricing remains volatile"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "checkedAt": "2026-10-27",
+  "role": "source verification, read-only",
+  "scope": "Eight priority comparison attached source URLs and new current pricing references; material public product/commercial claims. Not hands-on performance validation.",
+  "sourceAccessMethod": "web open/find, public pages only",
+  "sharedSources": [
+    {
+      "url": "https://apps.shopify.com/whatflow-official-api",
+      "access": "verified public page",
+      "supports": [
+        "Distinct official API app identity, Shopify Flow and Shopify Admin integration listings.",
+        "Free100sent messages then$0.01; Starter$4.99 includes2000 then$0.005; Plus$9.99 includes5000 then$0.004; Growth$29 includes20000 then$0.0025; Scale$49.99 includes40000 then$0.002; Ultimate$99 includes75000 then$0.0015. USD/30day billing."
+      ],
+      "boundary": [
+        "Messaging allowance free of WhatFlow usage charges does not mean Meta delivered message is free.",
+        "App store AI chatbot category conflicts with explicit founder clarification that AI is unavailable; do not advertise AI as live.",
+        "No-seat-fee and equal feature access, catalog live, audience sync upcoming are first-party user confirmations, not independent certification."
+      ]
+    },
+    {
+      "url": "https://business.whatsapp.com/products/platform-pricing",
+      "redirect": "https://whatsappbusiness.com/products/platform-pricing/",
+      "access": "verified public page",
+      "supports": [
+        "Meta landing bills per delivered message based on destination and category; rates vary by market-category.",
+        "Landing says no charge for service messages or utility responses to users."
+      ],
+      "boundary": [
+        "Some vendor pages state October1 service charges; this conflict cannot be resolved by quoting vendor as Meta authority.",
+        "No universal per-message rate should be inferred; exact rate card/country/currency/date needed."
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "slug": "whatflow-vs-wati",
+      "sourceUrls": [
+        "https://www.wati.io/en/pricing/",
+        "https://support.wati.io/en/articles/11463127-how-to-integrate-and-use-the-wati-shopify-app-with-wati-paid-account"
+      ],
+      "access": "all listed public sources accessible and inspected",
+      "supports": [
+        "Growth includes 3 users and no additional users; Pro includes 5 and $24 per additional user/month; Business includes 5 and $69 per additional user/month.",
+        "Shopify guide dated July 29, 2026 separately charges $4.99/month for Shopify automated messages.",
+        "Catalog, cart, COD and shipping workflows exist."
+      ],
+      "correctionsAndBoundaries": [
+        "Do not claim Growth has 5 users; do not imply no Shopify integration.",
+        "Exact dynamically displayed base subscription amount was not verified."
+      ],
+      "reviewDateEligibility": "2026-10-27 only after draft removes/bounds unsupported claims and reviewer verifies final text against this packet"
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "sourceUrls": [
+        "https://www.interakt.shop/integrations/integrating-whatsapp-business-api-with-shopify/",
+        "https://www.interakt.shop/pricing/",
+        "https://www.interakt.shop/faqs/"
+      ],
+      "access": "all listed public sources accessible and inspected",
+      "supports": [
+        "Official Shopify integration exists.",
+        "Growth displays INR 2799/month plus taxes; billing-period selectors and multiple products require context.",
+        "FAQ supports unlimited team member logins and says Shopify-managed subscriptions are billed in USD."
+      ],
+      "correctionsAndBoundaries": [
+        "Current pricing page conflicts internally: Growth summary says all roles excluding Sales CRM while detailed Growth section says owner roles. State unlimited agents and ask which roles/package are included.",
+        "Do not describe Interakt as universally per-seat or use FAQ old conversation-charge terminology as current Meta policy."
+      ],
+      "reviewDateEligibility": "2026-10-27 only after draft removes/bounds unsupported claims and reviewer verifies final text against this packet"
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "sourceUrls": [
+        "https://www.zoko.io/",
+        "https://www.zoko.io/pricing"
+      ],
+      "access": "all listed public sources accessible and inspected",
+      "supports": [
+        "Starter $49.99/month plus $0.015 per conversation, unlimited agents.",
+        "Plus $79.99/month, first 5000 conversations with no Zoko conversation markup, then $0.00199/conversation; first 5 agents included then $15/agent.",
+        "Core features available across plans; premium workflows $5.99/month/flow and separate AI add-ons.",
+        "Meta fees paid directly to Meta, separate from Zoko fees."
+      ],
+      "correctionsAndBoundaries": [
+        "Do not imply every Zoko plan charges extra agents, or all core features are gated by tier.",
+        "An 8-agent Plus illustration is $124.99 before usage/Meta; Starter may price differently.",
+        "Do not call provider conversation units the same as WhatFlow sent-message units."
+      ],
+      "reviewDateEligibility": "2026-10-27 only after draft removes/bounds unsupported claims and reviewer verifies final text against this packet"
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "sourceUrls": [
+        "https://apps.shopify.com/dondy-marketing-ai",
+        "https://www.dondy.net/post/dondy-is-joining-circeus",
+        "https://www.circeus.com/blogs/acquire/dondy-joins-circeus",
+        "https://whatflow.tech/compare/whatflow-chat-automation-vs-business-api"
+      ],
+      "access": "all listed public sources accessible and inspected",
+      "supports": [
+        "Free storefront button and paid Pro; Power Automation $79.99/month includes official API and Shopify inbox; Elite $159.99/month lists AI and 5 inbox agents.",
+        "Both parties confirm acquisition into Circeus/Shop Circle.",
+        "Dondy expressly announces continuity of product, team including founders, support and account; buyer announces AI-led commerce, enterprise and portfolio integration direction."
+      ],
+      "correctionsAndBoundaries": [
+        "Acquisition does not support predictions of worsening support, uncertain leadership, hidden price rises or product decline.",
+        "Acquisition page shows July 22 without visible year; avoid asserting year without a separate date source.",
+        "Do not attribute old linked-device WhatFlow rating to separate official Business API app."
+      ],
+      "reviewDateEligibility": "2026-10-27 only after draft removes/bounds unsupported claims and reviewer verifies final text against this packet"
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "sourceUrls": [
+        "https://www.bitespeed.co/",
+        "https://www.bitespeed.co/pricing"
+      ],
+      "access": "all listed public sources accessible and inspected",
+      "supports": [
+        "Homepage markets omnichannel AI across WhatsApp, voice, email, SMS and social plus Shopify.",
+        "Pricing URL currently redirects to request-demo page."
+      ],
+      "correctionsAndBoundaries": [
+        "Redirect does not prove no free plan or that all products require a custom quote.",
+        "No precise GMV fee, seat fee or subscription rate verified.",
+        "WhatFlow lacks available AI and is not demonstrated as equivalent to every omnichannel capability."
+      ],
+      "reviewDateEligibility": "2026-10-27 only after draft removes/bounds unsupported claims and reviewer verifies final text against this packet"
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "sourceUrls": [
+        "https://aisensy.com/integrations/shopify",
+        "https://aisensy.com/pricing"
+      ],
+      "access": "all listed public sources accessible and inspected",
+      "supports": [
+        "Shopify integration page advertises order/delivery/feedback automation and cart-related workflows.",
+        "Pricing page displays Free Forever and a separate five-chatbot builder at INR2500/month or INR2250/month billed annually.",
+        "Fair use lists agents up to200, tags500, attributes100, segments50."
+      ],
+      "correctionsAndBoundaries": [
+        "Do not call its unlimited agents an unconditional unlimited allowance or infer all tiers have seat charges.",
+        "Page claims October1 Meta/service pricing changes, conflicting with current official Meta landing which says service messages uncharged; do not adopt vendor claim as universal Meta fact.",
+        "No Shopify Flow support conclusion can be drawn from absence of phrase on integration page."
+      ],
+      "reviewDateEligibility": "2026-10-27 only after draft removes/bounds unsupported claims and reviewer verifies final text against this packet"
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "sourceUrls": [
+        "https://respond.io/",
+        "https://respond.io/pricing"
+      ],
+      "access": "all listed public sources accessible and inspected",
+      "supports": [
+        "Starter headline $79/month is $948/year annual billing; Growth $159/month annual, Advanced $279/month annual.",
+        "Users: Starter5 plus$12/extra/month; Growth10 plus$20; Advanced10 plus$24; Enterprise unlimited.",
+        "Current table lists unlimited MACs on Starter, Growth/Advanced from1000; MACs count contacts communicated with in billing month.",
+        "AI credits and Meta fees are separate units; Meta fees excluded from subscription."
+      ],
+      "correctionsAndBoundaries": [
+        "Do not present annual equivalents as month-to-month prices or all contacts as billable.",
+        "Do not imply Starter always MAC-metered.",
+        "AI fee FAQ contains broad included wording beside explicit on-demand overage; describe included allowance and ask for applicable agreement instead of predicting unexpected charges."
+      ],
+      "reviewDateEligibility": "2026-10-27 only after draft removes/bounds unsupported claims and reviewer verifies final text against this packet"
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "sourceUrls": [
+        "https://helpcenter.gorgias.com/en-US/handle-tickets-in-gorgias-whatsapp-8200191",
+        "https://www.gorgias.com/pricing"
+      ],
+      "access": "all listed public sources accessible and inspected",
+      "supports": [
+        "Help guide updated September16,2026 supports initiating WhatsApp with approved templates and free-form replies within24h user window.",
+        "WhatsApp tickets become billable when an agent sends a public reply.",
+        "Pricing landing says ticket-volume billing, never per-agent, plus AI resolution charges and voice/SMS add-ons."
+      ],
+      "correctionsAndBoundaries": [
+        "Remove vague possible seat-fee wording: Gorgias is not per-seat priced on current landing.",
+        "Do not claim Gorgias cannot initiate WhatsApp conversations or lacks Shopify integration.",
+        "Exact current helpdesk subscription prices not exposed clearly; avoid importing older pricing-guide numbers."
+      ],
+      "reviewDateEligibility": "2026-10-27 only after draft removes/bounds unsupported claims and reviewer verifies final text against this packet"
+    }
+  ],
+  "all164ArticlesSourceRevalidated": false,
+  "quotesUsed": false
+}

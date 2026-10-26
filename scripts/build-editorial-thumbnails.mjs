@@ -2,7 +2,7 @@
 import sharp from 'sharp';
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-const root='content/thumbnails-2026-10-25',out='public/thumbnails';
+const root=process.env.THUMBNAIL_EDITORIAL_ROOT||'content/thumbnails-2026-10-25',out='public/thumbnails';
 await mkdir(out+'/blog',{recursive:true});await mkdir(out+'/compare',{recursive:true});await mkdir(out+'/brands',{recursive:true});
 const xml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
 const entries=JSON.parse(await readFile(root+'/editorial.json'));

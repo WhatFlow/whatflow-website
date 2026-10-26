@@ -1,0 +1,38 @@
+[
+  {
+    "collection": "blog",
+    "slug": "whatsapp-shipping-delays-shopify",
+    "title": "Handle Shopify shipping delays on WhatsApp",
+    "lines": [
+      "Shipping delays.",
+      "Clear updates.",
+      "Useful next steps."
+    ],
+    "motif": "shipping",
+    "eyebrow": "Service playbook"
+  },
+  {
+    "collection": "blog",
+    "slug": "whatsapp-returns-exchanges-shopify",
+    "title": "Handle Shopify returns and exchanges on WhatsApp",
+    "lines": [
+      "Returns and",
+      "exchanges,",
+      "without confusion."
+    ],
+    "motif": "inbox",
+    "eyebrow": "Support playbook"
+  },
+  {
+    "collection": "blog",
+    "slug": "shopify-whatsapp-catalog-support",
+    "title": "Use WhatsApp catalog sharing for Shopify support",
+    "lines": [
+      "The right product.",
+      "In the right",
+      "conversation."
+    ],
+    "motif": "cart",
+    "eyebrow": "Catalog support"
+  }
+]

@@ -99,6 +99,16 @@ class Exporter:
                 if flags & 8: value = '<u>' + value + '</u>'
             return value
         if kind == 'root': return children()
+        if kind == 'quote': return '> ' + children().strip().replace('\n', '\n> ') + '\n\n'
+        if kind == 'table':
+            rows = []
+            for row in node.get('children', []):
+                rows.append([self.node(cell).strip().replace('\n', ' ').replace('|', '&#124;') for cell in row.get('children', [])])
+            if not rows: return ''
+            lines = ['| ' + ' | '.join(row) + ' |' for row in rows]
+            lines.insert(1, '| ' + ' | '.join('---' for _ in rows[0]) + ' |')
+            return '\n'.join(lines) + '\n\n'
+        if kind in {'tablecell', 'tablerow'}: return children()
         if kind == 'paragraph': return children() + '\n\n'
         if kind == 'heading': return '#' * int(node.get('tag', 'h2')[1:]) + ' ' + children() + '\n\n'
         if kind in {'link', 'autolink'}:

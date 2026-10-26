@@ -1,0 +1,42 @@
+{
+  "wati": [
+    "theme-button-controls.jpg",
+    "Shopify-native WhatsApp button settings in the WhatFlow demo store",
+    "Actual WhatFlow demo-store button controls. The theme embeds are disabled in this demo; this shows configuration, not a live storefront or a completed order."
+  ],
+  "interakt": [
+    "inbox-assignment-filters.jpg",
+    "WhatFlow inbox assignment queues and conversation filters",
+    "Actual demo-store inbox with the Mine filter selected and no assigned conversations displayed. Inbox chat is off in this demo; this is interface evidence, not a response-time result."
+  ],
+  "zoko": [
+    "catalog-sync-controls.jpg",
+    "WhatFlow catalog manual-sync and product-scope settings",
+    "Actual demo-store catalog settings before the first sync. These controls do not demonstrate a completed synchronization or sent product message."
+  ],
+  "dondy": [
+    "theme-button-controls.jpg",
+    "WhatFlow Shopify theme embed and product button settings",
+    "Actual demo-store button settings, with theme embeds disabled. Styling and placement are configured in Shopify Theme Editor."
+  ],
+  "bitespeed": [
+    "shipping-reply-draft.jpg",
+    "An illustrative shipping reply in WhatFlow’s saved-reply editor",
+    "Actual demo-store editor with an unsaved illustrative shipping reply. The draft was discarded and no customer message was sent."
+  ],
+  "aisensy": [
+    "catalog-sync-controls.jpg",
+    "WhatFlow managed catalog scope and manual synchronization controls",
+    "Actual demo-store catalog controls before synchronization. Product availability must be checked at the source; this is not evidence of continuous inventory sync."
+  ],
+  "respond-io": [
+    "inbox-assignment-filters.jpg",
+    "WhatFlow team inbox assignment queues and service-window filters",
+    "Actual demo-store inbox with Mine selected and no assigned conversations displayed. Inbox chat is off in this demo; counts are not a merchant case study."
+  ],
+  "gorgias": [
+    "return-reply-draft.jpg",
+    "An illustrative return inquiry in WhatFlow’s saved-reply editor",
+    "Actual demo-store editor with an unsaved illustrative return reply. This does not approve a return, issue a refund or send a customer message."
+  ]
+}

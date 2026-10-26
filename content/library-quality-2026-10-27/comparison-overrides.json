@@ -1,0 +1,33 @@
+{
+  "whatflow-vs-wati": {
+    "pricing": "Wati separates platform subscription, additional-user terms, messaging and its documented Shopify automation connector charge. Its integration guide lists a separate $4.99/month Shopify charge; confirm the complete selected package.",
+    "team": "Growth lists three users without additional-user expansion. Pro includes five users with $24 per additional user/month; Business has different additional-user terms. Confirm the chosen tier and billing terms."
+  },
+  "whatflow-vs-interakt": {
+    "pricing": "Interakt offers several product packages and billing currencies. Its pricing materials advertise unlimited agents, but role wording differs between its summary and detailed table. Confirm the chosen Marketing & Support, Sales CRM or AI package, permissions, billing period and message charges in writing.",
+    "team": "Unlimited team logins are advertised. Role and package permissions need confirmation: the current pricing page uses inconsistent owner/all-role wording. No blanket per-seat disadvantage is claimed."
+  },
+  "whatflow-vs-zoko": {
+    "pricing": "Zoko Starter is $49.99/month with unlimited agents and conversation-based usage. Plus is $79.99/month with five included agents and $15 per additional agent. Compare the chosen plan, custom-flow charges and Meta fees; Starter and Plus have different usage terms.",
+    "team": "Starter advertises unlimited agents. Plus includes five and charges for additional agents; other tiers differ. No universal per-seat claim applies.",
+    "features": "Zoko lists its core platform features across plans, with different usage and agent allowances. Custom flows and AI are separately priced; check the proposed implementation."
+  },
+  "whatflow-vs-dondy": {
+    "pricing": "Dondy lists a free button, Pro at $6.99/month, Power Automation at $79.99/month and Elite at $159.99/month. Official API automation and inbox are listed in Power Automation; Elite adds AI and five agents. Applicable usage charges remain separate.",
+    "verdict": "Choose WhatFlow Business API for Shopify WhatsApp automation, catalog sharing and an enterprise-ready inbox with all available features across plans and no seat fees. Dondy has real Shopify strengths and a free button; compare its automation package with the work you need, keeping usage and Meta charges separate."
+  },
+  "whatflow-vs-bitespeed": {
+    "pricing": "The public pricing URL currently redirects to a demo request. Request an itemized proposal for the channels, usage, implementation and services required. Do not infer undisclosed seat fees, GMV fees or a universal starting price."
+  },
+  "whatflow-vs-aisensy": {
+    "pricing": "AiSensy separates the WhatsApp platform subscription and message credits from optional chatbot and AI add-ons. Check the selected region, billing period, included agents and actual add-ons rather than comparing a single headline price."
+  },
+  "whatflow-vs-respond-io": {
+    "pricing": "respond.io lists annual equivalents as well as other billing terms. Starter displays $79/month billed as $948/year. Contact and user entitlements differ by plan: Starter currently lists unlimited monthly active contacts, while other plans have their own allowances. Include relevant extra users and WhatsApp charges."
+  },
+  "whatflow-vs-gorgias": {
+    "pricing": "Gorgias prices its helpdesk by billable tickets rather than agents. Its current pricing describes 50–5,000 monthly tickets, AI resolution charges and optional Voice/SMS usage. Confirm the selected ticket definition, messaging terms and add-ons.",
+    "team": "Current helpdesk pricing explicitly says it is not priced per agent. WhatFlow’s no-seat-fee inbox is a product benefit, not a unique staffing advantage over Gorgias.",
+    "verdict": "Choose WhatFlow Business API for a dedicated Shopify WhatsApp operation with an enterprise-ready inbox, all available features across messaging plans and no seat fees. Gorgias is a strong broader Shopify helpdesk with ticket-based billing and AI. Compare the required operating scope and usage units; Gorgias supports approved-template WhatsApp initiation."
+  }
+}

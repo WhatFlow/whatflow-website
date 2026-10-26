@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "articles": [
+    {
+      "slug": "whatsapp-shipping-delays-shopify",
+      "textNodes": 78,
+      "tables": 1,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatsapp-returns-exchanges-shopify",
+      "textNodes": 75,
+      "tables": 1,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "shopify-whatsapp-catalog-support",
+      "textNodes": 89,
+      "tables": 1,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "textNodes": 53,
+      "tables": 0,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatflow-vs-wati",
+      "textNodes": 40,
+      "tables": 0,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatflow-vs-interakt",
+      "textNodes": 39,
+      "tables": 0,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatflow-vs-zoko",
+      "textNodes": 35,
+      "tables": 0,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatflow-vs-dondy",
+      "textNodes": 39,
+      "tables": 0,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatflow-vs-bitespeed",
+      "textNodes": 52,
+      "tables": 1,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatflow-vs-aisensy",
+      "textNodes": 40,
+      "tables": 0,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatflow-vs-respond-io",
+      "textNodes": 33,
+      "tables": 0,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "textNodes": 33,
+      "tables": 0,
+      "images": 1,
+      "passed": true
+    },
+    {
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "textNodes": 44,
+      "tables": 0,
+      "images": 2,
+      "passed": true
+    }
+  ]
+}

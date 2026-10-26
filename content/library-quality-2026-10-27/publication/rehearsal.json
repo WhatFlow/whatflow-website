@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-26T23:07:06.795915+00:00",
+  "beforePosts": 58,
+  "afterPosts": 61,
+  "newPosts": 3,
+  "updatedPosts": 1,
+  "untouchedExistingPosts": 57,
+  "updatedComparisons": 9,
+  "untouchedComparisons": 97,
+  "comparisonChecks": {
+    "phase": "quality publication",
+    "comparisons": 106,
+    "historicalVersionsPreserved": 443,
+    "newVersions": 9,
+    "totalVersions": 452,
+    "arrayCellsChecked": 334,
+    "foreignKeyViolations": 0,
+    "latestPublishedSnapshotsMatched": 9
+  },
+  "idempotent": true,
+  "foreignKeyViolations": 0,
+  "writtenTables": [
+    "_comparisons_v",
+    "_comparisons_v_rels",
+    "_comparisons_v_version_faqs",
+    "_comparisons_v_version_feature_table",
+    "_comparisons_v_version_sources",
+    "comparisons",
+    "comparisons_faqs",
+    "comparisons_feature_table",
+    "comparisons_sources",
+    "posts",
+    "posts_sources",
+    "posts_tags"
+  ],
+  "backupSha256": "578c3492e416cde900b786481f26ecb2312bf45143a2a25b1c11c91d42f625c4",
+  "postsSqlSha256": "c656eda162eb28911e6d78d8193a6981a96f407d3b7e334386b3bbb2e2f487f8",
+  "comparisonsSqlSha256": "c2decea8c2c9b72f2e49929a8e00d039475048460214863e827ec8f4496a9b0d"
+}

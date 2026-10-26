@@ -1,0 +1,117 @@
+{
+  "createdAt": "2026-10-26T22:45:47.668Z",
+  "system": "WhatFlow editorial covers v1",
+  "format": "WebP 1200×630",
+  "renderer": "Code-native SVG rendered by Sharp; original logos embedded without redrawing",
+  "count": 3,
+  "records": [
+    {
+      "collection": "blog",
+      "slug": "whatsapp-shipping-delays-shopify",
+      "title": "Handle Shopify shipping delays on WhatsApp",
+      "lines": [
+        "Shipping delays.",
+        "Clear updates.",
+        "Useful next steps."
+      ],
+      "motif": "shipping",
+      "eyebrow": "Service playbook",
+      "path": "public/thumbnails/blog/whatsapp-shipping-delays-shopify.webp",
+      "url": "/thumbnails/blog/whatsapp-shipping-delays-shopify.webp",
+      "width": 1200,
+      "height": 630,
+      "bytes": 33428,
+      "sha256": "fd066f538cf4ef5eb44fd00842356e4ca22ef6bf36c6dfdcca0dec473eff92b9",
+      "fontSize": 56,
+      "originalLogos": [
+        {
+          "brand": "WhatFlow",
+          "source": "public/logo.svg"
+        },
+        {
+          "brand": "WhatsApp",
+          "source": "public/meta-brand-assets/whatsapp-brand-assets/03_Stacked/01_Digital RGB/03_SVG/Digital_Stacked_Green_RGB_2026.svg"
+        },
+        {
+          "brand": "Shopify",
+          "source": "public/shopify-brand-assets/02-glyph/svg/glyph-color.svg"
+        }
+      ],
+      "secondaryLogo": null,
+      "alt": "Handle Shopify shipping delays on WhatsApp — WhatFlow guide cover",
+      "caption": "Illustrated cover by WhatFlow. App screenshots and examples appear in the guide."
+    },
+    {
+      "collection": "blog",
+      "slug": "whatsapp-returns-exchanges-shopify",
+      "title": "Handle Shopify returns and exchanges on WhatsApp",
+      "lines": [
+        "Returns and",
+        "exchanges,",
+        "without confusion."
+      ],
+      "motif": "inbox",
+      "eyebrow": "Support playbook",
+      "path": "public/thumbnails/blog/whatsapp-returns-exchanges-shopify.webp",
+      "url": "/thumbnails/blog/whatsapp-returns-exchanges-shopify.webp",
+      "width": 1200,
+      "height": 630,
+      "bytes": 32526,
+      "sha256": "15532d2296ccb3ac4610fe8c2813a99c7ed94a26708183cf0a9d063208cb5285",
+      "fontSize": 56,
+      "originalLogos": [
+        {
+          "brand": "WhatFlow",
+          "source": "public/logo.svg"
+        },
+        {
+          "brand": "WhatsApp",
+          "source": "public/meta-brand-assets/whatsapp-brand-assets/03_Stacked/01_Digital RGB/03_SVG/Digital_Stacked_Green_RGB_2026.svg"
+        },
+        {
+          "brand": "Shopify",
+          "source": "public/shopify-brand-assets/02-glyph/svg/glyph-color.svg"
+        }
+      ],
+      "secondaryLogo": null,
+      "alt": "Handle Shopify returns and exchanges on WhatsApp — WhatFlow guide cover",
+      "caption": "Illustrated cover by WhatFlow. App screenshots and examples appear in the guide."
+    },
+    {
+      "collection": "blog",
+      "slug": "shopify-whatsapp-catalog-support",
+      "title": "Use WhatsApp catalog sharing for Shopify support",
+      "lines": [
+        "The right product.",
+        "In the right",
+        "conversation."
+      ],
+      "motif": "cart",
+      "eyebrow": "Catalog support",
+      "path": "public/thumbnails/blog/shopify-whatsapp-catalog-support.webp",
+      "url": "/thumbnails/blog/shopify-whatsapp-catalog-support.webp",
+      "width": 1200,
+      "height": 630,
+      "bytes": 31028,
+      "sha256": "c6fc268308cd8f2517749c8a885010548c2577559453c951c4e3c7f184334ad3",
+      "fontSize": 56,
+      "originalLogos": [
+        {
+          "brand": "WhatFlow",
+          "source": "public/logo.svg"
+        },
+        {
+          "brand": "WhatsApp",
+          "source": "public/meta-brand-assets/whatsapp-brand-assets/03_Stacked/01_Digital RGB/03_SVG/Digital_Stacked_Green_RGB_2026.svg"
+        },
+        {
+          "brand": "Shopify",
+          "source": "public/shopify-brand-assets/02-glyph/svg/glyph-color.svg"
+        }
+      ],
+      "secondaryLogo": null,
+      "alt": "Use WhatsApp catalog sharing for Shopify support — WhatFlow guide cover",
+      "caption": "Illustrated cover by WhatFlow. App screenshots and examples appear in the guide."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "slug": "whatsapp-shipping-delays-shopify",
+      "operation": "insert"
+    },
+    {
+      "slug": "whatsapp-returns-exchanges-shopify",
+      "operation": "insert"
+    },
+    {
+      "slug": "shopify-whatsapp-catalog-support",
+      "operation": "insert"
+    },
+    {
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "operation": "update"
+    }
+  ],
+  "statements": 19,
+  "sha256": "c656eda162eb28911e6d78d8193a6981a96f407d3b7e334386b3bbb2e2f487f8"
+}

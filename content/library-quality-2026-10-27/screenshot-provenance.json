@@ -1,0 +1,27 @@
+{
+  "capturedAt": "2026-10-27",
+  "store": "WhatFlow Demo Store",
+  "noCustomerMessagesSent": true,
+  "catalogSyncRun": false,
+  "unsavedRepliesDiscarded": true,
+  "assets": [
+    {
+      "path": "public/blog/product-proof/catalog-sync-controls.jpg",
+      "alt": "WhatFlow catalog settings showing manual sync and product scope controls",
+      "caption": "Actual WhatFlow demo-store catalog settings, captured October 27, 2026. The catalog has not been synced in this demo. The image shows available controls, not a completed sync or sent product message.",
+      "sha256": "17feb428750e7dab9f5f98492535bae51ee89f6ec803356c74b26bfaabcbe951"
+    },
+    {
+      "path": "public/blog/product-proof/return-reply-draft.jpg",
+      "alt": "An unsaved WhatFlow canned response asks for an order reference before checking return eligibility",
+      "caption": "Actual WhatFlow demo-store reply editor with an illustrative, unsaved return-support draft. No customer message was sent and the draft was discarded.",
+      "sha256": "09931e6759f1aaffa1b1532fc6fb067c3b7e97afa1004ffd276f0725ad5e86bd"
+    },
+    {
+      "path": "public/blog/product-proof/shipping-reply-draft.jpg",
+      "alt": "An unsaved shipping-delay reply in the WhatFlow canned-response editor",
+      "caption": "Actual WhatFlow demo-store reply editor with an illustrative, unsaved shipping-delay draft. No message was sent and the draft was discarded.",
+      "sha256": "a8e30c94d83d069bd5f84066ce03feb28baea3d779073f4cb8f5a54ef2b8964b"
+    }
+  ]
+}

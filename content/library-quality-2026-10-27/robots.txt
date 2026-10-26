@@ -1,0 +1,169 @@
+User-Agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: GPTBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: OAI-SearchBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: ClaudeBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Claude-SearchBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Claude-User
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Perplexity-User
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Google-Extended
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Google-CloudVertexBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Applebot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Applebot-Extended
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: facebookexternalhit
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: meta-externalagent
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Meta-ExternalFetcher
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Amazonbot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: AI2Bot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: AI2Bot-Dolma
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: xAI-Bot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: cohere-ai
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: DuckAssistBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: Bytespider
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: YouBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: CCBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+User-Agent: PetalBot
+Allow: /
+Disallow: /admin
+Disallow: /api/payload/*
+Disallow: /(payload)/*
+
+Sitemap: https://whatflow.tech/sitemap.xml
