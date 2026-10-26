@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-10-26T16:04:13.024Z",
+  "site": "https://whatflow.tech",
+  "passed": true,
+  "publicRoutes": 11,
+  "representationIsolation": true,
+  "headReuse": true,
+  "privateRequestsCannotOverwritePublicCopy": true,
+  "results": [
+    {
+      "path": "/",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/inbox",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/pricing",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/blog",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/compare",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/compare/whatflow-vs-zendesk",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/blog/shared-team-inbox-small-shopify-business",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/blog?page=2",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/compare?category=support",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/sitemap.xml",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/blog/rss.xml",
+      "first": "MISS",
+      "repeated": "HIT",
+      "sameBody": true,
+      "colo": "KHI"
+    },
+    {
+      "path": "/inbox",
+      "bypassHeader": "cookie",
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/inbox",
+      "bypassHeader": "authorization",
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/inbox",
+      "bypassHeader": "cache-control",
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/inbox",
+      "bypassHeader": "next-router-prefetch",
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/blog?q=Shopify+Flow+triggers",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/compare?q=no+seat+fee",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/inbox?preview=1",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/admin",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/api/comparisons?limit=1&depth=0",
+      "status": 200,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/compare/nonexistent-cache-isolation-check",
+      "status": 404,
+      "cache": "BYPASS"
+    },
+    {
+      "path": "/blog",
+      "rsc": true,
+      "cache": "BYPASS",
+      "type": "text/x-component"
+    }
+  ]
+}

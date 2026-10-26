@@ -1,0 +1,106 @@
+{
+  "verifiedAt": "2026-10-26T16:05:14.602250+00:00",
+  "site": "https://whatflow.tech",
+  "workerVersion": "b3130827-c24b-42ca-b357-3595eee37dc8",
+  "runtimeCommit": "0f52e79",
+  "published": {
+    "posts": 58,
+    "comparisons": 106,
+    "updatedPosts": 1,
+    "updatedComparisons": 12,
+    "exactEdits": 20,
+    "untouchedArticles": 151
+  },
+  "nativeCounts": {
+    "comparisons": 106,
+    "posts": 58,
+    "versions": 443,
+    "latest_versions": 106,
+    "latest_drafts": 0
+  },
+  "foreignKeyViolations": 0,
+  "strictChecks": {
+    "passed": 13,
+    "gatesPerArticle": 5,
+    "reviewScoreRange": [
+      90,
+      92
+    ]
+  },
+  "codeChecks": {
+    "testsPassed": 14,
+    "typescript": "passed",
+    "focusedESLint": "passed",
+    "productionBuild": "passed"
+  },
+  "cache": {
+    "verifiedPublicRoutes": 11,
+    "requestIsolation": "passed",
+    "publicHTMLSeconds": 300,
+    "pricingAndListingSeconds": 60,
+    "prebuiltStaticRoutes": 11,
+    "fetchAndDatabaseEntriesInStaticCache": false,
+    "measuredCPUSavings": null
+  },
+  "executions": {
+    "comparisons": [
+      {
+        "success": true,
+        "results": [
+          {
+            "Total queries executed": 88,
+            "Rows read": 3452,
+            "Rows written": 640,
+            "Database size (MB)": "12.22"
+          }
+        ],
+        "changes": 195,
+        "rowsRead": 3452,
+        "rowsWritten": 640
+      }
+    ],
+    "posts": [
+      {
+        "success": true,
+        "results": [
+          {
+            "Total queries executed": 1,
+            "Rows read": 1,
+            "Rows written": 2,
+            "Database size (MB)": "12.22"
+          }
+        ],
+        "changes": 2,
+        "rowsRead": 1,
+        "rowsWritten": 2
+      }
+    ]
+  },
+  "files": {
+    "/tmp/whatflow-before-enterprise-inbox.sql": {
+      "sha256": "5f8cb814221de495101d53e74f8e8b948bbb6d9c473742016194415b48459aae",
+      "bytes": 11248076
+    },
+    "/tmp/whatflow-enterprise-comparisons.sql": {
+      "sha256": "30d40436acc1f5e114f1de18fbf022d08ff8217c0d016ffcc060792e5b51fe22",
+      "bytes": 224933
+    },
+    "/tmp/whatflow-enterprise-posts.sql": {
+      "sha256": "bf84083bff8427bc0dcb2c6e0983ec0b646cc9da814106bc7e9288b03bc0a4d0",
+      "bytes": 19199
+    }
+  },
+  "browserChecks": {
+    "viewports": [
+      375,
+      768,
+      1280
+    ],
+    "pages": [
+      "/inbox",
+      "/features"
+    ],
+    "javascriptErrors": 0,
+    "clientArticleNavigation": true
+  }
+}

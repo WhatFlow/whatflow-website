@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-26T16:04:11.994Z",
+  "passed": true,
+  "changedArticles": 13,
+  "exactEdits": 20,
+  "untouchedArticles": 151,
+  "marketingAIClaimsCorrected": true,
+  "results": [
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatflow-vs-trengo",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatflow-vs-freshchat",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatflow-vs-zendesk",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatflow-vs-crisp",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatflow-vs-zoho-desk",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatflow-vs-front",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatflow-vs-help-scout",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatflow-vs-gorgias",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "whatflow-vs-delightchat",
+      "collection": "comparisons",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    },
+    {
+      "slug": "shared-team-inbox-small-shopify-business",
+      "collection": "posts",
+      "nativeDocument": true,
+      "visibleEdits": true,
+      "authorAndDates": true,
+      "schema": true,
+      "retainedCover": true
+    }
+  ]
+}

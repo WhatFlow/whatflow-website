@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-26T16:05:15.143738+00:00",
+  "passed": true,
+  "javascriptErrors": [],
+  "clientArticleNavigation": true,
+  "results": [
+    {
+      "path": "/inbox",
+      "viewport": 375,
+      "noHorizontalOverflow": true,
+      "headline": "ENTERPRISE-READY WHATSAPP INBOX. BUILT FOR SHOPIFY."
+    },
+    {
+      "path": "/inbox",
+      "viewport": 768,
+      "noHorizontalOverflow": true,
+      "headline": "ENTERPRISE-READY WHATSAPP INBOX. BUILT FOR SHOPIFY."
+    },
+    {
+      "path": "/inbox",
+      "viewport": 1280,
+      "noHorizontalOverflow": true,
+      "headline": "ENTERPRISE-READY WHATSAPP INBOX. BUILT FOR SHOPIFY."
+    },
+    {
+      "path": "/features",
+      "viewport": 375,
+      "noHorizontalOverflow": true,
+      "headline": "EVERY ORDER. EVERY RECOVERY. AUTOMATED ON WHATSAPP."
+    },
+    {
+      "path": "/features",
+      "viewport": 768,
+      "noHorizontalOverflow": true,
+      "headline": "EVERY ORDER. EVERY RECOVERY. AUTOMATED ON WHATSAPP."
+    },
+    {
+      "path": "/features",
+      "viewport": 1280,
+      "noHorizontalOverflow": true,
+      "headline": "EVERY ORDER. EVERY RECOVERY. AUTOMATED ON WHATSAPP."
+    }
+  ]
+}
