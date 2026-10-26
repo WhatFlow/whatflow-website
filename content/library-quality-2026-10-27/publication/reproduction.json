@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "ignoredFields": "Only new preparation timestamps; original published identities preserved",
+  "results": [
+    {
+      "collection": "posts",
+      "documents": 4,
+      "semanticReproduction": true
+    },
+    {
+      "collection": "comparisons",
+      "documents": 9,
+      "semanticReproduction": true
+    }
+  ]
+}

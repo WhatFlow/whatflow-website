@@ -8,13 +8,17 @@
     "team": "Unlimited team logins are advertised. Role and package permissions need confirmation: the current pricing page uses inconsistent owner/all-role wording. No blanket per-seat disadvantage is claimed."
   },
   "whatflow-vs-zoko": {
-    "pricing": "Zoko Starter is $49.99/month with unlimited agents and conversation-based usage. Plus is $79.99/month with five included agents and $15 per additional agent. Compare the chosen plan, custom-flow charges and Meta fees; Starter and Plus have different usage terms.",
+    "pricing": "Agent and conversation terms depend on the selected tier. See the sourced Starter/Plus worked example below; include any custom-flow and Meta charges.",
     "team": "Starter advertises unlimited agents. Plus includes five and charges for additional agents; other tiers differ. No universal per-seat claim applies.",
-    "features": "Zoko lists its core platform features across plans, with different usage and agent allowances. Custom flows and AI are separately priced; check the proposed implementation."
+    "features": "Zoko lists its core platform features across plans, with different usage and agent allowances. Custom flows and AI are separately priced; check the proposed implementation.",
+    "pricingFaq": "Use the selected Zoko tier, team size and actual usage. Starter and Plus differ in agent and conversation terms; custom flows and Meta fees need separate lines."
   },
   "whatflow-vs-dondy": {
     "pricing": "Dondy lists a free button, Pro at $6.99/month, Power Automation at $79.99/month and Elite at $159.99/month. Official API automation and inbox are listed in Power Automation; Elite adds AI and five agents. Applicable usage charges remain separate.",
-    "verdict": "Choose WhatFlow Business API for Shopify WhatsApp automation, catalog sharing and an enterprise-ready inbox with all available features across plans and no seat fees. Dondy has real Shopify strengths and a free button; compare its automation package with the work you need, keeping usage and Meta charges separate."
+    "verdict": "Choose WhatFlow Business API for Shopify WhatsApp automation, catalog sharing and an enterprise-ready inbox with all available features across plans and no seat fees. Dondy has real Shopify strengths and a free button; compare its automation package with the work you need, keeping usage and Meta charges separate.",
+    "pricingFaq": "Dondy lists a free button, Pro at $6.99/month, Power Automation at $79.99/month and Elite at $159.99/month. Official API automation and inbox are listed in Power Automation; Elite adds AI and five agents. Applicable usage charges remain separate.",
+    "ownership": "Dondy announced that it joined Circeus / Shop Circle. The announcement describes continuity of its product and team, alongside a broader AI-led roadmap. Future commercial changes are not established.",
+    "acquisitionFaq": "Dondy announced that it joined Circeus and became part of Shop Circle. Its announcement said the product, founders, support and accounts would continue. An acquisition does not establish future price or support changes; confirm the current package and terms directly."
   },
   "whatflow-vs-bitespeed": {
     "pricing": "The public pricing URL currently redirects to a demo request. Request an itemized proposal for the channels, usage, implementation and services required. Do not infer undisclosed seat fees, GMV fees or a universal starting price."

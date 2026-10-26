@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {marked} from 'marked';
 import {fileURLToPath} from 'node:url';
 const root='content/library-quality-2026-10-27';
+const outputRoot=process.env.QUALITY_OUTPUT_ROOT||root+'/publication';
 const base={version:1,direction:'ltr',format:'',indent:0};
 const decode=value=>String(value).replace(/&#x([0-9a-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/&(amp|quot|apos|lt|gt);/g,(_,n)=>({amp:'&',quot:'"',apos:"'",lt:'<',gt:'>'}[n]));
 const text=(value,format=0)=>({type:'text',version:1,text:decode(value),format,detail:0,mode:'normal',style:''});
@@ -69,8 +70,13 @@ async function build(){
     if(row.feature==='Pricing and billing units')row.competitor=correction.pricing;
     if(row.feature==='Team access'&&correction.team)row.competitor=correction.team;
     if(row.feature==='Feature access'&&correction.features)row.competitor=correction.features;
+    if(row.feature==='Ownership and announced direction'&&correction.ownership)row.competitor=correction.ownership;
    }
-   for(const faq of doc.faqs)if(faq.question.startsWith('How should I compare')&&faq.question.includes('pricing'))faq.answer=correction.pricing;
+   for(const faq of doc.faqs){
+    if(faq.question.startsWith('How should I compare')&&faq.question.includes('pricing'))faq.answer=correction.pricingFaq||correction.pricing;
+    if(faq.question.startsWith('Was Dondy acquired')&&correction.acquisitionFaq)faq.answer=correction.acquisitionFaq;
+   }
+   for(const source of doc.sources)if(source.note?.includes('Replace a generic pricing instruction'))source.note='Verifies tier-dependent agent allowances, usage charges and custom-flow pricing.';
   }
   comparisons.push(doc);
  }
@@ -80,8 +86,8 @@ async function build(){
  post.content.root.children.splice(1,0,para([text(boundary)]));post.updatedAt=now;posts.push(post);
  const comp=structuredClone(compBefore.find(p=>p.slug==='whatsapp-customer-segments-vs-generic-bulk-sending'));
  comp.content.root.children.splice(1,0,para([text(boundary)]));comp.updatedAt=now;comparisons.push(comp);
- await mkdir(root+'/publication',{recursive:true});
- await writeFile(root+'/publication/posts.json',JSON.stringify(posts,null,2));await writeFile(root+'/publication/comparisons.json',JSON.stringify(comparisons,null,2));
+ await mkdir(outputRoot,{recursive:true});
+ await writeFile(outputRoot+'/posts.json',JSON.stringify(posts,null,2));await writeFile(outputRoot+'/comparisons.json',JSON.stringify(comparisons,null,2));
  console.log(JSON.stringify({newPosts:3,updatedPosts:1,updatedComparisons:comparisons.length,preparedAt:now}));
 }
 if(process.argv[1]===fileURLToPath(import.meta.url))await build();
