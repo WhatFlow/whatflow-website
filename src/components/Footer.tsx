@@ -51,6 +51,7 @@ export function Footer() {
 						<li><Link href="/blog" className="hover:text-[#00D261] transition-colors">Blog &amp; Guides</Link></li>
 						<li><Link href="/case-studies" className="hover:text-[#00D261] transition-colors">Case Studies</Link></li>
 						<li><Link href="/changelog" className="hover:text-[#00D261] transition-colors">Product Changelog</Link></li>
+						<li><Link href="/docs/mcp" className="hover:text-[#00D261] transition-colors">Connect AI Apps (MCP)</Link></li>
 						<li><Link href="/admin" className="hover:text-[#00D261] transition-colors">Merchant Portal</Link></li>
 					</ul>
 				</div>
