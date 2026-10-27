@@ -12,33 +12,6 @@ type ReviewItem = {
 	favicon?: { url?: string };
 };
 
-const DEFAULT_REVIEWS: ReviewItem[] = [
-	{
-		id: "rev-1",
-		author: "Sarah Jenkins, Founder of Aura Botanicals",
-		rating: 5,
-		body: "WhatFlow recovered over $18,000 in abandoned checkouts within our first month. The 1-click WhatsApp return link converts significantly higher than any email sequence we ever ran.",
-	},
-	{
-		id: "rev-2",
-		author: "Marcus Vance, Operations at KicksDistrict",
-		rating: 5,
-		body: "The automated Cash on Delivery verification cut our RTO return rate by almost 40%. The 1-click confirm button automatically tags orders in Shopify without our team having to call every customer.",
-	},
-	{
-		id: "rev-3",
-		author: "Elena Rostova, Marketing Director at Velour Living",
-		rating: 5,
-		body: "Zero markup on Meta Cloud API rates saved us hundreds of dollars compared to Wati. Setup took less than 3 minutes using Meta Embedded Signup directly inside Shopify.",
-	},
-	{
-		id: "rev-4",
-		author: "David Chen, eCommerce Lead at UrbanTrek Gear",
-		rating: 5,
-		body: "Customers love getting real-time shipping tracking alerts on WhatsApp. Our WISMO support tickets dropped by more than 60% immediately after activating WhatFlow.",
-	},
-];
-
 function ReviewCard({ review, darkMode = false }: { review: ReviewItem; darkMode?: boolean }) {
 	const avatarUrl = review.favicon?.url || review.faviconUrl;
 	const initials = review.author
@@ -107,12 +80,12 @@ function ReviewCard({ review, darkMode = false }: { review: ReviewItem; darkMode
 }
 
 export function ReviewsSection({ darkMode = false }: { darkMode?: boolean } = {}) {
-	const [reviews, setReviews] = useState<ReviewItem[]>(DEFAULT_REVIEWS);
+	const [reviews, setReviews] = useState<ReviewItem[]>([]);
 
 	useEffect(() => {
 		fetch("/api/reviews?limit=50&where[active][equals]=true")
-			.then((res) => res.json())
-			.then((data: any) => {
+			.then((res) => res.json() as Promise<{ docs?: ReviewItem[] }>)
+			.then((data) => {
 				if (data && Array.isArray(data.docs) && data.docs.length > 0) {
 					const fiveStar = data.docs.filter((r: ReviewItem) => (r.rating || 5) >= 5);
 					if (fiveStar.length > 0) {
@@ -121,9 +94,11 @@ export function ReviewsSection({ darkMode = false }: { darkMode?: boolean } = {}
 				}
 			})
 			.catch(() => {
-				// Keep DEFAULT_REVIEWS
+				// Leave testimonials empty when no published reviews are available.
 			});
 	}, []);
+
+	if (reviews.length === 0) return null;
 
 	const half = Math.ceil(reviews.length / 2);
 	const row1 = reviews.slice(0, half);
@@ -160,7 +135,7 @@ export function ReviewsSection({ darkMode = false }: { darkMode?: boolean } = {}
 					}`}
 				>
 					<span className="text-[#FFC107] text-base">★★★★★</span>
-					<span>5.0 RATING ON SHOPIFY APP STORE</span>
+					<a href="https://apps.shopify.com/whatflow-official-api#reviews">READ MERCHANT REVIEWS ON THE SHOPIFY APP STORE</a>
 				</div>
 			</div>
 

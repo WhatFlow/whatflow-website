@@ -1,0 +1,27 @@
+{
+  "url": "https://whatflow.tech",
+  "verifiedDate": "2026-10-27",
+  "cloudflareVersion": "ee1e3522-0f16-439a-bbbd-cba705d627eb",
+  "checks": {
+    "typescript": "passed",
+    "scopedEslint": "passed",
+    "openNextProductionBuild": "passed",
+    "cmsMigrationPreflight": "passed; no migrations applied",
+    "homepageJsonLd": "passed",
+    "visibleAndStructuredUpdateDatesMatch": "passed",
+    "organizationLinkedIn": "passed",
+    "skipLinkAndMainTarget": "passed",
+    "labeledHomepageInputs": 4,
+    "serverRenderedFaqAnswers": 5,
+    "sitemapHomepageLastmod": "passed",
+    "serviceManifest": "passed",
+    "llmsDiscovery": "passed",
+    "webmcpSearchFormAnnotations": "passed",
+    "zeroRecoveryCalculatesZeroRevenue": "passed in browser",
+    "nativeFaqExpands": "passed in browser",
+    "horizontalOverflowAtBrowserViewport": false
+  },
+  "originalScannerScore": 88,
+  "scannerRerun": false,
+  "notes": "No new scanner score or AI ranking outcome is claimed. Build emitted existing upstream Payload/OpenNext bundler warnings."
+}

@@ -22,7 +22,7 @@ import {
 } from "@/lib/payload-api";
 
 import { getShopifyAppUrl } from "@/lib/shopify-app";
-import { getSoftwareApplicationSchema, getFAQSchema } from "@/lib/schema-org";
+import { getSoftwareApplicationSchema, getFAQSchema, getHomePageSchema } from "@/lib/schema-org";
 
 import { HOMEPAGE_FAQS } from "@/lib/marketing-faqs";
 
@@ -40,7 +40,7 @@ function CTABanner() {
 					READY TO AUTOMATE YOUR STORE WITH <span className="text-stroke-green">WHATSAPP?</span>
 				</h2>
 				<p className="text-gray-300 font-medium text-base">
-					Join 10,000+ eCommerce merchants worldwide using WhatFlow to recover carts, verify orders, and delight customers.
+					Use WhatFlow to follow up on abandoned checkouts, verify orders, and answer customers from your Shopify store.
 				</p>
 				<div>
 					<a
@@ -265,7 +265,7 @@ function AffiliateBanner() {
 							GROW WITH WHATFLOW. EARN UP TO 50%.
 						</h3>
 						<p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
-							Recommend WhatFlow to Shopify stores and earn tiered recurring commissions for up to lifetime on every eligible referral.
+							Starter and Growth partners earn 10%–15% for 3 paid months; Pro partners earn 20% for 6 paid months; Elite partners earn 25% for the paid lifetime. Agency rates of 30%–50% require custom terms. See the affiliate plan for eligibility.
 						</p>
 					</div>
 
@@ -298,6 +298,7 @@ export default async function HomePage() {
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
 			/>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getHomePageSchema()) }} />
 			<HeroSection />
 			<FeaturesStatusSection />
 			{/* Interactive ROI Calculator on Homepage */}

@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   const service = {
+    schema_version: "1.0",
+    url: "https://whatflow.tech",
+    updated_at: "2026-10-27",
+    description: "Public product capabilities and documentation. This manifest does not expose executable tools or a public messaging API.",
     service_name: "WhatFlow Shopify WhatsApp Automation",
     provider: "WhatFlow",
     api_standard: "Meta WhatsApp Cloud API",
@@ -23,7 +27,7 @@ export async function GET() {
       },
       {
         id: "cod_verification",
-        name: "COD Order Verification & Anti-RTO",
+        name: "Cash on delivery order confirmation",
         supported_actions: ["auto_tag_shopify_order", "cancel_unconfirmed_order"],
       },
       {
@@ -33,7 +37,7 @@ export async function GET() {
       },
       {
         id: "review_collection",
-        name: "WhatsApp Review & Photo UGC Sync",
+        name: "WhatsApp review requests",
         description: "Send customers a review request link through a configured WhatsApp workflow.",
       },
       {

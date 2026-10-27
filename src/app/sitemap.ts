@@ -1,3 +1,4 @@
+import { HOMEPAGE_UPDATED_AT } from "@/lib/content-dates";
 import { getAllIndexableComparisons } from "@/lib/comparisons-api";
 export const dynamic = "force-dynamic";
 import type { MetadataRoute } from "next";
@@ -17,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}`,
+      lastModified: new Date(HOMEPAGE_UPDATED_AT),
       changeFrequency: "weekly",
       priority: 1.0,
     },

@@ -20,17 +20,11 @@ export function RoiCalculator() {
   const estimatedRecoveredOrders = Math.round(estimatedAbandonedCarts * (recoveryRate / 100));
   const estimatedRecoveredRevenue = Math.round(estimatedRecoveredOrders * aov);
 
-  // COD & Support automation savings:
-  // Avg 15% of total orders require address/COD confirmation. Automation saves 4 mins each.
-  const hoursSaved = Math.round((monthlyOrders * 0.18 * 4) / 60);
-  const whatflowCostMonthly = 29; // Starter plan base
-  const roiMultiple = Math.max(1, Math.round(estimatedRecoveredRevenue / whatflowCostMonthly));
-
   return (
     <div
       className="neo-box bg-white p-6 sm:p-10 rounded-2xl"
       data-tool-name="shopify_whatsapp_roi_calculator"
-      data-tool-description="Calculate estimated monthly recovered checkout revenue and ROI multiple for Shopify stores using WhatsApp automations"
+      data-tool-description="Estimate gross checkout recovery revenue using merchant-supplied scenario inputs; excludes fees and costs"
     >
       <div className="text-center max-w-2xl mx-auto mb-10">
         <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-3">
@@ -40,7 +34,7 @@ export function RoiCalculator() {
           HOW MUCH REVENUE IS YOUR STORE LEAVING ON THE TABLE?
         </h2>
         <p className="text-sm font-medium text-gray-600 mt-2">
-          Adjust the sliders below to estimate your store’s potential monthly recovery revenue with WhatFlow WhatsApp automations.
+          Adjust the sliders below to estimate your store’s a monthly gross revenue scenario. These inputs are examples, not WhatFlow benchmarks or promised results.
         </p>
       </div>
 
@@ -129,7 +123,7 @@ export function RoiCalculator() {
             />
             <div className="flex justify-between text-[10px] text-gray-500 font-bold">
               <span>40% (Low)</span>
-              <span>70% (E-comm avg)</span>
+              <span>70% (Example)</span>
               <span>85% (High)</span>
             </div>
           </div>
@@ -141,7 +135,7 @@ export function RoiCalculator() {
                 WhatsApp Recovery Rate
               </label>
               <span className="neo-pill bg-[#E8F8F0] text-[#0A6B56] border-black px-3 py-1 text-sm font-black">
-                {recoveryRate}% (vs 2-3% Email)
+                {recoveryRate}%
               </span>
             </div>
             <input
@@ -149,7 +143,7 @@ export function RoiCalculator() {
               name="recoveryRate"
               aria-label="WhatsApp Recovery Rate Percentage"
               type="range"
-              min={5}
+              min={0}
               max={25}
               step={1}
               value={recoveryRate}
@@ -157,16 +151,16 @@ export function RoiCalculator() {
               className="w-full h-2.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#00D261]"
             />
             <div className="flex justify-between text-[10px] text-gray-500 font-bold">
-              <span>5% (Conservative)</span>
-              <span>12% (WhatFlow Avg)</span>
-              <span>25% (Top Performers)</span>
+              <span>5% (Example)</span>
+              <span>12% (Example)</span>
+              <span>25% (Example)</span>
             </div>
           </div>
         </div>
 
         {/* Results Card Column */}
         <div className="lg:col-span-5">
-          <div className="neo-box-teal p-6 sm:p-8 space-y-6 text-center text-white">
+          <div role="status" aria-live="polite" aria-atomic="true" className="neo-box-teal p-6 sm:p-8 space-y-6 text-center text-white">
             <div>
               <div className="text-[11px] font-extrabold uppercase tracking-widest text-[#00D261] mb-1">
                 ESTIMATED MONTHLY REVENUE RECOVERED
@@ -182,18 +176,18 @@ export function RoiCalculator() {
             <div className="grid grid-cols-2 gap-3 pt-2 border-t border-white/10">
               <div className="neo-box bg-[#091E17] p-3 text-center border-white/20">
                 <div className="font-display font-black text-2xl text-white">
-                  {roiMultiple}x
+                  {estimatedAbandonedCarts.toLocaleString()}
                 </div>
                 <div className="text-[9px] font-extrabold uppercase text-[#A7F3D0]">
-                  Projected ROI
+                  Estimated abandoned carts
                 </div>
               </div>
               <div className="neo-box bg-[#091E17] p-3 text-center border-white/20">
                 <div className="font-display font-black text-2xl text-white">
-                  {hoursSaved} hrs
+                  {estimatedRecoveredOrders.toLocaleString()}
                 </div>
                 <div className="text-[9px] font-extrabold uppercase text-[#A7F3D0]">
-                  Support Time Saved / Mo
+                  Estimated recovered orders
                 </div>
               </div>
             </div>
@@ -209,11 +203,12 @@ export function RoiCalculator() {
                 <span>➔</span>
               </Link>
               <div className="text-[10px] text-gray-400 font-medium mt-2">
-                14-day free trial • 5-minute Shopify installation • Zero risk
+                Free plan available • All available features • No inbox seat fees
               </div>
               <div className="text-[9px] text-[#A7F3D0]/70 font-semibold mt-1">
-                Pricing model &amp; Meta Cloud rates updated Q1 2026. Based on 70% average cart abandonment rate [2].
+                Gross revenue = completed orders ÷ (1 − abandonment rate) × abandonment rate × recovery rate (rounded to whole orders) × average order value. Assumes every abandoned checkout is eligible and reachable; actual consent and delivery limits reduce reach. Excludes app fees, Meta charges, discounts, refunds, and fulfillment costs. This is not profit or ROI.
               </div>
+              <Link href="/pricing" className="inline-block text-xs underline mt-3">See current plans and messaging charges</Link>
             </div>
           </div>
         </div>

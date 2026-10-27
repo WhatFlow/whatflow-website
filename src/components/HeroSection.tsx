@@ -53,7 +53,7 @@ export function HeroSection() {
 
 					{/* Subtitle / Definition Capsule */}
 					<p className="text-[16px] sm:text-[18px] text-[#222222] font-medium leading-relaxed max-w-lg">
-						WhatFlow is the official WhatsApp automation suite for modern eCommerce stores. Automate abandoned checkout recovery, 1-click Cash on Delivery verification, delivery notifications, and an enterprise-ready team inbox without seat fees with zero markup on Meta conversation rates.
+						WhatFlow is a WhatsApp messaging suite for Shopify stores. Use WhatFlow Business API to follow up on abandoned checkouts, confirm cash on delivery orders, send shipping updates, and manage a shared team inbox through the official Meta Cloud API. All plans include available features with no inbox seat fees. Meta messaging charges are separate.
 					</p>
 
 					{/* Action Buttons */}
@@ -80,7 +80,7 @@ export function HeroSection() {
 					<div className="neo-box-teal p-6 sm:p-8 relative min-h-[460px] flex items-center justify-center">
 						{/* Top Attached Badge */}
 						<div className="absolute top-0 right-6 -translate-y-1/2 neo-pill bg-[#FFC107] px-4 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
-							ORDER #1027
+							DEMO ORDER #1027
 						</div>
 
 						<div className="w-full flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -106,7 +106,7 @@ export function HeroSection() {
 								</div>
 
 								{/* Phone Chat Body */}
-								<div className="p-3 bg-[#EFEAE2] space-y-3 min-h-[280px] text-xs">
+								<div aria-live="polite" className="p-3 bg-[#EFEAE2] space-y-3 min-h-[280px] text-xs">
 									<div className="text-center">
 										<span className="bg-white border border-black px-2 py-0.5 rounded text-[10px] font-bold">Today</span>
 									</div>

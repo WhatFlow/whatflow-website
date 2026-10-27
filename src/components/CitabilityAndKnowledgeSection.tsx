@@ -1,195 +1,73 @@
 import Link from "next/link";
-import { getShopifyAppUrl } from "@/lib/shopify-app";
+import { HOMEPAGE_UPDATED_AT, HOMEPAGE_UPDATED_LABEL } from "@/lib/content-dates";
+
+const workflows = [
+  {
+    title: "How does WhatsApp checkout recovery work?",
+    text: "Checkout recovery is a follow-up message that helps a shopper return to an unfinished purchase. WhatFlow can send a checkout link through a configured WhatsApp workflow. A useful reminder answers a question about shipping, payment, or the product. Send it only when the customer has agreed to receive messages and the message meets WhatsApp’s rules. Measure completed orders against eligible checkouts in your own store; recovery rates vary with the audience, timing, offer, and delivery success.",
+    href: "/solutions/abandoned-cart-recovery",
+    label: "Explore checkout recovery",
+  },
+  {
+    title: "What is cash on delivery verification?",
+    text: "Cash on delivery (COD) verification asks a shopper to confirm an order before dispatch. WhatFlow can collect a reply and tag the Shopify order so your team can review it. This helps staff decide which orders need attention. A confirmation does not guarantee payment or delivery, and no reply does not prove that an order is fake. Set a clear review policy before canceling orders and measure delivery outcomes for your own store.",
+    href: "/solutions/cod-order-verification",
+    label: "Explore order confirmation",
+  },
+  {
+    title: "How does WhatFlow connect to Shopify?",
+    text: "WhatFlow Business API connects Shopify messaging to the official Meta WhatsApp Cloud API. Shopify Flow is a workflow tool that links triggers, conditions, and actions. Use WhatFlow’s Flow integration to send messages from store events and route customer replies into your process. A shared inbox gives your team a place to respond, and catalog sharing helps staff discuss products. Delivery depends on the workflow, customer consent, template approval, network conditions, and Meta’s service. No fixed delivery time is promised.",
+    href: "/integrations/shopify-flow",
+    label: "Explore Shopify Flow integration",
+  },
+];
+const comparisons = [
+  ["Customer actions", "Quick replies, buttons, and media in supported messages", "Text replies and links; rich features depend on the service", "Links and HTML content; features depend on the email client"],
+  ["Setup and permissions", "WhatsApp account setup, customer consent, and applicable template rules", "Sender setup, consent, and country or carrier requirements", "Sending domain setup, consent, and unsubscribe handling"],
+  ["Costs", "WhatFlow plan allowance plus applicable Meta messaging charges", "Provider, carrier, country, and message length affect cost", "Provider, contact count, and sending volume affect cost"],
+  ["Choosing a channel", "Useful when shoppers want to talk to your store on WhatsApp", "Useful for concise updates where customers accept SMS", "Useful for longer messages, receipts, and newsletters"],
+];
 
 export function CitabilityAndKnowledgeSection() {
   return (
-    <section id="knowledge-benchmarks" className="bg-white py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
-      <div className="max-w-[1280px] mx-auto space-y-16">
-        
-        {/* Section Header */}
+    <section id="knowledge-benchmarks" aria-labelledby="messaging-guide-heading" className="bg-white py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
+      <div className="max-w-[1280px] mx-auto space-y-10">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-            BENCHMARKS &amp; ARCHITECTURE
-          </div>
-          <h2 className="text-[32px] sm:text-[46px] font-display font-black uppercase text-black tracking-tight leading-tight">
-            WHY WHATSAPP OUTPERFORMS LEGACY SMS &amp; EMAIL FOR ECOMMERCE
-          </h2>
-          <p className="text-sm sm:text-base font-medium text-gray-700 leading-relaxed">
-            Direct-to-consumer storefronts lose significant checkout revenue to crowded email inboxes and filtered SMS messages. Discover how native Meta Cloud API integration transforms customer communication into high-converting revenue streams.
-          </p>
+          <h2 id="messaging-guide-heading" className="text-[32px] sm:text-[46px] font-display font-black uppercase text-black tracking-tight leading-tight">How can Shopify stores use WhatsApp?</h2>
+          <p className="text-base text-gray-700 leading-relaxed">Shopify stores can use WhatsApp to answer questions, follow up on checkouts, confirm orders, and send shipping updates. Choose the channel your customers prefer, then measure results in your store. No open rate, revenue lift, or return on investment is guaranteed.</p>
+          <p className="text-xs text-gray-600">By <Link href="/about" className="underline">WhatFlow product team</Link> · Updated <time dateTime={HOMEPAGE_UPDATED_AT}>{HOMEPAGE_UPDATED_LABEL}</time></p>
         </div>
-
-        {/* 3 Answer-First Fact & Knowledge Capsules */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Capsule 1 */}
-          <article className="neo-box bg-[#FAF7F0] p-6 sm:p-7 rounded-2xl flex flex-col justify-between space-y-4">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <span className="neo-pill bg-[#00D261] text-black px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider">
-                  CHECKOUT RECOVERY
-                </span>
-                <span className="text-[11px] font-bold text-gray-500">98% Open Rate [1]</span>
-              </div>
-              <h3 className="font-display font-black text-xl text-black uppercase leading-snug">
-                How WhatsApp Recovers 8% to 15% of Abandoned Carts
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
-                Because WhatsApp messages achieve an average 98% open rate with 80% read within 5 minutes, merchants capture buyer intent while product consideration remains peak. Unlike generic email sequences that land in promotional filters, WhatFlow delivers personalized recovery cards featuring product imagery, localized pricing, and secure one-click checkout URLs directly to customer mobile screens.
-              </p>
-            </div>
-            <div className="pt-3 border-t border-black/10 text-[11px] font-bold text-[#0A6B56]">
-              Benchmark: 4x to 8x higher ROI compared to standard email retargeting flows [1].
-            </div>
-          </article>
-
-          {/* Capsule 2 */}
-          <article className="neo-box bg-[#FAF7F0] p-6 sm:p-7 rounded-2xl flex flex-col justify-between space-y-4">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <span className="neo-pill bg-[#1877F2] text-white px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider">
-                  ORDER VERIFICATION
-                </span>
-                <span className="text-[11px] font-bold text-gray-500">40% RTO Cut [3]</span>
-              </div>
-              <h3 className="font-display font-black text-xl text-black uppercase leading-snug">
-                Eliminating Fake Orders and Return-to-Origin Losses
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
-                Cash on Delivery (COD) and unverified checkouts frequently result in high return-to-origin rates, burdening merchant fulfillment logistics with dead freight fees. WhatFlow automatically initiates a 2-way interactive confirmation message the instant an order is placed. When customers tap confirm or cancel, the status is instantly synchronized to the storefront back-office, preventing non-genuine dispatches.
-              </p>
-            </div>
-            <div className="pt-3 border-t border-black/10 text-[11px] font-bold text-[#0A6B56]">
-              Result: Over 35% reduction in failed deliveries and automated inventory restock [3].
-            </div>
-          </article>
-
-          {/* Capsule 3 */}
-          <article className="neo-box bg-[#FAF7F0] p-6 sm:p-7 rounded-2xl flex flex-col justify-between space-y-4">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <span className="neo-pill bg-[#091E17] text-[#00D261] px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider">
-                  EDGE ARCHITECTURE
-                </span>
-                <span className="text-[11px] font-bold text-gray-500">&lt;500ms Latency [4]</span>
-              </div>
-              <h3 className="font-display font-black text-xl text-black uppercase leading-snug">
-                Sub-Second Event Delivery with Official Meta Cloud API
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
-                WhatFlow operates directly atop Meta's certified Cloud API hosted on globally distributed Cloudflare edge workers. By bypassing third-party message broker intermediaries, WhatFlow delivers webhooks in under 500 milliseconds. Store owners benefit from 0% arbitrary markup on Meta conversation fees, complete data privacy compliance under GDPR, and enterprise-grade reliability.
-              </p>
-            </div>
-            <div className="pt-3 border-t border-black/10 text-[11px] font-bold text-[#0A6B56]">
-              Guarantee: 100% official Meta Cloud API rates with no hidden per-message surcharge.
-            </div>
-          </article>
+          {workflows.map((workflow) => (
+            <article key={workflow.href} className="neo-box bg-[#FAF7F0] p-6 sm:p-7 rounded-2xl flex flex-col gap-4">
+              <h3 className="font-display font-black text-xl text-black">{workflow.title}</h3>
+              <p className="text-sm text-gray-700 leading-relaxed flex-1">{workflow.text}</p>
+              <Link href={workflow.href} className="text-sm font-bold text-[#0A6B56] underline">{workflow.label}</Link>
+            </article>
+          ))}
         </div>
-
-        {/* Comprehensive Comparison Table */}
         <div className="neo-box bg-[#FAF7F0] p-6 sm:p-8 rounded-2xl space-y-6">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <div className="neo-pill bg-[#00D261] text-black px-3 py-0.5 text-xs font-black uppercase tracking-wider inline-block mb-1">
-                SIDE-BY-SIDE CHANNEL COMPARISON
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-black">
-                WHATSAPP AUTOMATION VS TRADITIONAL SMS &amp; EMAIL
-              </h3>
-            </div>
-            <span className="text-xs font-bold text-gray-500 uppercase">
-              Updated Q1 2026 Industry Benchmarks
-            </span>
-          </div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs sm:text-sm border-collapse border-2 border-black bg-white">
-              <thead>
-                <tr className="bg-[#091E17] text-white">
-                  <th className="p-3.5 sm:p-4 border-2 border-black font-extrabold uppercase">Performance Dimension</th>
-                  <th className="p-3.5 sm:p-4 border-2 border-black font-extrabold uppercase text-[#00D261] bg-[#0A3022]">WhatFlow (WhatsApp Cloud API)</th>
-                  <th className="p-3.5 sm:p-4 border-2 border-black font-extrabold uppercase text-gray-300">Carrier SMS Marketing</th>
-                  <th className="p-3.5 sm:p-4 border-2 border-black font-extrabold uppercase text-gray-300">Standard Email Flows</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y-2 divide-black">
-                <tr className="hover:bg-[#E8F8F0] transition-colors font-medium">
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-bold text-black">Average Open Rate</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-extrabold text-[#0A6B56] bg-[#E8F8F0]">98% (80% read in 5 mins) [1]</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">20% - 30% (Spam filtering)</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">15% - 22% (Promotions tab)</td>
-                </tr>
-                <tr className="hover:bg-[#E8F8F0] transition-colors font-medium">
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-bold text-black">Click-Through Rate (CTR)</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-extrabold text-[#0A6B56] bg-[#E8F8F0]">45% - 60% with interactive buttons [1]</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">2% - 4% plain links</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">1.2% - 2.5% embedded buttons</td>
-                </tr>
-                <tr className="hover:bg-[#E8F8F0] transition-colors font-medium">
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-bold text-black">Average Customer Response Time</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-extrabold text-[#0A6B56] bg-[#E8F8F0]">&lt; 90 seconds [1]</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">90+ minutes</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">6+ hours</td>
-                </tr>
-                <tr className="hover:bg-[#E8F8F0] transition-colors font-medium">
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-bold text-black">Interactive 1-Tap Actions</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-extrabold text-[#0A6B56] bg-[#E8F8F0]">Native quick replies, buttons, rich media</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">Text keyword replies only</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">HTML link clicks to external browser</td>
-                </tr>
-                <tr className="hover:bg-[#E8F8F0] transition-colors font-medium">
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-bold text-black">Pricing Model &amp; Markup</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-extrabold text-[#0A6B56] bg-[#E8F8F0]">0% Meta Markup + low flat monthly app fee</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">High per-segment carrier fees + markups</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">Tiered list sizes (punitive subscriber scaling)</td>
-                </tr>
-                <tr className="hover:bg-[#E8F8F0] transition-colors font-medium">
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-bold text-black">Storefront &amp; Flow Automation Sync</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black font-extrabold text-[#0A6B56] bg-[#E8F8F0]">Instant 2-way event syncing with native Flow actions [4]</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">Unidirectional webhook polling</td>
-                  <td className="p-3.5 sm:p-4 border-2 border-black text-gray-700">Delayed batch syncing</td>
-                </tr>
-              </tbody>
+          <h3 className="text-2xl font-display font-black text-black">WhatsApp, SMS, and email: which fits your workflow?</h3>
+          <p className="text-sm text-gray-700">Each channel can support customer communication. Compare consent, message format, and total costs before choosing a provider. Performance varies by store; this table compares capabilities rather than industry averages.</p>
+          <div className="overflow-x-auto" role="region" aria-label="Messaging channel comparison" tabIndex={0}>
+            <table className="w-full min-w-[680px] text-left text-sm border-collapse border-2 border-black bg-white">
+              <caption className="sr-only">Messaging channel capabilities and tradeoffs, reviewed October 27, 2026</caption>
+              <thead><tr className="bg-[#091E17] text-white">{["Consideration", "WhatFlow Business API (WhatsApp)", "SMS", "Email"].map((label) => <th scope="col" key={label} className="p-4 border-2 border-black">{label}</th>)}</tr></thead>
+              <tbody>{comparisons.map(([label, ...cells]) => <tr key={label}><th scope="row" className="p-4 border-2 border-black">{label}</th>{cells.map((cell) => <td key={cell} className="p-4 border-2 border-black text-gray-700">{cell}</td>)}</tr>)}</tbody>
             </table>
           </div>
+          <Link href="/pricing" className="inline-block text-sm font-bold text-[#0A6B56] underline">Check current WhatFlow plans and messaging charges</Link>
         </div>
-
-        {/* Verified Data Sources & Methodology Footnotes */}
-        <div className="neo-box bg-[#FAF7F0] p-6 rounded-xl border border-black space-y-3">
-          <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-black">
-            <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-[#0A6B56]" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="16" y1="13" x2="8" y2="13" />
-              <line x1="16" y1="17" x2="8" y2="17" />
-              <polyline points="10 9 9 9 8 9" />
-            </svg>
-            <span>DATA SOURCES, METHODOLOGY &amp; CITATIONS</span>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-gray-600 font-medium">
-            <div>
-              <p>
-                <strong>[1] Meta Business Messaging Whitepaper (2025/2026):</strong> Verified engagement metrics across enterprise and direct-to-consumer retail brands utilizing Meta Cloud API business solutions.
-              </p>
-            </div>
-            <div>
-              <p>
-                <strong>[2] Baymard Institute Cart Abandonment Statistics (2025/2026):</strong> Aggregate study of 49 independent e-commerce studies documenting a 70.19% baseline average shopping cart abandonment rate.
-              </p>
-            </div>
-            <div>
-              <p>
-                <strong>[3] E-Commerce Logistics &amp; COD Verification Study:</strong> Analysis of merchant return-to-origin rates indicating that pre-dispatch confirmation via instant messaging lowers delivery refusal by 35% to 40%.
-              </p>
-            </div>
-            <div>
-              <p>
-                <strong>[4] Shopify Flow API Technical Guidelines:</strong> Technical SLA specifications for asynchronous webhook dispatching and native action block execution.
-              </p>
-            </div>
-          </div>
-        </div>
-
+        <aside aria-labelledby="sources-heading" className="neo-box bg-[#FAF7F0] p-6 rounded-xl space-y-4 text-sm text-gray-700">
+          <h3 id="sources-heading" className="font-black text-black">Sources, methodology, and limitations</h3>
+          <p>This guide describes product workflows, not a merchant performance study. The calculator uses example inputs supplied by the visitor. It estimates gross revenue before costs and assumes abandoned checkouts are reachable and eligible for messaging. WhatFlow has not published a measured recovery rate, average open rate, or delivery latency benchmark on this page.</p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li><a href="https://developers.facebook.com/docs/whatsapp/cloud-api/overview" className="underline">Meta: WhatsApp Cloud API overview</a> — platform setup and messaging capabilities.</li>
+            <li><a href="https://business.whatsapp.com/policy" className="underline">WhatsApp Business Messaging Policy</a> — consent and permitted business messaging.</li>
+            <li><a href="https://help.shopify.com/en/manual/shopify-flow" className="underline">Shopify: Flow documentation</a> — triggers, conditions, and actions.</li>
+            <li><Link href="/compare/whatflow-chat-automation-vs-business-api" className="underline">WhatFlow Chat Automation vs Business API</Link> — connection methods and product differences.</li>
+          </ul>
+        </aside>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import { HOMEPAGE_UPDATED_AT } from "./content-dates";
+
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.NODE_ENV === "production" ? "https://whatflow.tech" : "http://localhost:3000");
@@ -19,6 +21,7 @@ export function getOrganizationSchema() {
     sameAs: [
       "https://apps.shopify.com/whatflow",
       "https://apps.shopify.com/whatflow-official-api",
+      "https://www.linkedin.com/company/whatflow",
     ],
     contactPoint: [
       {
@@ -138,5 +141,22 @@ export function getBreadcrumbSchema(items: { name: string; url: string }[]) {
         ? item.url
         : `${SITE_URL}${item.url.startsWith("/") ? "" : "/"}${item.url}`,
     })),
+  };
+}
+
+export function getHomePageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/#webpage`,
+    url: SITE_URL,
+    name: "WhatFlow — WhatsApp Apps & Automations for Shopify Stores",
+    description: "WhatsApp messaging, checkout recovery, COD verification and a shared team inbox for Shopify.",
+    inLanguage: "en",
+    dateModified: HOMEPAGE_UPDATED_AT,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#software` },
+    author: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
   };
 }

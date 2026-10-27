@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		template: "%s | WhatFlow",
 	},
 	description:
-		"Automate WhatsApp marketing, recover abandoned carts with 98% open rates, verify COD orders, and boost Shopify conversions with official Meta API.",
+		"Automate WhatsApp marketing, follow up on abandoned carts, verify COD orders, and boost Shopify conversions with official Meta API.",
 	keywords: [
 		"Shopify WhatsApp app",
 		"WhatsApp automation Shopify",
@@ -98,6 +98,7 @@ export default function RootLayout({
 		<html lang="en" className={`scroll-smooth ${inter.variable} ${spaceGrotesk.variable}`}>
 			<head>
 				<link rel="icon" href="/logo.svg" type="image/svg+xml" />
+				<link rel="alternate" type="application/json" title="WhatFlow service capabilities" href="/ai/service.json" />
 				<link
 					rel="alternate"
 					type="application/rss+xml"
@@ -116,9 +117,10 @@ export default function RootLayout({
 			<body
 				className="antialiased bg-[#FAF7F0] text-[#000000] selection:bg-[#00D261] selection:text-black font-sans"
 			>
+				<a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-black focus:p-4 focus:rounded-lg focus:ring-2 focus:ring-black">Skip to main content</a>
 				<AnnouncementBar />
 				<Navbar />
-				<main className="min-h-screen">{children}</main>
+				<main id="main-content" tabIndex={-1} className="min-h-screen">{children}</main>
 				<Footer />
 				<FloatingWhatsAppButton />
 			</body>

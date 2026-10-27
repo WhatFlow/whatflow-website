@@ -47,7 +47,7 @@ export default async function ComparePage({ searchParams }: { searchParams: Sear
         <Link href={categoryUrl()} aria-current={!category ? "page" : undefined} className={`neo-pill px-4 py-2 text-sm font-bold ${!category ? "bg-[#00D261]" : "bg-white"}`}>All comparisons</Link>
         {Object.entries(COMPARISON_CATEGORIES).map(([key, label]) => <Link key={key} href={categoryUrl(key)} aria-current={category === key ? "page" : undefined} className={`neo-pill px-4 py-2 text-sm font-bold ${category === key ? "bg-[#00D261]" : "bg-white"}`}>{label}</Link>)}
       </nav>
-      <form action="/compare" method="get" role="search" className="flex flex-wrap gap-3 mb-6">
+      <form {...{ toolname: "search_whatflow_comparisons", tooldescription: "Search WhatFlow provider and messaging channel comparisons." }} action="/compare" method="get" role="search" className="flex flex-wrap gap-3 mb-6">
         {category && <input type="hidden" name="category" value={category} />}
         <label htmlFor="comparison-search" className="sr-only">Search comparisons</label>
         <input key={query || "all"} id="comparison-search" type="search" name="q" defaultValue={query} placeholder="Search providers, pricing or workflows" maxLength={120} className="bg-white border-2 border-black rounded-lg px-4 py-3 flex-1 min-w-0" />

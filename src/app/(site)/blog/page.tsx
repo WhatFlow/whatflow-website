@@ -236,7 +236,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
       {/* ─── Posts Grid ─── */}
       <section className="px-4 sm:px-6 py-14">
         <div className="max-w-[1280px] mx-auto">
-          <form action="/blog" method="get" role="search" className="flex flex-wrap gap-3 mb-8">
+          <form {...{ toolname: "search_whatflow_guides", tooldescription: "Search WhatFlow guides by keyword and category." }} action="/blog" method="get" role="search" className="flex flex-wrap gap-3 mb-8">
             {selectedCategory !== "all" && <input type="hidden" name="category" value={selectedCategory} />}
             <label htmlFor="blog-search" className="sr-only">Search the blog</label>
             <input key={search || "all"} id="blog-search" name="q" type="search" defaultValue={search} maxLength={120} placeholder="Search reviews, retention, WhatsApp…" className="neo-box bg-white px-4 py-3 flex-1 min-w-48 text-sm" />

@@ -77,7 +77,7 @@ export default async function Image() {
               lineHeight: 1.3,
             }}
           >
-            Recover Carts with 98% Open Rates • 1-Click COD Confirmation • 0% Markup on Meta Rates
+            Checkout Recovery • COD Confirmation • Shared Team Inbox
           </div>
         </div>
 

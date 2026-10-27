@@ -9,7 +9,7 @@ export function Footer() {
 				<div className="col-span-2 md:col-span-1 space-y-3">
 					<WhatFlowLogo lightMode={false} />
 					<p className="text-xs text-gray-400 font-medium leading-relaxed">
-						WhatsApp marketing, customer support, and order automation suite trusted by 10,000+ Shopify merchants worldwide.
+						WhatsApp marketing, customer support, and order automation tools for Shopify stores.
 					</p>
 					<div className="pt-2">
 						<span className="neo-pill bg-[#00D261] text-black text-[9px] font-black uppercase px-2.5 py-0.5 border border-black shadow-[1px_1px_0px_#000]">
@@ -59,6 +59,7 @@ export function Footer() {
 				<div className="space-y-3">
 					<h4 className="font-extrabold text-xs uppercase tracking-wider text-[#00D261]">COMPANY &amp; TRUST</h4>
 					<ul className="space-y-2 text-xs font-semibold text-gray-300">
+						<li><a href="https://www.linkedin.com/company/whatflow" className="hover:text-[#00D261] transition-colors">WhatFlow on LinkedIn</a></li>
 						<li><Link href="/about" className="hover:text-[#00D261] transition-colors">About WhatFlow</Link></li>
 						<li><a href="mailto:support@whatflow.tech" className="hover:text-[#00D261] transition-colors">Contact Support</a></li>
 						<li><Link href="/privacy" className="hover:text-[#00D261] transition-colors">Privacy Policy</Link></li>
@@ -69,7 +70,7 @@ export function Footer() {
 			</div>
 
 			<div className="max-w-[1280px] mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 font-medium gap-2">
-				<span>© {new Date().getFullYear()} WhatFlow Solutions. Trusted by 10,000+ eCommerce merchants worldwide.</span>
+				<span>© {new Date().getFullYear()} WhatFlow Solutions.</span>
 				<span>Official Meta Tech Partner • Zero Markup Guarantee</span>
 			</div>
 		</footer>

@@ -21,3 +21,11 @@ Catalog sharing is live. Customer-segment/audience sync is upcoming. AI is not c
 - [About WhatFlow](https://whatflow.tech/about)
 
 Articles are authored by Safwan Adnan, co-founder and CEO of WhatFlow. Product comparisons are published by WhatFlow; vendor claims should be checked against the primary sources linked in each article.
+
+## Optional
+- [Service capabilities manifest](https://whatflow.tech/ai/service.json): Product capabilities and documentation, not an executable API.
+- [Full context](https://whatflow.tech/llms-full.txt): Companion product reference.
+- [FAQ data](https://whatflow.tech/ai/faq.json)
+- [Company LinkedIn profile](https://www.linkedin.com/company/whatflow)
+
+Homepage content updated October 27, 2026. Calculator inputs are illustrative assumptions, not measured merchant outcomes.
