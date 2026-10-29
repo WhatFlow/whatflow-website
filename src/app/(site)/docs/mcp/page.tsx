@@ -41,6 +41,7 @@ const SECTIONS: Array<[string, string]> = [
   ["billing", "Billing"],
   ["api-keys", "API keys (n8n, scripts)"],
   ["disconnect", "Disconnect & activity log"],
+  ["troubleshooting", "Troubleshooting"],
 ];
 
 const INBOX_TOOLS: Array<[string, string]> = [
@@ -186,11 +187,11 @@ export default function McpDocsPage() {
 
             <Section id="chatgpt" title="Connect ChatGPT">
               <Steps items={[
-                <>In ChatGPT, open <strong>Settings → Apps</strong> and turn on <strong>developer mode</strong> (under advanced settings). Availability depends on your ChatGPT plan.</>,
-                <>In <strong>Settings → Apps</strong>, choose <strong>Create</strong>.</>,
-                <>Name it <strong>WhatFlow</strong>, paste <Code>{MCP_URL}</Code> as the MCP server URL and choose OAuth sign-in.</>,
-                <>A WhatFlow sign-in page opens: <a href="#sign-in" className="font-bold text-[#0A6B56] underline">sign in</a> and choose what ChatGPT may do.</>,
-                <>Add the WhatFlow app to a chat and start asking.</>,
+                <>Open ChatGPT on the web and go to <strong>Settings → Apps &amp; Connectors → Advanced</strong>. Turn on <strong>Developer mode</strong>. On Business or Enterprise plans a workspace admin may need to allow it first, and some plans only allow read-only custom apps.</>,
+                <>Back in <strong>Apps &amp; Connectors</strong>, click <strong>Create</strong>.</>,
+                <>Name it <strong>WhatFlow</strong>, paste <Code>{MCP_URL}</Code> as the MCP server URL and choose <strong>OAuth</strong>.</>,
+                <>Click <strong>Create</strong>, then <strong>Connect</strong>. A WhatFlow sign-in page opens: <a href="#sign-in" className="font-bold text-[#0A6B56] underline">sign in</a> and choose what ChatGPT may do.</>,
+                <>In a new chat, turn on WhatFlow from the <strong>+</strong> menu and ask, for example, &quot;Triage my unread WhatsApp chats&quot;.</>,
               ]} />
             </Section>
 
@@ -217,12 +218,17 @@ export default function McpDocsPage() {
                   and your password. The AI app then acts as you, with your role.
                 </li>
                 <li>
-                  <strong>Connect code.</strong> In the Shopify app, go to <strong>AI Connections → Generate connect code</strong> and paste the
-                  code (it starts with <Code>wfc_</Code>). A code works once and expires after 10 minutes. It connects as the store admin, which is
+                  <strong>Connect code.</strong> In the Shopify app, go to <strong>AI Connections → Generate connect code</strong> and type the
+                  8-character code (like <Code>K7F2-9QXD</Code>). A code works once and expires after 10 minutes. It connects as the store admin, which is
                   useful if you don&apos;t use Live Inbox.
                 </li>
               </ul>
-              <p>Then pick what the app is allowed to do. You can untick anything you don&apos;t want:</p>
+              <p>Then pick what the app is allowed to do:</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li><strong>Assistant (recommended).</strong> Read chats, orders and templates, label and assign chats, and write replies. With draft mode on (the default), replies wait in Live Inbox until a team member presses Send.</li>
+                <li><strong>Read only.</strong> Look at chats, orders, templates and analytics, but never reply. The Shopify app lists the connection as &quot;Read only&quot;.</li>
+                <li><strong>Choose exactly.</strong> Pick individual permissions from this list:</li>
+              </ul>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 list-disc pl-5">
                 {PERMISSIONS.map((permission) => <li key={permission}>{permission}</li>)}
               </ul>
@@ -316,7 +322,8 @@ export default function McpDocsPage() {
               <ul className="list-disc pl-5 space-y-2">
                 <li>
                   <strong>Connected AI apps</strong> lists each app, who signed in (or &quot;Store admin&quot; for a connect code), whether it sends
-                  drafts, sends directly or is read only, and when it was last used. Press <strong>Disconnect</strong> to cut it off.
+                  drafts, sends directly or is read only, when it was last used, and whether its last call failed. Press <strong>Disconnect</strong> to cut it off.
+                  Reconnecting the same app replaces its old entry.
                 </li>
                 <li>Under <strong>API keys</strong>, press <strong>Revoke</strong> to stop a key from working.</li>
                 <li>Uninstalling WhatFlow from Shopify disconnects every AI app and revokes every key.</li>
@@ -325,6 +332,28 @@ export default function McpDocsPage() {
                 <strong>Recent AI activity</strong> lists every action an AI app takes: what it did (for example &quot;send message · conversation
                 123&quot; or &quot;lookup order · #1042&quot;), which app did it, the result (ok, drafted or an error such as rate limited) and when.
               </p>
+            </Section>
+
+            <Section id="troubleshooting" title="Troubleshooting">
+              <ul className="list-disc pl-5 space-y-2">
+                <li>
+                  <strong>Opening the MCP URL in a browser shows 401.</strong> That&apos;s expected: the server only answers signed-in AI apps.
+                </li>
+                <li>
+                  <strong>The AI app keeps loading after you press Allow.</strong> Disconnect WhatFlow in the Shopify app under AI Connections, remove
+                  it in the AI app, then connect again. A fix for this went live on 29 October 2026.
+                </li>
+                <li>
+                  <strong>The AI can see data but can&apos;t reply.</strong> The connection is read only. Reconnect and choose <strong>Assistant</strong>.
+                  In ChatGPT, also check whether your plan allows write actions in custom apps.
+                </li>
+                <li>
+                  <strong>No chat tools appear.</strong> Live Inbox is turned off for your store. Turn it on in the WhatFlow Shopify app.
+                </li>
+                <li>
+                  <strong>&quot;Connect code is wrong, expired or already used&quot;.</strong> Codes work once, for 10 minutes. Generate a new one.
+                </li>
+              </ul>
             </Section>
           </div>
 
