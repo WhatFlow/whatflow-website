@@ -105,6 +105,12 @@ export default function RootLayout({
 					title="WhatFlow Blog RSS Feed"
 					href="/blog/rss.xml"
 				/>
+				<link
+					rel="alternate"
+					type="application/rss+xml"
+					title="WhatFlow Changelog RSS Feed"
+					href="/changelog/rss.xml"
+				/>
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}

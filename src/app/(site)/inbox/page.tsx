@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 // Inbox Page Components
 import { InboxHero } from "@/components/inbox-page/InboxHero";
+import { LatestUpdates } from "@/components/LatestUpdates";
 import { SSOFlowDiagram } from "@/components/inbox-page/SSOFlowDiagram";
 import { LiveConversationMock } from "@/components/inbox-page/LiveConversationMock";
 import { MessageTypeGallery } from "@/components/inbox-page/MessageTypeGallery";
@@ -69,6 +70,8 @@ export default function InboxPage() {
 
       {/* 12. Upcoming Features Roadmap */}
       <InboxRoadmap />
+
+      <LatestUpdates app="business-api" keywords={["inbox"]} heading="Latest Team Inbox updates" />
 
       {/* 13. Real Merchant Reviews (Payload Collection) */}
       <ReviewsSection darkMode={true} />

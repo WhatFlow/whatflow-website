@@ -60,6 +60,9 @@ export async function GET() {
       solutions: "https://whatflow.tech/solutions",
       pricing: "https://whatflow.tech/pricing",
       comparisons: "https://whatflow.tech/compare",
+      changelog: "https://whatflow.tech/changelog",
+      changelog_data: "https://whatflow.tech/ai/changelog.json",
+      changelog_rss: "https://whatflow.tech/changelog/rss.xml",
     },
   };
 

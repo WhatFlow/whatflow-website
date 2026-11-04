@@ -52,7 +52,7 @@ function NavbarMenu({ pathname }: { pathname: string }) {
 		}, 150);
 	};
 
-	const isResourcesActive = pathname.startsWith("/blog") || pathname.startsWith("/case-studies");
+	const isResourcesActive = pathname.startsWith("/blog") || pathname.startsWith("/case-studies") || pathname.startsWith("/changelog");
 
 	return (
 		<header className="sticky top-0 z-50 bg-[#FAF7F0] border-b-[2.5px] border-black">
@@ -216,6 +216,26 @@ function NavbarMenu({ pathname }: { pathname: string }) {
 											</div>
 										</div>
 									</Link>
+
+									<Link
+										href="/changelog"
+										className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FAF7F0] transition-colors group"
+									>
+										<div className="w-8 h-8 rounded-lg bg-[#E8F8F0] border border-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#00D261] transition-colors">
+											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
+												<circle cx="12" cy="12" r="9" />
+												<polyline points="12 7 12 12 15 14" />
+											</svg>
+										</div>
+										<div>
+											<div className="text-xs font-extrabold uppercase text-black group-hover:text-[#0A6B56] transition-colors">
+												PRODUCT CHANGELOG
+											</div>
+											<div className="text-[11px] text-gray-500 font-medium">
+												New features, improvements &amp; fixes
+											</div>
+										</div>
+									</Link>
 								</div>
 							</div>
 						)}
@@ -347,6 +367,16 @@ function NavbarMenu({ pathname }: { pathname: string }) {
 									<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
 								</svg>
 								<span>CASE STUDIES</span>
+							</Link>
+							<Link
+								href="/changelog"
+								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
+							>
+								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
+									<circle cx="12" cy="12" r="9" />
+									<polyline points="12 7 12 12 15 14" />
+								</svg>
+								<span>CHANGELOG</span>
 							</Link>
 						</div>
 					</div>

@@ -20,6 +20,7 @@ import { StorefrontWidgets } from "@/components/features/StorefrontWidgets";
 import { SpeedAndUptime } from "@/components/features/SpeedAndUptime";
 import { FeatureBoardRoadmap } from "@/components/features/FeatureBoardRoadmap";
 import { ReviewsSection } from "@/components/ReviewsSection";
+import { LatestUpdates } from "@/components/LatestUpdates";
 
 export const metadata: Metadata = {
   title: "WhatFlow Features — 11+ Automations, 2-Way Inbox & Shopify Functions",
@@ -84,6 +85,9 @@ export default function FeaturesPage() {
 
       {/* 15. Community Feature Board & Roadmap */}
       <FeatureBoardRoadmap />
+
+      {/* 15b. Latest changelog entries */}
+      <LatestUpdates heading="Recently shipped" />
 
       {/* 16. Real Merchant Reviews (Payload Collection) */}
       <ReviewsSection />

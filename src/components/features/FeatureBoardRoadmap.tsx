@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
 
 interface RoadmapItem {
@@ -122,7 +123,7 @@ export function FeatureBoardRoadmap() {
           ))}
         </div>
 
-        <div className="text-center">
+        <div className="flex items-center justify-center gap-3 flex-wrap">
           <a
             href={getShopifyAppUrl("feature_board_cta")}
             target="_blank"
@@ -131,6 +132,12 @@ export function FeatureBoardRoadmap() {
           >
             <span>SUBMIT A FEATURE REQUEST ➔</span>
           </a>
+          <Link
+            href="/changelog"
+            className="neo-btn inline-flex items-center gap-2 bg-white text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg hover:bg-[#FAF7F0]"
+          >
+            <span>SEE WHAT WE&apos;VE SHIPPED ➔</span>
+          </Link>
         </div>
       </div>
     </section>
