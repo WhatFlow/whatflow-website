@@ -221,7 +221,7 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
       {
         question: "Can customers reply to tracking messages for support?",
         answer:
-          "Yes. Customers can reply in the same WhatsApp thread, and your team can respond from WhatFlow Business API's enterprise-ready inbox. There are no seat fees. AI replies are not currently included.",
+          "Yes. Customers can reply in the same WhatsApp thread, and your team can respond from WhatFlow Business API's enterprise-ready inbox. There are no seat fees. There is no built-in AI bot, but you can connect Claude, ChatGPT or Cursor through the WhatFlow MCP connector to draft replies for your team to approve.",
       },
     ],
   },

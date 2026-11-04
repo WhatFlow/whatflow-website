@@ -45,7 +45,7 @@ export function InboxRoadmap() {
             </span>
             <h3 className="font-display font-black text-lg uppercase text-white">AI Agent Copilot</h3>
             <p className="text-xs text-gray-400 leading-relaxed">
-              AI is not available in the current inbox. Suggested replies are a planned enhancement; availability has not been announced.
+              No built-in AI in the inbox yet. Today you can connect Claude, ChatGPT or Cursor through the WhatFlow MCP connector to draft replies for a person to approve. Native suggested replies are planned.
             </p>
           </div>
         </div>

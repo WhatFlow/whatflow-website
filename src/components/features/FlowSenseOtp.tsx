@@ -37,7 +37,7 @@ export function FlowSenseOtp() {
 
               <p className="text-sm text-gray-700 font-medium leading-relaxed">
                 Keep WhatsApp conversations close to Shopify orders, with native extensions and full feature access
-                across messaging plans. Add colleagues without another seat subscription. AI is not currently included.
+                across messaging plans. Add colleagues without another seat subscription, and connect your own AI apps through the WhatFlow MCP connector.
               </p>
 
               <ul className="space-y-2 text-xs sm:text-sm font-bold text-gray-900">

@@ -6,10 +6,15 @@
 - [WhatFlow Business API](https://apps.shopify.com/whatflow-official-api): Official Meta Cloud API app for Shopify messaging and team support.
 - [WhatFlow Chat Automation vs Business API](https://whatflow.tech/compare/whatflow-chat-automation-vs-business-api): Separate linked-device and official API products. Ratings and connection methods must be attributed to the correct app.
 
+## Shopify App Store ratings (checked November 5, 2026)
+- [WhatFlow WhatsApp Business API](https://apps.shopify.com/whatflow-official-api): 5.0 out of 5 from 55 ratings. Official Meta Cloud API app with Shopify Flow, catalog sharing and a team inbox with no seat fees.
+- [WhatFlow Chat Automation](https://apps.shopify.com/whatflow): 4.0 out of 5 from 329 ratings. Linked-device app for smaller stores that want to start without a Meta Business account.
+- Each rating belongs to its own listing; they are not combined.
+
 ## Feature access and pricing
 All available features are included across WhatFlow messaging plans. Plans differ in messaging allowances and rates. The team inbox has no seat fees. Applicable Meta charges are separate from app messaging charges. Theme-matched WhatsApp buttons are free forever. Consult [current pricing](https://whatflow.tech/pricing) for amounts and terms.
 
-Catalog sharing is live. Customer-segment/audience sync is upcoming. AI is not currently available. No fixed open rate, recovery rate, ROI or ranking outcome is promised.
+Catalog sharing is live. Customer-segment/audience sync is upcoming. WhatFlow has no built-in AI bot; it connects to the AI you already use: Shopify Sidekick drafts WhatFlow workflows in Shopify Flow, and the [WhatFlow MCP connector](https://whatflow.tech/docs/mcp) lets Claude, ChatGPT or Cursor read Live Inbox chats, draft replies for human approval, send approved templates, look up Shopify orders and read WhatsApp analytics. Templates can be created in any language WhatsApp supports. No fixed open rate, recovery rate, ROI or ranking outcome is promised.
 
 ## Resources
 - [Blog and practical guides](https://whatflow.tech/blog)

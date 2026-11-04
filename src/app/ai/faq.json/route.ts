@@ -36,7 +36,7 @@ export async function GET() {
   ];
 
   return NextResponse.json(
-    { total: faqs.length + 2, faqs: [...faqs, ...HOMEPAGE_FAQS.filter(faq => ["Is AI included in the WhatFlow inbox?", "Are features restricted to paid plans?"].includes(faq.question))] },
+    { total: faqs.length + 3, faqs: [...faqs, ...HOMEPAGE_FAQS.filter(faq => ["Does WhatFlow work with AI?", "Are features restricted to paid plans?", "How are WhatFlow's apps rated on the Shopify App Store?"].includes(faq.question))] },
     {
       headers: {
         "Content-Type": "application/json",
