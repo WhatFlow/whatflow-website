@@ -28,15 +28,15 @@ export type ChangelogSeedEntry = {
 
 export const CHANGELOG_APP_LABELS: Record<ChangelogApp, string> = {
   all: "Both apps",
-  "business-api": "Business API",
-  chat: "Chat Automation",
+  "business-api": "Official API App",
+  chat: "Unofficial API App",
   ai: "WhatFlow AI",
 };
 
 export const CHANGELOG_APP_FULL_NAMES: Record<ChangelogApp, string> = {
-  all: "WhatFlow Business API and WhatFlow Chat Automation",
-  "business-api": "WhatFlow Business API (official Meta Cloud API app)",
-  chat: "WhatFlow Chat Automation",
+  all: "WhatFlow Business API (official API app) and WhatFlow Chat Automation (unofficial API app)",
+  "business-api": "WhatFlow Business API, the official Meta Cloud API app",
+  chat: "WhatFlow Chat Automation, the unofficial API app",
   ai: "WhatFlow AI",
 };
 
@@ -223,8 +223,8 @@ const entries: ChangelogSeedEntry[] = [
     summary:
       "Ask Shopify Sidekick to create and edit WhatsApp templates, change WhatFlow settings and get support, right in your Shopify admin.",
     highlights: [
-      "Business API: create and edit WhatsApp message templates by describing what you need.",
-      "Chat Automation: Sidekick can work with all your app settings and sends, and shows buttons that open the right WhatFlow page.",
+      "Official API app: create and edit WhatsApp message templates by describing what you need.",
+      "Unofficial API app: Sidekick can work with all your app settings and sends, and shows buttons that open the right WhatFlow page.",
       "A help dialog checks with you before acting and suggests prompts for the page you're on.",
       "Sidekick shows you each change to review before it is applied.",
     ],
@@ -488,7 +488,7 @@ const entries: ChangelogSeedEntry[] = [
     highlights: [
       "A bulk selection is sent as one operation, so a retry never messages a customer twice.",
       "Bulk sends have sensible size limits and report success accurately.",
-      "Chat Automation queues bulk manual messages and sends them in steady batches.",
+      "The unofficial API app queues bulk manual messages and sends them in steady batches.",
     ],
   },
   {
@@ -530,12 +530,12 @@ const entries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-new-home",
     version: "2026.10.13",
-    title: "Chat Automation: New Home, Quick Toggles and Setup Guide",
+    title: "Unofficial API App: New Home, Quick Toggles and Setup Guide",
     releaseDate: "2026-10-13",
     type: "feature",
     app: "chat",
     summary:
-      "WhatFlow Chat Automation has a redesigned Home with quick on/off toggles for every feature and a step-by-step setup guide.",
+      "The unofficial API app (WhatFlow Chat Automation) has a redesigned Home with quick on/off toggles for every feature and a step-by-step setup guide.",
     highlights: [
       "Turn features on or off right from Home.",
       "A setup guide walks new stores through the first steps.",
@@ -546,7 +546,7 @@ const entries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-pause-and-failed-delivery-tags",
     version: "2026.10.12",
-    title: "Chat Automation: Automations Pause When WhatsApp Disconnects",
+    title: "Unofficial API App: Automations Pause When WhatsApp Disconnects",
     releaseDate: "2026-10-12",
     type: "improvement",
     app: "chat",
@@ -578,7 +578,7 @@ const entries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-order-actions-and-broadcast-previews",
     version: "2026.10.10",
-    title: "Chat Automation: Order Actions with Previews and Paced Broadcasts",
+    title: "Unofficial API App: Order Actions with Previews and Paced Broadcasts",
     releaseDate: "2026-10-10",
     type: "feature",
     app: "chat",
@@ -626,12 +626,12 @@ const entries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-new-whatsapp-engine",
     version: "2026.10.05",
-    title: "Chat Automation Rebuilt on a Faster WhatsApp Engine",
+    title: "Unofficial API App Rebuilt on a Faster WhatsApp Engine",
     releaseDate: "2026-10-05",
     type: "improvement",
     app: "chat",
     summary:
-      "WhatFlow Chat Automation now runs on a new WhatsApp engine and faster infrastructure. The interface stays the same, and your settings carried over.",
+      "The unofficial API app (WhatFlow Chat Automation) now runs on a new WhatsApp engine and faster infrastructure. The interface stays the same, and your settings carried over.",
     highlights: [
       "A more stable linked-device WhatsApp connection.",
       "Faster pages and automations, with the same features and settings.",
@@ -864,12 +864,12 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-usage-dashboard",
     version: "2026.09.06",
-    title: "Chat Automation: Usage Dashboard",
+    title: "Unofficial API App: Usage Dashboard",
     releaseDate: "2026-09-06",
     type: "feature",
     app: "chat",
     summary:
-      "WhatFlow Chat Automation's Home now shows how many WhatsApp messages each automation sent, with a date range picker.",
+      "The unofficial API app's Home now shows how many WhatsApp messages each automation sent, with a date range picker.",
     highlights: [
       "Message usage per automation, shown as simple stat boxes.",
       "Choose any date range to compare periods.",
@@ -1230,12 +1230,12 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-new-home-dashboard",
     version: "2026.05.22",
-    title: "Chat Automation: New Home with Connection Management",
+    title: "Unofficial API App: New Home with Connection Management",
     releaseDate: "2026-05-22",
     type: "feature",
     app: "chat",
     summary:
-      "WhatFlow Chat Automation has a new Home page with a dashboard, your WhatsApp connection status, and all feature settings in one place.",
+      "The unofficial API app (WhatFlow Chat Automation) has a new Home page with a dashboard, your WhatsApp connection status, and all feature settings in one place.",
     highlights: [
       "See your connection status and manage it from Home.",
       "All automations are listed with their settings.",
@@ -1267,7 +1267,7 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-confirmation-modes",
     version: "2026.02.03",
-    title: "Chat Automation: Confirmation Replies Work with Each Connection Type",
+    title: "Unofficial API App: Confirmation Replies Work with Each Connection Type",
     releaseDate: "2026-02-03",
     type: "improvement",
     app: "chat",
@@ -1282,7 +1282,7 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-sku-and-quantity-variables",
     version: "2025.12.29",
-    title: "Chat Automation: SKU, Quantity and Image Options in Order Messages",
+    title: "Unofficial API App: SKU, Quantity and Image Options in Order Messages",
     releaseDate: "2025-12-29",
     type: "improvement",
     app: "chat",
@@ -1297,7 +1297,7 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-fulfillment-message-action",
     version: "2025.12.17",
-    title: "Chat Automation: Send Fulfillment Messages from Shopify Admin",
+    title: "Unofficial API App: Send Fulfillment Messages from Shopify Admin",
     releaseDate: "2025-12-17",
     type: "feature",
     app: "chat",
@@ -1311,7 +1311,7 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-auto-replies-and-draft-orders",
     version: "2025.12.15",
-    title: "Chat Automation: Auto-Replies for More Message Types and Draft Order Messages",
+    title: "Unofficial API App: Auto-Replies for More Message Types and Draft Order Messages",
     releaseDate: "2025-12-15",
     type: "feature",
     app: "chat",
@@ -1326,7 +1326,7 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-poll-and-list-confirmations",
     version: "2025.12.02",
-    title: "Chat Automation: Order Confirmation with Polls and Lists",
+    title: "Unofficial API App: Order Confirmation with Polls and Lists",
     releaseDate: "2025-12-02",
     type: "feature",
     app: "chat",
@@ -1343,7 +1343,7 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-fulfillment-and-cancellation-messages",
     version: "2025.11.30",
-    title: "Chat Automation: Faster Fulfillment and Cancellation Messages",
+    title: "Unofficial API App: Faster Fulfillment and Cancellation Messages",
     releaseDate: "2025-11-30",
     type: "improvement",
     app: "chat",
@@ -1358,7 +1358,7 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-whatsapp-product-button",
     version: "2025.11.14",
-    title: "Chat Automation: WhatsApp Product Button and a Refreshed Chat Button",
+    title: "Unofficial API App: WhatsApp Product Button and a Refreshed Chat Button",
     releaseDate: "2025-11-14",
     type: "feature",
     app: "chat",
@@ -1373,7 +1373,7 @@ const earlierEntries: ChangelogSeedEntry[] = [
   {
     slug: "chat-automation-connection-engines",
     version: "2025.11.07",
-    title: "Chat Automation: Choose Your WhatsApp Connection Engine",
+    title: "Unofficial API App: Choose Your WhatsApp Connection Engine",
     releaseDate: "2025-11-07",
     type: "feature",
     app: "chat",

@@ -42,7 +42,7 @@ export async function GET() {
   <channel>
     <title>WhatFlow Changelog: WhatsApp for Shopify Product Updates</title>
     <link>${SITE_URL}/changelog</link>
-    <description>New features, improvements, bug fixes and security updates for WhatFlow Business API, Chat Automation and the WhatsApp Team Inbox.</description>
+    <description>New features, improvements, bug fixes and security updates for WhatFlow Business API (official API app), Chat Automation (unofficial API app) and the WhatsApp Team Inbox.</description>
     <language>en-US</language>
     <lastBuildDate>${lastBuild}</lastBuildDate>
     <atom:link href="${SITE_URL}/changelog/rss.xml" rel="self" type="application/rss+xml"/>${items}

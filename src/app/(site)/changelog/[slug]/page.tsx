@@ -80,7 +80,7 @@ export default async function ChangelogEntryPage({ params }: Props) {
     publisher: { "@id": `${SITE_URL}/#organization`, "@type": "Organization", name: "WhatFlow", logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.svg` } },
     about: apps.map((key) => ({
       "@type": "SoftwareApplication",
-      name: key === "chat" ? "WhatFlow Chat Automation" : "WhatFlow Business API",
+      name: key === "chat" ? "WhatFlow Chat Automation (unofficial API app)" : "WhatFlow Business API (official API app)",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Shopify",
       url: SHOPIFY_APP_URLS[key],
@@ -152,7 +152,7 @@ export default async function ChangelogEntryPage({ params }: Props) {
                 rel="noopener"
                 className="neo-box bg-[#00D261] px-4 py-2 text-xs font-extrabold uppercase tracking-wider text-black"
               >
-                {key === "chat" ? "Get Chat Automation" : "Get Business API"}
+                {key === "chat" ? "Get the unofficial API app" : "Get the official API app"}
               </a>
             ))}
           </div>

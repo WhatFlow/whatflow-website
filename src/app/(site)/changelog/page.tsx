@@ -16,7 +16,7 @@ import {
 
 const TITLE = "Changelog: WhatsApp for Shopify Product Updates";
 const DESCRIPTION =
-  "Release notes for WhatFlow's WhatsApp apps for Shopify: new features, improvements, bug fixes and security updates for WhatFlow Business API, Chat Automation and the Team Inbox.";
+  "Release notes for WhatFlow's WhatsApp apps for Shopify: new features, improvements, bug fixes and security updates for WhatFlow Business API (official API app), Chat Automation (unofficial API app) and the Team Inbox.";
 
 interface ChangelogPageProps {
   searchParams: Promise<{ app?: string; type?: string }>;
@@ -48,7 +48,7 @@ const FAQS = [
   {
     question: "Which WhatFlow apps does this changelog cover?",
     answer:
-      "It covers WhatFlow Business API, the official Meta WhatsApp Cloud API app for Shopify that includes the WhatsApp Team Inbox, and WhatFlow Chat Automation, the linked-device WhatsApp app for Shopify. Updates that apply to both are labeled \"Both apps\".",
+      "It covers WhatFlow Business API, the official Meta WhatsApp Cloud API app for Shopify that includes the WhatsApp Team Inbox, and WhatFlow Chat Automation, our unofficial API app, which links a store's regular WhatsApp account. Updates that apply to both are labeled \"Both apps\".",
   },
   {
     question: "Do I need to do anything to get these updates?",
@@ -61,9 +61,9 @@ const FAQS = [
       "Check this page, or subscribe to the changelog RSS feed at whatflow.tech/changelog/rss.xml to see new releases in your feed reader.",
   },
   {
-    question: "What is the difference between WhatFlow Business API and WhatFlow Chat Automation?",
+    question: "What is the difference between the official and unofficial API apps?",
     answer:
-      "WhatFlow Business API connects through Meta's official WhatsApp Cloud API and adds Shopify Flow triggers, catalog sharing and a team inbox. WhatFlow Chat Automation links a regular WhatsApp account as a linked device, for stores that want to start without a Meta Business account.",
+      "WhatFlow Business API, the official API app, connects through Meta's official WhatsApp Cloud API and adds Shopify Flow triggers, catalog sharing and a team inbox. WhatFlow Chat Automation, the unofficial API app, links a regular WhatsApp account as a linked device, for stores that want to start without a Meta Business account.",
   },
 ];
 
@@ -117,8 +117,8 @@ export default async function ChangelogPage({ searchParams }: ChangelogPageProps
     publisher: { "@id": `${SITE_URL}/#organization` },
     dateModified: latest?.updatedAt || latest?.releaseDate,
     about: [
-      { "@type": "SoftwareApplication", name: "WhatFlow Business API", applicationCategory: "BusinessApplication", operatingSystem: "Shopify", url: "https://apps.shopify.com/whatflow-official-api" },
-      { "@type": "SoftwareApplication", name: "WhatFlow Chat Automation", applicationCategory: "BusinessApplication", operatingSystem: "Shopify", url: "https://apps.shopify.com/whatflow" },
+      { "@type": "SoftwareApplication", name: "WhatFlow Business API (official API app)", applicationCategory: "BusinessApplication", operatingSystem: "Shopify", url: "https://apps.shopify.com/whatflow-official-api" },
+      { "@type": "SoftwareApplication", name: "WhatFlow Chat Automation (unofficial API app)", applicationCategory: "BusinessApplication", operatingSystem: "Shopify", url: "https://apps.shopify.com/whatflow" },
     ],
     mainEntity: {
       "@type": "ItemList",
@@ -166,7 +166,7 @@ export default async function ChangelogPage({ searchParams }: ChangelogPageProps
           </h1>
           <p className="text-base sm:text-lg text-gray-700 font-medium max-w-2xl">
             New features, improvements and bug fixes for WhatFlow&apos;s WhatsApp apps for Shopify: the{" "}
-            <strong>Business API</strong> app with its Team Inbox, and <strong>Chat Automation</strong>.
+            <strong>official API app</strong> (Business API) with its Team Inbox, and the <strong>unofficial API app</strong> (Chat Automation).
           </p>
 
           {latest && oldest && (
