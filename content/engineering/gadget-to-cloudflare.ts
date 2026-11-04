@@ -76,7 +76,7 @@ export const post = {
 
     { h2: "Why we started on Gadget" },
     {
-      p: "In 2024 WhatFlow had a single developer, a university student. AI coding tools were still mostly chat windows you pasted code into, so building and running software was the bottleneck. Gadget took the infrastructure, the database, Shopify OAuth, webhooks and hosting off our hands, so the little time we had went into the product. With only a few users, the cost was small. It was clearly the right call.",
+      p: "When I started WhatFlow in 2024, I was a university student and the only developer. AI coding tools were still mostly chat windows you pasted code into, so building and running software was my biggest bottleneck. Gadget took the infrastructure, the database, Shopify OAuth, webhooks and hosting off my hands, so the little time I had went into the product. With only a few users, the cost was small. It was clearly the right call.",
     },
     {
       p: "As the apps grew, so did the bill. For a long time we were happy to pay it, because Gadget saved us DevOps work, hiring and a great deal of time. Their team was supportive throughout, and often refunded us when something went wrong. Thank you to Franco, Muhammad and everyone else at Gadget.",
@@ -87,7 +87,7 @@ export const post = {
       p: "Eventually the numbers stopped working. Our monthly bill climbed past $1,200, then $1,300 and $1,400, and was projected to reach about $1,800 a month by August and September 2026.",
     },
     {
-      p: "We had already been moving pieces away to control costs. First we moved the unofficial API app's webhook handling to Cloudflare Workers. We also tried running that load on a large VPS managed with Coolify, but the webhook volume was more than it could take, and at the time we didn't have the experience to design around it. Back on Workers, we optimized enough to bring the bills down again.",
+      p: "We had already been moving pieces away to control costs. First we moved the unofficial API app's webhook handling to Cloudflare Workers. We also tried running that load on a large VPS managed with Coolify, but the webhook volume was more than it could take, and at the time I didn't have the experience to architect around it. Back on Workers, we optimized enough to bring the bills down again.",
     },
     {
       p: "By mid-2026 the unofficial API app's busiest paths (order events, checkouts, draft orders, poll replies, incoming messages, Shopify Flow and usage events) ran on **13 separate Cloudflare Workers** with per-feature queues, plus a key-value store kept in sync on a schedule. Its admin UI, data and Shopify sessions stayed on Gadget.",
