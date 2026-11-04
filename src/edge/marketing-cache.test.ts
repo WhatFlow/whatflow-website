@@ -98,3 +98,10 @@ test('pricing and listings have shorter freshness windows; feeds and details are
   await h.serve(request('/blog/rss.xml'));
   assert.equal((await h.serve(request('/blog/rss.xml'))).headers.get('X-WhatFlow-Page-Cache'), 'HIT');
 });
+
+test('changelog entries and feed are cacheable public pages; filtered views bypass', () => {
+  assert.equal(marketingCacheTTL(request('/changelog/whatsapp-store-report')), 300);
+  assert.equal(marketingCacheTTL(request('/changelog/rss.xml')), 300);
+  assert.equal(marketingCacheTTL(request('/changelog?app=chat')), null);
+  assert.equal(marketingCacheTTL(request('/changelog/a/b')), null);
+});

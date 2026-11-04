@@ -88,7 +88,7 @@ export type CaseStudy = {
   };
 };
 
-type CollectionResponse<T> = {
+export type CollectionResponse<T> = {
   docs: T[];
   totalDocs: number;
   limit: number;
@@ -393,59 +393,6 @@ export async function getIntegration(slug: string): Promise<Integration | null> 
   return res.docs[0] ?? null;
 }
 
-// ─── Changelog API ───────────────────────────────────────────────────────────
-
-export type ChangelogEntry = {
-  id: string;
-  version: string;
-  title: string;
-  slug: string;
-  releaseDate: string;
-  type: "feature" | "improvement" | "fix" | "security";
-  app: "all" | "business-api" | "chat" | "ai";
-  summary: string;
-  content?: unknown;
-  gitCommitHash?: string;
-  gitCommitMessage?: string;
-  status: "draft" | "published";
-};
-
-export const CHANGELOG_TYPE_LABELS: Record<string, string> = {
-  feature: "New Feature",
-  improvement: "Improvement",
-  fix: "Bug Fix",
-  security: "Security",
-};
-
-export const CHANGELOG_TYPE_COLORS: Record<string, string> = {
-  feature: "bg-[#00D261] text-black",
-  improvement: "bg-[#2563EB] text-white",
-  fix: "bg-[#FFC107] text-black",
-  security: "bg-[#FF4B4B] text-white",
-};
-
-export async function getChangelogEntries(
-  options: {
-    app?: string;
-    type?: string;
-    limit?: number;
-    page?: number;
-  } = {}
-): Promise<CollectionResponse<ChangelogEntry>> {
-  const params = new URLSearchParams();
-  params.set("where[status][equals]", "published");
-  params.set("sort", "-releaseDate");
-  params.set("depth", "1");
-  if (options.limit) params.set("limit", String(options.limit));
-  if (options.page) params.set("page", String(options.page));
-  if (options.app && options.app !== "all") {
-    params.set("where[app][equals]", options.app);
-  }
-  if (options.type && options.type !== "all") {
-    params.set("where[type][equals]", options.type);
-  }
-
-  return payloadFetch<CollectionResponse<ChangelogEntry>>(`/api/changelog?${params.toString()}`);
-}
+// Changelog data access lives in ./changelog.ts
 
 

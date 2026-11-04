@@ -249,6 +249,10 @@ body {
 	margin-bottom: 0.4rem;
 }
 
+.prose-whatflow ul { list-style: disc; }
+.prose-whatflow ol { list-style: decimal; }
+.prose-whatflow li::marker { color: #00A84D; font-weight: 800; }
+
 .prose-whatflow blockquote {
 	border-left: 4px solid #00D261;
 	background: #F0FFF6;

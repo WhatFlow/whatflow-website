@@ -10,7 +10,8 @@ export const Changelog: CollectionConfig = {
   admin: {
     useAsTitle: "title",
     defaultColumns: ["version", "title", "type", "app", "releaseDate", "status"],
-    description: "Product release notes, feature launches, and automated git commit syncs.",
+    description:
+      "Public, merchant-facing release notes shown at /changelog. Write in plain language: no code, internal service names, commit messages or security specifics.",
   },
   access: {
     read: ({ req: { user } }) => {
@@ -82,8 +83,8 @@ export const Changelog: CollectionConfig = {
       defaultValue: "all",
       options: [
         { label: "All Apps / Platform", value: "all" },
-        { label: "WhatFlow Business API", value: "business-api" },
-        { label: "WhatFlow Chat", value: "chat" },
+        { label: "WhatFlow Business API (incl. Team Inbox)", value: "business-api" },
+        { label: "WhatFlow Chat Automation", value: "chat" },
         { label: "WhatFlow AI", value: "ai" },
       ],
     },
@@ -93,26 +94,34 @@ export const Changelog: CollectionConfig = {
       required: true,
       label: "Summary / Highlights",
       admin: {
-        description: "Brief 1-2 sentence overview of what changed.",
+        description: "1–2 plain-language sentences (under ~170 characters). Used as the page's meta description and in the RSS feed.",
       },
     },
     {
       name: "content",
       type: "richText",
-      label: "Full Release Notes (Optional)",
+      label: "Full Release Notes",
+      admin: {
+        description: "Use a \"What's new\" heading with a bullet list. Bullets are reused in the RSS feed and /ai/changelog.json.",
+      },
     },
     {
       name: "gitCommitHash",
       type: "text",
-      label: "Git Commit SHA (Optional)",
+      label: "Git Commit SHA (Internal)",
+      access: { read: ({ req: { user } }) => Boolean(user) },
       admin: {
-        description: "e.g. 7f3a9bc — automatically populated via CI/CD sync",
+        description: "Internal reference only. Never returned by the public API or shown on the site.",
       },
     },
     {
       name: "gitCommitMessage",
       type: "text",
-      label: "Raw Commit Message (Optional)",
+      label: "Raw Commit Message (Internal)",
+      access: { read: ({ req: { user } }) => Boolean(user) },
+      admin: {
+        description: "Internal reference only. Never returned by the public API or shown on the site.",
+      },
     },
     {
       name: "status",

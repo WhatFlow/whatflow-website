@@ -19,5 +19,6 @@ Catalog sharing is live. Customer-segment/audience sync is upcoming. AI is not c
 - [Free storefront WhatsApp buttons](https://whatflow.tech/solutions/chat-button)
 - [Pricing and messaging allowances](https://whatflow.tech/pricing)
 - [About WhatFlow](https://whatflow.tech/about)
+- [Changelog and release notes](https://whatflow.tech/changelog): Dated, plain-language notes on new features, improvements and fixes for both apps. Machine-readable: https://whatflow.tech/ai/changelog.json
 
 Articles are authored by Safwan Adnan, co-founder and CEO of WhatFlow. Product comparisons are published by WhatFlow; vendor claims should be checked against the primary sources linked in each article.

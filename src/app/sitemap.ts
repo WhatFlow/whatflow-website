@@ -2,6 +2,7 @@ import { HOMEPAGE_UPDATED_AT } from "@/lib/content-dates";
 import { getAllIndexableComparisons } from "@/lib/comparisons-api";
 export const dynamic = "force-dynamic";
 import type { MetadataRoute } from "next";
+import { getAllChangelog } from "@/lib/changelog";
 import {
   getAllPublishedPosts,
   getCaseStudies,
@@ -162,5 +163,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "monthly",
     priority: 0.8,
   }));
-  return [...staticRoutes, ...postRoutes, ...studyRoutes, ...integrationRoutes, ...comparisonRoutes];
+  const changelog = await getAllChangelog();
+  const changelogRoutes: MetadataRoute.Sitemap = changelog.map((item) => ({
+    url: `${baseUrl}/changelog/${item.slug}`,
+    lastModified: new Date(item.updatedAt || item.releaseDate),
+    changeFrequency: "yearly",
+    priority: 0.6,
+  }));
+  const changelogIndex = staticRoutes.find((route) => route.url === `${baseUrl}/changelog`);
+  if (changelogIndex && changelog[0]) changelogIndex.lastModified = new Date(changelog[0].releaseDate);
+
+  return [...staticRoutes, ...postRoutes, ...studyRoutes, ...integrationRoutes, ...comparisonRoutes, ...changelogRoutes];
 }

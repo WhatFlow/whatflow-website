@@ -245,7 +245,7 @@ export interface Post {
   excerpt: string;
   coverImage?: (number | null) | Media;
   /**
-   * Owned screenshot URL or /blog/ asset path; use when no media upload is needed.
+   * Owned cover or screenshot asset path; use when no media upload is needed.
    */
   coverImageUrl?: string | null;
   coverImageAlt?: string | null;
@@ -451,7 +451,7 @@ export interface Integration {
   createdAt: string;
 }
 /**
- * Product release notes, feature launches, and automated git commit syncs.
+ * Public, merchant-facing release notes shown at /changelog. Write in plain language: no code, internal service names, commit messages or security specifics.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "changelog".
@@ -465,9 +465,12 @@ export interface Changelog {
   type: 'feature' | 'improvement' | 'fix' | 'security';
   app: 'all' | 'business-api' | 'chat' | 'ai';
   /**
-   * Brief 1-2 sentence overview of what changed.
+   * 1–2 plain-language sentences (under ~170 characters). Used as the page's meta description and in the RSS feed.
    */
   summary: string;
+  /**
+   * Use a "What's new" heading with a bullet list. Bullets are reused in the RSS feed and /ai/changelog.json.
+   */
   content?: {
     root: {
       type: string;
@@ -484,9 +487,12 @@ export interface Changelog {
     [k: string]: unknown;
   } | null;
   /**
-   * e.g. 7f3a9bc — automatically populated via CI/CD sync
+   * Internal reference only. Never returned by the public API or shown on the site.
    */
   gitCommitHash?: string | null;
+  /**
+   * Internal reference only. Never returned by the public API or shown on the site.
+   */
   gitCommitMessage?: string | null;
   status: 'draft' | 'published';
   updatedAt: string;

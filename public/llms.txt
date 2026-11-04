@@ -19,6 +19,7 @@ Catalog sharing is live. Customer-segment/audience sync is upcoming. AI is not c
 - [Free storefront WhatsApp buttons](https://whatflow.tech/solutions/chat-button)
 - [Pricing and messaging allowances](https://whatflow.tech/pricing)
 - [About WhatFlow](https://whatflow.tech/about)
+- [Changelog and release notes](https://whatflow.tech/changelog): Dated, plain-language notes on new features, improvements and fixes for both apps.
 
 Articles are authored by Safwan Adnan, co-founder and CEO of WhatFlow. Product comparisons are published by WhatFlow; vendor claims should be checked against the primary sources linked in each article.
 
@@ -26,6 +27,7 @@ Articles are authored by Safwan Adnan, co-founder and CEO of WhatFlow. Product c
 - [Service capabilities manifest](https://whatflow.tech/ai/service.json): Product capabilities and documentation, not an executable API.
 - [Full context](https://whatflow.tech/llms-full.txt): Companion product reference.
 - [FAQ data](https://whatflow.tech/ai/faq.json)
+- [Changelog data](https://whatflow.tech/ai/changelog.json): Machine-readable release history. RSS: https://whatflow.tech/changelog/rss.xml
 - [Company LinkedIn profile](https://www.linkedin.com/company/whatflow)
 
 Homepage content updated October 27, 2026. Calculator inputs are illustrative assumptions, not measured merchant outcomes.
