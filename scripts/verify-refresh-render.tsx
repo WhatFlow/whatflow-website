@@ -4,7 +4,7 @@ import {renderToStaticMarkup} from 'react-dom/server';
 import {readFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {RichText} from '../src/lib/RichText';
-const root='content/blog/refresh-2026-11-05/publication';
+const root=process.env.RENDER_ROOT||'content/blog/refresh-2026-11-05/publication';
 const docs=[...JSON.parse(await readFile(root+'/posts.json','utf8')),...JSON.parse(await readFile(root+'/candidate-documents.json','utf8')),...JSON.parse(await readFile(root+'/new-comparison-docs.json','utf8'))];
 const decode=(s:string)=>s.replace(/&#x([0-9a-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&lt;','<').replaceAll('&gt;','>');
 const normal=(s:string)=>decode(s).replace(/\s+/g,' ').trim();
