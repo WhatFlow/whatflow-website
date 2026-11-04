@@ -2,7 +2,7 @@
  * Curated WhatFlow release notes.
  *
  * Written for merchants from the Business API (Official), Chat Automation
- * and Team Inbox release history. Plain language only: no source code,
+ * and Team Inbox release history, including the releases before the move to Cloudflare. Plain language only: no source code,
  * commit identifiers, internal service names or security specifics.
  *
  * This list seeds the Payload `changelog` collection (scripts/seed-changelog.ts)
@@ -41,7 +41,7 @@ export const CHANGELOG_APP_FULL_NAMES: Record<ChangelogApp, string> = {
 };
 
 /** Earliest date covered by the curated history. */
-export const CHANGELOG_HISTORY_START = "2026-08-27";
+export const CHANGELOG_HISTORY_START = "2025-11-01";
 
 const entries: ChangelogSeedEntry[] = [
   // ─── November 2026 ────────────────────────────────────────────────────────
@@ -840,7 +840,555 @@ const entries: ChangelogSeedEntry[] = [
   },
 ];
 
-export const CHANGELOG_SEED: ChangelogSeedEntry[] = [...entries].sort((a, b) =>
+/**
+ * Releases from before the move to Cloudflare (November 2025 – September 2026),
+ * written from the earlier Chat Automation and Business API release history.
+ */
+const earlierEntries: ChangelogSeedEntry[] = [
+  // ─── September 2026 ───────────────────────────────────────────────────────
+  {
+    slug: "order-notes-on-failed-whatsapp-delivery",
+    version: "2026.09.04",
+    title: "Order Notes When a WhatsApp Message Can't Be Delivered",
+    releaseDate: "2026-09-04",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "When Meta reports that a WhatsApp message couldn't be delivered, WhatFlow adds a note to the Shopify order or draft order so your team can follow up.",
+    highlights: [
+      "Failed WhatsApp deliveries are noted on the order or draft order automatically.",
+      "Message images can come from the order's products, with a preview in the editor.",
+      "New order status page link variable for order and shipping messages.",
+    ],
+  },
+  {
+    slug: "chat-automation-usage-dashboard",
+    version: "2026.09.06",
+    title: "Chat Automation: Usage Dashboard",
+    releaseDate: "2026-09-06",
+    type: "feature",
+    app: "chat",
+    summary:
+      "WhatFlow Chat Automation's Home now shows how many WhatsApp messages each automation sent, with a date range picker.",
+    highlights: [
+      "Message usage per automation, shown as simple stat boxes.",
+      "Choose any date range to compare periods.",
+    ],
+  },
+
+  // ─── August 2026 ──────────────────────────────────────────────────────────
+  {
+    slug: "store-whatsapp-number-for-notifications",
+    version: "2026.08.26",
+    title: "Set a WhatsApp Number for Store Notifications",
+    releaseDate: "2026-08-26",
+    type: "improvement",
+    app: "all",
+    summary:
+      "Add the WhatsApp number your team uses, and WhatFlow sends store notifications there instead of the general shop phone number.",
+    highlights: [
+      "A short prompt asks for your store's WhatsApp number if it's missing.",
+      "Admin notifications go to that number first.",
+      "Back-in-stock product links include UTM tags, so you can track the sales they bring in.",
+    ],
+  },
+  {
+    slug: "manual-whatsapp-business-account-connection",
+    version: "2026.08.24",
+    title: "Connect an Existing WhatsApp Business Account Manually",
+    releaseDate: "2026-08-24",
+    type: "improvement",
+    app: "business-api",
+    summary:
+      "Stores that already manage their own WhatsApp Business account can now connect it manually, instead of using Embedded Signup.",
+    highlights: [
+      "Connect using your existing WhatsApp Business account and phone number details.",
+      "Helpful for agencies and stores with an established Meta setup.",
+      "Embedded Signup now warns when it is opened on a mobile device, where Meta's flow may not work.",
+    ],
+  },
+  {
+    slug: "whatsapp-analytics-dashboard",
+    version: "2026.08.20",
+    title: "WhatsApp Analytics: Messages, Conversations, Costs and Recovered Revenue",
+    releaseDate: "2026-08-20",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "A new analytics dashboard shows WhatsApp messages, conversations, Meta pricing, template performance and revenue recovered from abandoned carts.",
+    highlights: [
+      "Messaging and conversation trends over time.",
+      "Meta pricing breakdown, so you can see what WhatsApp costs you.",
+      "Template performance, with links to each template in WhatsApp Manager.",
+      "Recovered revenue from abandoned checkouts, using Shopify's own sales data.",
+      "Recovery and invoice links get UTM tags for Shopify marketing reports.",
+    ],
+    whyItMatters: "You can see what WhatsApp costs and what it earns in one place.",
+  },
+  {
+    slug: "abandoned-checkout-skip-after-order",
+    version: "2026.08.19",
+    title: "Fix: No Cart Reminders After the Customer Has Ordered",
+    releaseDate: "2026-08-19",
+    type: "fix",
+    app: "business-api",
+    summary:
+      "Abandoned checkout follow-ups now stop automatically when the customer completes an order, so nobody gets a reminder for a cart they already bought.",
+    highlights: [
+      "Follow-ups are skipped if an order exists for the same cart.",
+      "Follow-ups are also skipped if the customer placed a later order.",
+      "Scheduled follow-ups are cancelled as soon as the order comes in.",
+    ],
+  },
+  {
+    slug: "order-via-whatsapp-chat-button",
+    version: "2026.08.17",
+    title: "Chat Button: Order via WhatsApp and Custom Icons",
+    releaseDate: "2026-08-17",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "The storefront WhatsApp button can now let shoppers order through WhatsApp, and you can upload your own button icon.",
+    highlights: [
+      "Add an \"Order via WhatsApp\" block to your theme and track its status in settings.",
+      "Pick a custom icon for the chat button from your files.",
+    ],
+  },
+  {
+    slug: "marketing-messages-api-support",
+    version: "2026.08.11",
+    title: "Support for Meta's Marketing Messages API",
+    releaseDate: "2026-08-11",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Marketing templates can be sent through Meta's Marketing Messages API, and fall back to the standard Cloud API automatically when needed.",
+    highlights: [
+      "Marketing templates use Meta's dedicated marketing API when your account supports it.",
+      "Automatic fallback to the standard API, so sends don't fail.",
+      "Create message templates from Shopify Sidekick.",
+    ],
+  },
+  {
+    slug: "admin-blocks-and-bulk-whatsapp-actions",
+    version: "2026.08.10",
+    title: "WhatsApp Blocks and Bulk Actions in the Shopify Admin",
+    releaseDate: "2026-08-10",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Send WhatsApp confirmations, notifications, fulfillment updates and draft order reminders in bulk from Shopify admin lists, with French translations.",
+    highlights: [
+      "Bulk actions for order confirmations, notifications, fulfillment updates and draft orders.",
+      "WhatsApp blocks on order, draft order and abandoned checkout pages.",
+      "Extensions translated into French.",
+    ],
+  },
+  {
+    slug: "judgeme-review-request-flow-template",
+    version: "2026.08.07",
+    title: "Judge.me Review Requests on WhatsApp with Shopify Flow",
+    releaseDate: "2026-08-07",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "A ready-made Shopify Flow template sends Judge.me review requests on WhatsApp, so you can collect reviews without building the workflow yourself.",
+    highlights: [
+      "Install the Flow template and choose your WhatsApp review template.",
+      "Works with your existing Judge.me setup.",
+    ],
+  },
+  {
+    slug: "smarter-whatsapp-template-editor",
+    version: "2026.08.07",
+    title: "Smarter WhatsApp Template Editor",
+    releaseDate: "2026-08-07",
+    type: "improvement",
+    app: "business-api",
+    summary:
+      "The template editor checks templates against Meta's rules before you submit, supports coupon code buttons, and locks templates while Meta reviews them.",
+    highlights: [
+      "Templates are checked and tidied before submission, and variables are renumbered automatically.",
+      "Insert variables where your cursor is.",
+      "Copy-code buttons that fill in a discount code.",
+      "Long button links are shortened automatically.",
+      "Templates under Meta review are read-only, so edits can't break the review.",
+      "Duplicate names from the library get a suffix instead of failing.",
+    ],
+    whyItMatters: "Fewer templates get rejected by Meta, so you can start sending sooner.",
+  },
+  {
+    slug: "merchant-welcome-messages",
+    version: "2026.08.06",
+    title: "WhatsApp Welcome Message When You Install",
+    releaseDate: "2026-08-06",
+    type: "feature",
+    app: "all",
+    summary:
+      "Store owners now get a WhatsApp welcome message with setup help after installing WhatFlow, and a follow-up if they uninstall.",
+    highlights: [
+      "A welcome message with next steps after install.",
+      "A short follow-up after uninstall to ask what went wrong.",
+      "Auto-reply media and template header images are uploaded to Meta automatically.",
+    ],
+  },
+
+  // ─── July 2026 ────────────────────────────────────────────────────────────
+  {
+    slug: "whatsapp-customer-broadcasts",
+    version: "2026.08.01",
+    title: "WhatsApp Broadcasts to Selected Customers and Segments",
+    releaseDate: "2026-08-01",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Send a WhatsApp broadcast to customers you select in Shopify, or to a whole customer segment, and track or cancel it from a broadcast queue.",
+    highlights: [
+      "Broadcast to selected customers or a Shopify customer segment.",
+      "Duplicate phone numbers are removed automatically.",
+      "Messages are spaced out (at least 10 seconds apart) to protect your number.",
+      "A live broadcast queue shows progress, and you can cancel a whole broadcast or a single batch.",
+    ],
+  },
+  {
+    slug: "phone-number-health-status",
+    version: "2026.07.31",
+    title: "WhatsApp Number Health on the Connections Page",
+    releaseDate: "2026-07-31",
+    type: "improvement",
+    app: "business-api",
+    summary:
+      "The Connections page now shows your WhatsApp number's health and any messaging limits Meta has applied.",
+    highlights: [
+      "See your number's status and messaging limits at a glance.",
+      "Refresh templates from the template library on every feature page.",
+      "Features turn off automatically when they have no approved template, instead of failing silently.",
+    ],
+  },
+  {
+    slug: "shopify-flow-whatsapp-triggers-and-actions",
+    version: "2026.07.26",
+    title: "Shopify Flow: WhatsApp Triggers, Media and Button Actions",
+    releaseDate: "2026-07-26",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Start Shopify Flow workflows when customers tap a WhatsApp button or send a message, and send text, buttons, links, images, documents, video or voice notes from Flow.",
+    highlights: [
+      "Triggers for button taps and incoming text messages.",
+      "Actions to send text, quick-reply buttons and call-to-action links.",
+      "Actions to send images, documents, videos and audio, including voice notes.",
+      "A dashboard overview shows usage and which automations are active.",
+    ],
+    whyItMatters: "You can build WhatsApp conversations into your Shopify Flow workflows without code.",
+  },
+  {
+    slug: "shipping-and-fulfillment-tracking-messages",
+    version: "2026.07.08",
+    title: "Shipping Journey: Fulfillment and Tracking Updates on WhatsApp",
+    releaseDate: "2026-07-08",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Keep customers updated on WhatsApp as their order ships, with tracking messages for each shipment status.",
+    highlights: [
+      "Choose which shipment statuses send a WhatsApp update.",
+      "Tracking details are included in each message.",
+      "Optionally hold shipping updates until a review step is complete.",
+      "Expired Shopify access is refreshed automatically, so updates keep sending.",
+    ],
+  },
+
+  // ─── June 2026 ────────────────────────────────────────────────────────────
+  {
+    slug: "whatsapp-blocks-on-shopify-orders",
+    version: "2026.06.29",
+    title: "Send WhatsApp Messages from Order, Draft and Checkout Pages",
+    releaseDate: "2026-06-29",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "New Shopify admin blocks and actions let you send WhatsApp confirmations, notifications and recovery messages from orders, draft orders and checkouts.",
+    highlights: [
+      "WhatsApp blocks on order, draft order and abandoned checkout pages.",
+      "Character counts and formatting tips while you write.",
+      "A draggable WhatsApp chat button for your storefront with a configurable greeting.",
+    ],
+  },
+  {
+    slug: "shopify-flow-send-whatsapp-templates",
+    version: "2026.06.25",
+    title: "Shopify Flow: Send WhatsApp Templates",
+    releaseDate: "2026-06-25",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Send approved WhatsApp templates from any Shopify Flow workflow, with variables filled from your store data and a preview before you save.",
+    highlights: [
+      "A Shopify Flow action that sends a WhatsApp template.",
+      "Fill template variables from order, customer and product data.",
+      "Preview and validate the message inside Shopify Flow.",
+    ],
+  },
+  {
+    slug: "abandoned-checkout-and-draft-order-recovery",
+    version: "2026.06.26",
+    title: "Abandoned Checkout and Draft Order Recovery on WhatsApp",
+    releaseDate: "2026-06-26",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Recover abandoned checkouts and unpaid draft orders with scheduled WhatsApp reminders that check the cart is still open before sending.",
+    highlights: [
+      "Multi-step reminders on a schedule you choose.",
+      "Each reminder checks that the checkout hasn't been completed.",
+      "A recovery window so old carts aren't contacted.",
+      "Product quantities and images in recovery messages.",
+    ],
+    whyItMatters: "Many shoppers come back to their cart when they get a timely reminder on WhatsApp.",
+  },
+  {
+    slug: "order-paid-messages-and-delivery-tags",
+    version: "2026.06.15",
+    title: "Order Paid Messages and Clearer Delivery Tags",
+    releaseDate: "2026-06-15",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Send a WhatsApp message when an order is paid, filter order messages by fulfillment status, and tag orders whose customer isn't on WhatsApp.",
+    highlights: [
+      "New order paid trigger.",
+      "Only send order messages for the fulfillment statuses you choose.",
+      "A separate tag for customers who don't use WhatsApp, apart from general delivery failures.",
+      "Button links can include Shopify order details.",
+    ],
+  },
+  {
+    slug: "usage-analytics-dashboard-business-api",
+    version: "2026.06.12",
+    title: "Usage Analytics Dashboard",
+    releaseDate: "2026-06-12",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "See how many WhatsApp messages WhatFlow sent for you over any date range, broken down by automation.",
+    highlights: [
+      "Charts of messages sent over time.",
+      "A date range filter to compare periods.",
+      "Order cancellation details available in the message editor.",
+    ],
+  },
+  {
+    slug: "interactive-whatsapp-buttons",
+    version: "2026.06.05",
+    title: "Interactive WhatsApp Buttons and a Feature Request Board",
+    releaseDate: "2026-06-05",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Messages can now include interactive WhatsApp buttons, and you can suggest and vote on features from inside the app.",
+    highlights: [
+      "Quick-reply and link buttons in WhatsApp messages.",
+      "A feature request board where you can post ideas, vote and comment.",
+      "New templates include a short footer by default.",
+    ],
+  },
+
+  // ─── May 2026 ─────────────────────────────────────────────────────────────
+  {
+    slug: "whatsapp-embedded-signup-and-phone-registration",
+    version: "2026.05.29",
+    title: "Connect WhatsApp with Embedded Signup",
+    releaseDate: "2026-05-29",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Connect your WhatsApp Business account with Meta's Embedded Signup, register your phone number, and manage its display name from WhatFlow.",
+    highlights: [
+      "Sign up for the WhatsApp Business Platform without leaving Shopify.",
+      "Register or re-register your phone number from the Connections page.",
+      "Update your WhatsApp display name.",
+      "Abandoned checkout and draft order events are captured as soon as they happen.",
+    ],
+  },
+  {
+    slug: "back-in-stock-whatsapp-alerts",
+    version: "2026.05.26",
+    title: "Back-in-Stock Alerts on WhatsApp",
+    releaseDate: "2026-05-26",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "Shoppers can sign up on a sold-out product page to get a WhatsApp message when it's back in stock.",
+    highlights: [
+      "A storefront widget you add with the theme editor.",
+      "A WhatsApp message goes out automatically when the product is restocked.",
+      "Manage subscriptions from the app.",
+    ],
+    whyItMatters: "You can win back sales you'd otherwise lose to out-of-stock products.",
+  },
+  {
+    slug: "chat-automation-new-home-dashboard",
+    version: "2026.05.22",
+    title: "Chat Automation: New Home with Connection Management",
+    releaseDate: "2026-05-22",
+    type: "feature",
+    app: "chat",
+    summary:
+      "WhatFlow Chat Automation has a new Home page with a dashboard, your WhatsApp connection status, and all feature settings in one place.",
+    highlights: [
+      "See your connection status and manage it from Home.",
+      "All automations are listed with their settings.",
+      "The chat button can show a text label and comes in more shapes.",
+    ],
+  },
+
+  // ─── March 2026 ───────────────────────────────────────────────────────────
+  {
+    slug: "business-api-core-whatsapp-automations",
+    version: "2026.03.28",
+    title: "WhatFlow Business API: Core WhatsApp Automations",
+    releaseDate: "2026-03-28",
+    type: "feature",
+    app: "business-api",
+    summary:
+      "The first WhatFlow Business API features: connect WhatsApp through Meta, design templates in a visual editor, message customers about orders and auto-reply to them.",
+    highlights: [
+      "Connect your WhatsApp Business account through Meta.",
+      "A visual template editor with variables, buttons, headers and a live preview.",
+      "Templates sync with Meta, including approval status.",
+      "Automatic WhatsApp messages for Shopify order events.",
+      "Keyword auto-replies, with tags based on customer replies.",
+      "A setup guide that tracks your progress.",
+    ],
+  },
+
+  // ─── February 2026 and earlier ────────────────────────────────────────────
+  {
+    slug: "chat-automation-confirmation-modes",
+    version: "2026.02.03",
+    title: "Chat Automation: Confirmation Replies Work with Each Connection Type",
+    releaseDate: "2026-02-03",
+    type: "improvement",
+    app: "chat",
+    summary:
+      "Order confirmation replies are now handled according to how your WhatsApp is connected, with tutorial links to help you set it up.",
+    highlights: [
+      "Poll replies are processed according to your connection type and confirmation settings.",
+      "Tutorial links on settings pages.",
+      "Back-in-stock alerts handle errors better and are simpler to set up.",
+    ],
+  },
+  {
+    slug: "chat-automation-sku-and-quantity-variables",
+    version: "2025.12.29",
+    title: "Chat Automation: SKU, Quantity and Image Options in Order Messages",
+    releaseDate: "2025-12-29",
+    type: "improvement",
+    app: "chat",
+    summary:
+      "Order confirmations can now include each item's SKU and quantity, and you choose whether order messages include product images.",
+    highlights: [
+      "New SKU and quantity placeholders.",
+      "Turn product images in order messages on or off.",
+      "Polls and lists adapt to your connection type.",
+    ],
+  },
+  {
+    slug: "chat-automation-fulfillment-message-action",
+    version: "2025.12.17",
+    title: "Chat Automation: Send Fulfillment Messages from Shopify Admin",
+    releaseDate: "2025-12-17",
+    type: "feature",
+    app: "chat",
+    summary:
+      "A new Shopify admin action sends a WhatsApp fulfillment message for an order with one click.",
+    highlights: [
+      "Send fulfillment updates from the order page.",
+      "Uses your saved fulfillment message.",
+    ],
+  },
+  {
+    slug: "chat-automation-auto-replies-and-draft-orders",
+    version: "2025.12.15",
+    title: "Chat Automation: Auto-Replies for More Message Types and Draft Order Messages",
+    releaseDate: "2025-12-15",
+    type: "feature",
+    app: "chat",
+    summary:
+      "Auto-replies now respond to more kinds of incoming WhatsApp messages, and you can send messages for Shopify draft orders.",
+    highlights: [
+      "Auto-replies work with more incoming message types.",
+      "Draft order messages can be turned on in message settings.",
+      "Abandoned checkout recovery is sent more reliably.",
+    ],
+  },
+  {
+    slug: "chat-automation-poll-and-list-confirmations",
+    version: "2025.12.02",
+    title: "Chat Automation: Order Confirmation with Polls and Lists",
+    releaseDate: "2025-12-02",
+    type: "feature",
+    app: "chat",
+    summary:
+      "Customers can confirm or cancel their order by tapping a WhatsApp poll or list option, with a fallback if the preferred format isn't available.",
+    highlights: [
+      "Confirmation by poll or list, so customers reply in one tap.",
+      "Checks run before sending, with an automatic fallback to a poll.",
+      "Consistent order tags for scheduled and confirmed orders.",
+      "Store owner notifications check the admin number before sending.",
+    ],
+    whyItMatters: "One-tap confirmations get more replies than asking customers to type.",
+  },
+  {
+    slug: "chat-automation-fulfillment-and-cancellation-messages",
+    version: "2025.11.30",
+    title: "Chat Automation: Faster Fulfillment and Cancellation Messages",
+    releaseDate: "2025-11-30",
+    type: "improvement",
+    app: "chat",
+    summary:
+      "Fulfillment and cancellation messages are now sent in the background, so they go out faster and a cancellation is only handled once.",
+    highlights: [
+      "Fulfillment updates are sent from a background queue.",
+      "Each cancellation is processed only once.",
+      "Order tags can be removed automatically when an order's status changes.",
+    ],
+  },
+  {
+    slug: "chat-automation-whatsapp-product-button",
+    version: "2025.11.14",
+    title: "Chat Automation: WhatsApp Product Button and a Refreshed Chat Button",
+    releaseDate: "2025-11-14",
+    type: "feature",
+    app: "chat",
+    summary:
+      "Add a WhatsApp button to product pages with a message you write, and use the refreshed storefront chat button with prefilled messages.",
+    highlights: [
+      "A product page button that opens WhatsApp with a message about that product.",
+      "Prefilled chat messages with placeholders such as the product name.",
+      "Updated chat button styles and footer.",
+    ],
+  },
+  {
+    slug: "chat-automation-connection-engines",
+    version: "2025.11.07",
+    title: "Chat Automation: Choose Your WhatsApp Connection Engine",
+    releaseDate: "2025-11-07",
+    type: "feature",
+    app: "chat",
+    summary:
+      "Pick between two WhatsApp connection engines, and switch between them from the connection page if one works better for your store.",
+    highlights: [
+      "Two connection engines to choose from.",
+      "Switch engines with a confirmation step, and see what each one supports.",
+      "Settings that don't work with your engine are disabled, with a warning.",
+      "Messages retry automatically after brief connection problems.",
+    ],
+  },
+];
+
+export const CHANGELOG_SEED: ChangelogSeedEntry[] = [...entries, ...earlierEntries].sort((a, b) =>
   a.releaseDate === b.releaseDate ? 0 : a.releaseDate < b.releaseDate ? 1 : -1,
 );
 
