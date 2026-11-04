@@ -30,6 +30,12 @@ Author byline: Safwan Adnan. Editorial rules: [STYLE.md](STYLE.md); comparison r
 - Remote D1 after import: 125 published posts (124 refreshed), 131 published comparisons, each with exactly one latest published revision.
 - Live check of all 255 changed/new URLs: HTTP 200, the new title in the single H1, self-canonical, sitemap entry. RSS lists the 50 newest posts by design.
 
+## Follow-up: AI positioning (published)
+
+- Owner confirmed: no built-in AI bot; WhatFlow integrates with Shopify Sidekick and offers an MCP connector (/docs/mcp) for Claude, ChatGPT and Cursor. Templates are language-agnostic.
+- 6 posts and 54 comparisons reworded (scripts/build-refresh-patch.mjs, guarded by each row's live updated_at); site copy, llms files and /ai JSON updated.
+- Deployed merged main (MCP page + changelog work + this refresh) as worker `4c23a55d-7c77-4e25-a733-4bab92700fd0`, replacing a changelog-branch deploy that lacked the refresh code.
+
 ## Publish order (as executed)
 
 1. `npm run deploy` (code changes + 88 new cover images; runs the migration guard).
