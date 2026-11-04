@@ -26,8 +26,17 @@ export async function GET() {
       "Native Shopify Flow Triggers and Actions",
       "All features available across messaging plans",
       "Meta product catalog sharing from the team inbox",
-      "Enterprise-ready WhatsApp team inbox; no seat fees; AI is not currently available",
+      "Enterprise-ready WhatsApp team inbox; no seat fees",
+      "No built-in AI bot; connects to Shopify Sidekick and to Claude, ChatGPT or Cursor through the WhatFlow MCP connector (https://whatflow.tech/docs/mcp)",
     ],
+    shopify_app_store_ratings: {
+      checked_at: "2026-11-05",
+      note: "Each rating belongs to its own Shopify App Store listing; they are not combined.",
+      apps: [
+        { name: "WhatFlow WhatsApp Business API", url: "https://apps.shopify.com/whatflow-official-api", rating: 5.0, scale: 5, rating_count: 55, connection: "Official Meta WhatsApp Cloud API" },
+        { name: "WhatFlow Chat Automation", url: "https://apps.shopify.com/whatflow", rating: 4.0, scale: 5, rating_count: 329, connection: "Linked device" },
+      ],
+    },
     shopify_app_url: "https://apps.shopify.com/whatflow-official-api",
   };
 

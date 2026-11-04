@@ -52,3 +52,11 @@ next-env.d.ts
 
 
 !.dev.vars.example
+
+# CMS working copies. Payload (D1) is the source of truth for posts and comparisons;
+# keep only briefs and release notes in git, never article bodies or generated SQL.
+/content/blog/refresh-2026-11-05/*
+!/content/blog/refresh-2026-11-05/STYLE.md
+!/content/blog/refresh-2026-11-05/REPORT.md
+/content/comparisons/refresh-2026-11-05/*
+!/content/comparisons/refresh-2026-11-05/BRIEF.md
