@@ -41,7 +41,7 @@ export const CHANGELOG_APP_FULL_NAMES: Record<ChangelogApp, string> = {
 };
 
 /** Earliest date covered by the curated history. */
-export const CHANGELOG_HISTORY_START = "2025-11-01";
+export const CHANGELOG_HISTORY_START = "2024-12-18";
 
 const entries: ChangelogSeedEntry[] = [
   // ─── November 2026 ────────────────────────────────────────────────────────
@@ -1388,7 +1388,699 @@ const earlierEntries: ChangelogSeedEntry[] = [
   },
 ];
 
-export const CHANGELOG_SEED: ChangelogSeedEntry[] = [...entries, ...earlierEntries].sort((a, b) =>
+/**
+ * Original linked-account app history, reconstructed from the original repository.
+ * Dates reflect recorded commits, not independently verified production deployments.
+ * See docs/changelog-history-audit.md for evidence and curation rules.
+ */
+const originalAppEntries: ChangelogSeedEntry[] = [
+  {
+    slug: "chat-history-dynamic-storefront-chat-messages",
+    version: "2025.11.05",
+    title: "Dynamic Messages for Storefront WhatsApp Conversations",
+    releaseDate: "2025-11-05",
+    type: "improvement",
+    app: "chat",
+    summary: "Storefront chat messages support dynamic placeholders so conversations can start with relevant page and product details.",
+    highlights: [
+      "Use dynamic placeholders in single-agent storefront messages.",
+      "Apply message placeholders consistently.",
+      "Prefill live chat messages with relevant details."
+    ]
+  },
+  {
+    slug: "chat-history-draft-images-and-typing-feedback",
+    version: "2025.10.29",
+    title: "More Reliable Draft Order Images and Typing Feedback",
+    releaseDate: "2025-10-29",
+    type: "fix",
+    app: "chat",
+    summary: "Draft order follow-ups handle product image formats more reliably, and typing indicators stop more consistently.",
+    highlights: [
+      "Send draft order images with the correct image format and filename.",
+      "Improve contact checks and message error handling.",
+      "Stop typing indicators more consistently after a message is prepared."
+    ]
+  },
+  {
+    slug: "chat-history-admin-checkout-and-draft-recovery",
+    version: "2025.10.27",
+    title: "Send Checkout and Draft Order Reminders from Shopify",
+    releaseDate: "2025-10-27",
+    type: "feature",
+    app: "chat",
+    summary: "Start WhatsApp checkout recovery and draft order follow-ups directly from actions in the Shopify admin.",
+    highlights: [
+      "Send an abandoned checkout reminder from its Shopify admin action.",
+      "Send a WhatsApp follow-up from a Shopify draft order.",
+      "Use your configured recovery settings when preparing the message."
+    ]
+  },
+  {
+    slug: "chat-history-connection-switch-and-order-images",
+    version: "2025.10.25",
+    title: "Better Connection Switching and Order Images",
+    releaseDate: "2025-10-25",
+    type: "improvement",
+    app: "chat",
+    summary: "WhatsApp connection switching preserves more settings, and order messages retrieve product images more reliably.",
+    highlights: [
+      "Carry connection configuration across when switching the serving connection.",
+      "Improve image extraction for order messages."
+    ]
+  },
+  {
+    slug: "chat-history-send-order-messages-admin-action",
+    version: "2025.10.24",
+    title: "Send Order Messages from the Shopify Admin",
+    releaseDate: "2025-10-24",
+    type: "feature",
+    app: "chat",
+    summary: "Send WhatsApp order confirmations and notifications directly from a Shopify order action.",
+    highlights: [
+      "Open the send-order-messages action from an order in Shopify.",
+      "Choose an order confirmation or notification message.",
+      "Include shop details in the order message request.",
+      "Process sends without making the initial order action wait for delivery."
+    ]
+  },
+  {
+    slug: "chat-history-confirmation-poll-fallback",
+    version: "2025.10.23",
+    title: "Fallback Handling for Confirmation Polls",
+    releaseDate: "2025-10-23",
+    type: "fix",
+    app: "chat",
+    summary: "Order confirmations handle poll failures more reliably and validate poll options before sending.",
+    highlights: [
+      "Use fallback handling when a confirmation poll cannot be sent normally.",
+      "Validate confirmation poll options.",
+      "Improve errors for unsuccessful confirmation attempts."
+    ]
+  },
+  {
+    slug: "chat-history-chat-button-greetings-and-logos",
+    version: "2025.10.22",
+    title: "Custom Greetings and Better Chat Button Logos",
+    releaseDate: "2025-10-22",
+    type: "improvement",
+    app: "chat",
+    summary: "Customize the storefront chat greeting and get more consistent logo and visibility settings.",
+    highlights: [
+      "Set a greeting for the WhatsApp chat button.",
+      "Improve logo display and visibility options.",
+      "Restore chat button settings and improve customization behavior."
+    ]
+  },
+  {
+    slug: "chat-history-direct-order-button-customization",
+    version: "2025.10.17",
+    title: "Customize Your WhatsApp Direct Order Button",
+    releaseDate: "2025-10-17",
+    type: "feature",
+    app: "chat",
+    summary: "Style the WhatsApp direct order button and customize the title and message shoppers see.",
+    highlights: [
+      "Customize button appearance and message content.",
+      "Choose whether the order message includes its title and text.",
+      "Open the theme editor from setup guidance.",
+      "Save or discard unsaved button settings with the Shopify save bar."
+    ]
+  },
+  {
+    slug: "chat-history-stock-widget-feedback-and-flow-lists",
+    version: "2025.10.03",
+    title: "Clearer Stock Sign-Up Feedback and Flow List Guidance",
+    releaseDate: "2025-10-03",
+    type: "improvement",
+    app: "chat",
+    summary: "The back-in-stock form gives shoppers clearer feedback, and the Flow guide explains list-message actions.",
+    highlights: [
+      "Show relevant subscription fields dynamically in the back-in-stock form.",
+      "Improve form feedback when shoppers sign up.",
+      "Follow in-app guidance for sending WhatsApp list messages with Shopify Flow."
+    ]
+  },
+  {
+    slug: "chat-history-cart-whatsapp-order-button",
+    version: "2025.09.29",
+    title: "Start a WhatsApp Order from the Cart",
+    releaseDate: "2025-09-29",
+    type: "feature",
+    app: "chat",
+    summary: "Shoppers can start an order conversation on WhatsApp directly from their cart.",
+    highlights: [
+      "Add a WhatsApp ordering button to the cart.",
+      "Bring cart details into the WhatsApp ordering conversation."
+    ]
+  },
+  {
+    slug: "chat-history-early-message-usage-dashboard",
+    version: "2025.09.24",
+    title: "See WhatsApp Usage on the Dashboard",
+    releaseDate: "2025-09-24",
+    type: "feature",
+    app: "chat",
+    summary: "The dashboard shows message usage fetched for your store.",
+    highlights: [
+      "View WhatsApp usage metrics on the dashboard.",
+      "Load usage against the correct store account."
+    ]
+  },
+  {
+    slug: "chat-history-automation-reliability-and-bulk-scheduling",
+    version: "2025.09.23",
+    title: "More Reliable Automations and Bulk Message Scheduling",
+    releaseDate: "2025-09-23",
+    type: "improvement",
+    app: "chat",
+    summary: "WhatsApp automations retrieve settings more consistently, and bulk sending improves phone-number parsing and scheduling.",
+    highlights: [
+      "Keep auto-reply and confirmation settings available more reliably.",
+      "Improve phone-number parsing and scheduling for bulk messages.",
+      "Trim extra spaces when matching confirmation poll responses."
+    ]
+  },
+  {
+    slug: "chat-history-automatic-replies-and-list-responses",
+    version: "2025.09.09",
+    title: "Automatic Replies and Better List Response Handling",
+    releaseDate: "2025-09-09",
+    type: "feature",
+    app: "chat",
+    summary: "Configure automatic WhatsApp replies and process order confirmation list responses more reliably.",
+    highlights: [
+      "Configure auto-reply settings in the app.",
+      "Update message handling when confirmation mode changes.",
+      "Check for duplicate list responses before changing order tags.",
+      "Support replies to WhatsApp messages."
+    ]
+  },
+  {
+    slug: "chat-history-stock-alert-delivery-and-positioning",
+    version: "2025.09.07",
+    title: "Back-in-Stock Delivery and Flexible Widget Positioning",
+    releaseDate: "2025-09-07",
+    type: "improvement",
+    app: "chat",
+    summary: "Restock alerts handle product variants more accurately, and shoppers get a more flexible subscription widget.",
+    highlights: [
+      "Handle restock events for the relevant product variant.",
+      "Look up subscribers for back-in-stock messages.",
+      "Customize widget positioning and improve subscription handling."
+    ]
+  },
+  {
+    slug: "chat-history-confirmation-list-messages",
+    version: "2025.09.07",
+    title: "List Messages for Order Confirmations",
+    releaseDate: "2025-09-07",
+    type: "feature",
+    app: "chat",
+    summary: "Offer order confirmation choices in a WhatsApp list, with configurable options and optional images.",
+    highlights: [
+      "Configure confirmation list choices in message settings.",
+      "Send confirmation lists and optional product images.",
+      "Use typing feedback before sending a message."
+    ]
+  },
+  {
+    slug: "chat-history-stop-recovery-on-uninstall",
+    version: "2025.08.28",
+    title: "Stop Recovery Automations When the App Is Uninstalled",
+    releaseDate: "2025-08-28",
+    type: "fix",
+    app: "chat",
+    summary: "Abandoned checkout and draft order recovery settings are disabled when a store uninstalls the app.",
+    highlights: [
+      "Disable abandoned checkout recovery on uninstall.",
+      "Disable draft order recovery on uninstall.",
+      "Show clearer guidance about linking a regular WhatsApp account."
+    ]
+  },
+  {
+    slug: "chat-history-manual-and-event-checkout-recovery",
+    version: "2025.08.25",
+    title: "More Ways to Manage Abandoned Checkout Recovery",
+    releaseDate: "2025-08-25",
+    type: "feature",
+    app: "chat",
+    summary: "Manage abandoned checkouts manually and use checkout events to start recovery messages with richer checkout details.",
+    highlights: [
+      "Review abandoned checkouts in a dedicated manual management view.",
+      "Process checkout events for automated recovery.",
+      "Use expanded checkout settings and message placeholders.",
+      "Improve recovery images and typing feedback before messages."
+    ]
+  },
+  {
+    slug: "chat-history-draft-order-recovery-launch",
+    version: "2025.08.20",
+    title: "Recover Draft Orders with Personalized WhatsApp Messages",
+    releaseDate: "2025-08-20",
+    type: "feature",
+    app: "chat",
+    summary: "Follow up on Shopify draft orders with delayed WhatsApp messages, personalized details and optional product images.",
+    highlights: [
+      "Configure a draft order recovery message and delay.",
+      "Process draft order events and schedule the follow-up.",
+      "Interpret customer phone numbers using country information.",
+      "Include images in draft order recovery messages."
+    ]
+  },
+  {
+    slug: "chat-history-inclusive-checkout-date-filters",
+    version: "2025.08.15",
+    title: "Checkout Date Filters Include the Whole Selected Range",
+    releaseDate: "2025-08-15",
+    type: "fix",
+    app: "chat",
+    summary: "Abandoned checkout date filtering includes the selected date range more consistently.",
+    highlights: [
+      "Normalize dates when fetching abandoned checkouts.",
+      "Include checkouts across the full selected date range."
+    ]
+  },
+  {
+    slug: "chat-history-early-webhook-verification",
+    version: "2025.08.14",
+    title: "Stronger Verification for Shopify Events",
+    releaseDate: "2025-08-14",
+    type: "security",
+    app: "chat",
+    summary: "Incoming Shopify events receive additional verification before they are processed.",
+    highlights: [
+      "Verify incoming Shopify webhook requests before handling them.",
+      "Improve error handling for events that cannot be validated."
+    ]
+  },
+  {
+    slug: "chat-history-back-in-stock-signup-widget",
+    version: "2025.08.13",
+    title: "Let Shoppers Sign Up for WhatsApp Back-in-Stock Alerts",
+    releaseDate: "2025-08-13",
+    type: "feature",
+    app: "chat",
+    summary: "Add a storefront widget that lets shoppers request a WhatsApp notification when a product is back in stock.",
+    highlights: [
+      "Show a back-in-stock subscription widget on product pages.",
+      "Collect shopper contact details for restock notifications.",
+      "Customize the widget from the app settings."
+    ]
+  },
+  {
+    slug: "chat-history-chat-button-agent-manager",
+    version: "2025.08.07",
+    title: "Manage Agents for the Storefront Chat Button",
+    releaseDate: "2025-08-07",
+    type: "feature",
+    app: "chat",
+    summary: "Manage the agents shown in your storefront WhatsApp chat experience from the app.",
+    highlights: [
+      "Add and manage agents using a dedicated agent manager.",
+      "Review agent details in compact cards."
+    ]
+  },
+  {
+    slug: "chat-history-order-statistics-and-poll-tag-updates",
+    version: "2025.07.28",
+    title: "Order Statistics and Better Confirmation Tags",
+    releaseDate: "2025-07-28",
+    type: "improvement",
+    app: "chat",
+    summary: "The dashboard adds order statistics, while confirmation replies update tags and fill in message placeholders more consistently.",
+    highlights: [
+      "View order statistics from the dashboard.",
+      "Match confirmation poll choices to the configured order tags.",
+      "Improve placeholder replacement in messages sent after a poll response."
+    ]
+  },
+  {
+    slug: "chat-history-fulfilled-item-message-details",
+    version: "2025.07.24",
+    title: "More Accurate Fulfillment Message Items and Tags",
+    releaseDate: "2025-07-24",
+    type: "improvement",
+    app: "chat",
+    summary: "Fulfillment messages use the items actually fulfilled and support tags for scheduled sends.",
+    highlights: [
+      "Limit fulfillment details to fulfilled line items.",
+      "Track scheduled fulfillment messages with order tags.",
+      "Improve WhatsApp contact matching for fulfillment messages."
+    ]
+  },
+  {
+    slug: "chat-history-chat-button-page-visibility",
+    version: "2025.07.21",
+    title: "Control Where Your WhatsApp Chat Button Appears",
+    releaseDate: "2025-07-21",
+    type: "feature",
+    app: "chat",
+    summary: "Choose where the storefront WhatsApp button appears and include the current page address in the conversation.",
+    highlights: [
+      "Set page visibility options for the WhatsApp chat button.",
+      "Include the current page address dynamically in the message."
+    ]
+  },
+  {
+    slug: "chat-history-recovery-formatting-and-image-sending",
+    version: "2025.07.16",
+    title: "More Reliable Image Sends and Recovery Message Formatting",
+    releaseDate: "2025-07-16",
+    type: "fix",
+    app: "chat",
+    summary: "Text and image messages send more consistently, and abandoned checkout messages have cleaner formatting.",
+    highlights: [
+      "Improve handling of image messages and text-only messages.",
+      "Check customer WhatsApp availability before sending order actions.",
+      "Improve the formatting of abandoned checkout recovery messages."
+    ]
+  },
+  {
+    slug: "chat-history-order-images-in-messages",
+    version: "2025.07.12",
+    title: "Product Images in Order Confirmations and Notifications",
+    releaseDate: "2025-07-12",
+    type: "feature",
+    app: "chat",
+    summary: "Add an order product image to confirmation and notification messages.",
+    highlights: [
+      "Choose whether order confirmations and notifications include an image.",
+      "Use product variant images from the order.",
+      "Display order information in the accompanying caption."
+    ]
+  },
+  {
+    slug: "chat-history-abandoned-checkout-recovery-launch",
+    version: "2025.07.10",
+    title: "Abandoned Checkout Recovery on WhatsApp",
+    releaseDate: "2025-07-10",
+    type: "feature",
+    app: "chat",
+    summary: "Find abandoned checkouts and send personalized WhatsApp recovery messages after a configurable delay.",
+    highlights: [
+      "Fetch abandoned checkouts for a selected date range.",
+      "Personalize recovery messages with checkout details and a return-to-checkout link.",
+      "Check WhatsApp connection and subscription access before sending.",
+      "Review the recovery queue with pagination and a total count."
+    ]
+  },
+  {
+    slug: "chat-history-csv-bulk-whatsapp-sender",
+    version: "2025.07.06",
+    title: "Send Personalized WhatsApp Messages from a CSV",
+    releaseDate: "2025-07-06",
+    type: "feature",
+    app: "chat",
+    summary: "Upload a CSV to send personalized text or image messages, with configurable spacing and a message queue.",
+    highlights: [
+      "Choose the phone-number column and use CSV columns as message placeholders.",
+      "Add a fixed image or use an image address from each CSV row.",
+      "Set country information and a gap between messages.",
+      "Review queued messages and check that recipients are reachable on WhatsApp."
+    ]
+  },
+  {
+    slug: "chat-history-shopify-integration-compatibility",
+    version: "2025.06.29",
+    title: "Updated Shopify Integration Compatibility",
+    releaseDate: "2025-06-29",
+    type: "improvement",
+    app: "chat",
+    summary: "The Shopify integration is updated with revised permissions and a newer Shopify API version.",
+    highlights: [
+      "Refresh the Shopify integration version.",
+      "Update permissions and access scopes used by the app."
+    ]
+  },
+  {
+    slug: "chat-history-whatsapp-send-validation",
+    version: "2025.05.31",
+    title: "Clearer WhatsApp Send Failures and Phone Validation",
+    releaseDate: "2025-05-31",
+    type: "fix",
+    app: "chat",
+    summary: "WhatsApp actions check connection status and validate phone numbers more consistently before sending.",
+    highlights: [
+      "Check that WhatsApp is connected before attempting an action.",
+      "Return clearer errors when a send cannot proceed.",
+      "Normalize customer phone numbers more consistently across message actions."
+    ]
+  },
+  {
+    slug: "chat-history-queued-fulfillment-messages",
+    version: "2025.05.20",
+    title: "Queued Fulfillment Messages",
+    releaseDate: "2025-05-20",
+    type: "improvement",
+    app: "chat",
+    summary: "Fulfillment messages are queued for processing so order updates can be handled more reliably.",
+    highlights: [
+      "Process fulfillment messages through a message queue.",
+      "Keep message sending separate from the initial fulfillment event."
+    ]
+  },
+  {
+    slug: "chat-history-multiline-confirmation-polls",
+    version: "2025.05.08",
+    title: "Multiline Confirmation Polls",
+    releaseDate: "2025-05-08",
+    type: "improvement",
+    app: "chat",
+    summary: "Order confirmation polls can display messages across multiple lines for easier reading.",
+    highlights: [
+      "Keep line breaks in confirmation poll messages.",
+      "Separate order details and confirmation instructions more clearly."
+    ]
+  },
+  {
+    slug: "chat-history-international-phone-support",
+    version: "2025.05.04",
+    title: "Better International Phone Number Handling",
+    releaseDate: "2025-05-04",
+    type: "improvement",
+    app: "chat",
+    summary: "WhatsApp sending uses country information when interpreting customer phone numbers and checks subscription access more consistently.",
+    highlights: [
+      "Use country information to interpret phone numbers that lack an international prefix.",
+      "Apply subscription checks consistently across WhatsApp actions.",
+      "Improve WhatsApp connection handling as more stores connect."
+    ]
+  },
+  {
+    slug: "chat-history-early-shopify-flow-guide",
+    version: "2025.04.27",
+    title: "Guidance for Building WhatsApp Automations with Shopify Flow",
+    releaseDate: "2025-04-27",
+    type: "improvement",
+    app: "chat",
+    summary: "An in-app guide helps merchants set up WhatsApp automations in Shopify Flow and understand sending precautions.",
+    highlights: [
+      "Open the Flow guide from the app home page.",
+      "Follow setup steps for WhatsApp actions and automation templates.",
+      "Read guidance on spacing messages and avoiding unwanted messages."
+    ]
+  },
+  {
+    slug: "chat-history-storefront-whatsapp-chat-button",
+    version: "2025.04.12",
+    title: "Add a Customizable WhatsApp Chat Button to Your Store",
+    releaseDate: "2025-04-12",
+    type: "feature",
+    app: "chat",
+    summary: "Customers can start a WhatsApp conversation from a storefront chat button that you configure in WhatFlow.",
+    highlights: [
+      "Enable a WhatsApp chat button on your storefront.",
+      "Customize its appearance and behavior from the app.",
+      "Control the button with storefront settings and an on/off switch."
+    ]
+  },
+  {
+    slug: "chat-history-customer-and-admin-order-notifications",
+    version: "2025.04.05",
+    title: "New Order Notifications for Customers and Your Team",
+    releaseDate: "2025-04-05",
+    type: "feature",
+    app: "chat",
+    summary: "Send order notifications without a confirmation poll, and notify multiple team members on WhatsApp when a new order arrives.",
+    highlights: [
+      "Send customers a plain order notification without asking for confirmation.",
+      "Choose customer recipients by payment status and set a notification delay.",
+      "Notify multiple admin WhatsApp numbers about new orders.",
+      "Customize customer and admin messages and their order tags."
+    ]
+  },
+  {
+    slug: "chat-history-normalized-confirmation-responses",
+    version: "2025.04.02",
+    title: "More Consistent Confirmation Response Matching",
+    releaseDate: "2025-04-02",
+    type: "fix",
+    app: "chat",
+    summary: "Confirmation poll replies are normalized more consistently so customer choices match the configured responses.",
+    highlights: [
+      "Normalize incoming poll choices before matching them to confirmation settings.",
+      "Improve message handling when response text differs in formatting."
+    ]
+  },
+  {
+    slug: "chat-history-fulfillment-and-cancellation-automation",
+    version: "2025.03.29",
+    title: "WhatsApp Fulfillment and Cancellation Messages",
+    releaseDate: "2025-03-29",
+    type: "feature",
+    app: "chat",
+    summary: "Send customizable WhatsApp messages when orders are fulfilled or cancelled, with optional delays.",
+    highlights: [
+      "Enable separate fulfillment and cancellation messages.",
+      "Personalize each message using order details.",
+      "Send immediately or choose a delay in minutes.",
+      "Use order tags to track message handling."
+    ]
+  },
+  {
+    slug: "chat-history-scheduled-order-confirmations",
+    version: "2025.03.27",
+    title: "Choose When Order Confirmations Are Sent",
+    releaseDate: "2025-03-27",
+    type: "feature",
+    app: "chat",
+    summary: "Set a delay before sending an order confirmation and track scheduled confirmations with order tags.",
+    highlights: [
+      "Choose a confirmation delay in minutes, or send immediately with a delay of zero.",
+      "Schedule confirmation messages instead of sending every message as soon as the order arrives.",
+      "Manage order tags as confirmations are scheduled and answered."
+    ]
+  },
+  {
+    slug: "chat-history-confirmation-settings-editor",
+    version: "2025.03.24",
+    title: "A Dedicated Order Confirmation Editor",
+    releaseDate: "2025-03-24",
+    type: "improvement",
+    app: "chat",
+    summary: "Order confirmation settings get a dedicated editor with clearer validation, loading feedback and protection for unsaved changes.",
+    highlights: [
+      "Edit confirmation messages, response choices, tags and payment-status recipients in one place.",
+      "See validation and loading feedback when saving.",
+      "Use the Shopify save bar to save or discard unsaved changes.",
+      "Get clearer feedback when WhatsApp is disconnected."
+    ]
+  },
+  {
+    slug: "chat-history-confirmation-item-details",
+    version: "2025.03.19",
+    title: "Clearer Product Details and Fulfilled Order Checks",
+    releaseDate: "2025-03-19",
+    type: "improvement",
+    app: "chat",
+    summary: "Confirmation processing includes better product details and skips orders that have already been fulfilled.",
+    highlights: [
+      "Retrieve and validate order item details for confirmation messages.",
+      "Skip already fulfilled orders when checking whether a confirmation is needed.",
+      "Improve order detail placeholders and their guidance."
+    ]
+  },
+  {
+    slug: "chat-history-order-age-filtering",
+    version: "2025.02.11",
+    title: "Order Age Checks Before Sending Confirmations",
+    releaseDate: "2025-02-11",
+    type: "improvement",
+    app: "chat",
+    summary: "Order processing checks timing and handles missing details more carefully before sending a confirmation.",
+    highlights: [
+      "Apply time-based checks when processing orders.",
+      "Handle unavailable order details more carefully to avoid failed confirmation attempts."
+    ]
+  },
+  {
+    slug: "chat-history-detailed-address-placeholders",
+    version: "2025.02.10",
+    title: "More Customer Name and Address Placeholders",
+    releaseDate: "2025-02-10",
+    type: "feature",
+    app: "chat",
+    summary: "Order confirmation messages can include more detailed customer names and address information.",
+    highlights: [
+      "Personalize confirmation messages with separate customer name and address details.",
+      "Include more of the order address without writing it into every message manually."
+    ]
+  },
+  {
+    slug: "chat-history-confirmation-order-matching",
+    version: "2025.01.26",
+    title: "More Accurate Order Matching and Personalized Replies",
+    releaseDate: "2025-01-26",
+    type: "fix",
+    app: "chat",
+    summary: "Confirmation replies match Shopify orders more reliably and fill in order details more consistently.",
+    highlights: [
+      "Validate the order number extracted from confirmation polls.",
+      "Retrieve order details and tags together when handling a reply.",
+      "Use order placeholders in confirmation response messages more consistently.",
+      "Improve customer phone lookup across order and address fields."
+    ]
+  },
+  {
+    slug: "chat-history-early-dashboard-loading",
+    version: "2025.01.01",
+    title: "Faster Dashboard Loading and Clearer Confirmation Settings",
+    releaseDate: "2025-01-01",
+    type: "improvement",
+    app: "chat",
+    summary: "The dashboard loads charts and images more efficiently, and confirmation settings are grouped more clearly.",
+    highlights: [
+      "Load route components and dashboard images more efficiently.",
+      "Show chart loading states while data is being prepared.",
+      "Group confirmation choices, response tags and recipient settings more clearly."
+    ]
+  },
+  {
+    slug: "chat-history-confirmation-phone-and-connection-checks",
+    version: "2024.12.31",
+    title: "Better Customer Phone Lookup and Connection Checks",
+    releaseDate: "2024-12-31",
+    type: "fix",
+    app: "chat",
+    summary: "Confirmations use billing and shipping phone details more consistently and check that WhatsApp is connected before sending.",
+    highlights: [
+      "Look up missing customer phone numbers from Shopify order addresses.",
+      "Prefer billing contact details and fall back to shipping details.",
+      "Skip confirmation sending when the WhatsApp connection is inactive."
+    ]
+  },
+  {
+    slug: "chat-history-confirmation-contact-checks",
+    version: "2024.12.19",
+    title: "More Reliable Confirmation Contacts and Replies",
+    releaseDate: "2024-12-19",
+    type: "fix",
+    app: "chat",
+    summary: "Order confirmations check customer WhatsApp availability more reliably, and replies are matched to their original confirmation message.",
+    highlights: [
+      "Check whether a customer can be reached on WhatsApp before sending.",
+      "Retrieve the original confirmation message when processing a poll response.",
+      "Improve subscription checks before sending order messages."
+    ]
+  },
+  {
+    slug: "chat-history-first-order-confirmation-history",
+    version: "2024.12.18",
+    title: "Order Confirmations in the First Recorded WhatFlow Version",
+    releaseDate: "2024-12-18",
+    type: "feature",
+    app: "chat",
+    summary: "The earliest recorded WhatFlow version connects WhatsApp to Shopify for order confirmation polls, customer replies and order tags.",
+    highlights: [
+      "Link a WhatsApp account and send customers a poll asking them to confirm or cancel an order.",
+      "Customize confirmation messages, poll options, response messages and order tags.",
+      "Choose recipients by payment status and see confirmation statistics on the dashboard."
+    ]
+  }
+];
+
+export const CHANGELOG_SEED: ChangelogSeedEntry[] = [...entries, ...earlierEntries, ...originalAppEntries].sort((a, b) =>
   a.releaseDate === b.releaseDate ? 0 : a.releaseDate < b.releaseDate ? 1 : -1,
 );
 
