@@ -67,7 +67,8 @@ export async function checkDoc({meta,body},{kind,slug,linkable,root='.'}){
  const links=internal.filter(u=>!/\.(webp|jpg|png)$/.test(u));
  for(const u of links){const p=u.split('#')[0].replace(/\/$/,'');if(!linkable.has(p))errors.push(`unknown internal link ${u}`);}
  if(!isComp&&links.length<3)warnings.push(`only ${links.length} internal links`);
- for(const u of internal.filter(u=>/\.(webp|jpg|png)$/.test(u))){try{await stat(root+'/public'+u);}catch{errors.push(`missing image ${u}`);}}
+ // Media-library images live in R2 (see scripts/build-media-migration-sql.mjs); only public/ files can be checked offline.
+ for(const u of internal.filter(u=>/\.(webp|jpe?g|png|svg)$/.test(u)&&!u.startsWith('/api/media/file/'))){try{await stat(root+'/public'+u);}catch{errors.push(`missing image ${u}`);}}
  // voice
  const text=plainText(body).toLowerCase();
  const words=text.split(/\s+/).filter(Boolean).length;

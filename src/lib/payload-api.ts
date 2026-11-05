@@ -108,6 +108,14 @@ export type PostsFilter = {
   q?: string;
 };
 
+/** Uploaded media wins over the legacy URL field, so editors can swap covers in the media library. */
+export function withCover<T extends Pick<Post, "coverImage" | "coverImageUrl" | "coverImageAlt">>(post: T): T {
+  const media = post.coverImage && typeof post.coverImage === "object" ? post.coverImage : undefined;
+  if (!media?.url) return post;
+  return { ...post, coverImageUrl: media.url, coverImageAlt: media.alt || post.coverImageAlt };
+}
+const withCovers = <T extends CollectionResponse<Post>>(res: T): T => ({ ...res, docs: res.docs.map(withCover) });
+
 export async function getPosts(filter: PostsFilter = {}): Promise<CollectionResponse<Post>> {
   const params = new URLSearchParams();
   params.set("where[status][equals]", "published");
@@ -128,16 +136,16 @@ export async function getPosts(filter: PostsFilter = {}): Promise<CollectionResp
   }
 
   if (filter.q?.trim()) {
-    return searchPublishedContent<Post>({ query: filter.q, page: filter.page ?? 1, limit: filter.limit ?? 12,
+    return withCovers(await searchPublishedContent<Post>({ query: filter.q, page: filter.page ?? 1, limit: filter.limit ?? 12,
       fetchPage: (page, limit) => {
         const searchParams = new URLSearchParams(params);
         searchParams.set("page", String(page)); searchParams.set("limit", String(limit));
         return payloadFetch<CollectionResponse<Post>>(`/api/posts?${searchParams}`);
       },
-    });
+    }));
   }
 
-  return payloadFetch<CollectionResponse<Post>>(`/api/posts?${params.toString()}`);
+  return withCovers(await payloadFetch<CollectionResponse<Post>>(`/api/posts?${params.toString()}`));
 }
 
 /** Walk every published page so sitemap coverage does not stop at 100 articles. */
@@ -162,7 +170,7 @@ export async function getPost(slug: string): Promise<Post | null> {
   params.set("limit", "1");
 
   const res = await payloadFetch<CollectionResponse<Post>>(`/api/posts?${params.toString()}`);
-  return res.docs[0] ?? null;
+  return res.docs[0] ? withCover(res.docs[0]) : null;
 }
 
 export async function getRelatedPosts(
@@ -179,7 +187,7 @@ export async function getRelatedPosts(
   params.set("limit", String(limit));
 
   const res = await payloadFetch<CollectionResponse<Post>>(`/api/posts?${params.toString()}`);
-  return res.docs;
+  return res.docs.map(withCover);
 }
 
 // ─── Case Studies API ────────────────────────────────────────────────────────

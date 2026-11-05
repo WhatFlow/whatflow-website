@@ -68,12 +68,13 @@ function BlogPreviewCard({ post }: { post: Post }) {
 			className="neo-box bg-white flex flex-col overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
 		>
 			<div className="relative w-full h-44 bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
-				{post.coverImage?.url ? (
-					<Image
-						src={post.coverImage.url}
-						alt={post.coverImage.alt || post.title}
-						fill
-						className="object-cover group-hover:scale-105 transition-transform duration-300"
+				{post.coverImageUrl ? (
+					// eslint-disable-next-line @next/next/no-img-element
+					<img
+						src={post.coverImageUrl}
+						alt={post.coverImageAlt || post.title}
+						loading="lazy"
+						className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
 					/>
 				) : (
 					<div className="w-full h-full flex items-center justify-center">
