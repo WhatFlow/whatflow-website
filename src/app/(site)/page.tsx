@@ -7,7 +7,6 @@ import { HeroSection } from "@/components/HeroSection";
 import { FeaturesStatusSection } from "@/components/FeaturesStatusSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { FAQSection } from "@/components/FAQSection";
-import { RoiCalculator } from "@/components/RoiCalculator";
 import { CitabilityAndKnowledgeSection } from "@/components/CitabilityAndKnowledgeSection";
 
 // ─── Server-side data fetching ────────────────────────────────────────────────
@@ -302,12 +301,6 @@ export default async function HomePage() {
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getHomePageSchema()) }} />
 			<HeroSection />
 			<FeaturesStatusSection />
-			{/* Interactive ROI Calculator on Homepage */}
-			<section className="bg-[#FAF7F0] py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
-				<div className="max-w-[1280px] mx-auto">
-					<RoiCalculator />
-				</div>
-			</section>
 			<ReviewsSection />
 			<CitabilityAndKnowledgeSection />
 			<BlogAndCaseStudiesSection />
