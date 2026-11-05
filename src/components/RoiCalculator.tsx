@@ -28,13 +28,13 @@ export function RoiCalculator() {
     >
       <div className="text-center max-w-2xl mx-auto mb-10">
         <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-3">
-          ROI &amp; REVENUE ESTIMATOR
+          CHECKOUT RECOVERY SCENARIO
         </div>
         <h2 className="text-2xl sm:text-4xl font-display font-black uppercase text-black tracking-tight leading-tight">
-          HOW MUCH REVENUE IS YOUR STORE LEAVING ON THE TABLE?
+          MODEL A CHECKOUT RECOVERY SCENARIO
         </h2>
-        <p className="text-sm font-medium text-gray-600 mt-2">
-          Adjust the sliders below to estimate your store’s a monthly gross revenue scenario. These inputs are examples, not WhatFlow benchmarks or promised results.
+        <p id="recovery-scenario-assumptions" className="text-sm font-medium text-gray-600 mt-2">
+          Adjust the example inputs to model monthly gross revenue from recovered checkouts. The default 70% abandonment and 12% recovery rates are illustrative assumptions, not WhatFlow benchmarks or promised results. Replace them with your own store data.
         </p>
       </div>
 
@@ -103,7 +103,7 @@ export function RoiCalculator() {
           <div className="space-y-2">
             <div className="flex justify-between items-center">
               <label htmlFor="abandonment-rate-input" className="text-xs font-extrabold uppercase tracking-wider text-black">
-                Estimated Cart Abandonment Rate
+                Assumed Checkout Abandonment Rate
               </label>
               <span className="neo-pill bg-[#FAF7F0] border-black px-3 py-1 text-sm font-black text-black">
                 {abandonmentRate}%
@@ -112,7 +112,8 @@ export function RoiCalculator() {
             <input
               id="abandonment-rate-input"
               name="abandonmentRate"
-              aria-label="Estimated Cart Abandonment Rate Percentage"
+              aria-describedby="recovery-scenario-assumptions"
+              aria-label="Assumed Checkout Abandonment Rate Percentage"
               type="range"
               min={40}
               max={85}
@@ -122,9 +123,9 @@ export function RoiCalculator() {
               className="w-full h-2.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#00D261]"
             />
             <div className="flex justify-between text-[10px] text-gray-500 font-bold">
-              <span>40% (Low)</span>
+              <span>40%</span>
               <span>70% (Example)</span>
-              <span>85% (High)</span>
+              <span>85%</span>
             </div>
           </div>
 
@@ -132,7 +133,7 @@ export function RoiCalculator() {
           <div className="space-y-2">
             <div className="flex justify-between items-center">
               <label htmlFor="recovery-rate-input" className="text-xs font-extrabold uppercase tracking-wider text-black">
-                WhatsApp Recovery Rate
+                Assumed WhatsApp Recovery Rate
               </label>
               <span className="neo-pill bg-[#E8F8F0] text-[#0A6B56] border-black px-3 py-1 text-sm font-black">
                 {recoveryRate}%
@@ -141,7 +142,8 @@ export function RoiCalculator() {
             <input
               id="recovery-rate-input"
               name="recoveryRate"
-              aria-label="WhatsApp Recovery Rate Percentage"
+              aria-describedby="recovery-scenario-assumptions"
+              aria-label="Assumed WhatsApp Recovery Rate Percentage"
               type="range"
               min={0}
               max={25}
@@ -151,9 +153,9 @@ export function RoiCalculator() {
               className="w-full h-2.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#00D261]"
             />
             <div className="flex justify-between text-[10px] text-gray-500 font-bold">
-              <span>5% (Example)</span>
+              <span>0%</span>
               <span>12% (Example)</span>
-              <span>25% (Example)</span>
+              <span>25%</span>
             </div>
           </div>
         </div>
@@ -163,13 +165,13 @@ export function RoiCalculator() {
           <div role="status" aria-live="polite" aria-atomic="true" className="neo-box-teal p-6 sm:p-8 space-y-6 text-center text-white">
             <div>
               <div className="text-[11px] font-extrabold uppercase tracking-widest text-[#00D261] mb-1">
-                ESTIMATED MONTHLY REVENUE RECOVERED
+                ILLUSTRATIVE MONTHLY GROSS REVENUE
               </div>
               <div className="font-display font-black text-4xl sm:text-5xl text-[#00D261] leading-none tracking-tight">
                 ${estimatedRecoveredRevenue.toLocaleString()}
               </div>
               <div className="text-xs text-[#A7F3D0] font-medium mt-1">
-                From ~{estimatedRecoveredOrders.toLocaleString()} recovered orders each month
+                Assumes ~{estimatedRecoveredOrders.toLocaleString()} recovered orders per month
               </div>
             </div>
 
@@ -179,7 +181,7 @@ export function RoiCalculator() {
                   {estimatedAbandonedCarts.toLocaleString()}
                 </div>
                 <div className="text-[9px] font-extrabold uppercase text-[#A7F3D0]">
-                  Estimated abandoned carts
+                  Modeled abandoned checkouts
                 </div>
               </div>
               <div className="neo-box bg-[#091E17] p-3 text-center border-white/20">
@@ -187,7 +189,7 @@ export function RoiCalculator() {
                   {estimatedRecoveredOrders.toLocaleString()}
                 </div>
                 <div className="text-[9px] font-extrabold uppercase text-[#A7F3D0]">
-                  Estimated recovered orders
+                  Modeled recovered orders
                 </div>
               </div>
             </div>
@@ -199,7 +201,7 @@ export function RoiCalculator() {
                 rel="noopener noreferrer"
                 className="neo-btn w-full bg-[#00D261] text-black font-black uppercase text-sm py-3.5 rounded-lg flex items-center justify-center gap-2 shadow-[4px_4px_0px_#000] hover:scale-[1.02] transition-transform"
               >
-                <span>START RECOVERING REVENUE</span>
+                <span>EXPLORE WHATFLOW</span>
                 <span>➔</span>
               </Link>
               <div className="text-[10px] text-gray-400 font-medium mt-2">
