@@ -7,6 +7,8 @@
  * --check   print what would change and write nothing
  * --update  overwrite entries that already exist (default: insert missing slugs only,
  *           so edits made in the CMS admin are never clobbered)
+ * --only=a,b  limit inserts/updates to these slugs
+ * --remove=a,b  delete these slugs from the CMS (must not be in the curated list)
  */
 import { spawnSync } from "node:child_process";
 import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
@@ -21,6 +23,10 @@ const local = process.argv.includes("--local");
 if (remote === local) throw new Error("Choose exactly one D1 target: --local or --remote");
 const check = process.argv.includes("--check");
 const update = process.argv.includes("--update");
+const listArg = (name: string) =>
+  (process.argv.find((a) => a.startsWith(`--${name}=`))?.split("=")[1] ?? "").split(",").filter(Boolean);
+const only = new Set(listArg("only"));
+const remove = listArg("remove");
 const database = "whatflow-payload-cms";
 const wrangler = fileURLToPath(new URL("../node_modules/wrangler/bin/wrangler.js", import.meta.url));
 
@@ -50,10 +56,14 @@ if (slugs.size !== CHANGELOG_SEED.length) throw new Error("Duplicate slugs in cu
 const existing = new Set(
   (d1(["--command", "SELECT slug FROM changelog"])[0].results as { slug: string }[]).map((r) => r.slug),
 );
-const toInsert = CHANGELOG_SEED.filter((e) => !existing.has(e.slug));
-const toUpdate = update ? CHANGELOG_SEED.filter((e) => existing.has(e.slug)) : [];
-console.log(`Target: ${remote ? "remote" : "local"} | existing ${existing.size} | insert ${toInsert.length} | update ${toUpdate.length}`);
-if (check || toInsert.length + toUpdate.length === 0) process.exit(0);
+const scoped = CHANGELOG_SEED.filter((e) => only.size === 0 || only.has(e.slug));
+for (const slug of only) if (!slugs.has(slug)) throw new Error(`--only slug not in curated list: ${slug}`);
+for (const slug of remove) if (slugs.has(slug)) throw new Error(`Refusing to remove a curated slug: ${slug}`);
+const toInsert = scoped.filter((e) => !existing.has(e.slug));
+const toUpdate = update ? scoped.filter((e) => existing.has(e.slug)) : [];
+const toRemove = remove.filter((slug) => existing.has(slug));
+console.log(`Target: ${remote ? "remote" : "local"} | existing ${existing.size} | insert ${toInsert.length} | update ${toUpdate.length} | remove ${toRemove.length}`);
+if (check || toInsert.length + toUpdate.length + toRemove.length === 0) process.exit(0);
 
 const q = (value: string) => `'${value.replaceAll("'", "''")}'`;
 const now = new Date().toISOString();
@@ -76,6 +86,7 @@ const statements = [...toInsert, ...toUpdate].map((e) => {
   const set = names.filter((n) => n !== "slug" && n !== "created_at").map((n) => `${n}=excluded.${n}`).join(", ");
   return `INSERT INTO changelog (${names.join(", ")}) VALUES (${values.join(", ")}) ON CONFLICT(slug) DO UPDATE SET ${set};`;
 });
+for (const slug of toRemove) statements.push(`DELETE FROM changelog WHERE slug = ${q(slug)};`);
 
 const dir = mkdtempSync(join(tmpdir(), "whatflow-changelog-"));
 try {

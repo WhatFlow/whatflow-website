@@ -51,6 +51,11 @@ const FAQS = [
       "It covers WhatFlow Business API, the official Meta WhatsApp Cloud API app for Shopify that includes the WhatsApp Team Inbox, and WhatFlow Chat Automation, our unofficial API app, which links a store's regular WhatsApp account. Updates that apply to both are labeled \"Both apps\".",
   },
   {
+    question: "How far back does this changelog go?",
+    answer:
+      "WhatFlow Chat Automation, our unofficial API app, launched on the Shopify App Store in October 2024. Its preserved release history starts in December 2024, and WhatFlow Business API, our official API app, is covered from its first features in March 2026.",
+  },
+  {
     question: "Do I need to do anything to get these updates?",
     answer:
       "No. WhatFlow updates automatically for every store. If a new feature needs an extra Shopify permission, the app asks you to approve it the next time you open it.",

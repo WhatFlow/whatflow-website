@@ -108,3 +108,18 @@ Reviewed the subjects and changed-file inventory across all 358 commits before t
 - TypeScript passed with `node --stack-size=8192 node_modules/typescript/bin/tsc --noEmit`; the default Node stack overflows in this repository type check.
 - Source fallback data is ready for the next normal deployment; the live site receives the historical content immediately through the CMS.
 - Live verification: public CMS returned 131 entries, including 49 backfill entries and the earliest date 2024-12-18, with no internal commit fields exposed. Index, earliest detail page and AI feed returned HTTP 200 and included the earliest milestone. RSS returned HTTP 200 and retained its latest-50 policy.
+
+## Review, 2026-11-05
+
+Owner-requested review of the backfill:
+
+- Titles use the "Unofficial API App:" prefix, matching the rest of the changelog.
+- The first entry states that the app launched in October 2024 and that preserved history starts in December 2024. No launch-day entry is invented.
+- Removed from public copy (deleted from the CMS with `--remove`):
+  - `chat-history-early-webhook-verification`: describes a past security gap.
+  - `chat-history-shopify-integration-compatibility`: API version and scope bump, no merchant outcome.
+  - `chat-history-queued-fulfillment-messages`: internal plumbing, and the queue model was removed around the same time.
+  - `chat-history-connection-switch-and-order-images`: connection internals, covered by the November 7, 2025 engine entry.
+  - `chat-history-dynamic-storefront-chat-messages`: duplicates the November 14, 2025 chat button entry.
+- Highlights about plan or subscription checks and request plumbing were dropped.
+- Two existing entries that the backfill showed to be improvements, not launches, were retitled: `chat-automation-poll-and-list-confirmations` and `chat-automation-usage-dashboard`.
