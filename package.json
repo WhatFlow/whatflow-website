@@ -15,12 +15,7 @@
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
-    "seed:comparisons": "tsx scripts/seed-comparisons.ts",
     "seed:changelog": "tsx scripts/seed-changelog.ts",
-    "publish:comparisons": "tsx scripts/publish-comparisons.ts",
-    "expand:comparisons": "tsx scripts/expand-comparisons.ts",
-    "audit:comparisons": "node scripts/audit-comparison-content.mjs",
-    "verify:comparisons": "node scripts/verify-comparisons.mjs",
     "cms:check": "tsx scripts/migrate-cms.mjs --check",
     "predeploy": "npm run migrate -- --remote"
   },
