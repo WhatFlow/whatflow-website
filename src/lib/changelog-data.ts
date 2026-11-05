@@ -2051,7 +2051,401 @@ const originalAppEntries: ChangelogSeedEntry[] = [
   },
 ];
 
-export const CHANGELOG_SEED: ChangelogSeedEntry[] = [...entries, ...earlierEntries, ...originalAppEntries].sort((a, b) =>
+/**
+ * Detailed Team Inbox milestones, audited against the Inbox repository.
+ * Extends existing umbrella releases without replacing their slugs or CMS edits.
+ * Evidence, rollout qualifications and coverage: docs/inbox-changelog-audit.md.
+ */
+const inboxHistoryEntries: ChangelogSeedEntry[] = [
+  {
+    slug: "team-inbox-typing-and-unread-triage",
+    version: "2026.11.03",
+    title: "Team Inbox: Teammate Typing Warnings and Unread Markers",
+    releaseDate: "2026-11-03",
+    type: "feature",
+    app: "business-api",
+    summary: "See when a teammate is drafting a reply, claim unassigned chats and jump to the first unread message.",
+    highlights: [
+      "Show a teammate typing warning to reduce overlapping replies.",
+      "Claim and reply to an unassigned conversation from the chat.",
+      "Use an unread divider to jump to the first unread message.",
+      "Show unsent reply drafts in conversation rows."
+    ]
+  },
+  {
+    slug: "team-inbox-chat-search-and-shortcuts",
+    version: "2026.11.03",
+    title: "Team Inbox: Search Chat History and Navigate with Shortcuts",
+    releaseDate: "2026-11-03",
+    type: "feature",
+    app: "business-api",
+    summary: "Find conversations by customer or message text, search inside a chat and move around the Inbox with keyboard shortcuts.",
+    highlights: [
+      "Open global search to find chats by name, number or message text as well as app pages.",
+      "Search inside a conversation, load older history to locate matches and highlight results.",
+      "Move between chats with keyboard shortcuts and open the shortcut reference.",
+      "Remember conversation filters and scroll position for the current browser tab."
+    ]
+  },
+  {
+    slug: "team-inbox-personalized-responses-and-drafts",
+    version: "2026.11.03",
+    title: "Team Inbox: Personalized Canned Responses and Saved Reply Drafts",
+    releaseDate: "2026-11-03",
+    type: "improvement",
+    app: "business-api",
+    summary: "Canned responses fill in customer and agent details, while saved drafts and a character counter make longer replies easier to finish.",
+    highlights: [
+      "Fill in customer name, full name, phone, agent and store placeholders in canned responses.",
+      "Select remaining placeholders so you can replace them before sending.",
+      "Show a character counter near the WhatsApp text-message limit.",
+      "Indicate when a reply draft is saved on your current device."
+    ]
+  },
+  {
+    slug: "team-inbox-delivery-status-and-retry",
+    version: "2026.11.03",
+    title: "Team Inbox: Clearer Message Status and Send Errors",
+    releaseDate: "2026-11-03",
+    type: "improvement",
+    app: "business-api",
+    summary: "Open a message status for a plain-language explanation and see practical next steps when WhatsApp rejects a message.",
+    highlights: [
+      "Open delivery ticks to see the message status in words.",
+      "Show readable explanations for common WhatsApp send errors.",
+      "Offer a retry action for eligible failed messages."
+    ]
+  },
+  {
+    slug: "team-inbox-template-copy-and-resubmit",
+    version: "2026.11.03",
+    title: "Team Inbox: Fix Rejected Templates and Copy Approved Ones",
+    releaseDate: "2026-11-03",
+    type: "feature",
+    app: "business-api",
+    summary: "See why a WhatsApp template was rejected, start a revised submission or copy an approved template to make a new version.",
+    highlights: [
+      "Show the rejection reason on a template card.",
+      "Use Fix and resubmit to open an editable version of a rejected template.",
+      "Use Copy and edit to start from an approved template.",
+      "Review broadcast reach, estimated send duration and template category before launching."
+    ]
+  },
+  {
+    slug: "team-inbox-media-viewer-and-downloads",
+    version: "2026.11.03",
+    title: "Team Inbox: Photo Viewer and Multiple Media Downloads",
+    releaseDate: "2026-11-03",
+    type: "feature",
+    app: "business-api",
+    summary: "Browse shared photos in a keyboard-accessible viewer and select several media files to download.",
+    highlights: [
+      "Open photos in a viewer with previous and next controls and an image counter.",
+      "Download a photo or close the viewer with Escape.",
+      "Use Select mode to download several shared files.",
+      "Reach media gallery tiles with the keyboard."
+    ]
+  },
+  {
+    slug: "team-inbox-accessibility-and-feedback",
+    version: "2026.11.03",
+    title: "Team Inbox: Clearer Contrast, Keyboard Focus and Mobile Feedback",
+    releaseDate: "2026-11-03",
+    type: "improvement",
+    app: "business-api",
+    summary: "The Inbox is easier to read and operate with a keyboard or phone, with clearer connection feedback and fewer interrupting dialogs.",
+    highlights: [
+      "Improve text contrast, field labels and names for icon buttons and switches.",
+      "Respect reduced-motion preferences and show keyboard focus more consistently.",
+      "Use brief notifications for successful actions, with Undo for eligible response or label deletions.",
+      "Show clearer offline and reconnect messages, unread navigation badges and mobile swipe actions."
+    ]
+  },
+  {
+    slug: "team-inbox-webhook-delivery-management",
+    version: "2026.11.03",
+    title: "Team Inbox: Webhook Delivery Logs, Tests and Retries",
+    releaseDate: "2026-11-03",
+    type: "feature",
+    app: "business-api",
+    summary: "Manage webhook destinations from the Inbox, choose event types and inspect delivery attempts when an integration needs attention.",
+    highlights: [
+      "Add destinations and choose which Inbox events each receives.",
+      "Send a test event and inspect recent delivery status, errors and attempts.",
+      "Retry failed deliveries from the log and pause or resume a destination.",
+      "Rotate the signing secret with a transition period for updating your receiver."
+    ]
+  },
+  {
+    slug: "team-inbox-voice-playback-and-seeking",
+    version: "2026.11.02",
+    title: "Team Inbox: Voice Playback, Seeking and Retry Fixed",
+    releaseDate: "2026-11-02",
+    type: "fix",
+    app: "business-api",
+    summary: "Voice messages show accurate playback progress, support seeking and offer retry or download when a recording cannot play.",
+    highlights: [
+      "Keep play, pause and progress indicators in sync with actual playback.",
+      "Seek within supported voice messages and change playback speed.",
+      "Reset the player when switching recordings and handle interrupted playback.",
+      "Retry or download a recording after playback fails, with more reliable loading of long audio."
+    ]
+  },
+  {
+    slug: "team-inbox-coexistence-history-import-fix",
+    version: "2026.10.31",
+    title: "Team Inbox: More Reliable WhatsApp Business History Import",
+    releaseDate: "2026-10-31",
+    type: "fix",
+    app: "business-api",
+    summary: "Importing conversation history from the WhatsApp Business app handles message dates more reliably.",
+    highlights: [
+      "Fix date handling when saving imported chat history.",
+      "Keep recent conversations from the phone app available in the Team Inbox when using coexistence."
+    ]
+  },
+  {
+    slug: "team-inbox-ai-draft-review",
+    version: "2026.10.27",
+    title: "Team Inbox: Review AI-Drafted Replies Before Sending",
+    releaseDate: "2026-10-27",
+    type: "feature",
+    app: "business-api",
+    summary: "Connected AI assistants can prepare WhatsApp replies for your team to review, edit, send or discard in the Inbox.",
+    highlights: [
+      "Keep message drafts in a review queue within the conversation.",
+      "Edit a plain-text draft before approving it, or discard it.",
+      "Agent connections use draft review; admins control whether a connection can send directly.",
+      "Check conversation ownership and messaging-window rules again when a person approves a send."
+    ]
+  },
+  {
+    slug: "team-inbox-ai-inbox-tools",
+    version: "2026.10.27",
+    title: "Team Inbox: AI Tools for Labels, Notes and Broadcast Drafts",
+    releaseDate: "2026-10-27",
+    type: "feature",
+    app: "business-api",
+    summary: "Connected AI tools can help organize conversations, find products and prepare broadcast drafts with the permissions you grant.",
+    highlights: [
+      "Search conversations and message history from a connected AI tool.",
+      "Apply labels, add internal notes and manage assignments within the connected user permissions.",
+      "Search the store catalog for products.",
+      "Create a broadcast draft for a person to review, choose its audience and launch from the Inbox."
+    ]
+  },
+  {
+    slug: "team-inbox-first-login-password-fix",
+    version: "2026.10.22",
+    title: "Team Inbox: First-Time Agent Password Setup Fixed",
+    releaseDate: "2026-10-22",
+    type: "fix",
+    app: "business-api",
+    summary: "New agents now see clear password setup instructions and enter the Inbox automatically after replacing their initial password.",
+    highlights: [
+      "Show a dedicated password setup screen instead of a failed-settings message.",
+      "Wait to load conversations and connect live updates until setup is complete.",
+      "Open the Inbox after the new password is saved.",
+      "Explain expired sessions and failed settings requests more clearly."
+    ]
+  },
+  {
+    slug: "team-inbox-shopify-contact-sync",
+    version: "2026.10.14",
+    title: "Team Inbox: Shopify Contact Sync and Customer Privacy Requests",
+    releaseDate: "2026-10-14",
+    type: "feature",
+    app: "business-api",
+    summary: "Import customer contact details from Shopify, follow sync progress and refresh existing contacts without creating duplicate phone records.",
+    highlights: [
+      "Start a Shopify customer sync from Contacts and see progress and completion.",
+      "Bring in customer names, email addresses, tags, order counts and spending details when available.",
+      "Refresh an existing phone contact when you run the sync again.",
+      "Apply customer privacy redaction to matching Inbox contact data."
+    ]
+  },
+  {
+    slug: "team-inbox-workflow-trigger-options",
+    version: "2026.09.30",
+    title: "Team Inbox: More Workflow Trigger Controls",
+    releaseDate: "2026-09-30",
+    type: "improvement",
+    app: "business-api",
+    summary: "Choose how your tools trigger an Inbox workflow and manage its access from the workflow settings.",
+    highlights: [
+      "Connect an external integration with a workflow API key or an allowed website origin.",
+      "Explicitly choose open access when an integration needs a keyless webhook.",
+      "Pause a workflow to stop new runs and prevent later sends in waiting runs.",
+      "Rotate or disable trigger access from the workflow settings."
+    ]
+  },
+  {
+    slug: "team-inbox-owner-and-agent-access",
+    version: "2026.09.17",
+    title: "Team Inbox: Owner Controls, Agent Accounts and Chat Ownership",
+    releaseDate: "2026-09-17",
+    type: "feature",
+    app: "business-api",
+    summary: "Create separate agent accounts, claim conversations and manage assignments from the store owner account.",
+    highlights: [
+      "Owners create agent usernames and initial passwords without requiring an email address.",
+      "Agents replace their initial password before accessing the live Inbox.",
+      "Claim an unassigned chat or release your own; owners can reassign chats to another teammate.",
+      "Disabling an agent revokes their access and releases their conversations for the team."
+    ]
+  },
+  {
+    slug: "team-inbox-private-note-drafts",
+    version: "2026.09.17",
+    title: "Team Inbox: Private Notes with Message References",
+    releaseDate: "2026-09-17",
+    type: "feature",
+    app: "business-api",
+    summary: "Leave internal notes in a conversation, quote the message they refer to and keep note drafts separate from customer replies.",
+    highlights: [
+      "Switch the composer between Reply and Private note.",
+      "Attach a reference to an existing message; saved notes show their author and time.",
+      "Add notes even after the customer reply window closes or the WhatsApp number disconnects.",
+      "Keep separate reply and note drafts; private notes never send a customer message."
+    ]
+  },
+  {
+    slug: "team-inbox-workflow-builder",
+    version: "2026.09.17",
+    title: "Team Inbox: Build and Test API-Triggered Workflows",
+    releaseDate: "2026-09-17",
+    type: "feature",
+    app: "business-api",
+    summary: "Build Inbox workflows with messages, decisions and waits, then trigger them from your own systems.",
+    highlights: [
+      "Connect text sends, approved-template sends, decisions and wait steps in the workflow editor.",
+      "Use input variables to personalize messages and choose decision branches.",
+      "Simulate a workflow without sending messages and inspect the recorded step path.",
+      "Activate, pause and review runs with their outcomes; sending still follows the customer service window."
+    ]
+  },
+  {
+    slug: "team-inbox-conversation-starters",
+    version: "2026.09.15",
+    title: "Team Inbox: WhatsApp Conversation Starters and Commands",
+    releaseDate: "2026-09-15",
+    type: "feature",
+    app: "business-api",
+    summary: "Manage the suggested questions and customer-facing slash commands shown for your WhatsApp number from the Inbox.",
+    highlights: [
+      "Set up to four conversation starter prompts for customers.",
+      "Configure customer-facing commands and their descriptions.",
+      "Preview and save changes, then read the saved settings back from WhatsApp.",
+      "Store admins manage the settings; teammates can view them."
+    ]
+  },
+  {
+    slug: "team-inbox-message-reactions",
+    version: "2026.09.15",
+    title: "Team Inbox: React to Messages with Emoji",
+    releaseDate: "2026-09-15",
+    type: "feature",
+    app: "business-api",
+    summary: "Add, change or remove a WhatsApp reaction on a message and see customer reactions alongside the original message.",
+    highlights: [
+      "Choose an emoji from the message toolbar.",
+      "Choose the same reaction again to remove it.",
+      "See customer and business-number reactions separately beneath the message.",
+      "Copy complete message text or select just the part you need."
+    ]
+  },
+  {
+    slug: "team-inbox-labels-and-filtering",
+    version: "2026.09.15",
+    title: "Team Inbox: Color Labels and Conversation Filters",
+    releaseDate: "2026-09-15",
+    type: "feature",
+    app: "business-api",
+    summary: "Organize conversations with shared color labels and combine label filters with search and conversation tabs.",
+    highlights: [
+      "Admins create a shared library of label names and colors.",
+      "Teammates apply several labels to a conversation from its contact details.",
+      "Filter by a label or find conversations that have no label.",
+      "Keep label changes visible across teammates and connected store numbers."
+    ]
+  },
+  {
+    slug: "team-inbox-canned-response-library",
+    version: "2026.09.15",
+    title: "Team Inbox: Shared Canned Responses with Slash Shortcuts",
+    releaseDate: "2026-09-15",
+    type: "feature",
+    app: "business-api",
+    summary: "Save common answers in a shared response library and insert them into a draft with a slash shortcut.",
+    highlights: [
+      "Admins manage response titles, shortcuts and message text.",
+      "Type a slash in the composer to search by title, shortcut or message.",
+      "Use the keyboard to select a response and edit it before sending.",
+      "Keep the surrounding draft text when inserting an answer at the cursor."
+    ]
+  },
+  {
+    slug: "team-inbox-typed-customer-fields",
+    version: "2026.09.15",
+    title: "Team Inbox: Custom Fields for Contacts and Conversations",
+    releaseDate: "2026-09-15",
+    type: "feature",
+    app: "business-api",
+    summary: "Save structured customer details as text, numbers, dates, checkboxes or dropdown choices inside the Inbox.",
+    highlights: [
+      "Admins define optional custom fields for contacts or individual conversations.",
+      "Contact fields follow the same phone number across your store numbers; conversation fields stay with one chat.",
+      "Teammates can update values in the contact drawer.",
+      "Keep unsaved edits when a request fails and receive a notice when another teammate changes saved values."
+    ]
+  },
+  {
+    slug: "team-inbox-broadcast-audiences-and-scheduling",
+    version: "2026.09.14",
+    title: "Team Inbox: Spreadsheet Audiences and Scheduled Broadcasts",
+    releaseDate: "2026-09-14",
+    type: "feature",
+    app: "business-api",
+    summary: "Build a broadcast audience from a CSV, Excel file or existing conversations, personalize template fields and schedule the send.",
+    highlights: [
+      "Upload a CSV or Excel file and map its columns to phone numbers and template variables.",
+      "Choose existing conversations as the audience, including selected customer numbers.",
+      "Preview the template and send a test before launching.",
+      "Send immediately or choose a later date and time."
+    ]
+  },
+  {
+    slug: "team-inbox-broadcast-reports-and-controls",
+    version: "2026.09.14",
+    title: "Team Inbox: Broadcast Reports, Pause and Retry",
+    releaseDate: "2026-09-14",
+    type: "feature",
+    app: "business-api",
+    summary: "Track broadcast delivery for each recipient, export results and manage sends without rebuilding the broadcast.",
+    highlights: [
+      "See sent, delivered, read and failed recipient counts and rates.",
+      "Filter recipient results and export a CSV report.",
+      "Pause or resume a broadcast and retry failed recipients.",
+      "Duplicate a broadcast for another send or cancel a scheduled launch."
+    ]
+  },
+  {
+    slug: "team-inbox-stickers-and-voice-recording",
+    version: "2026.09.09",
+    title: "Team Inbox: Better Stickers and Voice Recordings",
+    releaseDate: "2026-09-09",
+    type: "fix",
+    app: "business-api",
+    summary: "Stickers display more reliably, and voice recording and media validation better match supported WhatsApp formats.",
+    highlights: [
+      "Receive and display WhatsApp stickers in conversations.",
+      "Improve validation before sending media.",
+      "Use more suitable audio recording formats for WhatsApp voice messages."
+    ]
+  }
+];
+
+export const CHANGELOG_SEED: ChangelogSeedEntry[] = [...entries, ...earlierEntries, ...originalAppEntries, ...inboxHistoryEntries].sort((a, b) =>
   a.releaseDate === b.releaseDate ? 0 : a.releaseDate < b.releaseDate ? 1 : -1,
 );
 
