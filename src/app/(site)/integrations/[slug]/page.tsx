@@ -14,10 +14,10 @@ const FALLBACK_INTEGRATIONS_MAP: Record<string, Partial<Integration>> = {
     name: "Shopify Flow",
     slug: "shopify-flow",
     category: "automation",
-    tagline: "Trigger custom WhatsApp workflows from any Shopify event",
-    description: "WhatFlow integrates natively with Shopify Flow. You can listen for any Shopify trigger—such as high-value orders, risk analysis flags, custom app events—and instantly send targeted WhatsApp notifications or update order tags with zero code.",
+    tagline: "Build WhatsApp workflows with supported Shopify Flow triggers",
+    description: "WhatFlow integrates natively with Shopify Flow. Combine supported Shopify and installed-app triggers with conditions and WhatFlow messaging actions in a visual workflow. Available events and data depend on the connectors installed; WhatsApp messaging rules still apply.",
     keyFeatures: [
-      { feature: "Native Shopify Flow Action triggers" },
+      { feature: "Native Shopify Flow triggers and actions" },
       { feature: "Custom payload variable mapping" },
       { feature: "Automated two-way conversational replies" },
       { feature: "Customer tag reconciliation and VIP segmentation" },

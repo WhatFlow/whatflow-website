@@ -10,7 +10,7 @@ export const HOMEPAGE_FAQS = [
 	},
 	{
 		question: "Do I need a Meta WhatsApp Business Account?",
-		answer: "Only for WhatFlow Business API, which connects directly to Meta's official Cloud API for certified message delivery. WhatFlow Chat requires no Meta account.",
+		answer: "WhatFlow Business API requires a Meta WhatsApp Business Account and connects through Meta's official Cloud API. Delivery remains subject to WhatsApp messaging rules and recipient availability. WhatFlow Chat Automation uses a linked-device connection instead.",
 	},
 	{
 		question: "Does WhatFlow work with AI?",
@@ -22,6 +22,6 @@ export const HOMEPAGE_FAQS = [
 	},
 	{
 		question: "Does WhatFlow integrate with Shopify Flow?",
-		answer: "Yes — WhatFlow Business API provides a native Shopify Flow action block, allowing you to trigger WhatsApp workflows from any Shopify event.",
+		answer: "Yes. WhatFlow Business API provides native Shopify Flow triggers and actions. Build WhatsApp workflows using the events, actions and data supported by Shopify Flow and your installed app connectors; messages remain subject to WhatsApp messaging rules.",
 	},
 ];
