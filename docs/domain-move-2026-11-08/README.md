@@ -1,0 +1,10 @@
+The public marketing site now runs on https://whatflow.io. The original marketing Worker and Payload D1/R2 bindings are reused. The .io apex previously pointed at the separate website development Worker; other app, API, staging, Inbox, shortener, MCP and email endpoints were left in place.
+
+- Marketing Worker version: `872dcf63-acf4-457e-a035-25789de32623`.
+- Redirect Worker version: `fc98b12a-a59b-4740-aa59-c1db4d380ee1`. The old apex and old and new www hosts redirect directly to the new apex. GET and HEAD use 301. Other methods use 308. Paths and query strings are preserved.
+- Canonical tags, discovery endpoints, feeds, social images, and active publishing tools use the .io website host. The CMS patch changed 59 rows, including current published comparison snapshots. Historical revisions and original publication dates were preserved. Existing .tech email and service addresses are intentional.
+- Verified 19 public pages, nine feeds and discovery files, 429 public CMS records, and 21 redirects. Both old hostnames were also tested over HTTP. Authoritative and public DNS returned records for the new www alias; the verification used the public answer directly because the local resolver still cached its previous NXDOMAIN.
+
+Release safeguard: the first archived build linked its dependencies from another directory and failed at runtime. The previous production version `29d7aa62-e6b5-4fd5-bc32-c82cf519b249` was restored. The final isolated build used a local dependency copy and passed smoke checks at zero traffic before promotion. Do not deploy an isolated build with a symlinked dependency tree.
+
+For a controlled rollback, first verify the previous site version, restore the prior apex bindings only if needed, and undo the CMS URL patch only if the old canonical site will remain live. The private scoped backup and rehearsed reversal SQL were retained in the migration work directory. Keep the legacy redirects in place for search migration and submit the new sitemap and Change of Address in Google Search Console.

@@ -48,9 +48,12 @@ if "--redirects" in sys.argv:
              "/llms.txt", "/sitemap.xml", "/logo.svg", "/ai/service.json"]
     def redirect(pair):
         host, path = pair
+        # Optional authoritative A record when the local resolver has a stale NXDOMAIN.
+        address = os.getenv("WHATFLOW_WWW_ADDRESS") if host == "www.whatflow.io" else None
+        resolve = ["--resolve", f"{host}:443:{address}"] if address else []
         result = subprocess.check_output([
             "curl", "-sS", "--max-time", "20", "-o", "/dev/null", "-w", "%{http_code} %{redirect_url}",
-            "https://" + host + path
+            *resolve, "https://" + host + path
         ]).decode().strip()
         assert result == "301 " + new + path, (host,path,result)
     hosts = ("whatflow.tech", "www.whatflow.tech", "www.whatflow.io")

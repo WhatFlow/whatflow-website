@@ -1,0 +1,12 @@
+{
+  "updatedRows": 59,
+  "tables": {
+    "posts": 2,
+    "posts_faqs": 1,
+    "posts_sources": 8,
+    "comparisons_sources": 24,
+    "_comparisons_v_version_sources": 24
+  },
+  "replay": "identical",
+  "rollback": "identical"
+}
