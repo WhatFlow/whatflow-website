@@ -1,0 +1,82 @@
+{
+  "posts": {
+    "articles": 125,
+    "noBodyScreenshot": 65,
+    "bodyPlacements": 77,
+    "distinctUrls": 19,
+    "mostReused": [
+      [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        10
+      ],
+      [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg",
+        9
+      ],
+      [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg",
+        8
+      ],
+      [
+        "/api/media/file/blog-product-proof-shipping-reply-draft.jpg",
+        6
+      ],
+      [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-template-variables.jpg",
+        5
+      ],
+      [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-template-mapping.jpg",
+        5
+      ],
+      [
+        "/api/media/file/blog-enhancement-judge-me-widgets-demo.webp",
+        5
+      ],
+      [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg",
+        4
+      ]
+    ]
+  },
+  "comparisons": {
+    "articles": 144,
+    "noBodyScreenshot": 7,
+    "bodyPlacements": 242,
+    "distinctUrls": 15,
+    "mostReused": [
+      [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        78
+      ],
+      [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg",
+        47
+      ],
+      [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg",
+        40
+      ],
+      [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg",
+        24
+      ],
+      [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg",
+        13
+      ],
+      [
+        "/api/media/file/blog-product-proof-theme-button-controls.jpg",
+        11
+      ],
+      [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-template-mapping.jpg",
+        9
+      ],
+      [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-actions.jpg",
+        5
+      ]
+    ]
+  }
+}

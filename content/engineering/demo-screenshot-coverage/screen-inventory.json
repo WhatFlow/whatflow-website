@@ -1,0 +1,383 @@
+{
+  "Business API": [
+    {
+      "screen": "_index",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "abandoned-checkout",
+      "status": "captured and approved",
+      "captures": [
+        "checkout-reminders"
+      ]
+    },
+    {
+      "screen": "ai-connections",
+      "status": "captured and approved",
+      "captures": [
+        "ai-connections"
+      ]
+    },
+    {
+      "screen": "analytics",
+      "status": "captured and approved",
+      "captures": [
+        "analytics-funnel"
+      ]
+    },
+    {
+      "screen": "auto-replies",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "back-in-stock",
+      "status": "captured and approved",
+      "captures": [
+        "restock-setup"
+      ]
+    },
+    {
+      "screen": "billing",
+      "status": "captured and approved",
+      "captures": [
+        "billing-meta"
+      ]
+    },
+    {
+      "screen": "block-extensions",
+      "status": "captured and approved",
+      "captures": [
+        "admin-blocks"
+      ]
+    },
+    {
+      "screen": "blocklist",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "broadcast-messages.$id",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "broadcast-queue",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "chat-button",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "cod",
+      "status": "captured and approved",
+      "captures": [
+        "cod-checkout"
+      ]
+    },
+    {
+      "screen": "connections",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "customer-broadcast",
+      "status": "captured and approved",
+      "captures": [
+        "broadcast-from-shopify"
+      ]
+    },
+    {
+      "screen": "draft-order-recovery",
+      "status": "captured and approved",
+      "captures": [
+        "draft-reminders"
+      ]
+    },
+    {
+      "screen": "feature-board",
+      "status": "captured and approved",
+      "captures": [
+        "feature-board"
+      ]
+    },
+    {
+      "screen": "features.$id",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "flow-integration",
+      "status": "captured and approved",
+      "captures": [
+        "shopify-flow-guide"
+      ]
+    },
+    {
+      "screen": "flow-sense",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "fulfillment-tracking",
+      "status": "captured and approved",
+      "captures": [
+        "shipping-journey"
+      ]
+    },
+    {
+      "screen": "inbox",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "manual-messaging",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "message-editor",
+      "status": "captured and approved",
+      "captures": [
+        "template-event-picker"
+      ]
+    },
+    {
+      "screen": "otp-verification",
+      "status": "captured and approved",
+      "captures": [
+        "otp-checkout"
+      ]
+    },
+    {
+      "screen": "review-requests",
+      "status": "captured and approved",
+      "captures": [
+        "review-request-timing"
+      ]
+    },
+    {
+      "screen": "store-report",
+      "status": "captured and approved",
+      "captures": [
+        "store-report"
+      ]
+    },
+    {
+      "screen": "template-library",
+      "status": "captured and approved",
+      "captures": [
+        "template-library"
+      ]
+    },
+    {
+      "screen": "templates",
+      "status": "captured and approved",
+      "captures": [
+        "template-status"
+      ]
+    }
+  ],
+  "Team Inbox": [
+    {
+      "screen": "broadcasts",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-broadcasts"
+      ]
+    },
+    {
+      "screen": "canned-responses",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-canned-responses"
+      ]
+    },
+    {
+      "screen": "catalog",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-catalog"
+      ]
+    },
+    {
+      "screen": "contacts",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "custom-attributes",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-attributes"
+      ]
+    },
+    {
+      "screen": "dashboard",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "flows",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-flows"
+      ]
+    },
+    {
+      "screen": "inbox.$id",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "inbox._index",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-mine-queue"
+      ]
+    },
+    {
+      "screen": "inbox",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-mine-queue"
+      ]
+    },
+    {
+      "screen": "index",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "labels",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-labels"
+      ]
+    },
+    {
+      "screen": "quick-replies",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "settings",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "templates",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-templates"
+      ]
+    },
+    {
+      "screen": "webhooks",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-webhooks"
+      ]
+    },
+    {
+      "screen": "workflows.$id",
+      "status": "no approved capture in this pass"
+    },
+    {
+      "screen": "workflows",
+      "status": "captured and approved",
+      "captures": [
+        "inbox-workflows"
+      ]
+    }
+  ],
+  "Chat Automation": [
+    {
+      "screen": "_index",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "abandoned-checkout-manual-guide",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "abandoned-checkout-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "admin-notification-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "auto-replier-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "automations",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "billing",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "bulk-message-sender",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "dashboard",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "draft-order-recovery-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "flow-guide",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "home",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "message-queue",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "order-cancellation-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "order-confirmation-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "order-fulfillment-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "order-notification-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "sidekick",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "whatsapp-button-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "whatsapp-direct-order-settings",
+      "status": "not verified in this capture pass"
+    },
+    {
+      "screen": "whatsapp-product-button-settings",
+      "status": "not verified in this capture pass"
+    }
+  ],
+  "Shopify Flow": [
+    {
+      "screen": "flow/editor/templates",
+      "status": "captured and approved",
+      "captures": [
+        "flow-judgeme"
+      ]
+    },
+    {
+      "screen": "flow/editor/templates",
+      "status": "captured and approved",
+      "captures": [
+        "flow-template-browser"
+      ]
+    }
+  ]
+}

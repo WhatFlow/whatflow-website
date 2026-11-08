@@ -1,0 +1,2437 @@
+{
+  "capturedAssets": 30,
+  "updatedPosts": 75,
+  "updatedComparisons": 111,
+  "usage": {
+    "billing-meta": 10,
+    "restock-setup": 5,
+    "inbox-catalog": 14,
+    "inbox-canned-responses": 12,
+    "shipping-journey": 14,
+    "cod-checkout": 11,
+    "flow-judgeme": 4,
+    "checkout-reminders": 14,
+    "shopify-flow-guide": 14,
+    "review-request-timing": 4,
+    "broadcast-from-shopify": 10,
+    "inbox-mine-queue": 14,
+    "template-event-picker": 7,
+    "admin-blocks": 14,
+    "analytics-funnel": 6,
+    "inbox-templates": 1,
+    "template-status": 4,
+    "template-library": 3,
+    "inbox-broadcasts": 5,
+    "ai-connections": 10,
+    "inbox-labels": 7,
+    "flow-template-browser": 1,
+    "inbox-webhooks": 1,
+    "flow-quick-reply-trigger": 1
+  },
+  "changes": [
+    {
+      "kind": "comparisons",
+      "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+      "asset": "billing-meta",
+      "section": "How much does per-seat pricing really cost?",
+      "score": 39,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "back-in-stock-whatsapp-alerts-setup",
+      "asset": "restock-setup",
+      "section": "Two ways to send back in stock alerts from Shopify",
+      "score": 34,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "shopify-whatsapp-catalog-support",
+      "asset": "inbox-catalog",
+      "section": "Which catalog are you using: WhatFlow-managed or already connected?",
+      "score": 34,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-returns-exchanges-shopify",
+      "asset": "inbox-canned-responses",
+      "section": "The five stages of a return, and what you can say at each",
+      "score": 34,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-shipping-delays-shopify",
+      "asset": "shipping-journey",
+      "section": "Sample WhatsApp shipping delay messages",
+      "score": 34,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-message-budget-cost-per-outcome",
+      "asset": "billing-meta",
+      "section": "How does WhatsApp Business API pricing work in 2026?",
+      "score": 34,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-cod-confirmation-vs-email",
+      "asset": "cod-checkout",
+      "section": "What does WhatsApp COD confirmation look like?",
+      "score": 34,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-shipping-updates-vs-sms",
+      "asset": "shipping-journey",
+      "section": "How do I automate shipping updates in Shopify?",
+      "score": 34,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-back-in-stock-vs-email",
+      "asset": "restock-setup",
+      "section": "How do I send back-in-stock alerts on WhatsApp?",
+      "score": 34,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-business-api-pricing",
+      "asset": "billing-meta",
+      "section": "How does WhatsApp Business API pricing work?",
+      "score": 32,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "best-time-review-request-after-delivery",
+      "asset": "flow-judgeme",
+      "section": "How to schedule review requests with WhatFlow",
+      "score": 32,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-cod-confirmation-vs-sms",
+      "asset": "cod-checkout",
+      "section": "Why do buttons matter so much for COD?",
+      "score": 32,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-cart-recovery-vs-email",
+      "asset": "checkout-reminders",
+      "section": "What does WhatsApp cart recovery cost?",
+      "score": 32,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "shopify-flow-whatsapp-app-integrations",
+      "asset": "shopify-flow-guide",
+      "section": "How do Shopify Flow app integrations work?",
+      "score": 30,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "send-whatsapp-templates-shopify-flow",
+      "asset": "shopify-flow-guide",
+      "section": "Why send WhatsApp templates from Shopify Flow?",
+      "score": 30,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 3
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-review-requests-vs-email",
+      "asset": "review-request-timing",
+      "section": "How do I set up WhatsApp review requests in Shopify?",
+      "score": 30,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+      "asset": "broadcast-from-shopify",
+      "section": "What does a segmented broadcast cost?",
+      "score": 30,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+      "asset": "inbox-mine-queue",
+      "section": "When a helpdesk might still make sense",
+      "score": 30,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-volume-plans-vs-contact-pricing",
+      "asset": "billing-meta",
+      "section": "Budget on outcomes, not list size",
+      "score": 30,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "dropshipping-customer-trust-communication",
+      "asset": "shipping-journey",
+      "section": "Send updates tied to real events",
+      "score": 29,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "prepare-customer-support-black-friday-shopify",
+      "asset": "inbox-mine-queue",
+      "section": "Who answers new messages during the sale?",
+      "score": 29,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "shared-team-inbox-small-shopify-business",
+      "asset": "inbox-mine-queue",
+      "section": "Rule 1: every new conversation gets an owner",
+      "score": 29,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+      "asset": "cod-checkout",
+      "section": "Opening",
+      "score": 29,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+      "asset": "cod-checkout",
+      "section": "What does the WhatsApp version look like?",
+      "score": 29,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+      "asset": "cod-checkout",
+      "section": "Opening",
+      "score": 29,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "pre-order-updates-whatsapp-shopify",
+      "asset": "template-event-picker",
+      "section": "Automating pre-order updates with Shopify Flow and WhatFlow",
+      "score": 28,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-quick-reply-buttons-customer-choices",
+      "asset": "flow-quick-reply-trigger",
+      "section": "How to connect button replies to Shopify Flow",
+      "score": 28,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 1,
+      "editorialOverride": true
+    },
+    {
+      "kind": "posts",
+      "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+      "asset": "shopify-flow-guide",
+      "section": "How does WhatsApp automation in Shopify Flow work?",
+      "score": 28,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg"
+      ],
+      "priorImages": 4
+    },
+    {
+      "kind": "comparisons",
+      "slug": "shopify-native-whatsapp-vs-external-dashboard",
+      "asset": "admin-blocks",
+      "section": "Is a Shopify-native app enough for a large team?",
+      "score": 28,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg",
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "shopify-flow-whatsapp-vs-zapier",
+      "asset": "shopify-flow-guide",
+      "section": "How does a WhatsApp workflow look in Shopify Flow?",
+      "score": 28,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg",
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-cart-recovery-vs-sms",
+      "asset": "checkout-reminders",
+      "section": "Why do replies matter in cart recovery?",
+      "score": 28,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-order-updates-vs-email",
+      "asset": "template-event-picker",
+      "section": "What do WhatsApp order updates cost?",
+      "score": 28,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-marketing-metrics-shopify",
+      "asset": "analytics-funnel",
+      "section": "Revenue per message, and why attribution lies",
+      "score": 27,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-broadcast-best-practices",
+      "asset": "broadcast-from-shopify",
+      "section": "Opening",
+      "score": 27,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "hire-first-customer-support-shopify",
+      "asset": "inbox-mine-queue",
+      "section": "Week 2: own a slice",
+      "score": 27,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "multilingual-customer-messaging-shopify",
+      "asset": "inbox-templates",
+      "section": "Create a WhatsApp template for each language",
+      "score": 27,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "customer-service-saved-replies-without-robotic-tone",
+      "asset": "inbox-canned-responses",
+      "section": "Where WhatFlow fits",
+      "score": 27,
+      "removed": [],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-for-fashion-stores",
+      "asset": "inbox-canned-responses",
+      "section": "Returns and exchanges: make them a conversation",
+      "score": 26,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-quality-rating-messaging-limits",
+      "asset": "template-status",
+      "section": "What is a WhatsApp quality rating?",
+      "score": 25,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "holiday-shipping-cutoff-messages",
+      "asset": "shipping-journey",
+      "section": "Automate the post-cutoff order message with Shopify Flow",
+      "score": 25,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+      "asset": "billing-meta",
+      "section": "Where WhatFlow fits in the audit",
+      "score": 25,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-message-templates-shopify-examples",
+      "asset": "template-library",
+      "section": "Review request templates",
+      "score": 23,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-campaign-segmentation-shopify",
+      "asset": "inbox-broadcasts",
+      "section": "Opening",
+      "score": 23,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "abandoned-checkout-whatsapp-conversation",
+      "asset": "checkout-reminders",
+      "section": "A first message that invites a reply",
+      "score": 23,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "review-request-messages-examples-whatsapp-email",
+      "asset": "flow-judgeme",
+      "section": "WhatsApp review request examples",
+      "score": 23,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+      "asset": "shopify-flow-guide",
+      "section": "Opening",
+      "score": 23,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg",
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 3
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+      "asset": "checkout-reminders",
+      "section": "Opening",
+      "score": 23,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "order-edits-address-changes-whatsapp",
+      "asset": "shipping-journey",
+      "section": "2. Check fulfilment status",
+      "score": 21,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "ai-support-drafts-small-shopify-team",
+      "asset": "inbox-canned-responses",
+      "section": "A simple process for AI-assisted replies",
+      "score": 21,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-kustomer",
+      "asset": "ai-connections",
+      "section": "Is WhatFlow really enterprise-ready?",
+      "score": 13,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-saysimple",
+      "asset": "billing-meta",
+      "section": "WhatFlow vs Saysimple at a glance",
+      "score": 21,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "customer-winback-campaign-shopify",
+      "asset": "template-library",
+      "section": "Win-back message examples",
+      "score": 20,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+      "asset": "broadcast-from-shopify",
+      "section": "How to target with WhatFlow today",
+      "score": 19,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-message-not-delivered-reasons",
+      "asset": "analytics-funnel",
+      "section": "How to tell what went wrong",
+      "score": 18,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "ramadan-eid-diwali-whatsapp-campaigns",
+      "asset": "inbox-broadcasts",
+      "section": "What respectful Ramadan and Eid messages sound like",
+      "score": 18,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "customer-service-playbook-shopify",
+      "asset": "inbox-canned-responses",
+      "section": "5. Reply templates",
+      "score": 18,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "customer-review-insights-product-copy",
+      "asset": "inbox-canned-responses",
+      "section": "Step 6: Update your saved replies the same day",
+      "score": 18,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "choose-first-automation-shopify-small-team",
+      "asset": "cod-checkout",
+      "section": "Why COD confirmation is my favourite first automation",
+      "score": 18,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-marketing-plan-small-shopify-store",
+      "asset": "billing-meta",
+      "section": "Step 6: Budget the whole journey, honestly",
+      "score": 18,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-clevertap",
+      "asset": "admin-blocks",
+      "section": "Which works better inside Shopify?",
+      "score": 18,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-ctx",
+      "asset": "inbox-mine-queue",
+      "section": "Team inbox and growth",
+      "score": 18,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-edesk",
+      "asset": "ai-connections",
+      "section": "WhatFlow vs eDesk at a glance",
+      "score": 13,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-periskope",
+      "asset": "ai-connections",
+      "section": "WhatFlow vs Periskope at a glance",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-sprinklr",
+      "asset": "ai-connections",
+      "section": "When Sprinklr might still make sense",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg",
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-trengo",
+      "asset": "inbox-mine-queue",
+      "section": "Team inbox: who answers, and what does it cost?",
+      "score": 18,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-timelinesai",
+      "asset": "inbox-labels",
+      "section": "Team inbox: seats vs no seats",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-freshchat",
+      "asset": "inbox-mine-queue",
+      "section": "What's the team inbox like day to day?",
+      "score": 18,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-zendesk",
+      "asset": "admin-blocks",
+      "section": "WhatFlow vs Zendesk at a glance",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-intercom",
+      "asset": "inbox-catalog",
+      "section": "Which one handles Shopify orders better?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-hubspot",
+      "asset": "inbox-labels",
+      "section": "What does the team inbox look like?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-front",
+      "asset": "inbox-mine-queue",
+      "section": "What does the team inbox look like?",
+      "score": 18,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-rasayel",
+      "asset": "admin-blocks",
+      "section": "WhatFlow vs Rasayel at a glance",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-respond-io",
+      "asset": "broadcast-from-shopify",
+      "section": "How much does respond.io cost for a Shopify store?",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-gorgias",
+      "asset": "inbox-canned-responses",
+      "section": "How do returns and exceptions work?",
+      "score": 18,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-zoko",
+      "asset": "inbox-catalog",
+      "section": "Which is better for selling from the catalog?",
+      "score": 18,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-interakt",
+      "asset": "cod-checkout",
+      "section": "Which handles Shopify COD and order replies better?",
+      "score": 18,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "helpful-cross-sell-product-recommendations",
+      "asset": "inbox-catalog",
+      "section": "Recommend inside the conversation",
+      "score": 17,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-reco",
+      "asset": "shopify-flow-guide",
+      "section": "What does the setup cost?",
+      "score": 17,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-zixflow",
+      "asset": "admin-blocks",
+      "section": "Opening",
+      "score": 17,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-marketing-shopify-guide",
+      "asset": "restock-setup",
+      "section": "Review requests and back in stock",
+      "score": 14,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-flow-order-reply.webp",
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-channels-for-brands",
+      "asset": "broadcast-from-shopify",
+      "section": "Channels vs API broadcasts vs Communities",
+      "score": 16,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "customer-survey-whatsapp-csat-nps",
+      "asset": "shopify-flow-guide",
+      "section": "Automating it with WhatFlow and Shopify Flow",
+      "score": 16,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-aitrillion",
+      "asset": "ai-connections",
+      "section": "When AiTrillion might still make sense",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-haptik",
+      "asset": "ai-connections",
+      "section": "WhatFlow vs Haptik at a glance",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg",
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-kommunicate",
+      "asset": "ai-connections",
+      "section": "WhatFlow vs Kommunicate at a glance",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg",
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-reamaze",
+      "asset": "inbox-mine-queue",
+      "section": "Is WhatFlow ready for a large support team?",
+      "score": 16,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-recart",
+      "asset": "inbox-labels",
+      "section": "Can a growing team use WhatFlow?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-retainful",
+      "asset": "inbox-mine-queue",
+      "section": "Team inbox and enterprise readiness",
+      "score": 16,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-yellow-ai",
+      "asset": "ai-connections",
+      "section": "WhatFlow vs Yellow.ai at a glance",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg",
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-sleekflow",
+      "asset": "flow-template-browser",
+      "section": "Which one fits your Shopify workflow better?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-zoho-desk",
+      "asset": "admin-blocks",
+      "section": "WhatFlow vs Zoho Desk at a glance",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-livechat",
+      "asset": "checkout-reminders",
+      "section": "Which one fits Shopify order work better?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-shopify-inbox",
+      "asset": "inbox-catalog",
+      "section": "What about the team inbox?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-moengage",
+      "asset": "template-event-picker",
+      "section": "How much does MoEngage cost compared with WhatFlow?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-bird",
+      "asset": "checkout-reminders",
+      "section": "App or platform: what you're actually choosing",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg",
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 3
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-doubletick",
+      "asset": "inbox-labels",
+      "section": "Team inbox without the agent cap",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg",
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 3
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-manychat",
+      "asset": "billing-meta",
+      "section": "How does pricing compare?",
+      "score": 16,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-superlemon",
+      "asset": "cod-checkout",
+      "section": "Which handles COD and order replies better?",
+      "score": 16,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg",
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-delightchat",
+      "asset": "restock-setup",
+      "section": "What about back-in-stock alerts?",
+      "score": 16,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg",
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-aisensy",
+      "asset": "inbox-catalog",
+      "section": "What about catalog sharing and the inbox?",
+      "score": 16,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-quickreply",
+      "asset": "cod-checkout",
+      "section": "What about COD and order replies?",
+      "score": 16,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-wati",
+      "asset": "admin-blocks",
+      "section": "Opening",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-template-rejected-fixes",
+      "asset": "template-status",
+      "section": "How do you fix a rejected WhatsApp template?",
+      "score": 15,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-customer-service-etiquette",
+      "asset": "inbox-canned-responses",
+      "section": "A team cheat sheet",
+      "score": 15,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "product-questions-whatsapp-prepurchase-support",
+      "asset": "inbox-catalog",
+      "section": "Make it easy to ask",
+      "score": 15,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "sidekick-shopify-flow-whatsapp-workflows",
+      "asset": "shopify-flow-guide",
+      "section": "Opening",
+      "score": 15,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 3
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-kwikengage",
+      "asset": "billing-meta",
+      "section": "Opening",
+      "score": 15,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-squadkin",
+      "asset": "template-event-picker",
+      "section": "Opening",
+      "score": 15,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-automation-vs-manual-order-copying",
+      "asset": "template-event-picker",
+      "section": "Opening",
+      "score": 15,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-template-categories-marketing-utility",
+      "asset": "template-library",
+      "section": "What happens if you keep misusing utility templates?",
+      "score": 14,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-24-hour-customer-service-window",
+      "asset": "billing-meta",
+      "section": "How does the 24-hour window affect WhatsApp pricing?",
+      "score": 14,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "product-review-schema-rich-results-explained",
+      "asset": "review-request-timing",
+      "section": "Where review requests fit in",
+      "score": 14,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "replenishment-reminders-shopify-consumables",
+      "asset": "shopify-flow-guide",
+      "section": "How to automate it in Shopify Flow",
+      "score": 14,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "post-purchase-customer-journey-shopify",
+      "asset": "shopify-flow-guide",
+      "section": "Build it in Shopify Flow",
+      "score": 14,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-richpanel",
+      "asset": "broadcast-from-shopify",
+      "section": "Which is better at Shopify WhatsApp workflows?",
+      "score": 9,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-wassenger",
+      "asset": "admin-blocks",
+      "section": "Is WhatFlow ready for a large team?",
+      "score": 9,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-kommo",
+      "asset": "broadcast-from-shopify",
+      "section": "How much does Kommo cost compared with WhatFlow?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-crisp",
+      "asset": "ai-connections",
+      "section": "What's the team inbox like?",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-chatwoot",
+      "asset": "ai-connections",
+      "section": "What does the team inbox look like?",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-help-scout",
+      "asset": "inbox-labels",
+      "section": "How much does Help Scout cost for WhatsApp support?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-jivochat",
+      "asset": "inbox-catalog",
+      "section": "Which one fits Shopify order work better?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-highlevel",
+      "asset": "inbox-mine-queue",
+      "section": "Team inbox and daily use",
+      "score": 14,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-dondy",
+      "asset": "checkout-reminders",
+      "section": "How much does Dondy cost compared with WhatFlow?",
+      "score": 11,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-twilio",
+      "asset": "shopify-flow-guide",
+      "section": "Shopify Flow instead of custom code",
+      "score": 14,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-klaviyo",
+      "asset": "template-event-picker",
+      "section": "How does COD and order automation compare?",
+      "score": 10,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg",
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-response-time-small-team",
+      "asset": "inbox-labels",
+      "section": "Step 4: Give every chat one owner",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-for-furniture-home-stores",
+      "asset": "inbox-canned-responses",
+      "section": "After delivery: assembly and damage claims",
+      "score": 13,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-conversations-content-ideas",
+      "asset": "inbox-canned-responses",
+      "section": "Step 5: Close the loop in the inbox",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "what-is-whatsapp-business-api",
+      "asset": "shipping-journey",
+      "section": "What happens to one order on the WhatsApp Business API?",
+      "score": 11,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "validate-product-niche-customer-conversations",
+      "asset": "inbox-mine-queue",
+      "section": "How I'd set this up in WhatFlow",
+      "score": 13,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "start-shopify-store-first-30-days",
+      "asset": "shipping-journey",
+      "section": "Days 19–21: Set up a support channel (don't skip this)",
+      "score": 11,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "shopify-vs-wix-ecommerce",
+      "asset": "cod-checkout",
+      "section": "On Shopify",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "selling-over-chat-sales-techniques",
+      "asset": "inbox-catalog",
+      "section": "Habit 4: Recommend one thing, with a reason",
+      "score": 11,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "high-ticket-products-whatsapp-sales",
+      "asset": "inbox-labels",
+      "section": "Who owns the deal?",
+      "score": 11,
+      "removed": [],
+      "priorImages": 0,
+      "editorialOverride": true
+    },
+    {
+      "kind": "posts",
+      "slug": "handle-angry-customer-whatsapp",
+      "asset": "inbox-canned-responses",
+      "section": "\"I want a refund NOW\" (outside your policy)",
+      "score": 13,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "click-to-whatsapp-ads-shopify",
+      "asset": "inbox-catalog",
+      "section": "4. Offer the next step",
+      "score": 11,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "black-friday-whatsapp-playbook-shopify",
+      "asset": "inbox-mine-queue",
+      "section": "Week 3 (Nov 19 to 23): rehearse support and test everything",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "add-whatsapp-chat-button-shopify",
+      "asset": "inbox-mine-queue",
+      "section": "Make sure someone answers",
+      "score": 13,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "ab-test-whatsapp-messages-small-list",
+      "asset": "analytics-funnel",
+      "section": "Why small-list A/B tests mislead you",
+      "score": 13,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "small-shopify-store-metrics-review-routine",
+      "asset": "analytics-funnel",
+      "section": "Keep raw counts next to every rate",
+      "score": 11,
+      "removed": [],
+      "priorImages": 0,
+      "editorialOverride": true
+    },
+    {
+      "kind": "posts",
+      "slug": "migrate-review-app-preserve-customer-feedback",
+      "asset": "flow-judgeme",
+      "section": "Step 5: Update every link to the old review form",
+      "score": 13,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-callbell",
+      "asset": "admin-blocks",
+      "section": "Which one fits Shopify workflows better?",
+      "score": 9,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-getgabs",
+      "asset": "checkout-reminders",
+      "section": "How do you switch from Getgabs to WhatFlow?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-kanal",
+      "asset": "analytics-funnel",
+      "section": "How much does Kanal cost compared with WhatFlow?",
+      "score": 9,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-netcore",
+      "asset": "cod-checkout",
+      "section": "Which runs Shopify WhatsApp workflows better?",
+      "score": 13,
+      "removed": [],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-shopify-messaging",
+      "asset": "admin-blocks",
+      "section": "Opening",
+      "score": 9,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-spur",
+      "asset": "shipping-journey",
+      "section": "Which one fits Shopify workflows better?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg",
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-superchat",
+      "asset": "shopify-flow-guide",
+      "section": "WhatFlow vs Superchat at a glance",
+      "score": 11,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-whatsapp-for-shopify-by-meta",
+      "asset": "shopify-flow-guide",
+      "section": "Where does WhatFlow go further?",
+      "score": 13,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "asset": "template-status",
+      "section": "What's the difference between linked-device and the official API?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-mailchimp",
+      "asset": "admin-blocks",
+      "section": "WhatFlow vs Mailchimp at a glance",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-attentive",
+      "asset": "shipping-journey",
+      "section": "What WhatFlow gives a Shopify store on day one",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-postscript",
+      "asset": "inbox-broadcasts",
+      "section": "The inbox: where WhatsApp campaigns turn into sales",
+      "score": 10,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-pushowl",
+      "asset": "restock-setup",
+      "section": "Why a WhatsApp alert beats a push alert for most stores",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-telnyx",
+      "asset": "admin-blocks",
+      "section": "WhatFlow vs Telnyx at a glance",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-engati",
+      "asset": "admin-blocks",
+      "section": "WhatFlow vs Engati at a glance",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-botpress",
+      "asset": "inbox-canned-responses",
+      "section": "Answering a question vs changing an order",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-chatfuel",
+      "asset": "shopify-flow-guide",
+      "section": "WhatFlow vs Chatfuel at a glance",
+      "score": 13,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-userlike",
+      "asset": "inbox-broadcasts",
+      "section": "How much does it cost: WhatFlow vs Lime Connect?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-mms",
+      "asset": "shipping-journey",
+      "section": "WhatsApp vs MMS at a glance",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-rcs",
+      "asset": "shipping-journey",
+      "section": "Why should WhatsApp lead?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-website-live-chat",
+      "asset": "inbox-catalog",
+      "section": "Why should WhatsApp be the main entry point?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "all-features-whatsapp-plans-vs-feature-gating",
+      "asset": "checkout-reminders",
+      "section": "How much does feature gating cost you?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg",
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+      "asset": "shipping-journey",
+      "section": "Keep ownership clear as more people join",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-chatarmin",
+      "asset": "shipping-journey",
+      "section": "Which fits Shopify workflows better?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-bitespeed",
+      "asset": "checkout-reminders",
+      "section": "Do you need to move your whole marketing stack?",
+      "score": 9,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "shopify-seo-checklist-merchants",
+      "asset": "review-request-timing",
+      "section": "Step 7: Collect real reviews and show them properly",
+      "score": 12,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "posts",
+      "slug": "maintain-shopify-blog-content-library",
+      "asset": "shipping-journey",
+      "section": "Step 4: Set update triggers",
+      "score": 11,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "coordinate-email-sms-whatsapp-customer-messages",
+      "asset": "checkout-reminders",
+      "section": "One owner per decision, one exit per sequence",
+      "score": 11,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "product-reviews-vs-store-reviews",
+      "asset": "flow-judgeme",
+      "section": "How to ask for both without double-messaging",
+      "score": 11,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-seedgrow",
+      "asset": "analytics-funnel",
+      "section": "What does the setup cost?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-wava",
+      "asset": "checkout-reminders",
+      "section": "What does wa (wava) do well?",
+      "score": 10,
+      "removed": [],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-kaleyra",
+      "asset": "admin-blocks",
+      "section": "Is WhatFlow enterprise-ready?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-product-proof-inbox-assignment-filters.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-omnisend",
+      "asset": "broadcast-from-shopify",
+      "section": "What WhatsApp adds that email and SMS don't",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-brevo",
+      "asset": "inbox-catalog",
+      "section": "What WhatFlow does for a Shopify store",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-webengage",
+      "asset": "template-status",
+      "section": "Why does the two-vendor setup matter?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-insider",
+      "asset": "checkout-reminders",
+      "section": "Which one is better for Shopify order workflows?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-web-push",
+      "asset": "inbox-catalog",
+      "section": "Why should WhatsApp lead?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-instagram-dm",
+      "asset": "inbox-catalog",
+      "section": "Why should orders live on WhatsApp?",
+      "score": 11,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-business-platform-vs-channels",
+      "asset": "broadcast-from-shopify",
+      "section": "Business Platform vs Channels at a glance",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-text-routing.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+      "asset": "inbox-webhooks",
+      "section": "What does a custom WhatsApp build actually involve?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-message-frequency-ecommerce",
+      "asset": "template-event-picker",
+      "section": "Transactional messages: as often as the order needs",
+      "score": 10,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "incentivized-reviews-rules",
+      "asset": "review-request-timing",
+      "section": "How WhatFlow handles review requests",
+      "score": 10,
+      "removed": [],
+      "priorImages": 0
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-campaign-preflight-checklist",
+      "asset": "inbox-broadcasts",
+      "section": "1. Audience: who gets this, and why?",
+      "score": 10,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp"
+      ],
+      "priorImages": 1
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-landbot",
+      "asset": "checkout-reminders",
+      "section": "A bot builder vs a ready-made Shopify workflow",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg"
+      ],
+      "priorImages": 2
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-charles",
+      "asset": "broadcast-from-shopify",
+      "section": "Can you run acquisition campaigns on WhatFlow?",
+      "score": 9,
+      "removed": [
+        "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+        "/api/media/file/blog-shopify-flow-whatflow-flow-order-reply.jpg"
+      ],
+      "priorImages": 2
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "posts",
+      "slug": "whatsapp-for-beauty-skincare-brands",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "use-ai-small-shopify-business",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "respond-negative-product-reviews-shopify",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-email",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-mobile-push",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-phone-calls",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "shared-whatsapp-inbox-vs-personal-phones",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-gupshup",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-360dialog",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-limechat",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-tidio",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "birthday-anniversary-messages-shopify",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "wholesale-b2b-enquiries-whatsapp",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-away-messages-business-hours",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "subscription-churn-whatsapp-shopify",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "shopify-app-stack-audit",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "customer-photos-ugc-whatsapp",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "customer-referral-messages-shopify",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "review-moderation-policy-small-store",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-moose",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-whapi",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-onesignal",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-sinch",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-plivo",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-braze",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-sms",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-telegram",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "choose-review-app-and-messaging-app-shopify",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-carthike",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-whatomation",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-vonage",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-chaty",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-vs-facebook-messenger",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatsapp-free-plan-vs-free-trial",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-whatsapp-business-app",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-infobip",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-gallabox",
+      "reason": "No remaining strong match without repeating the same capture excessively"
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-scams-impersonating-your-store",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-opt-in-rate-measure",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-links-qr-codes-store",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-green-tick-verified-business",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-gdpr-marketing-consent",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-for-food-beverage-brands",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-business-app-to-api-migration",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "vip-customers-whatsapp-shopify",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "trust-badges-shopify-what-works",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "shopify-vs-woocommerce-customer-messaging",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "shopify-collection-page-seo",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "schema-markup-shopify-beginners",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "raise-prices-tell-customers",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "product-launch-whatsapp-waitlist",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "first-black-friday-new-shopify-store",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "collect-whatsapp-opt-ins-shopify",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "ai-search-visibility-shopify-geo",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "migrating-whatflow-from-gadget-to-cloudflare",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "product-variant-review-context",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "influencer-campaign-small-store-plan",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "define-store-audience-brand-promise",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "choose-ecommerce-platform-customer-workflows",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "evaluate-shopify-app-workflow-connectors",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "reuse-customer-reviews-social-media",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "loyalty-messages-customer-value-shopify",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "qr-code-review-requests-product-packaging",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "write-useful-product-faqs-shopify",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "shopify-content-plan-customer-questions",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "whatsapp-customer-optouts-store-process",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "customer-feedback-loop-product-improvements",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "repeat-purchase-campaign-without-constant-discounts",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "test-social-proof-product-page",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "mobile-store-review-widget-chat-button-layout",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "reduce-cart-abandonment-with-clear-information",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "shopify-product-page-trust-checklist",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "review-collection-rate-measurement-shopify",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "photo-video-reviews-customer-permission",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "posts",
+      "slug": "collect-first-product-reviews-shopify",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-ca",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-click2chat",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-eaze-button",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "whatflow-vs-whachatcrm",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "free-whatsapp-button-vs-paid-chat-widget",
+      "reason": "No verified capture matches a section closely enough"
+    },
+    {
+      "kind": "comparisons",
+      "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+      "reason": "No verified capture matches a section closely enough"
+    }
+  ],
+  "existingAssets": [
+    {
+      "key": "flow-quick-reply-trigger",
+      "filename": "blog-shopify-flow-whatflow-flow-triggers.jpg",
+      "url": "/api/media/file/blog-shopify-flow-whatflow-flow-triggers.jpg",
+      "width": 1512,
+      "height": 787,
+      "alt": "WhatFlow WhatsApp trigger choices in Shopify Flow, including button replies",
+      "caption": "The Shopify Flow trigger picker shows the WhatFlow button-reply trigger. This is a demo configuration view."
+    }
+  ]
+}
