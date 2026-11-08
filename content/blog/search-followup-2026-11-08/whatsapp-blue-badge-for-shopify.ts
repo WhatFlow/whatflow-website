@@ -1,0 +1,33 @@
+export const post = {
+  slug: "whatsapp-blue-badge-for-shopify",
+  title: "How WhatsApp Business Blue Badge Verification Works for Shopify Stores",
+  excerpt: "Find the right WhatsApp verification route for your store, prepare your business details, and confirm that shoppers see the badge on the right number.",
+  seoTitle: "WhatsApp Blue Badge for Shopify: Verification Guide",
+  seoDescription: "Learn what the WhatsApp blue badge means, which verification options Shopify stores can check, and how to prepare the right business number.",
+  category: "guides",
+  publishedAt: "2026-11-08T13:05:00.000Z",
+  coverImageUrl: "/blog/verification/business-badge.svg",
+  coverImageAlt: "WhatFlow Shopify guide to WhatsApp business badge verification",
+  coverImageCaption: "Verify the number customers actually contact.",
+  tags: ["meta-verified", "blue-badge", "whatsapp-business", "shopify"],
+  faqs: [
+    { question: "Does installing WhatFlow give me a blue badge?", answer: "No. WhatFlow connects your Shopify messaging workflows. Meta decides whether a WhatsApp account qualifies and grants the badge." },
+    { question: "Do I need to buy a subscription if my WhatsApp account is already verified?", answer: "WhatsApp says businesses that already have a verified badge can keep their verified status without taking action solely to keep it." },
+  ],
+  sources: [
+    { title: "WhatsApp verified business accounts", url: "https://faq.whatsapp.com/794517045178057" },
+    { title: "Meta Verified for Business on WhatsApp", url: "https://faq.whatsapp.com/3872729742954601/" },
+  ],
+  blocks: [
+    { p: "A blue badge beside a WhatsApp business name means Meta verified that account. WhatsApp says some verified accounts belong to notable brands or entities, and others qualify through an eligible subscription such as Meta Verified or Meta One. A customer can use the badge to recognize the business behind the chat." },
+    { h2: "Start with the account you actually use" },
+    { p: "Send a message to your store from a separate phone using the contact link on your Shopify storefront. Open the business profile and confirm the number. A test like this catches a common practical mistake: applying for a badge on one number while ads, support and checkout point customers to another." },
+    { h2: "Find the verification option for your setup" },
+    { p: "If you use the WhatsApp Business app, WhatsApp directs merchants to Settings or Business Tools to check Meta Verified availability. If you use the Business Platform, start with the business portfolio that owns the WhatsApp account and inspect the options available for that number in WhatsApp Manager. Meta’s review and eligibility determine the outcome. If you already have a badge, check your existing status before starting another application." },
+    { h2: "Prepare your business details" },
+    { ul: ["Make the business name and website recognizable across Shopify, WhatsApp and your public profiles.", "Confirm that the team member applying can access the account and complete Meta’s prompts.", "Keep relevant business documents ready, then provide the evidence Meta requests through its own interface.", "After approval, check the business profile from another account and confirm the number matches your storefront links."] },
+    { h2: "Keep the rest of the customer experience consistent" },
+    { p: "A customer who sees a badge still needs to know why you messaged them. Mention the store and the relevant order in service messages, and give your team a clear path to respond when the customer has a question. The [WhatFlow team inbox walkthrough](https://whatflow.io/blog/whatflow-team-inbox-shopify-support-workflow) shows how to use Shopify order context and assign the reply to a teammate." },
+    { p: "If you’re comparing subscription options, see the [Meta One guide for Shopify stores](https://whatflow.io/blog/meta-one-for-whatsapp-business). For two blue marks beside an individual message, see the [WhatsApp read-receipts guide](https://whatflow.io/blog/whatsapp-blue-ticks-read-receipts)." },
+  ],
+};

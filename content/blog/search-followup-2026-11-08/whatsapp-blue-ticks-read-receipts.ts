@@ -1,0 +1,33 @@
+export const post = {
+  slug: "whatsapp-blue-ticks-read-receipts",
+  title: "WhatsApp Blue Ticks Explained: Read Receipts for Shopify Teams",
+  excerpt: "Understand sent, delivered and read status, and choose better Shopify workflow signals than an open alone.",
+  seoTitle: "What Do Two Blue Ticks Mean on WhatsApp?",
+  seoDescription: "See what one gray tick, two gray ticks, and two blue ticks mean on WhatsApp, why read receipts can be missing, and how Shopify teams should respond.",
+  category: "guides",
+  publishedAt: "2026-11-08T13:10:00.000Z",
+  coverImageUrl: "/blog/verification/read-receipts.svg",
+  coverImageAlt: "WhatFlow guide explaining WhatsApp blue read-receipt ticks",
+  coverImageCaption: "Read receipts describe a message. A badge describes an account.",
+  tags: ["read-receipts", "whatsapp", "shopify", "customer-support"],
+  faqs: [
+    { question: "What do two gray ticks mean on WhatsApp?", answer: "WhatsApp reports that the message reached the recipient’s phone or a linked device. Blue double ticks indicate a read receipt when available." },
+    { question: "Can I use a read receipt to confirm a COD order?", answer: "Use an explicit reply or confirmation button for COD. The read receipt only describes the message status." },
+  ],
+  sources: [
+    { title: "WhatsApp Help Center on read receipts", url: "https://faq.whatsapp.com/665923838265756/" },
+    { title: "WhatsApp Help Center on verified business accounts", url: "https://faq.whatsapp.com/794517045178057" },
+  ],
+  blocks: [
+    { p: "One gray check means WhatsApp sent the message. Two gray checks mean the message reached the recipient’s phone or a linked device. Two blue checks indicate WhatsApp recorded a read receipt. A single badge next to the business name describes account verification, a separate signal." },
+    { h2: "Why two blue ticks may never appear" },
+    { p: "Read receipts can be unavailable because of privacy settings or because the conversation hasn’t been opened. WhatsApp also notes that a first message may not produce a read receipt. Use the message info screen when you need the status of a particular send. A missing read receipt has several possible explanations." },
+    { h2: "Pick the signal that matches your Shopify workflow" },
+    { ul: ["Order confirmation: use an explicit button or reply and match it to the intended Shopify order.", "Abandoned checkout: use Shopify’s completed order as the conversion signal and the checkout link as the next step.", "Shipping updates: track delivery status for troubleshooting, then use a reply to identify customers who need help.", "Review requests: use the submitted review as the outcome. Consider one eligible reminder if no review appears, according to your consent and messaging rules."] },
+    { h2: "An example from COD support" },
+    { p: "A shopper reads your COD confirmation at lunch and plans to answer later. If your automation treats the read receipt as approval, fulfillment can ship before the shopper confirms. Set up confirm and cancel options, route ambiguous replies to your team, and treat a missing reply according to your store’s review policy. See the [Shopify Flow WhatsApp guide](https://whatflow.io/blog/whatflow-shopify-flow-whatsapp-automation-guide) for a button-to-order example." },
+    { h2: "Keep delivery, replies, and sales separate in reporting" },
+    { p: "Compare delivered messages with eligible sends to spot delivery problems. Track replies or button clicks when you want engagement. Use completed Shopify orders when you want revenue. In WhatFlow, campaign delivery reports and the shared inbox help your team investigate those outcomes separately." },
+    { p: "Trying to get the badge next to your business name? Start with the [WhatsApp business badge guide for Shopify](https://whatflow.io/blog/whatsapp-blue-badge-for-shopify)." },
+  ],
+};
