@@ -1,0 +1,8 @@
+# WhatFlow campaign, commerce and Team Inbox content refresh
+
+This release extends the [product audit](../../engineering/product-capability-audit/2026-11-08.md) and [Team Inbox audit](../../engineering/product-capability-audit/team-inbox-2026-11-08.md) into reader-facing workflows.
+
+- Reviewed 125 blogs and 144 comparisons. Updated 62 existing blogs and 90 comparisons where a campaign, support, catalog, storefront or automation workflow helps answer the article's question. The other 117 articles were left unchanged. The article-level placement is recorded in [audit.json](audit.json).
+- Corrected six existing paragraphs that could be read as saying Shopify segment broadcasts aren't available. Shopify Admin launches broadcasts from selected customers or a Shopify segment; the Team Inbox builder uses spreadsheets and existing conversations. This does not promise continuous Shopify segment synchronization.
+- Published three new Safwan Adnan guides with WhatFlow demo screenshots and coordinated covers: [campaign setup](https://whatflow.tech/blog/whatflow-shopify-whatsapp-campaign-walkthrough), [Team Inbox triage](https://whatflow.tech/blog/whatflow-team-inbox-shopify-support-workflow), and [catalog to Shopify checkout](https://whatflow.tech/blog/whatflow-whatsapp-catalog-to-shopify-checkout). Sample messages and walkthrough orders are illustrative.
+- Existing URLs, bylines, cover assets and dates of original publication were preserved. Each comparison update has a new published revision; existing history is retained. Rehearsal verified foreign keys, unchanged non-content fields and an identical database state on repeat execution. All 155 prepared article bodies passed the site's RichText render check.

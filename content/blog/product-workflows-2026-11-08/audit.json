@@ -1,0 +1,1768 @@
+[
+  {
+    "kind": "posts",
+    "slug": "wholesale-b2b-enquiries-whatsapp",
+    "theme": "catalog",
+    "heading": "Option B: Shopify B2B",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-template-rejected-fixes",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-template-categories-marketing-utility",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-scams-impersonating-your-store",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-response-time-small-team",
+    "theme": "support",
+    "heading": "Why WhatsApp response time matters more than email",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-quality-rating-messaging-limits",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-opt-in-rate-measure",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-message-templates-shopify-examples",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-message-not-delivered-reasons",
+    "theme": "reporting",
+    "heading": "What about \"delivered but not read\"?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-message-frequency-ecommerce",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-marketing-shopify-guide",
+    "theme": "campaign",
+    "heading": "What is WhatsApp marketing for Shopify, exactly?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-marketing-metrics-shopify",
+    "theme": "reporting",
+    "heading": "Automations need their own metrics",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-links-qr-codes-store",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-green-tick-verified-business",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-gdpr-marketing-consent",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-for-furniture-home-stores",
+    "theme": "catalog",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-for-food-beverage-brands",
+    "theme": "catalog",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-for-fashion-stores",
+    "theme": "catalog",
+    "heading": "Share the product, not a wall of links",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-for-beauty-skincare-brands",
+    "theme": "catalog",
+    "heading": "Where's the line between product advice and medical advice?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-customer-service-etiquette",
+    "theme": "support",
+    "heading": "Timing: when to reply and when to start a conversation",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-conversations-content-ideas",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-channels-for-brands",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-business-app-to-api-migration",
+    "theme": "platform",
+    "heading": "A migration checklist for Shopify stores",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-business-api-pricing",
+    "theme": "reporting",
+    "heading": "How can a Shopify store keep WhatsApp costs down?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-broadcast-best-practices",
+    "theme": "campaign",
+    "heading": "Audience capability clarification",
+    "action": "clarified"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-away-messages-business-hours",
+    "theme": "saved",
+    "heading": "Then reply first thing",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-24-hour-customer-service-window",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "what-is-whatsapp-business-api",
+    "theme": "platform",
+    "heading": "How does a Shopify app connect to the WhatsApp Business API?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "vip-customers-whatsapp-shopify",
+    "theme": "retention",
+    "heading": "Audience capability clarification",
+    "action": "clarified"
+  },
+  {
+    "kind": "posts",
+    "slug": "validate-product-niche-customer-conversations",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "use-ai-small-shopify-business",
+    "theme": "saved",
+    "heading": "4. Drafting automations",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "trust-badges-shopify-what-works",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "subscription-churn-whatsapp-shopify",
+    "theme": "retention",
+    "heading": "Why do subscribers churn?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "start-shopify-store-first-30-days",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "shopify-vs-woocommerce-customer-messaging",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "shopify-vs-wix-ecommerce",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "shopify-seo-checklist-merchants",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "shopify-collection-page-seo",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "shopify-app-stack-audit",
+    "theme": "platform",
+    "heading": "Why does a lean Shopify app stack matter?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "selling-over-chat-sales-techniques",
+    "theme": "catalog",
+    "heading": "Why does selling on WhatsApp feel different from a product page?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "schema-markup-shopify-beginners",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "ramadan-eid-diwali-whatsapp-campaigns",
+    "theme": "campaign",
+    "heading": "Diwali campaigns: gifting, hampers and corporate orders",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "raise-prices-tell-customers",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "product-launch-whatsapp-waitlist",
+    "theme": "campaign",
+    "heading": "Launch day: be in the inbox",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "pre-order-updates-whatsapp-shopify",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "order-edits-address-changes-whatsapp",
+    "action": "unchanged",
+    "reason": "No suitable placement"
+  },
+  {
+    "kind": "posts",
+    "slug": "incentivized-reviews-rules",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "holiday-shipping-cutoff-messages",
+    "theme": "orders",
+    "heading": "Automate the post-cutoff order message with Shopify Flow",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "hire-first-customer-support-shopify",
+    "theme": "support",
+    "heading": "When is it time to hire customer support?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "high-ticket-products-whatsapp-sales",
+    "theme": "catalog",
+    "heading": "Why do you need a conversation to sell high-ticket products online?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "handle-angry-customer-whatsapp",
+    "action": "unchanged",
+    "reason": "No suitable placement"
+  },
+  {
+    "kind": "posts",
+    "slug": "first-black-friday-new-shopify-store",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "customer-survey-whatsapp-csat-nps",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "customer-service-playbook-shopify",
+    "theme": "support",
+    "heading": "Why write a support playbook at all?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "customer-photos-ugc-whatsapp",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "collect-whatsapp-opt-ins-shopify",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "click-to-whatsapp-ads-shopify",
+    "theme": "campaign",
+    "heading": "Inbox setup for ad campaigns",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "black-friday-whatsapp-playbook-shopify",
+    "theme": "campaign",
+    "heading": "Black Friday (Nov 27): the launch message",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "birthday-anniversary-messages-shopify",
+    "theme": "retention",
+    "heading": "What if a customer says you got the date wrong?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "back-in-stock-whatsapp-alerts-setup",
+    "action": "unchanged",
+    "reason": "No suitable placement"
+  },
+  {
+    "kind": "posts",
+    "slug": "ai-search-visibility-shopify-geo",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "add-whatsapp-chat-button-shopify",
+    "theme": "storefront",
+    "heading": "How to add a WhatsApp button to Shopify (step by step)",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "ab-test-whatsapp-messages-small-list",
+    "theme": "reporting",
+    "heading": "Why small-list A/B tests mislead you",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "migrating-whatflow-from-gadget-to-cloudflare",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "shopify-whatsapp-catalog-support",
+    "theme": "catalog",
+    "heading": "What is WhatsApp catalog sharing?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-returns-exchanges-shopify",
+    "theme": "orders",
+    "heading": "Write a returns policy your team can actually apply",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-shipping-delays-shopify",
+    "theme": "orders",
+    "heading": "Sample WhatsApp shipping delay messages",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "product-variant-review-context",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "influencer-campaign-small-store-plan",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "define-store-audience-brand-promise",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "choose-ecommerce-platform-customer-workflows",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "evaluate-shopify-app-workflow-connectors",
+    "theme": "automation",
+    "heading": "Check the trigger, exactly",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "dropshipping-customer-trust-communication",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "helpful-cross-sell-product-recommendations",
+    "theme": "catalog",
+    "heading": "What makes a cross-sell helpful instead of pushy?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "small-shopify-store-metrics-review-routine",
+    "theme": "reporting",
+    "heading": "Which Shopify store metrics actually matter each week?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "ai-support-drafts-small-shopify-team",
+    "theme": "saved",
+    "heading": "What AI support drafts are good for",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "choose-review-app-and-messaging-app-shopify",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "migrate-review-app-preserve-customer-feedback",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "multilingual-customer-messaging-shopify",
+    "theme": "saved",
+    "heading": "Plan who answers the replies",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "reuse-customer-reviews-social-media",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "customer-referral-messages-shopify",
+    "theme": "retention",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "loyalty-messages-customer-value-shopify",
+    "theme": "retention",
+    "heading": "Why most loyalty messages get ignored",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "qr-code-review-requests-product-packaging",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "maintain-shopify-blog-content-library",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "customer-review-insights-product-copy",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "write-useful-product-faqs-shopify",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "product-review-schema-rich-results-explained",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "shopify-content-plan-customer-questions",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "prepare-customer-support-black-friday-shopify",
+    "theme": "support",
+    "heading": "What does Black Friday do to a small store's inbox?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "choose-first-automation-shopify-small-team",
+    "theme": "platform",
+    "heading": "Good first automations for a small Shopify store",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "audit-shopify-app-costs-feature-gates-seat-fees",
+    "theme": "platform",
+    "heading": "Where WhatFlow fits in the audit",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "customer-service-saved-replies-without-robotic-tone",
+    "theme": "saved",
+    "heading": "Why saved replies sound robotic",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "shared-team-inbox-small-shopify-business",
+    "theme": "support",
+    "heading": "Why do shared inboxes still lose customers?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-customer-optouts-store-process",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-quick-reply-buttons-customer-choices",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-campaign-preflight-checklist",
+    "theme": "campaign",
+    "heading": "Copy this checklist into your campaign doc",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-message-budget-cost-per-outcome",
+    "theme": "reporting",
+    "heading": "A worked example: three flows, one budget",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-campaign-segmentation-shopify",
+    "theme": "campaign",
+    "heading": "Audience capability clarification",
+    "action": "clarified"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-marketing-plan-small-shopify-store",
+    "theme": "campaign",
+    "heading": "Step 2: Build an audience that opted in",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "coordinate-email-sms-whatsapp-customer-messages",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "customer-feedback-loop-product-improvements",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "customer-winback-campaign-shopify",
+    "theme": "retention",
+    "heading": "Should you send win-back campaigns on WhatsApp?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "replenishment-reminders-shopify-consumables",
+    "theme": "retention",
+    "heading": "Replenishment reminder examples",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "repeat-purchase-campaign-without-constant-discounts",
+    "theme": "retention",
+    "heading": "Start with the customer's next need",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "post-purchase-customer-journey-shopify",
+    "theme": "orders",
+    "heading": "Start with the customer's questions, not your campaigns",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "test-social-proof-product-page",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "mobile-store-review-widget-chat-button-layout",
+    "theme": "storefront",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "product-questions-whatsapp-prepurchase-support",
+    "theme": "catalog",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "reduce-cart-abandonment-with-clear-information",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "abandoned-checkout-whatsapp-conversation",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "shopify-product-page-trust-checklist",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "review-moderation-policy-small-store",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "review-collection-rate-measurement-shopify",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "product-reviews-vs-store-reviews",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "photo-video-reviews-customer-permission",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "respond-negative-product-reviews-shopify",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "review-request-messages-examples-whatsapp-email",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "best-time-review-request-after-delivery",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "collect-first-product-reviews-shopify",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "sidekick-shopify-flow-whatsapp-workflows",
+    "theme": "automation",
+    "heading": "How to write a Sidekick prompt for a WhatsApp workflow",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "shopify-flow-whatsapp-app-integrations",
+    "theme": "automation",
+    "heading": "How do Shopify Flow app integrations work?",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "send-whatsapp-templates-shopify-flow",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-incoming-messages-shopify-flow-routing",
+    "theme": "automation",
+    "heading": "Step 1: Use the WhatsApp Text Message Received trigger",
+    "action": "expanded"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatsapp-order-replies-shopify-flow-cod-confirmation",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "posts",
+    "slug": "whatflow-shopify-flow-whatsapp-automation-guide",
+    "theme": "automation",
+    "heading": "How does WhatsApp automation in Shopify Flow work?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-ca",
+    "theme": "catalog",
+    "heading": "How would I test it in a Shopify store?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-carthike",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-click2chat",
+    "theme": "catalog",
+    "heading": "How would I test it in a Shopify store?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-eaze-button",
+    "theme": "storefront",
+    "heading": "How would I test it in a Shopify store?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-kwikengage",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-moose",
+    "theme": "storefront",
+    "heading": "How would I test it in a Shopify store?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-reco",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-seedgrow",
+    "theme": "storefront",
+    "heading": "How would I test it in a Shopify store?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-squadkin",
+    "theme": "storefront",
+    "heading": "How would I test it in a Shopify store?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-wava",
+    "theme": "platform",
+    "heading": "How would I test it in a Shopify store?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-whachatcrm",
+    "theme": "support",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-whapi",
+    "theme": "support",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-whatomation",
+    "theme": "platform",
+    "heading": "How would I test it in a Shopify store?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-aitrillion",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-callbell",
+    "theme": "support",
+    "heading": "Is WhatFlow ready for a large team?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-clevertap",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-ctx",
+    "theme": "platform",
+    "heading": "WhatFlow vs Ctx at a glance",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-edesk",
+    "theme": "support",
+    "heading": "Is WhatFlow ready for a large team?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-getgabs",
+    "theme": "platform",
+    "heading": "WhatFlow vs Getgabs at a glance",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-haptik",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-kaleyra",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-kanal",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-kommunicate",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-kustomer",
+    "theme": "support",
+    "heading": "How much more does Kustomer cost for a large team?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-netcore",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-periskope",
+    "action": "unchanged",
+    "reason": "No suitable placement"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-reamaze",
+    "theme": "support",
+    "heading": "Is WhatFlow ready for a large support team?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-recart",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-retainful",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-richpanel",
+    "theme": "support",
+    "heading": "Can WhatFlow handle an enterprise support team?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-shopify-messaging",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-sprinklr",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-spur",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-superchat",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-wassenger",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-whatsapp-for-shopify-by-meta",
+    "action": "unchanged",
+    "reason": "No suitable placement"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-yellow-ai",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-zixflow",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-chat-automation-vs-business-api",
+    "theme": "platform",
+    "heading": "WhatFlow Chat Automation vs Business API at a glance",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-sleekflow",
+    "theme": "support",
+    "heading": "Team inbox: who can answer customers?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-trengo",
+    "theme": "support",
+    "heading": "Team inbox: who answers, and what does it cost?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-timelinesai",
+    "theme": "support",
+    "heading": "Team inbox: seats vs no seats",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-kommo",
+    "theme": "support",
+    "heading": "Team inbox: per-user CRM vs no seat fees",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-freshchat",
+    "theme": "support",
+    "heading": "What's the team inbox like day to day?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-zendesk",
+    "theme": "support",
+    "heading": "How much does Zendesk cost for WhatsApp support?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-intercom",
+    "theme": "support",
+    "heading": "What's the team inbox like?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-crisp",
+    "theme": "support",
+    "heading": "What's the team inbox like?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-chatwoot",
+    "theme": "support",
+    "heading": "How much does Chatwoot cost for a Shopify team?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-zoho-desk",
+    "theme": "support",
+    "heading": "How much does Zoho Desk cost for WhatsApp support?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-hubspot",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-front",
+    "theme": "support",
+    "heading": "How much does Front cost for WhatsApp support?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-help-scout",
+    "theme": "support",
+    "heading": "How much does Help Scout cost for WhatsApp support?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-livechat",
+    "theme": "support",
+    "heading": "What does the team inbox look like?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-jivochat",
+    "theme": "support",
+    "heading": "What does the team inbox look like?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-shopify-inbox",
+    "theme": "support",
+    "heading": "WhatFlow vs Shopify Inbox at a glance",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-omnisend",
+    "theme": "campaign",
+    "heading": "Audience capability clarification",
+    "action": "clarified"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-brevo",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-mailchimp",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-attentive",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-postscript",
+    "theme": "campaign",
+    "heading": "The inbox: where WhatsApp campaigns turn into sales",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-highlevel",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-pushowl",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-onesignal",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-sinch",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-vonage",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-plivo",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-telnyx",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-engati",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-botpress",
+    "theme": "automation",
+    "heading": "WhatFlow vs Botpress at a glance",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-landbot",
+    "theme": "automation",
+    "heading": "WhatFlow vs Landbot at a glance",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-chatfuel",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-rasayel",
+    "theme": "support",
+    "heading": "The team inbox, minus the per-seat bill",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-userlike",
+    "theme": "support",
+    "heading": "The storefront button and the inbox",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-saysimple",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-moengage",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-webengage",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-insider",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-braze",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-dondy",
+    "theme": "catalog",
+    "heading": "Which one handles Shopify automation better?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-chaty",
+    "theme": "storefront",
+    "heading": "What can WhatFlow automate that a widget can't?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-sms",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-email",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-mms",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-rcs",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-web-push",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-mobile-push",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-website-live-chat",
+    "theme": "support",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-instagram-dm",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-facebook-messenger",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-phone-calls",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-vs-telegram",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-business-platform-vs-channels",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "shopify-native-whatsapp-vs-external-dashboard",
+    "theme": "platform",
+    "heading": "Why does \"native\" matter so much for a Shopify store?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "shopify-flow-whatsapp-vs-zapier",
+    "theme": "automation",
+    "heading": "What does a WhatsApp automation cost in Flow vs Zapier?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "shopify-whatsapp-app-vs-custom-cloud-api",
+    "theme": "automation",
+    "heading": "What about Shopify automation?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "no-seat-fee-whatsapp-inbox-vs-per-seat",
+    "theme": "support",
+    "heading": "What do you get in the inbox?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "all-features-whatsapp-plans-vs-feature-gating",
+    "theme": "platform",
+    "heading": "What does \"all features on every plan\" mean at WhatFlow?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "free-whatsapp-button-vs-paid-chat-widget",
+    "theme": "storefront",
+    "heading": "What does WhatFlow's free button actually include?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "theme-matched-whatsapp-button-vs-floating-widget",
+    "theme": "storefront",
+    "heading": "What does a floating-only widget get wrong on mobile?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-cod-confirmation-vs-phone-calls",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-cod-confirmation-vs-sms",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-cod-confirmation-vs-email",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-cart-recovery-vs-email",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-cart-recovery-vs-sms",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-cart-recovery-vs-retargeting-ads",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-order-updates-vs-email",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-shipping-updates-vs-sms",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-back-in-stock-vs-email",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-review-requests-vs-email",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-segmented-broadcasts-vs-email-blasts",
+    "theme": "campaign",
+    "heading": "Audience capability clarification",
+    "action": "clarified"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "shared-whatsapp-inbox-vs-personal-phones",
+    "theme": "support",
+    "heading": "How a shared WhatsApp inbox fixes the handover",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-inbox-vs-helpdesk-tickets",
+    "theme": "support",
+    "heading": "Is WhatsApp support a ticket or a conversation?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "small-shopify-store-whatsapp-vs-enterprise-suite",
+    "theme": "platform",
+    "heading": "Shopify depth beats breadth",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "growing-shopify-team-whatsapp-vs-seat-upgrades",
+    "theme": "support",
+    "heading": "How a store's team actually grows",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "seasonal-shopify-whatsapp-vs-fixed-contract",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-volume-plans-vs-contact-pricing",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-free-plan-vs-free-trial",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-cod-rules-vs-confirmation-messages",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-automation-vs-manual-order-copying",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatsapp-customer-segments-vs-generic-bulk-sending",
+    "theme": "campaign",
+    "heading": "Audience capability clarification",
+    "action": "clarified"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-whatsapp-business-app",
+    "theme": "platform",
+    "heading": "What WhatFlow adds",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-bird",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-infobip",
+    "theme": "automation",
+    "heading": "Shopify workflows, ready to switch on",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-gupshup",
+    "theme": "automation",
+    "heading": "Enterprise-ready on the official API",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-doubletick",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-gallabox",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-360dialog",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-twilio",
+    "theme": "automation",
+    "heading": "Shopify Flow instead of custom code",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-manychat",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-respond-io",
+    "theme": "support",
+    "heading": "What about the team inbox?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-superlemon",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-charles",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-chatarmin",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-limechat",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-gorgias",
+    "theme": "support",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-tidio",
+    "theme": "support",
+    "heading": "What about AI answers?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-klaviyo",
+    "action": "unchanged",
+    "reason": "No new workflow needed for primary intent"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-delightchat",
+    "theme": "support",
+    "heading": "How much does DelightChat cost as your team grows?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-zoko",
+    "theme": "catalog",
+    "heading": "Which is better for selling from the catalog?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-aisensy",
+    "theme": "catalog",
+    "heading": "Which handles Shopify workflows better?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-quickreply",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-bitespeed",
+    "theme": "campaign",
+    "heading": "Do you need to move your whole marketing stack?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-interakt",
+    "theme": "catalog",
+    "heading": "Which handles Shopify COD and order replies better?",
+    "action": "expanded"
+  },
+  {
+    "kind": "comparisons",
+    "slug": "whatflow-vs-wati",
+    "theme": "campaign",
+    "heading": "Opening",
+    "action": "expanded"
+  }
+]
