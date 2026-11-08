@@ -77,6 +77,7 @@ export async function generateMetadata({ params }: IntegrationPageProps): Promis
   }
 
   return {
+    alternates: { canonical: `/integrations/${slug}` },
     title: `${item.name} WhatsApp Integration for Shopify | WhatFlow`,
     description: item.description,
   };

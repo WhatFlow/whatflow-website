@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy" },
   title: "Privacy Policy | WhatFlow",
   description: "Privacy Policy for WhatFlow WhatsApp marketing platform for Shopify merchants.",
 };

@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {writeFile} from 'node:fs/promises';
-const base = process.env.VERIFY_SITE_URL || 'https://whatflow.tech';
+const base = process.env.VERIFY_SITE_URL || 'https://whatflow.io';
 const userAgent = `WhatFlowCacheVerification/${Date.now()}`;
 const results = [];
 async function get(path, headers = {}, method = 'GET') {

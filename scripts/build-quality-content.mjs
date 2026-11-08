@@ -50,7 +50,7 @@ async function build(){
  for(const cover of covers){
   const {meta,body}=frontmatter(await readFile(`${root}/new-guides/${cover.slug}/${cover.slug}.md`,'utf8'));
   if(postBefore.some(p=>p.slug===cover.slug))throw Error('New slug exists');
-  const sources=[...new Map([...body.matchAll(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g)].filter(m=>!new URL(m[2]).hostname.endsWith('whatflow.tech')).map(m=>[m[2],{id:uid(cover.slug+m[2]),title:m[1],url:m[2],note:'Primary documentation checked October 27, 2026.'}])).values()];
+  const sources=[...new Map([...body.matchAll(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g)].filter(m=>!/(?:^|\.)whatflow\.(?:tech|io)$/.test(new URL(m[2]).hostname)).map(m=>[m[2],{id:uid(cover.slug+m[2]),title:m[1],url:m[2],note:'Primary documentation checked October 27, 2026.'}])).values()];
   posts.push({slug:cover.slug,title:meta.title,excerpt:meta.description,category:'guides',author:'Safwan Adnan',authorRole:'Co-founder and CEO of WhatFlow',publishedAt:now,reviewedAt:now,createdAt:now,updatedAt:now,status:'published',featured:false,coverImageUrl:cover.url,coverImageAlt:meta.og_image_alt,coverImageCaption:'Original WhatFlow illustrated guide cover.',content:markdownToLexical(body),seo:{metaTitle:meta.title,metaDescription:meta.description},tags:meta.tags.map(tag=>({id:uid(cover.slug+tag),tag})),faqs:[],sources});
  }
  const comparisons=[];
@@ -62,7 +62,7 @@ async function build(){
   const old=compBefore.find(d=>d.slug===key);if(!old)throw Error('Missing comparison');
   const doc=structuredClone(old);doc.title=meta.title;doc.excerpt=meta.description;doc.seo={...doc.seo,metaTitle:meta.title,metaDescription:meta.description};doc.content=markdownToLexical(body);doc.updatedAt=now;doc.reviewedAt=now;
   // Add newly verified citations while preserving existing source UUIDs/history.
-  for(const m of body.matchAll(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g))if(!new URL(m[2]).hostname.endsWith('whatflow.tech')&&!doc.sources.some(s=>s.url===m[2]))doc.sources.push({id:uid(key+m[2]),title:m[1],url:m[2],note:'Official provider documentation checked October 27, 2026.'});
+  for(const m of body.matchAll(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g))if(!/(?:^|\.)whatflow\.(?:tech|io)$/.test(new URL(m[2]).hostname)&&!doc.sources.some(s=>s.url===m[2]))doc.sources.push({id:uid(key+m[2]),title:m[1],url:m[2],note:'Official provider documentation checked October 27, 2026.'});
   const correction=overrides[key];
   if(correction){
    if(correction.verdict)doc.verdict=correction.verdict;

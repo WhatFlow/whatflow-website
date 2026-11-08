@@ -4,7 +4,7 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import sharp from 'sharp';
 const root='content/thumbnails-2026-10-25';
-const base=process.env.VERIFY_SITE_URL||'https://whatflow.tech';
+const base=process.env.VERIFY_SITE_URL||'https://whatflow.io';
 async function get(path){for(let attempt=0;;attempt++){try{const r=await fetch(new URL(path,base),{signal:AbortSignal.timeout(45000)});assert.equal(r.status,200,path);return r;}catch(e){if(attempt>=2)throw e;await new Promise(r=>setTimeout(r,2000));}}}
 async function collection(name){const docs=[];for(let page=1;;page++){const data=await(await get(`/api/${name}?limit=50&depth=0&page=${page}`)).json();docs.push(...data.docs);if(!data.hasNextPage)break;assert(data.docs.length);}return docs;}
 const groups=[{collection:'posts',route:'blog',root:'content/blog/thumbnails-2026-10-25',cover:'coverImageUrl',fields:['content','seo','coverImageUrl','coverImageAlt','coverImageCaption','reviewedAt'],preserved:['title','slug','author','authorRole','publishedAt','createdAt','faqs','sources','tags','status','category'],schema:'BlogPosting'},

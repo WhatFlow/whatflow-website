@@ -12,7 +12,7 @@ root = Path("content/engineering/demo-screenshot-coverage")
 manifest = json.loads((root / "capture-manifest.json").read_text())
 assets = {m["key"]: m for m in manifest}
 plan = json.loads((work / "plan.json").read_text())
-base = "https://whatflow.tech"
+base = "https://whatflow.io"
 def fetch(path):
     return subprocess.check_output(
         ["curl", "-fsS", "--retry", "2", "--max-time", "35", "-H", "Cache-Control: no-cache", base + path]

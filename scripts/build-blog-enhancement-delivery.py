@@ -30,7 +30,7 @@ def escape(text):
 def safe_url(url):
     url = str(url or '')
     if url.startswith('/') and not url.startswith('//'):
-        return 'https://whatflow.tech' + url
+        return 'https://whatflow.io' + url
     if urlsplit(url).scheme not in {'https', 'http', 'mailto', 'tel'} and not url.startswith('#'):
         raise ValueError('Unsupported link URL: ' + url)
     return url.replace(' ', '%20').replace('(', '%28').replace(')', '%29')
@@ -50,7 +50,7 @@ class Exporter:
         source = self.asset_map.get(str(url))
         if source:
             source = Path(source).resolve()
-        elif not parsed.scheme or parsed.hostname in {'whatflow.tech', 'www.whatflow.tech'}:
+        elif not parsed.scheme or parsed.hostname in {'whatflow.io', 'whatflow.io'}:
             source = (REPO / 'public' / unquote(parsed.path).lstrip('/')).resolve()
             if not source.is_relative_to((REPO / 'public').resolve()):
                 raise ValueError('Asset escapes public root')
@@ -156,7 +156,7 @@ class Exporter:
             'title': doc['title'], 'description': seo.get('metaDescription') or doc.get('excerpt', ''),
             'date': str(doc.get('publishedAt') or doc.get('createdAt', ''))[:10],
             'lastUpdated': doc.get('updatedAt', ''), 'author': doc.get('author', ''),
-            'authorRole': doc.get('authorRole', ''), 'canonical': 'https://whatflow.tech/blog/' + doc['slug'],
+            'authorRole': doc.get('authorRole', ''), 'canonical': 'https://whatflow.io/blog/' + doc['slug'],
             'slug': doc['slug'], 'site_name': 'WhatFlow', 'lang': 'en',
             'og_image_alt': doc.get('coverImageAlt') or doc['title'],
             'reviewedAt': doc.get('reviewedAt', ''), 'category': doc.get('category', ''),
@@ -166,7 +166,7 @@ class Exporter:
         tags = [item.get('tag', '') if isinstance(item, dict) else str(item) for item in doc.get('tags', [])]
         if tags: fm += '\ntags:\n' + '\n'.join('  - ' + quoted(tag) for tag in tags)
         body = self.node(doc['content']['root'])
-        body += '\n<script type="application/ld+json">' + json.dumps({'@context':'https://schema.org','@type':'Organization','name':'WhatFlow','url':'https://whatflow.tech'}) + '</script>\n\n'
+        body += '\n<script type="application/ld+json">' + json.dumps({'@context':'https://schema.org','@type':'Organization','name':'WhatFlow','url':'https://whatflow.io'}) + '</script>\n\n'
         if doc.get('faqs'):
             body += '## Frequently asked questions\n\n'
             for faq in doc['faqs']:

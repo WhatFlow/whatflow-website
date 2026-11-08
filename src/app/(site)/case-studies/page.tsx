@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getCaseStudies, formatDate, INDUSTRY_LABELS, APP_LABELS, type CaseStudy } from "@/lib/payload-api";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/case-studies" },
   title: "Case Studies — WhatFlow",
   description:
     "Real results from Shopify merchants using WhatFlow. See how stores recover abandoned carts, increase conversions, and delight customers with WhatsApp automation.",

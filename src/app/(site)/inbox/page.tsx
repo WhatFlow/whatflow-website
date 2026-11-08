@@ -18,6 +18,7 @@ import { InboxCTA } from "@/components/inbox-page/InboxCTA";
 import { ReviewsSection } from "@/components/ReviewsSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/inbox" },
   title: "WhatFlow Inbox — Enterprise-Ready WhatsApp Support for Shopify",
   description:
     "An enterprise-ready WhatsApp team inbox built for Shopify. Native extensions, customer order context, all features on every plan and no seat fees.",

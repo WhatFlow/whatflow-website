@@ -9,7 +9,7 @@ from pathlib import Path
 
 w = Path(os.environ["WORKFLOW_PUBLICATION_WORK"])
 root = Path(os.environ.get("WORKFLOW_PUBLICATION_ROOT", "content/blog/product-workflows-2026-11-08"))
-base = "https://whatflow.tech"
+base = "https://whatflow.io"
 def read(name):
     return json.loads((w / (name + ".json")).read_text())
 def fetch(path):

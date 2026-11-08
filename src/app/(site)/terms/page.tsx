@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms" },
   title: "Terms of Service | WhatFlow",
   description: "Terms of Service and Subscription Agreement for WhatFlow Shopify merchants.",
 };

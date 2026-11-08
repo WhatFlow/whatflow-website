@@ -2,7 +2,7 @@
 import {readFile,writeFile}from'node:fs/promises';
 import assert from'node:assert/strict';
 import {createHash}from'node:crypto';
-const root='content/library-quality-2026-10-27',origin='https://whatflow.tech';
+const root='content/library-quality-2026-10-27',origin='https://whatflow.io';
 const stable=v=>Array.isArray(v)?v.map(stable):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])])):v;
 // Payload applies the collection's documented screenshot defaults on reads.
 const defaults=v=>Array.isArray(v)?v.map(defaults):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,k==='relatedComparisons'&&Array.isArray(x)?x.map(d=>d&&typeof d==='object'?d.id:d):defaults(k==='fields'&&v.type==='block'&&x.blockType==='screenshot'?{width:1440,height:900,...x}:x)])):v;

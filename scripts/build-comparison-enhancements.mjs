@@ -40,7 +40,7 @@ for(const d of docs){
  const requested=[...e.contextualLinks,...e.sourceLinks,...(e.blogLink?[e.blogLink]:[])];
  for(const l of requested){
   if(!headings.has(l.afterHeading))throw Error(`${d.slug}: unknown heading ${l.afterHeading}`);
-  let url=l.url;if(url?.startsWith('https://whatflow.tech/'))url=url.slice('https://whatflow.tech'.length);
+  let url=l.url;if(/^https:\/\/(?:whatflow\.io|whatflow\.tech)\//.test(url||''))url=new URL(url).pathname+new URL(url).search+new URL(url).hash;
   if(l.slug&&!url){if(!docs.some(p=>p.slug===l.slug))throw Error('Missing comparison '+l.slug);url=`/compare/${l.slug}`;}
   if(url?.startsWith('/blog/')&&!blogDocs.some(p=>url===`/blog/${p.slug}`))throw Error('Missing blog '+url);
   if(!url)throw Error('Missing link URL');

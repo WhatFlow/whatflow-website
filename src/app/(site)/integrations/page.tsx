@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getIntegrations, INTEGRATION_CATEGORY_LABELS, type Integration } from "@/lib/payload-api";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/integrations" },
   title: "Integrations & Shopify App Ecosystem | WhatFlow",
   description: "Connect WhatFlow with Shopify Flow, Judge.me, Klaviyo, Gorgias, Loox, and your favorite eCommerce tools.",
 };

@@ -3,7 +3,7 @@ import {spawn} from 'node:child_process';
 import {writeFile} from 'node:fs/promises';
 import {randomUUID} from 'node:crypto';
 import assert from 'node:assert/strict';
-const base = process.env.VERIFY_SITE_URL || 'https://whatflow.tech';
+const base = process.env.VERIFY_SITE_URL || 'https://whatflow.io';
 const probe = randomUUID();
 const tail = spawn(process.execPath, ['node_modules/wrangler/bin/wrangler.js','tail','whatflow','--format','json','--header',`x-whatflow-schema-probe:${probe}`], {stdio:['ignore','pipe','pipe']});
 let output = '', diagnostic = '';

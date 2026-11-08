@@ -8,7 +8,7 @@ spec=importlib.util.spec_from_file_location('native_export',Path(__file__).with_
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 class ComparisonExporter(module.Exporter):
  def document(self,d):
-  metadata={'title':d['title'],'description':d.get('seo',{}).get('metaDescription') or d['excerpt'],'date':d['publishedAt'][:10],'lastUpdated':d['updatedAt'],'author':d['author'],'authorRole':d['authorRole'],'canonical':'https://whatflow.tech/compare/'+d['slug'],'slug':d['slug'],'site_name':'WhatFlow','lang':'en','og_image_alt':d['imageAlt'],'category':d['category']}
+  metadata={'title':d['title'],'description':d.get('seo',{}).get('metaDescription') or d['excerpt'],'date':d['publishedAt'][:10],'lastUpdated':d['updatedAt'],'author':d['author'],'authorRole':d['authorRole'],'canonical':'https://whatflow.io/compare/'+d['slug'],'slug':d['slug'],'site_name':'WhatFlow','lang':'en','og_image_alt':d['imageAlt'],'category':d['category']}
   fm='\n'.join(k+': '+module.quoted(v) for k,v in metadata.items())
   body='## The short answer\n\n'+module.escape(d['verdict'])+'\n\nPublisher disclosure: this comparison is written by WhatFlow. Competitor capabilities are based on linked public documentation. Screenshots show our demo store and examples are illustrative.\n\n'
   hero=self.asset(d.get('imageUrl') or (d.get('coverImage') or {}).get('url'),hero=True)
@@ -25,7 +25,7 @@ class ComparisonExporter(module.Exporter):
   body+='## Sources and methodology\n\nVendor pages describe advertised capabilities, not independent performance tests. Confirm current pricing, allowances and availability with the provider. Sources checked '+d['reviewedAt'][:10]+'.\n\n'
   for s in d['sources']:body+='- ['+module.escape(s['title'])+']('+module.safe_url(s['url'])+')'+(': '+module.escape(s['note']) if s.get('note') else '')+'\n'
   if d.get('cta',{}).get('heading'):
-   c=d['cta'];body+='\n## '+module.escape(c['heading'])+'\n\n'+module.escape(c.get('description',''))+'\n\n['+module.escape(c.get('label','Explore WhatFlow'))+'](https://apps.shopify.com/whatflow-official-api)\n\n[Current WhatFlow pricing](https://whatflow.tech/pricing) · [WhatFlow features](https://whatflow.tech/features)\n'
+   c=d['cta'];body+='\n## '+module.escape(c['heading'])+'\n\n'+module.escape(c.get('description',''))+'\n\n['+module.escape(c.get('label','Explore WhatFlow'))+'](https://apps.shopify.com/whatflow-official-api)\n\n[Current WhatFlow pricing](https://whatflow.io/pricing) · [WhatFlow features](https://whatflow.io/features)\n'
   (self.directory/(d['slug']+'.md')).write_text('---\n'+fm+'\n---\n\n'+body.rstrip()+'\n')
   if hero:(self.directory/'hero-credit.txt').write_text(d.get('imageCaption','Existing owned WhatFlow demo screenshot')+'\nSource: '+d.get('imageUrl','')+'\n')
   return hero

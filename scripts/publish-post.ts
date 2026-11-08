@@ -46,7 +46,7 @@ function inline(src: string): unknown[] {
   for (const m of src.matchAll(re)) {
     if (m.index! > last) out.push(text(src.slice(last, m.index)));
     if (m[1] !== undefined) out.push(text(m[1], 1));
-    else out.push({ ...base, type: "link", fields: { linkType: "custom", url: m[3], newTab: !m[3].startsWith("https://whatflow.tech") }, children: [text(m[2])] });
+    else out.push({ ...base, type: "link", fields: { linkType: "custom", url: m[3], newTab: !m[3].startsWith("https://whatflow.io") }, children: [text(m[2])] });
     last = m.index! + m[0].length;
   }
   if (last < src.length) out.push(text(src.slice(last)));

@@ -5,7 +5,7 @@ const root=process.env.COMPARISON_ENHANCEMENT_ROOT||'content/comparisons/enhance
 const candidates=JSON.parse(await readFile(root+'/candidate-documents.json'));
 const before=JSON.parse(await readFile(root+'/source-documents.json'));
 const protectedBlogs=JSON.parse(await readFile(root+'/protected-blog-hashes.json'));
-const base=process.env.VERIFY_SITE_URL||'https://whatflow.tech';
+const base=process.env.VERIFY_SITE_URL||'https://whatflow.io';
 const get=async path=>{for(let n=0;n<3;n++){try{const r=await fetch(base+path,{signal:AbortSignal.timeout(45000)});assert.equal(r.status,200,path);return r;}catch(e){if(n===2)throw e;}}};
 const docs=[];for(let page=1;;page++){const j=await(await get(`/api/comparisons?limit=100&depth=0&page=${page}`)).json();docs.push(...j.docs);if(!j.hasNextPage)break;}
 assert.equal(docs.length,106);

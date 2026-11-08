@@ -23,6 +23,7 @@ import { ReviewsSection } from "@/components/ReviewsSection";
 import { LatestUpdates } from "@/components/LatestUpdates";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/features" },
   title: "WhatFlow Features — 11+ Automations, 2-Way Inbox & Shopify Functions",
   description:
     "Explore WhatFlow's full suite: 6 core order automations, 3-stage cart recovery, 11-step shipping alerts, Shopify Functions COD engine, 2-way live chat, and native Shopify Flow triggers.",

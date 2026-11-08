@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: CaseStudyPageProps): Promise<
   const description = study.seo?.metaDescription || study.excerpt;
 
   return {
+    alternates: { canonical: `/case-studies/${slug}` },
     title,
     description,
     openGraph: {

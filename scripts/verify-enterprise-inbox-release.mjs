@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile, writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const root = 'content/inbox-enterprise-2026-10-26';
-const base = process.env.VERIFY_SITE_URL || 'https://whatflow.tech';
+const base = process.env.VERIFY_SITE_URL || 'https://whatflow.io';
 const digest = value => createHash('sha256').update(value).digest('hex');
 function sorted(value) {return Array.isArray(value) ? value.map(sorted) : value && typeof value === 'object' ? Object.fromEntries(Object.keys(value).sort().map(k => [k, sorted(value[k])])) : value;}
 const escape = s => s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#x27;');

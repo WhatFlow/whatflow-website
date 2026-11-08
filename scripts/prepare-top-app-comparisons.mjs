@@ -23,7 +23,7 @@ const shots={
  pricing:['blog-shopify-flow-whatflow-flow-actions-more.jpg','WhatFlow messaging actions in Shopify Flow','WhatFlow actions available from the Shopify Flow editor.'],
  shipping:['blog-enhancement-whatflow-template-editor.webp','WhatFlow Business API template editor','Example template editor in the Shopify demo store.'],
 };
-const wfPrice={title:'WhatFlow plans and messaging charges',url:'https://whatflow.tech/pricing',note:'App allowance and overage pricing; Meta charges are separate.'};
+const wfPrice={title:'WhatFlow plans and messaging charges',url:'https://whatflow.io/pricing',note:'App allowance and overage pricing; Meta charges are separate.'};
 const wfListing={title:'WhatFlow WhatsApp Business API on Shopify',url:'https://apps.shopify.com/whatflow-official-api',note:'Official API, listed capabilities and Shopify app pricing.'};
 const budget={
  whachatcrm:'With three support staff and 40 active contacts, WhachatCRM’s free user cap is the first limit you’ll hit. Price the shared inbox on Pro. With WhatFlow you can invite all three on Free and price outbound sends separately.',

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/security" },
   title: "Security & Compliance | WhatFlow",
   description: "Enterprise security, GDPR compliance, encryption, and Meta Cloud API infrastructure at WhatFlow.",
 };

@@ -97,7 +97,7 @@ for(const f of await listMarkdown(root+'/new')){
  sql.push(`INSERT INTO posts (${Object.keys(row).join(',')},cover_image_id) SELECT ${Object.values(row).map(q).join(',')},(SELECT id FROM media WHERE filename=${q(cover.filename)}) WHERE NOT EXISTS(SELECT 1 FROM posts WHERE slug=${q(slug)});`);
  const parent=`(SELECT id FROM posts WHERE slug=${q(slug)} AND created_at=${q(now)})`;
  const sources=[
-  {title:'WhatFlow release history',url:'https://whatflow.tech/changelog',note:'Verified features and product release notes.'},
+  {title:'WhatFlow release history',url:'https://whatflow.io/changelog',note:'Verified features and product release notes.'},
   {title:'WhatFlow Business API on Shopify',url:'https://apps.shopify.com/whatflow-official-api',note:'App listing and plan details.'},
   {title:'WhatsApp Business Messaging Policy',url:'https://business.whatsapp.com/policy',note:'Requirements for sending WhatsApp messages.'},
  ];
