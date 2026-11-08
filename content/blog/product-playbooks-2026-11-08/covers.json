@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "whatflow-whatsapp-broadcast-failure-retry",
+    "filename": "blog-whatflow-whatsapp-broadcast-failure-retry.webp",
+    "path": "content/blog/product-playbooks-2026-11-08/covers/blog-whatflow-whatsapp-broadcast-failure-retry.webp",
+    "bytes": 30714,
+    "sha256": "772cf4a23a9beedbaaf77958360e5dd1b9377639e77eee19703c294c7a96b9e4",
+    "width": 1200,
+    "height": 630,
+    "alt": "Fix Failed WhatsApp Broadcasts in WhatFlow — WhatFlow guide cover"
+  },
+  {
+    "slug": "whatflow-whatsapp-product-launch-reply-playbook",
+    "filename": "blog-whatflow-whatsapp-product-launch-reply-playbook.webp",
+    "path": "content/blog/product-playbooks-2026-11-08/covers/blog-whatflow-whatsapp-product-launch-reply-playbook.webp",
+    "bytes": 29024,
+    "sha256": "a90fa830a2f374efdf23bcbf82c408ddec8076c27596d0dd1233c7de64c11910",
+    "width": 1200,
+    "height": 630,
+    "alt": "Handle WhatsApp Replies During a Shopify Product Launch — WhatFlow guide cover"
+  },
+  {
+    "slug": "whatflow-api-triggered-inbox-workflow",
+    "filename": "blog-whatflow-api-triggered-inbox-workflow.webp",
+    "path": "content/blog/product-playbooks-2026-11-08/covers/blog-whatflow-api-triggered-inbox-workflow.webp",
+    "bytes": 32176,
+    "sha256": "e8c450f13aa241a2cdabea2fc3212b6cedb0c7301bc215f12e6a3a5b19fe13c6",
+    "width": 1200,
+    "height": 630,
+    "alt": "Build an API-Triggered WhatsApp Workflow in WhatFlow — WhatFlow guide cover"
+  },
+  {
+    "slug": "whatflow-team-inbox-signed-webhooks",
+    "filename": "blog-whatflow-team-inbox-signed-webhooks.webp",
+    "path": "content/blog/product-playbooks-2026-11-08/covers/blog-whatflow-team-inbox-signed-webhooks.webp",
+    "bytes": 30444,
+    "sha256": "3a7d2a1d0e1e9341b392b4efe5770b2fe2b021c23fb4f554a3d9c7313b805b30",
+    "width": 1200,
+    "height": 630,
+    "alt": "Connect WhatFlow Inbox Events with Signed Webhooks — WhatFlow guide cover"
+  },
+  {
+    "slug": "whatflow-whatsapp-campaign-spreadsheet-mapping",
+    "filename": "blog-whatflow-whatsapp-campaign-spreadsheet-mapping.webp",
+    "path": "content/blog/product-playbooks-2026-11-08/covers/blog-whatflow-whatsapp-campaign-spreadsheet-mapping.webp",
+    "bytes": 32442,
+    "sha256": "f73c32fc8e6ba865ea99e218412af630c3808eac9d9978dc9bc79506245bd033",
+    "width": 1200,
+    "height": 630,
+    "alt": "Map a CSV or Excel Audience to a WhatsApp Template — WhatFlow guide cover"
+  }
+]

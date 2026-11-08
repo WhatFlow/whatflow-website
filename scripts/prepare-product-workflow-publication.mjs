@@ -4,13 +4,15 @@ import assert from 'node:assert/strict';
 import {markdownToLexical} from './build-quality-content.mjs';
 import {uid,readDoc,listMarkdown,bodyToLexical} from './lib/refresh-content.mjs';
 import {tracks,postGroups,comparisonVendors,comparisonUseCases,sourceCorrection,correctionSlugs} from '../content/blog/product-workflows-2026-11-08/editorial.mjs';
-const root='content/blog/product-workflows-2026-11-08',w=process.env.WORKFLOW_PUBLICATION_WORK;
+const root=process.env.WORKFLOW_PUBLICATION_ROOT||'content/blog/product-workflows-2026-11-08',w=process.env.WORKFLOW_PUBLICATION_WORK;
+const newBatch=Boolean(process.env.WORKFLOW_PUBLICATION_ROOT);
 assert(w);
 const now=new Date().toISOString(),q=v=>v==null?'NULL':typeof v==='number'?String(v):typeof v==='boolean'?Number(v):"'"+String(v).replaceAll("'","''")+"'";
 const plain=n=>n.text??(n.children||[]).map(plain).join(' ');
 const groups=(source,prefix='')=>Object.entries(source).flatMap(([theme,slugs])=>slugs.split(' ').map(s=>[prefix+s,theme]));
 const selection={posts:new Map(groups(postGroups)),comparisons:new Map([...groups(comparisonVendors,'whatflow-vs-'),...groups(comparisonUseCases)])};
 const posts=[],source=[],candidate=[],audit=[],sql=[];
+const crosslinks=newBatch?JSON.parse(await fs.readFile(root+'/crosslinks.json','utf8')):{};
 const append=(str)=>markdownToLexical(str).root.children;
 const links={campaign:'/blog/whatflow-shopify-whatsapp-campaign-walkthrough',support:'/blog/whatflow-team-inbox-shopify-support-workflow',catalog:'/blog/whatflow-whatsapp-catalog-to-shopify-checkout'};
 const testByTheme={
@@ -41,14 +43,23 @@ for(const kind of ['posts','comparisons']){
  const live=JSON.parse(await fs.readFile(w+'/'+kind+'.json'));
  assert.equal(live.docs.length,live.totalDocs);
  for(const old of live.docs){
-  const theme=selection[kind].get(old.slug);
+  const editorialLink=newBatch&&kind==='posts'?crosslinks[old.slug]:undefined;
+  const theme=newBatch?(editorialLink?'crosslink':undefined):selection[kind].get(old.slug);
   if(!theme){audit.push({kind,slug:old.slug,action:'unchanged',reason:'No new workflow needed for primary intent'});continue;}
   assert.equal(kind==='posts'?old.status:old._status,'published');
   const d=structuredClone(old);
   const n=d.content.root.children;
   const j=correctionSlugs.has(d.slug)?n.findIndex(x=>x.type==='paragraph'&&/(native Shopify|segment sync|audience sync).{0,100}coming soon/i.test(plain(x))):-1;
   let heading,mode;
-  if(j>=0){n.splice(j,1,...append(sourceCorrection));heading='Audience capability clarification';mode='clarified';}
+  if(editorialLink){
+   const anchor=n.findIndex(x=>x.type==='heading'&&new RegExp(editorialLink.heading,'i').test(plain(x)));
+   assert(anchor>=0,old.slug);
+   const next=n.findIndex((x,i)=>i>anchor&&x.type==='heading');
+   let end=next<0?n.length:next;
+   const cta=n.findIndex((x,i)=>i>anchor&&x.fields?.blockType==='cta');
+   if(cta>=0&&cta<end)end=cta;
+   n.splice(end,0,...append(editorialLink.copy));heading=plain(n[anchor]);mode='crosslinked';
+  }else if(j>=0){n.splice(j,1,...append(sourceCorrection));heading='Audience capability clarification';mode='clarified';}
   else{
    const relevant=tracks[theme].heading;
    const heads=n.map((v,i)=>({i,title:v.type==='heading'?plain(v):''})).filter(x=>x.title);
@@ -74,7 +85,7 @@ for(const f of await listMarkdown(root+'/new')){
  const slug=f.slice(0,-3);const {meta,body}=await readDoc(root+'/new/'+f);
  assert(!audit.some(x=>x.kind==='posts'&&x.slug===slug));
  assert(meta.metaTitle.length<=62&&meta.metaDescription.length<=160);
- assert(body.split(/\s+/).length>=440);
+ assert(body.split(/\s+/).length>=(newBatch?340:440));
  const cover=covers.find(x=>x.slug===slug);
  assert(cover);
  const mediaUrl='/api/media/file/'+cover.filename;

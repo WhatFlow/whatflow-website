@@ -8,7 +8,7 @@ import subprocess
 from pathlib import Path
 
 w = Path(os.environ["WORKFLOW_PUBLICATION_WORK"])
-root = Path("content/blog/product-workflows-2026-11-08")
+root = Path(os.environ.get("WORKFLOW_PUBLICATION_ROOT", "content/blog/product-workflows-2026-11-08"))
 base = "https://whatflow.tech"
 def read(name):
     return json.loads((w / (name + ".json")).read_text())
