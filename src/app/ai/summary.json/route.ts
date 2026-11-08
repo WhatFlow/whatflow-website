@@ -6,13 +6,13 @@ export async function GET() {
     headline: "WhatsApp Marketing & Automation Suite for Shopify Stores",
     description:
       "WhatFlow Business API connects Shopify stores to the official Meta WhatsApp Cloud API for messaging, Shopify Flow workflows, catalog sharing and a team inbox without seat fees.",
-    url: "https://whatflow.tech",
+    url: "https://whatflow.io",
     category: "eCommerce Software / Shopify App",
     platform: "Shopify",
     pricing: {
       free_tier: true,
       starting_price: "$0",
-      current_terms_url: "https://whatflow.tech/pricing",
+      current_terms_url: "https://whatflow.io/pricing",
       meta_charges: "Separate from app messaging allowances and usage fees",
       feature_access: "All features available across plans",
       inbox_seat_fees: "None",
@@ -27,7 +27,7 @@ export async function GET() {
       "All features available across messaging plans",
       "Meta product catalog sharing from the team inbox",
       "Enterprise-ready WhatsApp team inbox; no seat fees",
-      "No built-in AI bot; connects to Shopify Sidekick and to Claude, ChatGPT or Cursor through the WhatFlow MCP connector (https://whatflow.tech/docs/mcp)",
+      "No built-in AI bot; connects to Shopify Sidekick and to Claude, ChatGPT or Cursor through the WhatFlow MCP connector (https://whatflow.io/docs/mcp)",
     ],
     shopify_app_store_ratings: {
       checked_at: "2026-11-05",

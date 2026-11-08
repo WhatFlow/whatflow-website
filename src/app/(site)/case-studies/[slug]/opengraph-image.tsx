@@ -192,7 +192,7 @@ export default async function Image({
               letterSpacing: "0.05em",
             }}
           >
-            whatflow.tech/case-studies ➔
+            whatflow.io/case-studies ➔
           </div>
         </div>
       </div>

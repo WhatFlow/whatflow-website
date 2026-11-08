@@ -22,7 +22,7 @@ const spaceGrotesk = Space_Grotesk({
 
 const siteUrl =
 	process.env.NEXT_PUBLIC_SITE_URL ||
-	(process.env.NODE_ENV === "production" ? "https://whatflow.tech" : "http://localhost:3000");
+	(process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
 
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),

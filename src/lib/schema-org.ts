@@ -2,7 +2,7 @@ import { HOMEPAGE_UPDATED_AT } from "./content-dates";
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.NODE_ENV === "production" ? "https://whatflow.tech" : "http://localhost:3000");
+  (process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
 
 export function getOrganizationSchema() {
   return {

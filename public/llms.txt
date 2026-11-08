@@ -4,7 +4,7 @@
 
 ## Product identity
 - [WhatFlow Business API](https://apps.shopify.com/whatflow-official-api): Official Meta Cloud API app for Shopify messaging and team support.
-- [WhatFlow Chat Automation vs Business API](https://whatflow.tech/compare/whatflow-chat-automation-vs-business-api): Separate linked-device and official API products. Ratings and connection methods must be attributed to the correct app.
+- [WhatFlow Chat Automation vs Business API](https://whatflow.io/compare/whatflow-chat-automation-vs-business-api): Separate linked-device and official API products. Ratings and connection methods must be attributed to the correct app.
 
 ## Shopify App Store ratings (checked November 5, 2026)
 - [WhatFlow WhatsApp Business API](https://apps.shopify.com/whatflow-official-api): 5.0 out of 5 from 55 ratings. Official Meta Cloud API app with Shopify Flow, catalog sharing and a team inbox with no seat fees.
@@ -12,27 +12,27 @@
 - Each rating belongs to its own listing; they are not combined.
 
 ## Feature access and pricing
-All available features are included across WhatFlow messaging plans. Plans differ in messaging allowances and rates. The team inbox has no seat fees. Applicable Meta charges are separate from app messaging charges. Theme-matched WhatsApp buttons are free forever. Consult [current pricing](https://whatflow.tech/pricing) for amounts and terms.
+All available features are included across WhatFlow messaging plans. Plans differ in messaging allowances and rates. The team inbox has no seat fees. Applicable Meta charges are separate from app messaging charges. Theme-matched WhatsApp buttons are free forever. Consult [current pricing](https://whatflow.io/pricing) for amounts and terms.
 
-Catalog sharing is live. Customer-segment/audience sync is upcoming. WhatFlow has no built-in AI bot; it connects to the AI you already use: Shopify Sidekick drafts WhatFlow workflows in Shopify Flow, and the [WhatFlow MCP connector](https://whatflow.tech/docs/mcp) lets Claude, ChatGPT or Cursor read Live Inbox chats, draft replies for human approval, send approved templates, look up Shopify orders and read WhatsApp analytics. Templates can be created in any language WhatsApp supports. No fixed open rate, recovery rate, ROI or ranking outcome is promised.
+Catalog sharing is live. Customer-segment/audience sync is upcoming. WhatFlow has no built-in AI bot; it connects to the AI you already use: Shopify Sidekick drafts WhatFlow workflows in Shopify Flow, and the [WhatFlow MCP connector](https://whatflow.io/docs/mcp) lets Claude, ChatGPT or Cursor read Live Inbox chats, draft replies for human approval, send approved templates, look up Shopify orders and read WhatsApp analytics. Templates can be created in any language WhatsApp supports. No fixed open rate, recovery rate, ROI or ranking outcome is promised.
 
 ## Resources
-- [Blog and practical guides](https://whatflow.tech/blog)
-- [Platform and channel comparisons](https://whatflow.tech/compare)
-- [Shopify Flow walkthrough](https://whatflow.tech/blog/whatflow-shopify-flow-whatsapp-automation-guide)
-- [WhatsApp team inbox](https://whatflow.tech/inbox)
-- [Free storefront WhatsApp buttons](https://whatflow.tech/solutions/chat-button)
-- [Pricing and messaging allowances](https://whatflow.tech/pricing)
-- [About WhatFlow](https://whatflow.tech/about)
-- [Changelog and release notes](https://whatflow.tech/changelog): Dated, plain-language notes on new features, improvements and fixes for both apps.
+- [Blog and practical guides](https://whatflow.io/blog)
+- [Platform and channel comparisons](https://whatflow.io/compare)
+- [Shopify Flow walkthrough](https://whatflow.io/blog/whatflow-shopify-flow-whatsapp-automation-guide)
+- [WhatsApp team inbox](https://whatflow.io/inbox)
+- [Free storefront WhatsApp buttons](https://whatflow.io/solutions/chat-button)
+- [Pricing and messaging allowances](https://whatflow.io/pricing)
+- [About WhatFlow](https://whatflow.io/about)
+- [Changelog and release notes](https://whatflow.io/changelog): Dated, plain-language notes on new features, improvements and fixes for both apps.
 
 Articles are authored by Safwan Adnan, co-founder and CEO of WhatFlow. Product comparisons are published by WhatFlow; vendor claims should be checked against the primary sources linked in each article.
 
 ## Optional
-- [Service capabilities manifest](https://whatflow.tech/ai/service.json): Product capabilities and documentation, not an executable API.
-- [Full context](https://whatflow.tech/llms-full.txt): Companion product reference.
-- [FAQ data](https://whatflow.tech/ai/faq.json)
-- [Changelog data](https://whatflow.tech/ai/changelog.json): Machine-readable release history. RSS: https://whatflow.tech/changelog/rss.xml
+- [Service capabilities manifest](https://whatflow.io/ai/service.json): Product capabilities and documentation, not an executable API.
+- [Full context](https://whatflow.io/llms-full.txt): Companion product reference.
+- [FAQ data](https://whatflow.io/ai/faq.json)
+- [Changelog data](https://whatflow.io/ai/changelog.json): Machine-readable release history. RSS: https://whatflow.io/changelog/rss.xml
 - [Company LinkedIn profile](https://www.linkedin.com/company/whatflow)
 
 Homepage content updated October 27, 2026. Calculator inputs are illustrative assumptions, not measured merchant outcomes.

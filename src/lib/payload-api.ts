@@ -8,7 +8,7 @@ import { searchPublishedContent } from "./content-search";
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.NODE_ENV === "production" ? "https://whatflow.tech" : "http://localhost:3000");
+  (process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
 
 type FetchOptions = {
   revalidate?: number;

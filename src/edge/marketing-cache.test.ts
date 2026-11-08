@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {marketingCacheKey, marketingCacheTTL, serveMarketingPage} from './marketing-cache';
 
 const request = (path = '/inbox', headers: HeadersInit = {}, method = 'GET') =>
-  new Request('https://whatflow.tech' + path, {headers, method});
+  new Request('https://whatflow.io' + path, {headers, method});
 function harness(response = () => new Response('rendered page', {headers: {'Content-Type': 'text/html', Vary: 'Sec-CH-Prefers-Color-Scheme', 'X-Frame-Options': 'DENY'}})) {
   const entries = new Map<string, Response>();
   const pending: Promise<unknown>[] = [];
@@ -40,7 +40,7 @@ test('navigation, authenticated, search, preview and unknown routes never read o
   const requests = headers.map(name => request('/inbox', {[name]: ''}));
   requests.push(request('/inbox', {accept: 'text/x-component'}), request('/inbox', {accept: 'application/json'}), request('/inbox', {'cache-control': 'no-cache'}), request('/inbox', {pragma: 'no-cache'}), request('/inbox', {}, 'POST'));
   for (const path of ['/api/posts', '/admin', '/blog?q=order', '/compare?search=wati', '/blog?preview=1', '/inbox?_rsc=1', '/inbox?utm_source=test', '/blog?page=1&page=2', '/blog?page=0', '/blog?category=../admin', '/unknown', '/blog/a/b']) requests.push(request(path));
-  requests.push(new Request('http://whatflow.tech/inbox'));
+  requests.push(new Request('http://whatflow.io/inbox'));
   for (const req of requests) assert.equal((await h.serve(req)).headers.get('X-WhatFlow-Page-Cache'), 'BYPASS', req.url + JSON.stringify([...req.headers]));
   assert.equal(h.renders, requests.length + 1);
   assert.equal(h.entries.size, 1);

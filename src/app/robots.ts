@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.NODE_ENV === "production" ? "https://whatflow.tech" : "http://localhost:3000");
+    (process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
 
   const citationAndAiBots = [
     "*",

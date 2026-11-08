@@ -114,7 +114,7 @@ export default async function Image() {
             </div>
           </div>
           <div style={{ fontSize: "22px", fontWeight: 800, color: "#000000" }}>
-            whatflow.tech
+            whatflow.io
           </div>
         </div>
       </div>

@@ -34,7 +34,7 @@ test('service manifest is public JSON with accurate feature availability and doc
   assert.equal(inbox.catalog_sharing_available, true);
   assert.equal(inbox.audience_sync_available, false);
   assert.equal(inbox.ai_available, false);
-  assert.equal(body.documentation_urls.pricing, 'https://whatflow.tech/pricing');
+  assert.equal(body.documentation_urls.pricing, 'https://whatflow.io/pricing');
 });
 
 test('shared visible and structured FAQs qualify delivery and connector coverage', () => {

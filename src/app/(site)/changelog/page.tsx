@@ -63,7 +63,7 @@ const FAQS = [
   {
     question: "How can I follow new WhatFlow releases?",
     answer:
-      "Check this page, or subscribe to the changelog RSS feed at whatflow.tech/changelog/rss.xml to see new releases in your feed reader.",
+      "Check this page, or subscribe to the changelog RSS feed at whatflow.io/changelog/rss.xml to see new releases in your feed reader.",
   },
   {
     question: "What is the difference between the official and unofficial API apps?",

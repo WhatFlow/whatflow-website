@@ -11,10 +11,10 @@ Disallow: /admin
 Disallow: /api/payload/*
 
 # Documentation & Feeds for AI Systems
-llms-txt: https://whatflow.tech/llms.txt
-llms-full-txt: https://whatflow.tech/llms-full.txt
-sitemap: https://whatflow.tech/sitemap.xml
-rss-feed: https://whatflow.tech/blog/rss.xml
-ai-summary: https://whatflow.tech/ai/summary.json
-ai-faq: https://whatflow.tech/ai/faq.json
-ai-service: https://whatflow.tech/ai/service.json
+llms-txt: https://whatflow.io/llms.txt
+llms-full-txt: https://whatflow.io/llms-full.txt
+sitemap: https://whatflow.io/sitemap.xml
+rss-feed: https://whatflow.io/blog/rss.xml
+ai-summary: https://whatflow.io/ai/summary.json
+ai-faq: https://whatflow.io/ai/faq.json
+ai-service: https://whatflow.io/ai/service.json

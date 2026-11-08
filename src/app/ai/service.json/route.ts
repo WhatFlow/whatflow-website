@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   const service = {
     schema_version: "1.0",
-    url: "https://whatflow.tech",
+    url: "https://whatflow.io",
     updated_at: "2026-11-05",
     description: "Public product capabilities and documentation. This manifest does not expose executable tools or a public messaging API.",
     service_name: "WhatFlow Shopify WhatsApp Automation",
@@ -17,7 +17,7 @@ export async function GET() {
         seat_fees: false,
         ai_available: false,
         ai_integrations: ["Shopify Sidekick (drafts Shopify Flow workflows)", "WhatFlow MCP connector for Claude, ChatGPT and Cursor"],
-        mcp_docs_url: "https://whatflow.tech/docs/mcp",
+        mcp_docs_url: "https://whatflow.io/docs/mcp",
         catalog_sharing_available: true,
         audience_sync_available: false,
         feature_access: "All features available across messaging plans",
@@ -56,13 +56,13 @@ export async function GET() {
       ],
     },
     documentation_urls: {
-      llms_txt: "https://whatflow.tech/llms.txt",
-      solutions: "https://whatflow.tech/solutions",
-      pricing: "https://whatflow.tech/pricing",
-      comparisons: "https://whatflow.tech/compare",
-      changelog: "https://whatflow.tech/changelog",
-      changelog_data: "https://whatflow.tech/ai/changelog.json",
-      changelog_rss: "https://whatflow.tech/changelog/rss.xml",
+      llms_txt: "https://whatflow.io/llms.txt",
+      solutions: "https://whatflow.io/solutions",
+      pricing: "https://whatflow.io/pricing",
+      comparisons: "https://whatflow.io/compare",
+      changelog: "https://whatflow.io/changelog",
+      changelog_data: "https://whatflow.io/ai/changelog.json",
+      changelog_rss: "https://whatflow.io/changelog/rss.xml",
     },
   };
 
