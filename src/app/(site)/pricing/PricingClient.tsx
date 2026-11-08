@@ -230,14 +230,18 @@ export function PricingClient() {
 						</div>
 
 						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-black uppercase leading-[1.05] tracking-tight">
-							PRICING THAT SCALES WITH{" "}
-							<span className="text-stroke-green">EVERY ORDER.</span>
+							SHOPIFY WHATSAPP{" "}
+							<span className="text-stroke-green">APP PRICING</span>
 						</h1>
 
 						<p className="text-base sm:text-lg text-gray-800 font-medium max-w-2xl mx-auto">
-							Estimate WhatFlow software tiers and Meta direct WhatsApp charges before you choose a plan.
-							Transparent, predictable, and zero lock-in.
+							WhatFlow Business API has a free plan and paid plans based on messaging allowances. Every plan includes the same features and unlimited team inbox seats. Meta bills applicable WhatsApp messaging charges separately, with zero WhatFlow markup.
 						</p>
+					</div>
+
+					<div className="flex flex-wrap justify-center gap-4 mb-10">
+						<a href="#plans" className="neo-box bg-[#00D261] px-5 py-3 font-bold">Compare monthly plans</a>
+						<a href="#rates-table" className="neo-box bg-white px-5 py-3 font-bold">See Meta messaging rates</a>
 					</div>
 
 					{/* ─── Interactive Calculator Card ─── */}

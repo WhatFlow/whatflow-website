@@ -8,9 +8,9 @@ import {
 } from "@/lib/schema-org";
 
 export const metadata: Metadata = {
-  title: "Simple, Transparent Pricing — 0% Markup on Meta Rates | WhatFlow",
+  title: "Shopify WhatsApp App Pricing | WhatFlow Business API",
   description:
-    "Explore WhatFlow's transparent Shopify WhatsApp app pricing. Free plan available. Unlimited seats, official Meta API wholesale rates with zero markup, and 7-day free trial.",
+    "Compare WhatFlow’s free and paid Shopify WhatsApp plans, monthly message allowances, unlimited inbox seats, and separate Meta messaging rates with zero markup.",
   keywords: [
     "Shopify WhatsApp app pricing",
     "WhatsApp marketing pricing Shopify",
@@ -23,17 +23,17 @@ export const metadata: Metadata = {
     canonical: "/pricing",
   },
   openGraph: {
-    title: "Simple, Transparent Pricing — 0% Markup on Meta Rates | WhatFlow",
+    title: "Shopify WhatsApp App Pricing | WhatFlow Business API",
     description:
-      "Explore WhatFlow's transparent Shopify WhatsApp app pricing. Free plan available. Unlimited seats, official Meta API wholesale rates with zero markup, and 7-day free trial.",
+      "Compare WhatFlow’s free and paid Shopify WhatsApp plans, monthly message allowances, unlimited inbox seats, and separate Meta messaging rates with zero markup.",
     url: `${SITE_URL}/pricing`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Simple, Transparent Pricing — 0% Markup on Meta Rates | WhatFlow",
+    title: "Shopify WhatsApp App Pricing | WhatFlow Business API",
     description:
-      "Explore WhatFlow's transparent Shopify WhatsApp app pricing. Free plan available. Unlimited seats, official Meta API wholesale rates with zero markup, and 7-day free trial.",
+      "Compare WhatFlow’s free and paid Shopify WhatsApp plans, monthly message allowances, unlimited inbox seats, and separate Meta messaging rates with zero markup.",
   },
 };
 
