@@ -1,0 +1,2850 @@
+{
+  "before": "2026-11-04T23:07:32.226Z",
+  "candidate": {
+    "id": 106,
+    "title": "WhatFlow Chat Automation vs Business API: which app to choose",
+    "slug": "whatflow-chat-automation-vs-business-api",
+    "competitor": "WhatFlow Chat Automation",
+    "competitorUrl": "https://apps.shopify.com/whatflow",
+    "category": "shopify",
+    "excerpt": "Two Shopify apps from the same team: official Meta Cloud API or unofficial linked-device automation. Compare pricing, ratings and migration tradeoffs.",
+    "verdict": "I recommend WhatFlow Business API for most Shopify stores. It uses Meta’s official WhatsApp Cloud API and includes Shopify Flow, catalog sharing and a team inbox with no seat fees on every plan. WhatFlow Chat Automation is our older app: it uses an unofficial linked-device connection. I’d only recommend it for small or startup stores testing modest transactional sends.",
+    "author": "Safwan Adnan",
+    "authorRole": "Co-founder and CEO of WhatFlow",
+    "publishedAt": "2026-10-24T07:18:14.227Z",
+    "reviewedAt": "2026-11-08T01:53:42.043Z",
+    "featured": true,
+    "coverImage": 136,
+    "imageUrl": null,
+    "imageAlt": "WhatFlow Business API vs Chat Automation — WhatFlow comparison cover",
+    "imageCaption": "Illustrated cover by WhatFlow. App screenshots and examples appear in the guide.",
+    "imageSourceUrl": "/compare",
+    "featureTable": [
+      {
+        "id": "ab5abaadc8ebb7a3424f3ec6",
+        "feature": "App and listing",
+        "whatflow": "WhatFlow WhatsApp Business API at apps.shopify.com/whatflow-official-api",
+        "competitor": "WhatFlow Chat Automation (listed as WhatFlow: Whatsapp Automation) at apps.shopify.com/whatflow"
+      },
+      {
+        "id": "e2e27c698a6d086a693a966e",
+        "feature": "Connection method",
+        "whatflow": "Official Meta WhatsApp Cloud API, connected from Shopify admin through Meta Embedded Signup.",
+        "competitor": "Unofficial linked-device integration to your existing WhatsApp account; no Meta Business setup."
+      },
+      {
+        "id": "9ca627950503bb0acb86f41d",
+        "feature": "Best for",
+        "whatflow": "Any Shopify store that wants templates, broadcasts, Shopify Flow automation and a shared team inbox. Our default recommendation.",
+        "competitor": "Small and startup stores with modest order volume that want the fastest possible setup."
+      },
+      {
+        "id": "2ca1181f5e6ab4070023e643",
+        "feature": "Shopify App Store rating (checked November 8, 2026)",
+        "whatflow": "5.0 out of 5 from 58 ratings",
+        "competitor": "4.0 out of 5 from 331 ratings"
+      },
+      {
+        "id": "2d9ad8750aeffc17dfb347a3",
+        "feature": "Shopify listing launched",
+        "whatflow": "May 8, 2026",
+        "competitor": "October 21, 2024"
+      },
+      {
+        "id": "ec785c6dff227dedcfcd48a3",
+        "feature": "Starter plan (app fee)",
+        "whatflow": "$4.99 per 30-day cycle with 2,000 sends, then $0.005 per send. Meta fees separate.",
+        "competitor": "$4.99 per 30-day cycle with 1,000 sends, then $0.01 per send."
+      },
+      {
+        "id": "839b2c420f2f18b032ea4809",
+        "feature": "App fee at 5,000 sends",
+        "whatflow": "$9.99 on Plus, before Meta fees and tax.",
+        "competitor": "$24.99 (Professional with overage, or Enterprise), before tax."
+      },
+      {
+        "id": "b06bd5a83b7ed136ddf512d7",
+        "feature": "Features and team access",
+        "whatflow": "Every feature on every plan including Free, team inbox with no seat fees, free-forever theme-matched WhatsApp buttons.",
+        "competitor": "Order and fulfillment automation from a linked number; see its own listing for the current feature set."
+      }
+    ],
+    "content": {
+      "root": {
+        "type": "root",
+        "version": 1,
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "children": [
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "I recommend WhatFlow Business API for most Shopify stores. It uses Meta’s official WhatsApp Cloud API and includes Shopify Flow, catalog sharing and a team inbox with no seat fees on every plan. WhatFlow Chat Automation is our older app: it uses an unofficial linked-device connection. I’d only recommend it for small or startup stores testing modest transactional sends.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "I'm Safwan, co-founder of WhatFlow. We built both, so this isn't a \"pick the winner\" page. It's about matching the app to the stage your store is at.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "block",
+            "version": 2,
+            "format": "",
+            "fields": {
+              "id": "330be17f9c310463fd2b47aa",
+              "blockType": "screenshot",
+              "url": "/api/media/file/blog-enhancement-whatflow-template-editor.webp",
+              "alt": "WhatFlow WhatsApp Business API template editor in a Shopify demo store, showing mapped checkout variables",
+              "caption": "WhatFlow WhatsApp Business API in our Shopify demo store. This screenshot shows the official API app, not the linked-device Chat Automation app.",
+              "sourceUrl": "",
+              "width": 1440,
+              "height": 900
+            }
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "tag": "h2",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "WhatFlow Chat Automation vs Business API at a glance",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 1,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 1,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "WhatFlow Business API",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 1,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "WhatFlow Chat Automation",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Connection",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Official Meta WhatsApp Cloud API",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Linked device (your existing number)",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Setup",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Meta Embedded Signup from Shopify admin",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Link your phone, no Meta Business account",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Rating (Nov 8, 2026)",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "5.0/5 from 58 ratings",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "4.0/5 from 331 ratings",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Launched",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "May 8, 2026",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "October 21, 2024",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Templates and broadcasts",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Yes, Meta-approved templates with an editor",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Order and fulfillment messages from your number",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Shopify Flow, team inbox, COD confirmation",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Included on every plan, no seat fees",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Built around order automation from one number",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Best for",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Most stores, and any store planning to grow",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Small and startup stores wanting the fastest start",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "The ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "https://apps.shopify.com/whatflow"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Chat Automation listing",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " showed ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": "4.0/5 from 331 ratings",
+                "format": 1,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " on November 8, 2026. The ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "https://apps.shopify.com/whatflow-official-api"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Business API listing",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " showed ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": "5.0/5 from 58 ratings",
+                "format": 1,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " on the same date. Each rating belongs to its own listing. The older app has a longer review history; its rating doesn’t describe the official API app.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "tag": "h2",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "What's the difference between linked-device and the official API?",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Chat Automation connects to your WhatsApp account as a linked device. It’s an unofficial integration, outside the Meta Cloud API, and has a lower setup barrier for a small shop. I’d keep it to modest transactional work, like a candle shop testing order updates from its existing number. If those messages are critical to shipping, I’d start on the official API.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "The ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": "official Meta Cloud API",
+                "format": 1,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " is Meta's supported platform for business messaging. Messages sent outside the 24-hour customer service window use Meta-approved templates, and you get the tooling built for business volume: broadcasts, template categories, quality ratings and messaging limits. Our guide to ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/blog/what-is-whatsapp-business-api"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "what the WhatsApp Business API is",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " explains it in plain English.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Some merchants told us their linked sessions disconnected or their accounts faced restrictions as sending grew. That feedback helped shape Business API. It doesn’t explain every older review, and the official API isn’t a guarantee of delivery or account status. The advantage is using Meta’s supported business messaging platform and tools for templates, quality and limits.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "tag": "h2",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "How much does each WhatFlow app cost?",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "App fees as of November 2026, per 30-day cycle (current amounts are always on our ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/pricing"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "pricing page",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": "):",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "children": [
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 1,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Plan",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 1,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Business API",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 1,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Chat Automation",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Free",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "100 sends, then $0.01",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "50 sends, then $0.01",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Starter $4.99",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "2,000 sends, then $0.005",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "1,000 sends, then $0.01",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "$9.99",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Plus: 5,000 sends, then $0.004",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Growth: 2,000 sends",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tablerow",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "children": [
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Higher tiers",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Growth $29 (20,000), Scale $49.99 (40,000), Ultimate $99 (75,000)",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "tablecell",
+                    "version": 1,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "headerState": 0,
+                    "colSpan": 1,
+                    "rowSpan": 1,
+                    "children": [
+                      {
+                        "type": "paragraph",
+                        "version": 1,
+                        "direction": "ltr",
+                        "format": "",
+                        "indent": 0,
+                        "textFormat": 0,
+                        "textStyle": "",
+                        "children": [
+                          {
+                            "type": "text",
+                            "version": 1,
+                            "text": "Professional $14.99 (4,000), Enterprise $24.99 (7,500), Ultimate $49.99",
+                            "format": 0,
+                            "detail": 0,
+                            "mode": "normal",
+                            "style": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Business API includes more sends at the same price points. At 5,000 sends a month, Business API Plus costs $9.99 in app fees. On Chat Automation, the same volume is $24.99 (Professional plus 1,000 overage sends, or Enterprise).",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "The $15 difference in the 5,000-send example is only the gap in app fees. Business API can also incur Meta charges based on message type, destination and current rules. Chat Automation doesn’t use the Cloud API billing model. At low transactional volume, its total may be lower; compare the complete bill and the operational cost of losing a linked session. Use ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "https://business.whatsapp.com/products/platform-pricing"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Meta’s pricing page",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " for current delivery charges.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "tag": "h2",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "What does Business API add for a growing store?",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "If you still think of WhatFlow as \"the unofficial WhatsApp app for small shops\", that picture is out of date. WhatFlow WhatsApp Business API runs on the official Meta Cloud API and is ready for enterprise-sized teams, while staying the easiest start for a new store:",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "listType": "bullet",
+            "tag": "ul",
+            "start": 1,
+            "children": [
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 1,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Every feature on every plan, including Free.",
+                    "format": 1,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  },
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": " Plans differ only by message allowance and rate.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "A shared ",
+                    "format": 1,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  },
+                  {
+                    "type": "link",
+                    "version": 3,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "fields": {
+                      "linkType": "custom",
+                      "newTab": false,
+                      "url": "/inbox"
+                    },
+                    "children": [
+                      {
+                        "type": "text",
+                        "version": 1,
+                        "text": "team inbox",
+                        "format": 1,
+                        "detail": 0,
+                        "mode": "normal",
+                        "style": ""
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": " with no seat fees at any team size",
+                    "format": 1,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  },
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": ", with assignment, filters and saved replies. A 50-person team pays the same in seats as a two-person shop.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 3,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Native Shopify Flow triggers and actions",
+                    "format": 1,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  },
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": ": incoming-message and order-reply triggers, plus template, text and media actions.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 4,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "COD confirmation",
+                    "format": 1,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  },
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": " with reply buttons that can tag or cancel orders through Flow.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 5,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Abandoned checkout, order and shipping templates",
+                    "format": 1,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  },
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": ", broadcasts and review-request workflows.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 6,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Live catalog sharing",
+                    "format": 1,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  },
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": " from the inbox.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 7,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Free-forever theme-matched WhatsApp buttons",
+                    "format": 1,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  },
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": " for your storefront.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "A COD confirmation on Business API looks like this:",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "quote",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Hi Fatima, thanks for your order #2481 (PKR 4,500, cash on delivery). Please confirm so we can dispatch it today.\n[Confirm order] [Cancel]",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "When she taps Confirm, Shopify Flow tags the order and your packer sees it ready to ship. The ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "link",
+                "version": 3,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "/blog/whatflow-shopify-flow-whatsapp-automation-guide"
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "WhatFlow and Shopify Flow guide",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " shows how to build it.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "block",
+            "version": 2,
+            "format": "",
+            "fields": {
+              "id": "312279de71c0b8ceda157fb3",
+              "blockType": "screenshot",
+              "url": "/api/media/file/blog-shopify-flow-whatflow-flow-template-mapping.jpg",
+              "alt": "Shopify Flow mapping a demo order into WhatFlow Send WhatsApp Template fields.",
+              "caption": "Inactive demo configuration mapping an order and recipient into WhatFlow&#39;s template action. An approved template and eligible account are still required.",
+              "sourceUrl": "",
+              "width": 1440,
+              "height": 900
+            }
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "tag": "h2",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Which WhatFlow app should you choose?",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Pick ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Chat Automation",
+                "format": 1,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " if you're a small or startup store, you want order confirmations and fulfillment updates going out from your current number today, and you don't need templates, broadcasts or a team inbox yet. Keep the use simple and transactional.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Pick ",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Business API",
+                "format": 1,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              },
+              {
+                "type": "text",
+                "version": 1,
+                "text": " if any of these are true:",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "listType": "number",
+            "tag": "ol",
+            "start": 1,
+            "children": [
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 1,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "More than one person answers customer messages.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "You run COD and want confirmations to tag or cancel orders automatically.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 3,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "You plan broadcasts, abandoned checkout recovery or back-in-stock alerts.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 4,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "You want your WhatsApp automation inside Shopify Flow.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 5,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Your store is growing and you'd rather set up once on the official platform.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Official API access doesn't exempt you from WhatsApp's rules. Opt-in, template approval and message quality still apply, which is exactly why we put the template editor and Flow tooling in the app.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "tag": "h2",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Moving from Chat Automation to Business API",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "If you're on Chat Automation and ready to move up, plan it like any other change to a live workflow:",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "listType": "number",
+            "tag": "ol",
+            "start": 1,
+            "children": [
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 1,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Check your number's eligibility for the WhatsApp Business Platform. Our ",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  },
+                  {
+                    "type": "link",
+                    "version": 3,
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "fields": {
+                      "linkType": "custom",
+                      "newTab": false,
+                      "url": "/blog/whatsapp-business-app-to-api-migration"
+                    },
+                    "children": [
+                      {
+                        "type": "text",
+                        "version": 1,
+                        "text": "app-to-API migration guide",
+                        "format": 0,
+                        "detail": 0,
+                        "mode": "normal",
+                        "style": ""
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": " covers what changes.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Connect through Meta Embedded Signup from Shopify admin.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 3,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Recreate your order messages as templates and submit them for approval.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              },
+              {
+                "type": "listitem",
+                "version": 1,
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "value": 4,
+                "children": [
+                  {
+                    "type": "text",
+                    "version": 1,
+                    "text": "Test one full journey, say a COD order through to the confirm reply, before switching your automations over.",
+                    "format": 0,
+                    "detail": 0,
+                    "mode": "normal",
+                    "style": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Before switching, confirm number eligibility, what history is available and whether the number can keep using the WhatsApp Business app. Don’t assume your templates or workflows transfer. Run one internal test order and disable the equivalent old automation before enabling the new one, so customers don’t get duplicate messages.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "tag": "h2",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "The bottom line",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "version": 1,
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "textStyle": "",
+            "children": [
+              {
+                "type": "text",
+                "version": 1,
+                "text": "Both apps come from the same team that's been building WhatsApp for Shopify since 2024. Chat Automation is the established quick-start app with 331 ratings behind it. Business API is where we're putting our energy: official Meta Cloud API, Shopify Flow, a no-seat-fee inbox and every feature on every plan, rated 5.0/5 by its first 58 reviewers. If you're unsure, install Business API on the Free plan and see how far it takes you.",
+                "format": 0,
+                "detail": 0,
+                "mode": "normal",
+                "style": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "faqs": [
+      {
+        "id": "26e7936033a9cb5dae813884",
+        "question": "Why do the two WhatFlow apps have different ratings?",
+        "answer": "They're separate Shopify apps with separate review histories. As of November 8, 2026, WhatFlow Chat Automation is rated 4.0/5 from 331 ratings since its October 2024 launch, and WhatFlow WhatsApp Business API is rated 5.0/5 from 58 ratings since its May 2026 launch."
+      },
+      {
+        "id": "4d88923ca275e51c10f5c4ad",
+        "question": "Are WhatFlow Chat Automation and WhatFlow Business API the same app?",
+        "answer": "They are separate Shopify apps by the same team. Chat Automation uses an unofficial linked-device integration. WhatFlow Business API uses Meta’s official WhatsApp Cloud API. Pricing, Shopify features and reviews belong to each app separately."
+      },
+      {
+        "id": "90ad8d9cdc0cdea90d13f41a",
+        "question": "Which WhatFlow app is best for a small or startup store?",
+        "answer": "For modest transactional sending with minimal setup, Chat Automation can be a starting point. I recommend the official Business API if orders depend on those messages, or if your team needs Shopify Flow and a shared inbox. Business API has a Free plan."
+      },
+      {
+        "id": "eea67219d05fafbe9ac11d52",
+        "question": "Which WhatFlow app should a growing Shopify store use?",
+        "answer": "WhatFlow WhatsApp Business API. It uses the official Meta Cloud API and adds approved templates, broadcasts, native Shopify Flow triggers and actions, COD confirmation and a shared team inbox with no seat fees."
+      },
+      {
+        "id": "2ec7ffeacd60aeec4cdca034",
+        "question": "Why did WhatFlow build a second app on the official API?",
+        "answer": "We built Business API after merchants outgrew linked-device sending and some reported disconnections or account restrictions. The official API is our recommendation for important Shopify workflows. Its rules on opt-in, templates and message quality still apply."
+      },
+      {
+        "id": "14f7d2efef357ab0b1f2a394",
+        "question": "Is WhatFlow Business API ban-proof?",
+        "answer": "No WhatsApp tool is. The official Meta Cloud API is the supported route for business messaging, but every business still has to follow WhatsApp's policies on opt-in, templates and message quality."
+      },
+      {
+        "id": "b89fcbbe54725343ae365d7b",
+        "question": "Is Chat Automation cheaper than Business API?",
+        "answer": "Not always. At 5,000 sends a month, Business API's Plus plan is $9.99 in app fees versus $24.99 on Chat Automation. Business API adds Meta's per-template delivery fees on top, so for small transactional volumes Chat Automation's total can be lower."
+      },
+      {
+        "id": "27954c9cda0119d9ee46ff27",
+        "question": "Does WhatFlow Business API charge per inbox seat or limit features on Free?",
+        "answer": "No to both. Every WhatFlow Business API plan, including Free, has every feature and a team inbox with no seat fees. Plans differ only by message allowance and rate, and Meta's delivery fees are separate."
+      },
+      {
+        "id": "051e7005133e7612715c18ab",
+        "question": "How long has WhatFlow been on the Shopify App Store?",
+        "answer": "Since October 21, 2024, when WhatFlow Chat Automation launched. That's over two years as of November 2026. WhatFlow WhatsApp Business API launched on May 8, 2026."
+      },
+      {
+        "id": "2349a6f4591e40e78125c57b",
+        "question": "What's WhatFlow's goal for 2027?",
+        "answer": "Our ambition is to make WhatFlow the leading WhatsApp app for Shopify stores by the end of 2027. That's a goal we intend to earn through the product, not a ranking we claim today."
+      },
+      {
+        "id": "861e4e6f3781dbe768a12768",
+        "question": "Is WhatFlow Chat Automation an unofficial WhatsApp API app?",
+        "answer": "Yes. Chat Automation connects as a linked device and does not use Meta’s official WhatsApp Cloud API. We recommend it only for small, low-volume transactional use. For important Shopify automations, use WhatFlow Business API."
+      }
+    ],
+    "sources": [
+      {
+        "id": "8f03f0f0b19261c08e0ec140",
+        "title": "WhatFlow Chat Automation (WhatFlow: Whatsapp Automation) on the Shopify App Store",
+        "url": "https://apps.shopify.com/whatflow",
+        "note": "Linked-device connection, launch date, pricing and the 4.0/5 rating from 331 ratings, checked November 8, 2026."
+      },
+      {
+        "id": "bf74166b8c76e7b763d1b512",
+        "title": "WhatFlow WhatsApp Business API on the Shopify App Store",
+        "url": "https://apps.shopify.com/whatflow-official-api",
+        "note": "Official API integration, launch date, plan pricing and the 5.0/5 rating from 58 ratings, checked November 8, 2026."
+      },
+      {
+        "id": "bfe08f63705e2c2acadbd3e3",
+        "title": "WhatsApp Business Messaging Policy",
+        "url": "https://business.whatsapp.com/policy",
+        "note": "Meta's rules on opt-in, templates and message quality, which apply to every business sender."
+      },
+      {
+        "id": "a044a18df30895e7af4be9b3",
+        "title": "WhatsApp Business Platform pricing",
+        "url": "https://business.whatsapp.com/products/platform-pricing",
+        "note": "Meta's per-message delivery pricing by category and country, separate from WhatFlow's app fees."
+      }
+    ],
+    "relatedComparisons": [
+      64,
+      24,
+      80
+    ],
+    "cta": {
+      "heading": "Start with WhatFlow WhatsApp Business API",
+      "description": "Official Meta Cloud API, every feature on every plan including Free, Shopify Flow triggers and actions, and a team inbox with no seat fees.",
+      "label": "Install WhatFlow Business API"
+    },
+    "seo": {
+      "metaTitle": "WhatFlow Chat Automation vs Business API: Which to Pick",
+      "metaDescription": "Compare WhatFlow Business API and Chat Automation: official Meta Cloud API vs an unofficial linked-device connection, Shopify features, fees and migration.",
+      "noindex": false
+    },
+    "updatedAt": "2026-11-08T01:53:42.043Z",
+    "createdAt": "2026-10-24T07:18:14.227Z",
+    "_status": "published"
+  }
+}

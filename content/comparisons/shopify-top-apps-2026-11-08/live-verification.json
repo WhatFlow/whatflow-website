@@ -1,0 +1,93 @@
+{
+  "totalComparisons": 144,
+  "untouched": 130,
+  "verified": 14,
+  "covers": 13,
+  "sitemap": true,
+  "pages": [
+    {
+      "slug": "whatflow-vs-whachatcrm",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-moose",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-wava",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-carthike",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-squadkin",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-click2chat",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-reco",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-ca",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-kwikengage",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-seedgrow",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-whapi",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-eaze-button",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-vs-whatomation",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": true
+    },
+    {
+      "slug": "whatflow-chat-automation-vs-business-api",
+      "status": 200,
+      "selfCanonical": true,
+      "coverVerified": false
+    }
+  ]
+}

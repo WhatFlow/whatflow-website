@@ -1,0 +1,8 @@
+Published November 8, 2026. Thirteen new Shopify App Store comparisons and one in-place revision of [WhatFlow Chat Automation vs Business API](https://whatflow.tech/compare/whatflow-chat-automation-vs-business-api).
+
+- The `new/` Markdown files preserve editorial copy, FAQs, feature comparisons, and source links. Pricing, plan coverage, and app icons were verified against the vendors' live Shopify listings. Examples are hypothetical; app fees and Meta charges are separate.
+- Existing pages cover Meta's WhatsApp listing, Dondy, Kanal, Zoko, Interakt (treated as one provider), AiSensy, Chaty, BiteSpeed, and Ctx. Repeated ad and organic entries were deduplicated.
+- Covers use the existing WhatFlow comparison template and original Shopify listing icons. Assets were published to Payload Media; the body images reuse verified WhatFlow demo-store screenshots.
+- The existing two-app article kept its slug, cover, original publish date, and revision history. It now explicitly identifies the linked-device app as unofficial and includes updated listing ratings and migration checks.
+- A rehearsal on a restricted production export added 13 comparisons, 13 media records, and 14 published revision records, passed the foreign-key check, and produced identical database state on repeat execution. All 14 article bodies rendered through the production RichText component.
+- Live verification: 144 comparisons total, 130 other records unchanged, all 14 target pages returned 200 with self-canonicals, all 13 covers matched the generated file hashes, and every new URL appeared in the sitemap. See `live-verification.json`.
