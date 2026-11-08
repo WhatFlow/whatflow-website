@@ -27,6 +27,7 @@
 		"binding": "IMAGES"
 	},
 	"vars": {},
+	"analytics_engine_datasets": [{ "binding": "MARKETING_ANALYTICS", "dataset": "whatflow_marketing" }],
 	"d1_databases": [
 		{
 			"binding": "whatflow_payload_cms",

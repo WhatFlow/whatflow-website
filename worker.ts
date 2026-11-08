@@ -1,7 +1,12 @@
+import {recordMarketingEvent} from './src/edge/marketing-analytics';
 import {serveMarketingPage} from './src/edge/marketing-cache';
 
 export default {
   async fetch(request, env, context) {
+    const url = new URL(request.url);
+    if (url.pathname === '/api/marketing-event') {
+      return recordMarketingEvent(request, url, env.MARKETING_ANALYTICS);
+    }
     return serveMarketingPage({
       request,
       version: env.CF_VERSION_METADATA?.id,

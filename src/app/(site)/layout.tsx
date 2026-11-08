@@ -1,3 +1,4 @@
+import { MarketingAnalytics } from "@/components/MarketingAnalytics";
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "../globals.css";
@@ -124,6 +125,7 @@ export default function RootLayout({
 				className="antialiased bg-[#FAF7F0] text-[#000000] selection:bg-[#00D261] selection:text-black font-sans"
 			>
 				<a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-black focus:p-4 focus:rounded-lg focus:ring-2 focus:ring-black">Skip to main content</a>
+				<MarketingAnalytics />
 				<AnnouncementBar />
 				<Navbar />
 				<main id="main-content" tabIndex={-1} className="min-h-screen">{children}</main>
