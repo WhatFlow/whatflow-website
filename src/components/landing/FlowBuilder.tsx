@@ -1,0 +1,52 @@
+"use client";
+
+import Image from "next/image";
+import { useScrollScene } from "./useScrollScene";
+
+const prompt = "When a cash on delivery order comes in, ask the customer to confirm it on WhatsApp.";
+
+const nodes = [
+	{ type: "Trigger", title: "Order created", detail: "Shopify", icon: "/shopify-brand-assets/02-glyph/svg/glyph-color.svg", tone: "lp-node-green" },
+	{ type: "Condition", title: "Payment is Cash on Delivery", detail: "If true", icon: null, tone: "lp-node-yellow" },
+	{ type: "Action", title: "Send COD confirmation", detail: "WhatFlow · WhatsApp template", icon: "/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg", tone: "lp-node-white" },
+	{ type: "Action", title: "Add order tag", detail: "cod-pending", icon: "/shopify-brand-assets/02-glyph/svg/glyph-color.svg", tone: "lp-node-white" },
+];
+
+export function FlowBuilder() {
+	const [ref, step] = useScrollScene<HTMLElement>({ steps: 10 });
+	// 0–2: Sidekick prompt types out; 3–7: nodes and connectors appear; 8–9 hold the result.
+	const typed = prompt.slice(0, Math.round(prompt.length * Math.min(1, (step + 1) / 3)));
+	const built = Math.max(0, step - 2);
+
+	return (
+		<section ref={ref} className="lp-flow" aria-labelledby="lp-flow-title">
+			<div className="lp-flow-sticky">
+				<div className="lp-shell lp-flow-grid">
+					<div className="lp-flow-copy">
+						<span className="lp-eyebrow">Shopify Flow + Sidekick</span>
+						<h2 id="lp-flow-title" className="lp-h2">Describe it. <span className="lp-hl">Watch it build.</span></h2>
+						<p className="lp-lead">WhatFlow adds native WhatsApp triggers and actions to Shopify Flow. Ask Shopify Sidekick to draft the workflow, or drag the steps yourself.</p>
+						<div className="lp-sidekick" aria-label={`Sidekick prompt: ${prompt}`}>
+							<span className="lp-sidekick-label">✦ Sidekick</span>
+							<p aria-hidden="true">{typed}<span className="lp-caret" /></p>
+						</div>
+					</div>
+					<ol className="lp-flow-canvas" aria-label="Shopify Flow workflow: order created, payment is cash on delivery, send COD confirmation on WhatsApp, add order tag">
+						{nodes.map((node, index) => (
+							<li key={node.title} className={`lp-node ${node.tone} ${index < built ? "is-built" : ""}`} style={{ "--i": index } as React.CSSProperties}>
+								{index > 0 && <span className={`lp-wire ${index < built ? "is-built" : ""}`} aria-hidden="true" />}
+								<span className="lp-node-type">{node.type}</span>
+								<span className="flex items-center gap-2.5">
+									{node.icon ? <Image src={node.icon} width={22} height={22} alt="" /> : <span className="lp-node-if" aria-hidden="true">if</span>}
+									<b>{node.title}</b>
+								</span>
+								<small>{node.detail}</small>
+							</li>
+						))}
+						<li className={`lp-flow-done ${built >= 5 ? "is-built" : ""}`} aria-hidden={built < 5}>✓ Workflow turned on</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+	);
+}
