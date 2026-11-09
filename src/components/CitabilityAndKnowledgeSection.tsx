@@ -32,21 +32,21 @@ export function CitabilityAndKnowledgeSection() {
   return (
     <section id="knowledge-benchmarks" aria-labelledby="messaging-guide-heading" className="bg-white py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
       <div className="max-w-[1280px] mx-auto space-y-10">
-        <div className="text-center max-w-3xl mx-auto space-y-4">
+        <div data-home-reveal className="text-center max-w-3xl mx-auto space-y-4">
           <h2 id="messaging-guide-heading" className="text-[32px] sm:text-[46px] font-display font-black uppercase text-black tracking-tight leading-tight">How can Shopify stores use WhatsApp?</h2>
           <p className="text-base text-gray-700 leading-relaxed">Shopify stores can use WhatsApp to answer questions, follow up on checkouts, confirm orders, and send shipping updates. Choose the channel your customers prefer, then measure results in your store. No open rate, revenue lift, or return on investment is guaranteed.</p>
           <p className="text-xs text-gray-600">By <Link href="/about" className="underline">WhatFlow product team</Link> · Updated <time dateTime={HOMEPAGE_UPDATED_AT}>{HOMEPAGE_UPDATED_LABEL}</time></p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {workflows.map((workflow) => (
-            <article key={workflow.href} className="neo-box bg-[#FAF7F0] p-6 sm:p-7 rounded-2xl flex flex-col gap-4">
+          {workflows.map((workflow, index) => (
+            <article data-home-reveal data-home-delay={index * 60} key={workflow.href} className="neo-box bg-[#FAF7F0] p-6 sm:p-7 rounded-2xl flex flex-col gap-4">
               <h3 className="font-display font-black text-xl text-black">{workflow.title}</h3>
               <p className="text-sm text-gray-700 leading-relaxed flex-1">{workflow.text}</p>
               <Link href={workflow.href} className="text-sm font-bold text-[#0A6B56] underline">{workflow.label}</Link>
             </article>
           ))}
         </div>
-        <div className="neo-box bg-[#FAF7F0] p-6 sm:p-8 rounded-2xl space-y-6">
+        <div data-home-reveal className="neo-box bg-[#FAF7F0] p-6 sm:p-8 rounded-2xl space-y-6">
           <h3 className="text-2xl font-display font-black text-black">WhatsApp, SMS, and email: which fits your workflow?</h3>
           <p className="text-sm text-gray-700">Each channel can support customer communication. Compare consent, message format, and total costs before choosing a provider. Performance varies by store; this table compares capabilities rather than industry averages.</p>
           <div className="overflow-x-auto" role="region" aria-label="Messaging channel comparison" tabIndex={0}>

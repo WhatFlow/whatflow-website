@@ -76,7 +76,7 @@ export function HeroSection() {
 				</div>
 
 				{/* Right Visual Box */}
-				<div className="lg:col-span-6 relative">
+				<div data-home-reveal className="lg:col-span-6 relative">
 					<div className="neo-box-teal p-6 sm:p-8 relative min-h-[460px] flex items-center justify-center">
 						{/* Top Attached Badge */}
 						<div className="absolute top-0 right-6 -translate-y-1/2 neo-pill bg-[#FFC107] px-4 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
@@ -139,7 +139,7 @@ export function HeroSection() {
 										<div className="space-y-1.5">
 											<button
 												onClick={() => setActiveAction("confirm")}
-												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${activeAction === "confirm"
+												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-colors ${activeAction === "confirm"
 														? "bg-[#00D261] text-black"
 														: "bg-white text-[#00D261] hover:bg-[#E7FCE9]"
 													}`}
@@ -148,7 +148,7 @@ export function HeroSection() {
 											</button>
 											<button
 												onClick={() => setActiveAction("cancel")}
-												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-all ${activeAction === "cancel"
+												className={`w-full py-1.5 px-3 rounded-md font-bold text-[11px] border border-black transition-colors ${activeAction === "cancel"
 														? "bg-[#FF4B4B] text-white"
 														: "bg-white text-[#FF4B4B] hover:bg-[#FFEBEB]"
 													}`}
@@ -173,7 +173,7 @@ export function HeroSection() {
 							</div>
 
 							{/* Shopify Receipt Card */}
-							<div className="w-full sm:w-[220px] neo-box p-4 text-xs space-y-3 bg-white">
+							<div data-home-reveal data-home-delay="80" className="w-full sm:w-[220px] neo-box p-4 text-xs space-y-3 bg-white">
 								<div className="flex items-center justify-between border-b border-gray-200 pb-2">
 									<Image src="/shopify-brand-assets/01-logo/svg/logo-color-white-bg.svg" width={78} height={22} alt="Shopify Order Receipt Header Logo" className="h-5 w-auto" />
 								</div>

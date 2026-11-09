@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 function ClockIcon({ className = "w-4 h-4" }: { className?: string }) {
 	return (
@@ -30,7 +29,7 @@ export function FeaturesStatusSection() {
 			<div className="max-w-[1280px] mx-auto space-y-12">
 				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 					{/* Left Content */}
-					<div className="lg:col-span-6 space-y-6">
+					<div data-home-reveal className="lg:col-span-6 space-y-6">
 						<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
 							FEATURE — COD &amp; PURCHASE VERIFICATION
 						</div>
@@ -65,7 +64,7 @@ export function FeaturesStatusSection() {
 					</div>
 
 					{/* Right Visual Box */}
-					<div className="lg:col-span-6" data-tool-name="cod_order_verification_simulator" data-tool-description="Demonstrates one-tap Cash on Delivery verification and auto-tagging in Shopify store order management">
+					<div data-home-reveal data-home-delay="80" className="lg:col-span-6" data-tool-name="cod_order_verification_simulator" data-tool-description="Demonstrates one-tap Cash on Delivery verification and auto-tagging in Shopify store order management">
 						<div className="neo-box-teal p-6 sm:p-8 relative">
 							<div className="absolute top-0 left-6 -translate-y-1/2 neo-pill bg-[#FFC107] px-4 py-1 font-extrabold text-xs uppercase tracking-wider text-black">
 								ONE-TAP RESPONSE
@@ -100,7 +99,7 @@ export function FeaturesStatusSection() {
 								<div className="space-y-2 pt-1">
 									<button
 										onClick={() => setSelectedStatus("confirmed")}
-										className={`w-full py-2.5 px-4 rounded-lg font-extrabold text-xs border-2 border-black transition-all flex items-center justify-center gap-2 ${
+										className={`w-full py-2.5 px-4 rounded-lg font-extrabold text-xs border-2 border-black transition-colors flex items-center justify-center gap-2 ${
 											selectedStatus === "confirmed"
 												? "bg-[#00D261] text-black shadow-[2px_2px_0px_#000]"
 												: "bg-white text-[#00D261] hover:bg-[#E8F8F0]"
@@ -112,7 +111,7 @@ export function FeaturesStatusSection() {
 
 									<button
 										onClick={() => setSelectedStatus("cancelled")}
-										className={`w-full py-2.5 px-4 rounded-lg font-extrabold text-xs border-2 border-black transition-all flex items-center justify-center gap-2 ${
+										className={`w-full py-2.5 px-4 rounded-lg font-extrabold text-xs border-2 border-black transition-colors flex items-center justify-center gap-2 ${
 											selectedStatus === "cancelled"
 												? "bg-[#FF4B4B] text-white shadow-[2px_2px_0px_#000]"
 												: "bg-white text-[#FF4B4B] hover:bg-[#FFEBEB]"
@@ -128,7 +127,7 @@ export function FeaturesStatusSection() {
 				</div>
 
 				{/* Bottom Shopify Status Strip */}
-				<div className="space-y-6 pt-4">
+				<div data-home-reveal className="space-y-6 pt-4">
 					<div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
 						<div>
 							<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-2">
@@ -143,7 +142,7 @@ export function FeaturesStatusSection() {
 					<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 						<button
 							onClick={() => setSelectedStatus("pending")}
-							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-all ${
+							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-colors ${
 								selectedStatus === "pending"
 									? "bg-[#FFC107] text-black shadow-[4px_4px_0px_#000] scale-[1.02]"
 									: "bg-[#FFF9E6] text-black hover:bg-[#FFC107]/20"
@@ -159,7 +158,7 @@ export function FeaturesStatusSection() {
 
 						<button
 							onClick={() => setSelectedStatus("confirmed")}
-							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-all ${
+							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-colors ${
 								selectedStatus === "confirmed"
 									? "bg-[#00D261] text-black shadow-[4px_4px_0px_#000] scale-[1.02]"
 									: "bg-[#E8F8F0] text-black hover:bg-[#00D261]/20"
@@ -175,7 +174,7 @@ export function FeaturesStatusSection() {
 
 						<button
 							onClick={() => setSelectedStatus("cancelled")}
-							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-all ${
+							className={`neo-pill p-4 flex items-center justify-center gap-3 transition-colors ${
 								selectedStatus === "cancelled"
 									? "bg-[#FF4B4B] text-white shadow-[4px_4px_0px_#000] scale-[1.02]"
 									: "bg-[#FFEBEB] text-[#FF4B4B] hover:bg-[#FF4B4B]/20"

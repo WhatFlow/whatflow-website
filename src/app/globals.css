@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+	--ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 	--bg-cream: #FAF7F0;
 	--bg-mint: #D5F5E3;
 	--bg-teal: #0A6B56;
@@ -363,3 +364,67 @@ body {
 	max-width: none;
 }
 
+
+/* Homepage motion is progressive: nothing is hidden while waiting for JS. */
+.home-motion .neo-btn {
+  transition: transform 160ms var(--ease-out);
+}
+
+.home-motion .home-motion-card,
+.home-motion .home-card-image {
+  transition: transform 200ms var(--ease-out);
+}
+
+/* Override global hover movement on touchscreens. */
+.home-motion .neo-btn:hover {
+  transform: none;
+  box-shadow: 4px 4px 0 #000;
+}
+.home-motion .neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #000;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .home-motion .neo-btn:hover { transform: translate(-2px, -2px); }
+  .home-motion .neo-btn:active { transform: translate(2px, 2px); }
+  .home-motion .home-motion-card:hover { transform: translateY(-4px); }
+  .home-motion .home-motion-card:hover .home-card-image { transform: scale(1.03); }
+}
+
+/* Native scroll timeline: no scroll listeners or React renders per frame.
+   Browsers without support simply omit this decorative indicator. */
+.home-scroll-progress { display: none; }
+@supports (animation-timeline: scroll()) {
+  .home-scroll-progress {
+    display: block;
+    position: fixed;
+    inset: 0 0 auto;
+    height: 3px;
+    z-index: 80;
+    background: #00D261;
+    pointer-events: none;
+    transform-origin: left;
+    animation: home-scroll-progress linear both;
+    animation-timeline: scroll(root block);
+  }
+}
+@keyframes home-scroll-progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(.home-motion) { scroll-behavior: auto; }
+  .home-motion .home-scroll-progress { display: none; }
+  .home-motion .neo-btn,
+  .home-motion .home-motion-card,
+  .home-motion .home-card-image { transition: none; }
+  .home-motion .neo-btn:hover,
+  .home-motion .neo-btn:active,
+  .home-motion .home-motion-card:hover,
+  .home-motion .home-motion-card:hover .home-card-image { transform: none; }
+  .home-motion .animate-marquee,
+  .home-motion .animate-marquee-slow,
+  .home-motion .animate-marquee-reverse { animation: none; }
+}

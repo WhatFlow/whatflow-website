@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // ─── Client Components (interactive) ─────────────────────────────────────────
+import { HomeMotion } from "@/components/HomeMotion";
 import { HeroSection } from "@/components/HeroSection";
 import { FeaturesStatusSection } from "@/components/FeaturesStatusSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
@@ -31,7 +32,7 @@ import { HOMEPAGE_FAQS } from "@/lib/marketing-faqs";
 function CTABanner() {
 	return (
 		<section className="bg-[#091E17] py-16 px-4 sm:px-6 text-center text-white border-b-[2.5px] border-black">
-			<div className="max-w-3xl mx-auto space-y-6">
+			<div data-home-reveal className="max-w-3xl mx-auto space-y-6">
 				<div className="flex justify-center">
 					<Image src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_White_RGB_2026.svg" width={48} height={48} alt="Official WhatsApp Messaging Icon" />
 				</div>
@@ -64,7 +65,7 @@ function BlogPreviewCard({ post }: { post: Post }) {
 	return (
 		<Link
 			href={`/blog/${post.slug}`}
-			className="neo-box bg-white flex flex-col overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
+			data-home-reveal className="home-motion-card neo-box bg-white flex flex-col overflow-hidden group"
 		>
 			<div className="relative w-full h-44 bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
 				{post.coverImageUrl ? (
@@ -73,7 +74,7 @@ function BlogPreviewCard({ post }: { post: Post }) {
 						src={post.coverImageUrl}
 						alt={post.coverImageAlt || post.title}
 						loading="lazy"
-						className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+						className="w-full h-full object-cover home-card-image"
 					/>
 				) : (
 					<div className="w-full h-full flex items-center justify-center">
@@ -108,7 +109,7 @@ function CaseStudyPreviewCard({ study }: { study: CaseStudy }) {
 	return (
 		<Link
 			href={`/case-studies/${study.slug}`}
-			className="neo-box-teal flex flex-col overflow-hidden group hover:-translate-y-1 transition-transform duration-200 relative"
+			data-home-reveal className="home-motion-card neo-box-teal flex flex-col overflow-hidden group relative"
 		>
 			{primaryMetric && (
 				<div className="absolute top-4 right-4 neo-box bg-[#00D261] px-3 py-2 text-center z-10">
@@ -122,7 +123,7 @@ function CaseStudyPreviewCard({ study }: { study: CaseStudy }) {
 						src={study.coverImage.url}
 						alt={study.coverImage.alt || study.title}
 						fill
-						className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-300"
+						className="object-cover opacity-70 home-card-image"
 					/>
 				) : (
 					<div className="w-full h-full flex items-center justify-center">
@@ -171,7 +172,7 @@ async function BlogAndCaseStudiesSection() {
 				{/* Blog Posts */}
 				{posts.length > 0 && (
 					<div className="space-y-8">
-						<div className="flex items-center justify-between gap-4">
+						<div data-home-reveal className="flex items-center justify-between gap-4">
 							<div>
 								<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-2">
 									FROM THE BLOG
@@ -205,7 +206,7 @@ async function BlogAndCaseStudiesSection() {
 				{/* Featured Case Study */}
 				{featuredStudy && (
 					<div className="space-y-8">
-						<div className="flex items-center justify-between gap-4">
+						<div data-home-reveal className="flex items-center justify-between gap-4">
 							<div>
 								<div className="neo-box inline-block bg-[#091E17] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#00D261] mb-2">
 									SUCCESS STORY
@@ -256,7 +257,7 @@ function AffiliateBanner() {
 	return (
 		<section className="bg-[#FAF7F0] py-14 px-4 sm:px-6 border-b-[2.5px] border-black">
 			<div className="max-w-[1280px] mx-auto">
-				<div className="neo-box bg-[#E8F8F0] p-8 sm:p-10 rounded-3xl border-[2.5px] border-black shadow-[6px_6px_0px_#000] flex flex-col md:flex-row items-center justify-between gap-8">
+				<div data-home-reveal className="neo-box bg-[#E8F8F0] p-8 sm:p-10 rounded-3xl border-[2.5px] border-black shadow-[6px_6px_0px_#000] flex flex-col md:flex-row items-center justify-between gap-8">
 					<div className="space-y-3 text-center md:text-left max-w-2xl">
 						<div className="neo-pill bg-[#00D261] text-black px-3.5 py-1 text-xs font-black uppercase tracking-wider inline-block">
 							TIER-BASED AFFILIATE PROGRAM
@@ -289,24 +290,26 @@ export default async function HomePage() {
 	const faqSchema = getFAQSchema(HOMEPAGE_FAQS);
 
 	return (
-		<div className="bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
-			/>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-			/>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getHomePageSchema()) }} />
-			<HeroSection />
-			<FeaturesStatusSection />
-			<ReviewsSection />
-			<CitabilityAndKnowledgeSection />
-			<BlogAndCaseStudiesSection />
-			<FAQSection />
-			<AffiliateBanner />
-			<CTABanner />
-		</div>
+		<HomeMotion>
+			<div className="bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+				/>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+				/>
+				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getHomePageSchema()) }} />
+				<HeroSection />
+				<FeaturesStatusSection />
+				<ReviewsSection />
+				<CitabilityAndKnowledgeSection />
+				<BlogAndCaseStudiesSection />
+				<FAQSection />
+				<AffiliateBanner />
+				<CTABanner />
+			</div>
+		</HomeMotion>
 	);
 }
