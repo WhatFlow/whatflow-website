@@ -22,10 +22,10 @@ The authoring modules preserve the source copy, screenshot references and editor
 | Auto-replies, opt-in and opt-out controls, Store Report and Feature Board | Message controls and Store Report |
 | FlowSense setup and order review | FlowSense order review |
 
-The product guides use WhatFlow's existing published demo captures. Some setup sections still need their own dedicated capture, including Connections, Auto-replies, Blocklist, Manual Messaging and FlowSense. The available Connections capture includes a phone number. The archived Blocklist, Manual Messaging and FlowSense captures show a Shopify app prompt instead of the intended screens.
+The product guides use published WhatFlow demo captures. The follow-up batch added dedicated Chrome captures for Connections, Auto-replies, WhatsApp Blocklist, Manual Messaging and FlowSense to the four affected guides. The demo sender number is obscured in the Connections image. The captures show setup states, and captions identify features that were inactive in the demo.
 
 ## Meta research coverage
 
 Reviewed the public [WhatsApp Developer Hub](https://whatsappbusiness.com/developers/developer-hub/), [Business Platform](https://whatsappbusiness.com/products/business-platform/), [pricing](https://whatsappbusiness.com/products/platform-pricing/), [messaging policy](https://whatsappbusiness.com/policy/), all four category pages, [WhatsApp Flows](https://whatsappbusiness.com/products/whatsapp-flows/) and [click-to-WhatsApp ads](https://whatsappbusiness.com/products/ads-that-click-to-whatsapp/). The explainers use Shopify examples and link back to the relevant primary pages.
 
-Meta for Developers returned a sign-in page or HTTP 429 on several attempts, including the Cloud API overview, error codes, policy enforcement, messaging limits, opt-in reference and changelog. Those pages were not treated as read. An exhaustive Meta documentation inventory and complete screenshot coverage remain open.
+Meta for Developers returned a sign-in page or HTTP 429 on several attempts, including the Cloud API overview, error codes, policy enforcement, messaging limits, opt-in reference and changelog. Those pages were not treated as read. An exhaustive inventory of Meta’s developer references remains open.
