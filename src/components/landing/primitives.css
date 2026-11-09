@@ -1,0 +1,66 @@
+/* ─── Apple-style scroll primitives ───────────────────────────────────── */
+
+html.lenis, html.lenis body { scroll-behavior: auto !important; }
+
+/* Word-by-word manifesto */
+.lp-words { position: relative; height: 260vh; background: #fff; }
+.lp-words-sticky { position: sticky; top: var(--nav); display: flex; align-items: center; height: calc(100svh - var(--nav)); }
+.lp-words-kicker { display: block; margin-bottom: 26px; color: var(--green-deep); font-size: 14px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.lp-words-text {
+	max-width: 20ch;
+	margin: 0;
+	font-family: var(--font-space-grotesk), "Inter", sans-serif;
+	font-size: clamp(2.2rem, 6.2vw, 5.6rem);
+	font-weight: 700;
+	line-height: 1.02;
+	letter-spacing: -0.05em;
+}
+.lp-words-text span {
+	--w: clamp(0, calc((var(--p, 0) * 1.25 * (var(--n) + 3) - var(--i)) / 3), 1);
+	opacity: calc(0.12 + 0.88 * var(--w));
+	transition: opacity 0.12s linear;
+}
+.lp-words-text span.is-accent { color: var(--green-deep); }
+
+/* Horizontal gallery */
+.lp-hgallery { position: relative; height: 300vh; }
+.lp-hgallery-sticky { position: sticky; top: var(--nav); display: flex; flex-direction: column; justify-content: center; gap: 28px; height: calc(100svh - var(--nav)); overflow: hidden; }
+.lp-hgallery-track {
+	display: flex;
+	gap: 22px;
+	width: max-content;
+	padding: 0 max(20px, calc((100vw - 1240px) / 2 + 32px));
+	transform: translate3d(calc(var(--p, 0) * var(--dist, 0px) * -1), 0, 0);
+	will-change: transform;
+}
+.lp-hgallery-bar { width: min(1176px, calc(100% - 40px)); height: 4px; margin: 0 auto; border-radius: 99px; background: rgb(11 15 12 / 0.1); overflow: hidden; }
+.lp-hgallery-bar span { display: block; height: 100%; background: var(--ink); transform-origin: left; transform: scaleX(var(--p, 0)); }
+
+/* Inset media that grows to full-bleed */
+.lp-clip { position: relative; padding: 0; background: var(--paper); }
+.lp-clip-inner {
+	--z: clamp(0, calc(var(--p, 0) * 2.6 - 0.25), 1);
+	clip-path: inset(calc((1 - var(--z)) * 9%) calc((1 - var(--z)) * 7%) round calc((1 - var(--z)) * 48px + 0px));
+	will-change: clip-path;
+}
+
+/* Stacking cards */
+.lp-stack { position: relative; display: grid; gap: 40px; padding-bottom: 8vh; }
+.lp-stack-card {
+	--cover: clamp(0, calc(var(--p, 0) * var(--n) - var(--i) - 0.55), 1);
+	position: sticky;
+	top: calc(var(--nav) + 28px + var(--i) * 18px);
+	transform-origin: top center;
+	transform: scale(calc(1 - var(--cover) * 0.07));
+	filter: brightness(calc(1 - var(--cover) * 0.18));
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.lp-words-text span { --w: 1; }
+	.lp-clip-inner { clip-path: none; }
+	.lp-stack-card { transform: none; filter: none; }
+	.lp-hgallery { height: auto !important; }
+	.lp-hgallery-sticky { position: static; height: auto; padding: 80px 0; }
+	.lp-hgallery-track { transform: none; overflow-x: auto; width: auto; }
+	.lp-hgallery-bar { display: none; }
+}

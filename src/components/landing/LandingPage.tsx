@@ -1,5 +1,11 @@
 import { HOMEPAGE_FAQS } from "@/lib/marketing-faqs";
 import { AiSection } from "./AiSection";
+import { AnalyticsChapter } from "./AnalyticsChapter";
+import { AutomationGallery } from "./AutomationGallery";
+import { AutoReplies } from "./AutoReplies";
+import { Bento } from "./Bento";
+import { ShopifyStack } from "./ShopifyStack";
+import { WordReveal } from "./ScrollPrimitives";
 import { FinalCta } from "./FinalCta";
 import { FlowBuilder } from "./FlowBuilder";
 import { Hero } from "./Hero";
@@ -8,8 +14,10 @@ import { LandingMotion } from "./LandingMotion";
 import { OrderStory } from "./OrderStory";
 import { Proof } from "./Proof";
 import "./landing.css";
+import "./primitives.css";
+import "./sections.css";
 
-const ticker = ["Abandoned checkouts", "COD confirmation", "Shipping updates", "Back-in-stock alerts", "Broadcasts", "Team inbox", "Shopify Flow", "Sidekick", "MCP for your AI"];
+const ticker = ["Order confirmation", "Abandoned checkouts", "Shipping Journey", "Back in stock", "Review requests", "Auto-replies", "Segment broadcasts", "WhatsApp OTP", "Team inbox", "Shopify Flow", "Sidekick", "MCP for your AI"];
 
 function Ticker() {
 	return (
@@ -51,10 +59,20 @@ export function LandingPage() {
 		<LandingMotion>
 			<Hero />
 			<Ticker />
+			<WordReveal
+				kicker="Why WhatsApp"
+				text="Your customers already live on WhatsApp. WhatFlow turns every Shopify moment into a conversation, and every conversation into a sale."
+				accent={["WhatsApp", "conversation", "sale"]}
+			/>
 			<OrderStory />
+			<AutomationGallery />
+			<AutoReplies />
 			<InboxZoom />
+			<AnalyticsChapter />
 			<FlowBuilder />
+			<ShopifyStack />
 			<AiSection />
+			<Bento />
 			<Proof />
 			<Faq />
 			<FinalCta />

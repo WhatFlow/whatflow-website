@@ -8,8 +8,8 @@ const prompt = "When a cash on delivery order comes in, ask the customer to conf
 const nodes = [
 	{ type: "Trigger", title: "Order created", detail: "Shopify", icon: "/shopify-brand-assets/02-glyph/svg/glyph-color.svg", tone: "lp-node-green" },
 	{ type: "Condition", title: "Payment is Cash on Delivery", detail: "If true", icon: null, tone: "lp-node-yellow" },
-	{ type: "Action", title: "Send COD confirmation", detail: "WhatFlow · WhatsApp template", icon: "/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg", tone: "lp-node-white" },
-	{ type: "Action", title: "Add order tag", detail: "cod-pending", icon: "/shopify-brand-assets/02-glyph/svg/glyph-color.svg", tone: "lp-node-white" },
+	{ type: "Action", title: "Send WhatsApp Template", detail: "WhatFlow · COD confirmation", icon: "/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg", tone: "lp-node-white" },
+	{ type: "Action", title: "Add order tags", detail: "⚠ Confirmation Pending", icon: "/shopify-brand-assets/02-glyph/svg/glyph-color.svg", tone: "lp-node-white" },
 ];
 
 export function FlowBuilder() {
@@ -25,13 +25,13 @@ export function FlowBuilder() {
 					<div className="lp-flow-copy">
 						<span className="lp-eyebrow">Shopify Flow + Sidekick</span>
 						<h2 id="lp-flow-title" className="lp-h2">Describe it. <span className="lp-hl">Watch it build.</span></h2>
-						<p className="lp-lead">WhatFlow adds native WhatsApp triggers and actions to Shopify Flow. Ask Shopify Sidekick to draft the workflow, or drag the steps yourself.</p>
+						<p className="lp-lead">9 WhatsApp triggers — button clicks, replies, media, catalog orders, opt-outs — and 8 send actions, native in Shopify Flow. Ask Sidekick to draft it, or drag the steps yourself.</p>
 						<div className="lp-sidekick" aria-label={`Sidekick prompt: ${prompt}`}>
 							<span className="lp-sidekick-label">✦ Sidekick</span>
 							<p aria-hidden="true">{typed}<span className="lp-caret" /></p>
 						</div>
 					</div>
-					<ol className="lp-flow-canvas" aria-label="Shopify Flow workflow: order created, payment is cash on delivery, send COD confirmation on WhatsApp, add order tag">
+					<ol className="lp-flow-canvas" aria-label="Shopify Flow workflow: order created, payment is cash on delivery, send WhatsApp template, add order tags">
 						{nodes.map((node, index) => (
 							<li key={node.title} className={`lp-node ${node.tone} ${index < built ? "is-built" : ""}`} style={{ "--i": index } as React.CSSProperties}>
 								{index > 0 && <span className={`lp-wire ${index < built ? "is-built" : ""}`} aria-hidden="true" />}

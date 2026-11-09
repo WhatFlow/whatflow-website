@@ -27,7 +27,10 @@ const automations = [
 	{ emoji: "✅", title: "COD confirmation", href: "/solutions/cod-order-verification", tone: "#C9F5DC" },
 	{ emoji: "📦", title: "Shipping updates", href: "/solutions/order-tracking-notifications", tone: "#D9E6FF" },
 	{ emoji: "🔔", title: "Back-in-stock alerts", href: "/features", tone: "#FFD6E2" },
-	{ emoji: "📣", title: "Broadcasts", href: "/features", tone: "#E7DBFF" },
+	{ emoji: "📣", title: "Segment broadcasts", href: "/features", tone: "#E7DBFF" },
+	{ emoji: "⭐", title: "Review requests", href: "/features", tone: "#FFE7A3" },
+	{ emoji: "🔐", title: "WhatsApp OTP", href: "/features", tone: "#D9E6FF" },
+	{ emoji: "🤖", title: "Auto-replies", href: "/features", tone: "#FFD6E2" },
 	{ emoji: "💬", title: "Chat buttons for your theme", href: "/features", tone: "#C9F5DC" },
 ];
 

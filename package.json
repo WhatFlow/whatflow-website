@@ -28,6 +28,7 @@
     "@payloadcms/storage-r2": "^3.87.0",
     "@payloadcms/ui": "^3.87.0",
     "graphql": "^16.14.2",
+    "lenis": "1.3.27",
     "next": "16.2.11",
     "payload": "^3.87.0",
     "react": "^19.1.7",

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { scrollToY } from "./LandingMotion";
 import { Bubble, Phone, type ChatMessage } from "./Phone";
 import { useScrollScene } from "./useScrollScene";
 
@@ -34,8 +35,8 @@ const steps = [
 
 const messages: (ChatMessage & { at: number })[] = [
 	{ at: 0, id: "s1", from: "store", time: "18:02", card: { title: "Linen Shirt + Canvas Tote", meta: "2 items in your cart", price: "$84", emoji: "🛍️" }, text: "Hey Maya 👋 you left a couple of things behind. Your cart is saved!", buttons: ["Complete checkout"] },
-	{ at: 1, id: "s2", from: "store", time: "18:20", text: "Thanks for your order! Please confirm COD order #1027 for $84.00 so we can pack it.", buttons: ["Confirm order", "Cancel"], tapped: 0 },
-	{ at: 1, id: "s3", from: "customer", time: "18:21", text: "Confirm order" },
+	{ at: 1, id: "s2", from: "store", time: "18:20", text: "Thanks for your order! Please confirm COD order #1027 for $84.00 so we can pack it.", buttons: ["Confirm Order", "Cancel Order"], tapped: 0 },
+	{ at: 1, id: "s3", from: "customer", time: "18:21", text: "Confirm Order" },
 	{ at: 2, id: "s4", from: "store", time: "Tue 11:05", text: "📦 Your order #1027 is on the way! It should arrive Thursday.", buttons: ["Track package"] },
 	{ at: 3, id: "s5", from: "customer", time: "Tue 11:09", text: "Amazing! Could I swap the shirt to a size L?" },
 	{ at: 3, id: "s6", from: "agent", time: "Tue 11:12", text: "Done ✅ Swapped to L before it leaves the warehouse." },
@@ -43,8 +44,8 @@ const messages: (ChatMessage & { at: number })[] = [
 
 const admin = [
 	{ label: "Abandoned checkout", tone: "lp-tag-yellow", tag: "Reminder sent", line: "Maya Chen · 2 items · $84.00" },
-	{ label: "Order #1027", tone: "lp-tag-green", tag: "cod-confirmed", line: "Payment: Cash on delivery · $84.00" },
-	{ label: "Order #1027", tone: "lp-tag-blue", tag: "Fulfilled", line: "Tracking sent on WhatsApp" },
+	{ label: "Order #1027", tone: "lp-tag-green", tag: "✓ Order Confirmed", line: "Was ⚠ Confirmation Pending · COD · $84.00" },
+	{ label: "Order #1027", tone: "lp-tag-blue", tag: "✓ Fulfillment Notified", line: "Out for delivery · tracking sent" },
 	{ label: "Order #1027", tone: "lp-tag-green", tag: "Inbox · Sara", line: "Size changed to L · replied in 3 min" },
 ];
 
@@ -56,7 +57,7 @@ export function OrderStory() {
 		if (!element) return;
 		const top = element.getBoundingClientRect().top + window.scrollY - 72;
 		const travel = element.offsetHeight - (window.innerHeight - 72);
-		window.scrollTo({ top: top + travel * ((index + 0.5) / steps.length), behavior: "smooth" });
+		scrollToY(top + travel * ((index + 0.5) / steps.length));
 	};
 
 	return (

@@ -84,7 +84,7 @@ export function InboxZoom() {
 									<b>Maya Chen</b>
 									<small>+1 (415) 555‑0148 · Returning customer</small>
 									<div className="lp-inbox-order">
-										<div className="flex justify-between"><b>#1027</b><span className="lp-tag lp-tag-green">cod-confirmed</span></div>
+										<div className="flex justify-between"><b>#1027</b><span className="lp-tag lp-tag-green">✓ Order Confirmed</span></div>
 										<small>Linen Shirt (L) · Canvas Tote</small>
 										<div className="flex justify-between"><small>Fulfilled</small><b>$84.00</b></div>
 									</div>

@@ -22,7 +22,7 @@ export function AiSection() {
 					<span className="lp-eyebrow lp-eyebrow-light">MCP connector</span>
 					<h2 id="lp-ai-title" className="lp-h2 text-white">Bring the AI <span className="text-[#00D261]">you already use.</span></h2>
 					<p className="lp-lead">
-						Connect Claude, ChatGPT or Cursor to WhatFlow. Your assistant can read inbox chats, look up Shopify orders, and draft replies — and a person approves before anything is sent.
+						Connect Claude, ChatGPT, n8n or Make to WhatFlow. Your assistant can read inbox chats, label and assign them, search your catalog and draft replies — and in draft mode, a person presses Send.
 					</p>
 					<Link href="/docs/mcp" className="lp-btn lp-btn-green">Set up MCP <span aria-hidden="true">→</span></Link>
 				</div>
