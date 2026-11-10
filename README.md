@@ -28,6 +28,21 @@ npm run preview
 # or similar package manager command
 ```
 
+## Development Worker
+
+`wrangler.dev.jsonc` targets `whatflow-website-dev` with no production routes or
+CMS, storage, or analytics bindings. It uses `worker.dev.ts` to serve the public
+site, read public reviews, rates, and media from whatflow.io, disable indexing,
+and reject CMS admin access and write requests.
+
+Build a preview in a separate directory with the source, public assets,
+package/config files, and dependencies. Use `wrangler.dev.jsonc` as that
+copy’s `wrangler.jsonc`. Exclude the project’s `.env*` and `.dev.vars*` files;
+set `NEXT_PUBLIC_SITE_URL=https://whatflow.io`, the public WhatsApp support
+number, and a dummy `PAYLOAD_SECRET` for the build. Run
+`opennextjs-cloudflare build`, then `opennextjs-cloudflare deploy` from the
+preview copy. The ordinary `npm run deploy` command below targets production.
+
 ## Deploy
 
 Deploy the application to Cloudflare:
