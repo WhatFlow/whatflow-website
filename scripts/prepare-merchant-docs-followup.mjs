@@ -2,11 +2,17 @@ import assert from 'node:assert/strict';
 import {readFile,writeFile,stat} from 'node:fs/promises';
 import {markdownToLexical} from './build-quality-content.mjs';
 import {uid} from './lib/refresh-content.mjs';
-import {articles} from '../content/blog/merchant-library-followup-2026-11-10/articles.mjs';
-import {helpPatches} from '../content/blog/merchant-library-followup-2026-11-10/help-patches.mjs';
+import {resolve} from 'node:path';
+import {pathToFileURL} from 'node:url';
 
-const [work,stage] = process.argv.slice(2);
+const [work,stage,articleModule] = process.argv.slice(2);
 assert(work && ['editorial','publication'].includes(stage));
+const {articles} = articleModule
+  ? await import(pathToFileURL(resolve(articleModule)).href)
+  : await import('../content/blog/merchant-library-followup-2026-11-10/articles.mjs');
+const {helpPatches} = articleModule
+  ? {helpPatches: []}
+  : await import('../content/blog/merchant-library-followup-2026-11-10/help-patches.mjs');
 const {docs,totalDocs} = JSON.parse(await readFile(work+'/posts.json'));
 assert.equal(docs.length,totalDocs);
 const bySlug = new Map(docs.map(doc=>[doc.slug,doc]));
