@@ -27,6 +27,10 @@ const siteUrl =
 	process.env.NEXT_PUBLIC_SITE_URL ||
 	(process.env.NODE_ENV === "production" ? "https://whatflow.io" : "http://localhost:3000");
 
+const socialTitle = "WhatFlow | WhatsApp for Shopify";
+const socialDescription = "Recover carts, confirm COD orders, and reply from one shared WhatsApp inbox.";
+const socialImage = "/brand/whatflow-social-card-v2.png";
+
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
 	title: {
@@ -56,25 +60,23 @@ export const metadata: Metadata = {
 		locale: "en_US",
 		url: siteUrl,
 		siteName: "WhatFlow",
-		title: "WhatFlow — WhatsApp Apps & Automations for Shopify Stores",
-		description:
-			"Automate WhatsApp marketing, recover abandoned carts, verify COD orders, and boost Shopify conversions with official Meta API.",
+		title: socialTitle,
+		description: socialDescription,
 		images: [
 			{
-				url: "/opengraph-image",
+				url: socialImage,
 				width: 1200,
 				height: 630,
-				alt: "WhatFlow — WhatsApp Marketing & Automation Suite for Shopify",
+				alt: "WhatFlow for Shopify with an example WhatsApp order conversation",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "WhatFlow — WhatsApp Apps & Automations for Shopify Stores",
-		description:
-			"Automate WhatsApp marketing, recover abandoned carts, verify COD orders, and boost Shopify conversions with official Meta API.",
+		title: socialTitle,
+		description: socialDescription,
 		creator: "@whatflow_io",
-		images: ["/opengraph-image"],
+		images: [socialImage],
 	},
 	robots: {
 		index: true,
