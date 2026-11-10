@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import type { CSSProperties } from "react";
+import { PageHero, Section, SectionHead, Hl } from "@/components/site/PageKit";
 import { getIntegrations, INTEGRATION_CATEGORY_LABELS, type Integration } from "@/lib/payload-api";
+import "./integrations.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/integrations" },
@@ -123,133 +126,125 @@ export default async function IntegrationsPage({ searchParams }: IntegrationsPag
       ) as Integration[]);
 
   const categories = [
-    { key: "all", label: "All Integrations" },
+    { key: "all", label: "All integrations" },
     { key: "automation", label: "Automation" },
-    { key: "reviews", label: "Reviews & UGC" },
+    { key: "reviews", label: "Reviews and UGC" },
     { key: "marketing", label: "Marketing" },
     { key: "support", label: "Support" },
     { key: "subscriptions", label: "Subscriptions" },
   ];
 
-  return (
-    <div className="min-h-screen bg-[#FAF7F0]">
-      {/* ─── Hero ─── */}
-      <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
-        <div className="max-w-[1280px] mx-auto text-center">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black mb-4">
-            ECOSYSTEM &amp; PARTNERS
-          </div>
-          <h1 className="text-[44px] sm:text-[60px] lg:text-[76px] font-display font-black uppercase text-black tracking-tight leading-none mb-6">
-            CONNECT WHATFLOW WITH <br />
-            <span className="text-stroke-green">YOUR ENTIRE STACK.</span>
-          </h1>
-          <p className="text-base sm:text-lg text-gray-700 font-medium max-w-2xl mx-auto">
-            Supercharge your Shopify store with seamless native integrations for reviews, helpdesks, marketing automation, and subscriptions.
-          </p>
-        </div>
-      </section>
+  // Eight tiles around WhatFlow; empty slots stay dashed ("your app here").
+  const orbit = (allIntegrations.length ? allIntegrations : (DEFAULT_INTEGRATIONS as Integration[])).slice(0, 8);
 
-      {/* ─── Category Filter Tabs ─── */}
-      <section className="border-b-[2.5px] border-black bg-white px-4 sm:px-6 py-4 sticky top-0 z-30">
-        <div className="max-w-[1280px] mx-auto flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0">
+  return (
+    <div className="min-h-screen bg-[var(--paper)]">
+      <PageHero
+        title="Connect WhatFlow with your entire stack."
+        accent={["entire", "stack"]}
+        sub={<p>Native integrations connect your Shopify store to reviews, helpdesks, marketing automation, and subscriptions.</p>}
+        actions={
+          <>
+            <a href="#all-integrations" className="wf-btn wf-btn-green">Browse integrations</a>
+            <a href="mailto:support@whatflow.tech" className="wf-btn wf-btn-ghost">Request an integration</a>
+          </>
+        }
+      >
+        <div className="int-orbit" aria-hidden="true">
+          {Array.from({ length: 9 }, (_, index) => {
+            if (index === 4) {
+              return (
+                <span key="core" className="int-orbit-core">
+                  <Image src="/brand/whatflow-mark.webp" unoptimized alt="" width={64} height={64} />
+                </span>
+              );
+            }
+            const app = orbit[index < 4 ? index : index - 1];
+            if (!app) return <span key={index} className="int-orbit-empty">+</span>;
+            return (
+              <span key={app.slug} className={`int-tone-${index % 5}`} style={{ "--d": `${index * -700}ms` } as CSSProperties}>
+                <span>
+                  {app.name.charAt(0)}
+                  <small>{app.name}</small>
+                </span>
+              </span>
+            );
+          })}
+        </div>
+      </PageHero>
+
+      <Section id="all-integrations" tone="paper">
+        <SectionHead
+          title={<>Plug WhatsApp into the apps you <Hl>already use</Hl>.</>}
+        />
+
+        {/* ─── Category filter ─── */}
+        <nav aria-label="Integration categories" className="int-filter mt-10" data-reveal>
           {categories.map((cat) => {
             const isActive = selectedCategory === cat.key;
             return (
               <Link
                 key={cat.key}
                 href={cat.key === "all" ? "/integrations" : `/integrations?category=${cat.key}`}
-                className={`neo-pill px-4 py-2 text-xs font-extrabold uppercase tracking-wider whitespace-nowrap transition-all ${isActive
-                    ? "bg-[#00D261] text-black shadow-[2px_2px_0px_#000]"
-                    : "bg-[#FAF7F0] text-gray-700 hover:bg-gray-100"
-                  }`}
+                aria-current={isActive ? "page" : undefined}
               >
                 {cat.label}
               </Link>
             );
           })}
-        </div>
-      </section>
+        </nav>
 
-      {/* ─── Integrations Grid ─── */}
-      <section className="px-4 sm:px-6 py-16 max-w-[1280px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {allIntegrations.map((item) => (
+        {/* ─── Integrations grid ─── */}
+        <div className="wf-grid wf-grid-3 mt-8">
+          {allIntegrations.map((item, index) => (
             <Link
               key={item.slug}
               href={`/integrations/${item.slug}`}
-              className="neo-box bg-white p-7 flex flex-col justify-between rounded-2xl group hover:-translate-y-1 transition-transform"
+              className={`wf-card int-tone-${index % 5}`}
+              data-reveal
+              style={{ "--d": `${(index % 3) * 80}ms` } as CSSProperties}
             >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-[#FAF7F0] border-2 border-black flex items-center justify-center font-display font-black text-lg text-black shadow-[2px_2px_0px_#000]">
-                    {item.logo?.url ? (
-                      <Image src={item.logo.url} alt={item.name} width={36} height={36} className="object-contain" />
-                    ) : (
-                      item.name.charAt(0)
-                    )}
-                  </div>
-                  <span className="neo-pill bg-[#FAF7F0] border-black text-[10px] font-black uppercase px-2.5 py-0.5">
-                    {INTEGRATION_CATEGORY_LABELS[item.category] ?? item.category}
-                  </span>
-                </div>
-
-                <div>
-                  <h2 className="font-display font-black text-xl text-black uppercase group-hover:text-[#0A6B56] transition-colors leading-tight">
-                    {item.name}
-                  </h2>
-                  <div className="text-xs font-bold text-[#00D261] uppercase tracking-wider mt-1">
-                    {item.tagline}
-                  </div>
-                </div>
-
-                <p className="text-xs font-medium text-gray-600 leading-relaxed line-clamp-3">
-                  {item.description}
-                </p>
-
-                {item.keyFeatures && item.keyFeatures.length > 0 && (
-                  <div className="pt-2 border-t border-gray-100 space-y-1.5">
-                    {item.keyFeatures.slice(0, 3).map((f) => (
-                      <div key={f.feature} className="text-[11px] font-bold text-gray-700 flex items-center gap-1.5">
-                        <span className="text-[#00D261] font-black">✓</span>
-                        <span>{f.feature}</span>
-                      </div>
-                    ))}
-                  </div>
+              <span className="int-logo">
+                {item.logo?.url ? (
+                  <Image src={item.logo.url} alt={item.name} width={36} height={36} className="object-contain" />
+                ) : (
+                  item.name.charAt(0)
                 )}
-              </div>
+              </span>
 
-              <div className="pt-5 mt-5 border-t border-gray-100 flex items-center justify-between text-xs font-extrabold uppercase tracking-wider text-[#2563EB] group-hover:text-[#00D261] transition-colors">
-                <span>VIEW INTEGRATION GUIDE</span>
-                <span>➔</span>
-              </div>
+              <h2 className="mt-6 font-display text-[1.6rem] font-bold leading-[1.05] tracking-[-0.035em]">{item.name}</h2>
+              <p className="int-tagline"><b className="wf-leadin">{INTEGRATION_CATEGORY_LABELS[item.category] ?? item.category}.</b> {item.tagline}</p>
+              <p className="line-clamp-3">{item.description}</p>
+
+              {item.keyFeatures && item.keyFeatures.length > 0 && (
+                <ul className="int-checks">
+                  {item.keyFeatures.slice(0, 3).map((f) => (
+                    <li key={f.feature}>
+                      <span className="int-check" aria-hidden="true">✓</span>
+                      <span>{f.feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              <span className="int-card-cta">View integration guide</span>
             </Link>
           ))}
         </div>
-      </section>
 
-      {/* ─── Request Integration CTA ─── */}
-      <section className="px-4 sm:px-6 pb-20 max-w-[1280px] mx-auto">
-        <div className="neo-box bg-[#091E17] text-white p-8 sm:p-12 rounded-2xl text-center space-y-4">
-          <div className="neo-box inline-block bg-[#00D261] px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-            CUSTOM WORKFLOWS
+        {/* ─── Request an integration ─── */}
+        <div className="int-request mt-16" data-reveal>
+          <div>
+            <h2 className="wf-h2">Don&apos;t see your favorite app?</h2>
+            <p>
+              WhatFlow connects to any Shopify app through our native Shopify Flow triggers and webhooks. Reach out to request a dedicated native connector.
+            </p>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-display font-black uppercase tracking-tight">
-            DON&apos;T SEE YOUR FAVORITE APP?
-          </h2>
-          <p className="text-sm text-[#A7F3D0] max-w-xl mx-auto font-medium leading-relaxed">
-            WhatFlow connects to any Shopify app through our native Shopify Flow triggers and webhooks. Reach out to request a dedicated native connector!
-          </p>
-          <div className="pt-2">
-            <a
-              href="mailto:support@whatflow.tech"
-              className="neo-btn inline-flex items-center gap-2 bg-[#00D261] text-black font-extrabold text-xs uppercase px-6 py-3 rounded-lg shadow-[3px_3px_0px_#000]"
-            >
-              <span>REQUEST AN INTEGRATION</span>
-              <span>➔</span>
-            </a>
-          </div>
+          <a href="mailto:support@whatflow.tech" className="wf-btn wf-btn-green self-start">
+            Request an integration
+          </a>
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

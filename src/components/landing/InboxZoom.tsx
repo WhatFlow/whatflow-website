@@ -45,13 +45,12 @@ export function InboxZoom() {
 		<section ref={ref} className="lp-inbox" aria-labelledby="lp-inbox-title">
 			<div className="lp-inbox-sticky">
 				<div className="lp-shell lp-inbox-head">
-					<span className="lp-eyebrow lp-eyebrow-light">Team inbox</span>
-					<h2 id="lp-inbox-title" className="lp-h2 text-white">Every chat. Every order. <span className="text-[#00D261]">One screen.</span></h2>
+					<h2 id="lp-inbox-title" className="lp-h2 text-white">Every chat. Every order. One screen.</h2>
 				</div>
 				<div ref={fitRef} className="lp-shell lp-inbox-fit">
 					<div className="lp-inbox-scaler">
 						<div className="lp-window" role="img" aria-label="WhatFlow team inbox with a conversation list, an open chat, and the customer's Shopify orders">
-							<div className="lp-window-bar"><span /><span /><span /><b>WhatFlow Inbox</b></div>
+							<div className="lp-app-head"><b>WhatFlow Inbox</b></div>
 							<div className="lp-window-body">
 								<aside className="lp-inbox-list">
 									<div className="lp-inbox-filters"><span className="is-on">All</span><span>Needs reply · 2</span><span>Mine</span></div>
@@ -92,7 +91,7 @@ export function InboxZoom() {
 										<div className="flex justify-between"><b>#0988</b><span className="lp-tag lp-tag-blue">Delivered</span></div>
 										<small>Ceramic Mug × 2</small>
 									</div>
-									<div className="lp-inbox-actions"><span>Send template</span><span>Open in Shopify ↗</span></div>
+									<div className="lp-inbox-actions"><span>Send template</span><span>Open in Shopify</span></div>
 								</aside>
 							</div>
 						</div>

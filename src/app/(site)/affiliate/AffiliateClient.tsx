@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
+import { Hl, PageHero, Section, SectionHead } from "@/components/site/PageKit";
 import Image from "next/image";
 
 const SIGNUP_URL = "https://affilitrak.com/register/whatflow-official-api";
@@ -8,57 +9,57 @@ const SIGNUP_URL = "https://affilitrak.com/register/whatflow-official-api";
 const TIERS = [
   {
     tierNum: "1",
-    name: "STARTER PARTNER",
+    name: "Starter partner",
     referrals: "0–9",
-    referralsSub: "PAID REFERRALS",
+    referralsSub: "paid referrals",
     commission: "10%",
-    duration: "3 MONTHS",
-    durationBadge: "bg-white text-black",
+    duration: "3 months",
+    durationTone: "#fff",
     benefits: "Affiliate link + basic assets",
     highlight: false,
   },
   {
     tierNum: "2",
-    name: "GROWTH PARTNER",
+    name: "Growth partner",
     referrals: "10–24",
-    referralsSub: "PAID REFERRALS",
+    referralsSub: "paid referrals",
     commission: "15%",
-    duration: "3 MONTHS",
-    durationBadge: "bg-[#E8F8F0] text-[#0A6B56]",
+    duration: "3 months",
+    durationTone: "var(--mint)",
     benefits: "Marketing kit + assets",
     highlight: false,
   },
   {
     tierNum: "3",
-    name: "PRO PARTNER",
+    name: "Pro partner",
     referrals: "25–49",
-    referralsSub: "PAID REFERRALS",
+    referralsSub: "paid referrals",
     commission: "20%",
-    duration: "6 MONTHS",
-    durationBadge: "bg-[#FFF3CD] text-[#856404]",
+    duration: "6 months",
+    durationTone: "#fff3c4",
     benefits: "Priority support + marketing kit",
     highlight: false,
   },
   {
     tierNum: "4",
-    name: "ELITE PARTNER",
+    name: "Elite partner",
     referrals: "50–99",
-    referralsSub: "PAID REFERRALS",
+    referralsSub: "paid referrals",
     commission: "25%",
-    duration: "LIFETIME",
-    durationBadge: "bg-[#00D261] text-black",
+    duration: "Lifetime",
+    durationTone: "var(--green)",
     benefits: "Dedicated partner manager",
     highlight: false,
   },
   {
     tierNum: "5",
-    name: "AGENCY / PREMIER",
+    name: "Agency / premier",
     referrals: "100+",
-    referralsSub: "PAID REFERRALS",
+    referralsSub: "paid referrals",
     commission: "30%–50%",
-    commissionNote: "CUSTOM",
-    duration: "LIFETIME",
-    durationBadge: "bg-black text-[#00D261]",
+    commissionNote: "Custom",
+    duration: "Lifetime",
+    durationTone: "var(--green)",
     benefits: "Custom terms + co-marketing",
     highlight: true,
   },
@@ -87,9 +88,36 @@ const FAQS = [
   },
   {
     q: "Can agencies receive custom partnership terms?",
-    a: "Yes. Qualified agencies and developers managing multiple Shopify client stores can unlock custom partnership terms with commissions of up to 50%, lifetime payouts, dedicated Slack channels, and co-marketing opportunities.",
+    a: "Yes. Qualified agencies and developers managing multiple Shopify client stores qualify for custom partnership terms with commissions of up to 50%, lifetime payouts, dedicated Slack channels, and co-marketing opportunities.",
   },
 ];
+
+const STEPS = [
+  { num: "01", title: "Join the program", body: "Apply and receive your custom tracked affiliate link and partner dashboard access in minutes.", tone: "var(--mint)" },
+  { num: "02", title: "Share WhatFlow", body: "Recommend WhatFlow to Shopify merchants, eCommerce clients, and your audience with our marketing kit.", tone: "var(--sky)" },
+  { num: "03", title: "Merchant subscribes", body: "The referred store installs WhatFlow, connects their WhatsApp number, and becomes a paying subscriber.", tone: "#fff3c4" },
+  { num: "04", title: "Recurring payouts", body: "Earn recurring monthly commissions (3 months for Starter/Growth, 6 months for Pro, and lifetime for Elite & Agency).", tone: "var(--pink)" },
+];
+
+const RULES = [
+  { title: "Current tier rate & duration", body: "New qualifying referrals earn the commission rate and duration of your active tier at the time of their subscription." },
+  { title: "No retroactive upgrades", body: "Older referrals keep the commission terms applied when they qualified, giving you predictable tracking." },
+  { title: "Successful payments only", body: "Commission is earned and unlocked once each monthly subscription payment is successfully collected by Shopify." },
+];
+
+const DURATIONS = [
+  { tag: "Starter & Growth", tagTone: "var(--mint)", title: "First 3 paid months", body: "10%–15% commission on the merchant's first 3 billing cycles." },
+  { tag: "Pro partner", tagTone: "#fff3c4", title: "First 6 paid months", body: "20% commission on the merchant's first 6 billing cycles." },
+  { tag: "Elite & Agency", tagTone: "var(--green)", title: "Lifetime recurring", body: "25%–50% commission for the full lifetime of the store subscription." },
+];
+
+const AGENCY_PERKS = [
+  { title: "Commissions up to 50%", body: "Bespoke tiered commission rates tailored to your store volume and client roster." },
+  { title: "Co-marketing & case studies", body: "Joint case studies, newsletter feature placements, and ecosystem co-marketing." },
+  { title: "Dedicated Slack & manager", body: "Direct engineering escalation channel and dedicated WhatsApp account manager." },
+];
+
+const delay = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
 
 export function AffiliateClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -99,570 +127,242 @@ export function AffiliateClient() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
-      {/* ─── 1. Hero Section ─────────────────────────────────────────────────── */}
-      <section className="pt-12 pb-16 sm:pb-20 px-4 sm:px-6 border-b-[2.5px] border-black bg-[#FAF7F0]">
-        <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          {/* Left Hero Content */}
-          <div className="lg:col-span-7 space-y-6">
-            <div className="flex flex-wrap items-center gap-3">
-              <div className="neo-pill bg-[#00D261] px-4 py-1.5 text-xs font-black uppercase tracking-wider text-black">
-                WHATFLOW AFFILIATE PLAN
-              </div>
-              <div className="neo-pill bg-[#FFF3CD] px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-[#856404]">
-                PERFORMANCE-BASED REWARDS
-              </div>
+    <div className="bg-[var(--paper)] text-[var(--ink)] selection:bg-[var(--green)] selection:text-black">
+      {/* ─── Hero ─── */}
+      <PageHero
+        title="Grow with WhatFlow. Earn up to 50%."
+        accent={["50%"]}
+        sub={
+          <p>
+            Recommend WhatFlow to Shopify merchants and earn recurring commissions. Earn for up to 6 months on the Pro tier and lifetime recurring commissions on Elite and Agency tiers.
+          </p>
+        }
+        actions={
+          <>
+            <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer" className="wf-btn wf-btn-green">
+              Apply to join
+            </a>
+            <a href="#tiers" className="wf-btn wf-btn-ghost">
+              See commission tiers
+            </a>
+          </>
+        }
+        meta={
+          <>
+            <span>Built for agencies, influencers, educators, creators and high-volume partners.</span>
+            <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer" className="underline decoration-[var(--green)] decoration-2 underline-offset-4">
+              Affiliate login
+            </a>
+          </>
+        }
+      >
+        <div className="af-flow" aria-hidden="true">
+          <div className="af-node">
+            <div className="flex items-center gap-3">
+              <span className="af-node-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                </svg>
+              </span>
+              <span>
+                <small>Your tracked link</small>
+                <b className="font-mono">whatflow.io/aff/yourlink</b>
+              </span>
             </div>
-
-            <h1 className="text-[44px] sm:text-[60px] lg:text-[68px] font-display font-black leading-[1.02] uppercase text-black tracking-tight">
-              GROW WITH WHATFLOW.{" "}
-              <span className="text-stroke-green block sm:inline">EARN UP TO 50%.</span>
-            </h1>
-
-            <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed max-w-xl">
-              Recommend WhatFlow to Shopify merchants and earn recurring commissions. Unlock up to 6 months duration on Pro tier and lifetime recurring commissions on Elite and Agency tiers.
-            </p>
-
-            <div className="flex flex-wrap items-center gap-4 pt-2">
-              <a
-                href={SIGNUP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="neo-btn bg-[#00D261] text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider px-8 py-4 rounded-xl flex items-center gap-2 hover:bg-[#00be57] transition-colors"
-              >
-                APPLY TO JOIN ➔
-              </a>
-              <a
-                href="#tiers"
-                className="neo-btn bg-white text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-gray-50 transition-colors"
-              >
-                SEE COMMISSION TIERS ↓
-              </a>
-            </div>
-
-            <div className="text-xs font-bold text-gray-600 pt-2">
-              Built for agencies, influencers, educators, creators and high-volume partners.
-            </div>
+            <span className="wf-pill" style={{ background: "var(--mint)" }}>Active</span>
           </div>
 
-          {/* Right Visual Diagram Frame */}
-          <div className="lg:col-span-5">
-            <div className="neo-box bg-[#00D261] p-6 sm:p-8 rounded-3xl border-[2.5px] border-black shadow-[6px_6px_0px_0px_#000] space-y-6">
-              {/* Step 1: Tracked Link */}
-              <div className="neo-box bg-white p-4 rounded-xl border-2 border-black flex items-center justify-between shadow-[3px_3px_0px_#000]">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#00D261] border border-black flex items-center justify-center font-black text-black">
-                    <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-[2.5]" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-[10px] font-black uppercase text-gray-500 tracking-wider">YOUR TRACKED LINK</div>
-                    <div className="text-xs sm:text-sm font-extrabold text-black font-mono">whatflow.io/aff/yourlink</div>
-                  </div>
-                </div>
-                <span className="neo-pill bg-[#E8F8F0] text-[#0A6B56] text-[10px] font-black px-2 py-0.5 border border-black">
-                  ACTIVE
-                </span>
-              </div>
+          <div className="af-arrow"><span>↓</span><span>↓</span><span>↓</span></div>
 
-              {/* Connecting Flow Arrows */}
-              <div className="flex justify-around items-center text-black font-black text-xs">
-                <span>↓</span>
-                <span>↓</span>
-                <span>↓</span>
-              </div>
-
-              {/* 3 Shopify Merchant Cards */}
-              <div className="grid grid-cols-3 gap-2">
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="neo-box bg-white p-3 rounded-xl border-2 border-black text-center space-y-1.5 shadow-[2px_2px_0px_#000]">
-                    <div className="w-8 h-8 mx-auto rounded-full bg-[#E8F8F0] border border-black flex items-center justify-center">
-                      <Image
-                        src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg"
-                        width={16}
-                        height={16}
-                        alt="Shopify"
-                      />
-                    </div>
-                    <div className="text-[9px] font-black uppercase text-black leading-tight">SHOPIFY STORE</div>
-                    <div className="text-[8px] font-bold text-[#00D261]">CONNECTED</div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Connecting Flow Arrow */}
-              <div className="text-center font-black text-xs text-black">↓</div>
-
-              {/* Bottom Result Box */}
-              <div className="neo-box bg-[#FFC107] p-4 rounded-xl border-2 border-black flex items-center justify-between shadow-[3px_3px_0px_#000]">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-white border border-black flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-[10px] font-black uppercase text-black tracking-wider">PAID REFERRAL</div>
-                    <div className="text-xs sm:text-sm font-black uppercase text-black">COMMISSION UNLOCKED</div>
-                  </div>
-                </div>
-                <span className="neo-pill bg-black text-[#00D261] text-[10px] font-black px-2.5 py-1 border border-black">
-                  UP TO LIFETIME
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── 2. How It Works: Share. Refer. Earn. ────────────────────────────── */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black bg-white">
-        <div className="max-w-[1280px] mx-auto space-y-10">
-          <div className="space-y-3 text-center sm:text-left">
-            <div className="neo-pill bg-[#E8F8F0] text-[#0A6B56] px-3.5 py-1 text-xs font-black uppercase tracking-wider inline-block">
-              HOW IT WORKS
-            </div>
-            <h2 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tight text-black">
-              SHARE. REFER. EARN.
-            </h2>
-          </div>
-
-          {/* 4 Steps Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="neo-box bg-[#FAF7F0] p-6 rounded-2xl border-2 border-black flex flex-col justify-between space-y-4 shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-transform">
-              <div className="space-y-3">
-                <span className="font-display font-black text-3xl text-[#00D261]">01</span>
-                <h3 className="font-display font-black text-lg uppercase text-black">
-                  JOIN THE PROGRAM
-                </h3>
-                <p className="text-xs text-gray-700 font-medium leading-relaxed">
-                  Apply and receive your custom tracked affiliate link and partner dashboard access in minutes.
-                </p>
-              </div>
-            </div>
-
-            <div className="neo-box bg-[#FAF7F0] p-6 rounded-2xl border-2 border-black flex flex-col justify-between space-y-4 shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-transform">
-              <div className="space-y-3">
-                <span className="font-display font-black text-3xl text-[#2563EB]">02</span>
-                <h3 className="font-display font-black text-lg uppercase text-black">
-                  SHARE WHATFLOW
-                </h3>
-                <p className="text-xs text-gray-700 font-medium leading-relaxed">
-                  Recommend WhatFlow to Shopify merchants, eCommerce clients, and your audience with our marketing kit.
-                </p>
-              </div>
-            </div>
-
-            <div className="neo-box bg-[#FAF7F0] p-6 rounded-2xl border-2 border-black flex flex-col justify-between space-y-4 shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-transform">
-              <div className="space-y-3">
-                <span className="font-display font-black text-3xl text-[#FFC107]">03</span>
-                <h3 className="font-display font-black text-lg uppercase text-black">
-                  MERCHANT SUBSCRIBES
-                </h3>
-                <p className="text-xs text-gray-700 font-medium leading-relaxed">
-                  The referred store installs WhatFlow, connects their WhatsApp number, and becomes a paying subscriber.
-                </p>
-              </div>
-            </div>
-
-            <div className="neo-box bg-[#FAF7F0] p-6 rounded-2xl border-2 border-black flex flex-col justify-between space-y-4 shadow-[4px_4px_0px_#000] hover:-translate-y-1 transition-transform">
-              <div className="space-y-3">
-                <span className="font-display font-black text-3xl text-[#00D261]">04</span>
-                <h3 className="font-display font-black text-lg uppercase text-black">
-                  RECURRING PAYOUTS
-                </h3>
-                <p className="text-xs text-gray-700 font-medium leading-relaxed">
-                  Earn recurring monthly commissions (3 months for Starter/Growth, 6 months for Pro, and Lifetime for Elite &amp; Agency).
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Guarantee & Minimum Payout Note Box */}
-          <div className="neo-box bg-[#FFF3CD] p-4 rounded-xl border-2 border-black text-center shadow-[3px_3px_0px_#000]">
-            <span className="text-xs font-black uppercase tracking-wider text-black">
-              Minimum payout is $50 or 3 months (whichever happens first), paid on the 1st of each month. Only verified, successfully paid referrals qualify.
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── 3. Tier Progression ─────────────────────────────────────────────── */}
-      <section id="tiers" className="py-16 sm:py-24 px-4 sm:px-6 border-b-[2.5px] border-black bg-[#FAF7F0]">
-        <div className="max-w-[1280px] mx-auto space-y-10">
-          <div className="space-y-3 text-center max-w-3xl mx-auto">
-            <div className="neo-pill bg-[#00D261] px-4 py-1 text-xs font-black uppercase tracking-wider text-black inline-block">
-              TIER PROGRESSION
-            </div>
-            <h2 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tight text-black">
-              THE MORE YOU GROW, THE MORE YOU EARN.
-            </h2>
-            <p className="text-sm sm:text-base text-gray-700 font-medium leading-relaxed">
-              Your tier is based on lifetime verified paid referrals. Once unlocked, you keep your tier permanently.
-            </p>
-          </div>
-
-          {/* Tier Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 pt-4 items-stretch">
-            {TIERS.map((tier) => (
-              <div
-                key={tier.tierNum}
-                className={`neo-box rounded-2xl border-[2.5px] border-black flex flex-col justify-between p-6 shadow-[4px_4px_0px_#000] hover:-translate-y-1.5 transition-all duration-200 ${tier.highlight ? "bg-[#00D261] text-black" : "bg-white text-black"
-                  }`}
-              >
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div
-                      className={`w-8 h-8 rounded-full border-2 border-black flex items-center justify-center font-display font-black text-sm ${tier.highlight ? "bg-black text-[#00D261]" : "bg-[#00D261] text-black"
-                        }`}
-                    >
-                      {tier.tierNum}
-                    </div>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-gray-600">
-                      TIER {tier.tierNum}
-                    </span>
-                  </div>
-
-                  <div>
-                    <h3 className="font-display font-black text-base uppercase leading-tight">
-                      {tier.name}
-                    </h3>
-                    <div className="text-xs font-bold text-gray-700 pt-1">
-                      {tier.referrals} {tier.referralsSub}
-                    </div>
-                  </div>
-
-                  {/* Commission Callout */}
-                  <div className="pt-2 border-t border-black/10">
-                    <div className="font-display font-black text-3xl sm:text-4xl tracking-tight">
-                      {tier.commission}
-                    </div>
-                    <div className="text-[10px] font-black uppercase tracking-wider text-gray-600">
-                      COMMISSION RATE
-                    </div>
-                  </div>
-
-                  {/* Duration Badge */}
-                  <div className="pt-2">
-                    <div className={`neo-pill px-2.5 py-1 text-[10px] font-black uppercase tracking-wider inline-block border border-black shadow-[1px_1px_0px_#000] ${tier.durationBadge}`}>
-                      {tier.duration} DURATION
-                    </div>
-                  </div>
-                </div>
-
-                {/* Benefits Footer */}
-                <div className="pt-6 border-t border-black/15 mt-6 space-y-2">
-                  <div className="text-[10px] font-black uppercase tracking-widest text-gray-600">
-                    BENEFITS
-                  </div>
-                  <div className="text-xs font-bold leading-snug">
-                    ✓ {tier.benefits}
-                  </div>
-                </div>
+          <div className="af-stores">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="af-store">
+                <i>
+                  <Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={16} height={16} alt="Shopify" />
+                </i>
+                <span>Shopify store</span>
+                <em>Connected</em>
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* ─── 4. Commission Rules & Duration Matrix ────────────────────────────── */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black bg-[#091E17] text-white">
-        <div className="max-w-[1280px] mx-auto space-y-12">
-          <div className="space-y-4 max-w-2xl">
-            <div className="neo-pill bg-[#00D261] text-black px-3.5 py-1 text-xs font-black uppercase tracking-wider inline-block">
-              TIER PROGRESSION RULES
-            </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black uppercase tracking-tight leading-tight">
-              CLEAR COMMISSIONS. NO GUESSWORK.{" "}
-              <span className="text-stroke-green block sm:inline">EARN UP TO LIFETIME PAYOUTS.</span>
-            </h2>
-          </div>
+          <div className="af-arrow"><span>↓</span></div>
 
-          {/* 3 Core Rules Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="neo-box bg-white text-black p-6 rounded-2xl border-2 border-black space-y-3 shadow-[4px_4px_0px_#000]">
-              <div className="w-10 h-10 rounded-xl bg-[#E8F8F0] border-2 border-black flex items-center justify-center font-black text-base text-[#0A6B56]">
-                %
-              </div>
-              <h3 className="font-display font-black text-lg uppercase text-black">
-                CURRENT TIER RATE &amp; DURATION
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
-                New qualifying referrals earn the commission rate and duration of your active tier at the time of their subscription.
-              </p>
-            </div>
-
-            <div className="neo-box bg-white text-black p-6 rounded-2xl border-2 border-black space-y-3 shadow-[4px_4px_0px_#000]">
-              <div className="w-10 h-10 rounded-xl bg-[#FFEBEB] border-2 border-black flex items-center justify-center font-black text-base text-[#FF4B4B]">
-                ✕
-              </div>
-              <h3 className="font-display font-black text-lg uppercase text-black">
-                NO RETROACTIVE UPGRADES
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
-                Older referrals keep the commission terms applied when they qualified, giving you predictable tracking.
-              </p>
-            </div>
-
-            <div className="neo-box bg-white text-black p-6 rounded-2xl border-2 border-black space-y-3 shadow-[4px_4px_0px_#000]">
-              <div className="w-10 h-10 rounded-xl bg-[#00D261] border-2 border-black flex items-center justify-center font-black text-base text-black">
-                ✓
-              </div>
-              <h3 className="font-display font-black text-lg uppercase text-black">
-                SUCCESSFUL PAYMENTS ONLY
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
-                Commission is earned and unlocked once each monthly subscription payment is successfully collected by Shopify.
-              </p>
-            </div>
-          </div>
-
-          {/* Tiered Duration Breakdown */}
-          <div className="neo-box bg-white p-6 sm:p-8 rounded-2xl border-2 border-black shadow-[4px_4px_0px_#000] space-y-6">
-            <div className="flex items-center gap-2">
-              <span className="neo-pill bg-[#00D261] text-black text-[10px] font-black uppercase px-3 py-1 border border-black">
-                PAYOUT DURATION BY TIER
+          <div className="af-node af-node-yellow">
+            <div className="flex items-center gap-3">
+              <span className="af-node-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </span>
+              <span>
+                <small>Paid referral</small>
+                <b>Commission unlocked</b>
               </span>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="neo-box bg-[#FAF7F0] p-5 rounded-xl border-2 border-black space-y-2 shadow-[2px_2px_0px_#000]">
-                <span className="neo-pill bg-[#E8F8F0] text-[#0A6B56] text-[10px] font-black uppercase px-2.5 py-0.5 border border-black inline-block">
-                  STARTER &amp; GROWTH
-                </span>
-                <div className="text-lg sm:text-xl font-display font-black text-black">
-                  FIRST 3 PAID MONTHS
-                </div>
-                <p className="text-xs text-gray-700 font-medium leading-relaxed">
-                  10%–15% commission on the merchant's first 3 billing cycles.
-                </p>
-              </div>
-
-              <div className="neo-box bg-[#FAF7F0] p-5 rounded-xl border-2 border-black space-y-2 shadow-[2px_2px_0px_#000]">
-                <span className="neo-pill bg-[#FFF3CD] text-[#856404] text-[10px] font-black uppercase px-2.5 py-0.5 border border-black inline-block">
-                  PRO PARTNER
-                </span>
-                <div className="text-lg sm:text-xl font-display font-black text-[#856404]">
-                  FIRST 6 PAID MONTHS
-                </div>
-                <p className="text-xs text-gray-700 font-medium leading-relaxed">
-                  20% commission on the merchant's first 6 billing cycles.
-                </p>
-              </div>
-
-              <div className="neo-box bg-[#FAF7F0] p-5 rounded-xl border-2 border-black space-y-2 shadow-[2px_2px_0px_#000]">
-                <span className="neo-pill bg-[#00D261] text-black text-[10px] font-black uppercase px-2.5 py-0.5 border border-black inline-block">
-                  ELITE &amp; AGENCY
-                </span>
-                <div className="text-lg sm:text-xl font-display font-black text-[#0A6B56]">
-                  LIFETIME RECURRING
-                </div>
-                <p className="text-xs text-gray-700 font-medium leading-relaxed">
-                  25%–50% commission for the full lifetime of the store subscription.
-                </p>
-              </div>
-            </div>
-
-            <div className="neo-box bg-[#FAF7F0] p-3.5 rounded-xl border border-black text-center text-xs font-extrabold text-black shadow-[1px_1px_0px_#000]">
-              Payout Schedule: Released on the 1st of every month • Minimum payout is $50 or 3 months (whichever happens first).
-            </div>
+            <span className="wf-pill" style={{ background: "var(--ink)", color: "var(--green)" }}>Up to lifetime</span>
           </div>
         </div>
-      </section>
+      </PageHero>
 
-      {/* ─── 5. Agency & Strategic Partners Section ──────────────────────────── */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black bg-[#FAF7F0]">
-        <div className="max-w-[1280px] mx-auto">
-          <div className="neo-box bg-[#D5F5E3] p-8 sm:p-12 rounded-3xl border-[2.5px] border-black shadow-[6px_6px_0px_#000] space-y-8">
-            <div className="max-w-3xl space-y-3">
-              <div className="neo-pill bg-[#0A6B56] text-white px-3.5 py-1 text-xs font-black uppercase tracking-wider inline-block">
-                AGENCY &amp; STRATEGIC PARTNERS
+      {/* ─── How it works ─── */}
+      <Section tone="white" label="af-how-title">
+        <SectionHead id="af-how-title" title={<>Share. Refer. <Hl>Earn.</Hl></>} />
+        <div className="wf-grid wf-grid-4 mt-12">
+          {STEPS.map((step, index) => (
+            <div key={step.num} className="wf-card" data-hover data-reveal style={{ background: step.tone, ...delay(index * 80) }}>
+              <span className="af-step-num">{step.num}</span>
+              <h3 className="mt-6">{step.title}</h3>
+              <p>{step.body}</p>
+            </div>
+          ))}
+        </div>
+        <p className="wf-card mt-6 text-center text-[15px] font-bold" data-reveal style={{ background: "#fff3c4", borderRadius: 999, padding: "16px 24px" }}>
+          Minimum payout is $50 or 3 months (whichever happens first), paid on the 1st of each month. Only verified, successfully paid referrals qualify.
+        </p>
+      </Section>
+
+      {/* ─── Tier progression ─── */}
+      <Section tone="paper" id="tiers" label="af-tiers-title">
+        <SectionHead
+          id="af-tiers-title"
+          center
+          title={<>The more you grow, <Hl>the more you earn.</Hl></>}
+          sub="Your tier is based on lifetime verified paid referrals. Once unlocked, you keep your tier permanently."
+        />
+        <div className="af-tiers">
+          {TIERS.map((tier, index) => (
+            <div key={tier.tierNum} className="wf-card af-tier" data-hover data-highlight={tier.highlight} data-reveal style={delay(index * 70)}>
+              <span className="af-tier-num">{tier.tierNum}</span>
+              <h3 className="mt-5">{tier.name}</h3>
+              <div className="af-muted mt-1">{tier.referrals} {tier.referralsSub}</div>
+              <div className="af-tier-rate">{tier.commission}</div>
+              <div className="af-muted mt-1">
+                Commission rate{tier.commissionNote ? `, ${tier.commissionNote.toLowerCase()}` : ""}
               </div>
-              <h3 className="font-display font-black text-3xl sm:text-4xl uppercase tracking-tight text-black leading-tight">
-                MANAGE MULTIPLE SHOPIFY STORES? UNLOCK A CUSTOM PARTNERSHIP.
+              <span className="wf-pill mt-4 self-start" style={{ background: tier.durationTone, color: "var(--ink)" }}>
+                {tier.duration} duration
+              </span>
+              <div className="af-tier-benefit mt-6">
+                <span className="af-muted block mb-1">Benefits</span>
+                {tier.benefits}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* ─── Rules and durations ─── */}
+      <Section tone="dark" label="af-rules-title">
+        <SectionHead
+          id="af-rules-title"
+          light
+          title={<>Clear commissions. No guesswork. Earn up to lifetime payouts.</>}
+        />
+        <div className="wf-grid wf-grid-3 mt-12 text-[var(--ink)]">
+          {RULES.map((rule, index) => (
+            <div key={rule.title} className="wf-card" data-reveal style={delay(index * 80)}>
+              <h3>{rule.title}</h3>
+              <p>{rule.body}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="wf-card mt-6 text-[var(--ink)]" data-reveal style={{ padding: "clamp(22px, 3vw, 36px)" }}>
+          <h3>Payout duration by tier</h3>
+          <div className="wf-grid wf-grid-3 mt-6">
+            {DURATIONS.map((item) => (
+              <div key={item.tag} className="rounded-[20px] border-2 border-[var(--ink)] bg-[var(--paper)] p-5">
+                <span className="wf-pill" style={{ background: item.tagTone }}>{item.tag}</span>
+                <div className="mt-3 font-[family-name:var(--display)] text-2xl font-bold tracking-tight">{item.title}</div>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">{item.body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-6 rounded-full border-2 border-[var(--ink)] bg-[var(--mint)] px-5 py-3 text-center text-sm font-bold">
+            Payout schedule: released on the 1st of every month. Minimum payout is $50 or 3 months (whichever happens first).
+          </p>
+        </div>
+      </Section>
+
+      {/* ─── Agency partners ─── */}
+      <Section tone="paper" label="af-agency-title">
+        <div className="wf-card" data-reveal style={{ background: "var(--mint)", padding: "clamp(24px, 5vw, 56px)", borderRadius: 32, boxShadow: "8px 8px 0 var(--ink)" }}>
+          <SectionHead
+            id="af-agency-title"
+            title={<>Manage multiple Shopify stores? <Hl>Get a custom partnership.</Hl></>}
+            sub="Agencies and developers managing multiple Shopify client stores qualify for custom partnership terms with commissions of up to 50% and lifetime payouts."
+          />
+          <div className="wf-grid wf-grid-3 mt-10">
+            {AGENCY_PERKS.map((perk, index) => (
+              <div key={perk.title} className="border-t-2 border-[var(--ink)] pt-5" data-reveal style={delay(index * 80)}>
+                <h3>{perk.title}</h3>
+                <p>{perk.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer" className="wf-btn wf-btn-green">
+              Apply as an agency
+            </a>
+            <a href="mailto:partners@whatflow.tech?subject=Agency%20Partnership%20Inquiry" className="wf-btn wf-btn-ghost">
+              Talk to our team
+            </a>
+          </div>
+        </div>
+      </Section>
+
+      {/* ─── Qualification and FAQ ─── */}
+      <Section tone="white" label="af-faq-title">
+        <div className="grid items-start gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <SectionHead title={<>Real referrals. <Hl>Real rewards.</Hl></>} />
+            <div className="wf-card mt-8" data-reveal style={{ background: "var(--mint)" }}>
+              <h3 className="!text-lg">
+                An eligible referral must:
               </h3>
-              <p className="text-sm sm:text-base text-gray-800 font-medium leading-relaxed">
-                Agencies and developers managing multiple Shopify client stores qualify for custom partnership terms with commissions of up to 50% and lifetime payouts.
-              </p>
-            </div>
-
-            {/* 3 Agency Perks */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="neo-box bg-white p-5 rounded-2xl border-2 border-black shadow-[3px_3px_0px_#000] space-y-2">
-                <div className="font-display font-black text-base text-[#0A6B56]">CUSTOM TERMS</div>
-                <div className="text-sm font-black text-black">COMMISSIONS UP TO 50%</div>
-                <p className="text-xs text-gray-600 font-medium">Bespoke tiered commission rates tailored to your store volume and client roster.</p>
-              </div>
-
-              <div className="neo-box bg-white p-5 rounded-2xl border-2 border-black shadow-[3px_3px_0px_#000] space-y-2">
-                <div className="font-display font-black text-base text-[#0A6B56]">GROWTH &amp; PR</div>
-                <div className="text-sm font-black text-black">CO-MARKETING &amp; CASE STUDIES</div>
-                <p className="text-xs text-gray-600 font-medium">Joint case studies, newsletter feature placements, and ecosystem co-marketing.</p>
-              </div>
-
-              <div className="neo-box bg-white p-5 rounded-2xl border-2 border-black shadow-[3px_3px_0px_#000] space-y-2">
-                <div className="font-display font-black text-base text-[#0A6B56]">SUPPORT</div>
-                <div className="text-sm font-black text-black">DEDICATED SLACK &amp; MANAGER</div>
-                <p className="text-xs text-gray-600 font-medium">Direct engineering escalation channel and dedicated WhatsApp account manager.</p>
-              </div>
-            </div>
-
-            {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
-              <a
-                href={SIGNUP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="neo-btn bg-[#00D261] text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-[#00be57] transition-colors"
-              >
-                APPLY AS AN AGENCY ➔
-              </a>
-              <a
-                href="mailto:partners@whatflow.tech?subject=Agency%20Partnership%20Inquiry"
-                className="neo-btn bg-white text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-gray-50 transition-colors"
-              >
-                TALK TO OUR TEAM
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── 6. Referral Qualification & FAQ ─────────────────────────────────── */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 border-b-[2.5px] border-black bg-white">
-        <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-          {/* Left Column: Eligibility Rules */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="space-y-2">
-              <div className="neo-pill bg-[#00D261] text-black px-3.5 py-1 text-xs font-black uppercase tracking-wider inline-block">
-                WHO QUALIFIES
-              </div>
-              <h2 className="text-3xl font-display font-black uppercase tracking-tight text-black">
-                REAL REFERRALS. REAL REWARDS.
-              </h2>
-            </div>
-
-            {/* Eligible Box */}
-            <div className="neo-box bg-[#E8F8F0] p-5 rounded-2xl border-2 border-black space-y-3 shadow-[3px_3px_0px_#000]">
-              <div className="flex items-center gap-2 text-xs font-black uppercase text-[#0A6B56]">
-                <span className="w-5 h-5 rounded-full bg-[#00D261] border border-black flex items-center justify-center text-black font-black text-xs">
-                  ✓
-                </span>
-                <span>AN ELIGIBLE REFERRAL MUST:</span>
-              </div>
-              <ul className="space-y-2 text-xs font-bold text-gray-800">
-                <li>• Come directly through your tracked affiliate link</li>
-                <li>• Become a paying WhatFlow customer on Shopify</li>
-                <li>• Have payment successfully collected by Shopify Billing</li>
+              <ul className="mt-4 grid list-disc gap-2 pl-5 text-[15px]">
+                <li>Come directly through your tracked affiliate link</li>
+                <li>Become a paying WhatFlow customer on Shopify</li>
+                <li>Have payment successfully collected by Shopify Billing</li>
               </ul>
             </div>
-
-            {/* Not Eligible Box */}
-            <div className="neo-box bg-[#FFEBEB] p-5 rounded-2xl border-2 border-black space-y-3 shadow-[3px_3px_0px_#000]">
-              <div className="flex items-center gap-2 text-xs font-black uppercase text-[#FF4B4B]">
-                <span className="w-5 h-5 rounded-full bg-[#FF4B4B] border border-black flex items-center justify-center text-white font-black text-xs">
-                  ✕
-                </span>
-                <span>NOT ELIGIBLE:</span>
-              </div>
-              <ul className="space-y-2 text-xs font-bold text-gray-800">
-                <li>• Self-referrals or personal store accounts</li>
-                <li>• Fraudulent or deceptive traffic</li>
-                <li>• Duplicate, test, or development stores</li>
-                <li>• Cancelled or refunded subscriptions</li>
+            <div className="wf-card mt-4" data-reveal style={{ background: "var(--pink)", ...delay(80) }}>
+              <h3 className="!text-lg">
+                Not eligible:
+              </h3>
+              <ul className="mt-4 grid list-disc gap-2 pl-5 text-[15px]">
+                <li>Self-referrals or personal store accounts</li>
+                <li>Fraudulent or deceptive traffic</li>
+                <li>Duplicate, test, or development stores</li>
+                <li>Cancelled or refunded subscriptions</li>
               </ul>
             </div>
           </div>
 
-          {/* Right Column: Accordion FAQ */}
-          <div className="lg:col-span-7 space-y-4">
-            <div className="space-y-2 pb-2">
-              <div className="neo-pill bg-[#FFF3CD] text-[#856404] px-3.5 py-1 text-xs font-black uppercase tracking-wider inline-block">
-                FREQUENTLY ASKED QUESTIONS
-              </div>
-              <h3 className="text-2xl font-display font-black uppercase tracking-tight text-black">
-                EVERYTHING YOU NEED TO KNOW.
-              </h3>
-            </div>
-
-            <div className="space-y-3">
+          <div className="lg:col-span-7">
+            <SectionHead id="af-faq-title" as="h3" title="Everything you need to know." />
+            <div className="mt-8 grid gap-3">
               {FAQS.map((faq, idx) => {
                 const isOpen = openFaq === idx;
-
                 return (
-                  <div
-                    key={idx}
-                    className="neo-box bg-[#FAF7F0] rounded-xl border-2 border-black overflow-hidden shadow-[3px_3px_0px_#000]"
-                  >
-                    <button
-                      type="button"
-                      onClick={() => toggleFaq(idx)}
-                      className="w-full p-4 text-left flex items-center justify-between gap-4 font-display font-black text-sm sm:text-base uppercase text-black hover:bg-white transition-colors"
-                    >
+                  <div key={faq.q} className="af-faq" data-open={isOpen} data-reveal style={delay(idx * 50)}>
+                    <button type="button" onClick={() => toggleFaq(idx)} aria-expanded={isOpen} aria-controls={`af-faq-${idx}`}>
                       <span>{faq.q}</span>
-                      <span className="text-lg font-black text-black">
-                        {isOpen ? "−" : "+"}
-                      </span>
+                      <span className="af-faq-icon" aria-hidden="true">+</span>
                     </button>
-
-                    {isOpen && (
-                      <div className="px-4 pb-4 pt-1 text-xs sm:text-sm font-medium text-gray-700 leading-relaxed border-t border-black/10 bg-white">
-                        {faq.a}
-                      </div>
-                    )}
+                    <div id={`af-faq-${idx}`} className="af-faq-panel" inert={!isOpen}>
+                      <div><p>{faq.a}</p></div>
+                    </div>
                   </div>
                 );
               })}
             </div>
           </div>
         </div>
-      </section>
-
-      {/* ─── 7. Bottom CTA Banner ────────────────────────────────────────────── */}
-      <section className="bg-[#00D261] py-16 px-4 sm:px-6 border-b-[2.5px] border-black">
-        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="flex items-center gap-4 text-center md:text-left">
-            <div className="w-14 h-14 rounded-2xl bg-black border-2 border-black flex items-center justify-center flex-shrink-0 shadow-[3px_3px_0px_#fff]">
-              <Image
-                src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg"
-                width={32}
-                height={32}
-                alt="WhatsApp"
-              />
-            </div>
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-display font-black uppercase text-black leading-tight">
-                TURN YOUR AUDIENCE INTO A LONG-TERM PARTNERSHIP.
-              </h2>
-              <p className="text-xs sm:text-sm text-black/80 font-bold">
-                Join the WhatFlow Affiliate Program and earn recurring commissions on every merchant you refer.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-3">
-            <a
-              href={SIGNUP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="neo-btn bg-black text-[#00D261] font-extrabold text-xs sm:text-sm uppercase tracking-wider px-7 py-3.5 rounded-xl hover:bg-gray-900 transition-colors"
-            >
-              APPLY TO JOIN
-            </a>
-            <a
-              href={SIGNUP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="neo-btn bg-white text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider px-7 py-3.5 rounded-xl hover:bg-gray-50 transition-colors"
-            >
-              AFFILIATE LOGIN
-            </a>
-          </div>
-        </div>
-      </section>
+      </Section>
     </div>
   );
 }

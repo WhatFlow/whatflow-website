@@ -20,10 +20,17 @@ export function ReadingProgressBar() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 h-1.5 bg-black/10">
+    <div
+      className="fixed top-0 left-0 right-0 z-[60] h-1 pointer-events-none"
+      role="progressbar"
+      aria-label="Reading progress"
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-valuenow={Math.round(progress)}
+    >
       <div
-        className="h-full bg-[#00D261] border-b border-black transition-all duration-75 ease-out"
-        style={{ width: `${progress}%` }}
+        className="h-full origin-left bg-[var(--green)]"
+        style={{ transform: `scaleX(${progress / 100})` }}
       />
     </div>
   );

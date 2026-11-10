@@ -7,7 +7,7 @@ import { Bubble, Phone, type ChatMessage } from "./Phone";
 import { prefersReducedMotion, useScrollScene } from "./useScrollScene";
 
 const heroChat: ChatMessage[] = [
-	{ id: "h1", from: "store", time: "09:41", card: { title: "Linen Shirt", meta: "Sand · Size M", price: "$48", emoji: "👕" }, text: "Good news, Maya! The Linen Shirt you wanted is back in stock 🎉" },
+	{ id: "h1", from: "store", time: "09:41", card: { title: "Linen Shirt", meta: "Sand, size M", price: "$48", emoji: "👕" }, text: "Good news, Maya! The Linen Shirt you wanted is back in stock 🎉" },
 	{ id: "h2", from: "customer", time: "09:42", text: "Omg yes. Grabbing it now!" },
 	{ id: "h3", from: "store", time: "09:44", text: "Order #1031 is confirmed ✓ We'll message you here when it ships.", buttons: ["Track order", "Talk to us"] },
 ];
@@ -26,11 +26,11 @@ export function Hero() {
 		const wait = (ms: number) => new Promise<void>((resolve) => timers.push(window.setTimeout(resolve, ms)));
 		(async () => {
 			while (!cancelled) {
-				setShown(0);
-				await wait(700);
-				for (let index = 0; index < heroChat.length && !cancelled; index++) {
+				setShown(1);
+				await wait(1300);
+				for (let index = 1; index < heroChat.length && !cancelled; index++) {
 					setTyping(true);
-					await wait(index === 0 ? 900 : 1100);
+					await wait(1100);
 					setTyping(false);
 					setShown(index + 1);
 					await wait(1300);
@@ -47,8 +47,6 @@ export function Hero() {
 	let wordIndex = 0;
 	return (
 		<section ref={ref} className="lp-hero" aria-labelledby="lp-hero-title">
-			<div className="lp-hero-blob lp-hero-blob-a" aria-hidden="true" />
-			<div className="lp-hero-blob lp-hero-blob-b" aria-hidden="true" />
 			<div className="lp-shell lp-hero-grid">
 				<div className="lp-hero-copy">
 					<span className="lp-chip lp-load" style={{ "--d": "0ms" } as React.CSSProperties}>
@@ -82,20 +80,20 @@ export function Hero() {
 						))}
 					</h1>
 					<p className="lp-hero-sub lp-load" style={{ "--d": "700ms" } as React.CSSProperties}>
-						WhatFlow sends the messages your Shopify store should be sending — cart reminders, COD confirmations, shipping updates — and puts every reply in one team inbox.
+						WhatFlow sends the messages your Shopify store should be sending: cart reminders, COD confirmations and shipping updates. Every reply lands in one team inbox.
 					</p>
 					<div className="lp-hero-ctas lp-load" style={{ "--d": "820ms" } as React.CSSProperties}>
 						<a href={getShopifyAppUrl("hero_cta")} target="_blank" rel="noopener noreferrer" className="lp-btn lp-btn-green">
-							Install on Shopify <span aria-hidden="true">↗</span>
+							Install on Shopify
 						</a>
 						<a href="#see-it-work" className="lp-btn lp-btn-ghost">
-							Watch it work <span aria-hidden="true" className="lp-bounce">↓</span>
+							Watch it work
 						</a>
 					</div>
 					<ul className="lp-hero-trust lp-load" style={{ "--d": "940ms" } as React.CSSProperties}>
 						<li><Image src="/shopify-brand-assets/02-glyph/svg/glyph-color.svg" width={15} height={15} alt="" /> Built for Shopify</li>
-						<li><Image src="/meta-brand-assets/1 Positive Primary/RGB/Meta_lockup_positive primary_RGB.svg" width={42} height={13} alt="Meta" /> Tech Partner</li>
-						<li><span className="text-[#E8A400]" aria-hidden="true">★★★★★</span> 5.0 on Shopify</li>
+						<li><Image src="/brand/meta-lockup.webp" unoptimized width={42} height={13} alt="Meta" /> Tech Partner</li>
+						<li><span className="lp-stars" aria-hidden="true">★★★★★</span> 5.0 on Shopify</li>
 						<li>Free plan</li>
 					</ul>
 				</div>
@@ -107,18 +105,11 @@ export function Hero() {
 							<div className={`lp-typing ${typing ? "is-shown" : ""}`} aria-hidden="true"><span /><span /><span /></div>
 						</Phone>
 					</div>
-					<div className="lp-sticker lp-sticker-a" aria-hidden="true">
-						<span className="lp-sticker-icon bg-[#FFC107]">🛒</span>
-						<span><b>Checkout recovered</b><small>Linen Shirt + Tote · $84</small></span>
-					</div>
-					<div className="lp-sticker lp-sticker-b" aria-hidden="true">
-						<span className="lp-sticker-icon bg-[#00D261]">✓</span>
-						<span><b>COD confirmed</b><small>Order #1027 · tagged in Shopify</small></span>
-					</div>
-					<div className="lp-sticker lp-sticker-c" aria-hidden="true">
-						<span className="lp-sticker-icon bg-[#BFD7FF]">📦</span>
-						<span><b>Out for delivery</b><small>Tracking sent on WhatsApp</small></span>
-					</div>
+					<ul className="lp-hero-status" aria-label="Example Shopify updates">
+						<li><strong>Checkout recovered</strong><small>Linen Shirt + Tote · $84</small></li>
+						<li><strong>COD confirmed</strong><small>Order #1027 · tagged in Shopify</small></li>
+						<li><strong>Out for delivery</strong><small>Tracking sent on WhatsApp</small></li>
+					</ul>
 				</div>
 			</div>
 		</section>

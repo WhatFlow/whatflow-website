@@ -1,0 +1,27 @@
+/* ─── 404 page ───────────────────────────────────────────────────────── */
+.nf-stage { position: relative; display: flex; justify-content: center; padding: var(--space-12) 0; }
+.nf-stage .lp { background: transparent; overflow: visible; }
+.nf-stage .lp-phone { width: 270px; aspect-ratio: 9 / 16; transform: rotate(-2deg); }
+.nf-stamp {
+	position: absolute;
+	top: 6%;
+	right: 4%;
+	z-index: 2;
+	padding: var(--space-8) var(--space-16);
+	border: 2.5px solid var(--ink);
+	border-radius: 16px;
+	background: var(--yellow);
+	box-shadow: 4px 4px 0 var(--ink);
+	font-family: var(--display);
+	font-size: clamp(2rem, 6vw, 3rem);
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	line-height: 1;
+	transform: rotate(8deg);
+	animation: nf-wobble 4s ease-in-out infinite;
+}
+.nf-stage:hover .nf-stamp,
+.nf-stage:focus-within .nf-stamp { animation-play-state: paused; }
+.nf-stamp small { display: block; font-family: var(--font-sans, inherit); font-size: 11px; font-weight: 700; letter-spacing: 0; }
+.nf-failed { color: #d92d20; font-weight: 700; }
+@keyframes nf-wobble { 50% { rotate: -4deg; } }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { scrollToY } from "@/components/site/SiteMotion";
 
 interface TocItem {
   id: string;
@@ -38,6 +39,8 @@ export function TableOfContents({ selector = ".prose-whatflow" }: { selector?: s
       });
     });
 
+    // Headings come from the rendered article DOM, so they can only be read after mount.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setHeadings(items);
 
     // Observer for active heading
@@ -59,9 +62,9 @@ export function TableOfContents({ selector = ".prose-whatflow" }: { selector?: s
   if (headings.length === 0) return null;
 
   return (
-    <div className="neo-box bg-white p-5 rounded-xl space-y-3 sticky top-24">
-      <div className="flex items-center gap-2 pb-2 border-b border-black font-display font-black text-xs uppercase tracking-wider text-black">
-        <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
+    <div className="wfc-toc">
+      <div className="wfc-toc-head">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <line x1="8" y1="6" x2="21" y2="6" />
           <line x1="8" y1="12" x2="21" y2="12" />
           <line x1="8" y1="18" x2="21" y2="18" />
@@ -69,9 +72,9 @@ export function TableOfContents({ selector = ".prose-whatflow" }: { selector?: s
           <line x1="3" y1="12" x2="3.01" y2="12" />
           <line x1="3" y1="18" x2="3.01" y2="18" />
         </svg>
-        <span>Table of Contents</span>
+        <span>On this page</span>
       </div>
-      <nav className="space-y-1 text-xs">
+      <nav aria-label="Table of contents">
         {headings.map((h) => {
           const isActive = activeId === h.id;
           return (
@@ -82,17 +85,12 @@ export function TableOfContents({ selector = ".prose-whatflow" }: { selector?: s
                 e.preventDefault();
                 const el = document.getElementById(h.id);
                 if (el) {
-                  el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  scrollToY(el.getBoundingClientRect().top + window.scrollY - 96);
                   history.pushState(null, "", `#${h.id}`);
                 }
               }}
-              className={`block py-1 transition-all rounded px-2 font-medium ${
-                h.level === 3 ? "ml-3 text-[11px]" : ""
-              } ${
-                isActive
-                  ? "bg-[#00D261] text-black font-bold shadow-[2px_2px_0px_#000]"
-                  : "text-gray-700 hover:bg-[#FAF7F0] hover:text-black"
-              }`}
+              data-level={h.level}
+              aria-current={isActive ? "true" : undefined}
             >
               {h.text}
             </a>

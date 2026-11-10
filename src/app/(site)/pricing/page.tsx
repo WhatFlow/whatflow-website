@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PricingClient } from "./PricingClient";
+import "./pricing.css";
 import {
   getSoftwareApplicationSchema,
   getFAQSchema,
@@ -51,12 +52,12 @@ const PRICING_FAQS = [
   {
     question: "Can I upgrade or downgrade plans anytime?",
     answer:
-      "Yes! You can switch tiers seamlessly in your WhatFlow dashboard or Shopify App settings as your store's order volume grows.",
+      "Yes. You can switch tiers in your WhatFlow dashboard or Shopify app settings as your store's order volume grows.",
   },
   {
     question: "Do I need my own Meta Business API account?",
     answer:
-      "Yes, WhatFlow integrates directly with the Official Meta Cloud API. Our guided onboarding helps you connect your Meta Business account. Setup time depends on account readiness and Meta verification.",
+      "Yes, WhatFlow integrates directly with the official Meta Cloud API. Our guided onboarding helps you connect your Meta Business account. Setup time depends on account readiness and Meta verification.",
   },
 ];
 

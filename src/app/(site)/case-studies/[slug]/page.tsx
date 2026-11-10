@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,15 +12,18 @@ import {
   APP_LABELS,
 } from "@/lib/payload-api";
 import { RichText } from "@/lib/RichText";
+import { markFirstImagePriority } from "@/components/rich-text-blocks";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { SocialShare } from "@/components/SocialShare";
 import { NewsletterBox } from "@/components/NewsletterBox";
 import { TableOfContents } from "@/components/TableOfContents";
+import { Cover, ICONS, METRIC_TONES } from "../../blog/blog-ui";
+import "../../blog/content.css";
 
-const APP_COLORS: Record<string, string> = {
-  chat: "bg-[#FFF3CD] text-[#856404]",
-  business: "bg-[#D4EDDA] text-[#155724]",
-  ai: "bg-[#E2E3E5] text-[#383D41]",
+const APP_TONES: Record<string, string> = {
+  chat: "wfc-tone-yellow",
+  business: "wfc-tone-mint",
+  ai: "wfc-tone-lilac",
 };
 
 interface CaseStudyPageProps {
@@ -120,7 +124,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF7F0] relative">
+    <div className="min-h-screen bg-[var(--paper)] relative">
       <ReadingProgressBar />
 
       {/* JSON-LD Schemas */}
@@ -133,117 +137,82 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      {/* ─── Cover Banner ─── */}
-      <div className="relative w-full h-[300px] sm:h-[420px] bg-[#091E17] border-b-[2.5px] border-black overflow-hidden">
-        {study.coverImage?.url ? (
-          <Image
-            src={study.coverImage.url}
-            alt={study.coverImage.alt || study.title}
-            fill
-            className="object-cover opacity-60"
-            priority
-          />
-        ) : (
-          <div className="w-full h-full bg-gradient-to-br from-[#00D261]/10 via-[#0A6B56]/20 to-[#091E17]" />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#091E17]/80 via-[#091E17]/30 to-transparent" />
+      {/* ─── Hero ─── */}
+      <header className="wf-hero wfc-article-hero" data-tone="paper" data-split="false" style={study.coverImage?.url ? { paddingBottom: "clamp(96px, 12vw, 150px)" } : undefined}>
+        <div className="wf-shell wf-hero-grid">
+          <div className="wf-hero-copy">
+            <nav aria-label="Breadcrumb" className="wfc-crumbs wf-load">
+              <Link href="/">Home</Link>
+              <span aria-hidden="true">/</span>
+              <Link href="/case-studies">Case studies</Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-black">{study.storeName}</span>
+            </nav>
 
-        {/* Store info overlay */}
-        <div className="absolute bottom-8 left-4 sm:left-8 right-4 sm:right-8 flex items-end justify-between gap-4">
-          <div className="flex items-center gap-4">
-            {study.storeLogo?.url ? (
-              <div className="neo-box bg-white p-2 w-14 h-14 flex items-center justify-center flex-shrink-0">
-                <Image src={study.storeLogo.url} alt={study.storeName} width={44} height={44} className="object-contain" />
+            <div className="flex items-center gap-4 mt-8 wf-load" style={{ "--d": "80ms" } as CSSProperties}>
+              <span className="wfc-logo" data-size="lg">
+                {study.storeLogo?.url ? (
+                  <Image src={study.storeLogo.url} alt={study.storeName} width={56} height={56} />
+                ) : (
+                  <span aria-hidden="true">{study.storeName.charAt(0)}</span>
+                )}
+              </span>
+              <div>
+                <div className="font-display text-xl sm:text-2xl font-bold tracking-tight">{study.storeName}</div>
+                <div className="flex items-center gap-2 flex-wrap mt-1">
+                  <span className="wf-pill wfc-tone-mint">{industryLabel}</span>
+                </div>
               </div>
-            ) : (
-              <div className="neo-box w-14 h-14 bg-[#00D261] flex items-center justify-center font-display font-black text-2xl text-black flex-shrink-0">
-                {study.storeName.charAt(0)}
+            </div>
+
+            <h1 className="wfc-title wf-load" style={{ "--d": "160ms" } as CSSProperties}>
+              {study.title}
+            </h1>
+            {study.excerpt && <p className="wfc-dek wf-load" style={{ "--d": "260ms" } as CSSProperties}>{study.excerpt}</p>}
+
+            {/* Meta row + Social Share */}
+            <div className="wfc-byline wf-load" style={{ "--d": "360ms" } as CSSProperties}>
+              <div className="flex items-center gap-3 flex-wrap">
+                <div className="wfc-meta">
+                  {study.publishedAt && <time dateTime={study.publishedAt}>{formatDate(study.publishedAt)}</time>}
+                  <span>{readingTime} min read</span>
+                </div>
+                {study.appsUsed?.map((app) => (
+                  <span key={app} className={`wf-pill ${APP_TONES[app] ?? "wfc-tone-white"}`}>
+                    {APP_LABELS[app] ?? app}
+                  </span>
+                ))}
               </div>
-            )}
-            <div>
-              <div className="text-white font-display font-black text-2xl sm:text-3xl uppercase leading-tight">
-                {study.storeName}
-              </div>
-              <div className="neo-pill bg-[#00D261] px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-black inline-block mt-1">
-                {industryLabel}
-              </div>
+
+              <SocialShare title={study.title} url={studyUrl} />
             </div>
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* ─── Header ─── */}
-      <section className="px-4 sm:px-6 py-10 border-b-[2.5px] border-black bg-[#FAF7F0]">
-        <div className="max-w-[1080px] mx-auto">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500 mb-6">
-            <Link href="/" className="hover:text-[#00D261] transition-colors">Home</Link>
-            <span>›</span>
-            <Link href="/case-studies" className="hover:text-[#00D261] transition-colors">Case Studies</Link>
-            <span>›</span>
-            <span className="text-black">{study.storeName}</span>
-          </div>
-
-          <div className="flex items-center gap-3 flex-wrap mb-4">
-            <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
-              CASE STUDY
-            </div>
-            <span className="neo-pill bg-white px-2.5 py-0.5 text-[10px] font-bold text-gray-700 flex items-center gap-1">
-              <svg viewBox="0 0 24 24" className="w-3 h-3 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-              <span>{readingTime} MIN READ</span>
-            </span>
-          </div>
-
-          <h1 className="text-[30px] sm:text-[44px] lg:text-[54px] font-display font-black uppercase text-black tracking-tight leading-tight mb-6">
-            {study.title}
-          </h1>
-
-          {/* Meta row + Social Share */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b-[2.5px] border-black">
-            <div className="flex items-center gap-4 flex-wrap text-xs font-bold text-gray-500 uppercase tracking-wider">
-              {study.publishedAt && <span>{formatDate(study.publishedAt)}</span>}
-              <span className="w-1 h-1 rounded-full bg-gray-400" />
-              {study.appsUsed?.map((app) => (
-                <span
-                  key={app}
-                  className={`neo-pill px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider border-black ${APP_COLORS[app] ?? "bg-gray-100"}`}
-                >
-                  {APP_LABELS[app] ?? app}
-                </span>
-              ))}
-            </div>
-
-            <SocialShare title={study.title} url={studyUrl} />
-          </div>
+      {/* ─── Cover image ─── */}
+      {study.coverImage?.url && (
+        <div className="wf-shell wfc-hero-cover wf-load" style={{ "--d": "300ms", maxWidth: 1120 } as CSSProperties}>
+          <Cover media={study.coverImage.url} alt={study.coverImage.alt || study.title} icon={ICONS.trend} priority sizes="(min-width: 1120px) 1060px, 100vw" />
         </div>
-      </section>
+      )}
 
-      {/* ─── Metrics Strip ─── */}
+      {/* ─── Results ─── */}
       {study.metrics && study.metrics.length > 0 && (
-        <section className="bg-[#091E17] border-b-[2.5px] border-black px-4 sm:px-6 py-8">
-          <div className="max-w-[1080px] mx-auto">
-            <div className={`grid gap-6 ${study.metrics.length === 1 ? "grid-cols-1 max-w-xs mx-auto" :
-                study.metrics.length === 2 ? "grid-cols-1 sm:grid-cols-2" :
-                  study.metrics.length === 3 ? "grid-cols-1 sm:grid-cols-3" :
-                    "grid-cols-2 sm:grid-cols-4"
-              }`}>
-              {study.metrics.map((metric) => (
+        <section className="pt-14 sm:pt-20" aria-labelledby="case-study-results">
+          <div className="wf-shell">
+            <h2 id="case-study-results" className="wfc-h-sm" data-reveal>The results</h2>
+            <div className="wfc-metrics mt-6">
+              {study.metrics.map((metric, i) => (
                 <div
                   key={metric.label}
-                  className="neo-box bg-white p-5 text-center"
+                  className={`wfc-metric ${METRIC_TONES[i % METRIC_TONES.length]}`}
+                  data-reveal
+                  style={{ "--d": `${i * 90}ms` } as CSSProperties}
                 >
-                  <div className="font-display font-black text-[32px] sm:text-[44px] text-black leading-none">
-                    {metric.value}
-                  </div>
-                  <div className="font-extrabold text-xs uppercase tracking-wider text-black mt-1">
-                    {metric.label}
-                  </div>
-                  {metric.description && (
-                    <div className="text-[10px] text-gray-500 font-bold mt-0.5">{metric.description}</div>
-                  )}
+                  <span className="wfc-metric-value">{metric.value}</span>
+                  <span className="wfc-metric-label">{metric.label}</span>
+                  {metric.description && <span className="wfc-metric-note">{metric.description}</span>}
                 </div>
               ))}
             </div>
@@ -252,134 +221,77 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       )}
 
       {/* ─── Content Grid with Sidebar ─── */}
-      <section className="px-4 sm:px-6 py-12">
-        <div className="max-w-[1080px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
-          <div className="lg:col-span-8 space-y-8">
-            <RichText content={study.content} />
+      <section className="wfc-article">
+        <div className="wf-shell wfc-article-grid">
+          <div className="wfc-article-main wfc-body wfc-stack">
+            <RichText content={study.coverImage?.url ? study.content : markFirstImagePriority(study.content)} />
 
             <NewsletterBox />
 
-            <div className="neo-box bg-white p-5 rounded-xl border-[2.5px] border-black flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="font-display font-black text-sm uppercase text-black">
-                Share this merchant story:
+            <div className="wf-card" style={{ padding: "18px 22px" }}>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="font-display text-lg font-bold tracking-tight">
+                  Share this merchant story
+                </div>
+                <SocialShare title={study.title} url={studyUrl} />
               </div>
-              <SocialShare title={study.title} url={studyUrl} />
             </div>
           </div>
 
-          <div className="hidden lg:block lg:col-span-4 space-y-6">
-            <TableOfContents />
+          <aside className="wfc-rail" aria-label="On this page">
+            <div className="wfc-rail-inner">
+              <TableOfContents />
 
-            <div className="neo-box bg-[#00D261] p-6 text-black space-y-4 rounded-xl">
-              <div className="neo-pill inline-block bg-black px-2.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-[#00D261]">
-                GET SIMILAR RESULTS
+              <div className="wf-card wfc-side" data-tone="green">
+                <h2>Launch in under 5 minutes.</h2>
+                <p>
+                  Connect WhatFlow to your Shopify store and start recovering abandoned carts on WhatsApp today.
+                </p>
+                <Link href="/#products" className="wf-btn wf-btn-dark wf-btn-sm">
+                  Install WhatFlow
+                </Link>
               </div>
-              <h4 className="font-display font-black text-xl uppercase leading-tight">
-                LAUNCH IN UNDER 5 MINUTES.
-              </h4>
-              <p className="text-xs text-black/80 font-medium leading-relaxed">
-                Connect WhatFlow to your Shopify store and start recovering abandoned carts on WhatsApp today.
-              </p>
-              <Link
-                href="/#products"
-                className="neo-btn bg-black text-[#00D261] font-black text-xs uppercase tracking-wider py-2.5 rounded-lg block text-center"
-              >
-                INSTALL WHATFLOW ➔
-              </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── Bottom CTA ─── */}
-      <section className="bg-[#00D261] border-t-[2.5px] border-black py-14 px-4 sm:px-6">
-        <div className="max-w-[900px] mx-auto text-center space-y-4">
-          <div className="neo-box inline-block bg-black px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-[#00D261] mb-2">
-            YOUR STORE COULD BE NEXT
-          </div>
-          <h2 className="text-[28px] sm:text-[42px] font-display font-black uppercase text-black tracking-tight leading-tight">
-            READY TO GROW YOUR STORE WITH WHATSAPP?
-          </h2>
-          <p className="text-black/70 font-medium text-sm max-w-lg mx-auto">
-            Join 10,000+ Shopify merchants worldwide already using WhatFlow. 14-day free trial, no credit card required.
-          </p>
-          <div className="flex items-center justify-center gap-3 flex-wrap pt-2">
-            <Link
-              href="/#products"
-              className="neo-btn bg-black text-[#00D261] font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-lg"
-            >
-              INSTALL ON SHOPIFY →
-            </Link>
-            <Link
-              href="/case-studies"
-              className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-lg"
-            >
-              ← MORE CASE STUDIES
-            </Link>
-          </div>
+          </aside>
         </div>
       </section>
 
       {/* ─── More Stories ─── */}
       {moreStudies.length > 0 && (
-        <section className="px-4 sm:px-6 py-14 border-t-[2.5px] border-black bg-white">
-          <div className="max-w-[1280px] mx-auto">
-            <div className="flex items-center justify-between mb-8">
-              <div>
-                <div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black mb-2">
-                  MORE STORIES
-                </div>
-                <h2 className="text-[26px] sm:text-[32px] font-display font-black uppercase text-black tracking-tight">
-                  MORE SUCCESS STORIES
-                </h2>
+        <section className="wf-section" data-tone="white" style={{ borderTop: "2.5px solid var(--ink)" }}>
+          <div className="wf-shell">
+            <div className="flex items-end justify-between gap-6 flex-wrap mb-10">
+              <div className="wf-head" data-reveal>
+                <h2 className="wf-h2">More success stories</h2>
               </div>
-              <Link
-                href="/case-studies"
-                className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg hidden sm:inline-flex items-center gap-1"
-              >
-                ALL STORIES →
+              <Link href="/case-studies" className="wf-btn wf-btn-ghost wf-btn-sm" data-reveal>
+                All stories
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {moreStudies.map((s) => (
+            <div className="wf-grid wf-grid-3">
+              {moreStudies.map((s, index) => (
                 <Link
                   key={s.id}
                   href={`/case-studies/${s.slug}`}
-                  className="neo-box bg-white overflow-hidden group hover:-translate-y-1 transition-transform"
+                  className="wf-card wfc-card"
+                  data-reveal
+                  style={{ "--d": `${index * 80}ms` } as CSSProperties}
                 >
-                  <div className="relative h-40 bg-[#091E17] overflow-hidden border-b-[2.5px] border-black">
-                    {s.coverImage?.url ? (
-                      <Image
-                        src={s.coverImage.url}
-                        alt={s.coverImage.alt || s.title}
-                        fill
-                        className="object-cover opacity-60 group-hover:scale-105 transition-transform"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#00D261]/20 to-[#0A6B56]/20">
-                        <svg viewBox="0 0 24 24" className="w-8 h-8 text-black/40 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
-                          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                          <polyline points="17 6 23 6 23 12" />
-                        </svg>
-                      </div>
-                    )}
+                  <Cover media={s.coverImage?.url} alt={s.coverImage?.alt || s.title} icon={ICONS.trend}>
                     {s.metrics?.[0] && (
-                      <div className="absolute bottom-2 right-2 neo-box bg-[#00D261] px-2.5 py-1.5 text-center">
-                        <div className="font-display font-black text-sm text-black leading-none">{s.metrics[0].value}</div>
-                        <div className="text-[8px] font-extrabold uppercase text-black/70">{s.metrics[0].label}</div>
+                      <div className="wfc-chip-metric">
+                        <b>{s.metrics[0].value}</b>
+                        <small>{s.metrics[0].label}</small>
                       </div>
                     )}
-                  </div>
-                  <div className="p-5 space-y-2">
-                    <div className="flex items-center gap-1.5">
-                      <span className="font-extrabold text-xs uppercase text-black">{s.storeName}</span>
-                      <span className="text-gray-400">·</span>
-                      <span className="text-[10px] font-bold text-gray-500 uppercase">{INDUSTRY_LABELS[s.industry] ?? s.industry}</span>
+                  </Cover>
+                  <div className="wfc-card-body">
+                    <div className="wfc-meta">
+                      <span className="font-bold text-black">{s.storeName}</span>
+                      <span>{INDUSTRY_LABELS[s.industry] ?? s.industry}</span>
                     </div>
-                    <h3 className="font-display font-black text-sm text-black uppercase leading-tight group-hover:text-[#0A6B56] transition-colors">
-                      {s.title}
-                    </h3>
+                    <h3>{s.title}</h3>
                   </div>
                 </Link>
               ))}

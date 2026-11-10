@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AffiliateClient } from "./AffiliateClient";
+import "./affiliate.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/affiliate" },

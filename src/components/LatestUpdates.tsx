@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import { CHANGELOG_SEED, releaseDateToISO } from "@/lib/changelog-data";
 import {
@@ -33,39 +34,33 @@ export function LatestUpdates({ app, keywords, limit = 3, heading = "Latest prod
   const allHref = app ? `/changelog?app=${app}` : "/changelog";
 
   return (
-    <section className="bg-white border-t-[2.5px] border-black px-4 sm:px-6 py-14" aria-labelledby="latest-updates-heading">
-      <div className="max-w-[1100px] mx-auto">
-        <div className="flex items-end justify-between gap-4 flex-wrap mb-6">
-          <div>
-            <div className="neo-box inline-block bg-[#00D261] px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider text-black mb-3">
-              Changelog
-            </div>
-            <h2 id="latest-updates-heading" className="text-2xl sm:text-4xl font-display font-black uppercase text-black tracking-tight">
+    <section className="wf-section" data-tone="white" aria-labelledby="latest-updates-heading">
+      <div className="wf-shell">
+        <div className="flex items-end justify-between gap-6 flex-wrap mb-10" data-reveal>
+          <div className="wf-head">
+            <h2 id="latest-updates-heading" className="wf-h2 text-[clamp(1.9rem,4vw,3rem)]!">
               {heading}
             </h2>
           </div>
-          <Link href={allHref} className="text-xs font-extrabold uppercase tracking-wider text-black underline underline-offset-4">
-            See all updates →
+          <Link href={allHref} className="wf-btn wf-btn-ghost wf-btn-sm">
+            See all updates
           </Link>
         </div>
-        <ul className="grid gap-4 md:grid-cols-3">
-          {entries.map((entry) => (
-            <li key={entry.slug}>
-              <Link
-                href={`/changelog/${entry.slug}`}
-                className="neo-box block h-full bg-[#FAF7F0] p-5 rounded-xl hover:bg-[#F2FFF7] transition-colors"
-              >
-                <div className="flex items-center gap-2 flex-wrap mb-3">
-                  <span className={`neo-pill px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider border-black ${CHANGELOG_TYPE_BADGE[entry.type].className}`}>
+        <ul className="wf-grid wf-grid-3 list-none p-0 m-0">
+          {entries.map((entry, index) => (
+            <li key={entry.slug} data-reveal style={{ "--d": `${index * 80}ms` } as CSSProperties}>
+              <Link href={`/changelog/${entry.slug}`} className="wf-card h-full bg-[var(--paper)]! hover:bg-[var(--mint)]!">
+                <div className="flex items-center gap-2 flex-wrap mb-4">
+                  <span className={`px-2.5 py-1 rounded-full border-[1.5px] border-[var(--ink)] text-[11px] font-bold ${CHANGELOG_TYPE_BADGE[entry.type].className}`}>
                     {CHANGELOG_TYPE_BADGE[entry.type].label}
                   </span>
-                  <time dateTime={entry.releaseDate} className="text-[11px] font-bold text-gray-500 uppercase">
+                  <time dateTime={entry.releaseDate} className="text-xs font-semibold text-[var(--text-muted)]">
                     {formatReleaseDate(entry.releaseDate, "short")}
                   </time>
                 </div>
-                <h3 className="text-base font-extrabold text-black leading-snug">{entry.title}</h3>
-                <p className="mt-2 text-xs text-gray-600 font-medium leading-relaxed line-clamp-3">{entry.summary}</p>
-                <span className="mt-3 block text-[10px] font-bold uppercase text-gray-500">{CHANGELOG_APP_LABELS[entry.app]}</span>
+                <h3 className="text-[1.2rem]!">{entry.title}</h3>
+                <p className="line-clamp-3">{entry.summary}</p>
+                <span className="mt-auto pt-4 block text-xs font-semibold text-[var(--text-muted)]">{CHANGELOG_APP_LABELS[entry.app]}</span>
               </Link>
             </li>
           ))}

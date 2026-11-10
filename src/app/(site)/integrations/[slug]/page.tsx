@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { getIntegration, INTEGRATION_CATEGORY_LABELS, type Integration } from "@/lib/payload-api";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
+import { PageHero, Section } from "@/components/site/PageKit";
+import "../integrations.css";
 
 interface IntegrationPageProps {
   params: Promise<{ slug: string }>;
@@ -53,7 +56,7 @@ const FALLBACK_INTEGRATIONS_MAP: Record<string, Partial<Integration>> = {
     slug: "gorgias",
     category: "support",
     tagline: "Unified WhatsApp customer service inside Gorgias Helpdesk",
-    description: "Provide world-class customer service right where your customers are. Inbound WhatsApp customer queries and replies are routed directly into your Gorgias unified helpdesk with full Shopify order history sidebars.",
+    description: "Provide customer service right where your customers are. Inbound WhatsApp customer queries and replies are routed directly into your Gorgias unified helpdesk with full Shopify order history sidebars.",
     keyFeatures: [
       { feature: "Unified agent ticket inbox across WhatsApp and Email" },
       { feature: "Live Shopify customer order context overlay" },
@@ -99,83 +102,71 @@ export default async function IntegrationDetailPage({ params }: IntegrationPageP
     notFound();
   }
 
+  const trackingSlug = item.slug.replace(/[^a-z0-9]/g, "_");
+
   return (
-    <div className="min-h-screen bg-[#FAF7F0]">
-      {/* ─── Header ─── */}
-      <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-12 sm:py-16">
-        <div className="max-w-[1080px] mx-auto">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500 mb-6">
-            <Link href="/" className="hover:text-[#00D261] transition-colors">Home</Link>
-            <span>›</span>
-            <Link href="/integrations" className="hover:text-[#00D261] transition-colors">Integrations</Link>
-            <span>›</span>
-            <span className="text-black">{item.name}</span>
-          </div>
-
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div className="flex items-start gap-4">
-              <div className="w-16 h-16 rounded-2xl bg-white border-2 border-black flex items-center justify-center font-display font-black text-2xl text-black shadow-[3px_3px_0px_#000] flex-shrink-0">
-                {item.logo?.url ? (
-                  <Image src={item.logo.url} alt={item.name} width={48} height={48} className="object-contain" />
-                ) : (
-                  item.name.charAt(0)
-                )}
-              </div>
-              <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="neo-pill bg-[#00D261] text-black text-[10px] font-black uppercase px-2.5 py-0.5 border border-black shadow-[1px_1px_0px_#000]">
-                    {INTEGRATION_CATEGORY_LABELS[item.category] ?? item.category}
-                  </span>
-                  <span className="text-xs font-bold text-gray-500 uppercase">OFFICIAL CONNECTOR</span>
-                </div>
-                <h1 className="text-[34px] sm:text-[48px] font-display font-black uppercase text-black tracking-tight leading-none">
-                  {item.name}
-                </h1>
-                <p className="text-sm font-bold text-gray-600 mt-1">
-                  {item.tagline}
-                </p>
-              </div>
-            </div>
-
+    <div className="min-h-screen bg-[var(--paper)]">
+      <PageHero
+        title={item.name}
+        sub={<p><b className="wf-leadin">{INTEGRATION_CATEGORY_LABELS[item.category] ?? item.category}.</b> {item.tagline}</p>}
+        actions={
+          <>
             <Link
-              href={getShopifyAppUrl(`integration_header_${item.slug.replace(/[^a-z0-9]/g, "_")}`)}
+              href={getShopifyAppUrl(`integration_header_${trackingSlug}`)}
               target="_blank"
               rel="noopener noreferrer"
-              className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase px-6 py-3.5 rounded-lg shadow-[3px_3px_0px_#000] self-start md:self-auto flex items-center gap-2"
+              className="wf-btn wf-btn-green"
             >
-              <span>INSTALL WHATFLOW FOR SHOPIFY</span>
-              <span>➔</span>
+              Install WhatFlow for Shopify
             </Link>
-          </div>
+            <Link href="/integrations" className="wf-btn wf-btn-ghost">
+              All integrations
+            </Link>
+          </>
+        }
+        meta={
+          <>
+            <nav aria-label="Breadcrumb" className="int-crumbs">
+              <Link href="/">Home</Link>
+              <span aria-hidden="true">›</span>
+              <Link href="/integrations">Integrations</Link>
+              <span aria-hidden="true">›</span>
+              <span aria-current="page">{item.name}</span>
+            </nav>
+            <span className="wf-pill">Official connector</span>
+          </>
+        }
+      >
+        <div className="int-link" aria-hidden="true">
+          <span className="int-link-node">
+            {item.logo?.url ? (
+              <Image src={item.logo.url} alt="" width={72} height={72} className="object-contain" />
+            ) : (
+              item.name.charAt(0)
+            )}
+          </span>
+          <span className="int-link-wire" />
+          <span className="int-link-node">
+            <Image src="/brand/whatflow-mark.webp" unoptimized alt="" width={72} height={72} className="int-wf" />
+          </span>
         </div>
-      </section>
+      </PageHero>
 
-      {/* ─── Main Content ─── */}
-      <section className="px-4 sm:px-6 py-14 max-w-[1080px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Left Column */}
-          <div className="lg:col-span-8 space-y-8">
-            <div className="neo-box bg-white p-8 rounded-2xl space-y-6">
-              <h2 className="text-xl font-display font-black uppercase text-black">
-                About the Integration
-              </h2>
-              <p className="text-sm font-medium text-gray-700 leading-relaxed">
-                {item.description}
-              </p>
+      <Section tone="paper">
+        <div className="int-layout">
+          <div className="grid gap-5">
+            <div className="wf-card" data-reveal>
+              <h2 className="font-display text-[2rem] font-bold leading-[1.05] tracking-[-0.04em]">About the integration</h2>
+              <p className="int-about">{item.description}</p>
 
               {item.keyFeatures && item.keyFeatures.length > 0 && (
-                <div className="pt-4 border-t border-gray-100 space-y-3">
-                  <h3 className="text-xs font-extrabold uppercase tracking-wider text-black">
-                    Key Capabilities
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <div className="mt-8">
+                  <h3 className="int-subhead">Key capabilities</h3>
+                  <div className="int-feature-grid">
                     {item.keyFeatures.map((f) => (
-                      <div key={f.feature} className="neo-box bg-[#FAF7F0] p-3 rounded-lg flex items-center gap-2">
-                        <div className="w-5 h-5 rounded-full bg-[#00D261] border border-black flex items-center justify-center text-[10px] font-black text-black flex-shrink-0">
-                          ✓
-                        </div>
-                        <span className="text-xs font-bold text-black">{f.feature}</span>
+                      <div key={f.feature}>
+                        <span className="int-check" aria-hidden="true">✓</span>
+                        <span>{f.feature}</span>
                       </div>
                     ))}
                   </div>
@@ -183,12 +174,9 @@ export default async function IntegrationDetailPage({ params }: IntegrationPageP
               )}
             </div>
 
-            {/* How to Setup Box */}
-            <div className="neo-box bg-white p-8 rounded-2xl space-y-4">
-              <h2 className="text-xl font-display font-black uppercase text-black">
-                How It Works (Setup in 2 Minutes)
-              </h2>
-              <ol className="list-decimal pl-5 space-y-2 text-xs font-medium text-gray-700 leading-relaxed">
+            <div className="wf-card" data-reveal style={{ "--d": "80ms" } as CSSProperties}>
+              <h2 className="font-display text-[2rem] font-bold leading-[1.05] tracking-[-0.04em]">How it works (setup in 2 minutes)</h2>
+              <ol className="int-steps">
                 <li>Install WhatFlow from the Shopify App Store and connect your WhatsApp Business Account.</li>
                 <li>Go to the <strong>Integrations</strong> tab inside your WhatFlow dashboard and enable {item.name}.</li>
                 <li>Choose your preferred message templates and automated trigger events.</li>
@@ -197,48 +185,40 @@ export default async function IntegrationDetailPage({ params }: IntegrationPageP
             </div>
           </div>
 
-          {/* Right Sidebar */}
-          <div className="lg:col-span-4 space-y-6">
-            <div className="neo-box bg-white p-6 rounded-2xl space-y-4">
-              <div className="text-xs font-extrabold uppercase tracking-wider text-black border-b border-gray-100 pb-2">
-                Integration Details
-              </div>
-              <div className="space-y-3 text-xs">
+          <aside className="int-side">
+            <div className="wf-card" data-reveal style={{ "--d": "120ms" } as CSSProperties}>
+              <h2 className="font-display text-[1.3rem] font-bold tracking-[-0.03em]">Integration details</h2>
+              <dl className="int-dl">
                 <div>
-                  <div className="text-gray-500 font-bold uppercase text-[10px]">Developer</div>
-                  <div className="font-extrabold text-black">WhatFlow Official</div>
+                  <dt>Developer</dt>
+                  <dd>WhatFlow Official</dd>
                 </div>
                 <div>
-                  <div className="text-gray-500 font-bold uppercase text-[10px]">Compatibility</div>
-                  <div className="font-extrabold text-black">All Shopify &amp; Shopify Plus Stores</div>
+                  <dt>Compatibility</dt>
+                  <dd>All Shopify &amp; Shopify Plus stores</dd>
                 </div>
                 <div>
-                  <div className="text-gray-500 font-bold uppercase text-[10px]">Meta API Engine</div>
-                  <div className="font-extrabold text-[#0A6B56]">Official Cloud API (v25.0)</div>
+                  <dt>Meta API engine</dt>
+                  <dd className="text-[var(--green-deep)]">Official Cloud API (v25.0)</dd>
                 </div>
-              </div>
+              </dl>
             </div>
 
-            <div className="neo-box-teal p-6 rounded-2xl text-center text-white space-y-3">
-              <div className="font-display font-black text-lg uppercase">
-                Ready to setup {item.name}?
-              </div>
-              <p className="text-xs text-[#A7F3D0] font-medium">
-                Try WhatFlow risk-free for 14 days. No credit card required.
-              </p>
+            <div className="wf-card int-trial" data-reveal style={{ "--d": "180ms" } as CSSProperties}>
+              <h2 className="font-display text-[1.5rem] font-bold leading-[1.1] tracking-[-0.035em]">Ready to set up {item.name}?</h2>
+              <p>Paid plans start with a 7-day free trial, and there is a free plan.</p>
               <Link
-                href={getShopifyAppUrl(`integration_sidebar_${item.slug.replace(/[^a-z0-9]/g, "_")}`)}
+                href={getShopifyAppUrl(`integration_sidebar_${trackingSlug}`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="neo-btn w-full bg-[#00D261] text-black font-extrabold text-xs uppercase py-3 rounded-lg shadow-[2px_2px_0px_#000] flex items-center justify-center gap-1"
+                className="wf-btn wf-btn-green mt-5 w-full"
               >
-                <span>INSTALL FREE TRIAL</span>
-                <span>➔</span>
+                Install free trial
               </Link>
             </div>
-          </div>
+          </aside>
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

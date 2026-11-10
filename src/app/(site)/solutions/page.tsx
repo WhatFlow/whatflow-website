@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { CSSProperties } from "react";
+import { PageHero, Section, SectionHead, Hl } from "@/components/site/PageKit";
+import { Bubble, Phone, type ChatMessage } from "@/components/landing/Phone";
+import "@/components/landing/landing.css";
+import "./solutions.css";
 import { getBreadcrumbSchema, SITE_URL } from "@/lib/schema-org";
 
 export const metadata: Metadata = {
@@ -35,44 +40,52 @@ export const metadata: Metadata = {
 const SOLUTIONS = [
   {
     slug: "abandoned-cart-recovery",
-    tag: "CART RECOVERY",
-    tagColor: "bg-[#FFC107] text-black",
-    title: "Abandoned Cart Recovery",
+    tag: "Cart recovery",
+    tone: "sol-tone-yellow",
+    title: "Abandoned cart recovery",
     desc: "Recover up to 25% of lost checkouts with personalized 98% open-rate WhatsApp messages and 1-click checkout recovery links.",
-    stat: "25% Recovery Rate",
+    stat: "25% recovery rate",
   },
   {
     slug: "cod-order-verification",
-    tag: "FRAUD PREVENTION",
-    tagColor: "bg-[#00D261] text-black",
-    title: "COD Confirmation & Anti-RTO",
-    desc: "Cut Cash on Delivery Return-to-Origin (RTO) losses by up to 40% with interactive 1-click confirmation buttons and automatic Shopify order tags.",
-    stat: "40% RTO Reduction",
+    tag: "Fraud prevention",
+    tone: "sol-tone-mint",
+    title: "COD confirmation and anti-RTO",
+    desc: "Cut cash on delivery return-to-origin (RTO) losses by up to 40% with interactive 1-click confirmation buttons and automatic Shopify order tags.",
+    stat: "40% RTO reduction",
   },
   {
     slug: "order-tracking-notifications",
-    tag: "POST-PURCHASE",
-    tagColor: "bg-[#2563EB] text-white",
-    title: "Order Tracking & Shipping Alerts",
+    tag: "Post-purchase",
+    tone: "sol-tone-sky",
+    title: "Order tracking and shipping alerts",
     desc: "Deliver real-time fulfillment updates, tracking numbers, and out-for-delivery alerts directly to WhatsApp, reducing WISMO tickets by 60%.",
-    stat: "60% Fewer Support Tickets",
+    stat: "60% fewer support tickets",
   },
   {
     slug: "whatsapp-reviews-ugc",
-    tag: "REVIEWS & UGC",
-    tagColor: "bg-[#FF4B4B] text-white",
-    title: "Review & UGC Collection",
+    tag: "Reviews and UGC",
+    tone: "sol-tone-pink",
+    title: "Review and UGC collection",
     desc: "Generate 5x more product reviews and photo testimonials on WhatsApp with native Judge.me and Loox integrations.",
-    stat: "5x Higher Review Rate",
+    stat: "5x higher review rate",
   },
   {
     slug: "chat-button",
-    tag: "STOREFRONT CONVERSION",
-    tagColor: "bg-[#00D261] text-black",
-    title: "WhatsApp Chat Button & Support",
+    tag: "Storefront conversion",
+    tone: "sol-tone-lilac",
+    title: "WhatsApp chat button and support",
     desc: "Add a high-converting, lightweight WhatsApp chat widget to your storefront with dynamic product context and multi-agent routing.",
-    stat: "3-Min No-Code Setup",
+    stat: "3-min no-code setup",
   },
+];
+
+/** One customer, one thread: the journey the solutions below automate. */
+const JOURNEY: ChatMessage[] = [
+  { id: "cart", from: "store", text: "You left something in your cart 👀 It's saved for you.", buttons: ["Complete my order"], tapped: 0, time: "Mon" },
+  { id: "cod", from: "store", text: "Please confirm your cash on delivery order #1042.", buttons: ["Confirm order", "Cancel"], tapped: 0, time: "Mon" },
+  { id: "ship", from: "store", text: "Your order is out for delivery today 🚚", time: "Wed" },
+  { id: "review", from: "store", text: "How are you liking it? Tap to rate ⭐", buttons: ["⭐⭐⭐⭐⭐"], time: "Sun" },
 ];
 
 export default function SolutionsHubPage() {
@@ -82,66 +95,57 @@ export default function SolutionsHubPage() {
   ]);
 
   return (
-    <div className="min-h-screen bg-[#FAF7F0]">
+    <div className="min-h-screen bg-[var(--paper)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* ─── Hero ─── */}
-      <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
-        <div className="max-w-[1080px] mx-auto text-center space-y-4">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
-            SHOPIFY WHATSAPP SOLUTIONS
+      <PageHero
+        title="Every tool to grow your store."
+        accent={["grow"]}
+        sub={<p>Tailored WhatsApp marketing and automation solutions that drive revenue at every step of the customer journey.</p>}
+        actions={
+          <>
+            <a href="#solutions" className="wf-btn wf-btn-green">Explore solutions</a>
+            <Link href="/pricing" className="wf-btn wf-btn-ghost">View pricing</Link>
+          </>
+        }
+        meta={SOLUTIONS.map((item) => <span key={item.slug}>{item.tag}</span>)}
+      >
+        <div className="sol-stage">
+          <div className="lp">
+            <Phone label="One WhatsApp thread covering cart recovery, COD confirmation, delivery and a review request">
+              {JOURNEY.map((message) => <Bubble key={message.id} message={message} />)}
+            </Phone>
           </div>
-          <h1 className="text-[36px] sm:text-[52px] lg:text-[64px] font-display font-black uppercase text-black tracking-tight leading-none">
-            EVERY TOOL TO GROW YOUR STORE.
-          </h1>
-          <p className="text-base sm:text-lg text-gray-700 font-medium max-w-2xl mx-auto leading-relaxed">
-            Discover tailored WhatsApp marketing and automation solutions designed to drive revenue at every step of the customer journey.
-          </p>
+          <div className="sol-sticker sol-sticker-a"><div><b>Up to 25%</b><small>of lost checkouts recovered</small></div></div>
+          <div className="sol-sticker sol-sticker-b"><div><b>Up to 40%</b><small>lower COD RTO losses</small></div></div>
         </div>
-      </section>
+      </PageHero>
 
-      {/* ─── Solutions Grid ─── */}
-      <section className="px-4 sm:px-6 py-16 max-w-[1280px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {SOLUTIONS.map((item) => (
-            <div
+      <Section id="solutions" tone="paper">
+        <SectionHead
+          title={<>One app, <Hl>five</Hl> ways to sell more.</>}
+          sub="Each solution runs on its own or alongside the others, from the first abandoned cart to the five-star review."
+        />
+        <div className="wf-grid wf-grid-3 mt-12">
+          {SOLUTIONS.map((item, index) => (
+            <Link
               key={item.slug}
-              className="neo-box bg-white p-8 rounded-2xl flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-transform"
+              href={`/solutions/${item.slug}`}
+              className={`wf-card sol-card ${item.tone}`}
+              data-reveal
+              style={{ "--d": `${index * 80}ms` } as CSSProperties}
             >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className={`neo-pill px-3 py-1 text-xs font-black uppercase tracking-wider border-black ${item.tagColor}`}>
-                    {item.tag}
-                  </span>
-                  <span className="text-[11px] font-extrabold text-gray-500 uppercase tracking-wide">
-                    {item.stat}
-                  </span>
-                </div>
-
-                <h2 className="text-xl font-display font-black uppercase text-black leading-tight">
-                  {item.title}
-                </h2>
-
-                <p className="text-xs text-gray-600 font-medium leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-
-              <div className="pt-4">
-                <Link
-                  href={`/solutions/${item.slug}`}
-                  className="neo-btn w-full bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider py-3 rounded-lg text-center block shadow-[3px_3px_0px_#000] hover:bg-[#00be57] transition-colors"
-                >
-                  EXPLORE SOLUTION ➔
-                </Link>
-              </div>
-            </div>
+              <h2 className="font-display text-[1.6rem] font-bold leading-[1.05] tracking-[-0.035em]">{item.title}</h2>
+              <p>{item.desc}</p>
+              <span className="wf-pill mt-5 self-start">{item.stat}</span>
+              <span className="sol-card-cta">Explore solution</span>
+            </Link>
           ))}
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

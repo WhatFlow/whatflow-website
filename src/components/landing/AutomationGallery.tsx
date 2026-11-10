@@ -15,7 +15,7 @@ const cards: Card[] = [
 		demo: <><Mini>Please confirm order #1027 for $84.00 🙏</Mini><Btns items={["Confirm Order", "Cancel Order"]} tapped={0} /></>,
 	},
 	{
-		kicker: "Follow-ups", title: "Nudge the quiet ones.", tone: "#FFE7A3", tag: "Up to 3 reminders · 72h",
+		kicker: "Follow-ups", title: "Nudge the quiet ones.", tone: "#FFE7A3", tag: "Up to 3 reminders in 72h",
 		body: "Remind customers who haven't responded, each reminder with its own tags and auto-reply.",
 		demo: <><Mini>Reminder 1 · Still want order #1027?</Mini><Mini>Reminder 2 · We&apos;re holding it for you ⏳</Mini></>,
 	},
@@ -27,11 +27,11 @@ const cards: Card[] = [
 	{
 		kicker: "Draft orders", title: "Close the quotes.", tone: "#D9E6FF", tag: "Stops once paid",
 		body: "Send the invoice link for draft orders on WhatsApp, with reminders until the customer pays.",
-		demo: <><Mini>Your custom order is ready — $320.00</Mini><Btns items={["Pay invoice"]} /></>,
+		demo: <><Mini>Your custom order is ready: $320.00</Mini><Btns items={["Pay invoice"]} /></>,
 	},
 	{
 		kicker: "Shipping Journey", title: "Every step of delivery.", tone: "#E7DBFF", tag: "11 fulfillment events",
-		body: "Label printed, picked up, in transit, out for delivery, delivered — a message for each event you choose.",
+		body: "Label printed, picked up, in transit, out for delivery, delivered. A message for each event you choose.",
 		demo: <span className="lp-mini-track">{["Picked up", "In transit", "Out for delivery", "Delivered"].map((step, index) => <span key={step} style={{ "--i": index } as React.CSSProperties}>{step}</span>)}</span>,
 	},
 	{
@@ -52,7 +52,7 @@ const cards: Card[] = [
 	{
 		kicker: "Team alerts", title: "Your team, in the loop.", tone: "#D9E6FF", tag: "Admin Notified",
 		body: "Ping team numbers on WhatsApp for new orders, so nobody refreshes the admin all day.",
-		demo: <Mini>🛎️ New order #1028 · $142.00 · COD · Lahore</Mini>,
+		demo: <Mini>🛎️ New order #1028: $142.00, COD, Lahore</Mini>,
 	},
 ];
 
@@ -62,8 +62,7 @@ export function AutomationGallery() {
 			className="lp-autogallery"
 			head={
 				<div className="lp-gallery-head">
-					<span className="lp-eyebrow">Order automations</span>
-					<h2 className="lp-h2">An automation for <span className="lp-hl">every moment.</span></h2>
+					<h2 className="lp-h2">An automation for every moment.</h2>
 					<p className="lp-gallery-note">Every message tags the order in Shopify, so your team always knows where it stands.</p>
 				</div>
 			}
@@ -71,9 +70,8 @@ export function AutomationGallery() {
 			{cards.map((card) => (
 				<article key={card.kicker} className="lp-acard" style={{ "--tone": card.tone } as React.CSSProperties}>
 					<div className="lp-acard-demo" aria-hidden="true">{card.demo}</div>
-					<span className="lp-acard-kicker">{card.kicker}</span>
 					<h3>{card.title}</h3>
-					<p>{card.body}</p>
+					<p><b>{card.kicker}.</b> {card.body}</p>
 					<span className="lp-acard-tag">{card.tag}</span>
 				</article>
 			))}

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { CSSProperties } from "react";
+import { Hl, PageHero, Section, SectionHead } from "@/components/site/PageKit";
 import { getBreadcrumbSchema, getOrganizationSchema, SITE_URL } from "@/lib/schema-org";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
 
@@ -26,6 +28,26 @@ export const metadata: Metadata = {
   },
 };
 
+const VALUES = [
+  {
+    title: "0% markup guarantee",
+    body: "We never inflate official Meta Cloud API conversation rates. You pay wholesale rates directly to Meta, keeping your marketing ROI transparent.",
+    tone: "var(--mint)",
+  },
+  {
+    title: "Edge-native speed",
+    body: "Built on Cloudflare edge infrastructure to execute webhooks and send messages with sub-50ms latency, even during peak Black Friday sales.",
+    tone: "#fff3c4",
+  },
+  {
+    title: "100% Shopify first",
+    body: "Every workflow, trigger, and analytics dashboard is designed exclusively for Shopify and Shopify Flow, providing 1-click administrative control.",
+    tone: "var(--sky)",
+  },
+];
+
+const BADGES = ["Official Meta Tech Partner", "Built for Shopify", "GDPR & SOC2 compliant"];
+
 export default function AboutPage() {
   const orgSchema = getOrganizationSchema();
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -34,7 +56,7 @@ export default function AboutPage() {
   ]);
 
   return (
-    <div className="min-h-screen bg-[#FAF7F0]">
+    <div className="min-h-screen bg-[var(--paper)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
@@ -44,127 +66,77 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* ─── Hero Section ─── */}
-      <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-24">
-        <div className="max-w-[1080px] mx-auto space-y-6">
-          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500">
-            <Link href="/" className="hover:text-[#00D261] transition-colors">Home</Link>
-            <span>›</span>
-            <span className="text-black">About Us</span>
-          </div>
-
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
-            OUR MISSION &amp; STORY
-          </div>
-
-          <h1 className="text-[36px] sm:text-[54px] lg:text-[68px] font-display font-black uppercase text-black tracking-tight leading-none">
-            REDEFINING HOW SHOPIFY BRANDS TALK TO <span className="text-stroke-green">CUSTOMERS.</span>
-          </h1>
-
-          <p className="text-base sm:text-xl text-gray-700 font-medium max-w-3xl leading-relaxed">
+      <PageHero
+        title="Redefining how Shopify brands talk to customers."
+        accent={["customers"]}
+        sub={
+          <p>
             WhatFlow was founded with a singular conviction: eCommerce communication should be fast, delightful, and fair. We build high-performance WhatsApp tools for Shopify merchants without predatory markups or hidden fees.
           </p>
-        </div>
-      </section>
+        }
+        actions={
+          <Link
+            href={getShopifyAppUrl("about_cta")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="wf-btn wf-btn-green"
+          >
+            Install on Shopify
+          </Link>
+        }
+        meta={
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2">
+            <Link href="/" className="underline decoration-[var(--green)] decoration-2 underline-offset-4">Home</Link>
+            <span aria-hidden="true">›</span>
+            <span aria-current="page">About us</span>
+          </nav>
+        }
+      />
 
-      {/* ─── Core Values Grid ─── */}
-      <section className="px-4 sm:px-6 py-16 sm:py-20 max-w-[1080px] mx-auto space-y-12">
-        <div className="text-center space-y-3">
-          <div className="neo-box inline-block bg-[#FFC107] px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-            WHAT WE STAND FOR
-          </div>
-          <h2 className="text-[32px] sm:text-[44px] font-display font-black uppercase text-black tracking-tight">
-            OUR CORE PRINCIPLES
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="neo-box bg-white p-8 rounded-2xl space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-[#D5F5E3] border-2 border-black flex items-center justify-center text-2xl">
-              💎
-            </div>
-            <h3 className="text-lg font-display font-black uppercase text-black">
-              0% Markup Guarantee
-            </h3>
-            <p className="text-xs text-gray-600 font-medium leading-relaxed">
-              We never inflate official Meta Cloud API conversation rates. You pay wholesale wholesale rates directly to Meta, keeping your marketing ROI transparent.
-            </p>
-          </div>
-
-          <div className="neo-box bg-white p-8 rounded-2xl space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-[#FFF3CD] border-2 border-black flex items-center justify-center text-2xl">
-              ⚡
-            </div>
-            <h3 className="text-lg font-display font-black uppercase text-black">
-              Edge-Native Speed
-            </h3>
-            <p className="text-xs text-gray-600 font-medium leading-relaxed">
-              Built on Cloudflare edge infrastructure to execute webhooks and send messages with sub-50ms latency—even during peak Black Friday sales.
-            </p>
-          </div>
-
-          <div className="neo-box bg-white p-8 rounded-2xl space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-[#E8F8F0] border-2 border-black flex items-center justify-center text-2xl">
-              🛍️
-            </div>
-            <h3 className="text-lg font-display font-black uppercase text-black">
-              100% Shopify First
-            </h3>
-            <p className="text-xs text-gray-600 font-medium leading-relaxed">
-              Every workflow, trigger, and analytics dashboard is designed exclusively for Shopify and Shopify Flow, providing seamless 1-click administrative control.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── Trust & Partnerships ─── */}
-      <section className="bg-white border-y-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
-        <div className="max-w-[1080px] mx-auto space-y-8 text-center">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-            PARTNERSHIPS &amp; SECURITY
-          </div>
-          <h2 className="text-[32px] sm:text-[44px] font-display font-black uppercase text-black tracking-tight">
-            TRUSTED BY OVER 10,000+ MERCHANTS
-          </h2>
-          <p className="text-sm text-gray-600 max-w-2xl mx-auto font-medium leading-relaxed">
-            WhatFlow is an official Meta Tech Partner and verified Shopify App. We maintain enterprise-grade AES-256 encryption, GDPR compliance, and a 99.9% uptime SLA.
-          </p>
-
-          <div className="flex items-center justify-center gap-4 flex-wrap pt-4">
-            <span className="neo-pill bg-[#FAF7F0] border-black px-4 py-2 text-xs font-black uppercase text-black">
-              ✓ OFFICIAL META TECH PARTNER
-            </span>
-            <span className="neo-pill bg-[#FAF7F0] border-black px-4 py-2 text-xs font-black uppercase text-black">
-              ✓ BUILT FOR SHOPIFY
-            </span>
-            <span className="neo-pill bg-[#FAF7F0] border-black px-4 py-2 text-xs font-black uppercase text-black">
-              ✓ GDPR &amp; SOC2 COMPLIANT
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── CTA ─── */}
-      <section className="bg-[#091E17] text-white py-16 sm:py-20 px-4 sm:px-6">
-        <div className="max-w-[1080px] mx-auto text-center space-y-6">
-          <h2 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tight">
-            GROW YOUR STORE WITH <span className="text-stroke-green">WHATFLOW.</span>
-          </h2>
-          <p className="text-sm text-gray-300 max-w-xl mx-auto font-medium">
-            Start your 14-day free trial today. Install on Shopify in under 3 minutes.
-          </p>
-          <div className="pt-2">
-            <Link
-              href={getShopifyAppUrl("about_cta")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="neo-btn bg-[#00D261] text-black font-display font-black text-sm uppercase tracking-wider px-8 py-4 rounded-xl inline-block shadow-[4px_4px_0px_#000] hover:scale-105 transition-transform"
+      {/* ─── Core principles ─── */}
+      <Section tone="paper" label="about-values-title">
+        <SectionHead
+          id="about-values-title"
+          center
+          title={<>Our core <Hl>principles.</Hl></>}
+        />
+        <div className="wf-grid wf-grid-3 mt-12">
+          {VALUES.map((value, index) => (
+            <div
+              key={value.title}
+              className="wf-card"
+              data-hover
+              data-reveal
+              style={{ background: value.tone, "--d": `${index * 90}ms` } as CSSProperties}
             >
-              INSTALL ON SHOPIFY ➔
-            </Link>
-          </div>
+              <h3>{value.title}</h3>
+              <p>{value.body}</p>
+            </div>
+          ))}
         </div>
-      </section>
+      </Section>
+
+      {/* ─── Trust & partnerships ─── */}
+      <Section tone="white" label="about-trust-title">
+        <SectionHead
+          id="about-trust-title"
+          center
+          title={<>Trusted by over <Hl>10,000+ merchants.</Hl></>}
+          sub="WhatFlow is an official Meta Tech Partner and verified Shopify App. We maintain AES-256 encryption, GDPR compliance, and a 99.9% uptime SLA."
+        />
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+          {BADGES.map((badge, index) => (
+            <span
+              key={badge}
+              className="wf-pill"
+              data-reveal
+              style={{ padding: "10px 18px", fontSize: 14, boxShadow: "3px 3px 0 var(--ink)", background: index === 0 ? "var(--mint)" : index === 1 ? "#fff3c4" : "var(--sky)", "--d": `${index * 80}ms` } as CSSProperties}
+            >
+              {badge}
+            </span>
+          ))}
+        </div>
+      </Section>
     </div>
   );
 }

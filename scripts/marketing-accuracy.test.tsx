@@ -1,23 +1,7 @@
-import React from 'react';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {renderToStaticMarkup} from 'react-dom/server';
-import {RoiCalculator} from '../src/components/RoiCalculator';
 import {GET as getService} from '../src/app/ai/service.json/route';
 import {HOMEPAGE_FAQS} from '../src/lib/marketing-faqs';
-
-test('recovery scenario distinguishes example inputs, gross revenue and costs from promised ROI', () => {
-  const html = renderToStaticMarkup(<RoiCalculator/>);
-  assert.match(html, /not WhatFlow benchmarks or promised results/);
-  assert.match(html, /default 70% abandonment and 12% recovery rates are illustrative assumptions/);
-  assert.match(html, /ILLUSTRATIVE MONTHLY GROSS REVENUE/);
-  assert.match(html, /21,840/);
-  assert.match(html, /This is not profit or ROI/);
-  assert.match(html, /Excludes app fees, Meta charges, discounts, refunds, and fulfillment costs/);
-  assert.match(html, /actual consent and delivery limits reduce reach/);
-  assert.equal((html.match(/aria-describedby="recovery-scenario-assumptions"/g) || []).length, 2);
-  assert.doesNotMatch(html, /REVENUE RECOVERED|ROI &amp; REVENUE ESTIMATOR|store’s a monthly/);
-});
 
 test('service manifest is public JSON with accurate feature availability and documentation', async () => {
   const response = await getService();

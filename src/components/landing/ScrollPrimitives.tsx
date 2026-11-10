@@ -4,14 +4,13 @@ import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
 import { useScrollScene } from "./useScrollScene";
 
 /** Apple-style manifesto: a pinned paragraph whose words light up as you scroll. */
-export function WordReveal({ text, accent = [], kicker, id }: { text: string; accent?: string[]; kicker?: string; id?: string }) {
+export function WordReveal({ text, accent = [], id }: { text: string; accent?: string[]; id?: string }) {
 	const [ref] = useScrollScene<HTMLElement>({ mode: "pin" });
 	const words = text.split(" ");
 	return (
 		<section ref={ref} id={id} className="lp-words" aria-label={text}>
 			<div className="lp-words-sticky">
 				<div className="lp-shell">
-					{kicker && <span className="lp-words-kicker">{kicker}</span>}
 					<p className="lp-words-text" aria-hidden="true" style={{ "--n": words.length } as CSSProperties}>
 						{words.map((word, index) => (
 							<span key={index} style={{ "--i": index } as CSSProperties} className={accent.includes(word.replace(/[.,]/g, "")) ? "is-accent" : undefined}>
@@ -56,7 +55,7 @@ export function HorizontalGallery({ children, head, className = "" }: { children
 		<section ref={ref} className={`lp-hgallery ${className}`}>
 			<div className="lp-hgallery-sticky">
 				<div className="lp-shell lp-hgallery-head">{head}</div>
-				<div ref={track} className="lp-hgallery-track">{children}</div>
+				<div ref={track} tabIndex={0} role="region" aria-label="Product gallery" className="lp-hgallery-track">{children}</div>
 				<div className="lp-hgallery-bar" aria-hidden="true"><span /></div>
 			</div>
 		</section>

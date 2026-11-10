@@ -30,13 +30,12 @@ export function AnalyticsChapter() {
 		<ClipReveal className="lp-analytics">
 			<div className="lp-shell lp-analytics-grid">
 				<div className="lp-analytics-copy" data-reveal>
-					<span className="lp-eyebrow lp-eyebrow-light">Analytics</span>
-					<h2 className="lp-h2 text-white">See what WhatsApp <span className="text-[#00D261]">earns you.</span></h2>
-					<p className="lp-lead">Recovered revenue and orders, delivery and read rates, button clicks, and Meta conversation costs, broken down by automation.</p>
+					<h2 className="lp-h2 text-white">See what WhatsApp earns you.</h2>
+					<p className="lp-lead"><b className="wf-leadin">Analytics.</b> Recovered revenue and orders, delivery and read rates, button clicks, and Meta conversation costs, broken down by automation.</p>
 				</div>
 				<div ref={ref} className={`lp-dash ${inView ? "is-in" : ""}`} role="img" aria-label="Illustrative analytics dashboard showing recovered revenue over time, a message funnel, and revenue by automation">
 					<div className="lp-dash-top">
-						<span>Demo store · Last 14 days</span>
+						<span>Demo store, last 14 days</span>
 						<span className="lp-dash-pill">Date range ▾</span>
 					</div>
 					<div className="lp-dash-kpis">

@@ -52,7 +52,7 @@ export function Phone({ children, className = "", label = "WhatsApp chat preview
 					<span className="min-w-0">
 						<span className="flex items-center gap-1 text-[13px] font-bold leading-tight">
 							Juniper Goods
-							<svg viewBox="0 0 24 24" className="size-3.5 fill-[#00D261]" aria-hidden="true"><path d="M12 2l2.4 2.2 3.2-.4.9 3.1 2.9 1.5-1.2 3 1.2 3-2.9 1.5-.9 3.1-3.2-.4L12 22l-2.4-2.2-3.2.4-.9-3.1-2.9-1.5 1.2-3-1.2-3 2.9-1.5.9-3.1 3.2.4z" /><path d="M8 12l3 3 5-6" stroke="#fff" strokeWidth="2" fill="none" /></svg>
+							<svg viewBox="0 0 24 24" className="size-3.5 fill-[var(--green)]" aria-hidden="true"><path d="M12 2l2.4 2.2 3.2-.4.9 3.1 2.9 1.5-1.2 3 1.2 3-2.9 1.5-.9 3.1-3.2-.4L12 22l-2.4-2.2-3.2.4-.9-3.1-2.9-1.5 1.2-3-1.2-3 2.9-1.5.9-3.1 3.2.4z" /><path d="M8 12l3 3 5-6" stroke="#fff" strokeWidth="2" fill="none" /></svg>
 						</span>
 						<span className="block text-[10.5px] text-white/70">Business account</span>
 					</span>

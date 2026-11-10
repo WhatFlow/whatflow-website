@@ -23,11 +23,10 @@ export function FlowBuilder() {
 			<div className="lp-flow-sticky">
 				<div className="lp-shell lp-flow-grid">
 					<div className="lp-flow-copy">
-						<span className="lp-eyebrow">Shopify Flow + Sidekick</span>
-						<h2 id="lp-flow-title" className="lp-h2">Describe it. <span className="lp-hl">Watch it build.</span></h2>
-						<p className="lp-lead">9 WhatsApp triggers — button clicks, replies, media, catalog orders, opt-outs — and 8 send actions, native in Shopify Flow. Ask Sidekick to draft it, or drag the steps yourself.</p>
+						<h2 id="lp-flow-title" className="lp-h2">Describe it. Watch it build.</h2>
+						<p className="lp-lead"><b className="wf-leadin">Shopify Flow + Sidekick.</b> 9 WhatsApp triggers (button clicks, replies, media, catalog orders, opt-outs) and 8 send actions, native in Shopify Flow. Ask Sidekick to draft it, or drag the steps yourself.</p>
 						<div className="lp-sidekick" aria-label={`Sidekick prompt: ${prompt}`}>
-							<span className="lp-sidekick-label">✦ Sidekick</span>
+							<span className="lp-sidekick-label">Sidekick</span>
 							<p aria-hidden="true">{typed}<span className="lp-caret" /></p>
 						</div>
 					</div>

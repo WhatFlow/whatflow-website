@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
 import { getBreadcrumbSchema, getFAQSchema, SITE_URL } from "@/lib/schema-org";
+import { PageHero, Section, SectionHead, Hl } from "@/components/site/PageKit";
+import { Bubble, Phone, type ChatMessage } from "@/components/landing/Phone";
+import "@/components/landing/landing.css";
+import "../solutions.css";
 
 interface SolutionPageProps {
   params: Promise<{ slug: string }>;
@@ -11,71 +16,79 @@ interface SolutionPageProps {
 interface SolutionData {
   slug: string;
   tag: string;
-  tagColor: string;
+  /** Tile colour class from solutions.css. */
+  tone: string;
   title: string;
   metaTitle: string;
   metaDescription: string;
   headline: string;
+  /** Headline words rendered in green. */
+  accent: string[];
   subtitle: string;
   heroBadge: string;
   stat: { value: string; label: string };
-  features: { title: string; desc: string; icon: string }[];
+  features: { title: string; desc: string }[];
   steps: { step: string; title: string; desc: string }[];
   faqs: { question: string; answer: string }[];
+  /** The solution's own message flow, shown in the hero phone. */
+  chat: ChatMessage[];
 }
 
 const SOLUTIONS_MAP: Record<string, SolutionData> = {
   "abandoned-cart-recovery": {
     slug: "abandoned-cart-recovery",
-    tag: "CART RECOVERY",
-    tagColor: "bg-[#FFC107] text-black",
+    tag: "Cart recovery",
+    tone: "sol-tone-yellow",
     title: "Shopify WhatsApp Abandoned Cart Recovery",
     metaTitle: "Shopify WhatsApp Abandoned Cart Recovery — 98% Open Rates | WhatFlow",
     metaDescription:
       "Recover up to 25% of abandoned Shopify checkouts with automated WhatsApp cart recovery messages. 1-click checkout links, dynamic discounts, and 98% open rates.",
-    headline: "RECOVER LOST SHOPIFY SALES ON AUTOPILOT VIA WHATSAPP",
+    headline: "Recover lost Shopify sales on autopilot via WhatsApp.",
+    accent: ["autopilot"],
     subtitle:
       "Over 70% of eCommerce carts are abandoned. Reach shoppers directly on WhatsApp with pre-filled checkout links and dynamic discount codes before they buy from competitors.",
-    heroBadge: "25% AVERAGE RECOVERY RATE",
-    stat: { value: "25%", label: "Average Checkout Recovery Rate" },
+    heroBadge: "25% average recovery rate",
+    stat: { value: "25%", label: "Average checkout recovery rate" },
     features: [
       {
-        title: "1-Click Direct Checkout Links",
+        title: "1-click direct checkout links",
         desc: "Customers tap a single button in WhatsApp to instantly return to their pre-filled checkout with all cart items saved.",
-        icon: "⚡",
       },
       {
-        title: "Dynamic Smart Discounts",
+        title: "Dynamic smart discounts",
         desc: "Offer tiered incentive discounts based on cart value or customer status to maximize checkout completion without sacrificing margins.",
-        icon: "🏷️",
       },
       {
-        title: "Automated Multi-Step Sequences",
+        title: "Automated multi-step sequences",
         desc: "Set timed follow-ups (e.g. 30 minutes, 6 hours, 24 hours) that automatically cancel if the customer completes their purchase.",
-        icon: "⏳",
       },
       {
-        title: "Quiet Hours & Compliance",
+        title: "Quiet hours and compliance",
         desc: "Respect customer timezones with automatic quiet hours and 1-click opt-out rules that keep your WhatsApp Business account in high quality standing.",
-        icon: "🛡️",
       },
     ],
     steps: [
       {
         step: "01",
-        title: "Customer Leaves Checkout",
+        title: "Customer leaves checkout",
         desc: "Shopify fires an abandoned checkout webhook to WhatFlow in real time.",
       },
       {
         step: "02",
-        title: "Smart Sequence Triggers",
+        title: "Smart sequence triggers",
         desc: "WhatFlow sends a personalized WhatsApp template with exact product titles, thumbnail, and 1-click recovery button.",
       },
       {
         step: "03",
-        title: "Order Completed",
+        title: "Order completed",
         desc: "Shopper completes payment on Shopify. Follow-up sequences auto-cancel and conversion is tracked in real-time.",
       },
+    ],
+    chat: [
+      { id: "c1", from: "store", text: "Hi Aisha, you left something behind 👀 Your cart is saved and ready.", card: { title: "Linen tote", meta: "1 item in your cart", price: "$48", emoji: "👜" }, buttons: ["Return to checkout"], time: "10:30" },
+      { id: "c2", from: "store", text: "Still thinking it over? Here's a little something to help you decide.", buttons: ["Use my discount"], tapped: 0, time: "16:30" },
+      { id: "c3", from: "customer", text: "Done, just ordered! 🙌", time: "16:34" },
+      { id: "c4", from: "store", text: "Order confirmed 🎉 No more reminders from us.", time: "16:34" },
     ],
     faqs: [
       {
@@ -97,55 +110,57 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
   },
   "cod-order-verification": {
     slug: "cod-order-verification",
-    tag: "COD & FRAUD PREVENTION",
-    tagColor: "bg-[#00D261] text-black",
+    tag: "COD and fraud prevention",
+    tone: "sol-tone-mint",
     title: "Shopify Cash on Delivery (COD) WhatsApp Confirmation & Anti-RTO",
     metaTitle: "Shopify COD WhatsApp Order Confirmation & Anti-RTO | WhatFlow",
     metaDescription:
       "Slash Cash on Delivery (COD) Return-to-Origin (RTO) rates by up to 40%. Send 1-click WhatsApp order confirmation and cancellation buttons that automatically update Shopify order tags.",
-    headline: "CUT COD RETURN-TO-ORIGIN (RTO) BY UP TO 40%",
+    headline: "Cut COD return-to-origin (RTO) by up to 40%.",
+    accent: ["40%"],
     subtitle:
       "Verify buyer intent before shipping. Send automated WhatsApp confirmation messages with interactive 'Confirm Order' and 'Cancel Order' buttons that update Shopify order tags in real time.",
-    heroBadge: "40% RTO REDUCTION",
-    stat: { value: "40%", label: "Average Reduction in Failed Deliveries" },
+    heroBadge: "40% RTO reduction",
+    stat: { value: "40%", label: "Average reduction in failed deliveries" },
     features: [
       {
-        title: "1-Click Interactive Buttons",
-        desc: "Customers confirm or cancel their COD order with a single tap in WhatsApp—no OTP typing or phone calls required.",
-        icon: "✅",
+        title: "1-click interactive buttons",
+        desc: "Customers confirm or cancel their COD order with a single tap in WhatsApp, with no OTP typing or phone calls required.",
       },
       {
-        title: "Automatic Shopify Order Tagging",
+        title: "Automatic Shopify order tagging",
         desc: "Instantly applies 'COD Confirmed', 'COD Cancelled', or 'COD Unverified' tags to Shopify orders to streamline your warehouse fulfillment.",
-        icon: "🏷️",
       },
       {
-        title: "Address Verification & Correction",
+        title: "Address verification and correction",
         desc: "Allow customers to verify and fix incomplete street addresses or pin codes directly inside WhatsApp chat.",
-        icon: "📍",
       },
       {
-        title: "Prepaid Conversion Incentives",
+        title: "Prepaid conversion incentives",
         desc: "Offer a dynamic discount link to encourage COD buyers to convert to prepaid payment on Shopify before shipping.",
-        icon: "💳",
       },
     ],
     steps: [
       {
         step: "01",
-        title: "COD Order Placed",
+        title: "COD order placed",
         desc: "When a customer places a Cash on Delivery order, WhatFlow instantly detects the COD payment gateway.",
       },
       {
         step: "02",
-        title: "WhatsApp Button Sent",
+        title: "WhatsApp button sent",
         desc: "Customer receives a WhatsApp summary with 'Confirm Order' and 'Cancel' interactive quick-reply buttons.",
       },
       {
         step: "03",
-        title: "Warehouse Tagged",
+        title: "Warehouse tagged",
         desc: "Upon clicking, WhatFlow tags the order in Shopify Admin so fulfillment teams only ship verified orders.",
       },
+    ],
+    chat: [
+      { id: "c1", from: "store", text: "Thanks for your order #1042! Please confirm your cash on delivery order so we can ship it.", card: { title: "Order #1042", meta: "Cash on delivery", price: "₹1,499", emoji: "📦" }, buttons: ["Confirm order", "Cancel order"], tapped: 0, time: "11:02" },
+      { id: "c2", from: "customer", text: "Confirm order", time: "11:03" },
+      { id: "c3", from: "store", text: "Confirmed ✅ Your order is tagged and on its way to the warehouse.", time: "11:03" },
     ],
     faqs: [
       {
@@ -162,55 +177,57 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
   },
   "order-tracking-notifications": {
     slug: "order-tracking-notifications",
-    tag: "POST-PURCHASE AUTOMATION",
-    tagColor: "bg-[#2563EB] text-white",
+    tag: "Post-purchase automation",
+    tone: "sol-tone-sky",
     title: "Shopify WhatsApp Order Tracking & Shipping Notifications",
     metaTitle: "Shopify WhatsApp Order Tracking & Shipping Alerts | WhatFlow",
     metaDescription:
       "Keep Shopify customers delighted with real-time WhatsApp shipping updates, tracking links, and delivery notifications. Reduce 'Where is my order?' support tickets.",
-    headline: "REAL-TIME WHATSAPP SHIPPING UPDATES THAT DELIGHT CUSTOMERS",
+    headline: "Real-time WhatsApp shipping updates that delight customers.",
+    accent: ["delight"],
     subtitle:
       "Deliver automated order receipts, tracking numbers, out-for-delivery alerts, and fulfillment updates straight to WhatsApp. Reduce customer service inquiries by over 60%.",
-    heroBadge: "60% FEWER WISMO TICKETS",
-    stat: { value: "60%", label: "Fewer 'Where is My Order' Support Inquiries" },
+    heroBadge: "60% fewer WISMO tickets",
+    stat: { value: "60%", label: "Fewer 'where is my order' support inquiries" },
     features: [
       {
-        title: "Fulfillment & Tracking Alerts",
+        title: "Fulfillment and tracking alerts",
         desc: "Trigger WhatsApp messages the second an order is marked fulfilled in Shopify, complete with carrier tracking URLs.",
-        icon: "📦",
       },
       {
-        title: "Out-for-Delivery Alerts",
+        title: "Out-for-delivery alerts",
         desc: "Notify customers on the day of delivery so they are available to receive their package, reducing delivery failures.",
-        icon: "🚚",
       },
       {
-        title: "Interactive Order Receipts",
+        title: "Interactive order receipts",
         desc: "Provide clean, rich message cards detailing purchased items, total spent, and links to download invoices.",
-        icon: "🧾",
       },
       {
-        title: "Cross-Sell Recommendations",
+        title: "Cross-sell recommendations",
         desc: "Include smart personalized product recommendations in delivery confirmation messages to drive repeat purchases.",
-        icon: "🎯",
       },
     ],
     steps: [
       {
         step: "01",
-        title: "Tracking Added in Shopify",
+        title: "Tracking added in Shopify",
         desc: "When you fulfill an order and add tracking info, WhatFlow catches the fulfillment event instantly.",
       },
       {
         step: "02",
-        title: "Real-Time WhatsApp Alert",
+        title: "Real-time WhatsApp alert",
         desc: "The buyer receives an official WhatsApp notification with live carrier tracking link and item summary.",
       },
       {
         step: "03",
-        title: "Delighted Repeat Customer",
+        title: "Delighted repeat customer",
         desc: "Buyer stays informed, eliminating support tickets and boosting satisfaction and lifetime loyalty.",
       },
+    ],
+    chat: [
+      { id: "c1", from: "store", text: "Good news! Order #1042 has shipped 📦", card: { title: "Order #1042", meta: "Shipped with tracking", price: "2 items", emoji: "🧾" }, buttons: ["Track my order"], time: "09:15" },
+      { id: "c2", from: "store", text: "Your package is out for delivery today 🚚 Make sure someone's home to receive it.", time: "08:02" },
+      { id: "c3", from: "customer", text: "Perfect, I'll be in!", time: "08:05" },
     ],
     faqs: [
       {
@@ -227,61 +244,63 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
   },
   "whatsapp-reviews-ugc": {
     slug: "whatsapp-reviews-ugc",
-    tag: "REVIEWS & UGC",
-    tagColor: "bg-[#FF4B4B] text-white",
+    tag: "Reviews and UGC",
+    tone: "sol-tone-pink",
     title: "Collect Shopify Reviews & UGC via WhatsApp",
     metaTitle: "Collect Shopify Reviews on WhatsApp (Judge.me & Loox) | WhatFlow",
     metaDescription:
       "Generate 5x more product reviews and user-generated photo content on WhatsApp. Seamless integration with Judge.me, Loox, and Shopify reviews.",
-    headline: "GET 5X MORE 5-STAR PRODUCT REVIEWS ON WHATSAPP",
+    headline: "Get 5x more 5-star product reviews on WhatsApp.",
+    accent: ["5x"],
     subtitle:
       "Email review requests get ignored. Collect authentic star ratings, text reviews, and photo testimonials directly on WhatsApp with pre-built Judge.me and Loox integrations.",
-    heroBadge: "5X HIGHER REVIEW SUBMISSION",
-    stat: { value: "5x", label: "Higher Review Submission Rate vs Email" },
+    heroBadge: "5x higher review submission",
+    stat: { value: "5x", label: "Higher review submission rate vs email" },
     features: [
       {
-        title: "Judge.me & Loox Direct Sync",
-        desc: "Seamlessly connects with your existing Shopify review apps to publish collected reviews directly to your product pages.",
-        icon: "⭐",
+        title: "Judge.me and Loox direct sync",
+        desc: "Connects with your existing Shopify review apps to publish collected reviews directly to your product pages.",
       },
       {
-        title: "1-Click Star Rating Buttons",
+        title: "1-click star rating buttons",
         desc: "Shoppers select star ratings with a single tap directly inside the WhatsApp conversation window.",
-        icon: "✨",
       },
       {
-        title: "Photo & Video UGC Collection",
+        title: "Photo and video UGC collection",
         desc: "Customers can easily send photos and videos of their products right from their smartphone camera roll.",
-        icon: "📸",
       },
       {
-        title: "Automated Delivery Timing",
+        title: "Automated delivery timing",
         desc: "Trigger review requests a configurable number of days after order delivery so customers have had time to try their purchase.",
-        icon: "⏱️",
       },
     ],
     steps: [
       {
         step: "01",
-        title: "Order Delivered",
+        title: "Order delivered",
         desc: "WhatFlow waits your specified number of days (e.g. 5 days) after delivery before sending.",
       },
       {
         step: "02",
-        title: "Interactive Review Request",
+        title: "Interactive review request",
         desc: "Customer receives a WhatsApp message with 1-click star rating buttons and optional photo upload prompt.",
       },
       {
         step: "03",
-        title: "Synced to Storefront",
+        title: "Synced to storefront",
         desc: "Review and photo are automatically posted to Judge.me/Loox to boost your social proof and conversion rate.",
       },
+    ],
+    chat: [
+      { id: "c1", from: "store", text: "How are you liking your new Linen tote? Tap to rate it.", buttons: ["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐ or less"], tapped: 0, time: "18:20" },
+      { id: "c2", from: "customer", text: "Love it! Here's a photo 📸", time: "18:22" },
+      { id: "c3", from: "store", text: "Thank you! Your review is live on our store. Here's a thank-you discount code 💚", time: "18:22" },
     ],
     faqs: [
       {
         question: "Do I need to replace my existing review app?",
         answer:
-          "No! WhatFlow integrates directly with Judge.me, Loox, and standard review widgets so all collected reviews appear seamlessly in your existing system.",
+          "No! WhatFlow integrates directly with Judge.me, Loox, and standard review widgets so all collected reviews appear in your existing system.",
       },
       {
         question: "Can I offer discount rewards for photo reviews?",
@@ -292,55 +311,57 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
   },
   "chat-button": {
     slug: "chat-button",
-    tag: "STOREFRONT CONVERSION",
-    tagColor: "bg-[#00D261] text-black",
+    tag: "Storefront conversion",
+    tone: "sol-tone-lilac",
     title: "Shopify WhatsApp Chat Button & Support Widget",
     metaTitle: "Shopify WhatsApp Chat Button & Storefront Widget | WhatFlow",
     metaDescription:
       "Add a beautiful, high-converting WhatsApp chat button to your Shopify storefront. Zero coding, customizable positions, agent routing, and pre-filled greetings.",
-    headline: "CONNECT WITH STORE VISITORS IN 1 TAP VIA WHATSAPP CHAT",
+    headline: "Connect with store visitors in 1 tap via WhatsApp chat.",
+    accent: ["1", "tap"],
     subtitle:
       "Turn casual store visitors into paying customers. Add a customizable, mobile-optimized WhatsApp floating button with smart greetings and multi-agent routing in under 60 seconds.",
-    heroBadge: "3-MINUTE INSTALL",
-    stat: { value: "3 min", label: "Average Setup Time (No Code)" },
+    heroBadge: "3-minute install",
+    stat: { value: "3 min", label: "Average setup time (no code)" },
     features: [
       {
-        title: "Custom Design & Placement",
+        title: "Custom design and placement",
         desc: "Choose from modern floating widgets, pill buttons, or embedded store triggers that match your brand aesthetic perfectly.",
-        icon: "🎨",
       },
       {
-        title: "Pre-Filled Dynamic Messages",
+        title: "Pre-filled dynamic messages",
         desc: "Automatically include the product title or page URL the customer was viewing so your team has instant context.",
-        icon: "💬",
       },
       {
-        title: "Multi-Agent Routing",
-        desc: "Route inquiries to different team members or departments (e.g., Sales vs Support) seamlessly.",
-        icon: "👥",
+        title: "Multi-agent routing",
+        desc: "Route inquiries to different team members or departments (e.g., Sales vs Support).",
       },
       {
-        title: "Zero Impact on Page Speed",
+        title: "Zero impact on page speed",
         desc: "Ultra-lightweight script (< 5KB) loaded asynchronously with zero layout shift or page speed penalty.",
-        icon: "🚀",
       },
     ],
     steps: [
       {
         step: "01",
-        title: "Install in 1 Click",
+        title: "Install in 1 click",
         desc: "Enable the WhatFlow app embed in your Shopify Theme Editor without editing any theme code.",
       },
       {
         step: "02",
-        title: "Customize Appearance",
+        title: "Customize appearance",
         desc: "Select colors, icon styles, greeting tooltips, and agent display names to match your brand.",
       },
       {
         step: "03",
-        title: "Convert Visitors to Buyers",
+        title: "Convert visitors to buyers",
         desc: "Shoppers click to start a WhatsApp chat, capturing their phone number as a qualified marketing lead.",
       },
+    ],
+    chat: [
+      { id: "c1", from: "customer", text: "Hi! I'm looking at the Linen tote. Is it in stock in green?", time: "14:41" },
+      { id: "c2", from: "agent", text: "Hi! Yes, green is in stock 💚 Want me to send you the link?", time: "14:42" },
+      { id: "c3", from: "customer", text: "Yes please!", time: "14:42" },
     ],
     faqs: [
       {
@@ -351,7 +372,7 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
       {
         question: "Does it work on both mobile and desktop?",
         answer:
-          "Yes! On mobile devices it opens the native WhatsApp app, and on desktop it opens WhatsApp Web seamlessly.",
+          "Yes! On mobile devices it opens the native WhatsApp app, and on desktop it opens WhatsApp Web.",
       },
     ],
   },
@@ -403,8 +424,10 @@ export default async function SolutionDetailPage({ params }: SolutionPageProps) 
 
   const faqSchema = getFAQSchema(item.faqs);
 
+  const others = Object.values(SOLUTIONS_MAP).filter((other) => other.slug !== slug);
+
   return (
-    <div className="min-h-screen bg-[#FAF7F0]">
+    <div className="min-h-screen bg-[var(--paper)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -414,181 +437,135 @@ export default async function SolutionDetailPage({ params }: SolutionPageProps) 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* ─── Hero Section ─── */}
-      <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-24">
-        <div className="max-w-[1080px] mx-auto space-y-6">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500">
-            <Link href="/" className="hover:text-[#00D261] transition-colors">Home</Link>
-            <span>›</span>
-            <Link href="/solutions" className="hover:text-[#00D261] transition-colors">Solutions</Link>
-            <span>›</span>
-            <span className="text-black">{item.tag}</span>
-          </div>
-
-          <div className="flex items-center gap-3 flex-wrap">
-            <span className={`neo-pill px-3 py-1 text-xs font-black uppercase tracking-wider border-black ${item.tagColor}`}>
-              {item.tag}
-            </span>
-            <span className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-              ★ {item.heroBadge}
-            </span>
-          </div>
-
-          <h1 className="text-[36px] sm:text-[54px] lg:text-[68px] font-display font-black uppercase text-black tracking-tight leading-none">
-            {item.headline}
-          </h1>
-
-          <p className="text-base sm:text-xl text-gray-700 font-medium max-w-3xl leading-relaxed">
-            {item.subtitle}
-          </p>
-
-          <div className="pt-4 flex items-center gap-4 flex-wrap">
+      <PageHero
+        title={item.headline}
+        accent={item.accent}
+        sub={<p>{item.subtitle}</p>}
+        actions={
+          <>
             <Link
               href={getShopifyAppUrl(`solution_${slug}`)}
               target="_blank"
               rel="noopener noreferrer"
-              className="neo-btn bg-[#00D261] text-black font-display font-black text-xs uppercase tracking-wider px-8 py-4 rounded-xl shadow-[4px_4px_0px_#000] hover:scale-105 transition-transform"
+              className="wf-btn wf-btn-green"
             >
-              START 14-DAY FREE TRIAL ➔
+              Start 7-day free trial
             </Link>
-            <Link
-              href="/pricing"
-              className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-6 py-4 rounded-xl shadow-[3px_3px_0px_#000]"
-            >
-              VIEW PRICING
+            <Link href="/pricing" className="wf-btn wf-btn-ghost">
+              View pricing
             </Link>
+          </>
+        }
+        meta={
+          <>
+            <nav aria-label="Breadcrumb" className="sol-crumbs">
+              <Link href="/">Home</Link>
+              <span aria-hidden="true">›</span>
+              <Link href="/solutions">Solutions</Link>
+              <span aria-hidden="true">›</span>
+              <span aria-current="page">{item.tag}</span>
+            </nav>
+            <span className="wf-pill">{item.heroBadge}</span>
+          </>
+        }
+      >
+        <div className={`sol-stage ${item.tone}`}>
+          <div className="lp">
+            <Phone label={`WhatsApp preview: ${item.tag.toLowerCase()} flow`}>
+              {item.chat.map((message) => <Bubble key={message.id} message={message} />)}
+            </Phone>
+          </div>
+          <div className="sol-sticker sol-sticker-a">
+            <div><b>{item.stat.value}</b><small>{item.stat.label}</small></div>
           </div>
         </div>
-      </section>
+      </PageHero>
 
-      {/* ─── Key Metrics Stat Highlight ─── */}
-      <section className="bg-[#091E17] text-white border-b-[2.5px] border-black py-10 px-4 sm:px-6">
-        <div className="max-w-[1080px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <div className="text-4xl sm:text-5xl font-display font-black text-[#00D261]">
-              {item.stat.value}
-            </div>
-            <div className="text-sm font-extrabold uppercase tracking-wide text-gray-200">
-              {item.stat.label}
-            </div>
-          </div>
-          <div className="text-xs text-gray-300 font-medium max-w-md text-center sm:text-right">
+      {/* ─── Key metric ─── */}
+      <Section tone="dark">
+        <div className="sol-stat" data-reveal>
+          <div className="sol-stat-value">{item.stat.value}</div>
+          <div className="sol-stat-label">{item.stat.label}</div>
+          <p className="sol-stat-note">
             Based on data from over 10,000+ active Shopify stores running WhatFlow WhatsApp automations.
-          </div>
+          </p>
         </div>
-      </section>
+      </Section>
 
-      {/* ─── Feature Pillars ─── */}
-      <section className="px-4 sm:px-6 py-16 sm:py-20 max-w-[1080px] mx-auto space-y-12">
-        <div className="text-center space-y-3">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-            POWERFUL CAPABILITIES
-          </div>
-          <h2 className="text-[32px] sm:text-[44px] font-display font-black uppercase text-black tracking-tight">
-            BUILT EXCLUSIVELY FOR SHOPIFY STORES
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {item.features.map((feature) => (
+      {/* ─── Feature pillars ─── */}
+      <Section tone="paper">
+        <SectionHead
+          title={<>Built exclusively for <Hl>Shopify</Hl> stores.</>}
+        />
+        <div className="wf-grid wf-grid-2 mt-12">
+          {item.features.map((feature, index) => (
             <div
               key={feature.title}
-              className="neo-box bg-white p-8 rounded-2xl space-y-4 hover:-translate-y-1 transition-transform"
+              className={`wf-card sol-card ${["sol-tone-yellow", "sol-tone-mint", "sol-tone-sky", "sol-tone-pink"][index % 4]}`}
+              data-hover
+              data-reveal
+              style={{ "--d": `${index * 80}ms` } as CSSProperties}
             >
-              <div className="w-12 h-12 rounded-xl bg-[#FAF7F0] border-2 border-black flex items-center justify-center text-2xl shadow-[2px_2px_0px_#000]">
-                {feature.icon}
-              </div>
-              <h3 className="text-lg font-display font-black uppercase text-black">
-                {feature.title}
-              </h3>
-              <p className="text-xs text-gray-600 font-medium leading-relaxed">
-                {feature.desc}
-              </p>
+              <h3>{feature.title}</h3>
+              <p>{feature.desc}</p>
             </div>
           ))}
         </div>
-      </section>
+      </Section>
 
-      {/* ─── 3-Step Process ─── */}
-      <section className="bg-white border-y-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
-        <div className="max-w-[1080px] mx-auto space-y-12">
-          <div className="text-center space-y-3">
-            <div className="neo-box inline-block bg-[#FFC107] px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-              HOW IT WORKS
+      {/* ─── How it works ─── */}
+      <Section tone="white">
+        <SectionHead
+          title={<>3 simple steps to <Hl>scale</Hl>.</>}
+          center
+        />
+        <div className="wf-grid wf-grid-3 sol-steps mt-12">
+          {item.steps.map((st, index) => (
+            <div
+              key={st.step}
+              className={`wf-card sol-card-tinted ${item.tone}`}
+              data-reveal
+              style={{ "--d": `${index * 100}ms` } as CSSProperties}
+            >
+              <span className="sol-step-num">{st.step}</span>
+              <h3>{st.title}</h3>
+              <p>{st.desc}</p>
             </div>
-            <h2 className="text-[32px] sm:text-[44px] font-display font-black uppercase text-black tracking-tight">
-              3 SIMPLE STEPS TO SCALE
-            </h2>
-          </div>
+          ))}
+        </div>
+      </Section>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {item.steps.map((st) => (
-              <div
-                key={st.step}
-                className="neo-box bg-[#FAF7F0] p-6 rounded-2xl space-y-3 relative"
-              >
-                <div className="text-3xl font-display font-black text-[#0A6B56]">
-                  {st.step}
-                </div>
-                <h3 className="text-base font-display font-black uppercase text-black">
-                  {st.title}
-                </h3>
-                <p className="text-xs text-gray-600 font-medium leading-relaxed">
-                  {st.desc}
-                </p>
-              </div>
+      {/* ─── FAQ ─── */}
+      <Section tone="paper">
+        <SectionHead title="Frequently asked questions" center />
+        <div className="sol-faq">
+          {item.faqs.map((faq, index) => (
+            <details key={faq.question} open={index === 0} data-reveal style={{ "--d": `${index * 60}ms` } as CSSProperties}>
+              <summary>
+                <h3 className="text-[1.15rem]">{faq.question}</h3>
+              </summary>
+              <p>{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+
+        <div className="mt-14 text-center" data-reveal>
+          <Link
+            href={getShopifyAppUrl(`bottom_solution_${slug}`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="wf-btn wf-btn-dark"
+          >
+            Install WhatFlow on Shopify
+          </Link>
+          <p className="mt-10 text-sm font-bold text-[var(--text-muted)]">More solutions</p>
+          <nav aria-label="More solutions" className="sol-more">
+            {others.map((other) => (
+              <Link key={other.slug} href={`/solutions/${other.slug}`}>{other.tag}</Link>
             ))}
-          </div>
+          </nav>
         </div>
-      </section>
-
-      {/* ─── FAQ Section ─── */}
-      <section className="px-4 sm:px-6 py-16 sm:py-20 max-w-[1080px] mx-auto space-y-8">
-        <div className="text-center space-y-3">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-            COMMON QUESTIONS
-          </div>
-          <h2 className="text-[32px] sm:text-[44px] font-display font-black uppercase text-black tracking-tight">
-            FREQUENTLY ASKED QUESTIONS
-          </h2>
-        </div>
-
-        <div className="space-y-4">
-          {item.faqs.map((faq) => (
-            <div key={faq.question} className="neo-box bg-white p-6 rounded-xl space-y-2">
-              <h3 className="text-sm sm:text-base font-extrabold uppercase text-black">
-                {faq.question}
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
-                {faq.answer}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ─── Bottom CTA ─── */}
-      <section className="bg-[#091E17] text-white py-16 sm:py-20 px-4 sm:px-6 border-t-[2.5px] border-black">
-        <div className="max-w-[1080px] mx-auto text-center space-y-6">
-          <h2 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tight">
-            READY TO AUTOMATE WITH <span className="text-stroke-green">WHATSAPP?</span>
-          </h2>
-          <p className="text-sm sm:text-base text-gray-300 max-w-xl mx-auto font-medium">
-            Join 10,000+ top Shopify brands driving 4x higher revenue and delighting customers.
-          </p>
-          <div className="pt-2">
-            <Link
-              href={getShopifyAppUrl(`bottom_solution_${slug}`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="neo-btn bg-[#00D261] text-black font-display font-black text-sm uppercase tracking-wider px-8 py-4 rounded-xl inline-block shadow-[4px_4px_0px_#000] hover:scale-105 transition-transform"
-            >
-              INSTALL WHATFLOW ON SHOPIFY ➔
-            </Link>
-          </div>
-        </div>
-      </section>
+      </Section>
     </div>
   );
 }

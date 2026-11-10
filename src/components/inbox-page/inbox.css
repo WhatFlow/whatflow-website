@@ -1,0 +1,93 @@
+/* ─── Inbox product page — homepage "vibe" helpers ─────────────────────────
+   Used with the site kit (site.css). Scoped to the inbox page via `.ib`. */
+
+/* Dark chapter glow (matches the homepage analytics/AI chapters) */
+.ib .ib-glow {
+}
+
+/* Low-opacity white panel on dark sections */
+.ib .ib-panel {
+	border: 1px solid rgb(255 255 255 / 0.1);
+	border-radius: 24px;
+	background: rgb(255 255 255 / 0.04);
+	transition: opacity 0.9s var(--ease) var(--d, 0ms), transform 0.9s var(--ease) var(--d, 0ms), border-color 0.35s var(--ease), background 0.35s var(--ease);
+}
+.ib .ib-panel[data-hover]:hover { border-color: rgb(0 210 97 / 0.4); background: rgb(255 255 255 / 0.06); }
+
+/* Dark product "device" sitting on a light section */
+.ib .ib-device {
+	position: relative;
+	overflow: hidden;
+	border: 2.5px solid var(--ink);
+	border-radius: 28px;
+	background-color: var(--forest);
+	color: var(--surface);
+	box-shadow: 8px 8px 0 var(--ink);
+}
+
+/* WhatsApp chat canvas */
+.ib .ib-chat {
+	border: 1px solid rgb(255 255 255 / 0.08);
+	border-radius: 20px;
+	background-color: var(--wa-canvas);
+	background-image: radial-gradient(var(--wa-border) 1px, transparent 1px);
+	background-size: 16px 16px;
+}
+
+/* Pill tabs: light by default, `data-light` for dark sections */
+.ib .ib-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-8); }
+.ib .ib-tab {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-8);
+	padding: var(--space-8) var(--space-16);
+	border: 2px solid var(--ink);
+	border-radius: 999px;
+	background: var(--surface);
+	color: var(--ink);
+	font-size: 13.5px;
+	font-weight: 700;
+	line-height: 1.1;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: background 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease), transform 0.35s var(--ease);
+}
+.ib .ib-tab:hover { transform: translateY(-2px); }
+.ib .ib-tab[aria-pressed="true"] { background: var(--ink); color: var(--surface); box-shadow: 3px 3px 0 var(--green); }
+.ib .ib-tabs[data-light] .ib-tab { border: 1px solid rgb(255 255 255 / 0.14); background: rgb(255 255 255 / 0.05); color: rgb(255 255 255 / 0.75); }
+.ib .ib-tabs[data-light] .ib-tab:hover { border-color: rgb(255 255 255 / 0.3); color: var(--surface); }
+.ib .ib-tabs[data-light] .ib-tab[aria-pressed="true"] { border-color: var(--green); background: var(--green); color: var(--ink); box-shadow: 0 0 28px rgb(0 210 97 / 0.35); }
+
+/* Segmented control (two to four options in one track) */
+.ib .ib-seg { display: inline-flex; flex-wrap: wrap; gap: var(--space-4); padding: var(--space-4); border: 1px solid rgb(255 255 255 / 0.12); border-radius: 999px; background: rgb(255 255 255 / 0.05); }
+.ib .ib-seg > button { padding: var(--space-6) var(--space-12); white-space: nowrap; border-radius: 999px; color: rgb(255 255 255 / 0.65); font-size: 12px; font-weight: 700; cursor: pointer; transition: background 0.3s var(--ease), color 0.3s var(--ease); }
+.ib .ib-seg > button:hover { color: var(--surface); }
+.ib .ib-seg > button[aria-pressed="true"] { background: rgb(255 255 255 / 0.14); color: var(--surface); }
+
+/* Re-keyed content fades in when a tab changes */
+.ib .ib-swap { animation: ib-swap 0.5s var(--ease) both; }
+@keyframes ib-swap { from { opacity: 0; transform: translateY(10px); filter: blur(4px); } }
+
+/* Small mono tag */
+.ib .ib-tag { display: inline-flex; align-items: center; gap: var(--space-6); padding: var(--space-4) var(--space-8); border-radius: 999px; background: rgb(0 210 97 / 0.16); color: var(--green); font-size: 12px; font-weight: 700; }
+
+/* Step number on light cards */
+.ib .ib-step { display: grid; place-items: center; width: 44px; height: 44px; border: 2px solid var(--ink); border-radius: 14px; background: var(--mint); font-family: var(--display); font-size: 18px; font-weight: 700; }
+.ib .ib-step[data-on] { background: var(--green); }
+.ib .ib-chat[data-framed] { border: 2.5px solid var(--ink); border-radius: 28px; box-shadow: 8px 8px 0 var(--ink); }
+
+.ib-tools { background: var(--mint); border-block: 2px solid var(--ink); }
+.ib-tools > summary { padding-block: var(--space-24); cursor: pointer; font: 700 1.25rem/1.3 var(--display); }
+.ib-tools > summary:focus-visible { outline-offset: -4px; }
+.ib-pane-controls { display: none; }
+.ib-hero-spec { transform: translateY(var(--ib-spec-offset, 0px)); }
+@media (max-width: 1023px) {
+	.ib .wf-hero[data-split="true"] .wf-hero-grid { gap: var(--space-24); }
+	.ib-hero-spec { transform: none; }
+	.ib-pane-controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); padding: var(--space-8); background: var(--wa-panel); }
+	.ib-pane-controls button { min-height: 44px; padding: var(--space-4); border-radius: var(--space-8); font-weight: 700; font-size: 0.8125rem; color: var(--surface); }
+	.ib-pane-controls button[aria-pressed="true"] { background: var(--green); color: var(--ink); }
+	.ib-workbench:not([data-pane="conversation"]) .ib-pane-conversation,
+	.ib-workbench:not([data-pane="chats"]) .ib-pane-chats,
+	.ib-workbench:not([data-pane="orders"]) .ib-pane-orders { display: none; }
+}

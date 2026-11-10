@@ -1,7 +1,9 @@
 "use client";
 
+import { ReviewRotationButton } from "@/components/ReviewRotationButton";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { SectionHead } from "@/components/site/PageKit";
 
 type ReviewItem = {
 	id: string | number;
@@ -12,7 +14,7 @@ type ReviewItem = {
 	favicon?: { url?: string };
 };
 
-function ReviewCard({ review, darkMode = false }: { review: ReviewItem; darkMode?: boolean }) {
+function ReviewCard({ review, darkMode = false, duplicate = false }: { review: ReviewItem; darkMode?: boolean; duplicate?: boolean }) {
 	const avatarUrl = review.favicon?.url || review.faviconUrl;
 	const initials = review.author
 		.split(" ")
@@ -23,54 +25,56 @@ function ReviewCard({ review, darkMode = false }: { review: ReviewItem; darkMode
 
 	return (
 		<figure
-			className={`w-[310px] sm:w-[360px] flex-shrink-0 p-6 rounded-2xl flex flex-col justify-between space-y-4 hover:-translate-y-1.5 transition-all duration-200 cursor-default select-none ${
+			aria-hidden={duplicate || undefined}
+			data-review-copy={duplicate || undefined}
+			className={`w-[310px] sm:w-[360px] flex-shrink-0 p-6 rounded-[24px] flex flex-col justify-between gap-5 transition-[transform,border-color,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1.5 cursor-default select-none ${
 				darkMode
-					? "bg-[#121212] border border-white/15 text-white shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
-					: "neo-box bg-white text-black hover:shadow-[6px_6px_0px_0px_#000000]"
+					? "bg-white/[0.04] border border-white/10 text-white hover:border-[var(--green)]/40"
+					: "bg-white border-[2.5px] border-[var(--ink,#0b0f0c)] text-[var(--ink,#0b0f0c)] hover:shadow-[6px_6px_0_var(--ink,#0b0f0c)]"
 			}`}
 		>
 			<div className="space-y-3">
 				<div
-					className="flex items-center gap-1 text-[#FFC107] text-sm tracking-widest font-black"
+					className="flex items-center gap-1 text-[var(--yellow)] text-base"
 					aria-label={`Rating: ${review.rating || 5} out of 5 stars`}
 				>
 					{"★".repeat(Math.min(5, Math.max(1, review.rating || 5)))}
 				</div>
 				<blockquote
-					className={`text-xs sm:text-sm font-medium leading-relaxed ${
-						darkMode ? "text-gray-200" : "text-black"
+					className={`text-sm sm:text-[15px] leading-relaxed ${
+						darkMode ? "text-white/80" : "text-[var(--text-body)]"
 					}`}
 				>
-					&quot;{review.body}&quot;
+					&ldquo;{review.body}&rdquo;
 				</blockquote>
 			</div>
 
 			<figcaption
-				className={`flex items-center gap-3 border-t pt-3 ${
-					darkMode ? "border-white/10" : "border-gray-100"
+				className={`flex items-center gap-3 border-t pt-4 ${
+					darkMode ? "border-white/10" : "border-[var(--ink)]/10"
 				}`}
 			>
 				{avatarUrl ? (
 					<Image
 						src={avatarUrl}
-						alt={`${review.author} avatar`}
+						alt=""
 						width={36}
 						height={36}
-						className={`w-9 h-9 rounded-xl object-contain p-1 ${
-							darkMode ? "bg-white/10 border border-white/20" : "neo-box bg-white"
+						className={`w-9 h-9 rounded-full object-contain p-1 ${
+							darkMode ? "bg-white/10 border border-white/20" : "bg-white border-2 border-[var(--ink,#0b0f0c)]"
 						}`}
 					/>
 				) : (
-					<div className="w-9 h-9 rounded-xl font-extrabold text-xs flex items-center justify-center neo-box bg-[#00D261] text-black shadow-[1px_1px_0px_#000]">
+					<div
+						className={`w-9 h-9 rounded-full font-bold text-xs flex items-center justify-center bg-[var(--green)] text-black ${
+							darkMode ? "" : "border-2 border-[var(--ink,#0b0f0c)]"
+						}`}
+					>
 						{initials}
 					</div>
 				)}
 				<div>
-					<cite
-						className={`font-extrabold text-xs uppercase tracking-wider not-italic ${
-							darkMode ? "text-white" : "text-black"
-						}`}
-					>
+					<cite className={`font-bold text-sm not-italic ${darkMode ? "text-white" : "text-[var(--ink,#0b0f0c)]"}`}>
 						{review.author}
 					</cite>
 				</div>
@@ -81,6 +85,7 @@ function ReviewCard({ review, darkMode = false }: { review: ReviewItem; darkMode
 
 export function ReviewsSection({ darkMode = false }: { darkMode?: boolean } = {}) {
 	const [reviews, setReviews] = useState<ReviewItem[]>([]);
+	const [paused, setPaused] = useState(false);
 
 	useEffect(() => {
 		fetch("/api/reviews?limit=50&where[active][equals]=true")
@@ -102,60 +107,54 @@ export function ReviewsSection({ darkMode = false }: { darkMode?: boolean } = {}
 
 	const half = Math.ceil(reviews.length / 2);
 	const row1 = reviews.slice(0, half);
-	const row2 = reviews.slice(half).length > 0 ? reviews.slice(half) : row1;
+	const row2 = reviews.slice(half);
 
 	return (
 		<section
-			className={`py-16 sm:py-20 overflow-hidden ${
-				darkMode
-					? "bg-[#181818] border-b border-white/10 text-white"
-					: "bg-[#FAF7F0] border-b-[2.5px] border-black"
-			}`}
+			className="wf-section wf-review-marquee overflow-hidden"
+			data-paused={paused}
+			data-tone={darkMode ? "dark" : "paper"}
 		>
-			<div className="max-w-[1280px] mx-auto px-4 sm:px-6 mb-12 text-center space-y-4">
-				<div
-					className={`inline-block px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider ${
-						darkMode
-							? "rounded-full bg-[#1ed760]/15 border border-[#1ed760]/30 text-[#1ed760]"
-							: "neo-box bg-[#00D261] text-black"
-					}`}
-				>
-					MERCHANT REVIEWS
-				</div>
-				<h2
-					className={`text-[36px] sm:text-[48px] font-display font-black uppercase tracking-tight ${
-						darkMode ? "text-white" : "text-black"
-					}`}
-				>
-					LOVED BY SHOPIFY STORES.
-				</h2>
-				<div
-					className={`flex items-center justify-center gap-2 text-xs font-extrabold uppercase ${
-						darkMode ? "text-gray-300" : "text-black"
-					}`}
-				>
-					<span className="text-[#FFC107] text-base">★★★★★</span>
-					<a href="https://apps.shopify.com/whatflow-official-api#reviews">READ MERCHANT REVIEWS ON THE SHOPIFY APP STORE</a>
+			<div className="wf-shell mb-4">
+				<SectionHead
+					center
+					light={darkMode}
+					kicker="Merchant reviews"
+					title="Loved by Shopify stores."
+					sub={
+						<span className="inline-flex flex-wrap items-center justify-center gap-2">
+							<span className="text-[var(--yellow)]" aria-hidden="true">★★★★★</span>
+							<a
+								href="https://apps.shopify.com/whatflow-official-api#reviews"
+								className={`font-bold underline underline-offset-4 decoration-2 ${darkMode ? "decoration-[var(--green)]" : "decoration-[var(--green-rich)]"}`}
+							>
+								Read merchant reviews on the Shopify App Store
+							</a>
+						</span>
+					}
+				/>
+				<div className="wf-review-controls">
+					<ReviewRotationButton paused={paused} onToggle={() => setPaused((value) => !value)} />
 				</div>
 			</div>
 
 			{/* Row 1: Forward Marquee */}
-			<div className="mb-6 overflow-hidden py-2 group">
+			<div role="region" aria-label="Merchant reviews, first row" tabIndex={0} className="wf-review-viewport mb-6 overflow-hidden py-2 group">
 				<div className="animate-marquee-slow group-hover:[animation-play-state:paused] flex gap-6">
 					{[...row1, ...row1, ...row1].map((review, i) => (
-						<ReviewCard key={`r1-${review.id}-${i}`} review={review} darkMode={darkMode} />
+						<ReviewCard key={`r1-${review.id}-${i}`} review={review} darkMode={darkMode} duplicate={i >= row1.length} />
 					))}
 				</div>
 			</div>
 
 			{/* Row 2: Reverse Marquee */}
-			<div className="overflow-hidden py-2 group">
+			{row2.length > 0 && <div role="region" aria-label="Merchant reviews, second row" tabIndex={0} className="wf-review-viewport overflow-hidden py-2 group">
 				<div className="animate-marquee-reverse group-hover:[animation-play-state:paused] flex gap-6">
 					{[...row2, ...row2, ...row2].map((review, i) => (
-						<ReviewCard key={`r2-${review.id}-${i}`} review={review} darkMode={darkMode} />
+						<ReviewCard key={`r2-${review.id}-${i}`} review={review} darkMode={darkMode} duplicate={i >= row2.length} />
 					))}
 				</div>
-			</div>
+			</div>}
 		</section>
 	);
 }

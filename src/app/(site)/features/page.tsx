@@ -1,141 +1,86 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
-
-// Interactive components
-import { FeatureHero } from "@/components/features/FeatureHero";
-import { SectionNav } from "@/components/features/SectionNav";
-import { AutomationsTabs } from "@/components/features/AutomationsTabs";
-import { RecoverySection } from "@/components/features/RecoverySection";
-import { ShippingJourney } from "@/components/features/ShippingJourney";
-import { AutoRepliesDemo } from "@/components/features/AutoRepliesDemo";
-import { BroadcastGuide } from "@/components/features/BroadcastGuide";
-import { CodAndFunctions } from "@/components/features/CodAndFunctions";
-import { ShopifyFlowIntegration } from "@/components/features/ShopifyFlowIntegration";
-import { FlowSenseOtp } from "@/components/features/FlowSenseOtp";
-import { AnalyticsDashboard } from "@/components/features/AnalyticsDashboard";
-import { TemplateEditorPreview } from "@/components/features/TemplateEditorPreview";
-import { StorefrontWidgets } from "@/components/features/StorefrontWidgets";
-import { SpeedAndUptime } from "@/components/features/SpeedAndUptime";
-import { FeatureBoardRoadmap } from "@/components/features/FeatureBoardRoadmap";
-import { ReviewsSection } from "@/components/ReviewsSection";
-import { LatestUpdates } from "@/components/LatestUpdates";
+import { PageHero } from "@/components/site/PageKit";
+import { Bubble, Phone, type ChatMessage } from "@/components/landing/Phone";
+import { AutomationGallery } from "@/components/landing/AutomationGallery";
+import { AutoReplies } from "@/components/landing/AutoReplies";
+import { InboxZoom } from "@/components/landing/InboxZoom";
+import { AnalyticsChapter } from "@/components/landing/AnalyticsChapter";
+import { FlowBuilder } from "@/components/landing/FlowBuilder";
+import { ShopifyStack } from "@/components/landing/ShopifyStack";
+import { AiSection } from "@/components/landing/AiSection";
+import { Bento } from "@/components/landing/Bento";
+import { Proof } from "@/components/landing/Proof";
+import { FeatureNav } from "@/components/features/FeatureNav";
+import { RecoveryTimeline } from "@/components/features/RecoveryTimeline";
+import { ShippingStepper } from "@/components/features/ShippingStepper";
+import { BroadcastShowcase } from "@/components/features/BroadcastShowcase";
+import "@/components/landing/landing.css";
+import "@/components/landing/primitives.css";
+import "@/components/landing/sections.css";
+import "@/components/features/features.css";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/features" },
-  title: "WhatFlow Features — 11+ Automations, 2-Way Inbox & Shopify Functions",
-  description:
-    "Explore WhatFlow's full suite: 6 core order automations, 3-stage cart recovery, 11-step shipping alerts, Shopify Functions COD engine, 2-way live chat, and native Shopify Flow triggers.",
-  keywords: [
-    "WhatsApp Shopify features",
-    "abandoned cart WhatsApp sequence",
-    "Shopify COD verification WhatsApp",
-    "Shopify Functions COD fee",
-    "WhatsApp shipping notifications 11 statuses",
-    "Shopify Flow WhatsApp action block",
-    "WhatsApp 2-way chat inbox Shopify",
-    "Meta Cloud API WhatsApp Shopify",
-  ],
+	alternates: { canonical: "/features" },
+	title: "WhatFlow Features — 11+ Automations, 2-Way Inbox & Shopify Functions",
+	description:
+		"Explore WhatFlow's full suite: 6 core order automations, 3-stage cart recovery, 11-step shipping alerts, Shopify Functions COD engine, 2-way live chat, and native Shopify Flow triggers.",
+	keywords: [
+		"WhatsApp Shopify features",
+		"abandoned cart WhatsApp sequence",
+		"Shopify COD verification WhatsApp",
+		"Shopify Functions COD fee",
+		"WhatsApp shipping notifications 11 statuses",
+		"Shopify Flow WhatsApp action block",
+		"WhatsApp 2-way chat inbox Shopify",
+		"Meta Cloud API WhatsApp Shopify",
+	],
 };
 
+const heroChat: ChatMessage[] = [
+	{ id: "f1", from: "store", time: "18:20", text: "Thanks for your order! Please confirm COD order #1027 for $84.00.", buttons: ["Confirm Order", "Cancel Order"], tapped: 0 },
+	{ id: "f2", from: "customer", time: "18:21", text: "Confirm Order" },
+	{ id: "f3", from: "store", time: "Tue 11:05", text: "📦 #1027 is out for delivery today!", buttons: ["Track package"] },
+];
+
 export default function FeaturesPage() {
-  return (
-    <div className="min-h-screen bg-[#FAF7F0]">
-      {/* 1. Interactive Hero with Live Phone Simulator */}
-      <FeatureHero />
-
-      {/* 2. Sticky Category Anchor Navigation */}
-      <SectionNav />
-
-      {/* 3. Core Automations Suite (6-in-1 Tabs) */}
-      <AutomationsTabs />
-
-      {/* 4. Recovery Powerhouse: Checkouts, Drafts & Back in Stock */}
-      <RecoverySection />
-
-      {/* 5. 11-Status Granular Fulfillment Stepper */}
-      <ShippingJourney />
-
-      {/* 6. Smart Auto-Replies & Interactive Message Formats */}
-      <AutoRepliesDemo />
-
-      {/* 7. Targeted Broadcast Engine with Anti-Ban Pacing */}
-      <BroadcastGuide />
-
-      {/* 8. Shopify Functions & COD Anti-RTO Engine */}
-      <CodAndFunctions />
-
-      {/* 9. Native Shopify Flow Action Blocks */}
-      <ShopifyFlowIntegration />
-
-      {/* 10. Team Inbox & Meta OTP Verification */}
-      <FlowSenseOtp />
-
-      {/* 11. 6-Tab Deep Analytics Suite */}
-      <AnalyticsDashboard />
-
-      {/* 12. WYSIWYG Template Editor & Dynamic Variables */}
-      <TemplateEditorPreview />
-
-      {/* 13. Storefront Growth Widgets (Chat Button & Order via WA) */}
-      <StorefrontWidgets />
-
-      {/* 14. High-Volume Reliability & Speed */}
-      <SpeedAndUptime />
-
-      {/* 15. Community Feature Board & Roadmap */}
-      <FeatureBoardRoadmap />
-
-      {/* 15b. Latest changelog entries */}
-      <LatestUpdates heading="Recently shipped" />
-
-      {/* 16. Real Merchant Reviews (Payload Collection) */}
-      <ReviewsSection />
-
-      {/* 17. High-Converting Bottom Conversion Banner */}
-      <section className="bg-[#091E17] py-20 px-4 sm:px-6 text-center text-white border-t-[2.5px] border-black">
-        <div className="max-w-3xl mx-auto space-y-6">
-          <div className="flex justify-center">
-            <Image
-              src="/meta-brand-assets/whatsapp-brand-assets/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_White_RGB_2026.svg"
-              width={52}
-              height={52}
-              alt="WhatsApp"
-            />
-          </div>
-
-          <div className="neo-pill bg-[#00D261] text-black px-4 py-1 text-xs font-black uppercase tracking-wider inline-block">
-            14-DAY FREE TRIAL • ZERO RISK
-          </div>
-
-          <h2 className="text-[34px] sm:text-[50px] font-display font-black uppercase tracking-tight leading-tight">
-            READY TO SCALE REVENUE ON <span className="text-stroke-green">WHATSAPP?</span>
-          </h2>
-
-          <p className="text-gray-300 font-medium text-base sm:text-lg max-w-xl mx-auto">
-            Install WhatFlow on your Shopify store in 3 minutes. Zero Meta markup, 11+ automations ready out-of-the-box.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-            <a
-              href={getShopifyAppUrl("features_bottom_cta")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="neo-btn bg-[#00D261] text-black font-extrabold text-sm uppercase tracking-wider px-8 py-4 rounded-xl shadow-[4px_4px_0px_#fff] hover:scale-105 transition-transform"
-            >
-              INSTALL APP ON SHOPIFY ➔
-            </a>
-
-            <Link
-              href="/inbox"
-              className="neo-btn bg-[#121212] text-white border-2 border-white/30 font-extrabold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-black"
-            >
-              EXPLORE WHATFLOW INBOX ➔
-            </Link>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
+	return (
+		<div className="lp wf-features">
+			<PageHero
+				kicker="Features"
+				title="Everything your store says, on WhatsApp."
+				accent={["WhatsApp"]}
+				sub={<p>Order automations, recovery, shipping updates, auto-replies, broadcasts and a team inbox, built on Meta&apos;s official Cloud API and wired into Shopify.</p>}
+				actions={
+					<>
+						<a href={getShopifyAppUrl("features_hero")} target="_blank" rel="noopener noreferrer" className="wf-btn wf-btn-green">Install on Shopify</a>
+						<Link href="/pricing" className="wf-btn wf-btn-ghost">See pricing</Link>
+					</>
+				}
+				meta={<><span>Every feature on every plan</span><span>No inbox seat fees</span><span>Official Meta Cloud API</span></>}
+			>
+				<div className="wf-features-hero-phone">
+					<Phone label="A COD confirmation on WhatsApp, the customer confirming, and a shipping update">
+						{heroChat.map((message) => <Bubble key={message.id} message={message} />)}
+					</Phone>
+					<span className="wf-features-chip wf-features-chip-a" aria-hidden="true">✓ Order Confirmed</span>
+					<span className="wf-features-chip wf-features-chip-b" aria-hidden="true">Out for delivery</span>
+				</div>
+			</PageHero>
+			<FeatureNav />
+			<div id="automations"><AutomationGallery /></div>
+			<div id="recovery"><RecoveryTimeline /></div>
+			<div id="shipping"><ShippingStepper /></div>
+			<div id="auto-replies"><AutoReplies /></div>
+			<div id="broadcasts"><BroadcastShowcase /></div>
+			<div id="inbox"><InboxZoom /></div>
+			<div id="analytics"><AnalyticsChapter /></div>
+			<div id="flow"><FlowBuilder /></div>
+			<div id="shopify"><ShopifyStack /></div>
+			<div id="ai"><AiSection /></div>
+			<Bento />
+			<Proof />
+		</div>
+	);
 }

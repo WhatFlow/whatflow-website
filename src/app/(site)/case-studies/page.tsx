@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { getCaseStudies, formatDate, INDUSTRY_LABELS, APP_LABELS, type CaseStudy } from "@/lib/payload-api";
+import { getCaseStudies, INDUSTRY_LABELS, APP_LABELS, type CaseStudy } from "@/lib/payload-api";
+import { PageHero } from "@/components/site/PageKit";
+import { Cover, EmptyCard, ICONS, METRIC_TONES } from "../blog/blog-ui";
+import "../blog/content.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/case-studies" },
@@ -18,140 +22,124 @@ export const metadata: Metadata = {
 };
 
 const INDUSTRIES = [
-  { value: "all", label: "All Industries" },
+  { value: "all", label: "All industries" },
   { value: "fashion", label: "Fashion" },
   { value: "beauty", label: "Beauty" },
-  { value: "food", label: "Food & Bev" },
+  { value: "food", label: "Food and drink" },
   { value: "electronics", label: "Electronics" },
-  { value: "home", label: "Home & Living" },
+  { value: "home", label: "Home and living" },
   { value: "sports", label: "Sports" },
 ] as const;
 
-const APP_COLORS: Record<string, string> = {
-  chat: "bg-[#FFF3CD] text-[#856404]",
-  business: "bg-[#D4EDDA] text-[#155724]",
-  ai: "bg-[#E2E3E5] text-[#383D41]",
+const APP_TONES: Record<string, string> = {
+  chat: "wfc-tone-yellow",
+  business: "wfc-tone-mint",
+  ai: "wfc-tone-lilac",
 };
 
-function CaseStudyCard({ study }: { study: CaseStudy }) {
-  const industryLabel = INDUSTRY_LABELS[study.industry] ?? study.industry;
+function StoreMark({ study }: { study: CaseStudy }) {
+  return (
+    <span className="wfc-store">
+      <span className="wfc-logo" aria-hidden={study.storeLogo?.url ? undefined : true}>
+        {study.storeLogo?.url ? (
+          <Image src={study.storeLogo.url} alt={study.storeName} width={30} height={30} />
+        ) : (
+          study.storeName.charAt(0)
+        )}
+      </span>
+      {study.storeName}
+    </span>
+  );
+}
+
+function StudyCover({ study, priority, sizes }: { study: CaseStudy; priority?: boolean; sizes?: string }) {
   const primaryMetric = study.metrics?.[0];
+  return (
+    <Cover media={study.coverImage?.url} alt={study.coverImage?.alt || study.title} icon={ICONS.trend} priority={priority} sizes={sizes}>
+      {study.featured && (
+        <div className="wfc-cover-badges">
+          <span className="wf-pill wfc-tone-yellow">Featured</span>
+        </div>
+      )}
+      {primaryMetric && (
+        <div className="wfc-chip-metric">
+          <b>{primaryMetric.value}</b>
+          <small>{primaryMetric.label}</small>
+        </div>
+      )}
+    </Cover>
+  );
+}
+
+function CaseStudyCard({ study, index }: { study: CaseStudy; index: number }) {
+  const industryLabel = INDUSTRY_LABELS[study.industry] ?? study.industry;
 
   return (
-    <Link
-      href={`/case-studies/${study.slug}`}
-      className="neo-box bg-white flex flex-col overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
-    >
-      {/* Cover Image */}
-      <div className="relative w-full h-52 bg-[#D5F5E3] border-b-[2.5px] border-black overflow-hidden">
-        {study.coverImage?.url ? (
-          <Image
-            src={study.coverImage.url}
-            alt={study.coverImage.alt || study.title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-          />
-        ) : (
-          <div className="w-full h-full bg-gradient-to-br from-[#00D261]/20 to-[#0A6B56]/20 flex items-center justify-center">
-            <svg viewBox="0 0 24 24" className="w-12 h-12 text-black/40 fill-none stroke-current stroke-[1.5]" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-              <polyline points="17 6 23 6 23 12" />
-            </svg>
-          </div>
-        )}
-        {/* Featured badge */}
-        {study.featured && (
-          <div className="absolute top-3 left-3 neo-pill bg-[#FFC107] text-black text-[10px] font-extrabold uppercase tracking-widest px-3 py-1">
-            Featured
-          </div>
-        )}
-        {/* Big metric overlay */}
-        {primaryMetric && (
-          <div className="absolute bottom-3 right-3 neo-box bg-[#00D261] px-3 py-2 text-center">
-            <div className="font-display font-black text-xl text-black leading-none">{primaryMetric.value}</div>
-            <div className="text-[9px] font-extrabold uppercase tracking-wider text-black/70">{primaryMetric.label}</div>
-          </div>
-        )}
-      </div>
-
-      {/* Card Body */}
-      <div className="p-6 flex flex-col flex-1 gap-3">
-        {/* Store name + industry */}
-        <div className="flex items-center justify-between gap-2 flex-wrap">
-          <div className="flex items-center gap-2">
-            {study.storeLogo?.url ? (
-              <Image src={study.storeLogo.url} alt={study.storeName} width={24} height={24} className="rounded border border-black object-contain" />
-            ) : (
-              <div className="w-6 h-6 rounded bg-[#00D261] border border-black flex items-center justify-center font-extrabold text-[10px] text-black">
-                {study.storeName.charAt(0)}
-              </div>
-            )}
-            <span className="text-xs font-extrabold uppercase tracking-wider text-black">{study.storeName}</span>
-          </div>
-          <span className="neo-pill px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider bg-[#E8F8F0] text-[#0A6B56] border-black">
-            {industryLabel}
-          </span>
+    <Link href={`/case-studies/${study.slug}`} className="wf-card wfc-card" data-reveal style={{ "--d": `${(index % 3) * 80}ms` } as CSSProperties}>
+      <StudyCover study={study} />
+      <div className="wfc-card-body">
+        <div className="flex items-center justify-between gap-2 flex-wrap text-sm">
+          <StoreMark study={study} />
+          <span className="wf-pill wfc-tone-mint">{industryLabel}</span>
         </div>
 
-        {/* Title */}
-        <h2 className="font-display font-black text-black text-lg leading-tight uppercase tracking-tight group-hover:text-[#0A6B56] transition-colors">
-          {study.title}
-        </h2>
-
-        {/* Excerpt */}
-        <p className="text-xs text-gray-600 font-medium leading-relaxed flex-1 line-clamp-3">
-          {study.excerpt}
-        </p>
+        <h2>{study.title}</h2>
+        {study.excerpt && <p>{study.excerpt}</p>}
 
         {/* Metrics row */}
         {study.metrics && study.metrics.length > 1 && (
           <div className="grid grid-cols-2 gap-2">
-            {study.metrics.slice(0, 2).map((metric) => (
-              <div key={metric.label} className="neo-box bg-[#FAF7F0] p-2.5 text-center">
-                <div className="font-display font-black text-base text-black">{metric.value}</div>
-                <div className="text-[9px] font-bold uppercase tracking-wide text-gray-500">{metric.label}</div>
+            {study.metrics.slice(0, 2).map((metric, i) => (
+              <div key={metric.label} className={`wfc-metric ${METRIC_TONES[(i + 1) % METRIC_TONES.length]}`} data-size="sm">
+                <span className="wfc-metric-value" style={{ fontSize: "1.6rem" }}>{metric.value}</span>
+                <span className="wfc-metric-label">{metric.label}</span>
               </div>
             ))}
           </div>
         )}
 
-        {/* Apps used + date */}
-        <div className="flex items-center justify-between pt-3 border-t border-gray-100 mt-auto flex-wrap gap-2">
-          <div className="flex gap-1 flex-wrap">
+        {/* Apps used */}
+        <div className="wfc-card-foot">
+          <div className="flex gap-1.5 flex-wrap">
             {study.appsUsed?.slice(0, 2).map((app) => (
-              <span
-                key={app}
-                className={`neo-pill px-2 py-0.5 text-[9px] font-extrabold uppercase tracking-wider border-black ${APP_COLORS[app] ?? "bg-gray-100 text-gray-700"}`}
-              >
+              <span key={app} className={`wf-pill ${APP_TONES[app] ?? "wfc-tone-white"}`}>
                 {APP_LABELS[app] ?? app}
               </span>
             ))}
           </div>
-          <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#2563EB] group-hover:text-[#00D261] transition-colors">
-            READ →
-          </span>
+          <span className="wfc-more">Read</span>
         </div>
       </div>
     </Link>
   );
 }
 
-function EmptyState() {
+function FeaturedStudyCard({ study }: { study: CaseStudy }) {
   return (
-    <div className="neo-box bg-white text-center py-20 px-6 col-span-full space-y-3">
-      <div className="w-12 h-12 mx-auto bg-[#FAF7F0] border-2 border-black rounded-xl flex items-center justify-center shadow-[2px_2px_0px_#000]">
-        <svg viewBox="0 0 24 24" className="w-6 h-6 fill-none stroke-current stroke-2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-          <polyline points="17 6 23 6 23 12" />
-        </svg>
+    <Link href={`/case-studies/${study.slug}`} className="wf-card wfc-feature" data-reveal>
+      <StudyCover study={study} priority sizes="(min-width: 900px) 640px, 100vw" />
+      <div className="wfc-card-body">
+        <div className="flex items-center gap-3 flex-wrap text-sm">
+          <StoreMark study={study} />
+        </div>
+        <h2>{study.title}</h2>
+        {study.excerpt && <p>{study.excerpt}</p>}
+        {study.metrics && study.metrics.length > 0 && (
+          <div className="grid grid-cols-2 gap-2">
+            {study.metrics.slice(0, 2).map((metric, i) => (
+              <div key={metric.label} className={`wfc-metric ${METRIC_TONES[i % METRIC_TONES.length]}`} data-size="sm">
+                <span className="wfc-metric-value">{metric.value}</span>
+                <span className="wfc-metric-label">{metric.label}</span>
+              </div>
+            ))}
+          </div>
+        )}
+        <div className="wfc-card-foot">
+          <span className="wf-pill wfc-tone-mint">{INDUSTRY_LABELS[study.industry] ?? study.industry}</span>
+          <span className="wfc-more">Read the story</span>
+        </div>
       </div>
-      <h3 className="font-display font-black text-2xl text-black uppercase">
-        Case Studies Coming Soon
-      </h3>
-      <p className="text-gray-500 font-medium text-sm max-w-sm mx-auto">
-        We're collecting merchant success stories. Check back soon!
-      </p>
-    </div>
+    </Link>
   );
 }
 
@@ -176,134 +164,85 @@ export default async function CaseStudiesPage({ searchParams }: CaseStudiesPageP
   }
 
   const studies = studiesData.docs;
+  const feature = currentPage === 1 && studies.length > 0 ? studies.find((study) => study.featured) ?? studies[0] : undefined;
+  const rest = feature ? studies.filter((study) => study.id !== feature.id) : studies;
+  const pageHref = (page: number) => `/case-studies?${selectedIndustry !== "all" ? `industry=${selectedIndustry}&` : ""}page=${page}`;
 
   return (
-    <div className="min-h-screen bg-[#FAF7F0]">
-      {/* ─── Hero ─── */}
-      <section className="bg-[#091E17] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
-        <div className="max-w-[1280px] mx-auto">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black mb-4">
-            MERCHANT SUCCESS STORIES
-          </div>
-          <h1 className="text-[48px] sm:text-[64px] lg:text-[80px] font-display font-black uppercase text-white tracking-tight leading-none mb-4">
-            REAL STORES.{" "}
-            <span className="text-stroke-green">REAL RESULTS.</span>
-          </h1>
-          <p className="text-[17px] text-gray-300 font-medium max-w-xl">
-            See how Shopify merchants use WhatFlow to recover abandoned carts, boost revenue, and build customer loyalty through WhatsApp.
+    <div className="min-h-screen bg-[var(--paper)]">
+      <PageHero
+        kicker="Merchant success stories"
+        title="Real stores. Real results."
+        accent={["results"]}
+        sub={<p>See how Shopify merchants use WhatFlow to recover abandoned carts, boost revenue, and build customer loyalty through WhatsApp.</p>}
+      >
+        <div className="wfc-hero-metrics">
+          {[
+            { value: "10,000+", label: "Merchants worldwide", tone: "wfc-tone-green" },
+            { value: "98%", label: "Open rate", tone: "wfc-tone-yellow" },
+            { value: "$2M+", label: "Revenue recovered", tone: "wfc-tone-sky" },
+          ].map((stat) => (
+            <div key={stat.label} className={`wfc-metric ${stat.tone}`}>
+              <span className="wfc-metric-value">{stat.value}</span>
+              <span className="wfc-metric-label">{stat.label}</span>
+            </div>
+          ))}
+        </div>
+      </PageHero>
+
+      <section className="py-12 sm:py-16">
+        <div className="wf-shell">
+          {/* ─── Industry filter ─── */}
+          <nav aria-label="Filter by industry" className="wfc-seg" data-reveal>
+            {INDUSTRIES.map((ind) => {
+              const isActive = ind.value === selectedIndustry;
+              return (
+                <Link
+                  key={ind.value}
+                  href={ind.value === "all" ? "/case-studies" : `/case-studies?industry=${ind.value}`}
+                  id={`industry-filter-${ind.value}`}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  {ind.label}
+                </Link>
+              );
+            })}
+          </nav>
+
+          <p className="wfc-count">
+            {studiesData.totalDocs} {studiesData.totalDocs === 1 ? "case study" : "case studies"}
+            {selectedIndustry !== "all" && ` in ${INDUSTRY_LABELS[selectedIndustry] ?? selectedIndustry}`}
           </p>
-        </div>
-      </section>
 
-      {/* ─── Stats Strip ─── */}
-      <section className="bg-[#00D261] border-b-[2.5px] border-black px-4 sm:px-6 py-6">
-        <div className="max-w-[1280px] mx-auto grid grid-cols-3 gap-4 text-center">
-          <div>
-            <div className="font-display font-black text-[28px] sm:text-[40px] text-black leading-none">10,000+</div>
-            <div className="text-[10px] font-extrabold uppercase tracking-wider text-black/70">Merchants Worldwide</div>
-          </div>
-          <div>
-            <div className="font-display font-black text-[28px] sm:text-[40px] text-black leading-none">98%</div>
-            <div className="text-[10px] font-extrabold uppercase tracking-wider text-black/70">Open Rate</div>
-          </div>
-          <div>
-            <div className="font-display font-black text-[28px] sm:text-[40px] text-black leading-none">$2M+</div>
-            <div className="text-[10px] font-extrabold uppercase tracking-wider text-black/70">Revenue Recovered</div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── Industry Filter ─── */}
-      <section className="bg-white border-b-[2.5px] border-black sticky top-[72px] z-40 px-4 sm:px-6 py-4 overflow-x-auto">
-        <div className="max-w-[1280px] mx-auto flex items-center gap-3 min-w-max">
-          {INDUSTRIES.map((ind) => {
-            const isActive = ind.value === selectedIndustry;
-            return (
-              <Link
-                key={ind.value}
-                href={ind.value === "all" ? "/case-studies" : `/case-studies?industry=${ind.value}`}
-                id={`industry-filter-${ind.value}`}
-                className={`neo-btn px-4 py-2 text-xs font-extrabold uppercase tracking-wider rounded-lg whitespace-nowrap transition-all ${
-                  isActive
-                    ? "bg-[#00D261] text-black shadow-[3px_3px_0px_#000]"
-                    : "bg-white text-black hover:bg-[#F0FFF6]"
-                }`}
-              >
-                {ind.label}
-              </Link>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* ─── Studies Grid ─── */}
-      <section className="px-4 sm:px-6 py-14">
-        <div className="max-w-[1280px] mx-auto">
-          <div className="flex items-center justify-between mb-8">
-            <p className="text-xs font-bold text-gray-500 uppercase tracking-wider">
-              {studiesData.totalDocs} {studiesData.totalDocs === 1 ? "Case Study" : "Case Studies"}
-              {selectedIndustry !== "all" && ` in ${INDUSTRY_LABELS[selectedIndustry] ?? selectedIndustry}`}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {feature && <FeaturedStudyCard study={feature} />}
+          <div className={`wf-grid wf-grid-3 ${feature ? "mt-6" : ""}`}>
             {studies.length > 0 ? (
-              studies.map((study) => <CaseStudyCard key={study.id} study={study} />)
+              rest.map((study, index) => <CaseStudyCard key={study.id} study={study} index={index} />)
             ) : (
-              <EmptyState />
+              <EmptyCard icon={ICONS.trend} title="Case studies coming soon">
+                We&apos;re collecting merchant success stories. Check back soon.
+              </EmptyCard>
             )}
           </div>
 
           {/* ─── Pagination ─── */}
           {(studiesData.hasPrevPage || studiesData.hasNextPage) && (
-            <div className="flex items-center justify-center gap-4 mt-14">
+            <nav aria-label="Pagination" className="wfc-pager">
               {studiesData.hasPrevPage && (
-                <Link
-                  href={`/case-studies?${selectedIndustry !== "all" ? `industry=${selectedIndustry}&` : ""}page=${currentPage - 1}`}
-                  className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
-                >
-                  ← PREV PAGE
+                <Link href={pageHref(currentPage - 1)} className="wf-btn wf-btn-ghost wf-btn-sm">
+                  Previous page
                 </Link>
               )}
-              <span className="text-xs font-bold text-gray-500">
+              <span>
                 Page {studiesData.page} of {studiesData.totalPages}
               </span>
               {studiesData.hasNextPage && (
-                <Link
-                  href={`/case-studies?${selectedIndustry !== "all" ? `industry=${selectedIndustry}&` : ""}page=${currentPage + 1}`}
-                  className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-lg"
-                >
-                  NEXT PAGE →
+                <Link href={pageHref(currentPage + 1)} className="wf-btn wf-btn-green wf-btn-sm">
+                  Next page
                 </Link>
               )}
-            </div>
+            </nav>
           )}
-        </div>
-      </section>
-
-      {/* ─── CTA ─── */}
-      <section className="bg-[#091E17] border-t-[2.5px] border-black py-12 px-4 sm:px-6 text-center">
-        <div className="max-w-2xl mx-auto space-y-4">
-          <h2 className="text-[28px] sm:text-[36px] font-display font-black uppercase text-white tracking-tight">
-            YOUR STORE COULD BE NEXT.
-          </h2>
-          <p className="text-gray-300 text-sm font-medium">
-            14-day free trial. No credit card required. Cancel anytime.
-          </p>
-          <div className="flex items-center justify-center gap-3 flex-wrap">
-            <Link
-              href="/#products"
-              className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-lg"
-            >
-              INSTALL ON SHOPIFY →
-            </Link>
-            <Link
-              href="/blog"
-              className="neo-btn bg-white text-black font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-lg"
-            >
-              READ THE BLOG →
-            </Link>
-          </div>
         </div>
       </section>
     </div>

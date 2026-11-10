@@ -1,0 +1,65 @@
+/* ─── Rich text blocks (CMS) in the site kit style. Scoped under .wfrt so the
+   shared .prose-whatflow element rules (uppercase headings, image shadows) don't leak in. ── */
+
+.wfrt { margin: 2em 0; color: var(--ink); font-style: normal; }
+.wfrt * { text-transform: none; }
+.wfrt h3, .prose-whatflow .wfrt h3 { margin: 0; font-family: var(--display); font-weight: 700; color: inherit; text-transform: none; letter-spacing: -0.04em; }
+.wfrt p, .prose-whatflow .wfrt p { margin: 0; }
+.wfrt img, .prose-whatflow .wfrt img { margin: 0; border: 0; border-radius: 0; box-shadow: none; max-width: 100%; }
+.wfrt a, .prose-whatflow .wfrt a { text-decoration: none; }
+.wfrt pre, .prose-whatflow .wfrt pre { margin: 0; border: 0; border-radius: 0; background: none; }
+.wfrt figcaption { margin-top: var(--space-8); color: var(--text-muted-alt); font-size: 14px; line-height: 1.55; text-align: center; }
+.wfrt figcaption a, .prose-whatflow .wfrt figcaption a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Callout */
+.wfrt-callout { display: block; padding: var(--space-16) var(--space-20); border: 2px solid var(--ink); border-radius: 20px; }
+.wfrt-callout[data-type="tip"] { background: var(--mint); }
+.wfrt-callout[data-type="info"] { background: var(--sky); }
+.wfrt-callout[data-type="warning"] { background: #fff1c7; }
+.wfrt-callout[data-type="alert"] { background: var(--pink); }
+.wfrt-callout-title { display: block; font-family: var(--display); font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; }
+.wfrt-callout-body { margin-top: var(--space-4); color: var(--text-body); font-size: 15.5px; line-height: 1.65; white-space: pre-line; }
+
+/* CTA */
+.wfrt-cta { position: relative; overflow: hidden; padding: clamp(var(--space-24), 4vw, var(--space-32)); border: 2.5px solid var(--ink); border-radius: 24px; }
+.wfrt-cta h3, .prose-whatflow .wfrt-cta h3 { margin-top: 0; font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.05; }
+.wfrt-cta p, .prose-whatflow .wfrt-cta p { margin-top: var(--space-8); max-width: 52ch; font-size: 15.5px; line-height: 1.6; }
+.wfrt-cta .wf-btn { margin-top: var(--space-20); }
+.wfrt-cta[data-style="green"] { background: var(--green); }
+.wfrt-cta[data-style="green"] p { color: rgb(11 15 12 / 0.78); }
+.wfrt-cta[data-style="dark"] { background: var(--forest); color: var(--surface); }
+.wfrt-cta[data-style="dark"] p { color: rgb(255 255 255 / 0.72); }
+.wfrt-cta[data-style="dark"] .wf-leadin { color: var(--surface); }
+.wfrt-cta[data-style="dark"] .wf-btn { border-color: var(--ink); box-shadow: 4px 4px 0 var(--green); }
+.wfrt-cta[data-style="white"] { background: var(--surface); }
+.wfrt-cta[data-style="white"] p { color: var(--text-secondary); }
+
+/* WhatsApp mockup */
+.wfrt-phone { max-width: 360px; margin-inline: auto; overflow: hidden; border: 2.5px solid var(--ink); border-radius: 28px; background: var(--surface); box-shadow: 6px 6px 0 var(--ink); }
+.wfrt-phone-head { display: flex; align-items: center; justify-content: space-between; padding: var(--space-12) var(--space-16); border-bottom: 2px solid var(--ink); background: var(--forest); color: var(--surface); }
+.wfrt-phone-avatar { display: grid; place-items: center; width: 34px; height: 34px; border: 1.5px solid var(--ink); border-radius: 50%; background: var(--green); color: var(--ink); font-size: 13px; font-weight: 700; }
+.wfrt-phone-body { min-height: 160px; padding: var(--space-16); background-color: #efeae2; background-image: radial-gradient(rgb(11 15 12 / 0.06) 1px, transparent 1px); background-size: 14px 14px; }
+.wfrt-bubble { display: grid; gap: var(--space-8); padding: var(--space-12); border: 1.5px solid var(--ink); border-radius: 16px 16px 16px 4px; background: var(--mint-wash); font-size: 14px; line-height: 1.55; }
+.wfrt-order { display: flex; align-items: center; gap: var(--space-8); padding: var(--space-8) var(--space-8); border: 1.5px solid var(--ink); border-radius: 10px; background: var(--surface); font-size: 13px; font-weight: 700; }
+.wfrt-order svg { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.wfrt-reply { width: 100%; padding: var(--space-8); border: 1.5px solid var(--ink); border-radius: 10px; background: var(--surface); color: var(--green-deep); font-size: 13.5px; font-weight: 700; cursor: default; }
+
+/* Stat */
+.wfrt-stat { max-width: 440px; margin-inline: auto; padding: var(--space-28); border: 2.5px solid var(--ink); border-radius: 24px; background: var(--green); box-shadow: 6px 6px 0 var(--ink); text-align: center; }
+.wfrt-stat-value { display: block; font-family: var(--display); font-size: clamp(3rem, 7vw, 4.6rem); font-weight: 700; line-height: 0.9; letter-spacing: -0.06em; font-variant-numeric: tabular-nums; }
+.wfrt-stat-label { display: block; margin-top: var(--space-12); font-size: 16px; font-weight: 700; }
+.wfrt-stat-note { display: block; margin-top: var(--space-6); color: rgb(11 15 12 / 0.72); font-size: 14px; }
+
+/* Frames: video, images, screenshots */
+.wfrt-frame { display: block; overflow: hidden; border: 2px solid var(--ink); border-radius: 18px; background: var(--surface); }
+.wfrt-frame[data-kind="video"] { aspect-ratio: 16 / 9; background: var(--ink); }
+a.wfrt-frame { transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease); }
+a.wfrt-frame:hover { transform: translateY(-3px); box-shadow: 5px 5px 0 var(--ink); }
+
+/* Code */
+.wfrt-code { overflow: hidden; border: 2px solid var(--ink); border-radius: 18px; background: var(--forest); color: var(--mint-strong); }
+.wfrt-code-head { display: flex; justify-content: space-between; gap: var(--space-12); padding: var(--space-8) var(--space-16); border-bottom: 1px solid rgb(255 255 255 / 0.12); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; }
+.wfrt-code-head span:first-child { color: var(--green); }
+.wfrt-code-head span:last-child { color: rgb(255 255 255 / 0.65); }
+.wfrt-code pre, .prose-whatflow .wfrt-code pre { padding: var(--space-16); overflow-x: auto; color: inherit; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13.5px; line-height: 1.65; }
+.wfrt-code code, .prose-whatflow .wfrt-code code { padding: 0; border: 0; background: none; color: inherit; font-family: inherit; font-size: inherit; }

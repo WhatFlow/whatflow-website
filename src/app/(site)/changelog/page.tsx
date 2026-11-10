@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import Link from "next/link";
+import { PageHero } from "@/components/site/PageKit";
+import { RssIcon } from "../blog/blog-ui";
+import { TypePill, typeColor } from "./type-pill";
+import "../blog/content.css";
 import { SITE_URL, getBreadcrumbSchema, getFAQSchema } from "@/lib/schema-org";
 import { safeJSON } from "@/lib/comparisons-api";
 import {
   CHANGELOG_APP_LABELS,
   CHANGELOG_TYPES,
-  CHANGELOG_TYPE_BADGE,
   formatReleaseDate,
   getAllChangelog,
   groupByMonth,
@@ -139,7 +143,7 @@ export default async function ChangelogPage({ searchParams }: ChangelogPageProps
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF7F0]">
+    <div className="min-h-screen bg-[var(--paper)]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJSON(collectionJsonLd) }} />
       <script
         type="application/ld+json"
@@ -149,90 +153,66 @@ export default async function ChangelogPage({ searchParams }: ChangelogPageProps
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJSON(getFAQSchema(FAQS)) }} />
 
-      {/* ─── Hero ─── */}
-      <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
-        <div className="max-w-[960px] mx-auto">
-          <div className="flex items-center justify-between gap-4 flex-wrap mb-4">
-            <div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black">
-              Product updates
-            </div>
-            <a
-              href="/changelog/rss.xml"
-              className="flex items-center gap-2 text-xs font-bold text-gray-600 uppercase tracking-wider hover:text-black"
-            >
-              <span className="w-2 h-2 rounded-full bg-[#00D261]" aria-hidden />
-              RSS feed
-            </a>
-          </div>
-
-          <h1 className="text-[44px] sm:text-[60px] lg:text-[76px] font-display font-black uppercase text-black tracking-tight leading-none mb-4">
-            WhatFlow <br />
-            <span className="text-stroke-green">Changelog.</span>
-          </h1>
-          <p className="text-base sm:text-lg text-gray-700 font-medium max-w-2xl">
+      <PageHero
+        kicker="Product updates"
+        title="WhatFlow changelog."
+        accent={["changelog"]}
+        sub={
+          <p>
             New features, improvements and bug fixes for WhatFlow&apos;s WhatsApp apps for Shopify: the{" "}
             <strong>official API app</strong> (Business API) with its Team Inbox, and the <strong>unofficial API app</strong> (Chat Automation).
           </p>
-
-          {latest && oldest && (
-            <dl className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
-              {[
-                { label: "Updates", value: all.length },
-                { label: "New features", value: counts.feature },
-                { label: "Improvements", value: counts.improvement },
-                { label: "Fixes & security", value: counts.fix + counts.security },
-              ].map((stat) => (
-                <div key={stat.label} className="neo-box bg-white px-4 py-3">
-                  <dt className="text-[10px] font-extrabold uppercase tracking-wider text-gray-500">{stat.label}</dt>
-                  <dd className="text-2xl font-display font-black text-black">{stat.value}</dd>
-                </div>
-              ))}
-            </dl>
-          )}
-          {latest && oldest && (
-            <p className="mt-4 text-xs font-bold text-gray-500">
-              Covering {formatReleaseDate(oldest.releaseDate)} to {formatReleaseDate(latest.releaseDate)}. Last
-              updated <time dateTime={latest.releaseDate}>{formatReleaseDate(latest.releaseDate)}</time>.
-            </p>
-          )}
-        </div>
-      </section>
-
-      {/* ─── Filter Bar ─── */}
-      <nav
-        aria-label="Filter changelog"
-        className="border-b-[2.5px] border-black bg-white px-4 sm:px-6 py-3 sticky top-0 z-30"
+        }
+        actions={
+          <a href="/changelog/rss.xml" className="wf-btn wf-btn-ghost wf-btn-sm">
+            <RssIcon />
+            RSS feed
+          </a>
+        }
+        meta={
+          latest && oldest ? (
+            <span>
+              Covering {formatReleaseDate(oldest.releaseDate)} to {formatReleaseDate(latest.releaseDate)}. Last updated{" "}
+              <time dateTime={latest.releaseDate}>{formatReleaseDate(latest.releaseDate)}</time>.
+            </span>
+          ) : undefined
+        }
       >
-        <div className="max-w-[960px] mx-auto flex flex-col gap-2">
-          <div className="flex items-center gap-2 overflow-x-auto">
+        {latest && oldest && (
+          <dl className="wfc-hero-metrics">
+            {[
+              { label: "Updates", value: all.length, tone: "wfc-tone-white" },
+              { label: "New features", value: counts.feature, tone: "wfc-tone-green" },
+              { label: "Improvements", value: counts.improvement, tone: "wfc-tone-sky" },
+              { label: "Fixes and security", value: counts.fix + counts.security, tone: "wfc-tone-yellow" },
+            ].map((stat) => (
+              <div key={stat.label} className={`wfc-metric ${stat.tone} flex flex-col-reverse justify-end`} data-size={stat.label === "Updates" ? undefined : "sm"}>
+                <dt className="wfc-metric-label">{stat.label}</dt>
+                <dd className="wfc-metric-value">{stat.value}</dd>
+              </div>
+            ))}
+          </dl>
+        )}
+      </PageHero>
+
+      {/* ─── Filter bar ─── */}
+      <nav aria-label="Filter changelog" className="wfc-filterbar">
+        <div className="wf-shell wfc-shell-row">
+          <div className="wfc-seg" data-size="sm">
             {appFilters.map((f) => {
               const isActive = selectedApp === f.key;
               return (
-                <Link
-                  key={f.key}
-                  href={filterHref(f.key, selectedType)}
-                  aria-current={isActive ? "page" : undefined}
-                  className={`neo-pill px-3 py-1 text-xs font-extrabold uppercase tracking-wider whitespace-nowrap transition-all ${
-                    isActive ? "bg-[#00D261] text-black shadow-[2px_2px_0px_#000]" : "bg-[#FAF7F0] text-gray-700 hover:bg-gray-100"
-                  }`}
-                >
+                <Link key={f.key} href={filterHref(f.key, selectedType)} aria-current={isActive ? "page" : undefined}>
                   {f.label}
                 </Link>
               );
             })}
           </div>
-          <div className="flex items-center gap-2 overflow-x-auto">
+          <div className="wfc-seg wfc-seg-green" data-size="sm">
             {[{ key: "all", label: "All types" }, ...CHANGELOG_TYPES].map((t) => {
               const isActive = selectedType === t.key;
               return (
-                <Link
-                  key={t.key}
-                  href={filterHref(selectedApp, t.key)}
-                  aria-current={isActive ? "page" : undefined}
-                  className={`px-2.5 py-0.5 text-[11px] font-bold rounded-full border whitespace-nowrap transition-all ${
-                    isActive ? "border-black bg-black text-white" : "border-gray-300 text-gray-600 hover:border-black"
-                  }`}
-                >
+                <Link key={t.key} href={filterHref(selectedApp, t.key)} aria-current={isActive ? "page" : undefined}>
                   {t.label}
                 </Link>
               );
@@ -241,26 +221,29 @@ export default async function ChangelogPage({ searchParams }: ChangelogPageProps
         </div>
       </nav>
 
-      {/* ─── Timeline Feed ─── */}
-      <section className="px-4 sm:px-6 py-14 max-w-[960px] mx-auto">
-        {months.length === 0 && (
-          <p className="text-sm font-medium text-gray-600">
-            No updates match this filter. <Link href="/changelog" className="underline">Show all updates</Link>.
-          </p>
-        )}
+      {/* ─── Timeline ─── */}
+      <section className="py-14 sm:py-20">
+        <div className="wf-shell" style={{ maxWidth: 1040 }}>
+          {months.length === 0 && (
+            <div className="wf-card wfc-empty">
+              <h2>Nothing here yet</h2>
+              <p>
+                No updates match this filter. <Link href="/changelog" className="font-bold underline underline-offset-4">Show all updates</Link>.
+              </p>
+            </div>
+          )}
 
-        <div className="space-y-14">
           {months.map((month) => (
-            <section key={month.key} aria-labelledby={`month-${month.key}`}>
-              <h2
-                id={`month-${month.key}`}
-                className="text-2xl sm:text-3xl font-display font-black uppercase text-black mb-6 scroll-mt-32"
-              >
+            <section key={month.key} className="wfc-month" aria-labelledby={`month-${month.key}`}>
+              <h2 id={`month-${month.key}`} className="wfc-month-head" data-reveal>
                 {month.label}
+                <small>
+                  {month.entries.length} {month.entries.length === 1 ? "update" : "updates"}
+                </small>
               </h2>
-              <ol className="space-y-6 border-l-[2.5px] border-black pl-5 sm:pl-8">
-                {month.entries.map((entry) => (
-                  <ChangelogCard key={entry.slug} entry={entry} />
+              <ol className="wfc-tl">
+                {month.entries.map((entry, index) => (
+                  <ChangelogCard key={entry.slug} entry={entry} index={index} />
                 ))}
               </ol>
             </section>
@@ -269,16 +252,16 @@ export default async function ChangelogPage({ searchParams }: ChangelogPageProps
       </section>
 
       {/* ─── FAQ ─── */}
-      <section className="border-t-[2.5px] border-black bg-white px-4 sm:px-6 py-14">
-        <div className="max-w-[960px] mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-display font-black uppercase text-black mb-6">
-            About this changelog
-          </h2>
-          <div className="space-y-5">
-            {FAQS.map((faq) => (
-              <div key={faq.question}>
-                <h3 className="text-base font-extrabold text-black">{faq.question}</h3>
-                <p className="mt-1 text-sm text-gray-700 font-medium leading-relaxed">{faq.answer}</p>
+      <section className="wf-section" data-tone="white" style={{ borderTop: "2.5px solid var(--ink)" }}>
+        <div className="wf-shell">
+          <div className="wf-head" data-reveal>
+            <h2 className="wf-h2">About this changelog</h2>
+          </div>
+          <div className="wf-grid wf-grid-2 mt-10">
+            {FAQS.map((faq, index) => (
+              <div key={faq.question} className="wf-card" data-reveal style={{ "--d": `${(index % 2) * 80}ms` } as CSSProperties}>
+                <h3>{faq.question}</h3>
+                <p>{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -288,40 +271,35 @@ export default async function ChangelogPage({ searchParams }: ChangelogPageProps
   );
 }
 
-function ChangelogCard({ entry }: { entry: ChangelogItem }) {
-  const badge = CHANGELOG_TYPE_BADGE[entry.type];
+function ChangelogCard({ entry, index }: { entry: ChangelogItem; index: number }) {
+  const date = new Date(entry.releaseDate);
   return (
-    <li className="relative">
-      <span
-        className="absolute -left-[29px] sm:-left-[41px] top-7 w-3.5 h-3.5 rounded-full border-[2.5px] border-black bg-[#00D261]"
-        aria-hidden
-      />
-      <article className="neo-box bg-white p-6 sm:p-8 rounded-2xl space-y-3">
+    <li className="wfc-tl-item" data-reveal style={{ "--d": `${Math.min(index, 4) * 60}ms`, "--tone": typeColor(entry.type) } as CSSProperties}>
+      <span className="wfc-tl-dot" aria-hidden="true" />
+      <time className="wfc-tl-date" dateTime={entry.releaseDate}>
+        <b>{date.toLocaleDateString("en-US", { day: "numeric", timeZone: "UTC" })}</b>
+        {date.toLocaleDateString("en-US", { month: "short", timeZone: "UTC" })}
+      </time>
+      <article className="wf-card wfc-entry">
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className={`neo-pill px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider border-black ${badge.className}`}>
-              {badge.label}
-            </span>
-            <span className="neo-pill bg-[#FAF7F0] border-black px-2.5 py-0.5 text-[10px] font-bold text-gray-700 uppercase">
-              {CHANGELOG_APP_LABELS[entry.app]}
-            </span>
+            <TypePill type={entry.type} />
+            <span className="wf-pill">{CHANGELOG_APP_LABELS[entry.app]}</span>
           </div>
-          <time dateTime={entry.releaseDate} className="text-xs font-bold text-gray-500 uppercase">
+          <time dateTime={entry.releaseDate} className="text-sm font-semibold text-[var(--text-muted-alt)] md:hidden">
             {formatReleaseDate(entry.releaseDate, "short")}
           </time>
         </div>
-        <h3 className="text-xl sm:text-2xl font-display font-black uppercase text-black leading-tight">
-          <Link href={`/changelog/${entry.slug}`} className="hover:text-[#00A84D]">
-            {entry.title}
-          </Link>
+        <h3 style={{ marginTop: 16 }}>
+          <Link href={`/changelog/${entry.slug}`}>{entry.title}</Link>
         </h3>
-        <p className="text-sm text-gray-700 font-medium leading-relaxed">{entry.summary}</p>
+        <p>{entry.summary}</p>
         <Link
           href={`/changelog/${entry.slug}`}
-          className="inline-block text-xs font-extrabold uppercase tracking-wider text-black underline underline-offset-4"
+          className="wfc-link"
           aria-label={`Read the full release notes: ${entry.title}`}
         >
-          Full release notes →
+          Full release notes
         </Link>
       </article>
     </li>

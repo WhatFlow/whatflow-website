@@ -3,9 +3,9 @@
 html.lenis, html.lenis body { scroll-behavior: auto !important; }
 
 /* Word-by-word manifesto */
-.lp-words { position: relative; height: 260vh; background: #fff; }
+.lp-words { position: relative; height: 260vh; background: var(--surface); }
 .lp-words-sticky { position: sticky; top: var(--nav); display: flex; align-items: center; height: calc(100svh - var(--nav)); }
-.lp-words-kicker { display: block; margin-bottom: 26px; color: var(--green-deep); font-size: 14px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.lp-words-kicker { display: block; margin-bottom: var(--space-24); color: var(--green-deep); font-size: 14px; font-weight: 700; letter-spacing: 0; }
 .lp-words-text {
 	max-width: 20ch;
 	margin: 0;
@@ -24,12 +24,12 @@ html.lenis, html.lenis body { scroll-behavior: auto !important; }
 
 /* Horizontal gallery */
 .lp-hgallery { position: relative; height: 300vh; }
-.lp-hgallery-sticky { position: sticky; top: var(--nav); display: flex; flex-direction: column; justify-content: center; gap: 28px; height: calc(100svh - var(--nav)); overflow: hidden; }
+.lp-hgallery-sticky { position: sticky; top: var(--nav); display: flex; flex-direction: column; justify-content: center; gap: var(--space-28); height: calc(100svh - var(--nav)); overflow: hidden; }
 .lp-hgallery-track {
 	display: flex;
-	gap: 22px;
+	gap: var(--space-20);
 	width: max-content;
-	padding: 0 max(20px, calc((100vw - 1240px) / 2 + 32px));
+	padding: 0 max(var(--space-20), calc((100vw - 1240px) / 2 + var(--space-32)));
 	transform: translate3d(calc(var(--p, 0) * var(--dist, 0px) * -1), 0, 0);
 	will-change: transform;
 }
@@ -45,7 +45,7 @@ html.lenis, html.lenis body { scroll-behavior: auto !important; }
 }
 
 /* Stacking cards */
-.lp-stack { position: relative; display: grid; gap: 40px; padding-bottom: 8vh; }
+.lp-stack { position: relative; display: grid; gap: var(--space-40); padding-bottom: 8vh; }
 .lp-stack-card {
 	--cover: clamp(0, calc(var(--p, 0) * var(--n) - var(--i) - 0.55), 1);
 	position: sticky;
@@ -60,7 +60,7 @@ html.lenis, html.lenis body { scroll-behavior: auto !important; }
 	.lp-clip-inner { clip-path: none; }
 	.lp-stack-card { transform: none; filter: none; }
 	.lp-hgallery { height: auto !important; }
-	.lp-hgallery-sticky { position: static; height: auto; padding: 80px 0; }
+	.lp-hgallery-sticky { position: static; height: auto; padding: var(--space-80) 0; }
 	.lp-hgallery-track { transform: none; overflow-x: auto; width: auto; }
 	.lp-hgallery-bar { display: none; }
 }

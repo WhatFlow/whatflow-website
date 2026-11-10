@@ -18,7 +18,7 @@ export function FinalCta() {
 					<span className="lp-compose-field">Install WhatFlow on Shopify<span className="lp-caret" /></span>
 					<span className="lp-compose-send" aria-hidden="true">➤</span>
 				</a>
-				<Link href="/pricing" className="lp-final-link">See pricing →</Link>
+				<Link href="/pricing" className="lp-final-link">See pricing</Link>
 			</div>
 			<div className="lp-final-bubbles" aria-hidden="true">
 				<span>Order confirmed ✓</span>

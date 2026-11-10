@@ -1,28 +1,25 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useId, useState } from "react";
+import { Section, SectionHead } from "@/components/site/PageKit";
 
 export function BroadcastWizardShowcase() {
+  const campaignNameId = useId();
   const [currentStep, setCurrentStep] = useState<number>(1);
 
   return (
-    <section className="py-20 px-4 sm:px-6 bg-[#121212] text-white border-b border-white/10">
-      <div className="max-w-[1280px] mx-auto space-y-12">
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="px-3.5 py-1 rounded-full bg-[#1ed760]/15 border border-[#1ed760]/30 text-[#1ed760] text-xs font-bold uppercase tracking-wider inline-block">
-            INBOX-NATIVE BROADCASTS
-          </div>
-          <h2 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tight text-white">
-            4-STEP CAMPAIGN WIZARD: <span className="text-[#1ed760]">SEND IN MINUTES.</span>
-          </h2>
-          <p className="text-gray-400 text-base sm:text-lg font-normal">
-            Launch targeted promotional blasts and newsletters directly from the WhatFlow Inbox.
-            Complete audience segmentation, template variable testing, and scheduled sending.
-          </p>
-        </div>
+    <Section tone="dark" className="ib-glow">
+      <SectionHead
+        center light
+        kicker="Inbox-native broadcasts"
+        title={<>4-step campaign wizard: <span className="text-[var(--green)]">send in minutes.</span></>}
+        sub={<>Launch targeted promotional blasts and newsletters directly from the WhatFlow Inbox. Complete audience segmentation, template variable testing, and scheduled sending.</>}
+      />
+      <div className="mt-14 space-y-10">
 
         {/* Stepper Navigation */}
-        <div className="max-w-3xl mx-auto grid grid-cols-4 gap-2">
+        <div className="max-w-3xl mx-auto space-y-3" data-reveal>
+        <div className="grid grid-cols-4 gap-2">
           {[
             { num: 1, title: "1. Setup" },
             { num: 2, title: "2. Template" },
@@ -33,40 +30,48 @@ export function BroadcastWizardShowcase() {
               key={s.num}
               type="button"
               onClick={() => setCurrentStep(s.num)}
-              className={`p-3 rounded-xl border text-center transition-all cursor-pointer ${
+              aria-current={currentStep === s.num ? "step" : undefined}
+              className={`px-3 py-3 rounded-full border text-center transition-[background-color,color,border-color,box-shadow] duration-300 cursor-pointer ${
                 currentStep === s.num
-                  ? "bg-[#1ed760] text-black border-[#1ed760] font-black"
-                  : "bg-[#181818] text-gray-400 border-white/10 font-bold hover:text-white"
+                  ? "bg-[var(--green)] text-black border-[var(--green)] font-bold shadow-[0_0_28px_rgba(0,210,97,0.35)]"
+                  : currentStep > s.num
+                    ? "bg-[var(--green)]/10 text-[var(--green)] border-[var(--green)]/30 font-bold"
+                    : "bg-white/[0.04] text-white/65 border-white/10 font-bold hover:text-white"
               }`}
             >
-              <div className="text-xs uppercase">{s.title}</div>
+              <div className="text-sm">{s.title}</div>
             </button>
           ))}
         </div>
+        <div className="h-1 rounded-full bg-white/10 overflow-hidden" aria-hidden="true">
+          <div className="h-full w-full origin-left rounded-full bg-[var(--green)] transition-transform duration-500 ease-out" style={{ transform: `scaleX(${currentStep / 4})` }} />
+        </div>
+        </div>
 
         {/* Wizard Box */}
-        <div className="max-w-3xl mx-auto bg-[#181818] p-6 sm:p-10 rounded-3xl border border-white/15 space-y-6">
+        <div data-reveal style={{ "--d": "90ms" } as React.CSSProperties} className="ib-panel max-w-3xl mx-auto p-6 sm:p-10 space-y-6">
           {currentStep === 1 && (
-            <div className="space-y-4">
-              <h3 className="text-xl font-display font-black uppercase text-white">
-                Step 1: Campaign Configuration
+            <div className="ib-swap space-y-4">
+              <h3 className="text-2xl font-display font-bold tracking-[-0.03em] text-white">
+                Step 1: Campaign configuration
               </h3>
               <div className="space-y-2">
-                <label className="text-xs font-bold uppercase text-gray-400">Campaign Name</label>
+                <label htmlFor={campaignNameId} className="text-xs font-bold text-white/65">Campaign name</label>
                 <input
+                  id={campaignNameId}
                   type="text"
                   defaultValue="Summer Solstice VIP Drop 2026"
-                  className="w-full p-3 rounded-xl bg-[#121212] border border-white/15 text-xs text-white"
+                  className="w-full p-3 rounded-full px-4 bg-black/25 border border-white/40 text-base sm:text-sm text-white"
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-xs font-bold uppercase text-gray-400">Dispatch Mode</label>
-                <div className="grid grid-cols-2 gap-3 text-xs">
-                  <div className="p-3 rounded-xl bg-[#121212] border border-[#1ed760] text-[#1ed760] font-bold">
-                    ⚡ Instant Send (Anti-Ban Paced)
+                <span className="text-xs font-bold text-white/65">Dispatch mode</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                  <div className="p-3 rounded-xl bg-black/25 border border-[var(--green)] text-[var(--green)] font-bold">
+                    Instant send (anti-ban paced)
                   </div>
-                  <div className="p-3 rounded-xl bg-[#121212] border border-white/10 text-gray-400">
-                    📅 Schedule for Later
+                  <div className="p-3 rounded-xl bg-black/25 border border-white/10 text-white/65">
+                    Schedule for later
                   </div>
                 </div>
               </div>
@@ -74,47 +79,47 @@ export function BroadcastWizardShowcase() {
           )}
 
           {currentStep === 2 && (
-            <div className="space-y-4">
-              <h3 className="text-xl font-display font-black uppercase text-white">
-                Step 2: Template &amp; Variable Mapping
+            <div className="ib-swap space-y-4">
+              <h3 className="text-2xl font-display font-bold tracking-[-0.03em] text-white">
+                Step 2: Template &amp; variable mapping
               </h3>
-              <div className="p-4 bg-[#121212] rounded-xl border border-white/10 space-y-2 text-xs">
-                <div className="flex justify-between">
+              <div className="p-4 bg-black/25 rounded-xl border border-white/10 space-y-2 text-xs">
+                <div className="flex flex-wrap justify-between gap-x-3">
                   <span className="font-bold text-white">Template: vip_flash_sale_v2</span>
-                  <span className="text-[#1ed760] font-mono">Status: Approved</span>
+                  <span className="text-[var(--green)] font-mono">Status: approved</span>
                 </div>
-                <div className="text-gray-400 font-mono text-[11px]">
+                <div className="text-white/65 font-mono text-[11px]">
                   &quot;Hi {'{{1}}'}, your private 20% discount code {'{{2}}'} is active!&quot;
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-3 text-xs">
-                <div className="p-3 bg-[#121212] rounded-xl border border-white/10">
-                  <span className="text-gray-400 text-[10px] block">MAP VARIABLE {'{{1}}'}</span>
-                  <strong className="text-white">Shopify Customer First Name</strong>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div className="p-3 bg-black/25 rounded-xl border border-white/10">
+                  <span className="text-white/65 text-[10px] block">Map variable {'{{1}}'}</span>
+                  <strong className="text-white">Shopify customer first name</strong>
                 </div>
-                <div className="p-3 bg-[#121212] rounded-xl border border-white/10">
-                  <span className="text-gray-400 text-[10px] block">MAP VARIABLE {'{{2}}'}</span>
-                  <strong className="text-white">Dynamic Coupon (SUMMER20)</strong>
+                <div className="p-3 bg-black/25 rounded-xl border border-white/10">
+                  <span className="text-white/65 text-[10px] block">Map variable {'{{2}}'}</span>
+                  <strong className="text-white">Dynamic coupon (SUMMER20)</strong>
                 </div>
               </div>
             </div>
           )}
 
           {currentStep === 3 && (
-            <div className="space-y-4">
-              <h3 className="text-xl font-display font-black uppercase text-white">
-                Step 3: Audience Selection
+            <div className="ib-swap space-y-4">
+              <h3 className="text-2xl font-display font-bold tracking-[-0.03em] text-white">
+                Step 3: Audience selection
               </h3>
-              <div className="grid grid-cols-2 gap-3 text-xs">
-                <div className="p-4 rounded-xl bg-[#121212] border border-[#1ed760] space-y-1">
-                  <strong className="text-[#1ed760] block">Option A: Shopify Tags</strong>
-                  <p className="text-gray-400 text-[11px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div className="p-4 rounded-xl bg-black/25 border border-[var(--green)] space-y-1">
+                  <strong className="text-[var(--green)] block">Option A: Shopify tags</strong>
+                  <p className="text-white/65 text-[11px]">
                     Filter by &quot;VIP-Tier&quot; (4,820 customers selected)
                   </p>
                 </div>
-                <div className="p-4 rounded-xl bg-[#121212] border border-white/10 space-y-1">
-                  <strong className="text-white block">Option B: CSV Upload</strong>
-                  <p className="text-gray-400 text-[11px]">
+                <div className="p-4 rounded-xl bg-black/25 border border-white/10 space-y-1">
+                  <strong className="text-white block">Option B: CSV upload</strong>
+                  <p className="text-white/65 text-[11px]">
                     Upload custom spreadsheet with phone numbers
                   </p>
                 </div>
@@ -123,54 +128,54 @@ export function BroadcastWizardShowcase() {
           )}
 
           {currentStep === 4 && (
-            <div className="space-y-4">
-              <h3 className="text-xl font-display font-black uppercase text-white">
-                Step 4: Test Send &amp; Final Launch
+            <div className="ib-swap space-y-4">
+              <h3 className="text-2xl font-display font-bold tracking-[-0.03em] text-white">
+                Step 4: Test send &amp; final launch
               </h3>
-              <div className="p-4 bg-[#121212] rounded-xl border border-white/10 space-y-2 text-xs">
-                <div className="flex justify-between text-gray-300">
+              <div className="p-4 bg-black/25 rounded-xl border border-white/10 space-y-2 text-xs">
+                <div className="flex flex-wrap justify-between gap-x-3 text-white/75">
                   <span>Recipients:</span>
-                  <span className="font-bold text-white">4,820 Opted-in Buyers</span>
+                  <span className="font-bold text-white">4,820 opted-in buyers</span>
                 </div>
-                <div className="flex justify-between text-gray-300">
-                  <span>Estimated Time:</span>
-                  <span className="font-bold text-[#1ed760]">1m 45s (Anti-Ban Paced)</span>
+                <div className="flex flex-wrap justify-between gap-x-3 text-white/75">
+                  <span>Estimated time:</span>
+                  <span className="font-bold text-[var(--green)]">1m 45s (anti-ban paced)</span>
                 </div>
-                <div className="flex justify-between text-gray-300">
-                  <span>Estimated Meta Cost:</span>
-                  <span className="font-bold text-white">Direct Meta API Rate ($0 Markup)</span>
+                <div className="flex flex-wrap justify-between gap-x-3 text-white/75">
+                  <span>Estimated Meta cost:</span>
+                  <span className="font-bold text-white">Direct Meta API rate ($0 markup)</span>
                 </div>
               </div>
               <button
                 type="button"
                 onClick={() => alert("Broadcast launched successfully!")}
-                className="w-full py-3.5 rounded-full bg-[#1ed760] text-black font-extrabold text-xs uppercase tracking-wider hover:bg-[#1abc54] transition-all cursor-pointer shadow-[0_0_20px_rgba(30,215,96,0.3)]"
+                className="w-full py-3.5 rounded-full bg-[var(--green)] text-black font-bold text-sm hover:bg-[var(--green-pressed)] transition-colors cursor-pointer shadow-[0_0_20px_rgba(0,210,97,0.3)]"
               >
-                🚀 Launch Broadcast Campaign
+                Launch broadcast campaign
               </button>
             </div>
           )}
 
-          <div className="flex justify-between pt-4 border-t border-white/10 text-xs">
+          <div className="flex flex-wrap justify-between gap-2 pt-4 border-t border-white/10 text-xs">
             <button
               type="button"
               disabled={currentStep === 1}
               onClick={() => setCurrentStep((p) => p - 1)}
-              className="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 disabled:opacity-30 cursor-pointer"
+              className="min-h-11 whitespace-nowrap px-3 sm:px-5 py-2.5 rounded-full bg-white/5 hover:bg-white/10 transition-colors duration-300 text-white/75 disabled:opacity-30 cursor-pointer"
             >
-              ← Previous Step
+              Previous step
             </button>
             <button
               type="button"
               disabled={currentStep === 4}
               onClick={() => setCurrentStep((p) => p + 1)}
-              className="px-4 py-2 rounded-lg bg-[#1ed760] text-black font-bold disabled:opacity-30 cursor-pointer"
+              className="min-h-11 whitespace-nowrap px-3 sm:px-5 py-2.5 rounded-full bg-[var(--green)] text-black font-bold transition-colors duration-300 hover:bg-[var(--green-pressed)] disabled:opacity-30 cursor-pointer"
             >
-              Next Step →
+              Next step
             </button>
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

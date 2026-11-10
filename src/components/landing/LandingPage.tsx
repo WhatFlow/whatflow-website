@@ -38,7 +38,6 @@ function Faq() {
 		<section id="faq" className="lp-faq" aria-labelledby="lp-faq-title">
 			<div className="lp-shell lp-faq-grid">
 				<div data-reveal>
-					<span className="lp-eyebrow">Before you install</span>
 					<h2 id="lp-faq-title" className="lp-h2">Questions, answered.</h2>
 				</div>
 				<div className="lp-faq-list">
@@ -60,7 +59,6 @@ export function LandingPage() {
 			<Hero />
 			<Ticker />
 			<WordReveal
-				kicker="Why WhatsApp"
 				text="Your customers already live on WhatsApp. WhatFlow turns every Shopify moment into a conversation, and every conversation into a sale."
 				accent={["WhatsApp", "conversation", "sale"]}
 			/>

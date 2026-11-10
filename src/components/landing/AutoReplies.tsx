@@ -51,7 +51,7 @@ function Reply({ step }: { step: number }) {
 	return (
 		<div className="lp-ar-reply">
 			<p>Connecting you with our team 🙋 Someone will reply here shortly.</p>
-			<span className="lp-ar-handoff">→ Sent to Live Inbox · Needs reply</span>
+			<span className="lp-ar-handoff">Sent to Live Inbox, marked Needs reply</span>
 		</div>
 	);
 }
@@ -65,9 +65,8 @@ export function AutoReplies() {
 			<div className="lp-ar-sticky">
 				<div className="lp-shell lp-ar-grid">
 					<div className="lp-ar-copy">
-						<span className="lp-eyebrow">Auto-replies</span>
-						<h2 id="lp-ar-title" className="lp-h2">Answers itself. <span className="lp-hl">Even at 3 a.m.</span></h2>
-						<p className="lp-lead">Match keywords, exact phrases or patterns, then reply with any of 16 message types, from menus to your product catalog.</p>
+						<h2 id="lp-ar-title" className="lp-h2">Answers itself. Even at 3 a.m.</h2>
+						<p className="lp-lead"><b className="wf-leadin">Auto-replies.</b> Match keywords, exact phrases or patterns, then reply with any of 16 message types, from menus to your product catalog.</p>
 						<div className="lp-ar-rule" key={step}>
 							<div><small>When the message</small><b>{scene.match.toLowerCase()}</b><code>{scene.keyword}</code></div>
 							<span aria-hidden="true">→</span>
@@ -84,7 +83,7 @@ export function AutoReplies() {
 								<Reply step={step} />
 							</div>
 						</Phone>
-						<span className="lp-ar-badge" aria-hidden="true">⚡ Auto-reply</span>
+						<span className="lp-ar-badge" aria-hidden="true">Auto-reply</span>
 					</div>
 				</div>
 			</div>

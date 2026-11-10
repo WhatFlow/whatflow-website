@@ -1,43 +1,38 @@
 "use client";
 
 import React, { useState } from "react";
+import { Hl, Section, SectionHead } from "@/components/site/PageKit";
 import { WhatsAppBubble } from "../features/WhatsAppBubble";
 
 const MESSAGE_TYPES = [
-  { id: "text", name: "1. Text & Formatting", icon: "💬" },
-  { id: "image", name: "2. Photo & Caption", icon: "📷" },
-  { id: "video", name: "3. Video Preview", icon: "🎥" },
-  { id: "audio", name: "4. Voice Note Waveform", icon: "🎙️" },
-  { id: "document", name: "5. PDF Document", icon: "📄" },
-  { id: "sticker", name: "6. Animated Sticker", icon: "🏷️" },
-  { id: "location", name: "7. Geolocation Pin", icon: "📍" },
-  { id: "contact", name: "8. vCard Contact", icon: "👤" },
-  { id: "buttons", name: "9. Interactive Buttons", icon: "🔘" },
-  { id: "list", name: "10. Section List Menu", icon: "📋" },
-  { id: "flow", name: "11. WhatsApp Flow", icon: "📝" },
+  { id: "text", name: "1. Text & formatting" },
+  { id: "image", name: "2. Photo & caption" },
+  { id: "video", name: "3. Video preview" },
+  { id: "audio", name: "4. Voice note waveform" },
+  { id: "document", name: "5. PDF document" },
+  { id: "sticker", name: "6. Animated sticker" },
+  { id: "location", name: "7. Geolocation pin" },
+  { id: "contact", name: "8. vCard contact" },
+  { id: "buttons", name: "9. Interactive buttons" },
+  { id: "list", name: "10. Section list menu" },
+  { id: "flow", name: "11. WhatsApp Flow" },
 ];
 
 export function MessageTypeGallery() {
   const [activeType, setActiveType] = useState<string>("audio");
 
   return (
-    <section className="py-20 px-4 sm:px-6 bg-[#181818] text-white border-b border-white/10">
-      <div className="max-w-[1280px] mx-auto space-y-12">
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-gray-300 text-xs font-bold uppercase tracking-wider inline-block">
-            META CLOUD API COMPLIANT
-          </div>
-          <h2 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tight text-white">
-            11 MESSAGE BUBBLE TYPES, <span className="text-[#1ed760]">1 POWERFUL INBOX.</span>
-          </h2>
-          <p className="text-gray-400 text-base sm:text-lg font-normal">
-            Whether your customer sends a voice note, a photo of a damaged box, or an interactive button click,
-            WhatFlow renders every native WhatsApp message format seamlessly.
-          </p>
-        </div>
+    <Section tone="mint">
+      <SectionHead
+        center
+        kicker="Meta Cloud API compliant"
+        title={<>11 message bubble types, <Hl>1 powerful inbox.</Hl></>}
+        sub={<>Whether your customer sends a voice note, a photo of a damaged box, or an interactive button click, WhatFlow renders every native WhatsApp message format in the inbox.</>}
+      />
+      <div className="mt-14 space-y-10">
 
         {/* Horizontal Type Selector */}
-        <div className="flex flex-wrap items-center justify-center gap-2 max-w-5xl mx-auto">
+        <div className="ib-tabs max-w-5xl mx-auto" data-reveal>
           {MESSAGE_TYPES.map((type) => {
             const isSelected = activeType === type.id;
             return (
@@ -45,13 +40,9 @@ export function MessageTypeGallery() {
                 key={type.id}
                 type="button"
                 onClick={() => setActiveType(type.id)}
-                className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                  isSelected
-                    ? "bg-[#1ed760] text-black shadow-[0_0_16px_rgba(30,215,96,0.3)] scale-105"
-                    : "bg-[#121212] text-gray-300 hover:bg-[#202020] border border-white/10"
-                }`}
+                aria-pressed={isSelected}
+                className="ib-tab"
               >
-                <span>{type.icon}</span>
                 <span>{type.name}</span>
               </button>
             );
@@ -59,12 +50,12 @@ export function MessageTypeGallery() {
         </div>
 
         {/* Live Bubble Showcase Card */}
-        <div className="max-w-2xl mx-auto bg-[#0b141a] p-6 sm:p-8 rounded-3xl border border-white/15 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
-          <div className="text-xs font-mono text-gray-400 mb-4 pb-2 border-b border-white/10 flex justify-between">
+        <div data-reveal className="ib-chat max-w-2xl mx-auto p-6 sm:p-8" data-framed>
+          <div className="text-xs font-mono text-white/65 mb-4 pb-2 border-b border-white/10 flex justify-between">
             <span>Rendering: {MESSAGE_TYPES.find((m) => m.id === activeType)?.name}</span>
-            <span className="text-[#1ed760]">Official Spec</span>
+            <span className="text-[var(--green)]">Official spec</span>
           </div>
-
+          <div key={activeType} className="ib-swap">
           {activeType === "text" && (
             <WhatsAppBubble sender="bot" time="10:14 AM">
               Hi Emma! Your <strong>Summer Capsule Order</strong> has been confirmed.
@@ -130,9 +121,9 @@ export function MessageTypeGallery() {
 
           {activeType === "sticker" && (
             <div className="flex justify-end my-2">
-              <div className="bg-[#D9FDD3] p-3 rounded-2xl border border-[#C1ECC0] text-center">
-                <div className="text-5xl my-1 animate-bounce">🎉</div>
-                <div className="text-[10px] text-gray-500 font-mono">Animated Sticker • WebP</div>
+              <div className="bg-[var(--wa-outgoing)] p-3 rounded-[20px] border border-[#C1ECC0] text-center">
+                <div className="text-5xl my-1">🎉</div>
+                <div className="text-[10px] text-[var(--text-neutral)] font-mono">Animated Sticker • WebP</div>
               </div>
             </div>
           )}
@@ -170,7 +161,7 @@ export function MessageTypeGallery() {
             <WhatsAppBubble
               sender="bot"
               time="10:22 AM"
-              headerBadge="SELECT ACTION"
+              headerBadge="Select action"
               buttons={[
                 { text: "Confirm My Order (COD)", highlight: true },
                 { text: "Modify Shipping Address" },
@@ -185,7 +176,7 @@ export function MessageTypeGallery() {
             <WhatsAppBubble
               sender="bot"
               time="10:23 AM"
-              headerBadge="CUSTOMER MENU"
+              headerBadge="Customer menu"
               buttons={[{ text: "Select Service Option 📋", highlight: true }]}
             >
               Tap below to choose from our 10 service categories including Order Tracking, Exchanges, and Sizing Advice.
@@ -196,14 +187,15 @@ export function MessageTypeGallery() {
             <WhatsAppBubble
               sender="bot"
               time="10:24 AM"
-              headerBadge="WHATSAPP FLOW"
+              headerBadge="WhatsApp Flow"
               buttons={[{ text: "Open Interactive Return Form 📝", highlight: true }]}
             >
               Start your return inside WhatsApp! Fill in your return reason and upload a photo directly in this chat.
             </WhatsAppBubble>
           )}
+          </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

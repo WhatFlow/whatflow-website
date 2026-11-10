@@ -1,56 +1,54 @@
-"use client";
+import type { CSSProperties } from "react";
+import { Section, SectionHead } from "@/components/site/PageKit";
 
-import React from "react";
+const UPCOMING = [
+  {
+    status: "Upcoming",
+    title: "Dynamic audience sync",
+    body: "Planned synchronization between Shopify customer segments and WhatFlow broadcast audiences.",
+  },
+  {
+    status: "Planned",
+    title: "AI agent copilot",
+    body: "No built-in AI in the inbox yet. Today you can connect Claude, ChatGPT or Cursor through the WhatFlow MCP connector to draft replies for a person to approve. Native suggested replies are planned.",
+  },
+];
 
 export function InboxRoadmap() {
   return (
     <>
-    <section aria-labelledby="catalog-sharing-heading" className="py-16 px-4 sm:px-6 bg-[#121212] text-white border-b border-white/10">
-      <div className="max-w-5xl mx-auto p-8 sm:p-10 rounded-3xl bg-[#1ed760]/5 border border-[#1ed760]/30 space-y-4">
-        <span className="inline-block px-3 py-1 rounded-full bg-[#1ed760]/15 text-[#1ed760] text-xs font-bold uppercase tracking-wider">AVAILABLE NOW</span>
-        <h2 id="catalog-sharing-heading" className="text-3xl sm:text-4xl font-display font-black uppercase tracking-tight">SHARE YOUR <span className="text-[#1ed760]">PRODUCT CATALOG IN CHAT.</span></h2>
-        <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl">Share products from your Meta catalog in customer conversations, without leaving WhatFlow Inbox.</p>
-      </div>
-    </section>
-    <section className="py-20 px-4 sm:px-6 bg-[#181818] text-white border-b border-white/10">
-      <div className="max-w-[1280px] mx-auto space-y-12">
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-gray-300 text-xs font-bold uppercase tracking-wider inline-block">
-            UPCOMING
-          </div>
-          <h2 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tight text-white">
-            UP NEXT FOR <span className="text-[#1ed760]">WHATFLOW INBOX.</span>
-          </h2>
-          <p className="text-gray-400 text-base sm:text-lg font-normal">
-            Audience sync and AI assistance are planned enhancements. They are not available in the current inbox.
-          </p>
-        </div>
-
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-3xl bg-[#121212] border border-white/10 space-y-3 relative">
-            <span className="text-2xl mb-2 block">👥</span>
-            <span className="text-[10px] font-mono bg-[#1ed760]/20 text-[#1ed760] px-2 py-0.5 rounded">
-              UPCOMING
-            </span>
-            <h3 className="font-display font-black text-lg uppercase text-white">Dynamic Audience Sync</h3>
-            <p className="text-xs text-gray-400 leading-relaxed">
-              Planned synchronization between Shopify customer segments and WhatFlow broadcast audiences.
-            </p>
-          </div>
-
-          <div className="p-6 rounded-3xl bg-[#121212] border border-white/10 space-y-3 relative">
-            <span className="text-2xl mb-2 block">🤖</span>
-            <span className="text-[10px] font-mono bg-[#1ed760]/20 text-[#1ed760] px-2 py-0.5 rounded">
-              PLANNED
-            </span>
-            <h3 className="font-display font-black text-lg uppercase text-white">AI Agent Copilot</h3>
-            <p className="text-xs text-gray-400 leading-relaxed">
-              No built-in AI in the inbox yet. Today you can connect Claude, ChatGPT or Cursor through the WhatFlow MCP connector to draft replies for a person to approve. Native suggested replies are planned.
+      <section aria-labelledby="catalog-sharing-heading" className="wf-section pb-0!" data-tone="paper">
+        <div className="wf-shell">
+          <div
+            className="relative overflow-hidden rounded-[28px] border-[2.5px] border-[var(--ink)] bg-[var(--green)] p-8 sm:p-12 shadow-[8px_8px_0_var(--ink)]"
+            data-reveal
+          >
+            <h2 id="catalog-sharing-heading" className="wf-h2 max-w-[16ch]">Share your product catalog in chat.</h2>
+            <p className="wf-lead text-[var(--ink)]!">
+              <b className="wf-leadin">Available now.</b> Share products from your Meta catalog in customer conversations, without leaving WhatFlow Inbox.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <Section tone="paper">
+        <SectionHead
+          center
+          kicker="Upcoming"
+          title="Up next for WhatFlow Inbox."
+          sub="Audience sync and AI assistance are planned enhancements. They are not available in the current inbox."
+        />
+
+        <div className="wf-grid wf-grid-2 mt-14 max-w-5xl mx-auto">
+          {UPCOMING.map((item, index) => (
+            <div key={item.title} className="wf-card gap-3" data-reveal style={{ "--d": `${index * 90}ms` } as CSSProperties}>
+              <span className="wf-pill self-start">{item.status}</span>
+              <h3 className="mt-2!">{item.title}</h3>
+              <p className="mt-0!">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
     </>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -8,21 +8,34 @@ import { getShopifyAppUrl } from "@/lib/shopify-app";
 
 export function WhatFlowLogo({ lightMode = true }: { lightMode?: boolean }) {
 	return (
-		<Link href="/" className="flex items-center gap-2.5 group" id="nav-logo">
-			<div className="w-10 h-10 rounded-xl bg-[#00D261] border-2 border-black shadow-[2px_2px_0px_#000] flex items-center justify-center relative p-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform overflow-hidden">
-				<Image
-					src="/logo.svg"
-					alt="WhatFlow Logo"
-					width={32}
-					height={32}
-					className="w-full h-full object-contain"
-				/>
-			</div>
-			<span className={`text-2xl font-display font-black tracking-tight uppercase ${lightMode ? "text-black" : "text-white"}`}>
-				WHATFLOW
+		<Link href="/" className="wf-logo" id="nav-logo" data-light={lightMode}>
+			<span className="wf-logo-mark">
+				<Image src="/brand/whatflow-mark.webp" unoptimized alt="" width={28} height={28} />
 			</span>
+			<span className="wf-logo-word">WhatFlow</span>
 		</Link>
 	);
+}
+
+const primary = [
+	{ href: "/features", label: "Features" },
+	{ href: "/inbox", label: "Inbox", live: true },
+	{ href: "/integrations", label: "Integrations" },
+	{ href: "/pricing", label: "Pricing" },
+	{ href: "/affiliate", label: "Affiliate" },
+];
+
+const resources = [
+	{ href: "/solutions", label: "Solutions", body: "Cart recovery, COD verification and tracking" },
+	{ href: "/compare", label: "Compare apps", body: "WhatFlow vs Wati, Interakt, Bitespeed and more" },
+	{ href: "/blog", label: "Blog and guides", body: "Strategies and tutorials for Shopify" },
+	{ href: "/case-studies", label: "Case studies", body: "Merchant stories and results" },
+	{ href: "/changelog", label: "Changelog", body: "New features, improvements and fixes" },
+	{ href: "/docs/mcp", label: "Connect your AI", body: "Use WhatFlow from Claude, ChatGPT and more" },
+];
+
+function isActive(pathname: string, href: string) {
+	return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 }
 
 export function Navbar() {
@@ -31,368 +44,100 @@ export function Navbar() {
 }
 
 function NavbarMenu({ pathname }: { pathname: string }) {
-	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-	const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
-	const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-	// Route-keyed remounts close menus before the new page is painted.
-	useEffect(() => () => {
-		if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+	const [mobileOpen, setMobileOpen] = useState(false);
+	const [resourcesOpen, setResourcesOpen] = useState(false);
+	const [scrolled, setScrolled] = useState(false);
+	const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+	const resourcesActive = resources.some((item) => isActive(pathname, item.href));
+
+	useEffect(() => {
+		const onScroll = () => setScrolled(window.scrollY > 8);
+		onScroll();
+		window.addEventListener("scroll", onScroll, { passive: true });
+		return () => {
+			window.removeEventListener("scroll", onScroll);
+			if (closeTimer.current) clearTimeout(closeTimer.current);
+		};
 	}, []);
 
-	const handleMouseEnter = () => {
-		if (dropdownTimeoutRef.current) {
-			clearTimeout(dropdownTimeoutRef.current);
-		}
-		setResourcesDropdownOpen(true);
-	};
+	useEffect(() => {
+		document.documentElement.classList.toggle("wf-menu-open", mobileOpen);
+		return () => document.documentElement.classList.remove("wf-menu-open");
+	}, [mobileOpen]);
 
-	const handleMouseLeave = () => {
-		dropdownTimeoutRef.current = setTimeout(() => {
-			setResourcesDropdownOpen(false);
-		}, 150);
+	const openResources = () => {
+		if (closeTimer.current) clearTimeout(closeTimer.current);
+		setResourcesOpen(true);
 	};
-
-	const isResourcesActive = pathname.startsWith("/blog") || pathname.startsWith("/case-studies") || pathname.startsWith("/changelog");
+	const closeResources = () => {
+		closeTimer.current = setTimeout(() => setResourcesOpen(false), 150);
+	};
 
 	return (
-		<header className="sticky top-0 z-50 bg-[#FAF7F0] border-b-[2.5px] border-black">
-			<div className="max-w-[1280px] mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
+		<header className="wf-nav" data-scrolled={scrolled || mobileOpen}>
+			<div className="wf-nav-inner">
 				<WhatFlowLogo />
 
-				{/* Desktop Navigation */}
-				<nav className="hidden lg:flex items-center gap-8">
-					<Link
-						href="/features"
-						className={`text-xs font-extrabold uppercase tracking-wider transition-colors ${
-							pathname === "/features" ? "text-[#00D261]" : "text-black hover:text-[#00D261]"
-						}`}
-					>
-						FEATURES
-					</Link>
-
-					<Link
-						href="/inbox"
-						className={`text-xs font-extrabold uppercase tracking-wider transition-colors flex items-center gap-1.5 ${
-							pathname === "/inbox" ? "text-[#00D261]" : "text-black hover:text-[#00D261]"
-						}`}
-					>
-						<span>INBOX</span>
-						<span className="w-1.5 h-1.5 rounded-full bg-[#00D261] animate-pulse" />
-					</Link>
-
-					<Link
-						href="/integrations"
-						className={`text-xs font-extrabold uppercase tracking-wider transition-colors ${
-							pathname.startsWith("/integrations") ? "text-[#00D261]" : "text-black hover:text-[#00D261]"
-						}`}
-					>
-						INTEGRATIONS
-					</Link>
-
-					<Link
-						href="/pricing"
-						className={`text-xs font-extrabold uppercase tracking-wider transition-colors ${
-							pathname === "/pricing" ? "text-[#00D261]" : "text-black hover:text-[#00D261]"
-						}`}
-					>
-						PRICING
-					</Link>
-
-					<Link
-						href="/affiliate"
-						className={`text-xs font-extrabold uppercase tracking-wider transition-colors ${
-							pathname === "/affiliate" ? "text-[#00D261]" : "text-black hover:text-[#00D261]"
-						}`}
-					>
-						AFFILIATE
-					</Link>
-
-					{/* Resources Dropdown */}
-					<div
-						className="relative"
-						onMouseEnter={handleMouseEnter}
-						onMouseLeave={handleMouseLeave}
-					>
+				<nav className="wf-nav-links" aria-label="Main">
+					{primary.map((item) => (
+						<Link key={item.href} href={item.href} className="wf-nav-link" aria-current={isActive(pathname, item.href) ? "page" : undefined}>
+							{item.label}
+							{item.live && <span className="wf-nav-live" aria-hidden="true" />}
+						</Link>
+					))}
+					<div className="wf-nav-drop" onMouseEnter={openResources} onMouseLeave={closeResources}>
 						<button
 							type="button"
-							onClick={() => setResourcesDropdownOpen((prev) => !prev)}
-							className={`text-xs font-extrabold uppercase tracking-wider flex items-center gap-1.5 py-2 transition-colors ${
-								isResourcesActive ? "text-[#00D261]" : "text-black hover:text-[#00D261]"
-							}`}
-							aria-expanded={resourcesDropdownOpen}
+							className="wf-nav-link"
+							aria-expanded={resourcesOpen}
+							aria-controls="wf-resources"
+							data-active={resourcesActive}
+							onClick={() => setResourcesOpen((open) => !open)}
 						>
-							<span>RESOURCES</span>
-							<svg
-								viewBox="0 0 24 24"
-								className={`w-3.5 h-3.5 fill-none stroke-current stroke-[2.5] transition-transform duration-200 ${
-									resourcesDropdownOpen ? "rotate-180 text-[#00D261]" : ""
-								}`}
-							>
-								<polyline points="6 9 12 15 18 9" />
-							</svg>
+							Resources
+							<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
 						</button>
-
-						{/* Dropdown Menu */}
-						{resourcesDropdownOpen && (
-							<div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 z-50">
-								<div className="neo-box bg-white p-2.5 rounded-xl shadow-[4px_4px_0px_0px_#000000] border-2 border-black space-y-1">
-									<Link
-										href="/solutions"
-										className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FAF7F0] transition-colors group"
-									>
-										<div className="w-8 h-8 rounded-lg bg-[#E8F8F0] border border-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#00D261] transition-colors">
-											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-												<path d="M12 2L2 7l10 5 10-5-10-5z" />
-												<path d="M2 17l10 5 10-5" />
-												<path d="M2 12l10 5 10-5" />
-											</svg>
-										</div>
-										<div>
-											<div className="text-xs font-extrabold uppercase text-black group-hover:text-[#0A6B56] transition-colors">
-												SOLUTIONS HUB
-											</div>
-											<div className="text-[11px] text-gray-500 font-medium">
-												Cart recovery, COD verification &amp; tracking
-											</div>
-										</div>
-									</Link>
-
-									<Link
-										href="/compare"
-										className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FAF7F0] transition-colors group"
-									>
-										<div className="w-8 h-8 rounded-lg bg-[#D5F5E3] border border-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#00D261] transition-colors">
-											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-												<circle cx="12" cy="12" r="10" />
-												<line x1="12" y1="8" x2="12" y2="12" />
-												<line x1="12" y1="16" x2="12.01" y2="16" />
-											</svg>
-										</div>
-										<div>
-											<div className="text-xs font-extrabold uppercase text-black group-hover:text-[#0A6B56] transition-colors">
-												APP COMPARISONS
-											</div>
-											<div className="text-[11px] text-gray-500 font-medium">
-												WhatFlow vs Wati, Interakt, Bitespeed &amp; more
-											</div>
-										</div>
-									</Link>
-
-									<Link
-										href="/blog"
-										className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FAF7F0] transition-colors group"
-									>
-										<div className="w-8 h-8 rounded-lg bg-[#E8F8F0] border border-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#00D261] transition-colors">
-											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-												<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-												<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-											</svg>
-										</div>
-										<div>
-											<div className="text-xs font-extrabold uppercase text-black group-hover:text-[#0A6B56] transition-colors">
-												BLOG &amp; GUIDES
-											</div>
-											<div className="text-[11px] text-gray-500 font-medium">
-												Strategies, tips, and tutorials for Shopify
-											</div>
-										</div>
-									</Link>
-
-									<Link
-										href="/case-studies"
-										className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FAF7F0] transition-colors group"
-									>
-										<div className="w-8 h-8 rounded-lg bg-[#FFF3CD] border border-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#FFC107] transition-colors">
-											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-												<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-											</svg>
-										</div>
-										<div>
-											<div className="text-xs font-extrabold uppercase text-black group-hover:text-[#0A6B56] transition-colors">
-												CASE STUDIES
-											</div>
-											<div className="text-[11px] text-gray-500 font-medium">
-												Merchant success stories &amp; revenue results
-											</div>
-										</div>
-									</Link>
-
-									<Link
-										href="/changelog"
-										className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FAF7F0] transition-colors group"
-									>
-										<div className="w-8 h-8 rounded-lg bg-[#E8F8F0] border border-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#00D261] transition-colors">
-											<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-												<circle cx="12" cy="12" r="9" />
-												<polyline points="12 7 12 12 15 14" />
-											</svg>
-										</div>
-										<div>
-											<div className="text-xs font-extrabold uppercase text-black group-hover:text-[#0A6B56] transition-colors">
-												PRODUCT CHANGELOG
-											</div>
-											<div className="text-[11px] text-gray-500 font-medium">
-												New features, improvements &amp; fixes
-											</div>
-										</div>
-									</Link>
-								</div>
-							</div>
-						)}
+						<div id="wf-resources" className="wf-nav-menu" data-open={resourcesOpen} hidden={!resourcesOpen}>
+							{resources.map((item) => (
+								<Link key={item.href} href={item.href} className="wf-nav-menu-item" aria-current={isActive(pathname, item.href) ? "page" : undefined}>
+									<span>
+										<b>{item.label}</b>
+										<small>{item.body}</small>
+									</span>
+								</Link>
+							))}
+						</div>
 					</div>
 				</nav>
 
-				{/* Desktop Right CTA */}
-				<div className="hidden lg:flex items-center gap-3">
-					<a
-						href={getShopifyAppUrl("navbar_cta")}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="neo-btn bg-[#00D261] text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg flex items-center gap-2 hover:bg-[#00be57]"
-					>
-						INSTALL APP
-					</a>
-				</div>
+				<a href={getShopifyAppUrl("navbar_cta")} target="_blank" rel="noopener noreferrer" className="wf-btn wf-btn-green wf-nav-cta">
+					Install app
+				</a>
 
-				{/* Mobile Hamburger Button */}
-				<div className="flex lg:hidden items-center gap-2">
-					<button
-						type="button"
-						onClick={() => setMobileMenuOpen((prev) => !prev)}
-						className="neo-box p-2 bg-white text-black rounded-lg"
-						aria-label="Toggle navigation menu"
-					>
-						{mobileMenuOpen ? (
-							<svg viewBox="0 0 24 24" className="w-6 h-6 fill-none stroke-current stroke-[2.5]" strokeLinecap="round" strokeLinejoin="round">
-								<line x1="18" y1="6" x2="6" y2="18" />
-								<line x1="6" y1="6" x2="18" y2="18" />
-							</svg>
-						) : (
-							<svg viewBox="0 0 24 24" className="w-6 h-6 fill-none stroke-current stroke-[2.5]" strokeLinecap="round" strokeLinejoin="round">
-								<line x1="3" y1="12" x2="21" y2="12" />
-								<line x1="3" y1="6" x2="21" y2="6" />
-								<line x1="3" y1="18" x2="21" y2="18" />
-							</svg>
-						)}
-					</button>
-				</div>
+				<button
+					type="button"
+					className="wf-nav-burger"
+					aria-expanded={mobileOpen}
+					aria-controls="wf-mobile-menu"
+					aria-label={mobileOpen ? "Close menu" : "Open menu"}
+					onClick={() => setMobileOpen((open) => !open)}
+				>
+					<span /><span />
+				</button>
 			</div>
 
-			{/* Mobile Menu Dropdown */}
-			{mobileMenuOpen && (
-				<div className="lg:hidden bg-[#FAF7F0] border-t-2 border-black px-4 py-6 space-y-4 shadow-lg animate-slide-down">
-					<div className="flex flex-col space-y-3">
-						<Link
-							href="/features"
-							className={`text-sm font-extrabold uppercase tracking-wider px-3 py-2 rounded-lg transition-colors ${
-								pathname === "/features" ? "bg-[#00D261] text-black" : "text-black hover:bg-white"
-							}`}
-						>
-							FEATURES
+			<div id="wf-mobile-menu" className="wf-mobile" data-open={mobileOpen} hidden={!mobileOpen}>
+				<nav aria-label="Mobile">
+					{[...primary, ...resources].map((item, index) => (
+						<Link key={item.href} href={item.href} className="wf-mobile-link" style={{ "--i": index } as React.CSSProperties} aria-current={isActive(pathname, item.href) ? "page" : undefined}>
+							{item.label}
 						</Link>
-						<Link
-							href="/inbox"
-							className={`text-sm font-extrabold uppercase tracking-wider px-3 py-2 rounded-lg transition-colors flex items-center justify-between ${
-								pathname === "/inbox" ? "bg-[#00D261] text-black" : "text-black hover:bg-white"
-							}`}
-						>
-							<span>INBOX</span>
-							<span className="text-[10px] bg-black text-[#00D261] px-2 py-0.5 rounded-full font-bold">2-WAY</span>
-						</Link>
-						<Link
-							href="/integrations"
-							className={`text-sm font-extrabold uppercase tracking-wider px-3 py-2 rounded-lg transition-colors ${
-								pathname.startsWith("/integrations") ? "bg-[#00D261] text-black" : "text-black hover:bg-white"
-							}`}
-						>
-							INTEGRATIONS
-						</Link>
-						<Link
-							href="/pricing"
-							className={`text-sm font-extrabold uppercase tracking-wider px-3 py-2 rounded-lg transition-colors ${
-								pathname === "/pricing" ? "bg-[#00D261] text-black" : "text-black hover:bg-white"
-							}`}
-						>
-							PRICING
-						</Link>
-						<Link
-							href="/affiliate"
-							className={`text-sm font-extrabold uppercase tracking-wider px-3 py-2 rounded-lg transition-colors ${
-								pathname === "/affiliate" ? "bg-[#00D261] text-black" : "text-black hover:bg-white"
-							}`}
-						>
-							AFFILIATE
-						</Link>
-
-						<div className="pt-2 border-t border-black/10">
-							<div className="text-[10px] font-black uppercase text-gray-500 tracking-widest px-3 mb-2">
-								SOLUTIONS &amp; RESOURCES
-							</div>
-							<Link
-								href="/solutions"
-								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
-							>
-								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-									<path d="M12 2L2 7l10 5 10-5-10-5z" />
-									<path d="M2 17l10 5 10-5" />
-									<path d="M2 12l10 5 10-5" />
-								</svg>
-								<span>SOLUTIONS HUB</span>
-							</Link>
-							<Link
-								href="/compare"
-								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
-							>
-								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-									<circle cx="12" cy="12" r="10" />
-									<line x1="12" y1="8" x2="12" y2="12" />
-								</svg>
-								<span>COMPARE ALTERNATIVES</span>
-							</Link>
-							<Link
-								href="/blog"
-								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
-							>
-								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-									<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-									<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-								</svg>
-								<span>BLOG &amp; GUIDES</span>
-							</Link>
-							<Link
-								href="/case-studies"
-								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
-							>
-								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-									<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-								</svg>
-								<span>CASE STUDIES</span>
-							</Link>
-							<Link
-								href="/changelog"
-								className="flex items-center gap-3 px-3 py-2 text-sm font-extrabold uppercase text-black hover:bg-white rounded-lg"
-							>
-								<svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current stroke-2 text-black" strokeLinecap="round" strokeLinejoin="round">
-									<circle cx="12" cy="12" r="9" />
-									<polyline points="12 7 12 12 15 14" />
-								</svg>
-								<span>CHANGELOG</span>
-							</Link>
-						</div>
-					</div>
-
-					<div className="pt-4 border-t-2 border-black">
-						<a
-							href={getShopifyAppUrl("mobile_nav_cta")}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="neo-btn w-full bg-[#00D261] text-black font-extrabold text-sm uppercase tracking-wider py-3.5 rounded-lg flex items-center justify-center gap-2"
-						>
-							INSTALL APP ON SHOPIFY
-						</a>
-					</div>
-				</div>
-			)}
+					))}
+				</nav>
+				<a href={getShopifyAppUrl("mobile_nav_cta")} target="_blank" rel="noopener noreferrer" className="wf-btn wf-btn-green wf-mobile-cta">
+					Install on Shopify
+				</a>
+			</div>
 		</header>
 	);
 }

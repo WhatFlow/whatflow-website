@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { Hl, Section, SectionHead } from "@/components/site/PageKit";
 import { WhatsAppBubble } from "../features/WhatsAppBubble";
 
 type BuilderTab = "buttons" | "cta" | "list" | "carousel";
@@ -9,28 +10,22 @@ export function InteractiveBuilderShowcase() {
   const [activeTab, setActiveTab] = useState<BuilderTab>("buttons");
 
   return (
-    <section className="py-20 px-4 sm:px-6 bg-[#181818] text-white border-b border-white/10">
-      <div className="max-w-[1280px] mx-auto space-y-12">
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-gray-300 text-xs font-bold uppercase tracking-wider inline-block">
-            4-IN-1 INTERACTIVE TOOL
-          </div>
-          <h2 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tight text-white">
-            INTERACTIVE BUILDER: <span className="text-[#1ed760]">ZERO CODE REQUIRED.</span>
-          </h2>
-          <p className="text-gray-400 text-base sm:text-lg font-normal">
-            Construct tap-friendly WhatsApp interactive components right inside the composer.
-            Higher engagement, fewer typos, and higher checkout conversion.
-          </p>
-        </div>
+    <Section tone="paper">
+      <SectionHead
+        center
+        kicker="4-in-1 interactive tool"
+        title={<>Interactive builder: <Hl>zero code required.</Hl></>}
+        sub={<>Construct tap-friendly WhatsApp interactive components right inside the composer. Higher engagement, fewer typos, and higher checkout conversion.</>}
+      />
+      <div className="mt-14 space-y-10">
 
         {/* 4 Tabs Selector */}
-        <div className="flex flex-wrap items-center justify-center gap-2 max-w-3xl mx-auto">
+        <div className="ib-tabs max-w-3xl mx-auto" data-reveal>
           {[
-            { id: "buttons", label: "Quick Reply Buttons", icon: "🔘" },
-            { id: "cta", label: "CTA (Phone & Web URL)", icon: "🔗" },
-            { id: "list", label: "Section List Menu", icon: "📋" },
-            { id: "carousel", label: "Product Carousel", icon: "🛍️" },
+            { id: "buttons", label: "Quick reply buttons" },
+            { id: "cta", label: "CTA (phone & web URL)" },
+            { id: "list", label: "Section list menu" },
+            { id: "carousel", label: "Product carousel" },
           ].map((tab) => {
             const isSelected = activeTab === tab.id;
             return (
@@ -38,13 +33,9 @@ export function InteractiveBuilderShowcase() {
                 key={tab.id}
                 type="button"
                 onClick={() => setActiveTab(tab.id as BuilderTab)}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                  isSelected
-                    ? "bg-[#1ed760] text-black shadow-[0_0_16px_rgba(30,215,96,0.3)] scale-105"
-                    : "bg-[#121212] text-gray-300 hover:bg-[#222222] border border-white/10"
-                }`}
+                aria-pressed={isSelected}
+                className="ib-tab"
               >
-                <span>{tab.icon}</span>
                 <span>{tab.label}</span>
               </button>
             );
@@ -52,27 +43,24 @@ export function InteractiveBuilderShowcase() {
         </div>
 
         {/* Builder Display Card */}
-        <div className="bg-[#121212] p-6 sm:p-10 rounded-3xl border border-white/15 shadow-[0_10px_30px_rgba(0,0,0,0.5)] grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div data-reveal className="ib-device p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left: Spec Breakdown */}
-          <div className="lg:col-span-6 space-y-5">
+          <div key={activeTab} className="ib-swap lg:col-span-6 space-y-5">
             {activeTab === "buttons" && (
               <>
-                <span className="text-xs font-mono bg-[#1ed760]/20 text-[#1ed760] px-2.5 py-1 rounded">
-                  Quick-Reply Buttons
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white">
-                  Quick Reply Buttons (Up to 3)
+                <h3 className="text-2xl sm:text-4xl font-display font-bold tracking-[-0.035em] text-white">
+                  Quick reply buttons (up to 3)
                 </h3>
-                <p className="text-sm text-gray-400 leading-relaxed">
+                <p className="text-[15px] text-white/65 leading-relaxed">
                   Present up to 3 interactive pill buttons underneath any message. When the customer taps a button,
-                  their selection sends back instantly as a message — eliminating typing on mobile keyboards.
+                  their selection sends back instantly as a message, so they never have to type on a mobile keyboard.
                 </p>
-                <div className="space-y-2 text-xs text-gray-300">
+                <div className="space-y-2 text-xs text-white/75">
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✓</span> Maximum 20 characters per button label
+                    <span aria-hidden="true" className="text-[var(--green)]">✓</span> Maximum 20 characters per button label
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✓</span> Customer selection registers immediately in chat
+                    <span aria-hidden="true" className="text-[var(--green)]">✓</span> Customer selection registers immediately in chat
                   </div>
                 </div>
               </>
@@ -80,22 +68,19 @@ export function InteractiveBuilderShowcase() {
 
             {activeTab === "cta" && (
               <>
-                <span className="text-xs font-mono bg-[#1ed760]/20 text-[#1ed760] px-2.5 py-1 rounded">
-                  Action Links &amp; Phone Calls
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white">
-                  Call-to-Action Buttons
+                <h3 className="text-2xl sm:text-4xl font-display font-bold tracking-[-0.035em] text-white">
+                  Call-to-action buttons
                 </h3>
-                <p className="text-sm text-gray-400 leading-relaxed">
+                <p className="text-[15px] text-white/65 leading-relaxed">
                   Launch the phone dialer or open an external browser URL directly from WhatsApp.
                   Dynamically personalize the URL with pre-filled customer tokens or coupon codes.
                 </p>
-                <div className="space-y-2 text-xs text-gray-300">
+                <div className="space-y-2 text-xs text-white/75">
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✓</span> Supports HTTPS checkout recovery links
+                    <span aria-hidden="true" className="text-[var(--green)]">✓</span> Supports HTTPS checkout recovery links
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✓</span> Supports direct one-tap phone dialing
+                    <span aria-hidden="true" className="text-[var(--green)]">✓</span> Supports direct one-tap phone dialing
                   </div>
                 </div>
               </>
@@ -103,22 +88,19 @@ export function InteractiveBuilderShowcase() {
 
             {activeTab === "list" && (
               <>
-                <span className="text-xs font-mono bg-[#1ed760]/20 text-[#1ed760] px-2.5 py-1 rounded">
-                  Multi-Option Menu List
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white">
-                  Interactive Section List Menu
+                <h3 className="text-2xl sm:text-4xl font-display font-bold tracking-[-0.035em] text-white">
+                  Interactive section list menu
                 </h3>
-                <p className="text-sm text-gray-400 leading-relaxed">
+                <p className="text-[15px] text-white/65 leading-relaxed">
                   When you have more than 3 options, Section Lists provide a native WhatsApp bottom sheet
                   with up to 10 organized rows, each with title and description.
                 </p>
-                <div className="space-y-2 text-xs text-gray-300">
+                <div className="space-y-2 text-xs text-white/75">
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✓</span> Organized by custom section titles
+                    <span aria-hidden="true" className="text-[var(--green)]">✓</span> Organized by custom section titles
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✓</span> Cleanest format for FAQs and product catalogs
+                    <span aria-hidden="true" className="text-[var(--green)]">✓</span> Cleanest format for FAQs and product catalogs
                   </div>
                 </div>
               </>
@@ -126,22 +108,19 @@ export function InteractiveBuilderShowcase() {
 
             {activeTab === "carousel" && (
               <>
-                <span className="text-xs font-mono bg-[#1ed760]/20 text-[#1ed760] px-2.5 py-1 rounded">
-                  Product Showcase Cards
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-display font-black uppercase text-white">
-                  Product Carousel Cards
+                <h3 className="text-2xl sm:text-4xl font-display font-bold tracking-[-0.035em] text-white">
+                  Product carousel cards
                 </h3>
-                <p className="text-sm text-gray-400 leading-relaxed">
+                <p className="text-[15px] text-white/65 leading-relaxed">
                   Showcase multiple products side-by-side. Each card contains a high-res image,
                   title, price, description, and direct &quot;Buy Now&quot; button.
                 </p>
-                <div className="space-y-2 text-xs text-gray-300">
+                <div className="space-y-2 text-xs text-white/75">
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✓</span> Swipeable native card UI on iOS and Android
+                    <span aria-hidden="true" className="text-[var(--green)]">✓</span> Swipeable native card UI on iOS and Android
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[#1ed760]">✓</span> Synchronizes with Shopify product images &amp; pricing
+                    <span aria-hidden="true" className="text-[var(--green)]">✓</span> Synchronizes with Shopify product images &amp; pricing
                   </div>
                 </div>
               </>
@@ -149,12 +128,12 @@ export function InteractiveBuilderShowcase() {
           </div>
 
           {/* Right: Live Mockup */}
-          <div className="lg:col-span-6 bg-[#0b141a] p-6 sm:p-8 rounded-2xl border border-white/10">
+          <div key={`mock-${activeTab}`} className="ib-swap ib-chat lg:col-span-6 p-6 sm:p-8">
             {activeTab === "buttons" && (
               <WhatsAppBubble
                 sender="bot"
                 time="11:30 AM"
-                headerBadge="ORDER #1042"
+                headerBadge="Order #1042"
                 buttons={[
                   { text: "Confirm My Order (COD)", highlight: true },
                   { text: "Change Address" },
@@ -169,7 +148,7 @@ export function InteractiveBuilderShowcase() {
               <WhatsAppBubble
                 sender="bot"
                 time="11:31 AM"
-                headerBadge="SPECIAL PROMO"
+                headerBadge="Special promo"
                 buttons={[
                   { text: "Claim 15% Off Checkout 🛍️", highlight: true },
                   { text: "Call Support (+1 800 555 0199)" },
@@ -183,7 +162,7 @@ export function InteractiveBuilderShowcase() {
               <WhatsAppBubble
                 sender="bot"
                 time="11:32 AM"
-                headerBadge="HELP MENU"
+                headerBadge="Help menu"
                 buttons={[{ text: "Browse Options (10 Available) 📋", highlight: true }]}
               >
                 Tap below to choose how our customer support team can assist you:
@@ -207,6 +186,6 @@ export function InteractiveBuilderShowcase() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { COMPARISON_CATEGORIES, getComparisons } from "@/lib/comparisons-api";
 import { SITE_URL } from "@/lib/schema-org";
+import "./compare.css";
 
 type SearchParams = Promise<{ category?: string; page?: string; q?: string }>;
 export async function generateMetadata({ searchParams }: { searchParams: SearchParams }): Promise<Metadata> {
@@ -33,48 +35,53 @@ export default async function ComparePage({ searchParams }: { searchParams: Sear
   };
   const pageUrl = (n: number) => `/compare?${new URLSearchParams({ ...(category ? { category } : {}), ...(query ? { q: query } : {}), page: String(n) })}`;
 
-  return <main className="bg-[#FAF7F0] text-black min-h-screen">
-    <header className="border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-24">
-      <div className="max-w-5xl mx-auto space-y-6">
-        <span className="neo-pill bg-[#00D261] px-3 py-1 text-xs font-black uppercase">The comparison library</span>
-        <h1 className="font-display text-4xl sm:text-6xl font-black uppercase tracking-tight max-w-4xl">Find the right WhatsApp tool for your store.</h1>
-        <p className="text-lg text-gray-700 max-w-3xl">Compare provider pricing, inbox costs, Shopify integration and customer workflows. Explore WhatsApp alongside email, SMS, push and social channels, with practical cost examples.</p>
-        <p className="text-sm text-gray-600 max-w-3xl">These guides are published by WhatFlow. Each article names its author, links to primary sources and explains when the other product may be a better fit.</p>
-      </div>
-    </header>
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-      <nav aria-label="Comparison categories" className="flex flex-wrap gap-3 mb-8">
-        <Link href={categoryUrl()} aria-current={!category ? "page" : undefined} className={`neo-pill px-4 py-2 text-sm font-bold ${!category ? "bg-[#00D261]" : "bg-white"}`}>All comparisons</Link>
-        {Object.entries(COMPARISON_CATEGORIES).map(([key, label]) => <Link key={key} href={categoryUrl(key)} aria-current={category === key ? "page" : undefined} className={`neo-pill px-4 py-2 text-sm font-bold ${category === key ? "bg-[#00D261]" : "bg-white"}`}>{label}</Link>)}
+  return <div className="bg-[var(--paper)] text-black min-h-screen">
+    <div className="wf-shell wf-directory">
+      <header className="wf-directory-header">
+        <h1>Find the right WhatsApp tool for your store.</h1>
+        <p>Compare provider pricing, inbox costs, Shopify integration and customer workflows.</p>
+        <p>These guides are published by WhatFlow. Each article names its author, links to primary sources and explains when the other product may be a better fit.</p>
+      </header>
+      <div className="wf-directory-body">
+        <aside className="wf-directory-rail" aria-label="Filter comparisons">
+          <h2>Browse by topic</h2>
+      <nav aria-label="Comparison categories" className="cmp-filter" data-reveal>
+        <Link href={categoryUrl()} aria-current={!category ? "page" : undefined}>All comparisons</Link>
+        {Object.entries(COMPARISON_CATEGORIES).map(([key, label]) => <Link key={key} href={categoryUrl(key)} aria-current={category === key ? "page" : undefined}>{label}</Link>)}
       </nav>
-      <form {...{ toolname: "search_whatflow_comparisons", tooldescription: "Search WhatFlow provider and messaging channel comparisons." }} action="/compare" method="get" role="search" className="flex flex-wrap gap-3 mb-6">
+        </aside>
+        <section className="wf-directory-results" aria-label="Comparison results">
+      <form {...{ toolname: "search_whatflow_comparisons", tooldescription: "Search WhatFlow provider and messaging channel comparisons." }} action="/compare" method="get" role="search" className="cmp-search" data-reveal>
         {category && <input type="hidden" name="category" value={category} />}
         <label htmlFor="comparison-search" className="sr-only">Search comparisons</label>
-        <input key={query || "all"} id="comparison-search" type="search" name="q" defaultValue={query} placeholder="Search providers, pricing or workflows" maxLength={120} className="bg-white border-2 border-black rounded-lg px-4 py-3 flex-1 min-w-0" />
-        <button type="submit" className="neo-btn bg-[#00D261] px-5 py-3 rounded-lg font-bold">Search</button>
-        {query && <Link href={category ? `/compare?category=${category}` : "/compare"} className="self-center underline">Clear</Link>}
+        <input key={query || "all"} id="comparison-search" type="search" name="q" defaultValue={query} placeholder="Search providers, pricing or workflows" maxLength={120} />
+        <button type="submit" className="wf-btn wf-btn-green">Search</button>
+        {query && <Link href={category ? `/compare?category=${category}` : "/compare"}>Clear</Link>}
       </form>
-      <p role="status" className="text-sm text-gray-600 mb-6">{data.totalDocs} {data.totalDocs === 1 ? "guide" : "guides"}{query && <> matching “{query}”</>}</p>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {data.docs.map(item => <article key={item.id} className="neo-box bg-white rounded-2xl p-6 flex flex-col gap-4">
-          {(item.imageUrl || item.coverImage?.url) && <Link href={`/compare/${item.slug}`} tabIndex={-1} aria-hidden="true" className="-mx-6 -mt-6 mb-2 block overflow-hidden rounded-t-2xl border-b-2 border-black">
+      <p role="status" className="mt-6 mb-8 text-sm font-semibold text-[var(--text-muted)]">{data.totalDocs} {data.totalDocs === 1 ? "guide" : "guides"}{query && <> matching “{query}”</>}</p>
+      <div className="wf-grid wf-grid-2">
+        {data.docs.map((item, index) => <article key={item.id} className="wf-card cmp-card" data-hover data-reveal style={{ "--d": `${(index % 3) * 80}ms` } as CSSProperties}>
+          {(item.imageUrl || item.coverImage?.url) && <Link href={`/compare/${item.slug}`} tabIndex={-1} aria-hidden="true" className="cmp-card-img">
             {/* Owned CMS cover, shared by the article and its social preview. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={item.imageUrl || item.coverImage?.url} alt="" width={1200} height={630} loading="lazy" className="w-full h-auto aspect-[1200/630] object-cover" />
           </Link>}
-          <span className="text-xs font-bold uppercase text-[#0A6B56]">{COMPARISON_CATEGORIES[item.category]}</span>
-          <h2 className="font-display font-black text-xl leading-snug"><Link href={`/compare/${item.slug}`} className="hover:underline">{item.title}</Link></h2>
-          <p className="text-sm text-gray-600 leading-relaxed flex-1">{item.excerpt}</p>
-          <p className="text-xs text-gray-500">By {item.author}</p>
-          <Link href={`/compare/${item.slug}`} className="neo-btn bg-[#00D261] text-sm font-extrabold p-3 rounded-lg text-center">Read the comparison →</Link>
+          <div className="cmp-card-body">
+            <h2><Link href={`/compare/${item.slug}`}>{item.title}</Link></h2>
+            <p className="flex-1"><b className="wf-leadin">{COMPARISON_CATEGORIES[item.category]}.</b> {item.excerpt}</p>
+            <p className="cmp-by">By {item.author}</p>
+            <Link href={`/compare/${item.slug}`} className="wf-btn wf-btn-green wf-btn-sm">Read the comparison</Link>
+          </div>
         </article>)}
       </div>
-      {!data.docs.length && <p className="py-12">{query ? "No matching comparisons. Try fewer words or another category." : "No published comparisons in this category yet."}</p>}
-      {data.totalPages > 1 && <nav aria-label="Comparison pages" className="flex gap-6 justify-center mt-12">
-        {data.page > 1 && <Link href={pageUrl(data.page - 1)} className="underline">Previous</Link>}
+      {!data.docs.length && <div className="wf-card mx-auto max-w-xl items-center py-12 text-center" data-reveal><p className="cmp-empty">{query ? "No matching comparisons. Try fewer words or another category." : "No published comparisons in this category yet."}</p></div>}
+      {data.totalPages > 1 && <nav aria-label="Comparison pages" className="cmp-pages">
+        {data.page > 1 && <Link href={pageUrl(data.page - 1)} className="wf-btn wf-btn-ghost wf-btn-sm">Previous</Link>}
         <span>Page {data.page} of {data.totalPages}</span>
-        {data.hasNextPage && <Link href={pageUrl(data.page + 1)} className="underline">Next</Link>}
+        {data.hasNextPage && <Link href={pageUrl(data.page + 1)} className="wf-btn wf-btn-ghost wf-btn-sm">Next</Link>}
       </nav>}
-    </section>
-  </main>;
+        </section>
+      </div>
+    </div>
+  </div>;
 }

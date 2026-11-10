@@ -14,8 +14,12 @@ import { BroadcastWizardShowcase } from "@/components/inbox-page/BroadcastWizard
 import { BroadcastAnalyticsDashboard } from "@/components/inbox-page/BroadcastAnalyticsDashboard";
 import { SettingsAndMetaSync } from "@/components/inbox-page/SettingsAndMetaSync";
 import { InboxRoadmap } from "@/components/inbox-page/InboxRoadmap";
-import { InboxCTA } from "@/components/inbox-page/InboxCTA";
 import { ReviewsSection } from "@/components/ReviewsSection";
+import { InboxZoom } from "@/components/landing/InboxZoom";
+import "@/components/landing/landing.css";
+import "@/components/landing/primitives.css";
+import "@/components/landing/sections.css";
+import "@/components/inbox-page/inbox.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/inbox" },
@@ -35,50 +39,28 @@ export const metadata: Metadata = {
 
 export default function InboxPage() {
   return (
-    <div className="min-h-screen bg-[#121212] text-white">
-      {/* 1. Hero Section */}
+    <div className="lp ib">
       <InboxHero />
-
-      {/* 2. 1-Click Shopify SSO Security Flow */}
-      <SSOFlowDiagram />
-
-      {/* 3. Interactive Live 3-Pane Inbox Workbench */}
       <LiveConversationMock />
-
-      {/* 4. 11 Message Bubble Types Gallery */}
-      <MessageTypeGallery />
-
-      {/* 5. Next-Gen Composer, Slash Commands & 24h Care Window */}
+      <CustomerDrawerShowcase />
       <ComposerAndQuickReplies />
 
-      {/* 6. 4-in-1 Interactive Builder Showcase */}
-      <InteractiveBuilderShowcase />
+      <InboxZoom />
+      <SSOFlowDiagram />
 
-      {/* 7. WhatsApp Flows & Meta Pre-Approved Template Picker */}
-      <TemplateAndFlowsManager />
+      <details className="ib-tools">
+        <summary className="wf-shell">Explore more Inbox tools</summary>
+        <MessageTypeGallery />
+        <InteractiveBuilderShowcase />
+        <TemplateAndFlowsManager />
+        <BroadcastWizardShowcase />
+        <BroadcastAnalyticsDashboard />
+        <SettingsAndMetaSync />
+      </details>
 
-      {/* 8. Shopify 360 Customer Profile Drawer */}
-      <CustomerDrawerShowcase />
-
-      {/* 9. 4-Step Broadcast Campaign Wizard */}
-      <BroadcastWizardShowcase />
-
-      {/* 10. Granular Broadcast Delivery Audit & Analytics */}
-      <BroadcastAnalyticsDashboard />
-
-      {/* 11. Team Settings & Meta Business Profile Sync */}
-      <SettingsAndMetaSync />
-
-      {/* 12. Upcoming Features Roadmap */}
       <InboxRoadmap />
-
       <LatestUpdates app="business-api" keywords={["inbox"]} heading="Latest Team Inbox updates" />
-
-      {/* 13. Real Merchant Reviews (Payload Collection) */}
       <ReviewsSection darkMode={true} />
-
-      {/* 14. High-Converting Bottom Conversion Banner */}
-      <InboxCTA />
     </div>
   );
 }

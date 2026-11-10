@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
+import { PageHero, Section as PageSection } from "@/components/site/PageKit";
+import "./mcp.css";
 
 export const metadata: Metadata = {
   title: "Connect Claude, ChatGPT or Cursor to WhatFlow (MCP) | WhatFlow",
@@ -81,20 +83,20 @@ const PERMISSIONS = [
 
 function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
   return (
-    <div id={id} className="scroll-mt-24">
-      <h2 className="text-2xl font-display font-black uppercase text-black mb-3">{title}</h2>
-      <div className="space-y-4 text-sm leading-relaxed text-gray-700">{children}</div>
+    <div id={id} className="mcp-section" data-reveal>
+      <h2>{title}</h2>
+      <div className="mcp-body">{children}</div>
     </div>
   );
 }
 
 function Code({ children }: { children: ReactNode }) {
-  return <code className="bg-gray-100 px-1 py-0.5 rounded text-xs font-mono text-black break-all">{children}</code>;
+  return <code className="mcp-code">{children}</code>;
 }
 
 function CodeBlock({ children }: { children: string }) {
   return (
-    <pre className="bg-[#091E17] text-[#A7F3D0] text-xs font-mono p-4 rounded-xl border-[2px] border-black overflow-x-auto">
+    <pre tabIndex={0} className="mcp-pre">
       <code>{children}</code>
     </pre>
   );
@@ -102,21 +104,23 @@ function CodeBlock({ children }: { children: string }) {
 
 function Steps({ items }: { items: ReactNode[] }) {
   return (
-    <ol className="list-decimal pl-5 space-y-2">
+    <ol className="mcp-steps">
       {items.map((item, index) => <li key={index}>{item}</li>)}
     </ol>
   );
 }
 
+const TOOL_TONES = ["var(--mint)", "var(--sky)", "#fff1c2", "var(--pink)", "var(--lilac)"];
+
 function ToolTable({ heading, tools }: { heading: string; tools: Array<[string, string]> }) {
   return (
-    <div className="space-y-3">
-      <h3 className="font-display font-black text-lg uppercase text-black">{heading}</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {tools.map(([name, description]) => (
-          <div key={name} className="border-[2px] border-black rounded-xl p-4 bg-[#FAF7F0]">
-            <div className="font-mono text-xs font-extrabold text-[#0A6B56] mb-1">{name}</div>
-            <p className="text-xs text-gray-700 leading-relaxed">{description}</p>
+    <div>
+      <h3>{heading}</h3>
+      <div className="mcp-tools">
+        {tools.map(([name, description], index) => (
+          <div key={name} className="mcp-tool" style={{ "--mcp-tone": TOOL_TONES[index % TOOL_TONES.length] } as CSSProperties}>
+            <code>{name}</code>
+            <p>{description}</p>
           </div>
         ))}
       </div>
@@ -126,43 +130,51 @@ function ToolTable({ heading, tools }: { heading: string; tools: Array<[string, 
 
 export default function McpDocsPage() {
   return (
-    <div className="min-h-screen bg-[#FAF7F0]">
-      {/* ─── Hero ─── */}
-      <section className="bg-[#FAF7F0] border-b-[2.5px] border-black px-4 sm:px-6 py-16 sm:py-20">
-        <div className="max-w-[960px] mx-auto">
-          <div className="neo-box inline-block bg-[#00D261] px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-black mb-4">
-            HELP &amp; DOCS · AI CONNECTIONS
-          </div>
-          <h1 className="text-[40px] sm:text-[56px] lg:text-[68px] font-display font-black uppercase text-black tracking-tight leading-none mb-6">
-            CONNECT YOUR AI <br />
-            <span className="text-stroke-green">TO WHATFLOW.</span>
-          </h1>
-          <p className="text-base sm:text-lg text-gray-700 font-medium max-w-2xl">
+    <div className="min-h-screen bg-[var(--paper)]">
+      <PageHero
+        title="Connect your AI to WhatFlow."
+        accent={["WhatFlow"]}
+        sub={
+          <p>
             Let Claude, ChatGPT or Cursor read your WhatsApp chats, draft replies, send approved templates, look up Shopify orders
             and check your messaging results. It works over MCP (Model Context Protocol), and connecting is free.
           </p>
-          <div className="mt-6 neo-box bg-white rounded-xl p-4 sm:p-5 max-w-2xl">
-            <div className="text-[10px] font-black uppercase tracking-wider text-gray-500 mb-1">MCP server URL</div>
-            <div className="font-mono text-sm sm:text-base font-extrabold text-black break-all">{MCP_URL}</div>
+        }
+        actions={
+          <>
+            <a href="#claude" className="wf-btn wf-btn-green">Start setup</a>
+            <a href="#tools" className="wf-btn wf-btn-ghost">See what the AI can do</a>
+          </>
+        }
+      >
+        <div className="mcp-demo">
+          <div className="mcp-url">
+            <span className="mcp-url-label">MCP server URL</span>
+            <code>{MCP_URL}</code>
+          </div>
+          <div className="mcp-chat" aria-hidden="true">
+            <span className="mcp-chat-you">Which WhatsApp chats are unread?</span>
+            <span className="mcp-chat-tool">list_conversations</span>
+            <span className="mcp-chat-ai">Reading your Live Inbox…</span>
           </div>
         </div>
-      </section>
+      </PageHero>
 
       {/* ─── Body ─── */}
-      <section className="px-4 sm:px-6 py-16">
-        <div className="max-w-[960px] mx-auto space-y-8">
-          <nav aria-label="On this page" className="neo-box bg-white rounded-2xl p-6">
-            <div className="text-xs font-extrabold uppercase tracking-wider text-[#0A6B56] mb-3">On this page</div>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm font-semibold">
+      <PageSection tone="paper">
+        <div className="mcp-layout">
+          <nav aria-label="On this page" className="mcp-toc">
+            <span className="mcp-toc-title">On this page</span>
+            <ul>
               {SECTIONS.map(([id, label]) => (
-                <li key={id}><a href={`#${id}`} className="text-black hover:text-[#0A6B56] underline-offset-2 hover:underline">{label}</a></li>
+                <li key={id}><a href={`#${id}`}>{label}</a></li>
               ))}
             </ul>
           </nav>
 
-          <div className="neo-box bg-white p-8 sm:p-14 rounded-2xl space-y-12 text-[#222]">
+          <div className="mcp-content">
             <Section id="before-you-start" title="Before you start">
-              <ul className="list-disc pl-5 space-y-2">
+              <ul>
                 <li>Install the WhatFlow app on your Shopify store and connect your WhatsApp number.</li>
                 <li>
                   Open <strong>AI Connections</strong> in the WhatFlow Shopify app. It shows the MCP server URL, lets you create a
@@ -180,7 +192,7 @@ export default function McpDocsPage() {
                 <>In Claude, open <strong>Settings → Connectors</strong>.</>,
                 <>Choose <strong>Add custom connector</strong>.</>,
                 <>Name it <strong>WhatFlow</strong> and paste the URL <Code>{MCP_URL}</Code>.</>,
-                <>Click <strong>Connect</strong>. A WhatFlow sign-in page opens: <a href="#sign-in" className="font-bold text-[#0A6B56] underline">sign in</a> and choose what Claude may do.</>,
+                <>Click <strong>Connect</strong>. A WhatFlow sign-in page opens: <a href="#sign-in">sign in</a> and choose what Claude may do.</>,
                 <>Back in Claude, enable the WhatFlow connector in a chat and ask something like &quot;Which WhatsApp chats are unread?&quot;</>,
               ]} />
             </Section>
@@ -190,7 +202,7 @@ export default function McpDocsPage() {
                 <>Open ChatGPT on the web and go to <strong>Settings → Apps &amp; Connectors → Advanced</strong>. Turn on <strong>Developer mode</strong>. On Business or Enterprise plans a workspace admin may need to allow it first, and some plans only allow read-only custom apps.</>,
                 <>Back in <strong>Apps &amp; Connectors</strong>, click <strong>Create</strong>.</>,
                 <>Name it <strong>WhatFlow</strong>, paste <Code>{MCP_URL}</Code> as the MCP server URL and choose <strong>OAuth</strong>.</>,
-                <>Click <strong>Create</strong>, then <strong>Connect</strong>. A WhatFlow sign-in page opens: <a href="#sign-in" className="font-bold text-[#0A6B56] underline">sign in</a> and choose what ChatGPT may do.</>,
+                <>Click <strong>Create</strong>, then <strong>Connect</strong>. A WhatFlow sign-in page opens: <a href="#sign-in">sign in</a> and choose what ChatGPT may do.</>,
                 <>In a new chat, turn on WhatFlow from the <strong>+</strong> menu and ask, for example, &quot;Triage my unread WhatsApp chats&quot;.</>,
               ]} />
             </Section>
@@ -206,13 +218,13 @@ export default function McpDocsPage() {
                 your browser.
               </p>
               <p>
-                Prefer not to sign in through the browser? Use an <a href="#api-keys" className="font-bold text-[#0A6B56] underline">API key</a> instead.
+                Prefer not to sign in through the browser? Use an <a href="#api-keys">API key</a> instead.
               </p>
             </Section>
 
             <Section id="sign-in" title="Signing in">
               <p>When an AI app connects, WhatFlow shows its own sign-in page. There are two ways in:</p>
-              <ul className="list-disc pl-5 space-y-2">
+              <ul>
                 <li>
                   <strong>Live Inbox login.</strong> Enter your store (<Code>your-store.myshopify.com</Code>), your Live Inbox username or email,
                   and your password. The AI app then acts as you, with your role.
@@ -224,12 +236,12 @@ export default function McpDocsPage() {
                 </li>
               </ul>
               <p>Then pick what the app is allowed to do:</p>
-              <ul className="list-disc pl-5 space-y-2">
+              <ul>
                 <li><strong>Assistant (recommended).</strong> Read chats, orders and templates, label and assign chats, and write replies. With draft mode on (the default), replies wait in Live Inbox until a team member presses Send.</li>
                 <li><strong>Read only.</strong> Look at chats, orders, templates and analytics, but never reply. The Shopify app lists the connection as &quot;Read only&quot;.</li>
                 <li><strong>Choose exactly.</strong> Pick individual permissions from this list:</li>
               </ul>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 list-disc pl-5">
+              <ul className="mcp-perms">
                 {PERMISSIONS.map((permission) => <li key={permission}>{permission}</li>)}
               </ul>
               <p>
@@ -245,10 +257,10 @@ export default function McpDocsPage() {
               </p>
               <ToolTable heading="Store, orders & analytics" tools={STORE_TOOLS} />
               <ToolTable heading="Live Inbox chats" tools={INBOX_TOOLS} />
-              <div className="space-y-3">
-                <h3 className="font-display font-black text-lg uppercase text-black">Ready-made prompts</h3>
+              <div className="grid gap-3">
+                <h3>Ready-made prompts</h3>
                 <p>Some AI apps show these as shortcuts (for example in a prompt or slash-command menu):</p>
-                <ul className="list-disc pl-5 space-y-2">
+                <ul>
                   <li>
                     <strong>triage_inbox</strong>: goes through your unread chats (20 by default), applies fitting labels, drafts short replies where
                     the 24-hour window is open, and finishes with a table of each customer, what they want, and what you still need to handle yourself.
@@ -266,12 +278,12 @@ export default function McpDocsPage() {
             </Section>
 
             <Section id="draft-mode" title="Draft mode">
-              <div className="border-[2px] border-black rounded-xl p-5 bg-[#E8FBF1]">
-                <p className="font-bold text-black">
+              <div className="mcp-callout">
+                <p>
                   With draft mode on, nothing the AI writes reaches your customer until a person on your team presses Send.
                 </p>
               </div>
-              <ul className="list-disc pl-5 space-y-2">
+              <ul>
                 <li>When the AI replies or sends a template, the message is checked like a real send, then saved as a draft in that chat in Live Inbox.</li>
                 <li>A team member can edit the draft, send it, or discard it.</li>
                 <li>Draft mode is <strong>on by default</strong> for every new connection and API key.</li>
@@ -282,7 +294,7 @@ export default function McpDocsPage() {
 
             <Section id="free-text-vs-templates" title="Free text vs templates">
               <p>WhatsApp has two kinds of outgoing messages, and the AI follows the same rules your team does:</p>
-              <ul className="list-disc pl-5 space-y-2">
+              <ul>
                 <li>
                   <strong>Free-text replies</strong> (text, buttons, lists, links, products) only work within <strong>24 hours of the customer&apos;s last
                   message</strong>. They do not check your blocklist, the same as replies from your team.
@@ -319,7 +331,7 @@ export default function McpDocsPage() {
 
             <Section id="disconnect" title="Disconnect & activity log">
               <p>Everything is managed in the Shopify app under <strong>AI Connections</strong>:</p>
-              <ul className="list-disc pl-5 space-y-2">
+              <ul>
                 <li>
                   <strong>Connected AI apps</strong> lists each app, who signed in (or &quot;Store admin&quot; for a connect code), whether it sends
                   drafts, sends directly or is read only, when it was last used, and whether its last call failed. Press <strong>Disconnect</strong> to cut it off.
@@ -335,7 +347,7 @@ export default function McpDocsPage() {
             </Section>
 
             <Section id="troubleshooting" title="Troubleshooting">
-              <ul className="list-disc pl-5 space-y-2">
+              <ul>
                 <li>
                   <strong>Opening the MCP URL in a browser shows 401.</strong> That&apos;s expected: the server only answers signed-in AI apps.
                 </li>
@@ -355,26 +367,20 @@ export default function McpDocsPage() {
                 </li>
               </ul>
             </Section>
-          </div>
 
-          {/* ─── Help Banner ─── */}
-          <div className="neo-box-teal p-8 sm:p-12 rounded-2xl text-center text-white space-y-4">
-            <h2 className="text-2xl sm:text-3xl font-display font-black uppercase tracking-tight">NEED HELP CONNECTING?</h2>
-            <p className="text-sm text-[#A7F3D0] max-w-xl mx-auto font-medium leading-relaxed">
-              Tell us which AI app you are using and what you see, and we&apos;ll help you get set up.
-            </p>
-            <div className="pt-2">
-              <a
-                href="mailto:support@whatflow.tech"
-                className="neo-btn inline-flex items-center gap-2 bg-[#00D261] text-black font-extrabold text-xs uppercase px-6 py-3 rounded-lg shadow-[3px_3px_0px_#000]"
-              >
-                <span>CONTACT SUPPORT</span>
-                <span>➔</span>
+            {/* ─── Help ─── */}
+            <div className="mcp-help" data-reveal>
+              <div>
+                <h2>Need help connecting?</h2>
+                <p>Tell us which AI app you are using and what you see, and we&apos;ll help you get set up.</p>
+              </div>
+              <a href="mailto:support@whatflow.tech" className="wf-btn wf-btn-dark">
+                Contact support
               </a>
             </div>
           </div>
         </div>
-      </section>
+      </PageSection>
     </div>
   );
 }

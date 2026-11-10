@@ -1,0 +1,58 @@
+/* ─── MCP docs page ──────────────────────────────────────────────────── */
+
+/* Hero visual: the URL and a sample request */
+.mcp-demo { display: grid; gap: var(--space-12); max-width: 480px; margin: 0 auto; }
+.mcp-url { padding: var(--space-16) var(--space-20); border: 2.5px solid var(--ink); border-radius: 22px; background: var(--surface); box-shadow: 6px 6px 0 var(--ink); }
+.mcp-url-label { display: block; color: var(--text-muted); font-size: 12px; font-weight: 700; }
+.mcp-url code { display: block; margin-top: var(--space-6); font-size: clamp(14px, 2vw, 17px); font-weight: 700; word-break: break-all; }
+.mcp-chat { display: grid; gap: var(--space-8); padding: var(--space-16); border: 2.5px solid var(--ink); border-radius: 22px; background: var(--forest); color: var(--surface); box-shadow: 6px 6px 0 var(--ink); transform: rotate(-1.5deg); }
+.mcp-chat-you { justify-self: end; max-width: 85%; padding: var(--space-8) var(--space-12); border-radius: 16px 16px 4px 16px; background: var(--green); color: var(--ink); font-size: 14px; font-weight: 700; }
+.mcp-chat-tool { justify-self: start; display: inline-flex; align-items: center; gap: var(--space-8); padding: var(--space-6) var(--space-12); border: 1.5px solid rgb(255 255 255 / 0.25); border-radius: 99px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--mint-text); }
+.mcp-chat-tool::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--green); animation: mcp-ping 1.6s ease-out infinite; }
+.mcp-chat:hover .mcp-chat-tool::before { animation-play-state: paused; }
+.mcp-chat-ai { justify-self: start; max-width: 90%; padding: var(--space-8) var(--space-12); border-radius: 16px 16px 16px 4px; background: rgb(255 255 255 / 0.1); font-size: 14px; line-height: 1.5; }
+
+/* Layout: sticky table of contents + content */
+.mcp-layout { display: grid; gap: var(--space-28); }
+@media (min-width: 1024px) { .mcp-layout { grid-template-columns: 250px minmax(0, 1fr); gap: var(--space-48); align-items: start; } }
+.mcp-toc { padding: var(--space-20); border: 2.5px solid var(--ink); border-radius: 24px; background: var(--surface); }
+@media (min-width: 1024px) { .mcp-toc { position: sticky; top: 96px; } }
+.mcp-toc-title { display: block; margin-bottom: var(--space-8); color: var(--text-secondary); font-size: 12px; font-weight: 700; letter-spacing: 0; }
+.mcp-toc ul { display: grid; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
+@media (min-width: 640px) and (max-width: 1023px) { .mcp-toc ul { grid-template-columns: repeat(2, 1fr); } }
+.mcp-toc a { display: block; padding: var(--space-6) var(--space-8); border-radius: 10px; font-size: 14.5px; font-weight: 700; transition: background 0.2s ease; }
+.mcp-toc a:hover { background: var(--mint); }
+
+.mcp-content { display: grid; gap: var(--space-20); min-width: 0; }
+.mcp-section { scroll-margin-top: 96px; padding: clamp(var(--space-20), 4vw, var(--space-40)); border: 2.5px solid var(--ink); border-radius: 24px; background: var(--surface); }
+.mcp-section h2 { margin: 0 0 var(--space-16); font-family: var(--display); font-size: clamp(1.7rem, 3.4vw, 2.4rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.04em; }
+.mcp-section h3 { margin: 0; font-family: var(--display); font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+.mcp-body { display: grid; gap: var(--space-16); color: var(--text-body); font-size: 16px; line-height: 1.7; }
+.mcp-body strong { color: var(--ink); }
+.mcp-body ul { margin: 0; padding-left: 1.3em; list-style: disc; display: grid; gap: var(--space-8); }
+.mcp-body ul.mcp-perms { gap: var(--space-6) var(--space-24); }
+@media (min-width: 640px) { .mcp-body ul.mcp-perms { grid-template-columns: repeat(2, 1fr); } }
+.mcp-body a { font-weight: 700; color: var(--green-deep); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+.mcp-steps { display: grid; gap: var(--space-12); margin: 0; padding: 0; list-style: none; counter-reset: mcp-step; }
+.mcp-steps li { position: relative; min-height: 34px; padding-left: var(--space-48); counter-increment: mcp-step; }
+.mcp-steps li::before { content: counter(mcp-step); position: absolute; top: -2px; left: 0; display: grid; place-items: center; width: 34px; height: 34px; border: 2px solid var(--ink); border-radius: 50%; background: var(--yellow); color: var(--ink); font-family: var(--display); font-weight: 700; }
+
+.mcp-code { padding: var(--space-2) var(--space-6); border-radius: 7px; background: #f1efe8; color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88em; word-break: break-all; }
+.mcp-pre { margin: 0; overflow-x: auto; padding: var(--space-16) var(--space-20); border: 2.5px solid var(--ink); border-radius: 18px; background: var(--forest); color: var(--mint-text); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13.5px; line-height: 1.6; }
+
+.mcp-tools { display: grid; gap: var(--space-8); margin-top: var(--space-12); }
+@media (min-width: 768px) { .mcp-tools { grid-template-columns: repeat(2, 1fr); } }
+.mcp-tool { padding: var(--space-16); border: 2px solid var(--ink); border-radius: 18px; background: var(--mcp-tone, var(--paper)); }
+.mcp-tool code { display: inline-block; padding: var(--space-2) var(--space-8); border: 1.5px solid var(--ink); border-radius: 99px; background: var(--surface); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; font-weight: 700; color: var(--green-deep); }
+.mcp-tool p { margin: var(--space-8) 0 0; font-size: 14.5px; line-height: 1.55; color: var(--text-body); }
+
+.mcp-callout { padding: var(--space-16) var(--space-20); border: 2.5px solid var(--ink); border-radius: 18px; background: var(--mint); box-shadow: 4px 4px 0 var(--ink); }
+.mcp-callout p { margin: 0; font-weight: 700; color: var(--ink); }
+
+.mcp-help { display: grid; gap: var(--space-20); align-items: center; padding: clamp(var(--space-24), 4vw, var(--space-40)); border: 2.5px solid var(--ink); border-radius: 24px; background: var(--yellow); }
+@media (min-width: 768px) { .mcp-help { grid-template-columns: 1fr auto; } }
+.mcp-help h2 { margin: 0; font-family: var(--display); font-size: clamp(1.7rem, 3.4vw, 2.4rem); font-weight: 700; letter-spacing: -0.04em; }
+.mcp-help p { margin: var(--space-8) 0 0; max-width: 52ch; line-height: 1.6; }
+
+@keyframes mcp-ping { 70%, 100% { box-shadow: 0 0 0 6px rgb(0 210 97 / 0); } 0% { box-shadow: 0 0 0 0 rgb(0 210 97 / 0.6); } }

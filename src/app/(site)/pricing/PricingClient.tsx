@@ -1,8 +1,48 @@
 "use client";
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, type CSSProperties } from "react";
+import { Section, SectionHead, Hl } from "@/components/site/PageKit";
 import type { CountryRateItem } from "@/lib/country-rates-data";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
+
+const ORDER_PRESETS = [500, 1000, 2500, 5000, 10000, 25000];
+
+const MSG_PER_ORDER_OPTIONS = [
+	{ value: 1, hint: "e.g. order confirmation" },
+	{ value: 2, hint: "Confirmation + tracking" },
+	{ value: 3, hint: "Confirm + shipped + review" },
+	{ value: 4, hint: "Full lifecycle automation" },
+];
+
+const MSG_TYPE_OPTIONS = [
+	{ value: "utility", label: "Utility", hint: "Order alerts and updates" },
+	{ value: "marketing", label: "Marketing", hint: "Promotions and broadcasts" },
+	{ value: "authentication", label: "Authentication", hint: "OTPs and codes" },
+	{ value: "service", label: "Service", hint: "Customer support" },
+] as const;
+
+const FAQ_TILES = [
+	{
+		q: "How does WhatsApp billing work?",
+		a: "There are two parts: WhatFlow's monthly software plan (which includes your message allowance and automation platform) and applicable Meta messaging charges, which depend on market, category and messaging rules.",
+		tone: "var(--mint)",
+	},
+	{
+		q: "What is included in the 7-day free trial?",
+		a: "You get full unlimited access to all features and templates. You won't be charged your WhatFlow subscription until the 7-day trial period ends, and you can cancel anytime with 1 click.",
+		tone: "#fff3c4",
+	},
+	{
+		q: "Can I upgrade or downgrade plans anytime?",
+		a: "Yes. You can switch tiers in your WhatFlow dashboard or Shopify app settings as your store's order volume grows.",
+		tone: "var(--sky)",
+	},
+	{
+		q: "Do I need my own Meta Business API account?",
+		a: "Yes, WhatFlow integrates directly with the official Meta Cloud API. Our guided onboarding helps you connect your Meta Business account. Setup time depends on account readiness and Meta verification.",
+		tone: "var(--pink)",
+	},
+];
 
 // ─── Plan Data Definition ───────────────────────────────────────────────────
 interface PricingPlan {
@@ -20,14 +60,14 @@ interface PricingPlan {
 }
 
 const ALL_FEATURES = [
-	"Automated Order Fulfillment Alerts",
-	"Custom WhatsApp Message Templates",
-	"Template Library with Quick Setup",
-	"WhatsApp Chat Button for Storefront",
-	"Meta Business API Integration",
-	"Live Delivery & Read Rate Analytics",
-	"WhatsApp Order Confirmations",
-	"Smart Auto-Reply Rules",
+	"Automated order fulfillment alerts",
+	"Custom WhatsApp message templates",
+	"Template library with quick setup",
+	"WhatsApp chat button for your storefront",
+	"Meta Business API integration",
+	"Live delivery and read rate analytics",
+	"WhatsApp order confirmations",
+	"Smart auto-reply rules",
 ];
 
 const PRICING_PLANS: PricingPlan[] = [
@@ -38,8 +78,8 @@ const PRICING_PLANS: PricingPlan[] = [
 		priceDisplay: "$0",
 		trialBadge: undefined,
 		freeAllowance: 100,
-		freeAllowanceText: "First 100 Messages Sent",
-		overageThreshold: "101+ Messages Sent",
+		freeAllowanceText: "First 100 messages sent",
+		overageThreshold: "101+ messages sent",
 		overageRate: 0.01,
 		overageRateDisplay: "$0.01",
 	},
@@ -50,8 +90,8 @@ const PRICING_PLANS: PricingPlan[] = [
 		priceDisplay: "$4.99",
 		trialBadge: "7-day free trial",
 		freeAllowance: 2000,
-		freeAllowanceText: "First 2,000 Messages Sent",
-		overageThreshold: "2,001+ Messages Sent",
+		freeAllowanceText: "First 2,000 messages sent",
+		overageThreshold: "2,001+ messages sent",
 		overageRate: 0.005,
 		overageRateDisplay: "$0.005",
 	},
@@ -63,8 +103,8 @@ const PRICING_PLANS: PricingPlan[] = [
 		trialBadge: "7-day free trial",
 		popular: true,
 		freeAllowance: 5000,
-		freeAllowanceText: "First 5,000 Messages Sent",
-		overageThreshold: "5,001+ Messages Sent",
+		freeAllowanceText: "First 5,000 messages sent",
+		overageThreshold: "5,001+ messages sent",
 		overageRate: 0.004,
 		overageRateDisplay: "$0.004",
 	},
@@ -75,8 +115,8 @@ const PRICING_PLANS: PricingPlan[] = [
 		priceDisplay: "$29",
 		trialBadge: "7-day free trial",
 		freeAllowance: 20000,
-		freeAllowanceText: "First 20,000 Messages Sent",
-		overageThreshold: "20,001+ Messages Sent",
+		freeAllowanceText: "First 20,000 messages sent",
+		overageThreshold: "20,001+ messages sent",
 		overageRate: 0.0025,
 		overageRateDisplay: "$0.0025",
 	},
@@ -87,8 +127,8 @@ const PRICING_PLANS: PricingPlan[] = [
 		priceDisplay: "$49.99",
 		trialBadge: "7-day free trial",
 		freeAllowance: 40000,
-		freeAllowanceText: "First 40,000 Messages Sent",
-		overageThreshold: "40,001+ Messages Sent",
+		freeAllowanceText: "First 40,000 messages sent",
+		overageThreshold: "40,001+ messages sent",
 		overageRate: 0.002,
 		overageRateDisplay: "$0.002",
 	},
@@ -99,8 +139,8 @@ const PRICING_PLANS: PricingPlan[] = [
 		priceDisplay: "$99",
 		trialBadge: "7-day free trial",
 		freeAllowance: 75000,
-		freeAllowanceText: "First 75,000 Messages Sent",
-		overageThreshold: "75,001+ Messages Sent",
+		freeAllowanceText: "First 75,000 messages sent",
+		overageThreshold: "75,001+ messages sent",
 		overageRate: 0.0015,
 		overageRateDisplay: "$0.0015",
 	},
@@ -209,549 +249,349 @@ export function PricingClient() {
 		return ratesList.filter((r) => r.market.toLowerCase().includes(q));
 	}, [ratesList, ratesSearch]);
 
+
+	const ordersFill = `${((orders - 100) / (50000 - 100)) * 100}%`;
+	const msgTypeHint = MSG_TYPE_OPTIONS.find((option) => option.value === msgType)?.hint;
+	const msgPerOrderHint = MSG_PER_ORDER_OPTIONS.find((option) => option.value === msgPerOrder)?.hint;
+	const formatRate = (value: number | string | null | undefined) =>
+		value !== undefined && value !== null ? `$${Number(value).toFixed(4)}` : "n/a";
+
 	return (
-		<div className="bg-[#FAF7F0] text-black selection:bg-[#00D261] selection:text-black">
+		<div className="bg-[var(--paper)] text-[var(--ink)] selection:bg-[var(--green)] selection:text-black">
+      <header className="wf-shell wf-pricing-header">
+        <div><h1>Shopify WhatsApp app pricing.</h1><p>Every plan includes the same features and unlimited team inbox seats. Meta bills applicable messaging charges separately, with zero WhatFlow markup.</p></div>
+        <nav aria-label="Pricing sections">
+          <a href="#plans" className="wf-btn wf-btn-green">Compare monthly plans</a>
+          <a href="#calculator" className="wf-btn wf-btn-ghost">Estimate monthly cost</a>
+          <a href="#rates-table" className="wf-btn wf-btn-ghost">See Meta messaging rates</a>
+        </nav>
+      </header>
 
-			{/* ─── Top Hero & Interactive Calculator Section ────────────────── */}
-			<section className="py-12 sm:py-16 px-4 sm:px-6 border-b-[2.5px] border-black bg-[#FAF7F0]">
-				<div className="max-w-[1280px] mx-auto space-y-10">
-					{/* Header Content */}
-					<div className="text-center max-w-3xl mx-auto space-y-4">
-						<div className="inline-flex items-center gap-2">
-							<span className="neo-box bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-								PRICING — OFFICIAL API
-							</span>
-							<span className="neo-pill bg-white px-3 py-1 text-xs font-extrabold uppercase text-black">
-								PAY FOR YOUR USAGE
-							</span>
-							<span className="neo-pill bg-[#E8F8F0] px-3 py-1 text-xs font-extrabold uppercase text-black">
-								ALL FEATURES INCLUDED
-							</span>
-						</div>
+			{/* ─── Plans ─── */}
+			<Section tone="paper" id="plans" label="pr-plans-title">
+				<SectionHead
+					id="pr-plans-title"
+					center
+					title={<>Choose the right plan <Hl>for your store.</Hl></>}
+					sub="Every tier gives you full access to all WhatsApp marketing, automation, and analytics features. Only messaging allowance limits differ."
+				/>
 
-						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-black uppercase leading-[1.05] tracking-tight">
-							SHOPIFY WHATSAPP{" "}
-							<span className="text-stroke-green">APP PRICING</span>
-						</h1>
+				<div className="pr-plans">
+					{PRICING_PLANS.map((plan, index) => {
+						const isOpen = openTiers[plan.id] ?? true;
+						const isRec = recommendedPlan.id === plan.id;
+						const featured = Boolean(plan.popular);
 
-						<p className="text-base sm:text-lg text-gray-800 font-medium max-w-2xl mx-auto">
-							WhatFlow Business API has a free plan and paid plans based on messaging allowances. Every plan includes the same features and unlimited team inbox seats. Meta bills applicable WhatsApp messaging charges separately, with zero WhatFlow markup.
-						</p>
-					</div>
-
-					<div className="flex flex-wrap justify-center gap-4 mb-10">
-						<a href="#plans" className="neo-box bg-[#00D261] px-5 py-3 font-bold">Compare monthly plans</a>
-						<a href="#rates-table" className="neo-box bg-white px-5 py-3 font-bold">See Meta messaging rates</a>
-					</div>
-
-					{/* ─── Interactive Calculator Card ─── */}
-					<div className="neo-box-teal p-6 sm:p-8 lg:p-10 relative">
-						<div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 neo-box bg-[#00D261] px-6 py-1.5 font-display font-black text-xs sm:text-sm uppercase tracking-wider text-black whitespace-nowrap shadow-[3px_3px_0px_#000]">
-							CALCULATE YOUR MONTHLY COST
-						</div>
-
-						<div className="bg-white border-2 border-black rounded-xl overflow-hidden shadow-[6px_6px_0px_#000] grid grid-cols-1 lg:grid-cols-12 mt-2">
-							{/* Left: Interactive Input Controls */}
-							<div className="lg:col-span-7 p-6 sm:p-8 space-y-6 bg-white">
-								{/* Monthly Orders Input */}
-								<div className="space-y-2">
-									<div className="flex justify-between items-center">
-										<label className="text-xs font-extrabold uppercase tracking-wider text-black">
-											MONTHLY SHOPIFY ORDERS
-										</label>
-										<span className="neo-pill bg-[#FAF7F0] px-2.5 py-0.5 text-xs font-black text-black">
-											{orders.toLocaleString()} orders
-										</span>
-									</div>
-									<input
-										type="range"
-										min={100}
-										max={50000}
-										step={100}
-										value={orders}
-										onChange={(e) => setOrders(parseInt(e.target.value) || 100)}
-										className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#00D261]"
-									/>
-									<div className="flex gap-2 pt-1">
-										{[500, 1000, 2500, 5000, 10000, 25000].map((preset) => (
-											<button
-												key={preset}
-												type="button"
-												onClick={() => setOrders(preset)}
-												className={`text-[11px] font-bold px-2 py-1 rounded border border-black transition-all ${
-													orders === preset
-														? "bg-[#00D261] text-black shadow-[1px_1px_0px_#000]"
-														: "bg-[#FAF7F0] text-gray-700 hover:bg-gray-100"
-												}`}
-											>
-												{preset >= 1000 ? `${preset / 1000}k` : preset}
-											</button>
-										))}
-									</div>
+						return (
+							<article
+								key={plan.id}
+								className="pr-plan"
+								data-featured={featured}
+								data-rec={isRec}
+								data-reveal
+								style={{ "--d": `${(index % 3) * 80}ms` } as CSSProperties}
+							>
+								<div className="pr-plan-badges">
+									{isRec && <span className="pr-badge pr-badge-rec">Best for your volume</span>}
+									{plan.popular && !isRec && <span className="pr-badge pr-badge-pop">Most popular</span>}
 								</div>
 
-								{/* Messages Per Order & Message Category */}
-								<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-									<div>
-										<label className="block text-xs font-extrabold uppercase tracking-wider text-black mb-1.5">
-											MESSAGES PER ORDER
-										</label>
-										<select
-											value={msgPerOrder}
-											onChange={(e) => setMsgPerOrder(parseInt(e.target.value) || 1)}
-											className="w-full bg-[#FAF7F0] border-2 border-black rounded-lg px-3 py-2.5 text-xs font-extrabold text-black focus:outline-none focus:ring-2 focus:ring-[#00D261]"
-										>
-											<option value={1}>1 message (e.g. Order Confirmation)</option>
-											<option value={2}>2 messages (Confirmation + Tracking)</option>
-											<option value={3}>3 messages (Confirm + Shipped + Review)</option>
-											<option value={4}>4 messages (Full lifecycle automation)</option>
-										</select>
-									</div>
-
-									<div>
-										<label className="block text-xs font-extrabold uppercase tracking-wider text-black mb-1.5">
-											MESSAGE CATEGORY
-										</label>
-										<select
-											value={msgType}
-											onChange={(e) => setMsgType(e.target.value as typeof msgType)}
-											className="w-full bg-[#FAF7F0] border-2 border-black rounded-lg px-3 py-2.5 text-xs font-extrabold text-black focus:outline-none focus:ring-2 focus:ring-[#00D261]"
-										>
-											<option value="utility">Utility (Order alerts & updates)</option>
-											<option value="marketing">Marketing (Promotions & broadcast)</option>
-											<option value="authentication">Authentication (OTPs & codes)</option>
-											<option value="service">Service (Customer support)</option>
-										</select>
-									</div>
+								<h3>{plan.name}</h3>
+								<div className="pr-price">
+									<b className="pr-num">{plan.priceDisplay}</b>
+									<span>/ month</span>
 								</div>
+								<p className="pr-sub">Plus usage charges</p>
+								<span className="pr-allow pr-num">{plan.freeAllowance.toLocaleString()} messages free</span>
 
-								{/* Country / Market Selection */}
-								<div>
-									<label className="block text-xs font-extrabold uppercase tracking-wider text-black mb-1.5">
-										CUSTOMER MARKET / COUNTRY (META RATE)
-									</label>
-									{ratesList.length > 0 ? (
-										<>
-											<select
-												value={selectedMarketName}
-												onChange={(e) => setSelectedMarketName(e.target.value)}
-												className="w-full bg-[#FAF7F0] border-2 border-black rounded-lg px-3 py-2.5 text-xs font-extrabold text-black focus:outline-none focus:ring-2 focus:ring-[#00D261]"
-											>
-												{ratesList.map((rate) => (
-													<option key={rate.market} value={rate.market}>
-														{rate.market} ({rate.currency} ${rate[msgType] !== null && rate[msgType] !== undefined ? Number(rate[msgType]).toFixed(4) : "0.0250"}/msg)
-													</option>
-												))}
-											</select>
-											<p className="text-[11px] text-gray-600 font-medium mt-1">
-												Official Meta rate for {selectedMarketName || selectedCountryRate?.market || "Selected Market"} ({msgType}):{" "}
-												<strong className="text-black">{metaRatePerMsg === null ? "Rate unavailable" : `$${metaRatePerMsg.toFixed(4)} / msg`}</strong>
-											</p>
-										</>
-									) : (
-										<div className="bg-[#FAF7F0] border-2 border-dashed border-gray-400 rounded-lg px-3 py-2.5 text-xs font-medium text-gray-700">
-											{ratesLoading ? "Loading rates from CMS..." : "No country rates imported yet (Manage via API / Payload Admin)"}
-										</div>
-									)}
-								</div>
-
-								<div className="pt-2">
-									<a
-										href="#plans"
-										className="neo-btn w-full bg-black text-white font-extrabold text-xs uppercase tracking-wider py-3.5 rounded-lg flex items-center justify-center gap-2"
-									>
-										<span>EXPLORE ALL 6 PLANS BELOW</span>
-										<span>↓</span>
-									</a>
-								</div>
-							</div>
-
-							{/* Right: Live Calculation Breakdown Panel */}
-							<div className="lg:col-span-5 p-6 sm:p-8 bg-[#D5F5E3] border-t-2 lg:border-t-0 lg:border-l-2 border-black flex flex-col justify-between space-y-6">
-								<div className="space-y-4">
-									<div>
-										<div className="text-[11px] font-extrabold uppercase tracking-wider text-gray-700 mb-0.5">
-											TOTAL ESTIMATED MESSAGES
-										</div>
-										<div className="text-4xl sm:text-5xl font-display font-black text-black">
-											{totalMessages.toLocaleString()}
-											<span className="text-base font-bold text-gray-700 ml-1.5">/ mo</span>
-										</div>
-									</div>
-
-									<div className="neo-box bg-white p-4 space-y-3">
-										<div className="flex items-center justify-between border-b border-gray-200 pb-2">
-											<span className="text-xs font-bold text-gray-700">Recommended Plan:</span>
-											<span className="neo-pill bg-[#00D261] px-2.5 py-0.5 text-xs font-black text-black uppercase">
-												{recommendedPlan.name}
-											</span>
-										</div>
-
-										<div className="flex items-center justify-between text-xs">
-											<span className="font-semibold text-gray-700">WhatFlow Base Fee:</span>
-											<span className="font-extrabold text-black">
-												{recCalc.price === 0 ? "Free ($0)" : `$${recCalc.price.toFixed(2)}/mo`}
-											</span>
-										</div>
-
-										<div className="flex items-center justify-between text-xs">
-											<span className="font-semibold text-gray-700">WhatFlow Usage Overages:</span>
-											<span className="font-extrabold text-black">
-												{recCalc.overageFee === 0 ? "$0.00" : `$${recCalc.overageFee.toFixed(2)}`}
-											</span>
-										</div>
-
-										<div className="flex items-center justify-between text-xs">
-											<span className="font-semibold text-gray-700">Meta WhatsApp Direct Fee:</span>
-											<span className="font-extrabold text-black">
-												{metaCostTotal === null ? "Not included — rate unavailable" : `$${metaCostTotal.toFixed(2)}`}
-											</span>
-										</div>
-
-										<div className="border-t-2 border-black pt-2 flex items-center justify-between">
-											<span className="text-xs font-black uppercase text-black">
-												{metaCostTotal === null ? "WhatFlow subtotal:" : "Total estimated:"}
-											</span>
-											<span className="text-xl font-display font-black text-black">
-												${recCalc.grandTotal.toFixed(2)}
-												<span className="text-xs font-semibold text-gray-600">/mo</span>
-											</span>
-										</div>
-									</div>
-								</div>
-
-								<div className="space-y-2">
-									<a
-										href={getShopifyAppUrl("pricing_recommended_calculator")}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="neo-btn w-full bg-[#00D261] text-black font-display font-black text-center py-3 px-4 rounded-lg text-sm uppercase tracking-wider block"
-									>
-										START WITH {recommendedPlan.name.toUpperCase()} PLAN
-									</a>
-									<div className="neo-pill bg-white/90 p-2 text-[10px] text-center font-bold text-gray-800 border border-black">
-										ⓘ 7-day free trial on all paid plans. Meta charges billed directly by Meta.
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* ─── Pricing Plans Grid Section (Matching Image 1) ───────────── */}
-			<section id="plans" className="py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black bg-[#FAF7F0]">
-				<div className="max-w-[1280px] mx-auto space-y-12">
-					{/* Section Title */}
-					<div className="text-center max-w-3xl mx-auto space-y-3">
-						<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-							ALL FEATURES. EVERY PLAN.
-						</div>
-						<h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black uppercase tracking-tight text-black">
-							CHOOSE THE RIGHT PLAN FOR YOUR STORE
-						</h2>
-						<p className="text-sm sm:text-base text-gray-700 font-medium">
-							Every tier gives you full access to all WhatsApp marketing, automation, and analytics features.
-							Only messaging allowance limits differ.
-						</p>
-					</div>
-
-					{/* 6 Plan Cards Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-						{PRICING_PLANS.map((plan) => {
-							const isOpen = openTiers[plan.id] ?? true;
-							const isRec = recommendedPlan.id === plan.id;
-
-							return (
-								<div
-									key={plan.id}
-									className={`neo-box bg-white flex flex-col justify-between transition-transform hover:-translate-y-1 relative ${
-										isRec ? "ring-4 ring-[#00D261] shadow-[8px_8px_0px_#000]" : ""
-									}`}
+								<a
+									href={getShopifyAppUrl(`pricing_plan_${plan.id}`)}
+									target="_blank"
+									rel="noopener noreferrer"
+									className={`wf-btn ${isRec || plan.popular ? "wf-btn-green" : "wf-btn-dark"}`}
 								>
-									{/* Badges on card */}
-									<div className="absolute -top-3 right-4 flex gap-2">
-										{isRec && (
-											<span className="neo-box bg-[#00D261] px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-black shadow-[2px_2px_0px_#000]">
-												BEST FOR YOUR VOLUME
-											</span>
-										)}
-										{plan.popular && !isRec && (
-											<span className="neo-box bg-[#FFC107] px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-black shadow-[2px_2px_0px_#000]">
-												MOST POPULAR
-											</span>
-										)}
-									</div>
+									{plan.price === 0 ? "Get started free" : "Start 7-day free trial"}
+								</a>
+								{plan.trialBadge && <p className="pr-trial">{plan.trialBadge}</p>}
 
-									{/* Card Top / Header */}
-									<div className="p-6 sm:p-7 space-y-6">
+								<ul className="pr-feats" aria-label={`${plan.name} plan features`}>
+									{ALL_FEATURES.map((feat) => (
+										<li key={feat}>
+											<span className="pr-check" aria-hidden="true">✓</span>
+											<span>{feat}</span>
+										</li>
+									))}
+								</ul>
+
+								<div className="pr-usage">
+									<button
+										type="button"
+										onClick={() => toggleTier(plan.id)}
+										className="pr-usage-toggle"
+										aria-expanded={isOpen}
+										aria-controls={`pr-usage-${plan.id}`}
+									>
+										<span>{isOpen ? "Hide usage prices" : "Show usage prices"}</span>
+										<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+									</button>
+									<div id={`pr-usage-${plan.id}`} className="pr-usage-panel" data-open={isOpen} inert={!isOpen}>
 										<div>
-											<h3 className="text-2xl font-display font-black text-black">
-												{plan.name}
-											</h3>
-											<div className="mt-2 flex items-baseline gap-1.5">
-												<span className="text-4xl sm:text-5xl font-display font-black text-black">
-													{plan.priceDisplay}
-												</span>
-												<span className="text-sm font-bold text-gray-600">/ month</span>
-											</div>
-											<p className="text-xs font-semibold text-gray-500 mt-1">
-												Plus usage charges
-											</p>
-										</div>
-
-										{/* Features List (8 identical items) */}
-										<div className="space-y-3 pt-2 border-t border-gray-200">
-											<div className="text-xs font-extrabold uppercase tracking-wider text-black">
-												Features
-											</div>
-											<ul className="space-y-2 text-xs font-medium text-gray-800">
-												{ALL_FEATURES.map((feat, idx) => (
-													<li key={idx} className="flex items-start gap-2">
-														<span className="text-black font-black">✓</span>
-														<span>{feat}</span>
-													</li>
-												))}
-											</ul>
-										</div>
-
-										{/* Usage Prices Accordion / Box */}
-										<div className="pt-2">
-											<button
-												type="button"
-												onClick={() => toggleTier(plan.id)}
-												className="flex items-center justify-between w-full text-xs font-bold text-gray-700 hover:text-black py-1 transition-colors"
-											>
-												<span className="flex items-center gap-1.5">
-													<span>ⓘ</span>
-													<span>{isOpen ? "Hide usage prices" : "Show usage prices"}</span>
-												</span>
-												<span>{isOpen ? "▲" : "▼"}</span>
-											</button>
-
-											{isOpen && (
-												<div className="mt-2 border border-gray-300 rounded-lg overflow-hidden text-xs">
-													<div className="grid grid-cols-2 bg-gray-100 font-bold p-2 text-gray-800 border-b border-gray-200">
-														<div>Monthly usage tier</div>
-														<div className="text-right">Cost per unit</div>
-													</div>
-													<div className="grid grid-cols-2 p-2 bg-white border-b border-gray-100 text-gray-700">
-														<div>{plan.freeAllowanceText}</div>
-														<div className="text-right font-bold text-green-700">Free</div>
-													</div>
-													<div className="grid grid-cols-2 p-2 bg-white text-gray-700">
-														<div>{plan.overageThreshold}</div>
-														<div className="text-right font-bold text-black">
-															{plan.overageRateDisplay}
-														</div>
-													</div>
+											<div className="pr-usage-table">
+												<div className="pr-usage-th">
+													<span>Monthly usage tier</span>
+													<span>Cost per unit</span>
 												</div>
-											)}
+												<div>
+													<span>{plan.freeAllowanceText}</span>
+													<span className="pr-usage-free">Free</span>
+												</div>
+												<div>
+													<span>{plan.overageThreshold}</span>
+													<b className="pr-num">{plan.overageRateDisplay}</b>
+												</div>
+											</div>
 										</div>
-									</div>
-
-									{/* Card Bottom / Footer */}
-									<div className="p-6 sm:p-7 pt-0 space-y-3">
-										<a
-											href={getShopifyAppUrl(`pricing_plan_${plan.id}`)}
-											target="_blank"
-											rel="noopener noreferrer"
-											className={`neo-btn w-full text-center py-3 px-4 rounded-lg font-extrabold text-xs uppercase tracking-wider block ${
-												isRec || plan.popular
-													? "bg-[#00D261] text-black"
-													: "bg-black text-white hover:bg-gray-800"
-											}`}
-										>
-											{plan.price === 0 ? "GET STARTED FREE" : "START 7-DAY FREE TRIAL"}
-										</a>
-
-										{plan.trialBadge && (
-											<p className="text-center text-[11px] font-bold text-gray-600">
-												{plan.trialBadge}
-											</p>
-										)}
 									</div>
 								</div>
-							);
-						})}
-					</div>
+							</article>
+						);
+					})}
 				</div>
-			</section>
+			</Section>
 
-			{/* ─── WhatsApp Country Rates Reference Table ─────────────────── */}
-			<section id="rates-table" className="py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black bg-[#E8F8F0]">
-				<div className="max-w-[1280px] mx-auto space-y-8">
-					<div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-						<div className="space-y-2">
-							<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-								META OFFICIAL RATES DIRECTORY
+			{/* ─── Interactive calculator ─── */}
+			<Section tone="white" id="calculator" label="pr-calc-title">
+				<SectionHead
+					id="pr-calc-title"
+					title={<>Calculate your <Hl>monthly cost.</Hl></>}
+					sub="Pick your order volume, messages per order and customer market. We'll match the plan and show the WhatFlow and Meta parts of your bill."
+				/>
+
+				<div className="pr-calc" data-reveal style={{ "--d": "80ms" } as CSSProperties}>
+					{/* Left: inputs */}
+					<div className="pr-calc-inputs">
+						<div>
+							<div className="pr-label-row">
+								<label htmlFor="pr-orders" className="pr-label">Monthly Shopify orders</label>
+								<span className="pr-value pr-num">{orders.toLocaleString()} orders</span>
 							</div>
-							<h2 className="text-3xl sm:text-4xl font-display font-black uppercase text-black tracking-tight">
-								WHATSAPP RATES BY MARKET
-							</h2>
-							<p className="text-xs sm:text-sm text-gray-700 font-medium max-w-xl">
-								Meta charges depend on recipient market, message category and applicable messaging rules. Check the current Meta rate card before sending.
-							</p>
-						</div>
-
-						{/* Search Input */}
-						<div className="w-full md:w-72">
 							<input
-								type="text"
-								placeholder="Search country or market..."
-								value={ratesSearch}
-								onChange={(e) => setRatesSearch(e.target.value)}
-								className="w-full bg-white border-2 border-black rounded-lg px-3.5 py-2 text-xs font-bold text-black focus:outline-none focus:ring-2 focus:ring-[#00D261] shadow-[2px_2px_0px_#000]"
+								id="pr-orders"
+								type="range"
+								min={100}
+								max={50000}
+								step={100}
+								value={orders}
+								onChange={(e) => setOrders(parseInt(e.target.value) || 100)}
+								className="pr-range"
+								style={{ "--fill": ordersFill } as CSSProperties}
 							/>
-						</div>
-					</div>
-
-					{/* Rates Table Box */}
-					<div className="neo-box bg-white overflow-x-auto">
-						{filteredRates.length > 0 ? (
-							<table className="w-full text-left text-xs border-collapse">
-								<thead>
-									<tr className="bg-gray-100 border-b-2 border-black font-display font-black text-black uppercase tracking-wider">
-										<th className="p-3.5 sm:p-4">Market</th>
-										<th className="p-3.5 sm:p-4">Currency</th>
-										<th className="p-3.5 sm:p-4">Marketing</th>
-										<th className="p-3.5 sm:p-4">Utility</th>
-										<th className="p-3.5 sm:p-4">Authentication</th>
-										<th className="p-3.5 sm:p-4">Authentication-Intl</th>
-										<th className="p-3.5 sm:p-4">Service</th>
-									</tr>
-								</thead>
-								<tbody className="divide-y divide-gray-200 font-medium text-gray-900">
-									{filteredRates.map((item, idx) => (
-										<tr
-											key={item.market + idx}
-											className={`hover:bg-[#F0FDF4] transition-colors ${
-												selectedMarketName === item.market ? "bg-[#D5F5E3] font-bold" : ""
-											}`}
-										>
-											<td className="p-3.5 sm:p-4 font-bold text-black">
-												{item.market}
-											</td>
-											<td className="p-3.5 sm:p-4 text-gray-700">{item.currency || "USD"}</td>
-											<td className="p-3.5 sm:p-4 font-mono font-bold text-black">
-												${Number(item.marketing).toFixed(4)}
-											</td>
-											<td className="p-3.5 sm:p-4 font-mono font-bold text-black">
-												${Number(item.utility).toFixed(4)}
-											</td>
-											<td className="p-3.5 sm:p-4 font-mono text-gray-700">
-												{item.authentication !== undefined && item.authentication !== null
-													? `$${Number(item.authentication).toFixed(4)}`
-													: "n/a"}
-											</td>
-											<td className="p-3.5 sm:p-4 font-mono text-gray-700">
-												{item.authenticationInternational !== undefined &&
-												item.authenticationInternational !== null
-													? `$${Number(item.authenticationInternational).toFixed(4)}`
-													: "n/a"}
-											</td>
-											<td className="p-3.5 sm:p-4 font-mono text-gray-700">
-												{item.service !== undefined && item.service !== null
-													? `$${Number(item.service).toFixed(4)}`
-													: "n/a"}
-											</td>
-										</tr>
-									))}
-								</tbody>
-							</table>
-						) : (
-							<div className="p-8 text-center space-y-2">
-								<p className="text-sm font-bold text-gray-800">
-									{ratesLoading ? "Loading country rates from CMS..." : "No country rates found."}
-								</p>
-								<p className="text-xs text-gray-500">
-									Current rates are available on the <a href="https://business.whatsapp.com/products/platform-pricing" className="underline" rel="noopener noreferrer">official WhatsApp pricing page</a>. If a rate is unavailable here, the calculator shows WhatFlow charges only.
-								</p>
+							<div className="pr-seg pr-seg-sm" role="group" aria-label="Order volume presets" style={{ marginTop: 14 }}>
+								{ORDER_PRESETS.map((preset) => (
+									<button key={preset} type="button" aria-pressed={orders === preset} onClick={() => setOrders(preset)}>
+										{preset >= 1000 ? `${preset / 1000}k` : preset}
+									</button>
+								))}
 							</div>
-						)}
-					</div>
-				</div>
-			</section>
-
-			{/* ─── Frequently Asked Questions ──────────────────────────────── */}
-			<section className="py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black bg-[#FAF7F0]">
-				<div className="max-w-[1000px] mx-auto space-y-10">
-					<div className="text-center space-y-2">
-						<div className="neo-box inline-block bg-[#00D261] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-							COMMON QUESTIONS
-						</div>
-						<h2 className="text-3xl sm:text-4xl font-display font-black uppercase text-black tracking-tight">
-							FREQUENTLY ASKED QUESTIONS
-						</h2>
-					</div>
-
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-						<div className="neo-box bg-white p-6 space-y-2">
-							<h3 className="text-sm font-extrabold uppercase tracking-wide text-black">
-								How does WhatsApp billing work?
-							</h3>
-							<p className="text-xs text-gray-700 leading-relaxed">
-								There are two parts: WhatFlow&apos;s monthly software plan (which includes your message allowance and automation platform) and applicable Meta messaging charges, which depend on market, category and messaging rules.
-							</p>
 						</div>
 
-						<div className="neo-box bg-white p-6 space-y-2">
-							<h3 className="text-sm font-extrabold uppercase tracking-wide text-black">
-								What is included in the 7-day free trial?
-							</h3>
-							<p className="text-xs text-gray-700 leading-relaxed">
-								You get full unlimited access to all features and templates. You won&apos;t be charged your WhatFlow subscription until the 7-day trial period ends, and you can cancel anytime with 1 click.
-							</p>
+						<div>
+							<span id="pr-per-order" className="pr-label">Messages per order</span>
+							<div className="pr-seg" role="radiogroup" aria-labelledby="pr-per-order">
+								{MSG_PER_ORDER_OPTIONS.map((option) => (
+									<button
+										key={option.value}
+										type="button"
+										role="radio"
+										aria-checked={msgPerOrder === option.value}
+										aria-label={`${option.value} ${option.value === 1 ? "message" : "messages"} (${option.hint})`}
+										onClick={() => setMsgPerOrder(option.value)}
+									>
+										{option.value} {option.value === 1 ? "message" : "messages"}
+									</button>
+								))}
+							</div>
+							<p className="pr-hint">{msgPerOrderHint}</p>
 						</div>
 
-						<div className="neo-box bg-white p-6 space-y-2">
-							<h3 className="text-sm font-extrabold uppercase tracking-wide text-black">
-								Can I upgrade or downgrade plans anytime?
-							</h3>
-							<p className="text-xs text-gray-700 leading-relaxed">
-								Yes! You can switch tiers seamlessly in your WhatFlow dashboard or Shopify App settings as your store&apos;s order volume grows.
-							</p>
+						<div>
+							<span id="pr-category" className="pr-label">Message category</span>
+							<div className="pr-seg" role="radiogroup" aria-labelledby="pr-category">
+								{MSG_TYPE_OPTIONS.map((option) => (
+									<button
+										key={option.value}
+										type="button"
+										role="radio"
+										aria-checked={msgType === option.value}
+										onClick={() => setMsgType(option.value)}
+									>
+										{option.label}
+									</button>
+								))}
+							</div>
+							<p className="pr-hint">{msgTypeHint}</p>
 						</div>
 
-						<div className="neo-box bg-white p-6 space-y-2">
-							<h3 className="text-sm font-extrabold uppercase tracking-wide text-black">
-								Do I need my own Meta Business API account?
-							</h3>
-							<p className="text-xs text-gray-700 leading-relaxed">
-								Yes, WhatFlow integrates directly with the Official Meta Cloud API. Our guided onboarding helps you connect your Meta Business account. Setup time depends on account readiness and Meta verification.
-							</p>
+						<div>
+							<label htmlFor="pr-market" className="pr-label">Customer market / country (Meta rate)</label>
+							{ratesList.length > 0 ? (
+								<>
+									<select
+										id="pr-market"
+										value={selectedMarketName}
+										onChange={(e) => setSelectedMarketName(e.target.value)}
+										className="pr-select"
+									>
+										{ratesList.map((rate) => (
+											<option key={rate.market} value={rate.market}>
+												{rate.market} ({rate.currency} ${rate[msgType] !== null && rate[msgType] !== undefined ? Number(rate[msgType]).toFixed(4) : "0.0250"}/msg)
+											</option>
+										))}
+									</select>
+									<p className="pr-hint">
+										Official Meta rate for {selectedMarketName || selectedCountryRate?.market || "selected market"} ({msgType}):{" "}
+										<strong className="pr-num">{metaRatePerMsg === null ? "Rate unavailable" : `$${metaRatePerMsg.toFixed(4)} / msg`}</strong>
+									</p>
+								</>
+							) : (
+								<div id="pr-market" className="pr-empty">
+									{ratesLoading ? "Loading rates from CMS..." : "No country rates imported yet (manage via API / Payload admin)"}
+								</div>
+							)}
 						</div>
-					</div>
-				</div>
-			</section>
 
-			{/* ─── CTA Banner ──────────────────────────────────────────────── */}
-			<section className="bg-[#091E17] text-white py-16 sm:py-20 px-4 sm:px-6 border-b-[2.5px] border-black">
-				<div className="max-w-[1280px] mx-auto text-center space-y-6">
-					<div className="neo-box inline-block bg-[#00D261] px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-black">
-						READY TO SCALE YOUR STORE?
-					</div>
-
-					<h2 className="text-3xl sm:text-5xl lg:text-6xl font-display font-black uppercase text-white tracking-tight">
-						START AUTOMATING WHATSAPP <span className="text-stroke-green">TODAY.</span>
-					</h2>
-
-					<p className="text-sm sm:text-base text-gray-300 max-w-xl mx-auto font-medium">
-						Join fast-growing Shopify stores recovering carts and confirming orders on autopilot.
-					</p>
-
-					<div className="pt-2">
-						<a
-							href={getShopifyAppUrl("pricing_bottom_cta")}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="neo-btn bg-[#00D261] text-black font-display font-black text-sm uppercase tracking-wider px-8 py-4 rounded-xl inline-block"
-						>
-							INSTALL WHATFLOW ON SHOPIFY
+						<a href="#plans" className="wf-btn wf-btn-dark">
+							<span>Explore all 6 plans below</span>
 						</a>
 					</div>
+
+					{/* Right: live breakdown */}
+					<div className="pr-calc-out" aria-live="polite">
+						<div>
+							<div className="pr-out-label">Total estimated messages</div>
+							<div className="pr-out-big pr-num">
+								{totalMessages.toLocaleString()}
+								<small>/ mo</small>
+							</div>
+
+							<div className="pr-bill">
+								<div className="pr-bill-head">
+									<span>Recommended plan</span>
+									<span key={recommendedPlan.id} className="pr-bill-plan">{recommendedPlan.name}</span>
+								</div>
+								<div className="pr-bill-row">
+									<span>WhatFlow base fee</span>
+									<b className="pr-num">{recCalc.price === 0 ? "Free ($0)" : `$${recCalc.price.toFixed(2)}/mo`}</b>
+								</div>
+								<div className="pr-bill-row">
+									<span>WhatFlow usage overages</span>
+									<b className="pr-num">{recCalc.overageFee === 0 ? "$0.00" : `$${recCalc.overageFee.toFixed(2)}`}</b>
+								</div>
+								<div className="pr-bill-row">
+									<span>Meta WhatsApp direct fee</span>
+									<b className="pr-num">{metaCostTotal === null ? "Not included: rate unavailable" : `$${metaCostTotal.toFixed(2)}`}</b>
+								</div>
+								<div className="pr-bill-total">
+									<span>{metaCostTotal === null ? "WhatFlow subtotal" : "Total estimated"}</span>
+									<span>
+										<b className="pr-num">${recCalc.grandTotal.toFixed(2)}</b>
+										<small>/mo</small>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<a
+								href={getShopifyAppUrl("pricing_recommended_calculator")}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="wf-btn wf-btn-green"
+							>
+								Start with {recommendedPlan.name} plan
+							</a>
+							<p className="pr-out-note">7-day free trial on all paid plans. Meta charges billed directly by Meta.</p>
+						</div>
+					</div>
 				</div>
-			</section>
+			</Section>
+
+			{/* ─── Meta rates directory ─── */}
+			<Section tone="mint" id="rates-table" label="pr-rates-title">
+				<div className="pr-rates-head">
+					<SectionHead
+						id="pr-rates-title"
+						title={<>WhatsApp rates <Hl>by market.</Hl></>}
+						sub="Meta charges depend on recipient market, message category and applicable messaging rules. Check the current Meta rate card before sending."
+					/>
+					<div className="pr-search" data-reveal style={{ "--d": "120ms" } as CSSProperties}>
+						<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+						<input
+							type="search"
+							aria-label="Search country or market"
+							placeholder="Search country or market..."
+							value={ratesSearch}
+							onChange={(e) => setRatesSearch(e.target.value)}
+						/>
+					</div>
+				</div>
+
+				<div className="pr-table-wrap" role="region" aria-label="Country messaging rates" tabIndex={0} data-reveal style={{ "--d": "160ms" } as CSSProperties}>
+					{filteredRates.length > 0 ? (
+						<table className="pr-table">
+							<thead>
+								<tr>
+									<th scope="col">Market</th>
+									<th scope="col">Currency</th>
+									<th scope="col">Marketing</th>
+									<th scope="col">Utility</th>
+									<th scope="col">Authentication</th>
+									<th scope="col">Authentication-Intl</th>
+									<th scope="col">Service</th>
+								</tr>
+							</thead>
+							<tbody>
+								{filteredRates.map((item, idx) => (
+									<tr key={item.market + idx} data-selected={selectedMarketName === item.market}>
+										<td><b>{item.market}</b></td>
+										<td>{item.currency || "USD"}</td>
+										<td className="pr-mono"><b>${Number(item.marketing).toFixed(4)}</b></td>
+										<td className="pr-mono"><b>${Number(item.utility).toFixed(4)}</b></td>
+										<td className="pr-mono">{formatRate(item.authentication)}</td>
+										<td className="pr-mono">{formatRate(item.authenticationInternational)}</td>
+										<td className="pr-mono">{formatRate(item.service)}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					) : (
+						<div className="pr-table-empty">
+							<p><b>{ratesLoading ? "Loading country rates from CMS..." : "No country rates found."}</b></p>
+							<p style={{ marginTop: 8, color: "#5a615c" }}>
+								Current rates are available on the <a href="https://business.whatsapp.com/products/platform-pricing" rel="noopener noreferrer">official WhatsApp pricing page</a>. If a rate is unavailable here, the calculator shows WhatFlow charges only.
+							</p>
+						</div>
+					)}
+				</div>
+			</Section>
+
+			{/* ─── FAQ ─── */}
+			<Section tone="paper" label="pr-faq-title">
+				<SectionHead id="pr-faq-title" center title={<>Frequently asked <Hl>questions.</Hl></>} />
+				<div className="wf-grid wf-grid-2 pr-faq">
+					{FAQ_TILES.map((faq, index) => (
+						<div
+							key={faq.q}
+							className="wf-card"
+							data-reveal
+							style={{ background: faq.tone, "--d": `${(index % 2) * 80}ms` } as CSSProperties}
+						>
+							<h3>{faq.q}</h3>
+							<p>{faq.a}</p>
+						</div>
+					))}
+				</div>
+			</Section>
 		</div>
 	);
 }

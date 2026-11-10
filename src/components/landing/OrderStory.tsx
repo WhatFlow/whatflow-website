@@ -16,7 +16,7 @@ const steps = [
 	{
 		kicker: "Cash on delivery",
 		title: "They come back and order COD.",
-		body: "Before anything ships, the customer confirms with one tap — and the order is tagged in Shopify automatically.",
+		body: "Before anything ships, the customer confirms with one tap, and the order is tagged in Shopify automatically.",
 		href: "/solutions/cod-order-verification",
 	},
 	{
@@ -44,8 +44,8 @@ const messages: (ChatMessage & { at: number })[] = [
 
 const admin = [
 	{ label: "Abandoned checkout", tone: "lp-tag-yellow", tag: "Reminder sent", line: "Maya Chen · 2 items · $84.00" },
-	{ label: "Order #1027", tone: "lp-tag-green", tag: "✓ Order Confirmed", line: "Was ⚠ Confirmation Pending · COD · $84.00" },
-	{ label: "Order #1027", tone: "lp-tag-blue", tag: "✓ Fulfillment Notified", line: "Out for delivery · tracking sent" },
+	{ label: "Order #1027", tone: "lp-tag-green", tag: "✓ Order Confirmed", line: "Was ⚠ Confirmation Pending. COD, $84.00" },
+	{ label: "Order #1027", tone: "lp-tag-blue", tag: "✓ Fulfillment Notified", line: "Out for delivery, tracking sent" },
 	{ label: "Order #1027", tone: "lp-tag-green", tag: "Inbox · Sara", line: "Size changed to L · replied in 3 min" },
 ];
 
@@ -65,14 +65,14 @@ export function OrderStory() {
 			<div className="lp-story-sticky">
 				<div className="lp-shell lp-story-grid">
 					<div className="lp-story-copy">
-						<h2 id="lp-story-title" className="lp-eyebrow">One order, start to finish</h2>
+						<h2 id="lp-story-title" className="sr-only">One order, start to finish</h2>
 						<div className="lp-story-steps">
 							{steps.map((item, index) => (
 								<div key={item.kicker} className={`lp-story-step ${index === step ? "is-active" : ""}`} aria-hidden={index !== step}>
-									<span className="lp-story-num">0{index + 1}<small>/04 · {item.kicker}</small></span>
+									<span className="lp-story-num">0{index + 1}<small>of 4</small></span>
 									<h3>{item.title}</h3>
-									<p>{item.body}</p>
-									<Link href={item.href} tabIndex={index === step ? 0 : -1}>How it works <span aria-hidden="true">→</span></Link>
+									<p><b>{item.kicker}.</b> {item.body}</p>
+									<Link href={item.href} tabIndex={index === step ? 0 : -1}>How it works</Link>
 								</div>
 							))}
 						</div>
