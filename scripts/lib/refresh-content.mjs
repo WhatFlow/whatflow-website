@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 import {markdownToLexical} from '../build-quality-content.mjs';
 
 export const CTA_MARKER='<!-- CTA -->';
-export const CATEGORIES=['reviews','conversion','retention','whatsapp','operations','seo','guides','tips','shopify'];
+export const CATEGORIES=['reviews','conversion','retention','whatsapp','operations','seo','guides','tips','updates','shopify'];
 export const BANNED=['delve','landscape','leverage','robust','seamless','unlock','empower','elevate','game-changer','game changer',"in today's",'it’s important to note',"it's important to note",'it’s worth noting',"it's worth noting",'crucial','pivotal','foster','holistic','synergy','tapestry','realm','ever-evolving','at the end of the day','look no further','supercharge','in conclusion','in summary','when it comes to'];
 export const uid=value=>createHash('sha256').update(value).digest('hex').slice(0,24);
 
@@ -76,7 +76,11 @@ export async function checkDoc({meta,body},{kind,slug,linkable,root='.'}){
  if(banned.length)warnings.push(`banned: ${banned.join(', ')}`);
  const dashes=(body.match(/—/g)||[]).length;
  if(dashes>Math.max(3,words/250))warnings.push(`em-dashes ${dashes} in ${words} words`);
- if(/\b3\.9\b|336 reviews|332 reviews|51 reviews/.test(body+JSON.stringify(meta)))errors.push('stale rating figure');
+ if(/\b3\.9\b|\b336 reviews|\b332 reviews|\b51 reviews/.test(body+JSON.stringify(meta)))errors.push('stale rating figure');
+ if(/\b5[58] ratings|5\.0\/5 from 5[58] |5\.0 out of 5 from 5[58] |331 ratings/.test(body+JSON.stringify(meta)))errors.push('stale WhatFlow Business API rating (now 4.9/5 from 59 ratings, Nov 11 2026)');
+ if(/whatflow\.tech\//i.test(body+JSON.stringify(meta)))errors.push('links the old whatflow.tech domain');
+ if(/72[- ]hour (free entry|FEP)|free entry[^.]{0,40}72[- ]hours?/i.test(body.replace(/"72 hours"[^.]*older/gi,'')+JSON.stringify(meta)))errors.push('free entry point window is now up to 7 days');
+ if(/\]\(\/contact\b/.test(body))errors.push('/contact does not exist');
  if(/\bAI (reply|replies|chatbot|agent|assistant)\b/i.test(body)&&/whatflow('s)? (ai|has ai|includes ai)/i.test(body))warnings.push('possible AI feature claim');
  // conversion
  try{bodyToLexical(body,slug,{allowCta:!isComp});}catch(e){errors.push('markdown: '+e.message);}
@@ -84,6 +88,6 @@ export async function checkDoc({meta,body},{kind,slug,linkable,root='.'}){
 }
 
 export async function linkableSet(root='.'){
- const s=await readFile(root+'/content/blog/refresh-2026-11-05/SLUGS.md','utf8');
+ const s=await readFile(root+'/'+(process.env.REFRESH_ROOT||'content/blog/refresh-2026-11-05')+'/SLUGS.md','utf8');
  return new Set([...s.matchAll(/^- (\/[^\s]+)/gm)].map(m=>m[1]));
 }

@@ -2,7 +2,8 @@
 import {readDoc,listMarkdown,checkDoc,linkableSet} from './lib/refresh-content.mjs';
 const quiet=process.argv.includes('--quiet');
 const linkable=await linkableSet();
-const sets=[['post','content/blog/refresh-2026-11-05/rewritten'],['post','content/blog/refresh-2026-11-05/new'],['comparison','content/comparisons/refresh-2026-11-05/edited'],['newcomparison','content/comparisons/refresh-2026-11-05/new']];
+const root=process.env.REFRESH_ROOT||'content/blog/refresh-2026-11-05',compRoot=process.env.REFRESH_COMP_ROOT||'content/comparisons/refresh-2026-11-05';
+const sets=[['post',root+'/rewritten'],['post',root+'/new'],['comparison',compRoot+'/edited'],['newcomparison',compRoot+'/new']];
 let errorCount=0,warnCount=0;const summary={};
 for(const [kind,dir] of sets){
  const files=await listMarkdown(dir);summary[dir]={files:files.length,words:0,errors:0,warnings:0};

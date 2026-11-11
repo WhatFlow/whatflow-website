@@ -522,7 +522,7 @@ export function PricingClient() {
 					<SectionHead
 						id="pr-rates-title"
 						title={<>WhatsApp rates <Hl>by market.</Hl></>}
-						sub="Meta charges depend on recipient market, message category and applicable messaging rules. Check the current Meta rate card before sending."
+						sub="Meta's USD list rates per delivered message, effective October 1, 2026. Service replies are free for the first 1,000 per business phone number each month, then charged at the service rate shown. Meta bills these directly, with zero WhatFlow markup."
 					/>
 					<div className="pr-search" data-reveal style={{ "--d": "120ms" } as CSSProperties}>
 						<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
@@ -547,7 +547,7 @@ export function PricingClient() {
 									<th scope="col">Utility</th>
 									<th scope="col">Authentication</th>
 									<th scope="col">Authentication-Intl</th>
-									<th scope="col">Service</th>
+									<th scope="col">Service (after 1,000/mo)</th>
 								</tr>
 							</thead>
 							<tbody>

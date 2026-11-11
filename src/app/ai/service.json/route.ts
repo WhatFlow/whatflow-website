@@ -48,10 +48,10 @@ export async function GET() {
       },
     ],
     shopify_app_store_ratings: {
-      checked_at: "2026-11-05",
+      checked_at: "2026-11-11",
       note: "Each rating belongs to its own Shopify App Store listing; they are not combined.",
       apps: [
-        { name: "WhatFlow WhatsApp Business API", url: "https://apps.shopify.com/whatflow-official-api", rating: 5.0, scale: 5, rating_count: 55, connection: "Official Meta WhatsApp Cloud API" },
+        { name: "WhatFlow WhatsApp Business API", url: "https://apps.shopify.com/whatflow-official-api", rating: 4.9, scale: 5, rating_count: 59, connection: "Official Meta WhatsApp Cloud API" },
         { name: "WhatFlow Chat Automation", url: "https://apps.shopify.com/whatflow", rating: 4.0, scale: 5, rating_count: 329, connection: "Linked device" },
       ],
     },

@@ -6,7 +6,7 @@ export const HOMEPAGE_FAQS = [
 	},
 	{
 		question: "How are WhatFlow's apps rated on the Shopify App Store?",
-		answer: "As of November 5, 2026, WhatFlow WhatsApp Business API is rated 5.0 out of 5 (55 ratings) and WhatFlow Chat Automation is rated 4.0 out of 5 (329 ratings). They are separate listings, so each rating applies only to its own app.",
+		answer: "As of November 11, 2026, WhatFlow WhatsApp Business API is rated 4.9 out of 5 (59 ratings) and WhatFlow Chat Automation is rated 4.0 out of 5 (329 ratings). They are separate listings, so each rating applies only to its own app.",
 	},
 	{
 		question: "Do I need a Meta WhatsApp Business Account?",

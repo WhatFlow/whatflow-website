@@ -4,8 +4,9 @@ const [input,outDir]=process.argv.slice(2);
 if(!input||!outDir)throw Error('usage: export-posts-markdown.mjs <posts.json> <outDir>');
 const docs=JSON.parse(await readFile(input,'utf8')).docs;
 const esc=s=>s.replace(/([*_`\[\]])/g,'\\$1');
-function inline(nodes=[]){return nodes.map(n=>{
- if(n.type==='text'){let t=esc(n.text);if(n.format&16)t='`'+n.text+'`';if(n.format&1)t='**'+t+'**';if(n.format&2)t='*'+t+'*';return t;}
+const merge=nodes=>nodes.reduce((a,n)=>{const p=a[a.length-1];if(p&&p.type==='text'&&n.type==='text'&&p.format===n.format)a[a.length-1]={...p,text:p.text+n.text};else a.push(n);return a;},[]);
+function inline(nodes=[]){return merge(nodes).map(n=>{
+ if(n.type==='text'){if(!(n.format&19))return esc(n.text);const [,lead,core,trail]=n.text.match(/^(\s*)([\s\S]*?)(\s*)$/);if(!core)return n.text;let t=n.format&16?'`'+core+'`':esc(core);if(n.format&1)t='**'+t+'**';if(n.format&2)t='*'+t+'*';return lead+t+trail;}
  if(n.type==='link')return `[${inline(n.children)}](${n.fields?.url})`;
  if(n.type==='linebreak')return '  \n';
  throw Error('inline '+n.type);}).join('');}

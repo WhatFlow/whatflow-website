@@ -60,3 +60,8 @@ next-env.d.ts
 !/content/blog/refresh-2026-11-05/REPORT.md
 /content/comparisons/refresh-2026-11-05/*
 !/content/comparisons/refresh-2026-11-05/BRIEF.md
+/content/blog/audit-2026-11-11/*
+!/content/blog/audit-2026-11-11/BRIEF.md
+!/content/blog/audit-2026-11-11/REPORT.md
+/content/comparisons/audit-2026-11-11/*
+!/content/comparisons/audit-2026-11-11/BRIEF.md

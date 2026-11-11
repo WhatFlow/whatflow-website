@@ -13,7 +13,7 @@ import {markdownToLexical} from './build-quality-content.mjs';
 
 const [postsFile,compsFile,out]=process.argv.slice(2);
 if(!out)throw Error('usage: build-refresh-patch.mjs <live-posts.json> <live-comparisons.json> <outDir>');
-const root='content/blog/refresh-2026-11-05',compRoot='content/comparisons/refresh-2026-11-05';
+const root=process.env.REFRESH_ROOT||'content/blog/refresh-2026-11-05',compRoot=process.env.REFRESH_COMP_ROOT||'content/comparisons/refresh-2026-11-05';
 const now=new Date().toISOString();
 const q=v=>v===null||v===undefined?'NULL':typeof v==='boolean'?(v?'1':'0'):`'${String(v).replaceAll("'","''")}'`;
 const rid=()=>randomBytes(12).toString('hex');
