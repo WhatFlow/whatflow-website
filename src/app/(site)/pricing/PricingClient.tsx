@@ -53,11 +53,10 @@ interface PricingPlan {
 	popular?: boolean;
 	trialBadge?: string;
 	freeAllowance: number;
-	freeAllowanceText: string;
-	overageThreshold: string;
 	overageRate: number;
-	overageRateDisplay: string;
 }
+
+const messageCount = new Intl.NumberFormat("en-US");
 
 const ALL_FEATURES = [
 	"Automated order fulfillment alerts",
@@ -78,10 +77,7 @@ const PRICING_PLANS: PricingPlan[] = [
 		priceDisplay: "$0",
 		trialBadge: undefined,
 		freeAllowance: 100,
-		freeAllowanceText: "First 100 messages sent",
-		overageThreshold: "101+ messages sent",
 		overageRate: 0.01,
-		overageRateDisplay: "$0.01",
 	},
 	{
 		id: "starter",
@@ -90,10 +86,7 @@ const PRICING_PLANS: PricingPlan[] = [
 		priceDisplay: "$4.99",
 		trialBadge: "7-day free trial",
 		freeAllowance: 2000,
-		freeAllowanceText: "First 2,000 messages sent",
-		overageThreshold: "2,001+ messages sent",
 		overageRate: 0.005,
-		overageRateDisplay: "$0.005",
 	},
 	{
 		id: "plus",
@@ -103,10 +96,16 @@ const PRICING_PLANS: PricingPlan[] = [
 		trialBadge: "7-day free trial",
 		popular: true,
 		freeAllowance: 5000,
-		freeAllowanceText: "First 5,000 messages sent",
-		overageThreshold: "5,001+ messages sent",
 		overageRate: 0.004,
-		overageRateDisplay: "$0.004",
+	},
+	{
+		id: "essential",
+		name: "Essential",
+		price: 19,
+		priceDisplay: "$19",
+		trialBadge: "7-day free trial",
+		freeAllowance: 10000,
+		overageRate: 0.003,
 	},
 	{
 		id: "growth",
@@ -115,10 +114,7 @@ const PRICING_PLANS: PricingPlan[] = [
 		priceDisplay: "$29",
 		trialBadge: "7-day free trial",
 		freeAllowance: 20000,
-		freeAllowanceText: "First 20,000 messages sent",
-		overageThreshold: "20,001+ messages sent",
 		overageRate: 0.0025,
-		overageRateDisplay: "$0.0025",
 	},
 	{
 		id: "scale",
@@ -127,10 +123,7 @@ const PRICING_PLANS: PricingPlan[] = [
 		priceDisplay: "$49.99",
 		trialBadge: "7-day free trial",
 		freeAllowance: 40000,
-		freeAllowanceText: "First 40,000 messages sent",
-		overageThreshold: "40,001+ messages sent",
 		overageRate: 0.002,
-		overageRateDisplay: "$0.002",
 	},
 	{
 		id: "ultimate",
@@ -138,11 +131,8 @@ const PRICING_PLANS: PricingPlan[] = [
 		price: 99,
 		priceDisplay: "$99",
 		trialBadge: "7-day free trial",
-		freeAllowance: 75000,
-		freeAllowanceText: "First 75,000 messages sent",
-		overageThreshold: "75,001+ messages sent",
+		freeAllowance: 100000,
 		overageRate: 0.0015,
-		overageRateDisplay: "$0.0015",
 	},
 ];
 
@@ -155,14 +145,7 @@ export function PricingClient() {
 	const [ratesList, setRatesList] = useState<CountryRateItem[]>([]);
 	const [ratesLoading, setRatesLoading] = useState<boolean>(true);
 	const [ratesSearch, setRatesSearch] = useState<string>("");
-	const [openTiers, setOpenTiers] = useState<Record<string, boolean>>({
-		free: true,
-		starter: true,
-		plus: true,
-		growth: true,
-		scale: true,
-		ultimate: true,
-	});
+	const [openTiers, setOpenTiers] = useState<Record<string, boolean>>({});
 
 	// Fetch dynamic rates directly from Payload CMS API
 	useEffect(() => {
@@ -206,39 +189,18 @@ export function PricingClient() {
 
 	const metaCostTotal = metaRatePerMsg === null ? null : totalMessages * metaRatePerMsg;
 
-	// Calculate optimal plan & cost breakdown for each plan
-	const planCalculations = useMemo(() => {
-		return PRICING_PLANS.map((plan) => {
-			const overageMsgs = Math.max(0, totalMessages - plan.freeAllowance);
-			const overageFee = overageMsgs * plan.overageRate;
-			const whatflowTotal = plan.price + overageFee;
-			const grandTotal = whatflowTotal + (metaCostTotal ?? 0);
-			return {
-				...plan,
-				overageMsgs,
-				overageFee,
-				whatflowTotal,
-				grandTotal,
-			};
-		});
-	}, [totalMessages, metaCostTotal]);
-
-	// Determine recommended plan (the one with lowest total whatflow cost that accommodates volume best)
-	const recommendedPlan = useMemo(() => {
-		if (totalMessages <= 100) return PRICING_PLANS[0];
-		if (totalMessages <= 2000) return PRICING_PLANS[1];
-		if (totalMessages <= 5000) return PRICING_PLANS[2];
-		if (totalMessages <= 20000) return PRICING_PLANS[3];
-		if (totalMessages <= 40000) return PRICING_PLANS[4];
-		return PRICING_PLANS[5];
-	}, [totalMessages]);
-
-	const recCalc = planCalculations.find((p) => p.id === recommendedPlan.id) || planCalculations[1];
+	// Recommend the first tier that covers the volume, or the largest tier for overages.
+	const recommendedPlan = PRICING_PLANS.find((plan) => totalMessages <= plan.freeAllowance)
+		?? PRICING_PLANS[PRICING_PLANS.length - 1];
+	const overageMessages = Math.max(0, totalMessages - recommendedPlan.freeAllowance);
+	const overageFee = overageMessages * recommendedPlan.overageRate;
+	const whatflowTotal = recommendedPlan.price + overageFee;
+	const grandTotal = whatflowTotal + (metaCostTotal ?? 0);
 
 	const toggleTier = (planId: string) => {
 		setOpenTiers((prev) => ({
 			...prev,
-			[planId]: !prev[planId],
+			[planId]: !(prev[planId] ?? true),
 		}));
 	};
 
@@ -273,7 +235,7 @@ export function PricingClient() {
 					id="pr-plans-title"
 					center
 					title={<>Choose the right plan <Hl>for your store.</Hl></>}
-					sub="Every tier gives you full access to all WhatsApp marketing, automation, and analytics features. Only messaging allowance limits differ."
+					sub="Every tier gives you full access to all WhatsApp marketing, automation, and analytics features. Plans vary by message allowance and overage rate."
 				/>
 
 				<div className="pr-plans">
@@ -302,7 +264,7 @@ export function PricingClient() {
 									<span>/ month</span>
 								</div>
 								<p className="pr-sub">Plus usage charges</p>
-								<span className="pr-allow pr-num">{plan.freeAllowance.toLocaleString()} messages free</span>
+								<span className="pr-allow pr-num">{messageCount.format(plan.freeAllowance)} messages included</span>
 
 								<a
 									href={getShopifyAppUrl(`pricing_plan_${plan.id}`)}
@@ -342,12 +304,12 @@ export function PricingClient() {
 													<span>Cost per unit</span>
 												</div>
 												<div>
-													<span>{plan.freeAllowanceText}</span>
+													<span>First {messageCount.format(plan.freeAllowance)} messages sent</span>
 													<span className="pr-usage-free">Free</span>
 												</div>
 												<div>
-													<span>{plan.overageThreshold}</span>
-													<b className="pr-num">{plan.overageRateDisplay}</b>
+													<span>{messageCount.format(plan.freeAllowance + 1)}+ messages sent</span>
+													<b className="pr-num">${plan.overageRate}</b>
 												</div>
 											</div>
 										</div>
@@ -481,11 +443,11 @@ export function PricingClient() {
 								</div>
 								<div className="pr-bill-row">
 									<span>WhatFlow base fee</span>
-									<b className="pr-num">{recCalc.price === 0 ? "Free ($0)" : `$${recCalc.price.toFixed(2)}/mo`}</b>
+									<b className="pr-num">{recommendedPlan.price === 0 ? "Free ($0)" : `$${recommendedPlan.price.toFixed(2)}/mo`}</b>
 								</div>
 								<div className="pr-bill-row">
 									<span>WhatFlow usage overages</span>
-									<b className="pr-num">{recCalc.overageFee === 0 ? "$0.00" : `$${recCalc.overageFee.toFixed(2)}`}</b>
+									<b className="pr-num">${overageFee.toFixed(2)}</b>
 								</div>
 								<div className="pr-bill-row">
 									<span>Meta WhatsApp direct fee</span>
@@ -494,7 +456,7 @@ export function PricingClient() {
 								<div className="pr-bill-total">
 									<span>{metaCostTotal === null ? "WhatFlow subtotal" : "Total estimated"}</span>
 									<span>
-										<b className="pr-num">${recCalc.grandTotal.toFixed(2)}</b>
+										<b className="pr-num">${grandTotal.toFixed(2)}</b>
 										<small>/mo</small>
 									</span>
 								</div>
