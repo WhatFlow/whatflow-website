@@ -6,9 +6,9 @@
 - [WhatFlow Business API](https://apps.shopify.com/whatflow-official-api): Official Meta Cloud API app for Shopify messaging and team support.
 - [WhatFlow Chat Automation vs Business API](https://whatflow.io/compare/whatflow-chat-automation-vs-business-api): Separate linked-device and official API products. Ratings and connection methods must be attributed to the correct app.
 
-## Shopify App Store ratings (checked November 11, 2026)
-- [WhatFlow WhatsApp Business API](https://apps.shopify.com/whatflow-official-api): 4.9 out of 5 from 59 ratings. Official Meta Cloud API app with Shopify Flow, catalog sharing and a team inbox with no seat fees.
-- [WhatFlow Chat Automation](https://apps.shopify.com/whatflow): 4.0 out of 5 from 329 ratings. Linked-device app for smaller stores that want to start without a Meta Business account.
+## Shopify App Store ratings (checked November 18, 2026)
+- [WhatFlow WhatsApp Business API](https://apps.shopify.com/whatflow-official-api): 4.9 out of 5 from 72 ratings. Official Meta Cloud API app with Shopify Flow, catalog sharing and a team inbox with no seat fees.
+- [WhatFlow Chat Automation](https://apps.shopify.com/whatflow): 4.0 out of 5 from 341 ratings. Linked-device app for smaller stores that want to start without a Meta Business account.
 - Each rating belongs to its own listing; they are not combined.
 
 ## Feature access and pricing

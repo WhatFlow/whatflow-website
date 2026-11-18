@@ -20,6 +20,7 @@ const rid=()=>randomBytes(12).toString('hex');
 const text=n=>n.type==='text'?n.text:n.type==='block'?[n.fields.blockType,n.fields.url,n.fields.alt,n.fields.caption,n.fields.heading].map(v=>v??'').join('|'):(n.children||[]).map(text).join(n.type==='root'?'\n':' ');
 const norm=s=>String(s??'').replace(/\s+/g,' ').trim();
 const same=(a,b)=>norm(a)===norm(b);
+const sameText=(a,b)=>String(a??"").replace(/\s+/g,"")===String(b??"").replace(/\s+/g,""); // node joins add spaces; compare without whitespace
 const rows=(arr,fields)=>JSON.stringify((arr||[]).map(r=>fields.map(f=>norm(r[f]))));
 
 const livePosts=new Map(JSON.parse(await readFile(postsFile,'utf8')).docs.map(d=>[d.slug,d]));
@@ -30,7 +31,7 @@ for(const dir of [root+'/rewritten',root+'/new'])for(const f of await listMarkdo
  const slug=f.slice(0,-3),{meta,body}=await readDoc(`${dir}/${f}`),live=livePosts.get(slug);
  if(!live)throw Error('post not live: '+slug);
  const content=bodyToLexical(body,slug);
- const changed=!same(text(content.root),text(live.content.root))||!same(meta.title,live.title)||!same(meta.excerpt,live.excerpt)||!same(meta.metaTitle,live.seo?.metaTitle)||!same(meta.metaDescription,live.seo?.metaDescription)
+ const changed=!sameText(text(content.root),text(live.content.root))||!same(meta.title,live.title)||!same(meta.excerpt,live.excerpt)||!same(meta.metaTitle,live.seo?.metaTitle)||!same(meta.metaDescription,live.seo?.metaDescription)
   ||rows(meta.faqs,['question','answer'])!==rows(live.faqs,['question','answer'])||rows(meta.sources,['title','url','note'])!==rows(live.sources,['title','url','note'])||JSON.stringify((meta.tags||[]).map(norm))!==JSON.stringify((live.tags||[]).map(t=>norm(t.tag)));
  if(!changed)continue;
  const set={title:meta.title,excerpt:meta.excerpt,category:meta.category,reviewed_at:now,content:JSON.stringify(content),seo_meta_title:meta.metaTitle,seo_meta_description:meta.metaDescription,updated_at:now};
@@ -61,7 +62,7 @@ for(const dir of [compRoot+'/edited',compRoot+'/new'])for(const f of await listM
   if(missing.length)throw Error(`${slug}: ${key} rows removed ${missing.map(r=>r.id)}`);
   d[key]=mapped.map(r=>{const o=old[key].find(x=>x.id===r.id);return o?{...o,...r}:r;});
  }
- const changed=!same(text(content.root),text(old.content.root))||['title','excerpt','verdict'].some(k=>!same(d[k],old[k]))||!same(d.seo.metaTitle,old.seo?.metaTitle)||!same(d.seo.metaDescription,old.seo?.metaDescription)
+ const changed=!sameText(text(content.root),text(old.content.root))||['title','excerpt','verdict'].some(k=>!same(d[k],old[k]))||!same(d.seo.metaTitle,old.seo?.metaTitle)||!same(d.seo.metaDescription,old.seo?.metaDescription)
   ||rows(d.featureTable,['feature','whatflow','competitor'])!==rows(old.featureTable,['feature','whatflow','competitor'])||rows(d.faqs,['question','answer'])!==rows(old.faqs,['question','answer'])||rows(d.sources,['title','url','note'])!==rows(old.sources,['title','url','note']);
  if(!changed)continue;
  d.updatedAt=now;d.reviewedAt=now;source.push(old);candidate.push(d);report.comparisons.push(slug);

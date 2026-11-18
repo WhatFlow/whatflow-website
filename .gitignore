@@ -65,3 +65,8 @@ next-env.d.ts
 !/content/blog/audit-2026-11-11/REPORT.md
 /content/comparisons/audit-2026-11-11/*
 !/content/comparisons/audit-2026-11-11/BRIEF.md
+/content/blog/kaching-strategy-2026-11-18/*
+!/content/blog/kaching-strategy-2026-11-18/STRATEGY.md
+!/content/blog/kaching-strategy-2026-11-18/BRIEF.md
+!/content/blog/kaching-strategy-2026-11-18/REPORT.md
+/content/comparisons/kaching-links-2026-11-18/*
