@@ -40,48 +40,48 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
     tag: "Cart recovery",
     tone: "sol-tone-yellow",
     title: "Shopify WhatsApp Abandoned Cart Recovery",
-    metaTitle: "Shopify WhatsApp Abandoned Cart Recovery — 98% Open Rates | WhatFlow",
+    metaTitle: "Shopify Abandoned Cart Recovery on WhatsApp",
     metaDescription:
-      "Recover up to 25% of abandoned Shopify checkouts with automated WhatsApp cart recovery messages. 1-click checkout links, dynamic discounts, and 98% open rates.",
+      "Send WhatsApp reminders to shoppers who leave a Shopify checkout, with a link back to their saved basket. Set the delay, preview the message and test it first.",
     headline: "Recover lost Shopify sales on autopilot via WhatsApp.",
     accent: ["autopilot"],
     subtitle:
-      "Over 70% of eCommerce carts are abandoned. Reach shoppers directly on WhatsApp with pre-filled checkout links and dynamic discount codes before they buy from competitors.",
-    heroBadge: "25% average recovery rate",
-    stat: { value: "25%", label: "Average checkout recovery rate" },
+      "About 70% of online carts are abandoned, according to Baymard Institute's average. Reach shoppers on WhatsApp with an approved reminder that links back to their saved checkout.",
+    heroBadge: "Included on the Free plan",
+    stat: { value: "70%", label: "Average cart abandonment rate (Baymard Institute)" },
     features: [
       {
         title: "1-click direct checkout links",
         desc: "Customers tap a single button in WhatsApp to instantly return to their pre-filled checkout with all cart items saved.",
       },
       {
-        title: "Dynamic smart discounts",
-        desc: "Offer tiered incentive discounts based on cart value or customer status to maximize checkout completion without sacrificing margins.",
+        title: "Approved reminder templates",
+        desc: "Pick an approved WhatsApp template, preview it with sample data, and add a discount code only if you choose to.",
       },
       {
-        title: "Automated multi-step sequences",
-        desc: "Set timed follow-ups (e.g. 30 minutes, 6 hours, 24 hours) that automatically cancel if the customer completes their purchase.",
+        title: "Your choice of delay",
+        desc: "Choose how long to wait before the reminder, so shoppers get a fair chance to finish on their own.",
       },
       {
-        title: "Quiet hours and compliance",
-        desc: "Respect customer timezones with automatic quiet hours and 1-click opt-out rules that keep your WhatsApp Business account in high quality standing.",
+        title: "Draft-order reminders",
+        desc: "Follow up on draft orders and invoices with their own template and wait time, kept separate from checkout reminders.",
       },
     ],
     steps: [
       {
         step: "01",
         title: "Customer leaves checkout",
-        desc: "Shopify fires an abandoned checkout webhook to WhatFlow in real time.",
+        desc: "A shopper starts checkout in Shopify and leaves before paying.",
       },
       {
         step: "02",
-        title: "Smart sequence triggers",
-        desc: "WhatFlow sends a personalized WhatsApp template with exact product titles, thumbnail, and 1-click recovery button.",
+        title: "Reminder sent",
+        desc: "After your delay, WhatFlow sends your approved WhatsApp reminder with a link back to the saved checkout.",
       },
       {
         step: "03",
         title: "Order completed",
-        desc: "Shopper completes payment on Shopify. Follow-up sequences auto-cancel and conversion is tracked in real-time.",
+        desc: "The shopper finishes paying on Shopify. Test once before rollout to confirm no reminder follows a completed order.",
       },
     ],
     chat: [
@@ -94,17 +94,17 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
       {
         question: "How is WhatsApp cart recovery better than email or SMS?",
         answer:
-          "WhatsApp messages boast a 98% open rate and 45-60% click-through rate, compared to 20% open rates on email and low delivery rates on SMS. WhatsApp also supports rich media and interactive buttons.",
+          "WhatsApp reaches shoppers in the app they already use for chats, supports buttons and images, and any reply lands in your team inbox. Results vary by store, so compare recovered orders against a holdout group before you decide.",
       },
       {
         question: "How quickly does WhatFlow send the recovery message?",
         answer:
-          "You can configure exact timing delays, typically between 15 to 30 minutes after checkout abandonment for maximum conversion.",
+          "You set the delay. Give shoppers a fair chance to finish on their own, then test a couple of delays and keep the one that recovers more orders for your store.",
       },
       {
         question: "Does WhatFlow stop sending if the customer already bought?",
         answer:
-          "Yes! WhatFlow syncs with Shopify in real time. As soon as an order is placed, all remaining cart recovery reminders for that customer are immediately halted.",
+          "Reminders are meant for unfinished checkouts. Before you switch them on, abandon a test checkout, then complete the order, and confirm no reminder follows.",
       },
     ],
   },
@@ -113,38 +113,38 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
     tag: "COD and fraud prevention",
     tone: "sol-tone-mint",
     title: "Shopify Cash on Delivery (COD) WhatsApp Confirmation & Anti-RTO",
-    metaTitle: "Shopify COD WhatsApp Order Confirmation & Anti-RTO | WhatFlow",
+    metaTitle: "Shopify COD Order Confirmation on WhatsApp",
     metaDescription:
-      "Slash Cash on Delivery (COD) Return-to-Origin (RTO) rates by up to 40%. Send 1-click WhatsApp order confirmation and cancellation buttons that automatically update Shopify order tags.",
-    headline: "Cut COD return-to-origin (RTO) by up to 40%.",
-    accent: ["40%"],
+      "Confirm Shopify cash on delivery orders on WhatsApp before you ship. Buyers confirm or cancel with a reply button, orders are tagged, and OTP checks are optional.",
+    headline: "Confirm every COD order on WhatsApp before you ship.",
+    accent: ["before"],
     subtitle:
       "Verify buyer intent before shipping. Send automated WhatsApp confirmation messages with interactive 'Confirm Order' and 'Cancel Order' buttons that update Shopify order tags in real time.",
-    heroBadge: "40% RTO reduction",
-    stat: { value: "40%", label: "Average reduction in failed deliveries" },
+    heroBadge: "COD, OTP and FlowSense included",
+    stat: { value: "1 tap", label: "for a buyer to confirm or cancel a COD order" },
     features: [
       {
         title: "1-click interactive buttons",
-        desc: "Customers confirm or cancel their COD order with a single tap in WhatsApp, with no OTP typing or phone calls required.",
+        desc: "Customers confirm or cancel their COD order with a single tap in WhatsApp, without a phone call.",
       },
       {
         title: "Automatic Shopify order tagging",
-        desc: "Instantly applies 'COD Confirmed', 'COD Cancelled', or 'COD Unverified' tags to Shopify orders to streamline your warehouse fulfillment.",
+        desc: "Replies update the Shopify order with tags, so your warehouse ships only orders the buyer confirmed.",
       },
       {
-        title: "Address verification and correction",
-        desc: "Allow customers to verify and fix incomplete street addresses or pin codes directly inside WhatsApp chat.",
+        title: "OTP phone verification",
+        desc: "Verify the buyer's phone number with a one-time code at a checkout placement your store supports, and tag verified orders.",
       },
       {
-        title: "Prepaid conversion incentives",
-        desc: "Offer a dynamic discount link to encourage COD buyers to convert to prepaid payment on Shopify before shipping.",
+        title: "FlowSense order review",
+        desc: "Review risky COD orders with insights from order and delivery outcomes, then act on a policy your team can explain.",
       },
     ],
     steps: [
       {
         step: "01",
         title: "COD order placed",
-        desc: "When a customer places a Cash on Delivery order, WhatFlow instantly detects the COD payment gateway.",
+        desc: "A customer places an order with the cash on delivery payment method you chose in WhatFlow.",
       },
       {
         step: "02",
@@ -180,31 +180,31 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
     tag: "Post-purchase automation",
     tone: "sol-tone-sky",
     title: "Shopify WhatsApp Order Tracking & Shipping Notifications",
-    metaTitle: "Shopify WhatsApp Order Tracking & Shipping Alerts | WhatFlow",
+    metaTitle: "Shopify Order Tracking Notifications on WhatsApp",
     metaDescription:
       "Keep Shopify customers delighted with real-time WhatsApp shipping updates, tracking links, and delivery notifications. Reduce 'Where is my order?' support tickets.",
     headline: "Real-time WhatsApp shipping updates that delight customers.",
     accent: ["delight"],
     subtitle:
-      "Deliver automated order receipts, tracking numbers, out-for-delivery alerts, and fulfillment updates straight to WhatsApp. Reduce customer service inquiries by over 60%.",
-    heroBadge: "60% fewer WISMO tickets",
-    stat: { value: "60%", label: "Fewer 'where is my order' support inquiries" },
+      "Send shipping updates and tracking links on WhatsApp at the stages you choose, from label and carrier pickup to in transit and delivered, so fewer customers need to ask where their order is.",
+    heroBadge: "Pick the stages you send",
+    stat: { value: "$0.0014", label: "Meta utility rate per message to India (Oct 2026)" },
     features: [
       {
         title: "Fulfillment and tracking alerts",
         desc: "Trigger WhatsApp messages the second an order is marked fulfilled in Shopify, complete with carrier tracking URLs.",
       },
       {
-        title: "Out-for-delivery alerts",
-        desc: "Notify customers on the day of delivery so they are available to receive their package, reducing delivery failures.",
+        title: "Delivery-stage alerts",
+        desc: "Send updates at the stages your carrier reports, such as pickup, in transit and delivered, and test each one first.",
       },
       {
-        title: "Interactive order receipts",
-        desc: "Provide clean, rich message cards detailing purchased items, total spent, and links to download invoices.",
+        title: "Split shipments",
+        desc: "If orders ship in more than one package, test a split shipment so each parcel gets the right update.",
       },
       {
-        title: "Cross-sell recommendations",
-        desc: "Include smart personalized product recommendations in delivery confirmation messages to drive repeat purchases.",
+        title: "Replies reach your team",
+        desc: "Customers reply in the same chat and your team answers from the shared inbox, with no seat fees.",
       },
     ],
     steps: [
@@ -221,7 +221,7 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
       {
         step: "03",
         title: "Delighted repeat customer",
-        desc: "Buyer stays informed, eliminating support tickets and boosting satisfaction and lifetime loyalty.",
+        desc: "The buyer knows where the parcel is, so fewer 'where is my order' questions reach your team.",
       },
     ],
     chat: [
@@ -233,7 +233,7 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
       {
         question: "Does WhatFlow support my shipping carriers?",
         answer:
-          "Yes! WhatFlow works with all Shopify-supported shipping carriers including DHL, FedEx, UPS, USPS, Blue Dart, Delhivery, Shiprocket, and custom tracking URLs.",
+          "WhatFlow uses the fulfillment and tracking details in Shopify, so it works with carriers that add tracking to your Shopify orders. Check that your carrier sends the events you plan to message on, then test a real order.",
       },
       {
         question: "Can customers reply to tracking messages for support?",
@@ -247,27 +247,27 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
     tag: "Reviews and UGC",
     tone: "sol-tone-pink",
     title: "Collect Shopify Reviews & UGC via WhatsApp",
-    metaTitle: "Collect Shopify Reviews on WhatsApp (Judge.me & Loox) | WhatFlow",
+    metaTitle: "Collect Shopify Reviews on WhatsApp (Judge.me)",
     metaDescription:
-      "Generate 5x more product reviews and user-generated photo content on WhatsApp. Seamless integration with Judge.me, Loox, and Shopify reviews.",
-    headline: "Get 5x more 5-star product reviews on WhatsApp.",
-    accent: ["5x"],
+      "Ask for Shopify product reviews on WhatsApp at the right time after delivery. Use WhatFlow Review Requests or the ready-made Judge.me Shopify Flow template.",
+    headline: "Ask for product reviews on WhatsApp at the right time.",
+    accent: ["right"],
     subtitle:
-      "Email review requests get ignored. Collect authentic star ratings, text reviews, and photo testimonials directly on WhatsApp with pre-built Judge.me and Loox integrations.",
-    heroBadge: "5x higher review submission",
-    stat: { value: "5x", label: "Higher review submission rate vs email" },
+      "Email review requests are easy to miss. Send a WhatsApp message that links to your review form a set time after delivery, using WhatFlow Review Requests or the Judge.me Shopify Flow template.",
+    heroBadge: "Judge.me Flow template included",
+    stat: { value: "Free", label: "Review requests on every plan, including Free" },
     features: [
       {
-        title: "Judge.me and Loox direct sync",
-        desc: "Connects with your existing Shopify review apps to publish collected reviews directly to your product pages.",
+        title: "Judge.me through Shopify Flow",
+        desc: "A ready-made Flow template sends your Judge.me review request on WhatsApp. Judge.me still collects and publishes the reviews.",
       },
       {
-        title: "1-click star rating buttons",
-        desc: "Shoppers select star ratings with a single tap directly inside the WhatsApp conversation window.",
+        title: "Choose who and when",
+        desc: "Pick when to ask, who receives the request and which approved template to send.",
       },
       {
-        title: "Photo and video UGC collection",
-        desc: "Customers can easily send photos and videos of their products right from their smartphone camera roll.",
+        title: "Replies land in your inbox",
+        desc: "If a customer replies with a photo or a question, your team sees it in the shared inbox.",
       },
       {
         title: "Automated delivery timing",
@@ -278,34 +278,34 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
       {
         step: "01",
         title: "Order delivered",
-        desc: "WhatFlow waits your specified number of days (e.g. 5 days) after delivery before sending.",
+        desc: "WhatFlow waits the delay you set after delivery, or after fulfillment plus time in transit, before sending.",
       },
       {
         step: "02",
-        title: "Interactive review request",
-        desc: "Customer receives a WhatsApp message with 1-click star rating buttons and optional photo upload prompt.",
+        title: "Review request sent",
+        desc: "The customer receives your approved WhatsApp template with a link to your review form.",
       },
       {
         step: "03",
-        title: "Synced to storefront",
-        desc: "Review and photo are automatically posted to Judge.me/Loox to boost your social proof and conversion rate.",
+        title: "Review collected",
+        desc: "The customer submits through your review app's form, which publishes the review as usual.",
       },
     ],
     chat: [
-      { id: "c1", from: "store", text: "How are you liking your new Linen tote? Tap to rate it.", buttons: ["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐ or less"], tapped: 0, time: "18:20" },
-      { id: "c2", from: "customer", text: "Love it! Here's a photo 📸", time: "18:22" },
-      { id: "c3", from: "store", text: "Thank you! Your review is live on our store. Here's a thank-you discount code 💚", time: "18:22" },
+      { id: "c1", from: "store", text: "How are you liking your new Linen tote? We'd love a quick review.", buttons: ["Leave a review"], tapped: 0, time: "18:20" },
+      { id: "c2", from: "customer", text: "Love it! Just left 5 stars ⭐", time: "18:24" },
+      { id: "c3", from: "store", text: "Thank you, that really helps us 💚", time: "18:25" },
     ],
     faqs: [
       {
         question: "Do I need to replace my existing review app?",
         answer:
-          "No! WhatFlow integrates directly with Judge.me, Loox, and standard review widgets so all collected reviews appear in your existing system.",
+          "No. WhatFlow sends the request on WhatsApp; your review app still collects and publishes the review. Judge.me has a ready-made Shopify Flow template for this.",
       },
       {
-        question: "Can I offer discount rewards for photo reviews?",
+        question: "Can I offer a reward for leaving a review?",
         answer:
-          "Yes! You can automatically reply with a discount code as soon as the customer submits their review and photo.",
+          "You can mention a reward in your own message, but check your review platform's rules and consumer-protection guidance on incentivized reviews first, and never reward only positive reviews.",
       },
     ],
   },
@@ -314,31 +314,31 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
     tag: "Storefront conversion",
     tone: "sol-tone-lilac",
     title: "Shopify WhatsApp Chat Button & Support Widget",
-    metaTitle: "Shopify WhatsApp Chat Button & Storefront Widget | WhatFlow",
+    metaTitle: "Free WhatsApp Chat Button for Shopify",
     metaDescription:
-      "Add a beautiful, high-converting WhatsApp chat button to your Shopify storefront. Zero coding, customizable positions, agent routing, and pre-filled greetings.",
+      "Add a free, theme-matched WhatsApp chat button to your Shopify store with the theme editor. Set the number and opening message and preview it on mobile.",
     headline: "Connect with store visitors in 1 tap via WhatsApp chat.",
     accent: ["1", "tap"],
     subtitle:
-      "Turn casual store visitors into paying customers. Add a customizable, mobile-optimized WhatsApp floating button with smart greetings and multi-agent routing in under 60 seconds.",
-    heroBadge: "3-minute install",
-    stat: { value: "3 min", label: "Average setup time (no code)" },
+      "Let store visitors ask a question before they buy. Add a theme-matched WhatsApp button with the Shopify theme editor, set your number and opening message, and preview it on mobile. It's free forever.",
+    heroBadge: "Free forever",
+    stat: { value: "$0", label: "Theme-matched chat buttons, free forever" },
     features: [
       {
         title: "Custom design and placement",
         desc: "Choose from modern floating widgets, pill buttons, or embedded store triggers that match your brand aesthetic perfectly.",
       },
       {
-        title: "Pre-filled dynamic messages",
-        desc: "Automatically include the product title or page URL the customer was viewing so your team has instant context.",
+        title: "Opening message",
+        desc: "Set the message the chat opens with, so customers start the conversation with context.",
       },
       {
-        title: "Multi-agent routing",
-        desc: "Route inquiries to different team members or departments (e.g., Sales vs Support).",
+        title: "Answer from the team inbox",
+        desc: "With WhatFlow Business API, chats from the button land in the shared inbox, where you can assign them.",
       },
       {
-        title: "Zero impact on page speed",
-        desc: "Ultra-lightweight script (< 5KB) loaded asynchronously with zero layout shift or page speed penalty.",
+        title: "Placed with the theme editor",
+        desc: "Enable the app embed in your theme editor without code, and check it doesn't overlap your cart or cookie banner.",
       },
     ],
     steps: [
@@ -350,12 +350,12 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
       {
         step: "02",
         title: "Customize appearance",
-        desc: "Select colors, icon styles, greeting tooltips, and agent display names to match your brand.",
+        desc: "Place and style the button in the theme editor, then preview your theme on desktop and mobile.",
       },
       {
         step: "03",
         title: "Convert visitors to buyers",
-        desc: "Shoppers click to start a WhatsApp chat, capturing their phone number as a qualified marketing lead.",
+        desc: "Shoppers tap to start a WhatsApp chat with your store. Ask for opt-in before you send them marketing messages.",
       },
     ],
     chat: [
@@ -367,7 +367,7 @@ const SOLUTIONS_MAP: Record<string, SolutionData> = {
       {
         question: "Will the WhatsApp chat button slow down my Shopify store?",
         answer:
-          "No. WhatFlow's storefront widget is less than 5KB and loads asynchronously after your page is fully rendered, ensuring a 100/100 Google PageSpeed score.",
+          "It's added as a Shopify app embed through the theme editor. As with any app, check your theme's speed and layout on mobile and desktop before and after you publish it.",
       },
       {
         question: "Does it work on both mobile and desktop?",
@@ -383,7 +383,7 @@ export async function generateMetadata({ params }: SolutionPageProps): Promise<M
   const item = SOLUTIONS_MAP[slug];
 
   if (!item) {
-    return { title: "Solution Not Found | WhatFlow" };
+    return { title: "Solution Not Found" };
   }
 
   const canonicalUrl = `${SITE_URL}/solutions/${slug}`;

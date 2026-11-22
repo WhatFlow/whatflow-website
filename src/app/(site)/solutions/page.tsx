@@ -8,7 +8,7 @@ import "./solutions.css";
 import { getBreadcrumbSchema, SITE_URL } from "@/lib/schema-org";
 
 export const metadata: Metadata = {
-  title: "WhatsApp eCommerce Solutions for Shopify | WhatFlow",
+  title: "WhatsApp eCommerce Solutions for Shopify",
   description:
     "Explore WhatFlow's suite of Shopify WhatsApp solutions: Abandoned cart recovery, COD confirmation, automated shipping alerts, review collection, and storefront chat buttons.",
   keywords: [
@@ -43,40 +43,40 @@ const SOLUTIONS = [
     tag: "Cart recovery",
     tone: "sol-tone-yellow",
     title: "Abandoned cart recovery",
-    desc: "Recover up to 25% of lost checkouts with personalized 98% open-rate WhatsApp messages and 1-click checkout recovery links.",
-    stat: "25% recovery rate",
+    desc: "Send an approved WhatsApp reminder with a link back to the saved checkout, after a delay you choose. Draft-order reminders included.",
+    stat: "Free plan included",
   },
   {
     slug: "cod-order-verification",
     tag: "Fraud prevention",
     tone: "sol-tone-mint",
     title: "COD confirmation and anti-RTO",
-    desc: "Cut cash on delivery return-to-origin (RTO) losses by up to 40% with interactive 1-click confirmation buttons and automatic Shopify order tags.",
-    stat: "40% RTO reduction",
+    desc: "Confirm cash on delivery orders on WhatsApp before you ship, with confirm and cancel buttons, Shopify order tags, OTP checks and FlowSense review.",
+    stat: "COD, OTP and FlowSense",
   },
   {
     slug: "order-tracking-notifications",
     tag: "Post-purchase",
     tone: "sol-tone-sky",
     title: "Order tracking and shipping alerts",
-    desc: "Deliver real-time fulfillment updates, tracking numbers, and out-for-delivery alerts directly to WhatsApp, reducing WISMO tickets by 60%.",
-    stat: "60% fewer support tickets",
+    desc: "Send shipping updates and tracking links on WhatsApp at the stages you choose, so fewer customers need to ask where their order is.",
+    stat: "Pick your stages",
   },
   {
     slug: "whatsapp-reviews-ugc",
     tag: "Reviews and UGC",
     tone: "sol-tone-pink",
     title: "Review and UGC collection",
-    desc: "Generate 5x more product reviews and photo testimonials on WhatsApp with native Judge.me and Loox integrations.",
-    stat: "5x higher review rate",
+    desc: "Ask for product reviews on WhatsApp at the right time after delivery, with WhatFlow Review Requests or the Judge.me Shopify Flow template.",
+    stat: "Judge.me Flow template",
   },
   {
     slug: "chat-button",
     tag: "Storefront conversion",
     tone: "sol-tone-lilac",
     title: "WhatsApp chat button and support",
-    desc: "Add a high-converting, lightweight WhatsApp chat widget to your storefront with dynamic product context and multi-agent routing.",
-    stat: "3-min no-code setup",
+    desc: "Add a theme-matched WhatsApp chat button with the Shopify theme editor, no code needed. Chats land in your shared team inbox.",
+    stat: "Free forever",
   },
 ];
 
@@ -119,8 +119,8 @@ export default function SolutionsHubPage() {
               {JOURNEY.map((message) => <Bubble key={message.id} message={message} />)}
             </Phone>
           </div>
-          <div className="sol-sticker sol-sticker-a"><div><b>Up to 25%</b><small>of lost checkouts recovered</small></div></div>
-          <div className="sol-sticker sol-sticker-b"><div><b>Up to 40%</b><small>lower COD RTO losses</small></div></div>
+          <div className="sol-sticker sol-sticker-a"><div><b>Free</b><small>plan with every feature</small></div></div>
+          <div className="sol-sticker sol-sticker-b"><div><b>1 tap</b><small>to confirm a COD order</small></div></div>
         </div>
       </PageHero>
 

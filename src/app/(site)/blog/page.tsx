@@ -8,7 +8,7 @@ import { PostCard, FeaturedPostCard, EmptyCard, RssIcon, ICONS, categoryLabel } 
 import "./content.css";
 
 const blogMetadata: Metadata = {
-  title: "Blog — WhatFlow",
+  title: "Shopify and WhatsApp Guides for Store Owners",
   description:
     "Tips, guides, and updates on WhatsApp marketing for Shopify merchants. Learn how to automate your store with WhatFlow.",
   keywords: [

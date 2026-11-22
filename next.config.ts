@@ -50,7 +50,15 @@ const nextConfig: NextConfig = {
 			["/blog/enhancement", "blog-enhancement-"],
 			["/blog/engineering", "blog-engineering-"],
 			["/comparisons", "comparisons-"],
-		].map(([from, prefix]) => ({ source: `${from}/${ext}`, destination: `/api/media/file/${prefix}:file`, permanent: true }));
+		].map(([from, prefix]) => ({ source: `${from}/${ext}`, destination: `/api/media/file/${prefix}:file`, permanent: true }))
+			.concat([
+				// Old URLs still shown in Google's AI features (Search Console, Nov 23, 2026).
+				{ source: "/official-api-pricing", destination: "/pricing", permanent: true },
+				{ source: "/privacy-policy", destination: "/privacy", permanent: true },
+				{ source: "/resources", destination: "/blog", permanent: true },
+				// Integration pages that described connections WhatFlow does not ship.
+				...["klaviyo", "gorgias", "loox", "recharge"].map((slug) => ({ source: `/integrations/${slug}`, destination: "/integrations", permanent: true })),
+			]);
 	},
 	// Packages with Cloudflare Workers specific implementations.
 	serverExternalPackages: ["jose", "pg-cloudflare", "drizzle-kit"],

@@ -70,3 +70,6 @@ next-env.d.ts
 !/content/blog/kaching-strategy-2026-11-18/BRIEF.md
 !/content/blog/kaching-strategy-2026-11-18/REPORT.md
 /content/comparisons/kaching-links-2026-11-18/*
+/content/blog/gsc-2026-11-23/*
+!/content/blog/gsc-2026-11-23/BRIEF.md
+!/content/blog/gsc-2026-11-23/REPORT.md

@@ -15,7 +15,7 @@ export async function generateMetadata({ searchParams }: { searchParams: SearchP
   if (Number.isInteger(page) && page > 1) canonicalParams.set("page", String(page));
   const suffix = canonicalParams.size ? `?${canonicalParams}` : "";
   return {
-    title: `${category ? COMPARISON_CATEGORIES[category] : "WhatsApp & Shopify"} Comparisons${page > 1 ? ` · Page ${page}` : ""} | WhatFlow`,
+    title: `${category ? COMPARISON_CATEGORIES[category] : "WhatsApp & Shopify"} Comparisons${page > 1 ? ` · Page ${page}` : ""}`,
     description: "Compare provider pricing, WhatsApp vs email and SMS, team inbox costs and Shopify workflows. Detailed guides by Safwan Adnan, co-founder and CEO of WhatFlow.",
     alternates: { canonical: `${SITE_URL}/compare${suffix}` },
     ...(params.q?.trim() ? { robots: { index: false, follow: true } } : {}),

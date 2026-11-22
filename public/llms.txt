@@ -23,6 +23,11 @@ Catalog sharing is live. Customer-segment/audience sync is upcoming. WhatFlow ha
 - [WhatsApp team inbox](https://whatflow.io/inbox)
 - [Free storefront WhatsApp buttons](https://whatflow.io/solutions/chat-button)
 - [Pricing and messaging allowances](https://whatflow.io/pricing)
+- [How to add WhatsApp to a Shopify store](https://whatflow.io/blog/how-to-add-whatsapp-to-shopify): The three setup routes, costs and the first automations to switch on.
+- [Best WhatsApp apps for Shopify](https://whatflow.io/blog/best-whatsapp-apps-for-shopify): Ratings and prices checked on each Shopify App Store listing.
+- [WhatsApp order notifications for Shopify](https://whatflow.io/blog/shopify-whatsapp-order-notifications) and [message examples](https://whatflow.io/blog/order-confirmation-message-examples).
+- [Integrations](https://whatflow.io/integrations): Shopify Flow, Shopify Sidekick, Judge.me review requests, Meta catalog, webhooks and MCP for Claude, ChatGPT or Cursor.
+- Country guides with Meta's per-message rates and local rules: [Pakistan](https://whatflow.io/blog/whatsapp-for-shopify-pakistan), [India](https://whatflow.io/blog/whatsapp-for-shopify-india), [UAE](https://whatflow.io/blog/whatsapp-for-shopify-uae), [Saudi Arabia](https://whatflow.io/blog/whatsapp-for-shopify-saudi-arabia), [Egypt](https://whatflow.io/blog/whatsapp-for-shopify-egypt), [Indonesia](https://whatflow.io/blog/whatsapp-for-shopify-indonesia), [Malaysia](https://whatflow.io/blog/whatsapp-for-shopify-malaysia), [South Africa](https://whatflow.io/blog/whatsapp-for-shopify-south-africa), [Brazil](https://whatflow.io/blog/whatsapp-for-shopify-brazil), [UK](https://whatflow.io/blog/whatsapp-for-shopify-uk).
 - [About WhatFlow](https://whatflow.io/about)
 - [Changelog and release notes](https://whatflow.io/changelog): Dated, plain-language notes on new features, improvements and fixes for both apps.
 

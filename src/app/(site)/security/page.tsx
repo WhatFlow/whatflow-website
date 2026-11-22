@@ -6,7 +6,7 @@ const TONES = ["var(--mint)", "#fff3c4", "var(--sky)", "var(--pink)", "var(--lil
 
 export const metadata: Metadata = {
   alternates: { canonical: "/security" },
-  title: "Security & Compliance | WhatFlow",
+  title: "Security & Compliance",
   description: "Enterprise security, GDPR compliance, encryption, and Meta Cloud API infrastructure at WhatFlow.",
 };
 

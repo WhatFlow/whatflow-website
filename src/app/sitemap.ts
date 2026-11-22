@@ -3,6 +3,7 @@ import { getAllIndexableComparisons } from "@/lib/comparisons-api";
 export const dynamic = "force-dynamic";
 import type { MetadataRoute } from "next";
 import { getAllChangelog } from "@/lib/changelog";
+import { DEFAULT_INTEGRATIONS } from "@/lib/integrations-data";
 import {
   getAllPublishedPosts,
   getCaseStudies,
@@ -159,6 +160,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
   } catch {
     integrationRoutes = [];
+  }
+  if (integrationRoutes.length === 0) {
+    integrationRoutes = DEFAULT_INTEGRATIONS.map((item) => ({
+      url: `${baseUrl}/integrations/${item.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    }));
   }
 
   const comparisons = await getAllIndexableComparisons();

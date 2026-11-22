@@ -4,6 +4,7 @@ import Image from "next/image";
 import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { getIntegration, INTEGRATION_CATEGORY_LABELS, type Integration } from "@/lib/payload-api";
+import { DEFAULT_INTEGRATIONS_BY_SLUG } from "@/lib/integrations-data";
 import { getShopifyAppUrl } from "@/lib/shopify-app";
 import { PageHero, Section } from "@/components/site/PageKit";
 import "../integrations.css";
@@ -12,58 +13,7 @@ interface IntegrationPageProps {
   params: Promise<{ slug: string }>;
 }
 
-const FALLBACK_INTEGRATIONS_MAP: Record<string, Partial<Integration>> = {
-  "shopify-flow": {
-    name: "Shopify Flow",
-    slug: "shopify-flow",
-    category: "automation",
-    tagline: "Build WhatsApp workflows with supported Shopify Flow triggers",
-    description: "WhatFlow integrates natively with Shopify Flow. Combine supported Shopify and installed-app triggers with conditions and WhatFlow messaging actions in a visual workflow. Available events and data depend on the connectors installed; WhatsApp messaging rules still apply.",
-    keyFeatures: [
-      { feature: "Native Shopify Flow triggers and actions" },
-      { feature: "Custom payload variable mapping" },
-      { feature: "Automated two-way conversational replies" },
-      { feature: "Customer tag reconciliation and VIP segmentation" },
-    ],
-  },
-  "judge-me": {
-    name: "Judge.me Reviews",
-    slug: "judge-me",
-    category: "reviews",
-    tagline: "Collect photo reviews via interactive WhatsApp buttons",
-    description: "Boost your store's review collection rate by up to 4x. Once an order is marked fulfilled or delivered, WhatFlow sends a friendly WhatsApp message with 1-click star rating buttons that link directly to Judge.me's photo submission form.",
-    keyFeatures: [
-      { feature: "Automated post-delivery triggers" },
-      { feature: "1-click interactive star buttons" },
-      { feature: "Instant discount coupon generation on review submit" },
-      { feature: "Direct sync into Judge.me dashboard" },
-    ],
-  },
-  "klaviyo": {
-    name: "Klaviyo",
-    slug: "klaviyo",
-    category: "marketing",
-    tagline: "Sync customer opt-ins & omnichannel marketing segments",
-    description: "Bridge the gap between email and WhatsApp marketing. When customers opt in to WhatsApp notifications via WhatFlow, their marketing consent and phone number automatically synchronize into your Klaviyo customer profiles.",
-    keyFeatures: [
-      { feature: "Two-way customer profile synchronization" },
-      { feature: "Omnichannel abandoned checkout recovery orchestration" },
-      { feature: "Suppression list and unsubscribes synchronization" },
-    ],
-  },
-  "gorgias": {
-    name: "Gorgias",
-    slug: "gorgias",
-    category: "support",
-    tagline: "Unified WhatsApp customer service inside Gorgias Helpdesk",
-    description: "Provide customer service right where your customers are. Inbound WhatsApp customer queries and replies are routed directly into your Gorgias unified helpdesk with full Shopify order history sidebars.",
-    keyFeatures: [
-      { feature: "Unified agent ticket inbox across WhatsApp and Email" },
-      { feature: "Live Shopify customer order context overlay" },
-      { feature: "Automated canned macro responses and auto-responders" },
-    ],
-  },
-};
+const FALLBACK_INTEGRATIONS_MAP = DEFAULT_INTEGRATIONS_BY_SLUG;
 
 export async function generateMetadata({ params }: IntegrationPageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -76,12 +26,12 @@ export async function generateMetadata({ params }: IntegrationPageProps): Promis
   const item = integration || (FALLBACK_INTEGRATIONS_MAP[slug] as Integration | undefined);
 
   if (!item) {
-    return { title: "Integration Not Found | WhatFlow" };
+    return { title: "Integration Not Found" };
   }
 
   return {
     alternates: { canonical: `/integrations/${slug}` },
-    title: `${item.name} WhatsApp Integration for Shopify | WhatFlow`,
+    title: `${item.name} WhatsApp Integration for Shopify`,
     description: item.description,
   };
 }

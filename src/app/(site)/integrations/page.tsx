@@ -4,100 +4,14 @@ import Image from "next/image";
 import type { CSSProperties } from "react";
 import { PageHero, Section, SectionHead, Hl } from "@/components/site/PageKit";
 import { getIntegrations, INTEGRATION_CATEGORY_LABELS, type Integration } from "@/lib/payload-api";
+import { DEFAULT_INTEGRATIONS } from "@/lib/integrations-data";
 import "./integrations.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/integrations" },
-  title: "Integrations & Shopify App Ecosystem | WhatFlow",
-  description: "Connect WhatFlow with Shopify Flow, Judge.me, Klaviyo, Gorgias, Loox, and your favorite eCommerce tools.",
+  title: "Integrations: Shopify Flow, Sidekick, Judge.me and MCP",
+  description: "Connect WhatFlow to Shopify Flow, Shopify Sidekick, Judge.me review requests, your Meta catalog, webhooks, and Claude, ChatGPT or Cursor through MCP.",
 };
-
-const DEFAULT_INTEGRATIONS: Partial<Integration>[] = [
-  {
-    name: "Shopify Flow",
-    slug: "shopify-flow",
-    category: "automation",
-    tagline: "Build WhatsApp workflows with supported Shopify Flow triggers",
-    description: "Connect WhatFlow triggers and actions into Shopify Flow to build omnichannel automations, VIP tagging, and order alerts.",
-    featured: true,
-    status: "published",
-    keyFeatures: [
-      { feature: "Native Shopify Flow triggers and actions" },
-      { feature: "Custom payload variable mapping" },
-      { feature: "No-code workflow builder" },
-    ],
-  },
-  {
-    name: "Judge.me Reviews",
-    slug: "judge-me",
-    category: "reviews",
-    tagline: "Collect photo reviews via interactive WhatsApp buttons",
-    description: "Automatically send high-converting WhatsApp review requests once an order is delivered with 1-click star ratings.",
-    featured: true,
-    status: "published",
-    keyFeatures: [
-      { feature: "Automated post-delivery triggers" },
-      { feature: "5-star rating interactive buttons" },
-      { feature: "Direct sync to Judge.me dashboard" },
-    ],
-  },
-  {
-    name: "Klaviyo",
-    slug: "klaviyo",
-    category: "marketing",
-    tagline: "Sync customer opt-ins & omnichannel marketing segments",
-    description: "Combine the power of email and WhatsApp. Sync WhatsApp opt-ins and suppression lists directly between Klaviyo and WhatFlow.",
-    featured: true,
-    status: "published",
-    keyFeatures: [
-      { feature: "Two-way customer profile sync" },
-      { feature: "Omnichannel abandoned cart orchestration" },
-      { feature: "Smart frequency capping" },
-    ],
-  },
-  {
-    name: "Gorgias",
-    slug: "gorgias",
-    category: "support",
-    tagline: "Unified WhatsApp customer service inside Gorgias Helpdesk",
-    description: "Route two-way WhatsApp customer chats directly into your Gorgias inbox alongside email and live chat tickets.",
-    featured: true,
-    status: "published",
-    keyFeatures: [
-      { feature: "Unified agent ticket inbox" },
-      { feature: "Shopify customer order context overlay" },
-      { feature: "Automated canned macro responses" },
-    ],
-  },
-  {
-    name: "Loox Reviews",
-    slug: "loox",
-    category: "reviews",
-    tagline: "Collect visual customer reviews & photo UGC on WhatsApp",
-    description: "Prompt recent buyers on WhatsApp to submit photos and videos with high open rates and instant coupon reward codes.",
-    featured: false,
-    status: "published",
-    keyFeatures: [
-      { feature: "Photo & video review collection" },
-      { feature: "Automated discount incentive delivery" },
-      { feature: "Verified buyer badge sync" },
-    ],
-  },
-  {
-    name: "Recharge Subscriptions",
-    slug: "recharge",
-    category: "subscriptions",
-    tagline: "WhatsApp upcoming charge alerts & 1-click order skips",
-    description: "Reduce subscription churn by sending friendly WhatsApp renewal reminders and letting customers skip or swap products in chat.",
-    featured: false,
-    status: "published",
-    keyFeatures: [
-      { feature: "Upcoming renewal notifications" },
-      { feature: "1-click skip or delay buttons" },
-      { feature: "Credit card expiry failure alerts" },
-    ],
-  },
-];
 
 interface IntegrationsPageProps {
   searchParams: Promise<{ category?: string }>;
@@ -129,9 +43,8 @@ export default async function IntegrationsPage({ searchParams }: IntegrationsPag
     { key: "all", label: "All integrations" },
     { key: "automation", label: "Automation" },
     { key: "reviews", label: "Reviews and UGC" },
-    { key: "marketing", label: "Marketing" },
-    { key: "support", label: "Support" },
-    { key: "subscriptions", label: "Subscriptions" },
+    { key: "marketing", label: "Catalog" },
+    { key: "support", label: "AI and support" },
   ];
 
   // Eight tiles around WhatFlow; empty slots stay dashed ("your app here").

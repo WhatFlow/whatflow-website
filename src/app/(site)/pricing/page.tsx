@@ -9,7 +9,7 @@ import {
 } from "@/lib/schema-org";
 
 export const metadata: Metadata = {
-  title: "Shopify WhatsApp App Pricing | WhatFlow Business API",
+  title: "Shopify WhatsApp App Pricing: Plans and Meta Rates",
   description:
     "Compare WhatFlow’s free and paid Shopify WhatsApp plans, monthly message allowances, unlimited inbox seats, and separate Meta messaging rates with zero markup.",
   keywords: [

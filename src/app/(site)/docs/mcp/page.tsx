@@ -4,7 +4,7 @@ import { PageHero, Section as PageSection } from "@/components/site/PageKit";
 import "./mcp.css";
 
 export const metadata: Metadata = {
-  title: "Connect Claude, ChatGPT or Cursor to WhatFlow (MCP) | WhatFlow",
+  title: "Connect Claude, ChatGPT or Cursor to WhatFlow (MCP)",
   description:
     "Set up the WhatFlow MCP server so an AI app can read Live Inbox chats, draft replies, send approved templates, look up Shopify orders and read WhatsApp analytics.",
   alternates: { canonical: "/docs/mcp" },
