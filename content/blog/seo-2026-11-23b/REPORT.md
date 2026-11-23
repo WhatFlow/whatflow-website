@@ -18,7 +18,7 @@ Follows the Search Console batch (`content/blog/gsc-2026-11-23/`). Same pattern 
 
 ## Worth knowing
 
-- **Scale plan price:** the Shopify App Store listing shows Scale at **$49**, but `/pricing` shows **$49.99**. One of them should change. No post states the Scale price.
+- **Scale plan price:** confirmed as **$49** (Nov 24). `/pricing` and 56 comparison pages were corrected from $49.99.
 - **Netherlands:** its marketing rate ($0.1597) is higher than Germany's. Germany's utility rate ($0.055) is the highest on the card.
 - **US numbers:** Meta's per-user marketing limits page says marketing templates aren't currently delivered to US numbers. The promotional post says so.
 - **Weaker legal sources** (each post says so):

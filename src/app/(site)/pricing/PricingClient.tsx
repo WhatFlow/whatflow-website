@@ -119,8 +119,8 @@ const PRICING_PLANS: PricingPlan[] = [
 	{
 		id: "scale",
 		name: "Scale",
-		price: 49.99,
-		priceDisplay: "$49.99",
+		price: 49,
+		priceDisplay: "$49",
 		trialBadge: "7-day free trial",
 		freeAllowance: 40000,
 		overageRate: 0.002,
