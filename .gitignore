@@ -73,3 +73,7 @@ next-env.d.ts
 /content/blog/gsc-2026-11-23/*
 !/content/blog/gsc-2026-11-23/BRIEF.md
 !/content/blog/gsc-2026-11-23/REPORT.md
+/content/blog/seo-2026-11-23b/*
+!/content/blog/seo-2026-11-23b/BRIEF.md
+!/content/blog/seo-2026-11-23b/REPORT.md
+/content/comparisons/ratings-2026-11-23/*
