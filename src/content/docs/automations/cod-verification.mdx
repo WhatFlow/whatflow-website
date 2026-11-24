@@ -1,0 +1,151 @@
+With cash on delivery (COD), some customers order and then refuse the parcel. WhatFlow lets you ask every COD customer on WhatsApp to confirm their order before you ship it. You can do this with **Confirm** and **Cancel** buttons, or with a one-time code on the Thank you page.
+
+<Note>
+
+This page is about confirming COD orders on WhatsApp. The **Cash on Delivery** page in the app menu does something else: it adds a COD fee and hides COD at checkout. See [COD fee and rules at checkout](/docs/automations/cod-checkout).
+
+</Note>
+
+## Two ways to verify
+
+| | Confirm/Cancel buttons | One-time code (OTP) |
+| --- | --- | --- |
+| Automation | Order Confirmation | OTP Order Confirmation |
+| How the customer confirms | Taps a button in a WhatsApp message | Enters a 6-digit code on the Thank you page or Order status page |
+| Can the customer say no? | Yes, with the Cancel button | No. They confirm or do nothing. |
+| Template category | Utility | Authentication |
+| Set-up guide | [Order confirmation](/docs/automations/order-confirmation) | [OTP order confirmation](/docs/automations/otp-verification) |
+
+Use one of them for a given order, not both. If both are on for the same orders, the customer is asked twice. Turn one off, or give each one different payment methods.
+
+The rest of this page covers the button method.
+
+## How the buttons work
+
+1. A customer places a COD order.
+2. WhatFlow sends your Order Confirmation template with quick-reply buttons, for example **Confirm** and **Cancel**. The order gets the tag `⚠ Confirmation Pending` once the message is delivered.
+3. The customer taps a button.
+4. WhatFlow removes the pending tag, adds that button's tag to the order, and sends the reply you set for that button.
+
+With the default settings:
+
+| Customer taps | Tag added | Reply sent |
+| --- | --- | --- |
+| First button (Confirm) | `✅ Order Confirmed` | Thank you for the confirmation! Your order will be at your doorstep soon! |
+| Second button (Cancel) | `❌ Order Canceled` | Your order has been cancelled. You may confirm again if this was a mistake. |
+
+You can change every reply and tag. See [Order confirmation settings](/docs/automations/order-confirmation#when-the-customer-replies).
+
+<Warning>
+
+**Tapping Cancel does not cancel the order in Shopify.** WhatFlow only adds the `❌ Order Canceled` tag and sends the reply. The order stays open, and the stock is not restocked. You must cancel the order yourself, or set up Shopify Flow to do it (see [Act on the tags](#act-on-the-tags)).
+
+The default reply to Cancel says "Your order has been cancelled". If you do not cancel these orders, change the reply to something like "We received your cancellation request."
+
+</Warning>
+
+## Set it up for COD
+
+<Steps>
+<Step title="Open Order Confirmation">
+
+<Path>Home › Order Confirmation</Path>
+
+</Step>
+<Step title="Choose a template with buttons">
+
+Click **Choose message** and pick an approved template that has quick-reply buttons. The **Order Confirmation - Detailed** starter has **Confirm** and **Cancel** buttons.
+
+</Step>
+<Step title="Send only for COD orders">
+
+Under **When to send**, open **Payment methods** and pick your cash on delivery method. Now prepaid orders do not get the message.
+
+</Step>
+<Step title="Set a tag for every button">
+
+Under **When the customer replies**, check **Reply with** and **Tag the order** for each button. Give each button its own tag. You need these tags to filter orders and to use [automatic reminders](/docs/automations/order-confirmation#automatic-reminders).
+
+</Step>
+<Step title="Save and turn on">
+
+Click **Save**, then click **Turn on** in the **Status** card.
+
+</Step>
+</Steps>
+
+## What the customer sees
+
+<Preview buttons={["Confirm","Cancel"]}>
+Dear **Sara**,
+Thank you for your order. This is a confirmation message.
+
+Order Number: **#1001**
+Total: **49.99 USD**
+
+Please confirm your order ASAP.
+</Preview>
+
+After the customer taps **Confirm**:
+
+<Preview>
+Thank you for the confirmation! Your order will be at your doorstep soon!
+</Preview>
+
+Tapping a button sends a message to your business, so it opens a 24-hour window. The reply and the tap also show in [Live Inbox](/docs/inbox/overview), where your team can follow up with free-form messages.
+
+## Rules for button replies
+
+- **3-day limit.** A button tap counts only within 3 days of the confirmation message. Taps after that do not add a tag or send a reply.
+- **Changing the answer.** If the customer taps Cancel and later taps Confirm (within 3 days), the new tag replaces the old one.
+- **Typed replies.** If the customer types the button text as a reply to the message instead of tapping, WhatFlow treats it like a tap. Matching ignores upper and lower case.
+- **No double replies.** A button tap never also triggers a general [auto-reply](/docs/conversations/auto-replies).
+- **Only quick-reply buttons count.** Link and phone buttons do not add tags or send replies.
+
+## Act on the tags
+
+WhatFlow tags orders. What happens next is up to you.
+
+### Filter orders by tag
+
+In Shopify admin, go to **Orders** and filter by tag:
+
+- `✅ Order Confirmed`: ready to pack and ship.
+- `❌ Order Canceled`: cancel the order in Shopify, or call the customer.
+- `⚠ Confirmation Pending`: the customer got the message but has not answered.
+- `⏳ ⚠ Confirmation Pending`: the message was sent but not delivered yet.
+- A tag starting with `WhatsApp:`: the message failed. See the [failure tags](/docs/automations/order-confirmation#failure-tags).
+
+You can save each filter as a view in Shopify so your team can open it quickly.
+
+### Use Shopify Flow
+
+WhatFlow adds a Shopify Flow trigger called **WhatsApp Order Reply**. It starts when a customer replies on WhatsApp, with a button or with text, to a message about one of their orders. It gives Flow the order, the customer, the reply type, the button text, the button payload, the message text and the sender's phone number. You can use it to cancel the order, add a note, or alert your team when a customer taps Cancel.
+
+See [Shopify Flow](/docs/integrations/shopify-flow).
+
+## Follow up with customers who don't answer
+
+Turn on **Remind customers who haven't responded** on the Order Confirmation page to resend the request up to 3 times. Reminders stop when the customer taps any button. See [Automatic reminders](/docs/automations/order-confirmation#automatic-reminders).
+
+## Good to know
+
+- Every automated message needs an active WhatFlow plan. Without one, the message is skipped and the order is tagged `WhatFlow: Subscription Required`.
+- If Meta restricts your WhatsApp number, WhatFlow turns off all automations. Turn them back on yourself after Meta lifts the restriction.
+- Do not test with your connected WhatsApp business number. WhatFlow skips the message and adds a note to the order.
+
+## Troubleshooting
+
+### The customer tapped a button but no tag was added
+
+- The tap came more than 3 days after the message.
+- The button has no tag set under **When the customer replies**. Check that the button names there match the buttons in your template.
+- The customer tapped a link or phone button.
+
+### The customer tapped Cancel but the order is still open
+
+This is expected. WhatFlow does not cancel orders. Cancel it in Shopify, or use the **WhatsApp Order Reply** trigger in Shopify Flow.
+
+### No message was sent
+
+See [Order confirmation troubleshooting](/docs/automations/order-confirmation#troubleshooting).

@@ -1,0 +1,280 @@
+The template editor is where you write a WhatsApp template, choose what fills each variable, add buttons and media, and submit it to Meta. This page covers every field.
+
+## Open the editor
+
+- On **Templates**, click **Create My Own**, or edit or duplicate a template.
+- On an automation page, click **Create new** or **Edit** in the message card. When you create a template from an automation page, **Send when** is already set and locked.
+- From the template library, click **Customize**.
+
+A new template starts with a starter picker. Starters are grouped by category:
+
+- **Order updates** (Utility): "Messages about an order a customer placed." Order confirmation, Order received, Payment received, Shipping update, Out for delivery, Order delivered, Order cancelled, Draft order invoice, New order alert (staff).
+- **Promotions and reminders** (Marketing): "Meta charges more for these, and customers must be able to opt out." Abandoned cart reminder, Back in stock, Review request, Promotion.
+- **Verification codes** (Authentication): "One-time passcodes. WhatsApp writes the message text." Verification code.
+
+You can also start from a blank template.
+
+The header has **Generate with AI**, which opens Shopify Sidekick to draft the template, and **Open WhatsApp Manager**.
+
+## Template details
+
+<Settings>
+<Setting name="Send when" value="Unassigned">
+The trigger event. It decides which automation can use the template and which variables you can pick. See [Trigger events](/docs/templates/overview#trigger-events).
+</Setting>
+<Setting name="Template name">
+"Lowercase letters, numbers and underscores. It can't be changed after saving." Spaces and capitals are converted for you. For example `order_confirmation`.
+</Setting>
+<Setting name="Language" value="English (US)">
+The language of the message. Every language Meta supports is listed. The name and language together must be unique on your account.
+</Setting>
+<Setting name="Category" value="Utility">
+**Utility**, **Marketing** or **Authentication**. It can't be changed after Meta approves the template. See [Categories](/docs/templates/overview#categories).
+</Setting>
+</Settings>
+
+## Message
+
+Type the body in **Message text**. The formatting buttons add WhatsApp formatting: Bold, Italic, Strikethrough, Code, Code block, bullet list, numbered list and quote.
+
+Click **Insert variable** to add a variable such as `{{1}}` at the cursor. "Variables like `{{1}}` are filled with order or customer details. Choose them under Personalization."
+
+Rules:
+
+- The message text is required.
+- Variables must be numbers: `{{1}}`, `{{2}}` and so on. Named variables are not allowed.
+- "Variables can't be at the start or end of the template." Put some text before the first variable and after the last one.
+- WhatFlow renumbers variables in the order they appear: header first, then body, then button link.
+- **Shopify Flow Action** templates can have at most 7 body variables.
+
+### Authentication templates
+
+If the category is **Authentication**, WhatsApp writes the message text and you can't edit it. You can choose:
+
+<Settings>
+<Setting name="Add security recommendation (For your security, do not share this code.)">
+Adds that sentence to the message.
+</Setting>
+<Setting name="Add expiry time for the code">
+Shows how long the code is valid. Set **Expires in (minutes)** from 1 to 90. Default 10.
+</Setting>
+</Settings>
+
+A **Copy code** button is always included. Authentication templates have no other buttons, header or custom footer.
+
+## Personalization
+
+"Choose what each variable in your message is replaced with when it's sent." For each variable there are two fields:
+
+<Settings>
+<Setting name="Sample Value for Variable {{n}}">
+An example value. Meta uses it to review the template. It is never sent to customers.
+</Setting>
+<Setting name="{{n}} is replaced with">
+The store field that fills the variable when the message is sent. The list depends on **Send when**. Choose **Custom note attribute…** to use an order or checkout attribute instead.
+</Setting>
+</Settings>
+
+### Custom note attributes
+
+Use this when a value comes from the order's **Additional details**, for example from a checkout app.
+
+<Settings>
+<Setting name="Note attribute name">
+"Type the name exactly as it appears under Additional details on the order or checkout." Up to 100 characters. Letter case doesn't matter, and spaces, underscores and hyphens are treated the same.
+</Setting>
+<Setting name="Text if the attribute is missing (optional)">
+Sent when the order doesn't have that attribute. Up to 200 characters.
+</Setting>
+</Settings>
+
+Custom note attributes are not available for **Back in Stock**, **Customer Broadcast** and **Shopify Flow Action** templates.
+
+### If a value is empty
+
+If a field is empty on the order, WhatFlow sends a blank space in its place. For **Order Confirmation**, if **Shipping Address Line 1** or **Shipping City** is empty, WhatFlow checks the order again and otherwise sends "Not provided".
+
+## Variables by trigger event
+
+### Common fields
+
+Available for **Order Confirmation**, **Order Notification**, **Order Paid**, **Admin Notification** and **Unassigned**, and included in most other events.
+
+| Group | Fields |
+| --- | --- |
+| Store | Shop Name, Shop Website URL |
+| Order | Order Name (#1001), Order Number, Order Date, Order Note, Order Status URL |
+| Money | Total Price, Subtotal Price, Total Tax, Shipping Fees, Currency |
+| Payment and delivery | Payment Status, Payment Method / Gateway, Financial Status (raw), Delivery Method, Fulfillment Status |
+| Items | Products x Quantity, Variant x Quantity, Products x Price |
+| Customer | Customer First Name, Customer Last Name, Customer Email, Customer Phone |
+| Shipping address | Shipping Address Line 1, Line 2, Shipping City, Shipping Province, Shipping Country, Shipping ZIP |
+| Billing address | Billing Address Line 1, Line 2, Billing City, Billing Province, Billing Country, Billing ZIP |
+
+### Extra fields per event
+
+| Send when | Fields added to the common fields |
+| --- | --- |
+| **Order Fulfillment**, **Shipping Journey** | Tracking Number, Tracking URL, Shipping Carrier, Fulfillment Status, Shipment Status, Estimated Delivery |
+| **Order Cancellation** | Cancel Reason, Cancelled At |
+| **Abandoned Checkout** | Recovery URL, Checkout Total, Checkout Subtotal, Checkout Tax |
+| **Draft Order Recovery** | Invoice URL, Draft Order Name, Draft Order Total, Draft Order Subtotal, Draft Order Tax |
+| **Review Requests** | The fulfillment fields above, plus Reviewed Product Name |
+| **Back in Stock** | Product Name, Product URL, Variant Title, Product Price. Variant x Quantity is not available. |
+
+### Other events
+
+- **Customer Broadcast:** Customer First Name, Customer Last Name, Customer Email, Customer Phone, Shop Name, Shop Website URL.
+- **Shopify Flow Action:** all fields are listed, but the values come from your Flow step instead. See [Shopify Flow](/docs/integrations/shopify-flow).
+
+### How some values look
+
+- **Products x Quantity:** `Classic Linen Shirt (Color: Blue, Size: M) x 1 | Wool Beanie x 2`
+- **Payment Method / Gateway:** a friendly name, for example "Shopify Payments" or "Manual payment".
+- **Payment Status:** for example "Partially paid".
+
+## Buttons
+
+Buttons are optional: "Up to 3 quick replies, 2 links, 1 phone number and 1 copy-code button." The counter shows how many you have added.
+
+Button text can't contain variables, line breaks, formatting characters (`*`, `_`, `~`, `` ` ``) or emojis.
+
+### Quick reply
+
+<Settings>
+<Setting name="Button text">
+The text on the button, for example "Confirm Order". When the customer taps it, it comes back to you as a reply. Order confirmation uses quick replies to tag orders. See [COD confirmation](/docs/automations/cod-verification).
+</Setting>
+</Settings>
+
+### Link
+
+<Settings>
+<Setting name="Button text">
+The text on the button.
+</Setting>
+<Setting name="Link to">
+A link that changes for each message. The choices depend on the event: Order Status URL (Thank You Page), Shipment Tracking URL, Checkout Recovery URL, Draft Order Invoice URL, Product Page URL, Online Store Website URL, or a full URL from a custom note attribute.
+</Setting>
+<Setting name="Website URL">
+A fixed link, the same for every customer. It must start with `https://`.
+</Setting>
+</Settings>
+
+Links that change per message are sent through WhatFlow's short-link domain, `go.whatflow.tech`. Links in abandoned checkout, draft order and back-in-stock messages get tracking tags (`utm_source=whatsapp`, `utm_campaign=whatflow`) so [Analytics](/docs/account/analytics) can show recovered revenue.
+
+### Call
+
+<Settings>
+<Setting name="Button text">
+The text on the button.
+</Setting>
+<Setting name="Phone Number">
+The number the customer calls. It must start with `+` and the country code.
+</Setting>
+</Settings>
+
+### Copy code
+
+<Settings>
+<Setting name="Example code">
+An example code, for example `SAVE20`. The customer taps the button to copy the code. The code sent comes from the field you map, or else this example.
+</Setting>
+</Settings>
+
+## More options
+
+"Add a header (text, image, video, document or location) or change the footer."
+
+### Header
+
+<Settings>
+<Setting name="Header type" value="None">
+**None**, **Text**, **Image**, **Video**, **Document** or **Location**.
+</Setting>
+</Settings>
+
+| Header type | What you set | Limits |
+| --- | --- | --- |
+| **Text** | **Header text** | One variable at most. No line breaks, formatting characters or emojis. |
+| **Image** | Upload a file or paste a URL, or choose **Product image** | JPEG or PNG, up to 5 MB. Recommended 800 × 418 or 800 × 800 pixels. |
+| **Video** | Upload a file or paste a URL | MP4, up to 16 MB. |
+| **Document** | Upload a file or paste a URL | For example a PDF, up to 100 MB. |
+| **Location** | **Latitude**, **Longitude**, **Location Name**, **Address** | All four are required. |
+
+**Product image** uses the image of the first product in the order (**Image from**: "Product Image (first line item)"). If that product has no image when the message is sent, the message fails with "The product image could not be resolved for this message. Check the product image in Shopify." Add an image to the product, or use a fixed image instead.
+
+### Footer
+
+<Settings>
+<Setting name="Footer text" value="Powered by WhatFlow">
+"Optional. Max 60 characters." Marketing templates should say how to opt out here, for example "Reply STOP to unsubscribe".
+</Setting>
+</Settings>
+
+## Preview and checklist
+
+The preview on the right shows the message with sample data. The **Checklist** shows what is still missing: a template name, the message, personalized variables, ready buttons, and a footer of 60 characters or less.
+
+## Save and submit
+
+| Button | What it does |
+| --- | --- |
+| **Save Draft** | "Save changes internally without submitting to Meta." The template stays a draft. |
+| **Save & Submit to Meta** | Saves and sends the template to Meta for review. |
+| **Save & Resubmit to Meta** | Shown for rejected templates. Sends your changes for review again. |
+| **Duplicate Template**, **Delete Template**, **Cancel** | Copy, delete or leave without saving. |
+
+"Message changes take effect only after Meta approval. Until then, the previously approved active template will continue to send."
+
+While Meta is reviewing, the editor shows **Template Under Review (Read-Only)** and you can't change anything.
+
+If a template with the same name and language already exists in Meta, WhatFlow links to it instead of creating a new one: "This template already exists on Meta. Internal mapping was saved only."
+
+## Example
+
+An order confirmation template for COD orders:
+
+<Preview buttons={["Confirm Order","Cancel Order"]}>
+Hi `{{1}}`, thanks for your order `{{2}}`.
+
+Items: `{{3}}`
+
+Total: `{{4}}`
+
+Please confirm your order so we can ship it.
+</Preview>
+
+| Variable | Replaced with |
+| --- | --- |
+| `{{1}}` | Customer First Name |
+| `{{2}}` | Order Name (#1001) |
+| `{{3}}` | Products x Quantity |
+| `{{4}}` | Total Price |
+
+Settings: **Send when** = **Order Confirmation**, **Category** = **Utility**, two quick reply buttons.
+
+## Common reasons for rejection
+
+Meta shows its reason on the rejected template, in red on **Templates** and in the **Meta rejected this template** banner in the editor. If Meta gives no reason, the banner says to adjust your content to comply with Meta's Commerce Policies.
+
+Things to check:
+
+- **Promotional wording in a Utility template.** Keep order updates about the order. Offers and discounts belong in Marketing.
+- **No way to opt out in a Marketing template.** The editor warns: "Marketing messages need a way to opt out, such as “Reply STOP to unsubscribe” in the footer."
+- **Unclear sample values.** Give realistic samples in **Sample Value for Variable** so Meta can see what the message will say.
+- **Variables at the very start or end,** or mostly variables with little text around them.
+
+Use **Fix with Sidekick** on a rejected template for suggested changes, then click **Save & Resubmit to Meta**.
+
+## Troubleshooting
+
+| Problem | What to do |
+| --- | --- |
+| "Must be lowercase alphanumeric with underscores only." | Use only `a`–`z`, `0`–`9` and `_` in the name. |
+| Submit is disabled | Check for named variables like `{{name}}`. Use numbers. |
+| "File size must be under 5MB for image headers." | Use a smaller file. Videos must be under 16 MB, documents under 100 MB. |
+| "Shorten the footer to 60 characters or fewer" | Shorten the footer. |
+| A button "Cannot contain emojis." or similar | Remove emojis, variables, line breaks and formatting from button text. |
+| "Some personalization fields aren't set." | Open the template and choose a field for each variable under **Personalization**. |
+| Message failed: product image could not be resolved | The first product in the order has no image. Add one, or switch the header to a fixed image. |

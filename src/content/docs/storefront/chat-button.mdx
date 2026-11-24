@@ -1,0 +1,136 @@
+The WhatsApp chat button is a floating button on your online store. When a shopper taps it, WhatsApp opens with a chat to your number and a message already typed. Use it to answer questions before people buy.
+
+<Path>Home › WhatsApp Chat Button › Configure Chat Button</Path>
+
+## How it works
+
+The button is a link that opens a normal WhatsApp chat on the shopper's phone or computer. The shopper sends the message themselves. WhatFlow does not send anything through Meta's API when the button is tapped, so taps and the shopper's first message don't use your plan's messages and don't cause Meta charges.
+
+The number behind the button can be any WhatsApp number. It doesn't have to be the number you connected to WhatFlow. If you use your connected number, the shopper's message arrives like any other incoming WhatsApp message, for example in [Live Inbox](/docs/inbox/overview), and your [auto-replies](/docs/conversations/auto-replies) can answer it.
+
+The same number is used by the **Order via WhatsApp** button on product pages. See [Theme and checkout blocks](/docs/storefront/theme-blocks#order-via-whatsapp).
+
+The chat button has two parts:
+
+- **Settings in WhatFlow:** the WhatsApp number, and on/off switches.
+- **The app embed in your theme:** the look, position, greeting bubble and prefilled message. You edit these in the Shopify theme editor.
+
+## Set it up
+
+<Steps>
+<Step title="Open the Chat Button page">
+
+On **Home**, find the **WhatsApp Chat Button** card and click **Configure Chat Button**. The page is called **WhatsApp Chat Button**.
+
+</Step>
+<Step title="Enter your WhatsApp number">
+
+In **WhatsApp Phone Number**, choose the country and enter the number. Then click **Save** in the bar at the top of the page. You see "WhatsApp settings saved." The badge changes from **Required** to **Configured**.
+
+</Step>
+<Step title="Turn on the app embed in your theme">
+
+Under **Floating Chat Button**, click **Enable in Theme Editor** (or **Open Theme Editor**). In the theme editor, open **App embeds**, turn on **WhatsApp Chat Button** and click **Save** in the theme editor.
+
+</Step>
+<Step title="Check the status">
+
+Back in WhatFlow, click **Re-check Status**. The banner about the chat widget disappears when the embed is on. On **Home**, the card shows **Active**.
+
+</Step>
+</Steps>
+
+## Settings in WhatFlow
+
+<Settings>
+<Setting name="WhatsApp Phone Number">
+"Enter your store's WhatsApp number. Both the floating chat button and the product order button will direct customer chats to this number." Include the country code. The number must have 7 to 15 digits. It is required before the buttons can work: "A phone number is required to enable the WhatsApp button."
+</Setting>
+<Setting name="Enable chat button" value="On">
+Shows or hides the floating chat button. "Customize position, greeting bubble, prefilled message, and icon in App Embeds."
+</Setting>
+<Setting name="Enable Order via WhatsApp" value="On">
+Shows or hides the **Order via WhatsApp** button on product pages. Use **Add to product page** to place the block in your theme. See [Theme and checkout blocks](/docs/storefront/theme-blocks#order-via-whatsapp).
+</Setting>
+</Settings>
+
+## Settings in the theme editor
+
+Open **Online Store › Themes › Customize › App embeds › WhatsApp Chat Button**.
+
+### Text and behaviour
+
+<Settings>
+<Setting name="Button label" value="Chat on WhatsApp">
+The text on the button.
+</Setting>
+<Setting name="Prefilled message" value="Hi, I have a question about your products: {product_url}">
+The message already typed when WhatsApp opens. `{product_url}` is replaced with the page the shopper was on, without tracking parameters. `{product_title}` is replaced with the page title.
+</Setting>
+<Setting name="Show greeting bubble" value="On">
+Shows a small message next to the button.
+</Setting>
+<Setting name="Greeting bubble text" value="Need help choosing? Chat with us on WhatsApp.">
+The text in the greeting bubble.
+</Setting>
+<Setting name="Greeting delay" value="1000">
+How long to wait before the greeting bubble appears, in milliseconds. 0 to 9500, in steps of 500.
+</Setting>
+<Setting name="Popup Logo">
+An optional logo image for the chat popup.
+</Setting>
+<Setting name="Show on mobile" value="On">
+Show the button on phones.
+</Setting>
+<Setting name="Show on desktop" value="On">
+Show the button on computers.
+</Setting>
+<Setting name="Button position" value="Bottom right">
+Top left, Top right, Bottom left, Bottom right, Middle left or Middle right.
+</Setting>
+</Settings>
+
+### Look
+
+| Setting | Default | Range or options |
+| --- | --- | --- |
+| **Button height** | 56 px | 44–84 px |
+| **Automatically resize icon for mobile** | On | |
+| **Desktop icon size** | 22 px | 16–48 px |
+| **Mobile icon size** | 20 px | 16–40 px |
+| **Show text label** | On | Off shows only the icon. |
+| **Icon and label spacing** | 8 px | 4–18 px |
+| **Label font size** | 14 px | 12–18 px |
+| **Label font weight** | Semibold | Medium, Semibold, Bold |
+| **Button shape** | Pill | Pill, Rounded rectangle, Square-ish |
+| **Button background** | `#07B850` | Any colour |
+| **Text color** | `#FFFFFF` | Any colour |
+| **Icon color** | `#FFFFFF` | Any colour |
+| **Shadow depth** | Brand | None, Soft, Brand, Strong |
+| **Enable pulse animation** | On | |
+| **Custom button icon (optional)** | WhatsApp icon | Upload your own icon. |
+
+## What the customer sees
+
+A green **Chat on WhatsApp** button in the bottom-right corner, with a greeting bubble after one second. Tapping it opens WhatsApp with this message ready to send:
+
+<Preview>
+Hi, I have a question about your products: https://your-store.com/products/linen-shirt
+</Preview>
+
+## Good to know
+
+- The chat button is included in every plan.
+- The button needs the app embed to be on in your **live** theme. If you change themes, turn the embed on in the new theme.
+- Settings in WhatFlow (number and switches) apply to every theme. Look and text are saved per theme.
+
+## Troubleshooting
+
+| Problem | What to do |
+| --- | --- |
+| "Chat widget is not enabled in your theme" | The embed is added but turned off. Click **Open Theme Editor**, turn on **WhatsApp Chat Button** under **App embeds** and save. Then click **Re-check Status**. |
+| The banner says the button "has not been added to your active theme yet" | Open the theme editor and add it under **App embeds**. |
+| Home shows **Not Configured** | Enter and save a **WhatsApp Phone Number**. |
+| Home shows **Theme Disabled** | The number is saved, but the embed is off in your live theme. |
+| The button doesn't show on phones or computers | Check **Show on mobile** and **Show on desktop** in the embed settings. |
+| WhatsApp opens the wrong number | Check the country and number in **WhatsApp Phone Number**, and save. |

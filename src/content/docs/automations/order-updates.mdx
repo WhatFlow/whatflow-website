@@ -1,0 +1,180 @@
+Besides [Order Confirmation](/docs/automations/order-confirmation), WhatFlow has five more order automations. Each one sends one WhatsApp template when something happens to an order: it is placed, paid, fulfilled or cancelled, or your team needs an alert.
+
+| Automation | Sends when | Sent to | Default order tag |
+| --- | --- | --- | --- |
+| **Order Notification** | An order is placed | The customer | `✓ Order Notified` |
+| **Order Paid** | An order is marked paid | The customer | `💳 Payment Received` |
+| **Order Fulfillment** | An order is fully fulfilled | The customer | `✓ Fulfillment Notified` |
+| **Order Cancellation** | An order is cancelled | The customer | `Cancellation Notified` |
+| **Admin Notification** | An order is placed | Your team's WhatsApp numbers | `Admin Notified` |
+
+Each one has its own card on Home and its own page. For updates at every shipping step (label, in transit, out for delivery, delivered), use [Shipping updates](/docs/automations/shipping-updates) instead.
+
+## Set one up
+
+<Steps>
+<Step title="Open the automation">
+
+<Path>Home › Order Notification</Path>
+
+Use the card for the automation you want. The page heading is the automation name.
+
+</Step>
+<Step title="Choose the message">
+
+In the message card, click **Choose message** and pick an approved template, then click **Use this message**. Or click **Create new**. The Template Library has ready-made templates for each of these automations. See [Message templates](/docs/templates/overview).
+
+</Step>
+<Step title="Set when to send">
+
+Fill in **When to send** and **After sending** (see [Settings](#settings)). Click **Save**.
+
+</Step>
+<Step title="Turn it on">
+
+In the **Status** card, click **Turn on**. The card shows a short summary of what the automation does, for example "Messages customers when they place an order", followed by the delay and conditions you set.
+
+</Step>
+</Steps>
+
+Turning an automation on does not send messages for past orders. Only new events are sent.
+
+## Settings
+
+All five pages share the same layout. Not every setting appears on every page.
+
+| Setting | Notification | Paid | Fulfillment | Cancellation | Admin |
+| --- | --- | --- | --- | --- | --- |
+| **Send delay** | Yes | Yes | Yes | Yes | Yes |
+| **Payment status** | Yes | No | Yes | Yes | Yes |
+| **Fulfillment status** | No | Yes | No | No | No |
+| **Payment methods** | Yes | No | No | No | Yes |
+| **Order tag** | Yes | Yes | Yes | Yes | Yes |
+| **Team numbers** | No | No | No | No | Yes |
+
+<Settings>
+<Setting name="Send delay" value="0 minutes">
+
+How many minutes to wait before sending. 0 sends right away.
+
+</Setting>
+<Setting name="Payment status" value="Any order">
+
+**Any order**, **Unpaid orders only** or **Paid orders only**. "Unpaid" means the payment status is pending. Partially paid or authorized orders do not count as unpaid. Not used while payment methods are chosen.
+
+</Setting>
+<Setting name="Fulfillment status" value="Any order">
+
+Order Paid only. **Any order**, **Unfulfilled orders only**, **Partially fulfilled orders only** or **Fulfilled orders only**.
+
+</Setting>
+<Setting name="Payment methods" value="Empty (every method)">
+
+Pick payment methods from the names found in your recent orders. When you pick any, only orders with those methods are sent, and **Payment status** is ignored. Leave it empty to send for every payment method.
+
+</Setting>
+<Setting name="Order tag">
+
+Added to the Shopify order once the message is delivered. Up to 40 characters. Defaults are in the table at the top of this page.
+
+</Setting>
+</Settings>
+
+Click **Save** to keep changes, or **Discard** to undo them.
+
+### Order tags and failure tags
+
+The tags work the same way as for Order Confirmation:
+
+- When Meta accepts the message, WhatFlow adds `⏳` plus your tag, for example `⏳ ✓ Order Notified`.
+- When WhatsApp reports the message delivered or read, WhatFlow adds your tag and removes the `⏳` tag.
+- When delivery fails, WhatFlow adds a failure tag such as `WhatsApp: Not a User` and a note on the order.
+
+See [Delivery tags](/docs/automations/order-confirmation#delivery-tags) for the full list.
+
+## Order Notification
+
+<Path>Home › Order Notification</Path>
+
+Sends a simple message when an order is placed, without asking the customer to confirm. Use it as a WhatsApp version of the order confirmation email.
+
+If both Order Notification and Order Confirmation are on, the customer gets both messages. To split them, use **Payment methods**: for example, Order Confirmation for your COD method, and Order Notification for the others.
+
+## Order Paid
+
+<Path>Home › Order Paid</Path>
+
+Sends a message when Shopify marks an order as paid. This page has **Fulfillment status** instead of **Payment status**.
+
+For cash on delivery orders, payment is often marked after the parcel is delivered. If you set **Fulfillment status** to **Partially fulfilled orders only** or **Fulfilled orders only**, WhatFlow can also send the message when an already-paid order becomes fulfilled and matches that status.
+
+## Order Fulfillment
+
+<Path>Home › Order Fulfillment</Path>
+
+Sends a message when the whole order is fulfilled. The message can include tracking details from the latest fulfillment that has tracking: **Tracking Number**, **Tracking URL** and **Shipping Carrier**.
+
+<Note>
+
+Shopify only reports an order as fulfilled when every item is fulfilled. Partial shipments do not trigger this message. To message customers for each shipment and each carrier scan, use [Shipping updates](/docs/automations/shipping-updates).
+
+</Note>
+
+## Order Cancellation
+
+<Path>Home › Order Cancellation</Path>
+
+Sends a message when an order is cancelled in Shopify. Besides the usual order fields, the template can use:
+
+- **Cancel Reason**: Shopify's reason code, for example "customer".
+- **Cancelled At**: the date and time of the cancellation.
+
+**Products x Quantity** shows the quantities that were ordered, not the quantities left after the cancellation.
+
+## Admin Notification
+
+<Path>Home › Admin Notification</Path>
+
+Sends a message to your own team for each new order, so staff hear about orders on WhatsApp.
+
+<Settings>
+<Setting name="Team numbers">
+
+WhatsApp numbers that get a message for each new order. Include the country code, like +14155550123. Click **Add number** to add more. You need at least one number before you can turn it on.
+
+</Setting>
+</Settings>
+
+- The alert is sent even if the customer has no phone number.
+- Each team number gets its own template message, and each one is billed.
+- These are template messages, so your team doesn't need to have messaged you first.
+- If a team number is on your [Blocklist](/docs/account/blocklist) and the blocklist covers order updates, that number is skipped.
+
+## Template variables
+
+All these automations can use the common order fields: Shop Name, Shop Website URL, Order Name (#1001), Order Number, Total Price, Subtotal Price, Total Tax, Currency, Payment Status, Payment Method / Gateway, Delivery Method, Financial Status (raw), Fulfillment Status, Order Status URL, Order Date, Order Note, Products x Quantity, Variant x Quantity, Products x Price, Shipping Fees, customer name, email and phone, and the shipping and billing address fields.
+
+Extra fields:
+
+- **Order Fulfillment**: Tracking Number, Tracking URL, Shipping Carrier, Shipment Status, Estimated Delivery.
+- **Order Cancellation**: Cancel Reason, Cancelled At.
+
+See [Template editor](/docs/templates/editor).
+
+## Good to know
+
+- **Subscription required.** Every automated message needs an active WhatFlow plan. Without one, the message is skipped and the order is tagged `WhatFlow: Subscription Required`. See [Plans and billing](/docs/account/billing).
+- **Meta restrictions turn automations off.** If Meta restricts your WhatsApp number, WhatFlow turns off every automation. After Meta lifts the restriction, turn each one back on yourself.
+- **Template problems turn it off.** If Meta pauses, disables or rejects the template, or rates it low quality, and there's no other usable template, the automation turns off. Turn it on again after you fix or replace the template.
+- **Phone number.** WhatFlow uses the billing phone, then shipping phone, order phone and customer phone. Orders with no valid phone number are skipped (except for Admin Notification).
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| **Turn on** doesn't work | Choose an approved template. Wait if it says it's waiting for Meta's review. For Admin Notification, add at least one team number. |
+| "Use international format with country code, for example +14155550123." | Enter the team number with + and the country code, 7 to 15 digits. |
+| Order Fulfillment didn't send | The order was only partly fulfilled. Use [Shipping updates](/docs/automations/shipping-updates) for partial shipments. |
+| Unpaid orders are not sent | Partially paid and authorized orders are not "unpaid". Use **Any order**, or pick payment methods instead. |
+| Order tagged `WhatFlow: Subscription Required` | Choose a plan in **Billing**. |
+| Order has a `WhatsApp:` failure tag | See [Failure tags](/docs/automations/order-confirmation#failure-tags). |

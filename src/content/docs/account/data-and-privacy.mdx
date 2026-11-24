@@ -1,0 +1,55 @@
+This page explains what happens to your WhatsApp connection and your data when you uninstall WhatFlow, and how WhatFlow handles Shopify's customer and shop data deletion requests.
+
+## What WhatFlow keeps
+
+To send and track your messages, WhatFlow stores things such as:
+
+- Your WhatsApp connection to Meta.
+- Your templates, automation settings and auto-reply rules.
+- Live Inbox contacts and conversations.
+- Records of the messages it sent and which order or customer they were about, so customer replies can be linked to the right order.
+- Your blocklist, opt-out settings and [Store Report](/docs/account/store-report) settings.
+- Your AI connections and their activity log, if you connected an AI app. See [AI apps (MCP)](/docs/mcp).
+
+Some short-lived data is cleared automatically. For example, media download links in [Shopify Flow](/docs/integrations/shopify-flow) triggers expire after 7 days.
+
+## When you uninstall WhatFlow
+
+| When | What happens |
+| --- | --- |
+| Right away | WhatFlow's access to your Shopify store is removed. All AI connections and API keys are revoked. Automations stop, and WhatFlow ignores incoming WhatsApp messages for your store. |
+| For 1 hour | Your WhatsApp connection is kept. If you reinstall WhatFlow within the hour, it is still connected and you don't need to set it up again. |
+| After 1 hour | If you have not reinstalled, WhatFlow disconnects your WhatsApp number: it stops receiving your number's messages from Meta, deletes its saved WhatsApp access, and turns off your Live Inbox channel. |
+| About 48 hours later | Shopify asks WhatFlow to delete your shop's data (see below). |
+
+<Note>
+
+Uninstalling WhatFlow does not delete your WhatsApp Business account, phone number or templates at Meta. They stay in your Meta Business account, and you can connect the number to WhatFlow again later. See [Connect WhatsApp](/docs/getting-started/connect-whatsapp).
+
+</Note>
+
+If you reinstall after the hour has passed, connect WhatsApp again.
+
+## Shop data deletion
+
+About 48 hours after you uninstall, Shopify sends WhatFlow a request to delete your shop's data. WhatFlow then deletes:
+
+- Live Inbox contacts.
+- All AI connections, API keys, AI drafts and the AI activity log.
+- Emails WhatFlow had scheduled for your store.
+- Your Shopify Flow trigger subscriptions.
+- Your blocklist entries and opt-out settings.
+- Your Store Report settings.
+
+If you want other data removed, contact support@whatflow.tech.
+
+## Customer data requests
+
+Shopify sends WhatFlow your customers' privacy requests.
+
+- **Customer data deletion (redaction).** When a customer asks Shopify to delete their data, WhatFlow deletes that customer's Live Inbox contacts, found by customer and by phone number, and the records that link WhatsApp messages to that customer, their phone number and their orders.
+- **Customer data request.** WhatFlow records the request. To get a copy of a customer's WhatsApp data, contact support@whatflow.tech.
+
+## Good to know
+
+- Customer consent to receive WhatsApp messages is your responsibility. WhatFlow's [Blocklist](/docs/account/blocklist) helps you honour opt-outs.

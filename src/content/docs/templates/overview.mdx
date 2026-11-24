@@ -1,0 +1,185 @@
+Every automated WhatsApp message WhatFlow sends is a template: a message written in advance and approved by Meta. You create templates in WhatFlow, WhatFlow submits them to Meta, and each automation sends the template assigned to its trigger event.
+
+<Path>Templates</Path>
+
+The page is called **Message Templates**. You need a connected WhatsApp number to use it. If you are not connected, you see **Connect WhatsApp First** with a **Go to Connections** button.
+
+## How templates work
+
+1. **You write the template** in the [template editor](/docs/templates/editor), or start from the template library.
+2. **You assign a trigger event** in **Send when**, for example **Order Confirmation** or **Abandoned Checkout**. This decides which automation can use it.
+3. **You submit it to Meta.** Meta reviews it. This usually takes a few minutes.
+4. **Once approved, you choose it on the automation page** and turn the automation on.
+
+When the automation runs, WhatFlow fills the template's variables with the order or customer details and sends it.
+
+### One active template per event
+
+Each trigger event has one active template at a time. If you activate a second template for the same event, it replaces the first one. A template assigned to one event can't be picked for another; it shows "Used by" and the event name.
+
+Because only one template is active per event, an automation sends the same template, in the same language, to every customer.
+
+## The templates list
+
+The header has **Create My Own** and **Choose From Library**. The table shows 10 templates per page, with search.
+
+| Column | What it shows |
+| --- | --- |
+| **Template** | Name and language. |
+| **Event** | The trigger event in **Send when**. |
+| **Category** | Utility, Marketing or Authentication. |
+| **Status** | Meta's review status. |
+| **Quality** | Meta's quality rating for the template. |
+| **Actions** | Activate switch, **Preview**, edit, duplicate and delete. |
+
+Filters: **Status**, **Category** and **Sort by** (Created date, Status, Category, Template name).
+
+The list refreshes from Meta when you open it and every 60 seconds while the page is open. If Meta can't be reached, your saved templates stay available and WhatFlow tries again.
+
+### Statuses
+
+| Status | Meaning |
+| --- | --- |
+| **DRAFT** | Saved in WhatFlow but not submitted to Meta. |
+| Pending | Waiting for Meta's review. You can't edit it or turn it on yet. |
+| Approved | Ready to send. |
+| Rejected | Meta refused it. The reason shows in red. Edit and resubmit, or use **Fix with Sidekick**. |
+| Paused | Meta paused it. |
+| Disabled | Meta disabled it. |
+| In appeal | A rejection is being appealed in Meta. |
+| Pending deletion, Deleted | The template is being removed, or has been removed, in Meta. |
+| Limit exceeded | Meta reported that a limit was exceeded. Check the template in WhatsApp Manager. |
+| **MOVING TO NEW ACCOUNT** | You connected a different Messaging account and WhatFlow is copying this template to it. See [Connect WhatsApp](/docs/getting-started/connect-whatsapp#connect-a-different-number-or-account). |
+
+On automation pages, the same statuses use plain words: **Approved**, **Draft**, "Rejected by Meta", "Paused by Meta", "Disabled by Meta" and "Waiting for Meta review".
+
+### Quality
+
+| Quality | Meta's rating |
+| --- | --- |
+| **High** | Green |
+| **Medium** | Yellow |
+| **Low** | Red. The template can't be activated, and automations using it pause. |
+| **Pending** | Not rated yet. |
+
+## Activate a template
+
+You can activate a template from the list or choose it on the automation page. Both do the same thing.
+
+<Steps>
+<Step title="Turn on the switch">
+
+In the **Actions** column, turn on the template's switch. The switch only appears for templates with a trigger event. Shipping Journey templates show their stages and **Manage Shipping Journey** instead.
+
+</Step>
+<Step title="Confirm">
+
+The dialog says the template becomes the active template for its event and the automation is turned on. If another template is active, it tells you which one it replaces. Click **Activate & Enable**.
+
+</Step>
+</Steps>
+
+You can't activate a template that:
+
+- has no event: "Assign an event to this template before activating."
+- is a draft or waiting for review: "Draft templates must be submitted and approved by Meta before activating." / "Template is pending review by Meta."
+- was rejected: "Rejected templates cannot be activated."
+- has a Low (red) quality rating: "Templates with Low (RED) quality score cannot be activated."
+
+To stop a template, turn off its switch and click **Deactivate & Disable**. Messages stop for that event, and the automation is turned off if no other template is active.
+
+<Note>
+
+Marketing templates show an extra note when you activate them: Meta does not guarantee delivery of marketing templates and may not deliver some of them.
+
+</Note>
+
+## Categories
+
+You pick a category in the editor. Meta charges by category and may change it during review.
+
+| Category | Use it for | In WhatFlow |
+| --- | --- | --- |
+| **Utility** | Updates about an order the customer placed. | Order confirmation, fulfillment, shipping updates, order paid, cancellation, draft order invoices, review requests |
+| **Marketing** | Promotions and reminders. Meta charges more, and customers must be able to opt out. | Abandoned checkout, back in stock, broadcasts |
+| **Authentication** | One-time passcodes only. WhatsApp writes the message text. | OTP order confirmation |
+
+The category of an approved template can't be changed. Create a new template for a different category. The [Blocklist](/docs/account/blocklist), when turned on, uses the category to decide what to block. More in [WhatsApp rules to know](/docs/getting-started/whatsapp-basics).
+
+## Languages
+
+Each template has one language, chosen in **Language** in the editor. Meta's full list of languages is available, and the default is **English (US)**. A template's name and language together must be unique on your account. To use the same message in another language, create a separate template with that language.
+
+## Trigger events
+
+The **Send when** field links a template to an automation:
+
+| Send when | Used by |
+| --- | --- |
+| **Order Confirmation** | [COD confirmation](/docs/automations/cod-verification) |
+| **Order Notification**, **Order Paid**, **Order Cancellation**, **Order Fulfillment**, **Admin Notification** | [Order updates](/docs/automations/order-updates) |
+| **OTP Order Confirmation** | [OTP verification](/docs/automations/otp-verification) (Authentication templates only) |
+| **Shipping Journey** | [Shipping updates](/docs/automations/shipping-updates) |
+| **Review Requests** | [Review requests](/docs/automations/review-requests) |
+| **Back in Stock** | [Back in stock](/docs/automations/back-in-stock) |
+| **Abandoned Checkout** | [Abandoned checkout](/docs/recovery/abandoned-checkout) |
+| **Draft Order Recovery** | [Draft orders](/docs/recovery/draft-orders) |
+| **Auto Replier** | [Auto-replies](/docs/conversations/auto-replies) |
+| **Shopify Flow Action** | [Shopify Flow](/docs/integrations/shopify-flow) |
+| **Customer Broadcast** | [Broadcasts](/docs/marketing/broadcasts) |
+| **Unassigned** | Not used by any automation yet. |
+
+The event also decides which variables you can use. See [Template editor and variables](/docs/templates/editor#variables-by-trigger-event).
+
+## Template library
+
+The library has ready-made templates for every event. Open it with **Choose From Library** or **Browse Library**. Search by event, category, language or text.
+
+For each template:
+
+- **Customize** opens a copy in the editor so you can change it before submitting.
+- **Use As-Is & Submit** sends it straight to Meta for review.
+
+All library templates are in English (US). If you already have a template with the same name, WhatFlow adds a number to the end, for example `wf_order_confirm_req_v1_1`.
+
+The library includes templates for order confirmation, order notification, order paid, cancellation, fulfillment, every Shipping Journey stage, admin alerts, abandoned checkout, draft orders, back in stock, review requests, Judge.me review requests through Shopify Flow, and broadcasts.
+
+### Starter templates
+
+When you connect WhatsApp, WhatFlow submits a few library templates to Meta for you: order confirmation, order fulfillment, abandoned checkout, a star-rating review request and a Judge.me review request for Flow. They are only submitted. None is activated and no automation is turned on.
+
+## Edit, duplicate and delete
+
+### Edit
+
+Click edit to open the template in the editor. While Meta is reviewing it, the template is read-only.
+
+<Warning>
+
+Editing an approved template sends it back to Meta for review. Until Meta approves the change, the template may be unavailable and automations that use it may stop. Assign a backup template before you edit an active one. Shipping Journey keeps its stage assignments, but affected stages can't send until the template is approved again.
+
+</Warning>
+
+### Duplicate
+
+Click duplicate, enter a **New Template Name** (lowercase letters, numbers and underscores), then choose **Duplicate & Submit to Meta** or **Duplicate & Edit**.
+
+### Delete
+
+Click delete and confirm. This can't be undone. The template is also deleted in Meta. If it was the only active template for its event, that automation is turned off.
+
+## When Meta pauses or rejects a template
+
+If Meta pauses, disables or rejects a template, or rates it Low (red), WhatFlow deactivates it. If no other approved or pending template is active for that event, the automation is turned off. The automation page explains why, with an **Edit message** button.
+
+When the template is approved again, WhatFlow does not turn the automation back on. Open the automation page and turn it on yourself.
+
+## Troubleshooting
+
+| Problem | What to do |
+| --- | --- |
+| The switch is greyed out | Check the tooltip. The template needs an event and Meta approval, and can't be rejected or low quality. |
+| Template stuck on pending | Meta usually reviews in minutes. The list refreshes every 60 seconds. |
+| Rejected | Read the reason in red, edit the template and click **Save & Resubmit to Meta**, or use **Fix with Sidekick**. See [common problems](/docs/templates/editor#common-reasons-for-rejection). |
+| "This name and language already belong to another saved Meta template." | Open that template, or choose a different name. |
+| Automation turned itself off | A template was paused, rejected or rated low, or Meta restricted your account. See [Troubleshooting](/docs/account/troubleshooting). |

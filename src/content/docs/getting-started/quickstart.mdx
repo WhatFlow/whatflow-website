@@ -1,0 +1,88 @@
+This is the shortest path from a fresh install to a real WhatsApp message on your phone. You connect your number, choose a plan, turn on order confirmation and place a test order.
+
+## Before you start
+
+- WhatFlow is installed. See [Install WhatFlow](/docs/getting-started/install).
+- You have a second phone number with WhatsApp to receive the test message. It must be different from the business number you connect.
+- Your checkout collects a phone number, so test orders have one.
+
+## Send your first message
+
+<Steps>
+<Step title="Connect WhatsApp">
+
+Click **Connection** in the WhatFlow menu, then **Connect with Facebook**, and finish Meta's steps. When you see "WhatsApp connected. Templates and Inbox are being prepared.", you are done. Full details are in [Connect WhatsApp](/docs/getting-started/connect-whatsapp).
+
+</Step>
+<Step title="Choose a plan">
+
+Click **Billing**, then **Select plan**, and approve a plan in Shopify. WhatFlow sends nothing without an active subscription. See [Plans and billing](/docs/account/billing).
+
+</Step>
+<Step title="Check the starter template">
+
+When you connect, WhatFlow submits a starter order confirmation template to Meta, called **wf_order_confirm_req_v1**. It has a product image, the order details and two buttons, **Confirm** and **Cancel**.
+
+Click **Templates** and find it in the list. Wait until its status is approved. This usually takes a few minutes. If it isn't there, click **Choose From Library** and submit **Order Confirmation - Detailed** with **Use As-Is & Submit**.
+
+</Step>
+<Step title="Open Order Confirmation">
+
+Go to **Home**, find the **Order Confirmation** card and click **Configure**.
+
+</Step>
+<Step title="Choose the message">
+
+In the message card, click **Choose message**. Pick the approved template and click **Use this message**.
+
+</Step>
+<Step title="Turn it on">
+
+In the **Status** card, click **Turn on**. The badge changes to **On**. Leave the other settings as they are for this test. **Send delay** is 0, so the message sends right away.
+
+</Step>
+<Step title="Place a test order">
+
+In your online store, add a product that has a product image and check out. Enter your second phone number, with its country code, as the phone number. Any payment method works, for example a manual Cash on Delivery method.
+
+</Step>
+<Step title="Check your phone">
+
+The confirmation message should arrive on WhatsApp shortly. Tap **Confirm**. You get the reply "Thank you for the confirmation! Your order will be at your doorstep soon!"
+
+</Step>
+</Steps>
+
+<Warning>
+
+Don't use your connected business number as the customer's phone. WhatFlow skips order confirmation for that order and adds this note to it: "[WhatFlow] WhatsApp confirmation skipped. The order's phone number is the same as the connected WhatFlow WhatsApp number. Use a different recipient number."
+
+</Warning>
+
+## Check that it worked
+
+### On the order
+
+Open the test order in Shopify and look at its tags:
+
+| Tag | When it appears |
+| --- | --- |
+| `⏳ ⚠ Confirmation Pending` | Meta accepted the message and it is on its way. |
+| `⚠ Confirmation Pending` | WhatsApp reported the message as delivered or read. The `⏳` tag is removed. |
+| `✅ Order Confirmed` | The customer tapped **Confirm**. It replaces the pending tags. |
+| `❌ Order Canceled` | The customer tapped **Cancel**. The Shopify order itself is not cancelled. |
+
+If delivery fails, the order gets a failure tag such as `WhatsApp: Not a User` and a note that starts with "[WhatFlow] WhatsApp delivery failed". If you see `WhatFlow: Subscription Required`, your plan isn't active yet. See [Troubleshooting](/docs/account/troubleshooting).
+
+### In Analytics
+
+Click **Analytics**. The **Overview** tab shows **Total Sent** and **Total Delivered** from Meta. **WhatsApp Performance** shows sent, delivered, read and button replies by automation. New messages may take a little while to appear. See [Analytics](/docs/account/analytics).
+
+## Next steps
+
+<Cards>
+  <Card title="COD confirmation" href="/docs/automations/cod-verification">Set the replies and tags for each button, and add reminders.</Card>
+  <Card title="Shipping updates" href="/docs/automations/shipping-updates">Message customers as their parcel moves.</Card>
+  <Card title="Abandoned checkout" href="/docs/recovery/abandoned-checkout">Remind customers who left checkout.</Card>
+  <Card title="Chat button" href="/docs/storefront/chat-button">Let shoppers start a WhatsApp chat from your store.</Card>
+</Cards>

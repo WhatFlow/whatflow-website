@@ -1,0 +1,153 @@
+This page collects the most common reasons a WhatsApp message didn't send or didn't arrive, what the order tags mean, and what to do. Each feature page has its own troubleshooting section with more detail.
+
+## Where to look first
+
+1. **The order in Shopify.** WhatFlow tags orders as messages are sent and delivered, and adds a note when delivery fails. See [Order tags](#order-tags).
+2. **The automation page.** If something blocks the automation, a banner at the top says what and gives a button to fix it.
+3. **Connections.** The **Status** and health line show whether Meta is accepting messages from your number.
+4. **Analytics.** **WhatsApp Performance** has a **Why messages failed** breakdown. See [Analytics](/docs/account/analytics).
+
+## Messages are not sending at all
+
+WhatFlow checks these things before every automated message. If any check fails, the message is skipped. It is not retried later.
+
+### No active subscription
+
+Every message needs an active WhatFlow plan. Without one, order-based automations tag the order `WhatFlow: Subscription Required` and send nothing.
+
+**Fix:** open **Billing** and click **Select plan**. See [Plans and billing](/docs/account/billing). Orders placed before you subscribed are not messaged later.
+
+### WhatsApp is not connected
+
+If your number is disconnected, nothing sends. You may see "WhatsApp is disconnected. Open Connections to review and reconnect your account." This can happen if permissions were removed in Meta.
+
+**Fix:** open **Connection** and click **Connect with Facebook**. See [Connect WhatsApp](/docs/getting-started/connect-whatsapp).
+
+### The automation is off
+
+Check the **Status** card on the automation page. Turning an automation on does not send messages for orders that came in while it was off.
+
+### No approved template
+
+The automation can't send without an approved template. The page shows one of these:
+
+| Banner | What to do |
+| --- | --- |
+| "Choose the message to send before turning this on." | Click **Choose message** and pick an approved template. |
+| "Your message is waiting for Meta's review, which usually takes a few minutes. You can turn this on once it's approved." | Wait, then turn it on. |
+| "This message can't be sent (…). Edit it or choose another one." | The template was rejected, paused or disabled. Click **Edit message**. |
+| "Meta rated this message low quality, so this automation is paused. Edit the message or choose another one." | Edit the template or choose another. |
+
+See [Message templates](/docs/templates/overview).
+
+### The automation turned itself off
+
+WhatFlow turns automations off in two cases:
+
+- **Meta paused, disabled or rejected the template, or rated it Low (red),** and no other approved template is active for that event.
+- **Meta restricted your WhatsApp account.** WhatFlow turns off every automation, including auto-replies, back in stock and review requests. Automation pages show "Meta has restricted your WhatsApp number, so automations can't send." with the reason and an **Open Connections** button.
+
+**Fix:** fix or replace the template, or resolve the restriction with Meta. Then turn each automation back on yourself. WhatFlow does not turn them back on when the problem is solved.
+
+### The order doesn't match the automation's filters
+
+Automations can be limited by **Payment status**, **Payment methods** or **Fulfillment status**. Check these on the automation page.
+
+- **Unpaid orders only** matches only orders with the payment status "pending". Partly paid or authorized orders don't match.
+- If you chose **Payment methods**, the payment status filter is not used.
+
+## One customer didn't get a message
+
+### No phone number, or an invalid one
+
+WhatFlow takes the phone number from the billing address, then the shipping address, then the order, then the customer. It adds the country code from the billing or shipping country. If there is no phone, or the number can't be made into a valid international number, the message is skipped.
+
+**Fix:** make the phone number required at checkout, and make sure customers can enter a country code.
+
+### The customer is on the blocklist
+
+If **Respect blocklist** is on, customers who sent STOP or were blocked by you don't get automated template messages. **Respect blocklist** is off by default. See [Blocklist](/docs/account/blocklist).
+
+### You tested with your own business number
+
+Order confirmation is skipped when the order's phone is the same as your connected WhatsApp number. The order gets the note "[WhatFlow] WhatsApp confirmation skipped. The order's phone number is the same as the connected WhatFlow WhatsApp number. Use a different recipient number."
+
+**Fix:** test with a different phone number.
+
+### The product image couldn't be found
+
+Templates with a **Product image** header use the first product in the order. If it has no image, the message fails: "The product image could not be resolved for this message. Check the product image in Shopify."
+
+**Fix:** add an image to the product, or change the template to a fixed image.
+
+## Order tags
+
+WhatFlow tags orders for order-based automations. Abandoned checkouts are not orders, so they are not tagged.
+
+| Tag | Meaning |
+| --- | --- |
+| `⏳` + your tag, for example `⏳ ✓ Order Notified` | Meta accepted the message. Waiting for WhatsApp to confirm delivery. |
+| Your tag, for example `✓ Order Notified` | WhatsApp reported the message delivered or read. The `⏳` tag and any failure tag are removed. |
+| `WhatFlow: Subscription Required` | Not sent because there was no active WhatFlow plan. |
+| A `WhatsApp:` failure tag | Delivery failed. See the next table. |
+
+If an order keeps the `⏳` tag, WhatsApp has not reported delivery yet, for example because the customer's phone is offline.
+
+### Failure tags
+
+When delivery fails, WhatFlow adds one failure tag and a note to the order: "[WhatFlow] WhatsApp delivery failed (…): Meta" followed by Meta's error code and details.
+
+| Tag | Meta error | What it means | What to do |
+| --- | --- | --- | --- |
+| `WhatsApp: Not a User` | 131026 | The number is not on WhatsApp, or can't receive the message. | Contact the customer another way. |
+| `WhatsApp: Opted Out` | 131050 | The customer has stopped marketing messages from businesses in WhatsApp. | Nothing to fix. Respect their choice. |
+| `WhatsApp: User Blocked` | 130403 | Meta refused the message for this customer. | Contact the customer another way. |
+| `WhatsApp: Outside 24h Window` | 131047 | A free-form message was sent after the 24-hour window closed. | Send an approved template instead. See [WhatsApp rules to know](/docs/getting-started/whatsapp-basics). |
+| `WhatsApp: Payment Issue` | 131042, 134011 | Meta couldn't charge your payment method. | Add or fix the payment method in Meta. On **Connections**, click **Manage payments**. |
+| `WhatsApp: Rate Limited` | 130429, 80007, 131056 | Meta is limiting how fast or how much you can send. | Wait and check your messaging limit on **Connections**. |
+| `WhatsApp: Sender Restricted` | 131048, 131064 | Meta is limiting your number, often because of quality. | Check your quality rating on **Connections**. See [Quality rating](#quality-rating-problems). |
+| `WhatsApp: Message Too Long` | 132005 | The message is longer than WhatsApp allows once variables are filled in. | Shorten the template, or map shorter fields. |
+| `WhatsApp: Delivery Failed` | Any other error | Delivery failed for another reason. | Read the order note for Meta's code and details. |
+
+Older orders may have the earlier tags `No WhatsApp`, `WhatsApp Undeliverable` or `WhatsApp Delivery Failed`.
+
+For temporary Meta errors (code 131000), WhatFlow tries again after 30 seconds, 60 seconds and 2 minutes before it gives up.
+
+## Quality rating problems
+
+Meta rates your number Green, Yellow or Red, based on how customers react to your messages. You can see it on **Connections › Advanced › Quality rating**, next to your **Messaging limit**. If it is not green, click **Ask Sidekick how to improve**.
+
+Meta also rates each template. A template rated Low (red) is deactivated and its automation pauses.
+
+On the **Connections** page, the health line tells you if Meta is limiting your number:
+
+- "Meta has limited messages from this number."
+- "Meta has blocked messages from this number."
+
+If you see either, click **Open WhatsApp Manager** on the same page to see Meta's details.
+
+To improve quality:
+
+- Message only customers who agreed to hear from you.
+- Turn on **Respect blocklist** so customers who send STOP don't get more automated messages. See [Blocklist](/docs/account/blocklist).
+- Keep marketing messages relevant and not too frequent.
+- Edit or replace templates rated low.
+
+More in [WhatsApp rules to know](/docs/getting-started/whatsapp-basics#quality-rating-and-messaging-limits).
+
+## Other common problems
+
+| Problem | Cause | Where to read more |
+| --- | --- | --- |
+| Customer tapped a button but the order has no tag | The tap came more than 3 days after an order confirmation message, or the button has no tag set. | [COD confirmation](/docs/automations/cod-verification) |
+| Confirmation reminders never start | The confirmation template needs quick reply buttons with a tag for each, and a delivery tag. | [COD confirmation](/docs/automations/cod-verification) |
+| Abandoned checkout reminder not sent | The customer ordered, the checkout was completed, the phone changed, or there was no phone. | [Abandoned checkout](/docs/recovery/abandoned-checkout) |
+| Back-in-stock alert not sent | The automation was off when the product was restocked, there's no approved template, or the customer is blocked. | [Back in stock](/docs/automations/back-in-stock) |
+| A Shipping Journey stage sends nothing | The carrier doesn't report that event, the stage is off, or its template isn't approved. | [Shipping updates](/docs/automations/shipping-updates) |
+| OTP block missing | Not added in the checkout editor, or the order doesn't match the payment filters. | [OTP verification](/docs/automations/otp-verification) |
+| PIN error when connecting | The number already has a two-step verification PIN. | [Connect WhatsApp](/docs/getting-started/connect-whatsapp#two-step-verification-pin) |
+| Chat button not showing | The app embed is off in your theme. | [Chat button](/docs/storefront/chat-button) |
+
+## Still stuck
+
+Email support@whatflow.tech with your store address, the order number, and any tag or note WhatFlow added to the order.

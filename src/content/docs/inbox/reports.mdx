@@ -1,0 +1,100 @@
+The **Reports** page shows how fast customers get a reply, who on your team is answering, when customers write, and which click-to-WhatsApp ads bring in conversations. Everyone on the team can open it.
+
+<Path>Live Inbox › Reports</Path>
+
+## Choose a date range
+
+Pick **Last 7 days**, **Last 30 days** (the default) or **Last 90 days**. Or pick **Custom**, choose a start and end date, and click **Apply**. A custom range can be up to 92 days.
+
+Days and times use your browser's time zone. Reports cover your current WhatsApp number only.
+
+<Note>
+
+Live Inbox deletes messages after 30 days. Ranges that reach further back than 30 days can show lower numbers, because older messages are no longer stored.
+
+</Note>
+
+## Summary
+
+| Tile | What it counts |
+| --- | --- |
+| **Median first response** | The typical time a customer waited for a first reply from a person. |
+| **Unanswered customer turns** | Times a customer wrote and no person has replied yet. |
+| **Waiting for a reply now** | Chats where the customer is waiting, using the same rule as the **Needs reply** filter. |
+| **Conversations started** | New chats in the range. |
+| **Customer messages** | Messages received from customers. |
+| **Replies by people** | Messages sent by your team. |
+| **Automated messages** | Messages sent by workflows, broadcasts and WhatFlow automations such as order updates. |
+| **Marked done** | Chats marked done. |
+
+## First response time
+
+A customer turn starts when a customer writes after you last wrote. It is answered by the first reply from a person, either in Live Inbox or in the WhatsApp Business phone app. Automated and AI messages do not count as an answer.
+
+This section shows the median and the slowest 10% (p90) first response time, and the share of turns answered **Within 5 minutes**, **Within 1 hour** and **Within 24 hours**.
+
+## Daily activity
+
+Activity for each day in the range. You can download it as a CSV file.
+
+## When customers write
+
+A grid of customer messages by day of the week and hour of the day. Use it to plan when your team is online.
+
+## Team
+
+One row per sender:
+
+| Column | Meaning |
+| --- | --- |
+| **Sender** | The teammate or other sender |
+| **Replies** | Messages they sent |
+| **Chats replied to** | Chats they sent at least one message in |
+| **First responses** | Customer turns they answered first |
+| **Median first response** | Their typical first response time |
+| **Assigned now** | Chats assigned to them right now |
+
+Senders are grouped by type:
+
+- **Teammate**: a person replying in Live Inbox.
+- **Phone app**: replies sent from the WhatsApp Business phone app on the same number.
+- **Automation**: workflows, broadcasts, broadcast tests and WhatFlow automations.
+- **AI / MCP**: messages from a connected AI app, shown as the app's name followed by "(AI)". See [AI apps (MCP)](/docs/mcp).
+- **Removed teammates**: messages from senders who are no longer linked to a team member.
+
+Per-teammate done counts are not shown, because marking a chat done does not record who did it. You can download the table as a CSV file.
+
+## Ad attribution
+
+When a customer taps a click-to-WhatsApp ad or a boosted post on Facebook or Instagram, Meta tells WhatFlow which ad they came from. Live Inbox saves this on the chat.
+
+You can see ad chats in several places:
+
+- The conversation list shows **Ad ·** and the ad headline on the chat.
+- The **From ads** status filter lists only ad chats.
+- The customer panel shows "Came from a click-to-WhatsApp ad" (or "a boosted post"), the ad headline and text, the ad ID, the first click time, and **Open ad**.
+- The **Today** page has a **From ads today** section.
+- Workflows can start only on messages from ads. See [Workflows, Flows and webhooks](/docs/inbox/automation).
+
+The first ad a customer came from stays on the chat.
+
+### Click-to-WhatsApp ads report
+
+The **Click-to-WhatsApp ads** section on the Reports page lists your top 50 ads in the range:
+
+| Column | Meaning |
+| --- | --- |
+| **Conversations** | Chats that started from this ad |
+| **Got a reply** | How many of those chats got a reply from a person |
+| **Median first response** | Typical time from the ad click to the first reply from a person |
+
+If you see "No conversations from ads in this range.", no chat in the range started from an ad. You can download this table as a CSV file.
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| Numbers look low for a long range | Messages older than 30 days are deleted, so older periods undercount. Use a range within the last 30 days. |
+| A teammate's done count is missing | Done counts per teammate are not available. The **Marked done** tile shows the store total. |
+| Replies from the phone are not under a teammate's name | Replies sent from the WhatsApp Business phone app are counted as **Phone app**. |
+| An ad chat has no ad details | Meta only sends ad details on the message the customer sends from the ad. Chats that started another way have none. |

@@ -1,0 +1,169 @@
+Besides the [chat button](/docs/storefront/chat-button), WhatFlow adds blocks you can place on your product pages, your Thank you page and your Order status page. This page lists each block, where it goes and its settings.
+
+## The blocks
+
+| Block name in the editor | Where it goes | What it does | Feature page |
+| --- | --- | --- | --- |
+| **Order via WhatsApp** | Product page (theme editor) | A button that opens WhatsApp with an order message for the product. | This page |
+| **Stock Notification** | Product page (theme editor) | Lets shoppers ask for a WhatsApp alert when a sold-out variant is back. | [Back in stock](/docs/automations/back-in-stock) |
+| **WhatsApp order confirmation** | Thank you page and Order status page (checkout editor) | Customers confirm their order with a code sent to WhatsApp. | [OTP verification](/docs/automations/otp-verification) |
+
+<Note>
+
+WhatFlow has no opt-in checkbox block for checkout or the theme. WhatFlow doesn't check Shopify marketing consent either. How to handle consent and opt-outs is covered in [WhatsApp rules to know](/docs/getting-started/whatsapp-basics#opt-in) and [Blocklist](/docs/account/blocklist).
+
+</Note>
+
+WhatFlow also has blocks for your Shopify admin (order, draft order, abandoned checkout and customer pages) that your team uses to send messages by hand. Those are covered in [Manual messaging](/docs/conversations/manual-messaging).
+
+## Order via WhatsApp
+
+A button on product pages. When a shopper taps it, WhatsApp opens with a message that names the product, variant, quantity and price, ready to send to your number. The shopper sends it themselves, so it doesn't use your plan's messages.
+
+The button sends chats to the number in **WhatsApp Phone Number** on the **WhatsApp Chat Button** page. See [Chat button](/docs/storefront/chat-button).
+
+### Add it
+
+<Steps>
+<Step title="Save your number">
+
+On **Home**, click **Configure Chat Button**. Enter your **WhatsApp Phone Number** and save. Make sure **Enable Order via WhatsApp** is on.
+
+</Step>
+<Step title="Add the block">
+
+Under **Order via WhatsApp Button**, click **Add to product page**. The theme editor opens on your product template. Add the **Order via WhatsApp** block where you want it, usually near the buy button, and click **Save**.
+
+</Step>
+<Step title="Check it">
+
+On **Home**, the **WhatsApp Chat Button** card shows **Order via WhatsApp block** as **On product page**.
+
+</Step>
+</Steps>
+
+### Text settings
+
+<Settings>
+<Setting name="Button Main Label" value="Order via WhatsApp">
+The text on the button.
+</Setting>
+<Setting name="Subtext / Secondary Label">
+"Optional small text below main label".
+</Setting>
+<Setting name="Prefilled Message Pattern" value="Hi, I would like to order {quantity}x {product_title} ({variant_title}) for {total_price}. Link: {product_url}">
+The message typed in WhatsApp. You can use `{product_title}`, `{variant_title}`, `{quantity}`, `{total_price}`, `{price_each}` and `{product_url}`.
+</Setting>
+<Setting name="Open Chat in New Tab" value="On">
+Opens WhatsApp in a new browser tab.
+</Setting>
+</Settings>
+
+### Look settings
+
+| Setting | Default | Options |
+| --- | --- | --- |
+| **Show Icon** | On | |
+| **Custom Icon Image** | WhatsApp icon | Upload your own. |
+| **Icon Position** | Left of text | Left of text, Right of text |
+| **Icon Size** | 22 px | 16–36 px |
+| **SVG Icon Color** | `#FFFFFF` | |
+| **Background Color** | `#07B850` | |
+| **Hover Background Color** | `#069C43` | |
+| **Text Color** | `#FFFFFF` | |
+| **Border Color**, **Border Width** | None, 0 | Width 0–6 |
+| **Button Shape** | Rounded rectangle | Pill, Rounded rectangle, Square |
+| **Shadow Style** | Brand Green | None, Soft, Medium, Brand Green, Strong |
+| **Button Height** | 48 px | 38–68 px |
+| **Main Label Font Size** | 15 px | 12–22 px |
+| **Font Weight** | Semibold | Regular, Medium, Semibold, Bold |
+| **Text Case** | Normal | Normal, UPPERCASE, Capitalize Words |
+| **Full Width Button** | On | |
+| **Alignment (when not full width)** | Left | Left, Center, Right |
+| **Show on Mobile Devices**, **Show on Desktop Devices** | On | |
+| **Enable Pulse Animation** | Off | |
+| **Enable Lift On Hover** | On | |
+| **Margin Top**, **Margin Bottom** | 12 px | 0–50 px |
+
+### What the customer sees
+
+<Preview>
+Hi, I would like to order 2x Linen Shirt (Blue / M) for $58.00. Link: https://your-store.com/products/linen-shirt
+</Preview>
+
+## Stock Notification
+
+A block for the product page that appears when the selected variant is sold out. Shoppers enter their name and WhatsApp number to ask for an alert. When the variant is back in stock, WhatFlow sends your **Back in Stock** template.
+
+### Add it
+
+Open **Home › Back in Stock**. In **Product page button**, click **Add to product page**, place the **Stock Notification** block on your product template and save. The badge shows **Not added**, **Hidden** (in the theme but turned off) or **On your product page**.
+
+### Text settings
+
+| Setting | Default |
+| --- | --- |
+| **Out of Stock Title** | Out of stock |
+| **Out of Stock Body** | This item is currently unavailable. Get notified when it is back in stock. |
+| **Button Text** | Notify me when back in stock |
+| **Button Text When Subscribed** | You're Subscribed! |
+| **Form Heading** | Get notified when this item is back in stock |
+| **Name Field Label** | Name * |
+| **Phone Field Label** | Phone Number * |
+| **Default Country Code Prefix (e.g. +57)** | +57 |
+| **Phone Input Placeholder** | +57 300 123 4567 |
+| **Submit Button Text** | Submit request |
+| **Cancel Button Text** | Cancel |
+| **Success Message** | We'll notify you as soon as this item is back in stock. |
+| **Already Subscribed Message** | You're already subscribed to receive back in stock alerts for this item. |
+| **Error Label**, **Error Message** | Error: / Something went wrong. Please try again later. |
+| **Show Phone Number Field**, **Show Name Field** | On |
+
+<Warning>
+
+The default country code is +57 (Colombia). Change **Default Country Code Prefix** and **Phone Input Placeholder** to your own country.
+
+</Warning>
+
+There are also colour, border, corner radius, padding, shadow, alignment, font size and button style settings. Full details of how requests and alerts work are in [Back in stock](/docs/automations/back-in-stock).
+
+## WhatsApp order confirmation (OTP)
+
+A checkout block for [OTP verification](/docs/automations/otp-verification). After placing an order, the customer enters their WhatsApp number, gets a 6-digit code on WhatsApp and types it in to confirm the order. WhatFlow then tags the order.
+
+You can place it in two places:
+
+- **Thank you page:** "After placing an order. Works on every plan, and you can move it anywhere on the page."
+- **Order status page:** "When customers come back to their order. Shows whether it's confirmed, or lets them confirm it."
+
+The block only shows on orders that match the **Which orders** settings on the OTP page.
+
+### Add it
+
+Open **Home › OTP Order Confirmation**. Under **Where customers confirm**, click **Add to Thank you page** or **Add to Order status page**. Shopify's checkout editor opens. Place the **WhatsApp order confirmation** block and save. Each place shows **Added** or **Not added**.
+
+### Block settings
+
+Every text can be changed in the checkout editor. Leave a field blank to use the default, which is translated for each customer into Arabic, Chinese (Simplified and Traditional), Dutch, French, German, Hindi, Italian, Japanese, Portuguese (Brazil), Spanish and Turkish.
+
+| Setting | Default text |
+| --- | --- |
+| **Heading** | Confirm your order |
+| **Subheading** | We'll send a 6-digit code to your WhatsApp. Enter it here to confirm your order. |
+| **Send code button label** | Send code on WhatsApp |
+| **Confirm button label** | Confirm order |
+| **Success heading** | Order confirmed |
+| **Success message** | Thank you! Your order is confirmed. |
+| **Already confirmed heading** | Order confirmed |
+| **Already confirmed message** | This order has already been confirmed. |
+| **Phone number label** | WhatsApp number |
+| **Code sent message** | We sent a 6-digit code to the customer's number on WhatsApp. Enter it to confirm your order. |
+
+## Troubleshooting
+
+| Problem | What to do |
+| --- | --- |
+| Order via WhatsApp button doesn't appear | Check that a **WhatsApp Phone Number** is saved, **Enable Order via WhatsApp** is on, and the block is on the product template of your live theme. |
+| Stock Notification doesn't appear | It only shows on sold-out variants. Check the badge on the **Back in stock** page. |
+| "Invalid phone number. Please include the country code." | The shopper's number needs a country code. Set the right **Default Country Code Prefix**. |
+| OTP block missing on the Thank you page | Add the block in the checkout editor, and check that the order matches the payment filters on the OTP page. |

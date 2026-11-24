@@ -22,6 +22,7 @@ const primary = [
 	{ href: "/inbox", label: "Inbox", live: true },
 	{ href: "/integrations", label: "Integrations" },
 	{ href: "/pricing", label: "Pricing" },
+	{ href: "/docs", label: "Docs" },
 	{ href: "/affiliate", label: "Affiliate" },
 ];
 

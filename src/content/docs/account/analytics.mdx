@@ -1,0 +1,185 @@
+The **Analytics** page shows how your WhatsApp messages perform: how many were sent, delivered and read, which templates and buttons customers use, what Meta may charge, and how much revenue your recovery messages brought back.
+
+<Path>Analytics</Path>
+
+## How it works
+
+Analytics is in the left menu of the app. The page has eight tabs. Most tabs read their numbers from Meta. **WhatsApp Performance** and **Recovery Revenue** read from Shopify Analytics, and **Message Usage** shows the messages counted for your WhatFlow plan.
+
+### Date range and granularity
+
+- Choose a date range of 1 to 366 days. If the range is not valid, you see "Choose a valid date range of 1–366 days."
+- On the **Messaging**, **Conversations** and **Pricing & Costs** tabs, **Granularity** sets how the numbers are grouped: **Daily**, **Monthly** or **30 Minutes (Intraday)**.
+- **Recovery Revenue** has no date picker. It always shows the last 90 days.
+
+### Key terms
+
+| Term | Meaning |
+| --- | --- |
+| **Sent** | Meta accepted the message. |
+| **Delivered** | Meta reported that the message reached the customer's phone. |
+| **Read** | Meta reported that the customer opened it. Customers who turned off read receipts never count as read. |
+| **Delivery rate** | Delivered ÷ sent. |
+| **Costs** | Estimates only. Meta bills you directly for its charges. |
+
+<Tip>
+
+Click **Explain my delivery rate** at the top of the page to ask Shopify Sidekick about your numbers. See [Sidekick](/docs/integrations/sidekick).
+
+</Tip>
+
+## Overview
+
+Message volume and delivery health for your store, from Meta.
+
+| KPI | Meaning |
+| --- | --- |
+| **Total Sent** | Messages sent in the selected dates. |
+| **Total Delivered** | Messages delivered in the selected dates. |
+| **Delivery Rate** | Delivered ÷ sent. |
+| **Daily Average** | Messages sent ÷ the number of days that have data. |
+
+The **Message volume trend** chart compares sent and delivered messages over time.
+
+## WhatsApp Performance
+
+Delivery, engagement, failures and automations, reported in Shopify Analytics. This tab only works inside Shopify admin.
+
+KPIs: **Messages sent**, **Delivered**, **Read**, **Button replies**, **Failed** and **Unsubscribes** (customers who opted out with STOP or another opt-out keyword).
+
+It also has:
+
+| Card | What it shows |
+| --- | --- |
+| **Message funnel** | How messages move from sent to delivered, read and replied, by day. |
+| **Messages by automation** | Which automation sent the messages, such as order confirmation or broadcasts. |
+| **Button replies by automation** | Button taps per automation. |
+| **Top templates** and **Most read templates** | Your best-performing templates. |
+| **Top buttons** | The buttons customers tap most. |
+| **Automations vs Inbox** | Automated messages compared with messages sent from Live Inbox. |
+| **Message types** | Marketing, utility, authentication and service messages. |
+| **Why messages failed** | The most common failure reasons. |
+| **Paid vs free messages** | Messages Meta charges for and free ones. |
+| **Content types** | The kinds of content you sent. |
+| **Top countries** | The countries your messages went to. |
+
+Good to know:
+
+- Reporting starts from the day these events were turned on for your store, so older messages don't appear.
+- **Button replies** count quick-reply buttons only, because WhatsApp doesn't report link button taps.
+- Breakdowns cover the last 30 days at most.
+
+## Message Usage
+
+The messages counted toward your WhatFlow plan in the selected dates. It shows **Total Sent** and a table of **Date (UTC)** and **Messages**. Use this tab to check your usage against your plan. See [Plans and billing](/docs/account/billing) for what counts.
+
+## Template Performance
+
+Delivery, read rates and button clicks per template and per automation.
+
+| KPI | Meaning |
+| --- | --- |
+| **Template Messages Sent** | Template messages sent across all active templates. |
+| **Delivered** | Template messages delivered. |
+| **Read by Customers** | Read ÷ delivered. |
+| **Button Clicks (CTA)** | Button clicks and the click-through rate. |
+
+**Performance by Automation Type** breaks the numbers down by automation.
+
+### Turn on template insights
+
+This tab needs Meta's template insights, which are off until you turn them on. If they are off, the tab shows **One-time Setup: Enable Template Insights in WhatsApp Manager**.
+
+<Steps>
+<Step title="Open WhatsApp Manager">
+
+Click **Open WhatsApp Manager Insights**.
+
+</Step>
+<Step title="Turn on insights">
+
+In WhatsApp Manager, go to **Account Tools › Insights** and turn on template insights.
+
+</Step>
+<Step title="Come back later">
+
+Template data appears on this tab once Meta has collected it. It may take some time after you turn insights on.
+
+</Step>
+</Steps>
+
+## Messaging
+
+Sent and delivered message volume from Meta, grouped by the **Granularity** you choose.
+
+| KPI | Meaning |
+| --- | --- |
+| **Total Interval Volume** | Messages sent in the selected dates. |
+| **Delivered Successfully** | Messages delivered. |
+| **Average per** day, month or interval | The average for each group. |
+| **Peak Interval Volume** | The busiest group. |
+
+It also shows **Interval delivery health** and **Active Phone Numbers**.
+
+## Conversations
+
+Conversation categories, 24-hour customer service windows and countries, from Meta.
+
+| KPI | Meaning |
+| --- | --- |
+| **Total Conversations** | All conversations in the selected dates. |
+| **Free Service & Ads** | Conversations Meta did not charge for, such as customer service replies and conversations from Click-to-WhatsApp ads. |
+| **Billable Conversations** | Conversations Meta charges for. |
+| **Meta Conversation Charges** | Approximate billable charges. |
+
+It also shows **Conversation Pricing Type** (for example **Business initiated**, **User initiated** and **Free Entry Point (Click-to-WhatsApp)**) and a **Regional Country Breakdown**.
+
+## Pricing & Costs
+
+Message rates, free customer service messages and approximate costs, from Meta.
+
+| KPI | Meaning |
+| --- | --- |
+| **Delivered Messages** | Messages delivered. |
+| **Free Messages** | Messages Meta did not charge for. |
+| **Billable Messages** | Messages Meta charges for. |
+| **Estimated Message Cost** | Approximate billable charges from Meta. |
+
+Breakdowns: **By Pricing Category** (for example **Marketing Lite**, **Service (Free CS)**, **Authentication**, **Authentication (International)** and **Referral Conversion (Free Ads)**), **By Billing Type** (**Billable (Regular)**, **Free Customer Service**, **Free Entry Point Window**) and **Regional Country Breakdown**.
+
+<Note>
+
+Costs on this tab are estimates. Meta bills you directly, and your Meta invoice is the final amount. See [Plans and billing](/docs/account/billing).
+
+</Note>
+
+## Recovery Revenue
+
+Orders and revenue recovered by your WhatsApp [abandoned checkout](/docs/recovery/abandoned-checkout) and [draft order](/docs/recovery/draft-orders) messages, for the last 90 days.
+
+Cards: **Recovered Orders**, **Recovered Revenue**, **Avg. Order Value**, **Recovered Orders by Channel**, **Recovered Revenue by Channel**, **Recovery Revenue Over Time**, **New vs Returning Customers** and **Abandoned Checkout: Revenue by Step**.
+
+### How recovery revenue is attributed
+
+WhatFlow adds tracking tags to the links in its messages (`utm_source=whatsapp` and `utm_campaign=whatflow`). When a customer clicks the link and places an order, Shopify's marketing reports credit the order to that link. This tab shows those orders from Shopify Analytics.
+
+- Only orders that Shopify attributes to a WhatFlow link are counted.
+- New orders may take up to 24 hours to appear.
+
+## Troubleshooting
+
+### Template Performance is empty
+
+Template insights are not on in WhatsApp Manager. Follow the steps under "Turn on template insights" above. Data can take some time to appear after you turn them on.
+
+### WhatsApp Performance shows nothing
+
+This tab only works inside Shopify admin, and only counts messages from the day reporting was turned on for your store. Open WhatFlow from Shopify admin.
+
+### The numbers on different tabs don't match
+
+The tabs use different sources. **Overview**, **Messaging**, **Conversations**, **Pricing & Costs** and **Template Performance** come from Meta. **WhatsApp Performance** and **Recovery Revenue** come from Shopify Analytics. **Message Usage** counts messages for your WhatFlow plan, which uses UTC dates. Small differences between them are normal.
+
+### Recent recovered orders are missing
+
+Shopify can take up to 24 hours to attribute new orders. Check again the next day.

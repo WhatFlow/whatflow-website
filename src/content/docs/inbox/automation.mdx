@@ -1,0 +1,214 @@
+Live Inbox has its own automation tools, separate from the automations in the WhatFlow Shopify app. Use workflows to reply to messages or react to your own systems, WhatsApp Flows to collect form answers inside WhatsApp, webhooks to send inbox events to other tools, and icebreakers and commands to give customers ready-made questions.
+
+Only the store owner can set these up. Agents don't see **Workflows** or **Conversational Components** in the sidebar.
+
+For the order, shipping and cart automations in the Shopify app, see [Order confirmation](/docs/automations/order-confirmation) and the other automation pages. For simple keyword replies, see [Auto-replies](/docs/conversations/auto-replies).
+
+## Workflows
+
+A workflow is a series of steps that runs when something starts it: a customer message, or a request from your own system.
+
+<Path>Live Inbox › Workflows</Path>
+
+### Triggers
+
+| Trigger | Starts when |
+| --- | --- |
+| **WhatsApp message trigger** | A customer messages your connected number. |
+| **API call** | Your own system, or a tool such as n8n or Make, sends a request to the workflow's endpoint. |
+
+For a message trigger, you choose **Which messages?**:
+
+- **Any message**, **Contains a keyword**, **Is exactly a keyword** or **Matches a pattern (advanced)**. Letter case is ignored, and only the first 1,000 characters of a message are checked.
+- **Only a customer's first message** (new chats, including chats that start from an ad).
+- **Only messages that came from a click-to-WhatsApp ad**.
+
+And how often it can run for the same customer: **Every matching message** (with an optional cooldown in minutes), **At most once a day**, or **Only once, ever**.
+
+Use **Try a message** to check whether a sample message would start the workflow.
+
+When a customer replies to a workflow that is waiting for their reply, the reply continues that workflow. It does not start new ones.
+
+### Steps
+
+Click **Add step** to add a step. A workflow can have up to 20 steps.
+
+| Step | What it does |
+| --- | --- |
+| **Send text** | Sends a free-form message. Only works while the customer's 24-hour window is open. |
+| **Send template** | Sends an approved WhatsApp template. |
+| **Decision** | Splits the workflow in two, based on whether a value exists, equals or contains something. |
+| **Wait** | Waits for a set time, from 1 second to 7 days. |
+| **Wait until date** | Waits until a date sent in the API data. |
+| **Wait for customer reply** | Waits until the customer sends their next message. |
+| **Wait for API Event** | Waits until your system sends a named event to this run. |
+| **Set variable** | Saves a value to use in later steps. |
+| **Call External API** | Sends selected values as JSON to a public HTTPS address. |
+| **Stop flow** | Ends this branch without sending anything else. |
+
+### Test and publish
+
+<Steps>
+<Step title="Create the workflow">
+
+Click **New workflow**, then set up the trigger and add steps.
+
+</Step>
+<Step title="Test it">
+
+Click **Test** to try the workflow with a sample message or sample data. Click **Check** to see if anything must be fixed before publishing.
+
+</Step>
+<Step title="Try shadow mode (optional)">
+
+Turn on **Shadow** mode to run the published workflow for real while only recording what it would send. Nothing is sent and no outside address is called. Runs marked "shadow" show what would have happened.
+
+</Step>
+<Step title="Publish">
+
+Click **Publish & activate**. After that, use **Publish changes** to put edits live. Runs already in progress keep the version they started with.
+
+</Step>
+</Steps>
+
+Click **Pause** to stop an active workflow. **Archive workflow** turns off its trigger and removes its API key.
+
+The **Runs** tab lists recent runs and the result of each step. Runs are kept for 30 days.
+
+### Limits
+
+- Up to 5 workflows run for one customer message.
+- Each workflow runs at most 10 times per customer per hour and 120 times per minute in total.
+- API calls to start workflows: up to 60 per minute, with a request body of up to 16 KB.
+
+### API trigger
+
+When you turn on the API trigger, the workflow shows its endpoint and an API key. Copy the key straight away. It is not shown again.
+
+Send a POST request to the endpoint with the key in an `X-API-Key` header, or as `Authorization: Bearer` followed by the key. You can also allow one website origin to call it.
+
+<Warning>
+
+**Enable open access** lets anyone who has the workflow's address start it, without a key. Use an API key instead whenever you can.
+
+</Warning>
+
+## WhatsApp Flows
+
+WhatsApp Flows are forms that open inside WhatsApp, for sign-ups, bookings, surveys or support requests. Customers fill them in without leaving the chat.
+
+<Path>Live Inbox › WhatsApp Flows</Path>
+
+The page has two tabs: **Flows** and **Flow responses**. Click **Sync** to fetch the latest Flows from Meta.
+
+### Create a Flow
+
+There is no visual builder. You edit the Flow as JSON, in the format Meta defines for WhatsApp Flows.
+
+<Steps>
+<Step title="Create the Flow">
+
+Click **Create flow**. Enter a name and choose a category: sign up, sign in, appointment booking, lead generation, contact us, customer support, survey or other. WhatFlow manages the Flow's endpoint for you. A starter Flow JSON is filled in.
+
+</Step>
+<Step title="Edit the JSON">
+
+Edit the Flow JSON and click **Upload and validate JSON**. Any problems Meta finds are listed under **Meta validation errors**.
+
+</Step>
+<Step title="Publish">
+
+Click **Publish** when there are no errors. Before publishing, you can remove the Flow with **Delete draft**.
+
+</Step>
+</Steps>
+
+**Deprecate permanently** retires a published Flow. This cannot be undone.
+
+### Send a Flow and read responses
+
+In a chat, open **More ways to send** (⋯) and choose **Send WhatsApp Flow**. Pick the Flow, the **Mode** (**Published**, or **Draft testing** to try a draft), the first screen, the message text and a button label of up to 30 characters. This needs an open 24-hour window.
+
+When a customer submits the form, their answers show in the chat and on the **Flow responses** tab. Click a response to see everything they sent. Submitted answers are cleared after 90 days.
+
+## Webhooks
+
+Webhooks send Live Inbox events to your own system as they happen, for example to update a CRM or alert a channel.
+
+<Path>Live Inbox › Webhooks</Path>
+
+<Steps>
+<Step title="Add an endpoint">
+
+Click **Add endpoint**. Enter the **Endpoint URL** (public HTTPS only; redirects are not followed) and an optional **Description**.
+
+</Step>
+<Step title="Choose events">
+
+Pick the events to send.
+
+</Step>
+<Step title="Check it works">
+
+Click **Send test event** and check the delivery log.
+
+</Step>
+</Steps>
+
+| Event | Sent when |
+| --- | --- |
+| `message.received` | A customer sends a message |
+| `message.sent` | A message is sent to a customer |
+| `message.status` | A message's delivery status changes |
+| `message.reaction` | A reaction is added |
+| `interactive.reply` | A customer taps a button or picks a list item |
+| `conversation.created` | A new chat starts |
+| `conversation.assigned` | A chat is assigned |
+| `conversation.labeled` | A chat's labels change |
+| `workflow.run.completed` | A workflow run finishes |
+| `workflow.run.failed` | A workflow run fails |
+
+- You can add up to 5 endpoints.
+- Each request is signed. Click **Show secret** to see the signing secret, and **Rotate secret** to replace it. The page explains how to check the `WhatFlow-Signature` header.
+- Failed deliveries are retried after 1 minute, 5 minutes, 30 minutes, 2 hours, 6 hours and 24 hours. An endpoint that keeps failing for 3 days is turned off. Click **Turn on** to start it again.
+- The delivery log shows the last 50 deliveries from the past 7 days. You can **Resend** a delivery.
+
+## Icebreakers and commands
+
+<Path>Live Inbox › Conversational Components</Path>
+
+| Item | What it is | Limit |
+| --- | --- | --- |
+| **Icebreakers** | Common questions a customer can tap when they open a chat with you. | Up to 4, each up to 80 characters |
+| **Commands** | Shortcuts a customer can send, such as /help, with a description. | Up to 30. Command up to 31 characters, description up to 256 |
+
+Click **Add icebreaker** or **Add command**, then save. A preview shows what customers see in WhatsApp. The settings are saved to Meta for your WhatsApp number. Live Inbox chat must be turned on.
+
+These settings do not create automatic replies. When a customer taps an icebreaker or sends a command, it arrives as a normal message. To answer it automatically, use a workflow with a keyword trigger or an [auto-reply](/docs/conversations/auto-replies).
+
+## Automatic replies to carts
+
+When a customer sends you a WhatsApp cart, WhatFlow can reply straight away with a checkout link.
+
+This setting is on the **Meta Catalog** page in the sidebar, which is marked **Soon** while it is in early access. Under **Automatic reply to carts**:
+
+<Settings>
+<Setting name="Reply to every cart with a checkout link">Turns the automatic reply on. The customer gets a **Checkout** button with their cart already filled in. Works even when Live Inbox chat is turned off.</Setting>
+<Setting name="Cart reply message">The text above the button, up to 1,024 characters.</Setting>
+<Setting name="Discount code">Optional. A discount code to apply at checkout.</Setting>
+</Settings>
+
+Click **Save cart reply**. Items that are not Shopify products are left out of the checkout.
+
+To send a checkout link by hand instead, see [Replying to customers](/docs/inbox/replying).
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| A **Send text** step does not send | The customer's 24-hour window is closed. Use **Send template** instead. |
+| A workflow does not start on a message | Check that it is published and active, that the message matches the trigger, and the repeat setting. Use **Try a message**. |
+| A workflow runs but nothing is sent | Check whether shadow mode is on. |
+| "Webhooks are not switched on for this server yet. Contact WhatFlow support." | Email support@whatflow.tech. |
+| An endpoint was turned off | It failed for 3 days. Fix your server, then click **Turn on**. |
+| **Meta validation errors** on a Flow | Fix the JSON as described in the error, then click **Upload and validate JSON** again. |

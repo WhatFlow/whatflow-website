@@ -1,0 +1,164 @@
+Review requests ask customers for a product review on WhatsApp a few days after their order is delivered, fulfilled, paid or placed. Each order is asked only once.
+
+<Path>Home › Review Requests</Path>
+
+The page heading is **Review requests**.
+
+## How it works
+
+1. An order event happens: delivery, fulfillment, payment or order creation, depending on your setting.
+2. WhatFlow schedules the request for after your wait time. If that time falls outside your sending hours, it waits until the window opens.
+3. Right before sending, WhatFlow checks the order again. It skips the order if it was cancelled, refunded or returned, or if it has a tag you excluded.
+4. WhatFlow sends your review template. The order gets the tag `⭐ Review Requested`.
+5. If the template has quick-reply buttons (for example star ratings), WhatFlow can reply and tag the order when the customer taps one.
+
+The **reviewed product** is the most expensive item still on the order.
+
+## Set it up
+
+<Steps>
+<Step title="Choose a template">
+
+In the message card, choose an approved template. The Template Library has several review templates, for example **Review Request - Star Rating** and **Review Request - Store Review (Google)**. To send customers to a review page, add a link button to the message.
+
+</Step>
+<Step title="Set when to ask">
+
+Under **When to ask**, choose the trigger and the wait time.
+
+</Step>
+<Step title="Set replies and tags">
+
+If your template has quick-reply buttons, set a reply and a tag for each one under **When the customer replies**.
+
+</Step>
+<Step title="Save and turn on">
+
+Click **Save**, then **Turn on** in the **Status** card.
+
+</Step>
+</Steps>
+
+## Settings
+
+### When to ask
+
+<Settings>
+<Setting name="Send the review request" value="After delivery">
+
+- **After delivery**: counted from the carrier's "delivered" event. You can use fulfillment as a fallback when no delivery is reported.
+- **After fulfillment**: counted from when the order is fully fulfilled.
+- **After payment**: counted from when the order is marked paid. For cash on delivery this is usually the delivery day.
+- **After order is placed**: counted from when the order is created.
+
+</Setting>
+<Setting name="Time to wait" value="3 days">
+
+How long to wait after the event, in **Days** or **Hours**. 0 sends as soon as possible, within your sending window. Up to 30 days (720 hours).
+
+</Setting>
+<Setting name="Use fulfillment as a fallback" value="On">
+
+Shown for **After delivery** only. If no delivery is reported, send after fulfillment instead. Turn it off to wait for a reported delivery.
+
+</Setting>
+<Setting name="Time to wait after fulfillment" value="7 days">
+
+Used for the fallback. At least 1 hour, up to 30 days. If a delivery event arrives later, the request moves to the delivery-based time.
+
+</Setting>
+<Setting name="Only send during the day" value="On, 10 AM to 8 PM">
+
+Set **From** and **Until** in your store's time zone. Requests that fall due outside these hours wait until the window opens. The start and end can't be the same hour.
+
+</Setting>
+</Settings>
+
+<Note>
+
+If you change **Send the review request** to a different trigger, requests that were already scheduled are cancelled.
+
+</Note>
+
+### When the customer replies
+
+This section appears when your template has quick-reply buttons. For each button:
+
+<Settings>
+<Setting name="Reply with">
+
+The text sent back when the customer taps this button. Up to 1,000 characters.
+
+</Setting>
+<Setting name="Tag the order">
+
+The tag added to the order, for example "Review: Loved it".
+
+</Setting>
+</Settings>
+
+- Taps are handled for **14 days** after the request is sent. Later taps don't add a tag or send a reply.
+- If the customer taps a different button later, the new tag replaces the old one.
+- Replies also appear in [Live Inbox](/docs/inbox/overview).
+
+### Who gets asked
+
+<Settings>
+<Setting name="Skip orders with these tags">
+
+Orders with any of these tags are not asked. Separate tags with commas. Up to 20 tags.
+
+</Setting>
+<Setting name="Tag the order after sending" value="⭐ Review Requested">
+
+Leave it empty to skip tagging.
+
+</Setting>
+</Settings>
+
+Cancelled, refunded, returned and test orders are always skipped, and each order is asked only once.
+
+## Recent review requests
+
+The bottom of the page lists the last 100 requests, with the order, status (**scheduled**, **sent** or **skipped**), trigger, time and details.
+
+When a request is skipped, **Details** shows why:
+
+| Reason | Meaning |
+| --- | --- |
+| Review requests were turned off | The automation was off when the request was due. |
+| Fulfillment fallback was turned off | The request was waiting on the fallback, which you turned off. |
+| The trigger was changed after this was scheduled | You changed **Send the review request**. |
+| Order no longer exists | The order was deleted. |
+| Test order | Test orders are never asked. |
+| Order was cancelled / Order was refunded / A return was requested | The order changed before the request was due. |
+| Already asked for a review | Each order is asked once. |
+| Order has an excluded tag | It has a tag from **Skip orders with these tags**. |
+| Order is not fulfilled | The order was not fulfilled. |
+| No product to review | WhatFlow found no product on the order to ask about. |
+| No phone number | The order has no phone number. |
+| Rescheduled for after delivery | A delivery event arrived, so the request moved to the delivery-based time. |
+
+## Judge.me
+
+If you use Judge.me, the page links to WhatFlow's Shopify Flow templates for sending Judge.me review requests instead. The Template Library also has Judge.me review templates for use with Shopify Flow. See [Shopify Flow](/docs/integrations/shopify-flow).
+
+## Good to know
+
+- **Subscription required.** Every automated message needs an active WhatFlow plan. Without one, the message is skipped and the order is tagged `WhatFlow: Subscription Required`.
+- **Meta restrictions turn automations off.** If Meta restricts your WhatsApp number, WhatFlow turns off review requests and all other automations. Turn them back on yourself after Meta lifts the restriction.
+- **After delivery needs carrier events.** If your carrier does not report deliveries to Shopify, keep **Use fulfillment as a fallback** on.
+
+## Troubleshooting
+
+### I can't turn it on
+
+The page tells you what is missing: "Choose a WhatsApp template.", "The template must be approved by Meta.", or "The template has a RED quality rating." Also check that **From** and **Until** are not the same hour.
+
+### A request was not sent
+
+Check **Recent review requests** for the order. The **Details** column shows the skip reason.
+
+### The customer tapped a rating but no tag was added
+
+The tap came more than 14 days after the request, or that button has no tag set.

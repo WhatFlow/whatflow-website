@@ -1,0 +1,301 @@
+Order Confirmation sends a WhatsApp message to the customer when a new order is placed, and asks them to confirm or cancel it with a button. Stores use it mostly to check cash on delivery (COD) orders before they pack and ship them.
+
+This page covers the settings. For how the Confirm and Cancel buttons tag the order, and how to act on those tags, see [COD verification on WhatsApp](/docs/automations/cod-verification).
+
+## How it works
+
+1. A customer places an order in your Shopify store.
+2. WhatFlow checks the order against your conditions (payment status or payment method).
+3. After the **Send delay**, WhatFlow sends your active Order Confirmation template to the customer's phone number.
+4. WhatFlow tags the order as the message moves through WhatsApp: a "waiting" tag when Meta accepts the message, and your **Order tag** when WhatsApp reports it delivered or read.
+5. The customer taps a button. WhatFlow tags the order with that button's tag and sends the reply you set.
+6. If the customer does not answer, WhatFlow can send up to 3 [automatic reminders](#automatic-reminders).
+
+<Note>
+
+Turning the automation on does not send messages for orders that were placed before you turned it on. Only new orders are sent.
+
+</Note>
+
+## Set it up
+
+<Steps>
+<Step title="Connect WhatsApp">
+
+Your WhatsApp number must be connected. See [Connect WhatsApp](/docs/getting-started/connect-whatsapp).
+
+</Step>
+<Step title="Open the automation">
+
+<Path>Home › Order Confirmation</Path>
+
+The page heading is **Order Confirmation**.
+
+</Step>
+<Step title="Choose the message">
+
+In the message card, click **Choose message** and pick an approved template, then click **Use this message**. To write your own, click **Create new**. See [Message templates](/docs/templates/overview).
+
+When you connect WhatsApp, WhatFlow submits a starter template called **Order Confirmation - Detailed** to Meta for you. It has **Confirm** and **Cancel** buttons. It is not switched on automatically: you still need to choose it here.
+
+</Step>
+<Step title="Set when to send">
+
+Under **When to send**, set the **Send delay**, and choose a **Payment status** or **Payment methods**. For COD stores, pick your cash on delivery method under **Payment methods**.
+
+</Step>
+<Step title="Set the replies and tags">
+
+Under **When the customer replies**, set what WhatFlow replies and which tag it adds for each button. Click **Save**.
+
+</Step>
+<Step title="Turn it on">
+
+In the **Status** card, click **Turn on**.
+
+</Step>
+<Step title="Test with another number">
+
+Place a test order using a phone number that is **not** your connected WhatsApp business number. WhatFlow does not send the confirmation to its own number.
+
+</Step>
+</Steps>
+
+## Settings
+
+### When to send
+
+<Settings>
+<Setting name="Send delay" value="0 minutes">
+
+How many minutes to wait after the order is placed before sending. 0 sends right away. The value must be 0 or a positive number.
+
+</Setting>
+<Setting name="Payment status" value="Any order">
+
+- **Any order**: send for every order.
+- **Unpaid orders only**: send only when the order's payment status is pending. Orders that are partially paid or only authorized do not count as unpaid.
+- **Paid orders only**: send only for paid orders.
+
+This setting is not used while payment methods are chosen.
+
+</Setting>
+<Setting name="Payment methods" value="Empty (every method)">
+
+Pick payment methods from the names found in your recent orders. When you pick one or more, WhatFlow sends only for orders paid with those methods, and ignores **Payment status**. Leave it empty to send for every payment method.
+
+If you see "No payment methods found in your recent orders.", place a test order with the method first.
+
+</Setting>
+</Settings>
+
+### After sending
+
+<Settings>
+<Setting name="Order tag" value="⚠ Confirmation Pending">
+
+Added to the Shopify order once the message is delivered. Up to 40 characters. You cannot use "Subscription Required" as a tag.
+
+</Setting>
+</Settings>
+
+### When the customer replies
+
+This section lists each quick-reply button in your template, in quotes. For each button:
+
+<Settings>
+<Setting name="Reply with">
+
+The text WhatFlow sends back when the customer taps this button. Leave it empty to send no reply.
+
+</Setting>
+<Setting name="Tag the order">
+
+The tag added to the order when the customer taps this button. Optional, up to 40 characters.
+
+</Setting>
+</Settings>
+
+The defaults are filled in from your template's buttons. If the template has no quick-reply buttons, the defaults use **Confirm Order** and **Cancel Order**.
+
+| Button | Default reply | Default tag |
+| --- | --- | --- |
+| First button | Thank you for the confirmation! Your order will be at your doorstep soon! | `✅ Order Confirmed` |
+| Second button | Your order has been cancelled. You may confirm again if this was a mistake. | `❌ Order Canceled` |
+| Third button | Same as the first button | `✅ Order Confirmed` |
+
+If your template has a third button, check its reply and tag. By default it gets the "confirmed" reply and tag.
+
+Click **Save** to keep your changes, or **Discard** to undo them.
+
+## Delivery tags
+
+WhatFlow tags the Shopify order as the message moves through WhatsApp. This lets you see in the Orders list which customers received the message.
+
+| When | What happens to the order |
+| --- | --- |
+| Meta accepts the message | Adds `⏳` plus your order tag, for example `⏳ ⚠ Confirmation Pending`. |
+| WhatsApp reports the message delivered or read | Adds your order tag (`⚠ Confirmation Pending`) and removes the `⏳` tag and any failure tag. |
+| The customer taps a button | Adds the button's tag and removes the waiting and delivery tags. |
+| Delivery fails | Adds one failure tag and adds a note to the order. |
+
+### Failure tags
+
+When delivery fails, WhatFlow adds one of these tags and writes a note on the order that starts with `[WhatFlow] WhatsApp delivery failed`, followed by Meta's error code and details.
+
+| Tag | What it means |
+| --- | --- |
+| `WhatsApp: Not a User` | The phone number is not on WhatsApp. |
+| `WhatsApp: Opted Out` | The customer chose to stop these messages in WhatsApp. |
+| `WhatsApp: User Blocked` | The customer blocked your number. |
+| `WhatsApp: Rate Limited` | Meta limited how fast you can send. |
+| `WhatsApp: Sender Restricted` | Meta restricted your number. |
+| `WhatsApp: Payment Issue` | Your Meta account has no working payment method. |
+| `WhatsApp: Message Too Long` | The message is too long. |
+| `WhatsApp: Outside 24h Window` | A free-form message was sent after the 24-hour window closed. |
+| `WhatsApp: Delivery Failed` | Any other error. |
+
+You may also see older tags on past orders: `No WhatsApp`, `WhatsApp Undeliverable` and `WhatsApp Delivery Failed`.
+
+Shopify limits order notes to 5,000 characters. If the note is already full, WhatFlow cannot add the failure note, so check those orders by hand.
+
+## Automatic reminders
+
+If the customer does not tap a button, WhatFlow can send the confirmation request again. Reminders are sent only while the order still has your delivery tag (`⚠ Confirmation Pending` by default). They stop as soon as the customer taps any button, or the order is cancelled, closed or fulfilled. Each reminder is a billed template message.
+
+Turn on **Remind customers who haven't responded** (off by default), then click **Add reminder**. You can add up to 3 reminders.
+
+For each reminder:
+
+<Settings>
+<Setting name="Hours and Minutes" value="Reminder 1: 2 hours. Later reminders: 24 hours">
+
+How long to wait. Each delay counts from the previous message (the confirmation, or the reminder before). It must be between 1 and 72 hours. Minutes go in steps of 5.
+
+</Setting>
+<Setting name="Template" value="Same template as the confirmation message">
+
+Click **Choose a different template** to send a different message. Click **Use confirmation template** to go back.
+
+</Setting>
+<Setting name="Reminder delivery tag" value="Reminder N Delivered">
+
+Added when this reminder is delivered. Leave it blank to skip tagging. It must be different from the pending tag and the button tags.
+
+</Setting>
+<Setting name="Button response tag">
+
+The tag added when the customer taps this button on the reminder. Every quick-reply button needs its own tag.
+
+</Setting>
+<Setting name="Button auto-reply">
+
+Sent when this reminder's button is tapped. Leave it blank for no auto-reply.
+
+</Setting>
+</Settings>
+
+URL and phone buttons do not trigger tags or auto-replies.
+
+Each reminder shows a badge: **Ready**, or **Won't send** with the reason. A reminder won't send until:
+
+- its template is approved and has quick-reply buttons,
+- the confirmation has an **Order tag** set,
+- every quick-reply button in the original confirmation has a tag, so WhatFlow can tell that the customer answered,
+- every button has a response tag.
+
+Good to know about reminders:
+
+- Reminders only start for messages WhatFlow sent automatically for a new order. A message you resend by hand does not start reminders.
+- Before each reminder, WhatFlow checks the order again. It stops if the order is cancelled, closed, fulfilled, partially fulfilled or restocked, if any button tag is on the order, or if any failure tag is on the order.
+- If the earlier message was not delivered yet (the delivery tag is not on the order), that reminder is skipped, but the next one is still scheduled.
+- Reminders do not check your payment conditions again, because the first message already matched them.
+
+## Template variables
+
+When you create the template, you choose what each variable (`{{1}}`, `{{2}}`, …) is replaced with. For Order Confirmation you can use:
+
+| Group | Fields |
+| --- | --- |
+| Store | Shop Name, Shop Website URL |
+| Order | Order Name (#1001), Order Number, Order Date, Order Note, Order Status URL, Total Price, Subtotal Price, Total Tax, Currency, Shipping Fees |
+| Payment and delivery | Payment Status, Payment Method / Gateway, Financial Status (raw), Fulfillment Status, Delivery Method |
+| Items | Products x Quantity, Variant x Quantity, Products x Price |
+| Customer | Customer First Name, Customer Last Name, Customer Email, Customer Phone |
+| Shipping address | Shipping Address Line 1, Shipping Address Line 2, Shipping City, Shipping Province, Shipping Country, Shipping ZIP |
+| Billing address | Billing Address Line 1, Billing Address Line 2, Billing City, Billing Province, Billing Country, Billing ZIP |
+
+You can also use **Custom note attribute…** to insert a value from the order's additional details.
+
+- **Products x Quantity** looks like: Classic Linen Shirt (Color: Blue, Size: M) x 1 | Wool Beanie x 2.
+- An empty value is sent as a blank space.
+- If you use **Shipping Address Line 1** or **Shipping City** and it is empty, WhatFlow reads the order again. If it is still empty, it sends "Not provided".
+- If the header is set to the product image, WhatFlow uses the image of the first item. If that product has no image, the message fails.
+
+See [Template editor](/docs/templates/editor).
+
+## What the customer sees
+
+An example using the **Order Confirmation - Detailed** starter template:
+
+<Preview buttons={["Confirm","Cancel"]}>
+Dear **Sara**,
+Thank you for your order. This is a confirmation message.
+
+**Order Details:**
+Order Number: **#1001**
+Items: **Classic Linen Shirt x 1**
+Total: **49.99 USD**
+Address: 12 Market Street
+City: Lahore
+
+Please confirm your order ASAP.
+</Preview>
+
+## Which phone number is used
+
+WhatFlow uses the first phone number it finds on the order, in this order: billing address phone, shipping address phone, order phone, customer phone. It adds the country code from the billing (or shipping) country.
+
+If the order has no phone number, or the number is not valid, no message is sent and no tag is added.
+
+## Good to know
+
+- **Subscription required.** Every automated message needs an active WhatFlow plan. Without one, the message is skipped and the order is tagged `WhatFlow: Subscription Required`. See [Plans and billing](/docs/account/billing).
+- **Meta restrictions turn automations off.** If Meta restricts your WhatsApp number, WhatFlow turns off every automation and shows a banner with an **Open Connections** button. After Meta lifts the restriction, you must turn each automation back on yourself.
+- **Template problems turn it off.** If Meta pauses, disables or rejects your template, or rates it low quality, and there is no other usable template, the automation turns off. It does not turn back on by itself after you fix the template.
+- **Order Notification at the same time.** If [Order Notification](/docs/automations/order-updates) is also on, the customer gets both messages.
+- **OTP confirmation at the same time.** If [OTP order confirmation](/docs/automations/otp-verification) is also on for the same orders, customers are asked twice. Turn one off, or give each one different payment methods.
+- **Respect blocklist.** If you turned on the [Blocklist](/docs/account/blocklist) for order updates, blocked customers are skipped.
+
+## Troubleshooting
+
+### I can't turn it on
+
+Read the banner on the page:
+
+- "Choose the message to send before turning this on." Choose an approved template.
+- "Your message is waiting for Meta's review…" Wait for approval (usually a few minutes), then turn it on.
+- "Meta rated this message low quality, so this automation is paused." Edit the message or choose another one.
+- "Cannot enable automation: WhatsApp account is restricted." Check the **Connections** page.
+
+### The customer didn't get the message and there is no tag
+
+- The order has no phone number, or the number is not valid. Make the phone field required at checkout, and make sure numbers include the country code or the country is set.
+- The order didn't match **Payment status** or **Payment methods**.
+- The order is tagged `WhatFlow: Subscription Required`. Choose a plan in **Billing**.
+
+### The order has a note saying the confirmation was skipped
+
+The note reads: "[WhatFlow] WhatsApp confirmation skipped. The order's phone number is the same as the connected WhatFlow WhatsApp number." You tested with your own business number. Use a different phone number.
+
+### The order has a failure tag
+
+See [Failure tags](#failure-tags). For `WhatsApp: Payment Issue`, add a payment method in WhatsApp Manager. For more fixes, see [Troubleshooting](/docs/account/troubleshooting).
+
+### The order is stuck on the ⏳ tag
+
+Meta accepted the message, but WhatsApp has not reported it delivered yet. This can happen when the customer's phone is off or offline. The tag changes when WhatsApp reports delivery.
+
+### Reminders never start
+
+Check that the confirmation has an **Order tag**, that the template has quick-reply buttons, and that every button has a tag. Look for a **Won't send** badge on the reminder.

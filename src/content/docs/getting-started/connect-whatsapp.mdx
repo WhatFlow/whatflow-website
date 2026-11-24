@@ -1,0 +1,182 @@
+WhatFlow sends messages from your own WhatsApp business number through Meta's Cloud API. You connect the number once, with Meta's sign-up window, from the **Connections** page. Nothing sends until the number is connected.
+
+<Path>Connection › Connections</Path>
+
+The menu item is called **Connection**. The page it opens is called **Connections**.
+
+## Before you start
+
+Have these ready:
+
+- **The Facebook account you use for your business.** Meta's window signs you in with it. You can pick an existing Meta business portfolio and WhatsApp account, or create them during sign-up.
+- **The phone number customers will message.** It must be able to receive a verification code from Meta by SMS or call.
+- **A computer.** Meta opens a sign-in window that phones often block. If nothing opens, connect from a computer.
+
+### Which number can you use
+
+- **A new number**, or one not yet on the WhatsApp Business Platform. This is the simplest case.
+- **A number already on the WhatsApp Business app.** Meta can connect it to the Cloud API while it stays on the app. Meta calls this coexistence. WhatFlow waits until Meta has finished that setup before it registers the number.
+- **A number that already has a two-step verification PIN.** You will be asked for the PIN. See [Two-step verification PIN](#two-step-verification-pin).
+
+## Connect your number
+
+<Steps>
+<Step title="Open Connections">
+
+Click **Connection** in the WhatFlow menu, or **Connect Account** in the Home setup guide.
+
+</Step>
+<Step title="Click Connect with Facebook">
+
+Under **Connect WhatsApp**, click **Connect with Facebook**. Meta's sign-up window opens.
+
+</Step>
+<Step title="Finish Meta's steps">
+
+In Meta's window, sign in, choose or create your business portfolio and WhatsApp Business account, add your phone number and verify it with the code Meta sends. Then close the window when Meta says you are done.
+
+</Step>
+<Step title="Choose a Messaging account, if asked">
+
+If more than one Messaging account (Meta used to call this a WABA) owns the number, WhatFlow shows **Finish WhatsApp setup**. Pick one in **Messaging account for templates and billing**. Your templates and Meta charges belong to this account.
+
+</Step>
+<Step title="Enter the PIN, if asked">
+
+WhatFlow registers the number with Meta. If the number already has a two-step verification PIN, you are asked for it in **Six-digit registration PIN**. Enter it and click **Continue**.
+
+</Step>
+<Step title="Wait for the confirmation">
+
+You see "WhatsApp connected. Templates and Inbox are being prepared." The page now shows **Your WhatsApp number** with a **Connected** status.
+
+</Step>
+</Steps>
+
+If something goes wrong part way through, click **Restart signup** to start again.
+
+## Two-step verification PIN
+
+Meta protects each WhatsApp number with a six-digit two-step verification PIN.
+
+- **New numbers:** WhatFlow registers the number with the PIN `000000`. You don't need to do anything during sign-up.
+- **Numbers that already have a PIN:** WhatFlow asks for it. You see "This number already has a two-step verification PIN. Enter that six-digit PIN to finish."
+- **You don't know the PIN:** turn off two-step verification for the number in WhatsApp Manager, then enter `000000`.
+- **Wrong PIN:** you see "That PIN doesn't match this number's two-step verification PIN." Try again, or turn off two-step verification in WhatsApp Manager and enter `000000`.
+
+<Warning>
+
+If WhatFlow registered your number with `000000`, change it to a PIN only you know. Go to **Advanced › Two-step verification PIN**, enter a new **PIN** and click **Change PIN**. You need this PIN if the number is ever registered again.
+
+</Warning>
+
+## What happens after you connect
+
+- **Starter templates are submitted to Meta.** WhatFlow submits a few ready-made templates for review, for example an order confirmation with **Confirm** and **Cancel** buttons, an order fulfillment message and an abandoned checkout reminder. It skips any that you already have.
+- **Nothing is switched on.** The starter templates are not assigned as active and no automation is turned on. You choose what to turn on. See [Quickstart](/docs/getting-started/quickstart).
+- **Live Inbox is prepared** for your number.
+
+Approval of the starter templates usually takes a few minutes. You can see their status on the [Templates](/docs/templates/overview) page.
+
+## The Connections page
+
+Once connected, the page has these sections.
+
+### Your WhatsApp number
+
+Shows **Business**, **Phone number** and **Status**. Status is **Checking**, **Connected**, **Needs attention** or **Status unavailable**. Under it, a health line tells you what Meta reports:
+
+| Message | Meaning |
+| --- | --- |
+| "Messages are sending normally." | All good. |
+| "Meta has limited messages from this number." | Meta is restricting how much you can send. Check WhatsApp Manager. |
+| "Meta has blocked messages from this number." | Meta has stopped sending from this number. Check WhatsApp Manager and contact Meta support. |
+| "Meta didn't report a sending status for this number." | Meta gave no status. Check again later. |
+
+Buttons: **Open WhatsApp Manager** and **Disconnect**.
+
+If Meta has not registered the number yet, you see **Finish registering your number**. Enter a six-digit **Registration PIN** and click **Register number**.
+
+### Add a payment method
+
+Meta bills WhatsApp messages separately from WhatFlow. The **Add a payment method** banner reminds you to add a payment method in Meta before you send paid messages. Click **Manage payments** to add one to your Messaging account in Meta. If you have already added one, you can ignore the banner.
+
+### Display name
+
+The name customers see on your WhatsApp profile. Meta reviews every change.
+
+<Steps>
+<Step title="Enter the name">
+
+Type it in **Display name** and click **Submit to Meta**.
+
+</Step>
+<Step title="Wait for Meta's review">
+
+The section shows that the name is waiting for review. If Meta rejects it, choose a name that follows Meta's display name rules and submit again.
+
+</Step>
+<Step title="Re-register the number">
+
+When Meta approves the name, re-register your number under **Advanced** within 14 days to start using it.
+
+</Step>
+</Steps>
+
+### Use this number on another store
+
+Click **Copy connection code** to get a code that lets another of your Shopify stores send from the same number. Only share it with stores you own.
+
+On the other store, open WhatFlow › **Connection**, go to **Already use WhatFlow on another store?**, paste the code into **Connection code** and click **Link this store**. If the code is incomplete you see "This isn't a complete connection code. Copy it again from your other store."
+
+### Advanced
+
+| Item | What it is |
+| --- | --- |
+| **Messaging account ID (formerly WABA ID)** | Your WhatsApp Business account in Meta. |
+| **Phone number ID** | Meta's ID for your number. |
+| **Store domain** | Your Shopify store. |
+| **Account secret** | Used when linking another store by hand. Use **Show**, **Hide** or **Copy**. Keep it private. |
+| **Quality rating** | Green, Yellow, Red or Unknown, from Meta. If it is not green, **Ask Sidekick how to improve** appears. |
+| **Messaging limit** | How many customers Meta lets you start conversations with. |
+| **Two-step verification PIN** | Change your PIN with **Change PIN**, or **Re-register number**. Re-registering is not offered for WhatsApp Business app numbers. |
+
+## Business verification
+
+WhatFlow does not handle Meta business verification. If Meta asks you to verify your business, do it in Meta Business Suite. Your messaging limit and display name rules come from Meta, not from WhatFlow.
+
+## Disconnect or reconnect
+
+### Disconnect
+
+Click **Disconnect** and confirm. WhatsApp messages from this store stop until you connect again. Your automations and templates are kept.
+
+### Reconnect the same number
+
+Click **Connect with Facebook** again and follow the same steps.
+
+### Connect a different number or account
+
+If you connect a number in a different Messaging account, WhatFlow copies your templates to the new account. Each one shows **MOVING TO NEW ACCOUNT** and goes through Meta review again.
+
+- Templates that are rejected, disabled or drafts are not copied.
+- If the new account already has a template with the same name and language but different wording, that template becomes a draft. Rename or edit it and submit it again.
+- Active templates are cleared during the move. When the copies are approved, open each automation, choose its message again and turn it back on.
+
+### WhatsApp disconnected on its own
+
+If Meta reports that WhatFlow can no longer access your number (for example, permissions were removed in Meta), WhatFlow disconnects the store. You see "WhatsApp is disconnected. Open Connections to review and reconnect your account." Connect again with **Connect with Facebook**.
+
+## Troubleshooting
+
+| Problem | What to do |
+| --- | --- |
+| Nothing opens after clicking **Connect with Facebook** | Your browser or phone blocked the pop-up. Allow pop-ups, or use a computer. If you see "Meta signup could not open", refresh the page. |
+| "Meta signup was cancelled." | The Meta window was closed early. Start again. |
+| "This setup attempt expired. Start Meta signup again." | Too much time passed. Click **Connect with Facebook** again. |
+| "No shared Messaging account is authorized for this phone number." | In Meta's window, make sure you share the WhatsApp account that owns the number. Start again. |
+| PIN errors | See [Two-step verification PIN](#two-step-verification-pin). |
+| "Meta has not completed Business app coexistence setup." | Your WhatsApp Business app number is not ready on the Cloud API yet. Resume once Meta finishes. |
+| An error with "Meta error" and a reference | Note the code and reference and email support@whatflow.tech. |
+
+For problems after you connect, see [Troubleshooting](/docs/account/troubleshooting).

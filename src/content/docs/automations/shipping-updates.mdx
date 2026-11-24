@@ -1,0 +1,141 @@
+Shipping Journey sends the customer a WhatsApp message at each step of delivery: when the label is bought, when the carrier picks up the package, when it is out for delivery, when it is delivered, and more. You choose which steps send a message, and which template each step uses.
+
+<Path>Home › Shipping Journey</Path>
+
+The page heading is **Shipping journey**.
+
+## How it works
+
+When your carrier scans a package, Shopify records a tracking event on the fulfillment. WhatFlow receives that event, reads the order again, finds the matching shipment, and sends the template you set for that step.
+
+- One message per step per shipment. If the same event comes twice, the customer gets one message.
+- Each shipment of an order is handled on its own, so partial shipments work.
+- These messages depend on tracking events from Shopify. If your carrier or shipping app does not report a step to Shopify, that step's message is not sent.
+
+<Note>
+
+Shipping Journey is different from **Order Fulfillment**, which sends one message when the whole order is fulfilled. See [Order updates](/docs/automations/order-updates#order-fulfillment).
+
+</Note>
+
+## The 11 shipping steps
+
+| Step | When Shopify reports it | Default tag |
+| --- | --- | --- |
+| **Label Purchased** | A shipping label has been bought. | `Label Purchased` |
+| **Label Printed** | The label has been printed and is being attached to the package. | `Label Printed` |
+| **Shipment Confirmed** | The order has been packed and the shipment is confirmed. | `Shipment Confirmed` |
+| **Carrier Picked Up** | The carrier has collected the package from your location. | `Carrier Picked Up` |
+| **In Transit** | The package is moving through the carrier network. | `In Transit` |
+| **Out for Delivery** | The package is with the delivery driver and should arrive today. | `Out for Delivery` |
+| **Ready for Pickup** | The package is at the pickup point, ready to collect. | `Ready for Pickup` |
+| **Delivery Attempted** | The carrier tried to deliver but could not. | `Delivery Attempted` |
+| **Shipment Delayed** | There is an unexpected delay. | `Shipment Delayed` |
+| **Delivered** | The package has been delivered. | `Delivered` |
+| **Delivery Failed** | Delivery could not be completed after several attempts. | `Delivery Failed` |
+
+## Set it up
+
+<Steps>
+<Step title="Get the templates">
+
+Each step needs an approved template. The Template Library has an English starter for every step, for example **Shipping Journey - Out for Delivery**. One template can be used for several steps. See [Message templates](/docs/templates/overview).
+
+</Step>
+<Step title="Turn on the steps you want">
+
+Under **Shipping updates**, open a step and turn on **Send a WhatsApp message for this update**. Choose its template, and set the wait time and tag.
+
+</Step>
+<Step title="Save">
+
+Click **Save**. You see "Shipping updates saved."
+
+</Step>
+<Step title="Turn on Shipping Journey">
+
+In the **Status** card, click **Turn on**. You need at least one step that is turned on, has an approved template, and is saved.
+
+</Step>
+</Steps>
+
+## Settings for each step
+
+<Settings>
+<Setting name="Send a WhatsApp message for this update" value="Off">
+
+Turns this step on or off.
+
+</Setting>
+<Setting name="Wait before sending" value="0">
+
+How long to wait after the event, in **minutes**, **hours** or **days**. 0 sends right away.
+
+</Setting>
+<Setting name="Tag the order" value="The step name">
+
+Added to the Shopify order for this step. Up to 40 characters. Like other automations, WhatFlow first adds `⏳` plus the tag when Meta accepts the message, then the tag itself when WhatsApp reports it delivered or read.
+
+</Setting>
+<Setting name="Message">
+
+The template for this step. It must be approved, must not be rated low quality, and must be set to **Shipping Journey** or **Unassigned** in the template's **Send when** field.
+
+</Setting>
+</Settings>
+
+### Step badges
+
+| Badge | Meaning |
+| --- | --- |
+| **Active** | The step will send. |
+| **Off** | The step is turned off. |
+| **Needs a template** | Choose a template for this step. |
+| **Template unavailable** | The template is not approved, or was paused or rejected. |
+| **Configured · automation off** | The step is ready, but Shipping Journey is turned off. |
+| **Unsaved changes** | Save the page. |
+
+The summary in the **Status** card shows how many of the 11 updates are ready.
+
+## Template variables
+
+Besides the usual order fields (order name, customer name, address, products and so on), shipping templates can use **Tracking Number**, **Tracking URL**, **Shipping Carrier**, **Fulfillment Status**, **Shipment Status** and **Estimated Delivery**.
+
+Link buttons can point to the **Shipment Tracking URL**. See [Template editor](/docs/templates/editor).
+
+## What the customer sees
+
+An example using the **Shipping Journey - Out for Delivery** starter template:
+
+<Preview buttons={["Track Package"]}>
+Great news **Sara**! Your order **#1001** is out for delivery today. Please make sure someone is available to receive it.
+
+**Items:** Classic Linen Shirt x 1
+**Total:** 49.99 USD
+
+We'll keep you updated as your delivery progresses.
+</Preview>
+
+## Good to know
+
+- **Editing a template.** Editing an approved template sends it back to Meta for review. Steps that use it can't send until it is approved again. Assign a backup template first if you need to edit one.
+- **Subscription required.** Every automated message needs an active WhatFlow plan. Without one, the message is skipped and the order is tagged `WhatFlow: Subscription Required`.
+- **Meta restrictions turn automations off.** If Meta restricts your WhatsApp number, WhatFlow turns off Shipping Journey and all other automations. Turn them back on yourself after Meta lifts the restriction.
+- **Old events.** Events older than 30 days are not sent.
+- **Review requests.** [Review requests](/docs/automations/review-requests) set to **After delivery** use the same "delivered" event from your carrier.
+
+## Troubleshooting
+
+### A step never sends
+
+- Check the step's badge. It must be **Active**.
+- Your carrier may not report that step to Shopify. Open the order in Shopify and check the tracking events on the fulfillment. If the event is not there, WhatFlow can't send a message for it.
+- Check that the order has a valid phone number.
+
+### I can't turn on Shipping Journey
+
+You see "Turn on at least one shipping update and assign it a template, then save before enabling." Turn on a step, choose an approved template, save, then turn on.
+
+### The customer got no message and the order has a failure tag
+
+See [Failure tags](/docs/automations/order-confirmation#failure-tags).

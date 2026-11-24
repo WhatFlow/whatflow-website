@@ -1,0 +1,178 @@
+Live Inbox is the shared WhatsApp inbox in WhatFlow. Your team reads and answers customer messages there, on your connected business number, from a browser on a computer or a phone.
+
+Live Inbox runs on the same WhatsApp connection as the rest of WhatFlow. There is no limit on team members and no per-seat fee. Messages you send from the inbox count toward your plan like any other WhatFlow message. See [Plans and billing](/docs/account/billing).
+
+## How it works
+
+- Every customer who messages your connected WhatsApp number gets a chat in Live Inbox. One WhatsApp number is used per store.
+- Everyone on your team signs in to the same inbox and sees the same chats. Each person has their own login. See [Team members and roles](/docs/inbox/team).
+- You can reply with free-form messages only while the customer's [24-hour window](/docs/getting-started/whatsapp-basics) is open. After that, you can send approved templates only.
+- Live Inbox keeps message history for **30 days**. Messages, reactions and media older than 30 days are deleted every night and cannot be recovered.
+
+## Turn on Live Inbox
+
+The on/off switch for Live Inbox is in the WhatFlow app in Shopify admin, not inside the inbox.
+
+<Path>Shopify admin › WhatFlow › Live Inbox</Path>
+
+<Steps>
+<Step title="Connect WhatsApp first">
+
+If your number is not connected yet, the page shows **Connect WhatsApp to Activate Live Inbox**. Click **Go to Connections** and follow [Connect WhatsApp](/docs/getting-started/connect-whatsapp).
+
+</Step>
+<Step title="Turn it on">
+
+On the **WhatsApp Live Inbox** page, click **Turn On Inbox**. You see "WhatsApp Live Inbox enabled successfully!" and the badge changes to **Inbox ON**.
+
+</Step>
+<Step title="Open the inbox">
+
+Click **Open Live Inbox**. The inbox opens in a new browser tab.
+
+</Step>
+</Steps>
+
+When you turn the inbox on, WhatFlow checks your WhatsApp details with Meta. If your number also uses the WhatsApp Business phone app and was connected in the last 24 hours, WhatFlow also imports recent chat history from the phone app.
+
+### When Live Inbox is off
+
+Click **Turn Off Inbox** to switch it off. While it is off:
+
+- New customer messages are **not stored** in the inbox.
+- You **cannot reply** to customers from the inbox. Private notes still work.
+- A banner at the top of the inbox says chat is turned off.
+- Your automations (order confirmations, shipping updates and the rest) keep working as normal.
+- You can still open the inbox and use broadcasts, workflows, templates, the blocklist and settings.
+
+## Open the inbox
+
+The **WhatsApp Live Inbox** page in Shopify admin has two ways to open it.
+
+| Button | What it does |
+| --- | --- |
+| **Open Live Inbox** | Opens the inbox in a new tab, signed in as the store owner. |
+| **Copy Direct Link** | Copies a sign-in link you can open in another browser or on your phone. You see "One-time inbox link copied. It expires in one hour." |
+
+The direct link works **once** and expires **one hour** after you copy it. Opening it shows a page called **Open WhatFlow Inbox**. Click **Continue to Inbox** to sign in.
+
+<Warning>
+
+Anyone who opens a direct link is signed in as the **store owner**, with full access. Do not share it with your team or paste it in a group chat. Give each team member their own login instead. See [Team members and roles](/docs/inbox/team).
+
+</Warning>
+
+After you sign in, you stay signed in on that browser for 7 days. Team members don't use these buttons. They sign in on the inbox login page with their own username and password.
+
+## Layout
+
+On a computer, the inbox has three parts:
+
+- **Sidebar** (left). Links to every page, grouped under **Workspace** and **Manage**. The **Live Inbox** link shows your unread count. Click **Search** or press Ctrl K (⌘ K on Mac) to find a customer, number, message or page.
+- **Conversation list** (middle). All chats, with filters at the top.
+- **Chat** (right). The open conversation and the reply box.
+
+On a phone, the list and the chat are separate screens. A bar at the bottom has **Inbox**, **Templates**, **Search** and **More**. **More** opens the full menu. You can install the inbox on your home screen. See [Inbox settings and shortcuts](/docs/inbox/settings).
+
+The browser tab title shows your unread count, for example "(3) WhatFlow Inbox".
+
+Some sidebar pages are only visible to the store owner. See [Team members and roles](/docs/inbox/team).
+
+## The conversation list
+
+Each row shows:
+
+- The customer's name or number, and a preview of the last message.
+- The time of the last message ("Just now", "5m", "3h", "Nov 2").
+- The unread count, labels and the assigned teammate.
+- **Needs reply** when the customer is waiting for you.
+- A countdown when the 24-hour window has less than 4 hours left, for example "2h 45m left". It turns amber under 4 hours and red under 1 hour.
+- **Draft:** and your text if you started a reply in this browser and did not send it.
+- A follow-up badge, red when it is due.
+- **Ad ·** and the ad headline if the chat started from a click-to-WhatsApp ad.
+
+The list loads 100 chats at a time. Click **Load more chats** at the bottom to see more.
+
+### Filters
+
+| Filter | Options |
+| --- | --- |
+| Queue | **Everyone**, **Mine**, **Unassigned**, each with a count. Only shown when your store has more than one active team member. Agents start on **Mine**, the owner on **Everyone**. |
+| **Status** | See the table below. |
+| **Label** | **All labels**, **Unlabeled**, or one label. |
+
+| Status | Shows chats that |
+| --- | --- |
+| **All statuses** | Everything. Pinned chats come first. |
+| **Unread** | Have unread messages. |
+| **Needs reply** | Have an open window where the customer wrote last and the chat is not done. An automated message or broadcast sent after the customer's message counts as a reply. |
+| **Closing soon** | Have an open window with less than 4 hours left, where the customer wrote last and the chat is not done. Soonest first. |
+| **Follow-ups** | Have a follow-up set. Sorted by due time. |
+| **24h active** | Have a customer message in the last 24 hours. |
+| **Expired** | Have a closed window, or never had one. |
+| **Pinned** | Are pinned in this browser. |
+| **From ads** | Started from a click-to-WhatsApp ad or boosted post. |
+| **Done** | Were marked done since the customer's last message. |
+
+You can save a set of filters as a view, pin chats, and act on many chats at once. See [Assign, label and note](/docs/inbox/organising).
+
+### Search
+
+The search box at the top of the list ("Name, number or message") finds chats by customer name, phone number, or the text of the **last message** in the chat. It does not search older messages. Press / to jump to the search box and Esc to clear it.
+
+To search the whole history of one chat, open the chat and press F, or click the search button in the chat header. Type at least 2 characters. Press Enter for an older match and Shift+Enter for a newer one. The inbox loads older messages to reach the match and highlights it. You can only search messages from the last 30 days.
+
+## The 24-hour window indicator
+
+The chat header shows how long the customer's 24-hour window has left, for example "18h left" or "20m left".
+
+| What you see | Meaning |
+| --- | --- |
+| Green countdown | The window is open. |
+| Amber countdown | Less than 4 hours left. |
+| Red countdown | Less than 1 hour left. |
+| **Templates only** | The window has closed. You can only send an approved template. |
+
+The window lasts 24 hours from the customer's latest message. Sending a template does not open it again. It opens when the customer replies.
+
+While an inbox tab is open, you get an alert when a chat that is yours or unassigned has 30 minutes or less left and the customer wrote last. If the tab is in the background and you allowed notifications, you also get a browser notification "Window closing:" with the customer's name.
+
+## Messages from the WhatsApp Business app
+
+If your number also uses the WhatsApp Business phone app, messages you send from the phone appear in the chat too, including edits, deletions and reactions. In [Inbox reports](/docs/inbox/reports) they count as **Phone app** replies.
+
+## Message history
+
+Live Inbox keeps messages for **30 days**. Each night, messages, reactions and the media in them that are older than 30 days are deleted. Deleted messages cannot be recovered, and in-chat search, the media gallery and reports only cover what is still stored.
+
+Labels, canned responses and custom attribute values are not removed by this cleanup.
+
+## AI drafts
+
+WhatFlow has no built-in AI. You can connect an outside AI app, such as Claude or ChatGPT, from the **AI connections** page in the WhatFlow Shopify app. See [AI apps (MCP)](/docs/mcp).
+
+New AI connections start in draft mode. The AI's replies wait in Live Inbox until a person approves them. A draft appears above the reply box as "Draft from" and the app's name, with "not sent yet" and its expiry date.
+
+| Button | What it does |
+| --- | --- |
+| **Send** | Sends the draft to the customer as you. You need permission to reply to the chat. |
+| **Edit** | Lets you change a text draft (up to 4,096 characters) before sending. **Cancel edit** keeps the original. |
+| **Discard** | Deletes the draft. Nothing is sent. |
+
+- A chat can have at most **3 drafts** waiting. After that, the AI gets "This conversation already has 3 drafts waiting for review."
+- A text draft expires when the customer's 24-hour window closes. A template draft expires after 24 hours.
+- AI connections made by an agent are always in draft mode. Only the owner can turn draft mode off.
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| "Please allow pop-ups to open the live inbox" or no new tab opens | Allow pop-ups for Shopify admin in your browser, then click **Open Live Inbox** again. |
+| "Invalid or expired authentication token. Reopen the Inbox from your Shopify app." | The link is older than one hour. Click **Open Live Inbox** again. |
+| "This launch link was already used. Reopen the Inbox from Shopify." | Each link works once, so a refreshed page or a bookmark fails. Click **Open Live Inbox** again. |
+| "This inbox link is invalid or expired. Copy a fresh link from Shopify." | Click **Copy Direct Link** again for a new link. |
+| "Connect WhatsApp before enabling Inbox." | Connect your number first. See [Connect WhatsApp](/docs/getting-started/connect-whatsapp). |
+| "No WhatsApp number linked" in the inbox | Your WhatsApp number is not connected. Connect it in the WhatFlow app. |
+| Banner "Live Inbox chat is turned off in Shopify Admin" | Go to **Live Inbox** in the WhatFlow app and click **Turn On Inbox**. |
+| "Inbox sign-in is temporarily unavailable." | Wait a moment and open the inbox again from Shopify. If it keeps happening, email support@whatflow.tech. |
+| Old messages are missing | Messages older than 30 days are deleted. They cannot be restored. |

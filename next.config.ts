@@ -1,5 +1,8 @@
 import type { NextConfig } from "next";
 import { withPayload } from "@payloadcms/next/withPayload";
+import createMDX from "@next/mdx";
+import remarkGfm from "remark-gfm";
+import rehypeSlug from "rehype-slug";
 
 const nextConfig: NextConfig = {
 	typescript: {
@@ -73,7 +76,23 @@ const nextConfig: NextConfig = {
 	},
 };
 
-export default withPayload(nextConfig, { devBundleServerPackages: false });
+// Help-center articles live in src/content/docs/*.mdx and are compiled at build time.
+const withMDX = createMDX({
+	extension: /\.mdx$/,
+	// The classic runtime makes MDX output call React.createElement from `react` itself.
+	// Next does not alias `react/jsx-runtime` to its server build for .mdx files, so the
+	// automatic runtime crashes in Server Components ("recentlyCreatedOwnerStacks").
+	options: {
+		jsxRuntime: "classic",
+		pragma: "React.createElement",
+		pragmaFrag: "React.Fragment",
+		pragmaImportSource: "react",
+		remarkPlugins: [remarkGfm],
+		rehypePlugins: [rehypeSlug],
+	},
+});
+
+export default withPayload(withMDX(nextConfig), { devBundleServerPackages: false });
 
 // Enable calling `getCloudflareContext()` in `next dev`.
 // See https://opennext.js.org/cloudflare/bindings#local-access-to-bindings.

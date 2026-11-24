@@ -1,0 +1,154 @@
+The **Cash on Delivery** page lets you charge a fee for cash on delivery (COD) and hide COD at checkout for some orders, for example very large carts or certain countries. It works through a Shopify payment customization called **WhatFlow COD Checkout**.
+
+<Note>
+
+This page does not send WhatsApp messages. To ask COD customers to confirm their order on WhatsApp, see [COD verification on WhatsApp](/docs/automations/cod-verification).
+
+</Note>
+
+<Path>Cash on Delivery (in the app menu)</Path>
+
+## Where COD rules apply
+
+Shopify payment customizations run in supported online checkouts. They do not run in Point of Sale, and Shop Pay supports limited payment-method changes. Test your fee and rules in your store checkout before you take live orders.
+
+## How the COD fee works
+
+Shopify has no built-in fee for a payment method. WhatFlow adds the fee as a shipping rate instead:
+
+1. You create a shipping rate priced at your fee, for example "Cash on Delivery fee".
+2. You link that rate to COD in WhatFlow.
+3. At checkout, while the fee is **Active**:
+   - COD is shown only when the customer has selected a linked COD shipping rate (in every delivery group of the order).
+   - When a COD shipping rate is selected, all other payment methods are hidden.
+
+So a customer who wants to pay with cash on delivery must pick the COD rate and pay its price. A customer who wants to pay online picks a normal rate. The fee cannot be skipped.
+
+## Set it up
+
+The page shows four steps under **How WhatFlow COD works**.
+
+<Steps>
+<Step title="Activate the COD payment method">
+
+In Shopify, go to **Settings › Payments › Manual payment methods** and add **Cash on Delivery (COD)**. Click **Configure method** to open it. The badge shows **Active in Shopify** when it is set up, or **Needs setup**.
+
+</Step>
+<Step title="Create the COD shipping rate">
+
+In Shopify, go to **Settings › Shipping and delivery**. In each zone where you offer COD, add a rate priced at your fee, for example "Cash on Delivery fee". Click **Open shipping settings** to go there.
+
+</Step>
+<Step title="Link the rate in WhatFlow">
+
+Click **Link rates**, select your COD shipping rates, set **Fee status** to **Active — apply fee in checkout**, and save. The badge shows **Linked & active**, **Draft** or **Not linked**.
+
+</Step>
+<Step title="Test your checkout">
+
+Click **Open storefront** and place a test order. Check that COD appears only with the COD rate, and that the fee is added.
+
+</Step>
+</Steps>
+
+## Preferences
+
+The **Preferences** section has three items:
+
+- **Manual payment method**: which payment method WhatFlow treats as COD.
+- **Cash on Delivery fee**: the fee status and how many shipping rates are linked.
+- **COD limits & restrictions**: rules that hide COD.
+
+### Manual payment method
+
+<Settings>
+<Setting name="COD payment method" value="Cash on Delivery (COD)">
+
+Pick the name of your COD payment method from the list Shopify returns. If yours is not listed, choose **Other / enter custom name** and type it in **Exact checkout payment method name**, exactly as customers see it at checkout.
+
+</Setting>
+</Settings>
+
+From here you can click **Continue to fee** or **Set up limits instead**. If you use both the fee and limits, they must use the same payment method name.
+
+### Cash on Delivery fee
+
+<Settings>
+<Setting name="Fee status" value="Draft — save without activating">
+
+- **Active — apply fee in checkout**: enforces the COD shipping rate in supported checkouts.
+- **Draft — save without activating**: saves your settings, no fee at checkout.
+- **Inactive — disabled**: no fee at checkout.
+
+</Setting>
+<Setting name="Select your COD shipping rates">
+
+Pick the COD rates from your Shopify shipping rates, or choose **+ Enter custom rate name...** and type it in **Custom shipping rate name**. Up to 50 rate names, 150 characters each.
+
+</Setting>
+<Setting name="Name matching" value="Exact">
+
+How WhatFlow compares the rate name at checkout with your rate names: **Exact**, **Contains** or **Starts with**.
+
+</Setting>
+</Settings>
+
+You must select at least one priced COD shipping rate before you can make the fee active. To start over, click **Reset**.
+
+## Hide COD with limits
+
+On **Limit Cash on Delivery**, you set rules. When an order matches **any** active rule, Cash on Delivery is hidden from the customer at checkout.
+
+<Settings>
+<Setting name="Limits status" value="Draft">
+
+**Active** enforces the limits in checkout. **Draft** and **Inactive** do not.
+
+</Setting>
+<Setting name="Payment method to restrict">
+
+The COD payment method these rules hide.
+
+</Setting>
+</Settings>
+
+Each rule is a checkbox. Tick it to show its field.
+
+### Rules that work at checkout
+
+| Rule | What it does |
+| --- | --- |
+| **Maximum value** | Hides COD when the cart total is above this amount, in your store currency. |
+| **Minimum value** | Hides COD when the cart total is below this amount. The minimum can't be higher than the maximum. |
+| **Limit if any product is in cart** | Hides COD when the cart contains any product you pick. |
+| **Limit if country is** / **is not** | Uses 2-letter country codes, for example US, CA, IN. |
+| **Limit if state/province is** / **is not** | Uses Shopify's province codes, for example CA or NJ, not the full name. |
+| **Limit if city is** / **is not** | Matches when the city contains the text you enter. |
+| **Limit if postal/pin code is** / **is not** | Uses the postal or PIN code of the address. |
+| **Limit if any discount is applied** | Hides COD when the order has a discount. |
+| **Shipping rate restrictions (optional)** | Allows COD only with the shipping rates you choose. |
+
+<Warning>
+
+The rules **Limit if customer has one of tags**, **Limit if customer does not have one of tags**, **Limit if any product has any of tags** and **Limit if any product is in any of collections** can be saved, but they are not applied at checkout yet. COD still shows for these customers and products. Use the rules in the table above instead, for example pick the products one by one with **Limit if any product is in cart**.
+
+</Warning>
+
+## Troubleshooting
+
+### COD doesn't show at checkout at all
+
+- If the fee is **Active**, COD only appears after the customer picks a linked COD shipping rate. Check that a COD rate exists in every shipping zone where you offer COD.
+- Check that the rate names in WhatFlow match the rate names in Shopify, or use **Contains** matching.
+- Check that a limit rule is not hiding COD.
+
+### The fee is not added
+
+Check that **Fee status** is **Active — apply fee in checkout**, not Draft or Inactive, and that the rate has a price.
+
+### A limit doesn't work
+
+- Check that **Limits status** is **Active**.
+- Province rules need the province code (for example NJ), not the full name.
+- Customer tag, product tag and collection rules are not applied at checkout yet.
+- Payment customizations do not run in Point of Sale, and Shop Pay supports only limited changes.

@@ -1,0 +1,201 @@
+A broadcast sends one approved WhatsApp template to many customers at once, such as a sale announcement or a new collection. You start a broadcast from the customer list or a customer segment in Shopify admin, and WhatFlow sends the messages one by one in the background.
+
+## How it works
+
+- You choose the audience in Shopify admin: between 1 and 250 selected customers, or a whole customer segment.
+- You choose an approved template and a delay between messages.
+- WhatFlow prepares the list of recipients, then sends one message at a time, spaced by the delay you chose.
+- You follow progress, cancel or retry on the **Broadcast Queue** page in WhatFlow.
+
+Sending starts as soon as the recipient list is ready. You can't schedule a broadcast for a later date or time.
+
+<Path>Home › Guides › Customer Broadcast</Path>
+
+The in-app guide repeats these steps. The **Broadcast Queue** is at <Path>Home › Broadcast Queue</Path>.
+
+## Before you start
+
+- **An active WhatFlow subscription.** Without one, you see "An active WhatFlow subscription is required to send broadcasts."
+- **A connected WhatsApp number.** See [Connect WhatsApp](/docs/getting-started/connect-whatsapp).
+- **An approved broadcast template.** The template must be created for the **Customer Broadcast** trigger event and approved by Meta. Templates for other automations don't appear in the broadcast window.
+
+<Warning>
+
+WhatFlow does not check Shopify's email or SMS marketing consent before sending a broadcast. Meta's approval of your template is not the customer's permission to receive it. It is your responsibility to send broadcasts only to customers who agreed to receive WhatsApp messages from you. Turn on **Respect blocklist** so customers who replied STOP are skipped. See [Blocklist](/docs/account/blocklist) and [WhatsApp rules to know](/docs/getting-started/whatsapp-basics).
+
+</Warning>
+
+## Set it up
+
+<Steps>
+<Step title="Create a broadcast template">
+
+In the Customer Broadcast guide, click **Create Template**. This opens the template editor with the **Customer Broadcast** trigger event already chosen. Write the message, map any variables (such as the customer's first name), and submit it to Meta. Wait until it is approved. See [Template editor](/docs/templates/editor).
+
+</Step>
+<Step title="Choose customers in Shopify">
+
+In Shopify admin, go to **Customers**. Tick the customers you want to message (1 to 250), open the **...** menu and choose **Send WhatsApp Customer Broadcast**.
+
+To send to a larger group, use a segment instead (next section).
+
+</Step>
+<Step title="Configure the broadcast">
+
+In the **Send WhatsApp Broadcast** window, check the number of recipients, set **Delay between messages**, and pick your template under **Choose a template**. Read the **Message preview**.
+
+</Step>
+<Step title="Send">
+
+Click **Send Broadcast**. You see "Broadcast saved — preparing recipients" and a reminder to check the Broadcast Queue in WhatFlow.
+
+</Step>
+</Steps>
+
+### Send to a customer segment
+
+1. In Shopify admin, go to **Customers › Segments** and open a segment.
+2. Click **Use segment** and choose WhatFlow (**Send WhatsApp Segment Broadcast**).
+3. In the **Send WhatsApp Segment Broadcast** window, set the delay and pick a template.
+4. Click **Send Broadcast**. You see "Broadcast saved — preparing the full segment".
+
+A segment broadcast has no 250-customer limit. WhatFlow reads the segment's members once, when it prepares the broadcast. Customers who join the segment after that are not added.
+
+## Broadcast window settings
+
+<Settings>
+<Setting name="Recipients">
+How many customers you selected. Customers without a valid phone number are skipped automatically. For segments, the window shows **Segment Target**: all valid customers in the segment will receive the broadcast.
+</Setting>
+<Setting name="Delay between messages" value="10 seconds">
+The minimum time between two messages, in whole seconds, from 10 to 3,600. For selected customers, the window shows an estimated total time. A longer delay is gentler on your number's quality rating.
+</Setting>
+<Setting name="Choose a template" value="Newest approved broadcast template">
+Only approved templates for the **Customer Broadcast** trigger event are listed, newest first.
+</Setting>
+<Setting name="Message preview">
+Shows the template with variables in brackets, for example [First Name]. Each recipient receives their own personalised message.
+</Setting>
+</Settings>
+
+### Who receives the message
+
+- WhatFlow uses the customer's phone number, or the phone in their default address if the customer has none. The country code comes from the default address.
+- Customers without a valid phone number are skipped.
+- If two customers share a phone number, that number gets only one message.
+- If **Respect blocklist** is on, blocked customers are skipped and marked **BLOCKLISTED**. Marketing templates are always covered; utility templates are covered only when the blocklist is set to **Marketing and order updates**.
+- Broadcasts can use these customer details as variables: first name, last name, email and phone, plus your shop name and shop URL. Links to your shop get WhatsApp tracking tags, so sales can be measured in [Analytics](/docs/account/analytics).
+
+### Pacing
+
+Message number N is sent no earlier than N × the delay after the broadcast starts. The delay is a minimum, not an exact time: messages can go out later than the estimate. Pacing does not get around Meta's own limits on your number. See [WhatsApp rules to know](/docs/getting-started/whatsapp-basics).
+
+## Broadcast Queue
+
+The **Broadcast Queue** page lists every broadcast, 20 per page, and updates live. You can search the list.
+
+| Column | What it shows |
+| --- | --- |
+| **Broadcast** | **Segment** or **Customer**, and the template and audience. Click it to open the details page. |
+| **Template** | The template sent. |
+| **Messages** | How many messages are scheduled and how many customers were skipped. |
+| **Pacing** | Estimated duration and the delay between messages. |
+| **Status** | The broadcast status (see below). |
+| **Preparation error** | Why preparing the recipient list failed, if it did. |
+| **Created** | When the broadcast was created. |
+| **Actions** | **View Messages**, and **Cancel All** or **Retry Cancel**. |
+
+### Broadcast statuses
+
+| Status | Meaning |
+| --- | --- |
+| **PREPARING** | WhatFlow is building the recipient list. |
+| **ACTIVE** | Messages are being sent. |
+| **COMPLETED** | Every message was processed without errors. |
+| **COMPLETED_WITH_ERRORS** | Finished, but some messages failed. |
+| **NEEDS_REVIEW** | Some sends could not be confirmed. See "Needs review" below. |
+| **PARTIALLY CANCELLED** | Some messages were sent before the broadcast was cancelled. |
+| **CANCELLED** | The broadcast was cancelled. |
+| **FAILED** | The broadcast could not run, for example because preparation failed repeatedly. |
+
+### Cancel a broadcast
+
+You can cancel a broadcast that is **PREPARING**, **ACTIVE** or **PARTIALLY CANCELLED**.
+
+- For one broadcast, click **Cancel All** and confirm with **Cancel Campaign**.
+- For several, select them and choose **Cancel Selected Broadcasts**.
+
+Any unsent or pending messages are cancelled. Messages that have already been sent to WhatsApp cannot be recalled. If cancelling did not finish, click **Retry Cancel**.
+
+## Broadcast details
+
+Click a broadcast to open its details page. The summary shows the broadcast type, status, when it was sent, the **Template**, the **Segment** (if any), **Scheduled** messages, **Skipped** customers (no phone number, or marked Blocklisted in the table) and **Pacing & Duration**.
+
+The recipient table shows each **Recipient**, their **Status**, when the message was **Enqueued**, and any **Failure / review reason**.
+
+### Message statuses
+
+| Status | Meaning |
+| --- | --- |
+| **SCHEDULED**, **QUEUED**, **PROCESSING**, **WAITING**, **RUNNING**, **RETRYING** | Not sent yet. |
+| **SENT** | Accepted by Meta. |
+| **DELIVERED** | Delivered to the customer's phone. |
+| **READ** | The customer opened it. Customers who turned off read receipts never show as read. |
+| **FAILED** | Not sent. The reason is shown in the table. |
+| **NEEDS_REVIEW** | WhatFlow could not confirm whether the message was sent. |
+| **CANCELLED** | Cancelled before it was sent. |
+| **BLOCKLISTED** | Not sent: this customer is on the WhatsApp blocklist. |
+
+A status never goes backwards. For example, a message that is **READ** stays **READ**.
+
+### Cancel or retry messages
+
+- **Cancel Entire Broadcast** (or **Retry Cancel Remaining**) stops the messages that have not been sent yet.
+- **Cancel Message** on a row, or **Cancel Selected Messages**, cancels individual pending messages.
+- **Retry Failed Messages** sends every failed message in the broadcast again, at the broadcast's pacing. It is available when the broadcast is **COMPLETED_WITH_ERRORS**, **NEEDS_REVIEW** or **PARTIALLY CANCELLED**.
+- **Retry** on a row, or **Retry Selected Failed Messages**, resends individual failed messages.
+
+Retry rules:
+
+- Only **FAILED** messages are resent.
+- **NEEDS_REVIEW** messages are never resent, because WhatsApp may already have delivered them.
+- Customers who already received the same template from another broadcast in the last 7 days are skipped.
+- Up to 1,000 messages are retried at a time. If some could not be queued, click retry again to continue.
+
+## Good to know
+
+- Broadcasts are sent even if your other automations are turned off.
+- WhatFlow tries each message up to 5 times before marking it **FAILED**.
+- Submitting the same broadcast window twice (for example after a network error) does not create a second broadcast.
+- Each message that Meta accepts counts toward your plan. Meta also charges for each delivered template, at the rate for its category. See [Plans and billing](/docs/account/billing).
+- Button clicks on broadcast messages are tracked. See [Analytics](/docs/account/analytics).
+
+## Troubleshooting
+
+### "No broadcast templates available"
+
+No approved template uses the **Customer Broadcast** trigger event. Create one from the Customer Broadcast guide with **Create Template**, or check that your template was created for Customer Broadcast and that Meta approved it.
+
+### "Select between 1 and 250 customers, or use a segment for a larger audience."
+
+You selected more than 250 customers. Use a customer segment instead.
+
+### "Delay must be a whole number between 10 and 3600 seconds."
+
+Enter a whole number of seconds from 10 to 3,600.
+
+### Many customers were skipped
+
+Skipped customers have no valid phone number, share a phone number with another customer in the broadcast, or are on the blocklist. Check the **BLOCKLISTED** rows on the details page, and add phone numbers with country codes to your customers in Shopify.
+
+### The broadcast is FAILED with a preparation error
+
+WhatFlow could not build the recipient list, and stopped after repeated errors before sending anything. Read the **Preparation error** column, then send the broadcast again. If it keeps failing, contact support@whatflow.tech.
+
+### Messages failed
+
+Read the **Failure / review reason** on each row. Common causes are on Meta's side, such as a paused template or Meta's limit on how many marketing messages one person receives. Fix the cause, then use **Retry Failed Messages**.
+
+### Messages need review
+
+WhatFlow could not confirm these sends, so they may already have reached the customer. They are not resent automatically to avoid duplicates. Check the conversation in [Live Inbox](/docs/inbox/overview) before you contact the customer again.

@@ -1,0 +1,141 @@
+Everyone on your team gets their own Live Inbox login. The store owner creates agent accounts, and each agent signs in with a username and password. There is no limit on the number of team members and no per-seat fee.
+
+## Roles
+
+Live Inbox has two roles:
+
+- **Owner**. The store owner account. Clicking **Open Live Inbox** in the WhatFlow app in Shopify admin always signs in as the owner. There is one owner per store.
+- **Agent**. A team member account created by the owner. Agents sign in on the inbox login page with their own username and password.
+
+Shopify staff accounts are not linked to Live Inbox. Opening the inbox from Shopify admin always signs in as the owner, whoever clicks it. Give each team member an agent account instead.
+
+### What each role can do
+
+| Task | Owner | Agent |
+| --- | --- | --- |
+| See all chats | Yes | Yes |
+| Reply, send media, templates and interactive messages, react | Any chat | Only chats assigned to them |
+| Claim an unassigned chat | Uses the **Assignee** dropdown | Yes |
+| Release a chat | Any chat | Their own chats |
+| Assign or reassign chats to anyone | Yes | No |
+| Mark done, reopen, set follow-ups | Any chat | Chats that are theirs or unassigned |
+| Read and add private notes | Any chat | Any chat |
+| Add and remove labels on chats | Yes | Yes |
+| Create, edit and delete labels, canned responses and custom attributes | Yes | No |
+| Fill in custom attribute values | Yes | Yes |
+| Send AI drafts | Yes | Only in chats they can reply to |
+| Create templates | Yes | No, view only |
+| Broadcasts | Yes | No |
+| Create, publish and delete WhatsApp Flows | Yes | No |
+| Workflows and Conversational Components | Yes | No |
+| Webhooks | Yes | No |
+| Blocklist | Yes | Yes |
+| Reports and Today | Yes | Yes |
+| Manage team members | Yes | No |
+
+The sidebar hides **Workflows**, **Conversational Components** and **Broadcasts** from agents.
+
+## Add an agent
+
+<Path>Live Inbox › Settings › Account & team</Path>
+
+<Steps>
+<Step title="Open Account & team">
+
+Sign in as the owner and open **Settings**. Go to the **Account & team** section.
+
+</Step>
+<Step title="Fill in the Add agent form">
+
+Enter a **Display name**, a **Username** and an **Initial password**.
+
+</Step>
+<Step title="Create the account">
+
+Click **Create agent**. You see "Agent created. Share their username and initial password securely."
+
+</Step>
+<Step title="Send the details to your teammate">
+
+Share the username and initial password privately. Also tell them your store's myshopify domain, for example yourstore.myshopify.com. They need it to sign in.
+
+</Step>
+</Steps>
+
+### Username and password rules
+
+| Field | Rules |
+| --- | --- |
+| **Username** | 3 to 32 characters. Starts with a letter. Letters, numbers, dots, dashes and underscores only. Saved in lowercase. Must be unique in your store. |
+| **Password** | 12 to 128 characters. |
+
+## Agent sign-in
+
+Agents sign in on the WhatFlow Inbox login page at inbox.whatflow.tech/auth/login. The owner can find a link with the store already filled in under **Settings › Account & team** (**Open store login**).
+
+<Steps>
+<Step title="Enter the store">
+
+In **Store domain**, type your store's myshopify domain, for example yourstore.myshopify.com. You can also type just yourstore. Your custom domain (such as yourstore.com) does not work here.
+
+</Step>
+<Step title="Enter your login">
+
+Enter your **Username** (or the email on your account) and **Password**, then click **Sign in**.
+
+</Step>
+<Step title="Change your initial password">
+
+The first time you sign in, the inbox opens **Settings** with **Set your password**. Enter the initial password from your store owner as your current password, then choose a new password of 12 to 128 characters. After you save, the inbox opens.
+
+</Step>
+</Steps>
+
+You cannot see chats until you change the initial password. After you sign in, you stay signed in on that browser for 7 days.
+
+<Note>
+
+The owner must have opened Live Inbox from Shopify admin at least once before anyone can sign in on the login page.
+
+</Note>
+
+To sign out, open the account menu at the bottom of the sidebar and click **Sign out**.
+
+## Manage team members
+
+The **Team members** list under **Account & team** shows each person's name, username, whether they are **Active** or **Disabled**, and their last login. The owner has an **Owner** badge.
+
+The owner can do the following for each agent:
+
+| Action | What happens |
+| --- | --- |
+| **Change username** | Sets a new username. The agent signs in with the new one. Agents cannot change their own username. |
+| **Reset password** | Sets a new password, signs the agent out everywhere, and makes them change it at their next sign-in. |
+| **Disable** | Signs the agent out, stops them signing in, and unassigns all their chats. |
+| **Enable** | Lets a disabled agent sign in again. |
+
+You cannot delete a team member. Disable them instead. The owner account cannot be changed or disabled here.
+
+## Set a password for the owner
+
+The owner normally opens the inbox from Shopify admin and has no password. To sign in directly on the login page (for example on a phone), set a username and password.
+
+1. Open the inbox from Shopify admin with **Open Live Inbox**.
+2. Within 10 minutes, go to **Settings › Account & team › Your login**.
+3. Enter a username and a password together, then save.
+
+Later changes need either your current password or a fresh launch from Shopify admin in the last 10 minutes. Changing your password signs out your other sessions.
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| A teammate opens the inbox from Shopify and lands in the owner account | Opening from Shopify always signs in as the owner. Create an agent account for them and have them use the login page. |
+| "Invalid store, username, or password." | Check that the store domain is the myshopify domain, not your custom domain. Check the username and password. Make sure the owner has opened the inbox from Shopify at least once. |
+| "Too many attempts. Try again in 15 minutes." | Too many wrong passwords. Wait 15 minutes and try again. |
+| An agent lands on **Settings** and can't see chats | They must change their initial password first. |
+| "Password must be 12–128 characters." | Choose a longer password. |
+| "Username already exists in this store." | Pick a different username. |
+| "Enter your current password or reopen the Inbox from Shopify to confirm this change." | Open the inbox again from Shopify admin and make the change within 10 minutes. |
+| An agent can't reply: "Claim this chat before replying." | Click **Claim chat**, or ask the owner to assign it. |
+| An agent can't see **Broadcasts** or **Workflows** | These are owner-only. |

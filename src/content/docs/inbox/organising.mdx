@@ -1,0 +1,165 @@
+Live Inbox has tools to keep a busy inbox under control: assign chats to teammates, mark them done, tag them with labels, leave private notes, set follow-up reminders and save the filters you use most.
+
+## Assign chats
+
+New chats from customers are **unassigned**. Nothing is assigned automatically. Each chat is assigned to one person at a time.
+
+| Who | How |
+| --- | --- |
+| Owner | Use the **Assignee** dropdown above the chat to pick a teammate or **Unassigned**. The dropdown only shows when your store has more than one active team member. |
+| Agent | Click **Claim chat** on an unassigned chat to take it, or **Claim and reply** in the reply box. Click **Release chat** to hand back a chat that is yours. |
+
+- Agents can only reply to chats assigned to them. Only the owner can reassign a chat from one person to another.
+- When an agent starts a new chat, it is assigned to them.
+- If two agents claim the same chat at the same time, the second sees "This chat was already claimed."
+- When the owner disables an agent, all of that agent's chats become unassigned.
+
+Use the **Mine** and **Unassigned** queues at the top of the conversation list to see your chats and chats nobody has taken.
+
+When a teammate is typing a reply in the same chat, you see their name and "is typing a reply…", so two people don't answer the same customer.
+
+## Mark chats done
+
+Click **Mark done** in the chat header, or press E. On a phone, swipe a chat to the left. You see "Chat marked done. It returns when the customer writes again." with an **Undo** button.
+
+- A done chat stays done until the customer writes again. Then it reopens by itself.
+- Done chats leave the **Needs reply** and **Closing soon** lists and don't trigger window-closing alerts.
+- Use the **Done** status filter to see them. Click **Reopen** (or press E) to reopen one.
+- The owner can mark any chat done. An agent can mark a chat done if it is theirs or unassigned.
+
+## Labels
+
+Labels are coloured tags you put on chats, such as "VIP", "Refund" or "Wholesale". Labels are shared across your store.
+
+### Create labels
+
+Only the store owner can create, edit or delete labels.
+
+<Path>Live Inbox › Labels</Path>
+
+<Settings>
+<Setting name="Label name">1 to 50 characters. Must be unique in your store (capital letters don't count as different).</Setting>
+<Setting name="Color">One of 7 colours: green, blue, purple, amber, rose, cyan or orange. Custom colours are not available.</Setting>
+</Settings>
+
+There are no default labels. Deleting a label that is in use removes it from every chat. The inbox tells you how many chats are affected first. This cannot be undone.
+
+### Use labels
+
+Everyone on the team can add and remove labels.
+
+- Open the customer panel by clicking the customer's name in the chat header, then add or remove labels. A chat can have several labels.
+- To label many chats at once, use the **Add label…** bulk action.
+- Filter the list with **Label**. Choose **Unlabeled** to find chats with no label.
+
+Labels belong to the chat, not to the customer.
+
+## Private notes
+
+Private notes are messages for your team. They are never sent to the customer.
+
+To add one, switch the reply box from **Reply** to **Private note**, type your note and click **Add note** (or press Ctrl+Enter, ⌘+Enter on Mac). Enter adds a new line. To write a note about a particular message, hover over it and choose **Add private note**.
+
+- Notes show in the chat as amber cards with the author and time.
+- Notes are text only, up to 4,096 characters. You can't edit or delete a note, attach files or mention a teammate.
+- Notes work when the 24-hour window is closed and when Live Inbox chat is turned off.
+- Notes don't change the unread count or the last message preview.
+- Everyone on the team can read and add notes on any chat.
+
+## Custom attributes
+
+Custom attributes are your own fields, such as "Customer type" or "Preferred size", that you fill in for each customer or chat.
+
+### Create attributes
+
+Only the store owner can create attributes.
+
+<Path>Live Inbox › Custom Attributes</Path>
+
+<Settings>
+<Setting name="Name">1 to 60 characters.</Setting>
+<Setting name="Key">1 to 50 characters. Lowercase letters, numbers and underscores, starting with a letter. Cannot be changed later.</Setting>
+<Setting name="Description">Optional, up to 256 characters.</Setting>
+<Setting name="Scope">**Contact** saves one value for the customer's phone number. **Conversation** saves a value for this chat only. Cannot be changed later.</Setting>
+<Setting name="Type">Text (up to 2,000 characters), number, date, checkbox (Yes/No) or dropdown (one choice from 1 to 50 options of up to 80 characters each). Cannot be changed later.</Setting>
+</Settings>
+
+You can't remove a dropdown option that is in use. Deleting an attribute also deletes all its values. The inbox shows how many values will be deleted first.
+
+### Fill in values
+
+Everyone on the team can fill in values. Open the customer panel and edit the fields under **Custom attributes**, then save. If you switch tabs in the panel with unsaved changes, the inbox warns you first.
+
+Custom attributes stay in Live Inbox. They are not sent to Shopify or Meta.
+
+## Follow-ups
+
+A follow-up is a reminder to come back to a chat later.
+
+<Steps>
+<Step title="Open the follow-up menu">
+
+In the chat header, click **Follow up** (the bell).
+
+</Step>
+<Step title="Pick a time">
+
+Choose **In 1 hour**, **In 3 hours**, **Tomorrow 9:00**, **In 3 days** or **Next Monday**. Or pick your own date and time and click **Set**. You can add a short note of up to 200 characters.
+
+</Step>
+</Steps>
+
+- Each chat can have one follow-up. It must be in the future and no more than one year ahead.
+- The chat shows a follow-up badge in the list. It turns red when the follow-up is due.
+- When it is due, the person who set it (or the chat's assignee) gets a push notification if push notifications are on for their device. See [Inbox settings and shortcuts](/docs/inbox/settings).
+- Click **Mark follow-up done** to clear it.
+- Use the **Follow-ups** status filter to see all chats with a follow-up, sorted by due time.
+
+## The Today page
+
+**Today** in the sidebar shows what needs attention now: due follow-ups, customers waiting for a reply, reply windows about to close, and today's new chats.
+
+Switch between **Everyone** and **Mine** at the top. The summary shows counts for **Overdue**, **Due today**, **Needs reply** and **New today**.
+
+| Section | What it lists |
+| --- | --- |
+| **Overdue follow-ups** | Follow-ups whose time has passed |
+| **Follow-ups due today** | Follow-ups due later today |
+| **Needs reply** | Customers waiting for an answer |
+| **24h window closing** | Chats whose reply window is about to close |
+| **New chats today** | Chats that started today |
+| **From ads today** | Today's chats that came from a click-to-WhatsApp ad |
+| **Coming up (7 days)** | Follow-ups in the next week |
+
+Each section shows up to 50 chats. Click **Done** to clear a follow-up. The page uses your own time zone and updates every minute.
+
+## Bulk actions
+
+Click **Select conversations** (the checklist icon) at the top of the list, or tick a chat, to select several chats. Click **Select** and the count of loaded chats to select every chat that is loaded.
+
+| Action | What it does |
+| --- | --- |
+| **Mark done** | Marks the chats done. |
+| **Mark read** | Clears the unread count. |
+| **Assign to…** | Owner only. Assigns the chats to a teammate or **Unassigned**. |
+| **Assign to me** | Agents only. Claims the chats. |
+| **Add label…** | Adds a label to the chats. |
+
+When it finishes, you see how many chats were updated, for example "Marked done: 12 chats updated." If some fail, they stay selected and the message shows the first error. Click **Cancel** to leave select mode.
+
+## Saved views
+
+When you change the filters at the top of the list, **Save this view** appears. Click it to save the current queue, status, label and search as a chip you can click later.
+
+- You can save up to **8 views**.
+- The name is made from the filters, for example "Mine · Needs reply · VIP".
+- Click × on a chip to remove the view.
+- Saved views are stored **in this browser only**. They are not shared with your team and don't appear on your other devices.
+
+The list also remembers your filters and scroll position while the browser tab stays open.
+
+## Pins
+
+Pin a chat to keep it at the top of the list. Click the pin button on the chat in the list (**Pin conversation**), and click it again to unpin. On a phone, you can also swipe a chat to the right to pin or unpin it. Use the **Pinned** status filter to see only pinned chats.
+
+Pins are stored **in this browser only**. Your teammates don't see your pins, and your pins don't appear on your other devices.

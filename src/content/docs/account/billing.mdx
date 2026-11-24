@@ -1,0 +1,138 @@
+WhatFlow is billed through Shopify, as a monthly app subscription plus usage charges for extra messages. Meta's WhatsApp messaging charges are separate: Meta bills you for them directly. This page explains both, and what counts as a message.
+
+<Path>Billing</Path>
+
+## How it works
+
+There are two separate bills:
+
+| Bill | Who charges you | What for | Where you pay |
+| --- | --- | --- | --- |
+| **WhatFlow plan** | Shopify, on behalf of WhatFlow | Your plan price, plus usage charges if you send more messages than your plan includes | On your Shopify invoice |
+| **Meta messaging charges** | Meta | Meta's per-message charges for delivered template messages | The payment method on your WhatsApp Business account in Meta |
+
+WhatFlow adds no markup to Meta's charges. Meta's charges are not part of your WhatFlow plan.
+
+## Plans
+
+Every plan includes every WhatFlow feature, with no limits on features and no per-seat fee for Live Inbox. Plans differ only in how many messages are included each month and the price for each message above that.
+
+See the current plans and prices on the [pricing page](/pricing).
+
+<Note>
+
+You need an active plan to send any WhatsApp message through WhatFlow. Without one, automations are skipped, broadcasts and manual sends are refused, and Shopify Flow actions fail with "An active WhatFlow subscription is required."
+
+</Note>
+
+## Choose or change a plan
+
+<Steps>
+<Step title="Open Billing">
+
+Click **Billing** in the app's left menu. The page is called **Plans and billing**.
+
+</Step>
+<Step title="Open Shopify's plan page">
+
+Click **Select plan** (if you don't have a plan yet) or **Change plan**. This opens Shopify's plan page for WhatFlow.
+
+</Step>
+<Step title="Approve the plan">
+
+Pick a plan and approve the charge in Shopify. You can upgrade or downgrade at any time the same way.
+
+</Step>
+</Steps>
+
+## The Subscription section
+
+| Item | What it shows |
+| --- | --- |
+| **Current plan** | Your plan name, with **Active**, or **Cancels at end of cycle** if you cancelled. If you are on a free trial, it shows **Trial ends** and the date. |
+| **Price** | The plan price per month or year, or **Free**. |
+| **Usage charges** | The message tiers of your plan, for example "First N Messages Sent: Free" and the price per message above that. If your plan has none, it shows "No usage charges." |
+| Billing cycle | **Billing cycle:** start date to end date, or **First billing cycle starts** a date when you are on a trial. |
+
+Under **Usage charges**, one of these notes explains how the tiers work:
+
+- "Your monthly usage total sets the cost per unit for all usage." Your total messages for the month decide one price that applies to all of them.
+- "Each tier's cost per unit applies only to usage within that tier." Each tier's price applies only to the messages within that tier.
+
+## What counts as a message
+
+One message counts each time Meta **accepts** a WhatsApp message that WhatFlow sends for your store.
+
+**Counted:**
+
+- Automations, such as order confirmations, COD verification, shipping updates, cart reminders and back-in-stock alerts.
+- Broadcasts.
+- Templates you send from the action buttons in Shopify admin. See [Manual messaging](/docs/conversations/manual-messaging).
+- Shopify Flow actions.
+- Auto-replies, including the replies sent when a customer opts out or back in.
+- Messages sent by AI apps connected to WhatFlow. See [AI apps (MCP)](/docs/mcp).
+
+**Not counted:**
+
+- Messages that Meta rejects, or that fail before Meta accepts them.
+- [Store Report](/docs/account/store-report) replies.
+- WhatFlow's own notices to you, such as install and uninstall notices.
+- Messages you send yourself from the **WhatsApp Message Block** in Shopify admin. These open your own WhatsApp and never go through WhatFlow.
+- AI drafts that are waiting in Live Inbox and have not been sent.
+
+You can check your counted messages by day in [Analytics](/docs/account/analytics), on the **Message Usage** tab.
+
+## Free trial
+
+If your plan has a free trial, you get every feature during the trial. The Subscription section shows when the trial ends and when your first billing cycle starts.
+
+If you need more time to test, use the trial extension banner on the Billing page. It opens a WhatsApp chat with WhatFlow support, with a message asking for an extension already typed.
+
+## Cancel your plan
+
+<Steps>
+<Step title="Open Billing">
+
+Click **Billing** in the left menu.
+
+</Step>
+<Step title="Cancel">
+
+Click **Cancel subscription**, then confirm with **Cancel subscription** in the window. Click **Keep subscription** to stay.
+
+</Step>
+</Steps>
+
+Your plan stays active until the end of the current billing cycle. After that, WhatFlow automations stop sending.
+
+## Meta's charges
+
+The **Meta WhatsApp messaging charges** section on the Billing page reminds you that your WhatFlow subscription doesn't include Meta's charges. You add a payment method in Meta and pay Meta directly.
+
+- Click **Add payment method in Meta** to open WhatsApp Manager and add a card.
+- Click **Meta pricing in your region** to see Meta's rates.
+
+Meta charges per delivered template, at a rate that depends on the template's category (marketing, utility or authentication) and the customer's country. Replies inside the 24-hour window are generally free. See [WhatsApp rules to know](/docs/getting-started/whatsapp-basics). The **Pricing & Costs** tab in [Analytics](/docs/account/analytics) shows an estimate; your Meta invoice is the final amount.
+
+## Other sections on the Billing page
+
+- **Affiliate program**: earn 10% for 3 months on every merchant you refer. Click **Join affiliate program**.
+- **Share your feedback**: tell us how WhatFlow is working for you.
+
+## Troubleshooting
+
+### "You're not subscribed to a plan yet. Select a plan to start sending messages."
+
+You have no active plan, so nothing can be sent. Click **Select plan** and approve a plan in Shopify.
+
+### Messages stopped after I cancelled
+
+That is expected after the billing cycle ends. Choose a plan again with **Select plan**.
+
+### My usage is higher than expected
+
+Check the **Message Usage** tab in Analytics by day. Auto-replies, Flow actions and messages sent by AI apps count too, not only automations. A broadcast to a large segment can use many messages at once.
+
+### I see Meta charges I didn't expect
+
+Meta's charges are separate from WhatFlow and billed by Meta. Check the **Pricing & Costs** tab in Analytics for an estimate by category and country, and your billing details in WhatsApp Manager.

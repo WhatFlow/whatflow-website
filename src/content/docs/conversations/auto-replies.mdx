@@ -1,0 +1,304 @@
+Auto-replies answer a customer's WhatsApp message straight away when it matches words you choose. Use them for questions customers ask again and again, such as "where is my order?", returns or payment options.
+
+<Path>Home › Auto Replier</Path>
+
+## How it works
+
+Each auto-reply is a rule with two parts: the text to look for, and the reply to send. When a customer sends you a message, WhatFlow checks it against every rule that is on. If a rule matches, WhatFlow sends that rule's reply right away.
+
+- Only one auto-reply is sent per customer message. If several rules match, only the rule with the lowest **Order** number replies.
+- The reply is sent as a WhatsApp reply that quotes the customer's message. Emoji reactions are the only exception.
+- Auto-replies are free-form replies to a customer who has just written to you, so they are always inside the [24-hour window](/docs/getting-started/whatsapp-basics). They do not need an approved template.
+- Auto-replies are never stopped by the [Blocklist](/docs/account/blocklist).
+- Each auto-reply that Meta accepts counts as one message toward your plan. See [Plans and billing](/docs/account/billing).
+
+<Note>
+
+WhatFlow auto-replies are keyword rules only. There is no welcome message, no away message and no business-hours setting. The **Opening hours** starter is an ordinary keyword rule with fixed text: it replies with the same text at any time of day, and you edit the hours in the text yourself.
+
+</Note>
+
+## Set it up
+
+<Steps>
+<Step title="Open Auto-replies">
+
+From **Home**, open the **Auto Replier** card. The page is called **Auto-replies**.
+
+</Step>
+<Step title="Create a rule">
+
+Click **Create auto-reply**. Under **Start from a common question**, pick a starter. Each starter fills in the words to look for and a reply you can edit. Pick **Start from scratch** to write your own.
+
+</Step>
+<Step title="Choose what to match">
+
+Under **When a customer sends**, choose a **Match** type and enter the words or text to look for. Give the rule a **Rule name** if you like.
+
+</Step>
+<Step title="Choose the reply">
+
+Under **Reply with**, pick a **Reply type** and fill in its fields. The **Preview** shows how the message will look in WhatsApp.
+
+</Step>
+<Step title="Save">
+
+Click **Save** in the bar at the top of the page. You see "Auto-reply rule created." when it is saved. New rules are on by default.
+
+</Step>
+</Steps>
+
+## Starters
+
+All starters use the **Any of these words** match type. You can change the words and the reply after you pick one.
+
+| Starter | Words it looks for | Reply |
+| --- | --- | --- |
+| **Greeting** | hi, hello, hey, good morning, good evening | "Hi! 👋 Thanks for reaching out. How can we help you today?" with buttons **Track my order**, **Returns**, **Talk to us** |
+| **Where's my order?** | track my order, where is my order, order status, tracking, delivery | "You can follow your order anytime from the tracking link in your shipping confirmation. Send us your order number and we'll check on it for you." |
+| **Returns and exchanges** | returns, return, refund, exchange | "We're happy to help with a return or exchange. Send us your order number and the item you'd like to return, and we'll guide you through the next steps." |
+| **Talk to a person** | talk to us, agent, human, support, call me | "Thanks! A member of our team will reply here as soon as possible." |
+| **Opening hours** | hours, open, opening, closing, timing | "We're open Monday to Friday, 9 AM to 6 PM. Messages sent outside these hours are answered on the next working day." |
+| **Payment options** | payment, pay, cash on delivery, cod, card | "You can pay by card at checkout, and cash on delivery is available in most areas. Let us know if you have any questions." |
+| **Start from scratch** | (none) | You choose the words and write the reply. |
+
+<Tip>
+
+The **Greeting** buttons work together with the other starters. When a customer taps **Track my order**, **Returns** or **Talk to us**, the button text comes back to you as the customer's next message, and the matching starter answers it. Create those starters too if you use the Greeting.
+
+</Tip>
+
+## Match settings
+
+These settings are in the **When a customer sends** section.
+
+<Settings>
+<Setting name="Match" value="Any of these words">
+How the customer's message is compared with your text. See the match types below.
+</Setting>
+<Setting name="Words to look for / Text to look for / Message / Pattern">
+The text to match. The label changes with the match type. Required.
+</Setting>
+<Setting name="Rule name" value="Empty">
+Optional. Only you see this. For example, "Greeting".
+</Setting>
+</Settings>
+
+### Match types
+
+| Match | Field label | How it matches |
+| --- | --- | --- |
+| **Any of these words** | **Words to look for** | Separate words or phrases with commas. A word matches only as a whole word: "hi" matches "Hi there" but not "shipping". Works in any language and alphabet. |
+| **Message contains this text** | **Text to look for** | Replies when this text appears anywhere in the message, even inside a longer word. |
+| **Message is exactly this** | **Message** | Replies only when the whole message is exactly this text. |
+| **Advanced pattern (regular expression)** | **Pattern** | For advanced users. A regular expression. Use `.*` to reply to every message. A pattern with a mistake in it never matches, and no error is shown. |
+
+All match types ignore capital letters unless you turn on **Match capital letters exactly**.
+
+### What text is checked
+
+WhatFlow checks the text of the customer's message. It also checks the text of a button the customer tapped and the title of a menu row they picked. Photos, videos, voice notes and other media never trigger an auto-reply, even when they have a caption.
+
+## More options
+
+Open **More options** to see these settings.
+
+<Settings>
+<Setting name="Order" value="0">
+A whole number, 0 or higher. When a message matches several rules, only the one with the lowest number replies. If two matching rules have the same number, the rule created first replies.
+</Setting>
+<Setting name="Match capital letters exactly" value="Off">
+When on, "Help" and "help" count as different messages.
+</Setting>
+</Settings>
+
+The **Status** box on the right has the switch **Rule is on**. It is on by default. Turned-off rules are kept but never reply.
+
+## Reply types
+
+Pick the reply type under **Reply with** › **Reply type**. The most used types are listed first: **Text**, **Text with buttons**, **Image**, **Document (PDF, catalog, price list)** and **Video**. The others are under **More reply types**.
+
+### Text
+
+<Settings>
+<Setting name="Reply text">
+Required. Supports \*bold\*, \_italic\_ and emojis.
+</Setting>
+</Settings>
+
+### Text with buttons
+
+A message with up to 3 quick-reply buttons, or 1 link button.
+
+<Settings>
+<Setting name="Header" value="No header">
+Optional. Shown above the message. Choose **No header**, **Text**, **Image**, **Video** or **Document**.
+</Setting>
+<Setting name="Header text">
+For a text header. Emojis are supported, but no bold or italic formatting.
+</Setting>
+<Setting name="Header file and Media caption">
+For an image, video or document header. Upload the file and add an optional caption. Size limits: image 5 MB, video 16 MB, document 100 MB.
+</Setting>
+<Setting name="Message" value="How can we help?">
+Required. The main text of the message.
+</Setting>
+<Setting name="Footer">
+Optional. Small grey text under the message.
+</Setting>
+<Setting name="Buttons">
+Add up to 3 **Quick reply** buttons, or 1 **Link** button. **Button text** must be 20 characters or fewer. A **Link** button has **Button text** (default "Visit Website") and a **Link** URL. You can add a link only when the message has no quick replies.
+</Setting>
+</Settings>
+
+A quick reply comes back as the customer's next message, so another auto-reply can answer it. Tapping a link button opens the link and does not send you a message.
+
+### Image, video, audio, document and sticker
+
+Drag a file into the upload box or click to browse. The file uploads when you save the rule.
+
+| Reply type | File types | Maximum size | Extra fields |
+| --- | --- | --- | --- |
+| **Image** | JPEG, PNG | 5 MB | |
+| **Video** | MP4, 3GPP | 16 MB | |
+| **Audio or voice message** | AAC, AMR, MP3 (MPEG), MP4, OGG | 16 MB | **Send as a voice message**: shows like a recorded voice note instead of an audio file |
+| **Document (PDF, catalog, price list)** | .txt, .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx | 100 MB | **Caption**: optional, shown under the file |
+| **Sticker** | WEBP | 500 KB | |
+
+### Menu list
+
+A message with a button that opens a menu of choices. When the customer picks a row, the row title comes back to you as their next message, so another auto-reply can answer it.
+
+<Settings>
+<Setting name="Menu button text" value="View Options">
+The button customers tap to open the menu.
+</Setting>
+<Setting name="Section title">
+Optional. A heading for a group of rows. You can add up to 10 sections.
+</Setting>
+<Setting name="Row title and Row description">
+Each choice in the menu. The description is optional. You can add up to 10 rows per section in the editor. WhatsApp may limit how many rows it shows in one menu, so keep the menu short.
+</Setting>
+</Settings>
+
+### Store location
+
+Sends a map pin.
+
+<Settings>
+<Setting name="Latitude">
+From Google Maps: right-click your store and copy the first number.
+</Setting>
+<Setting name="Longitude">
+The second number from Google Maps.
+</Setting>
+<Setting name="Location name">
+Shown with the map pin.
+</Setting>
+<Setting name="Address">
+Your store's address.
+</Setting>
+</Settings>
+
+<Warning>
+
+The location fields start with example values (a New York location, "Location" and "123 Main Street"). Replace all four with your own store's details.
+
+</Warning>
+
+### Ask for the customer's location
+
+<Settings>
+<Setting name="Message" value="We need your location to assist you. Please tap below to share it.">
+Shown above WhatsApp's **Send location** button.
+</Setting>
+</Settings>
+
+### Contact card
+
+Sends one or more contact cards the customer can save. For each contact, enter a **Display name** (required) and a **Phone number**. Click **Add another contact** for more.
+
+### Catalog replies
+
+These reply types use your WhatsApp catalog in Meta Commerce Manager.
+
+| Reply type | Fields |
+| --- | --- |
+| **Open your WhatsApp catalog** | No extra fields. Sends a button that opens your WhatsApp catalog. |
+| **One product from your catalog** | **Catalog ID** (required; find it in Meta Commerce Manager under Catalog settings) and **Product ID in your catalog** (required; the content ID of the product in your catalog). |
+| **Products from your catalog** | **Catalog ID** (required). |
+
+### Ask permission to call
+
+Sends a message asking the customer for permission to call them on WhatsApp. Write the message text.
+
+### React with an emoji
+
+Reacts to the customer's message with an emoji instead of sending a new message.
+
+<Settings>
+<Setting name="Emoji" value="👍">
+The emoji to react with.
+</Setting>
+</Settings>
+
+## What the customer sees
+
+The reply arrives as a WhatsApp reply that quotes their message. For example, the **Greeting** starter looks like this:
+
+<Preview buttons={["Track my order", "Returns", "Talk to us"]}>
+Hi! 👋 Thanks for reaching out. How can we help you today?
+</Preview>
+
+## Manage your rules
+
+The **Your auto-replies** table lists every rule, 10 per page, with a search box. The columns are **When a customer sends** (rule name and the words it looks for), **Match**, **Reply**, **Order**, **Status** (**On** or **Off**) and **Actions**.
+
+- Click **Edit** to change a rule. Save with the bar at the top of the page, or click **Discard**. If you leave with unsaved changes, WhatFlow asks you to confirm.
+- Click **Delete** to remove a rule. Messages that match it won't get an automatic reply anymore. This can't be undone.
+- The **Summary** box shows how many rules are on and off.
+
+## When auto-replies don't fire
+
+An auto-reply is not sent when:
+
+- The rule is off, or a rule with a lower **Order** number matched first.
+- The message is an opt-out or opt-in keyword, such as STOP or START. These are handled by the [Blocklist](/docs/account/blocklist).
+- The message is a [Store Report](/docs/account/store-report) request sent from one of your authorized numbers.
+- The customer is answering the quick-reply buttons of an [order confirmation](/docs/automations/order-confirmation) sent in the last 3 days.
+- The customer is replying to a [review request](/docs/automations/review-requests) that the review request feature handles.
+- The message has no text, such as a photo or voice note.
+- Your WhatFlow subscription is not active, or WhatsApp is not connected.
+- Meta has restricted your WhatsApp account. When this happens, WhatFlow turns off auto-replies along with your other automations.
+
+## Shared WhatsApp numbers
+
+If the same WhatsApp number is connected to more than one of your stores, the page shows "This WhatsApp number is shared with your other stores, so their auto-replies also answer here." Rules from your other stores are marked **Other store**.
+
+All active rules from every store on the shared number are checked together, and the same **Order** rule decides which one replies. Give rules on different stores different **Order** numbers so you know which one wins.
+
+## Troubleshooting
+
+### A customer got no reply
+
+Check the list under "When auto-replies don't fire" above. The most common causes are a rule that is off, another rule with a lower **Order** number matching first, and a match type that is too strict.
+
+### "hi" doesn't match "hii" or a word inside a longer word
+
+**Any of these words** matches whole words only. Add the other spelling to the list, or use **Message contains this text**. Be careful with short text in **Message contains this text**: "hi" also matches "shipping".
+
+### My regular expression never matches
+
+A pattern with a mistake never matches, and WhatFlow shows no error. Test the pattern in a regular expression tester first, or use one of the simpler match types.
+
+### The wrong rule replies
+
+Only one rule replies to each message. Give the rule you want to win a lower **Order** number than the others.
+
+### "Please fix the errors in the form before saving."
+
+A required field is empty or invalid. Look for the field marked in red. Common messages are "Write the reply text.", "Select a media file for this reply.", "Add at least one button." and "Use 20 characters or fewer." (button text).
+
+### "Failed to save rule. Please try again."
+
+The rule could not be saved. Try again. If it keeps failing, contact support@whatflow.tech.

@@ -1,0 +1,64 @@
+WhatsApp is stricter than email or SMS. Meta sets these rules for every business that uses the WhatsApp Business Platform, and WhatFlow follows them. Knowing them up front explains most "why didn't this send?" questions.
+
+## Templates versus free-form messages
+
+There are two kinds of business message:
+
+- **Template messages** are written in advance and approved by Meta. Every automation in WhatFlow (order confirmation, COD verification, cart reminders, shipping updates, broadcasts) sends a template, because the store is starting the conversation.
+- **Free-form messages** are ordinary replies, typed by your team in [Live Inbox](/docs/inbox/overview) or sent by [auto-replies](/docs/conversations/auto-replies). They can only be delivered while the customer's 24-hour window is open.
+
+Read more in [Message templates](/docs/templates/overview).
+
+## The 24-hour customer service window
+
+When a customer sends you a message, a 24-hour window opens. During that window you can reply with anything: text, images, products or buttons. Each new message from the customer restarts the 24 hours.
+
+Once the window closes, you can only message that customer with an approved template. Live Inbox shows how much time is left on each chat. When the window is closed, it shows **Templates only** and asks you to send an approved template to restart the conversation. Sending a template does not open the window. It opens again when the customer replies.
+
+<Tip>
+A customer who taps a button in one of your templates, such as **Confirm Order**, sends you a message. That opens a new 24-hour window, so your team can follow up in Live Inbox for free-form replies.
+</Tip>
+
+## Template categories
+
+Meta puts every template in one of three categories, and charges by category. You choose the category when you create a template in WhatFlow.
+
+| Category | Used for | WhatFlow templates for |
+| --- | --- | --- |
+| **Utility** | Updates about an order the customer placed. | Order confirmation and COD confirmation, order notification, order paid, cancellation, fulfillment, shipping updates, draft order invoices, review requests from the library |
+| **Marketing** | Promotions, offers and reminders. Customers must be able to opt out. | Broadcasts, abandoned checkout reminders, back in stock |
+| **Authentication** | One-time passcodes. WhatsApp writes the text. | OTP verification (only Authentication templates work there) |
+
+Meta decides the final category during review. If a utility template contains promotional wording, Meta may approve it as marketing instead, and it will be charged at the marketing rate. Once a template is approved, its category can't be changed in WhatFlow. Create a new template instead.
+
+The category also matters for the [Blocklist](/docs/account/blocklist). When the blocklist is on, it can block marketing templates only, or marketing and utility templates. Authentication codes are never blocked.
+
+## Opt-in
+
+Meta requires that a customer has agreed to receive WhatsApp messages from your business before you message them. Collecting that consent is your job:
+
+- **WhatFlow does not check Shopify marketing consent.** Automations and broadcasts are sent to the phone number on the order or customer, whether or not the customer ticked a marketing box in Shopify.
+- **WhatFlow has no opt-in checkbox for checkout.** Collect consent in your own checkout, forms or policies.
+- **Opt-outs are handled by the [Blocklist](/docs/account/blocklist).** When a customer sends STOP, WhatFlow records the opt-out. But **Respect blocklist** is off by default, so automated messages keep going to that customer until you turn it on.
+
+Turn on **Respect blocklist** before you send marketing messages. Messaging people who haven't agreed to hear from you can lower your number's quality rating and messaging limits.
+
+Marketing messages need extra care. Meta does not guarantee delivery of marketing templates, and may not deliver some of them even when everything on your side is correct. A customer can also stop marketing messages from businesses inside WhatsApp. Those messages fail with the order tag `WhatsApp: Opted Out`.
+
+## Quality rating and messaging limits
+
+Meta gives every WhatsApp number a **quality rating** (green, yellow or red) based on how customers react to your messages. Blocks and reports lower it. Meta also rates each template, and WhatFlow pauses automations whose template is rated red.
+
+Each number also has a **messaging limit**: how many different customers you can start conversations with in a rolling 24 hours. Meta sets and raises this limit. You can see both on the **Connections** page under **Advanced**.
+
+To keep quality high:
+
+- Message people who asked to hear from you.
+- Keep marketing messages relevant and not too frequent.
+- Make it easy to opt out, and turn on **Respect blocklist** so opt-outs take effect straight away.
+
+If Meta restricts your account, WhatFlow turns off all automations. You need to turn them back on after Meta lifts the restriction. See [Troubleshooting](/docs/account/troubleshooting).
+
+## What Meta charges for
+
+Meta charges per delivered template message, at a rate that depends on the template category and the customer's country. Replies inside the 24-hour window are generally not charged; check Meta's pricing for your region for the current rules. Meta bills these charges to the payment method on your WhatsApp account. WhatFlow's plan charges are separate, and every message Meta accepts counts toward your WhatFlow plan. See [Plans and billing](/docs/account/billing).

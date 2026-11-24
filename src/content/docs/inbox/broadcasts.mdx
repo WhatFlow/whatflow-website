@@ -1,0 +1,133 @@
+Inbox broadcasts send one approved WhatsApp template to many customers at once, from inside Live Inbox. You pick the audience from a spreadsheet, past chats or opted-in Shopify customers, send now or schedule, and then follow delivery, reads and button clicks.
+
+Only the store owner can use broadcasts. Agents don't see the **Broadcasts** page.
+
+<Note>
+
+WhatFlow also has broadcasts in the WhatFlow app in Shopify admin. They are a separate tool. This page covers broadcasts sent from Live Inbox. For broadcasts from Shopify admin, see [Broadcasts](/docs/marketing/broadcasts). Both respect the same [Blocklist](/docs/account/blocklist).
+
+</Note>
+
+## How it works
+
+- A broadcast always sends an approved **template**, so you can reach customers whose 24-hour window is closed. See [WhatsApp rules to know](/docs/getting-started/whatsapp-basics).
+- Messages go out one by one at the speed you choose.
+- Numbers on your blocklist and duplicate numbers are left out.
+- Each delivered message is charged by Meta by template category, and counts toward your WhatFlow plan.
+- Replies from customers arrive in Live Inbox like any other message.
+
+## The Broadcasts page
+
+<Path>Live Inbox › Broadcasts</Path>
+
+The page shows **Total broadcasts**, **Messages sent**, **Avg delivery rate** and **Avg read rate**. Use the tabs **All broadcasts**, **Active / Sending**, **Drafts** and **Completed** to filter the list. The **Opt-out blocklist** button opens your blocklist.
+
+## Create a broadcast
+
+Click **New broadcast**. The wizard has four steps.
+
+<Steps>
+<Step title="Details">
+
+Give the broadcast a name and choose the WhatsApp number to send from.
+
+Set **Sending speed & API throttling**. The slider sets the pause between messages, from 100 ms (10 messages a second, "Fast") to 1,000 ms (1 message a second, "Conservative"). The default is 200 ms, 5 messages a second ("Recommended").
+
+</Step>
+<Step title="Template">
+
+Select an approved template. A preview shows how it looks. If you pick a product template, choose the products too. Product templates need a synced catalog.
+
+</Step>
+<Step title="Audience">
+
+Choose who gets the broadcast. The sources are explained below.
+
+</Step>
+<Step title="Review & send">
+
+- Match the phone number and name columns, and fill each template variable with **Same value for everyone** or a column from your audience.
+- Under **Template image and buttons**, set the header image and the link for each link button.
+- Under **Dispatch timing**, choose **Send immediately** or **Schedule for later** and pick a date and time.
+- Use **Send a test message to your phone** to check the message first.
+- Check the summary: audience size, speed, how long sending takes, and the template category with a link to Meta's pricing.
+
+Click **Send broadcast**, or **Schedule broadcast** if you chose a later time. Click **Save as draft** to finish it later.
+
+</Step>
+</Steps>
+
+### Audience sources
+
+| Source | Who it includes |
+| --- | --- |
+| **Upload CSV / Excel file** | Rows from a .csv, .xlsx or .xls file. The first row must be the column headers. Extra columns can fill template variables and button links. |
+| **Past WhatsApp conversations** | **All conversations on this number**, or **Select specific contacts** from your most recent 1,000 chats. You can filter by all, open window, or chats with a name. |
+| **Shopify contacts** | Shopify customers with the tag `whatsapp-opt-in`, from WhatFlow's latest sync of your customers. Up to 25,000 contacts. |
+
+For **Shopify contacts**:
+
+- Only the `whatsapp-opt-in` tag is used. You cannot target other tags or customer segments.
+- Customers tagged `whatsapp-opt-out`, and numbers on your blocklist, are left out.
+- A phone number or an SMS subscription in Shopify does not count as WhatsApp consent.
+- Click **Refresh count** to update the number of contacts, or **Open Contacts** to sync your customers again.
+
+### Button links
+
+For a template with a link button, choose where the link goes:
+
+- **Store homepage**
+- **Same URL for everyone**
+- **Full URL from a spreadsheet column**
+- A pattern that adds a column value to a fixed link, written as `{{column}}`
+
+## Manage broadcasts
+
+Each broadcast card shows its delivery progress, **Recipients**, **Delivered**, **Read** and **Failed**.
+
+Every card has **Test** (sends a test message to yourself), **Report**, **Duplicate** (copies it as a new draft) and **Delete**. Other actions depend on the status:
+
+| Status | Extra actions |
+| --- | --- |
+| Draft | **Launch** |
+| Scheduled | **Send now** sends it straight away. **Cancel** cancels the schedule and returns it to draft. |
+| Sending | **Pause** |
+| Paused | **Resume** |
+
+You cannot delete a broadcast while it is sending. Pause or cancel it first.
+
+Test messages show in Live Inbox in the chat with the test number, marked as a broadcast test.
+
+## Broadcast report
+
+Click **Report** on a broadcast to see:
+
+- **Total audience**, **Delivered**, **Read / opened**, **Failed** and **Button clicks**.
+- A delivery funnel and the responses to each button.
+- **Recipient delivery log**: every recipient with their status and the time the message was sent, delivered and read. You can search it.
+
+To deal with failures:
+
+- Click **Resend** next to a failed recipient. If the header image failed, you can upload a replacement image (up to 5 MB) first.
+- Click **Retry All Failed** to try every failed recipient again.
+
+Click **Export CSV** to download the recipient log.
+
+## Good to know
+
+- The audience file you upload is deleted 7 days after the broadcast finishes.
+- Recipient details (names, variable values and error text) are cleared 90 days after sending.
+- Messages to customers who have not agreed to hear from you can lower your number's quality rating.
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| "Spreadsheet is empty" or "No data rows found in the uploaded file" | Check that the file has data rows below the header row. |
+| "No valid column headers found in the first row" | Put column names, such as phone and name, in the first row. |
+| "Unsupported file format" | Save the file as .csv, .xlsx or .xls. |
+| "This audience exceeds the 25,000 contact limit." | Split the customers into smaller groups, for example with spreadsheet files. |
+| Fewer recipients than expected | Blocklisted numbers, duplicates and customers without the `whatsapp-opt-in` tag are left out. Tag opted-in customers and sync contacts again. |
+| "Sync your catalog on the Catalog page before sending a product template." | Your product catalog must be synced to Meta before you use a product template. |
+| "Cannot delete a broadcast while it is actively sending." | Click **Pause** first, then delete. |
+| The header image failed for some recipients | Click **Resend** and upload a replacement image, or use a direct public HTTPS link. |

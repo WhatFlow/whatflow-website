@@ -1,0 +1,212 @@
+The reply box at the bottom of each chat sends text, photos, files, voice notes, templates, buttons, products and checkout links. This page covers everything you can send from a chat, and the customer panel next to it.
+
+## Before you can reply
+
+You can reply when all of these are true:
+
+- Live Inbox is turned on in the WhatFlow app. If it is off, the reply box says "WhatsApp Live Inbox is currently turned off." See [Live Inbox](/docs/inbox/overview).
+- You are the owner, or the chat is assigned to you. Agents see "This chat is unassigned." with a **Claim and reply** button, or "Claim this chat or ask the owner to assign it to you before replying." See [Team members and roles](/docs/inbox/team).
+- For anything other than a template, the customer's 24-hour window is open.
+
+When the window is closed, the text box is hidden and you see "The 24-hour reply window is closed. Send an approved template to restart the conversation." with a **Send template** button.
+
+The bar above the reply box switches between **Reply** and **Private note**. Private notes are only seen by your team. See [Assign, label and note](/docs/inbox/organising).
+
+## Send a text message
+
+Type in the reply box and press Enter to send. Press Shift+Enter for a new line.
+
+- A message can be up to **4,096 characters**. A counter appears from 3,500 characters.
+- Your unsent text is saved in this browser ("Draft saved on this device") and shows as **Draft:** in the conversation list.
+- **Insert emoji** opens a set of 30 popular emojis.
+- While you type and the window is open, the customer sees "typing…" in WhatsApp. You can turn this off in [settings](/docs/inbox/settings).
+
+### Undo send
+
+Undo send is on by default. After you press Enter, the message waits 5 seconds and shows "Sending in 5s" with **Undo** and **Send now**.
+
+- **Undo** stops the message from being sent.
+- **Send now** sends it straight away.
+- If you switch chats or close the tab, the message is sent at once.
+
+Undo send only applies to text messages, not to media or templates. You can turn it off in [settings](/docs/inbox/settings).
+
+### Reply to a specific message
+
+Hover over a message (or tap it on a phone) and choose **Reply to message**. The reply box shows "Replying to" and the quoted text. The customer sees your reply attached to their message in WhatsApp. Press Esc to cancel.
+
+## Send photos, files and more
+
+Click the attachment button ("Attach media, document, contact or location").
+
+| Option | What you can send | Size limit |
+| --- | --- | --- |
+| **Photos & videos** | JPEG, PNG or WebP images. MP4 or 3GPP videos. A WebP image is sent as a sticker. | Images 5 MB. Videos 16 MB. Stickers 100 KB (500 KB animated). |
+| **Document** | PDF, Word, Excel and plain text files | 100 MB |
+| **Audio file** | AAC, AMR, MP3, M4A or OGG | 16 MB |
+| **Contact card** | **Full name**, **Phone number**, **Company**, **Email address** | |
+| **Location pin** | **Latitude**, **Longitude**, **Place name** and **Street address**, or your current location | |
+
+Before you send a photo, video or file, you can add a **Caption**.
+
+To record a voice note, click **Record voice note** (the microphone). Your browser asks for microphone permission the first time.
+
+Media can only be sent while the window is open.
+
+## Canned responses
+
+Canned responses are saved replies your team can insert into a message. They are shared by everyone in your store.
+
+To use one, type / in the reply box, or click **Canned Responses**. Search by title, shortcut or text, use the arrow keys to choose, and press Enter. The text is put into the reply box so you can check it. It is never sent automatically.
+
+These variables are filled in when you insert a canned response:
+
+| Variable | Filled with |
+| --- | --- |
+| `{name}` | The customer's first name |
+| `{full_name}` | The customer's full name |
+| `{phone}` | The customer's number |
+| `{agent}` | Your name |
+| `{store}` | Your store name |
+
+Any other text in braces, such as `{order}`, stays in the message and is selected so you can type over it.
+
+### Create canned responses
+
+Only the store owner can create, edit or delete canned responses. Agents can use them.
+
+<Path>Live Inbox › Canned Responses</Path>
+
+<Settings>
+<Setting name="Title">A name for the reply, up to 80 characters.</Setting>
+<Setting name="Shortcut (displayed with /)">Letters, numbers and underscores, up to 30 characters. Must be unique in your store.</Setting>
+<Setting name="Message">The reply text, up to 4,096 characters. Can include the variables above.</Setting>
+</Settings>
+
+Canned responses are not WhatsApp templates. They follow the same 24-hour window rules as any typed reply.
+
+## Send a template
+
+Templates are the only messages you can send when the 24-hour window is closed. You can also send them while it is open.
+
+1. Click **Send approved template** in the reply box, or **Send template** when the window is closed.
+2. Pick a template. Only templates approved by Meta for your connected number are listed.
+3. Fill in every variable. If the template has an image header, paste a public link starting with https://. In the **Send approved template** dialog you can also upload a JPEG or PNG up to 5 MB. If the template has a link button with a variable part, fill in the link.
+4. For catalog or multi-product templates, choose the products.
+5. Check the preview and send.
+
+Sending a template does not open the 24-hour window. It opens when the customer replies.
+
+See [Message templates](/docs/templates/overview) for how templates work.
+
+### Create templates in the inbox
+
+The **Templates** page lists your templates live from Meta. Click **Sync** to fetch the latest status. You can filter by status (approved, pending, rejected) and by category.
+
+The store owner can click **Create template** to submit a new one to Meta. You set the **Template name**, **Category**, **Language**, **Template type** (Standard, Catalog or Multi-product), an optional text header, the body, an optional footer, and up to 3 buttons (quick reply, link or phone call). Rejected templates show Meta's reason and a **Fix and resubmit** button. Approved templates have **Copy and edit**.
+
+## Send buttons and lists
+
+Open the menu with **More ways to send** (⋯) in the chat header and choose **Send interactive message**. This needs an open window.
+
+| Type | What the customer gets | Limits |
+| --- | --- | --- |
+| **Reply buttons** | A message with up to 3 buttons to tap | Button text 20 characters |
+| **CTA Link** | A message with one button that opens a web link | Button label 20 characters |
+| **List options** | A button that opens a list of choices, in sections | Up to 10 rows in total. Row title 24 characters, description 72 |
+| **Media carousel** | 2 to 10 cards that scroll sideways, each with an image or video | Card text 120 characters. Each card has one link button or one or two quick reply buttons |
+
+The message body can be up to 1,024 characters and the footer up to 60. Image and video headers need a public link; you cannot upload a file here.
+
+The **CTA Link** button opens a web link only. There is no call-phone button in interactive messages. Phone buttons are only available in templates.
+
+When a customer taps a reply button or picks a list item, their choice appears in the chat as a message.
+
+## Send products
+
+Choose **Send products** from **More ways to send**. This needs an open window and a product catalog synced to Meta. If you see "No catalog yet", your catalog has not been synced.
+
+| Mode | What the customer gets |
+| --- | --- |
+| **One product** | One product with a **View** button |
+| **Product list** | Up to 30 products in up to 10 sections. The customer can add items to a WhatsApp cart. Needs a heading. |
+| **Carousel** | 2 to 10 products that scroll sideways. Needs a message. |
+| **Whole catalog** | A **View catalog** button, with an optional cover product. Needs a message. |
+
+## Send checkout links
+
+When a customer sends you a WhatsApp cart, it shows in the chat as an order card with the items and **Total**. When a customer asks about a product, it shows as an "Asked about" card where you can pick a variant and click **Send product** or **Checkout link**.
+
+Click **Send checkout link** to send the customer a button that takes them to checkout.
+
+<Settings>
+<Setting name="Link type" value="Cart link">**Cart link** opens checkout with these items. Prices come from your store. **Draft order invoice** creates a draft order in Shopify, which you can still edit, and sends its invoice link.</Setting>
+<Setting name="Discount code">Optional, for **Cart link** only. Up to 100 characters.</Setting>
+<Setting name="Message" value="Here is your checkout link. Your cart is already filled in.">The text above the button, up to 900 characters.</Setting>
+</Settings>
+
+The customer gets a **Checkout** button for a cart link, or a **View invoice** button for a draft order. You can set the quantity of each item from 1 to 999. Items that are not Shopify products are left out and you see a note.
+
+To reply to every cart automatically, see [Workflows, Flows and webhooks](/docs/inbox/automation).
+
+## React to a message
+
+Hover over a message (or tap it on a phone) and choose **React to message**. Pick an emoji. Choose the same emoji again to remove it.
+
+- Reactions are sent from your business, not from each teammate.
+- You can react to messages from the last 30 days.
+- Reactions do not open the 24-hour window.
+
+## Message status
+
+Click the ticks under a message you sent to see its status.
+
+| Status | Meaning |
+| --- | --- |
+| "Sending to WhatsApp…" | Not sent yet. |
+| "Sent. Not delivered to the customer's phone yet." | WhatsApp has it, but the phone has not received it. |
+| "Delivered to the customer's phone. Not read yet." | The phone received it. |
+| "Read by the customer." | The customer opened it. |
+
+If a message fails, the inbox explains why in plain words. For a failed text message you can click **Retry** while the window is open, or send a template.
+
+## Start a new chat
+
+Click **New chat** at the top of the conversation list. Enter the number with its country code, for example +14155552671, and click **Start**.
+
+If a chat with that number already exists, it opens. If not, an empty chat is created and the template picker opens, because you can only start a conversation with a template. Creating the chat sends nothing.
+
+When an agent starts a chat, it is assigned to them. When the owner starts one, it stays unassigned.
+
+## The customer panel
+
+Click the customer's name in the chat header to open **Contact details**.
+
+- **Shopify orders**: the customer's **latest 5 orders**, found by matching the WhatsApp number to the phone number on the Shopify customer. Each order shows its number, total, status (for example "Paid · Fulfilled" or "Cancelled"), date, and tracking links. The panel shows nothing more about the customer from Shopify.
+- If the chat came from an ad: the ad's headline and text, and **Open ad**.
+- **Labels** and **Custom attributes** for this chat. See [Assign, label and note](/docs/inbox/organising).
+- The customer's name and number, with **Copy**, **Call** and **Chat**.
+- **Media, links and docs**: every photo, file and link in the chat from the last 30 days. Use **Select** to download several files at once.
+- Whether the 24-hour window is open.
+
+The latest order also shows as a small chip above the chat, for example "#1042 · Paid · Fulfilled".
+
+If no orders show, check that the customer's phone number in Shopify is the same as their WhatsApp number.
+
+## Troubleshooting
+
+| Message | What to do |
+| --- | --- |
+| "Claim this chat before replying." | Click **Claim chat**, or ask the owner to assign the chat to you. |
+| "This chat belongs to another agent." | Ask the owner to reassign it. |
+| "24h customer window is closed. Send a template instead." | Send an approved template. You can send free-form messages again after the customer replies. |
+| "Shorten the message to 4,096 characters or fewer." | Split the text into two messages. |
+| "Unsupported WhatsApp media type" | Convert the file to a supported format from the table above. |
+| "This browser cannot record a WhatsApp-supported audio format." | Upload an OGG, M4A or MP3 file instead, or use another browser. |
+| "No approved templates found for this account." | Create a template and wait for Meta to approve it, then click **Sync** on the **Templates** page. |
+| "This template is not approved on the connected WhatsApp account." | Pick a template and language that show as approved. |
+| "WhatsApp could not access the header media." | Upload a new image, or use a direct public HTTPS link. |
+| "The number may not use WhatsApp, or has not accepted the latest WhatsApp terms." | Check the number, or contact the customer another way. |
+| "Too many messages went to this number in a short time." | Wait a moment, then retry. |
+| "Orders could not be loaded. Try again." | Click **Try again**. If it continues, open the WhatFlow app in Shopify admin to check it is installed. |
+| "No orders yet for this number." | Save the customer's WhatsApp number on their Shopify customer record. |

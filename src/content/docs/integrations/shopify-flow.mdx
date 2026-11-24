@@ -1,0 +1,272 @@
+Shopify Flow lets you build your own automations. WhatFlow adds WhatsApp actions (send a template, text, media or buttons) and WhatsApp triggers (a customer sent a message, tapped a button or opted out) to Flow. Use it for messages WhatFlow's built-in automations don't cover, or to react to what customers send you.
+
+<Path>Home › Guides › Flow Integration</Path>
+
+The in-app guide is called **Shopify Flow Integration**. Using WhatFlow in Flow is free; messages you send still count toward your plan.
+
+## Before you start
+
+- WhatsApp is connected in WhatFlow. See [Connect WhatsApp](/docs/getting-started/connect-whatsapp).
+- You have an active WhatFlow subscription.
+- You have at least one approved template, if you want to send templates. See [Message templates](/docs/templates/overview).
+- Shopify Flow is installed in your store. It is free from the Shopify App Store.
+
+## Send a template from a workflow
+
+<Steps>
+<Step title="Open Shopify Flow">
+
+In Shopify admin, go to **Apps** and open **Flow**. Click **Create workflow**.
+
+</Step>
+<Step title="Choose a trigger">
+
+Click **Select a trigger** and choose the store event that should start the workflow, for example **Order created**, **Order fulfilled**, **Order paid** or **Order cancelled**. Add conditions after the trigger if you only want some orders, for example orders above a certain value.
+
+</Step>
+<Step title="Add the WhatFlow action">
+
+Click **+** below the trigger or condition, search for **WhatFlow**, and select **Send WhatsApp Template**. WhatFlow actions are listed under **Apps** in the action picker.
+
+</Step>
+<Step title="Fill in the fields">
+
+Enter the **Template Name**, the **Recipient Phone Number** and any variables. Use **Add variable** to fill fields from the order, for example the customer's phone or first name. The bottom of the action panel shows a preview when WhatFlow finds the template.
+
+</Step>
+<Step title="Test the workflow">
+
+Click **Test workflow**, choose a recent order and click **Run test**. Open the **Test results** tab in the WhatFlow action panel to see if the message was sent.
+
+</Step>
+<Step title="Turn it on">
+
+Click **Apply changes** to save, then turn the workflow on.
+
+</Step>
+</Steps>
+
+<Warning>
+
+Testing sends a real WhatsApp message to the phone number on the order you choose. Use a test order with your own phone number so you don't message real customers while you set things up.
+
+</Warning>
+
+## Actions
+
+Every WhatFlow action has these two fields:
+
+| Field | Notes |
+| --- | --- |
+| **Recipient Phone Number** | Required. The number in international format, for example +14155551234, or a local number when **Country Code** is also set. |
+| **Country Code** | Optional. A 2-letter country code, for example PK, US or GB. Only needed for local-format numbers. You can map it from the order's shipping address country. |
+
+The action also carries the order and customer from the trigger, so when the customer replies, the **WhatsApp Order Reply** trigger knows which order the reply is about.
+
+### Send WhatsApp Template
+
+Sends an approved WhatsApp template. Templates can be sent at any time, even when the customer has not messaged you recently.
+
+| Field | Notes |
+| --- | --- |
+| **Template Name** | Required. The exact name of an approved template in WhatFlow, as shown on the Templates page. |
+| **Header Variable** | The value for `{{1}}` in a text header. Leave blank if the header has no variable or is a media header. |
+| **Header Media URL** | A public link to an image, video or document for a media header. If blank, WhatFlow uses the header media saved with the template. |
+| **Body Variable 1** to **Body Variable 7** | The values for `{{1}}` to `{{7}}` in the template body. Fill only the variables your template uses. |
+| **Button URL Variable** | For a link button with a variable: the destination URL or the dynamic part at the end of the URL, for example an order ID. |
+
+<Note>
+
+The in-app guide mentions "Body Variable 1 — 5" and "Button URL Suffix". The action itself has **Body Variable 1** to **Body Variable 7** and a field named **Button URL Variable**.
+
+</Note>
+
+The action panel shows a preview of the template. If no name is entered yet, it says "No template name entered yet." If the template is not approved, it warns that the template cannot send until Meta approves it. You can save the workflow, but messages won't send until approval.
+
+### Free-form message actions
+
+These actions send a normal WhatsApp message, not a template. WhatsApp delivers them only if the customer messaged your number in the last 24 hours. Outside that window, Meta rejects the message. Use them in workflows started by a WhatsApp trigger, where the customer has just written to you. See [WhatsApp rules to know](/docs/getting-started/whatsapp-basics).
+
+| Action | Fields |
+| --- | --- |
+| **Send WhatsApp Text Message** | **Message Content** (required). Link previews are off. |
+| **Send WhatsApp Image Message** | **Image URL** (required; JPEG or PNG, max 5 MB), **Caption (Optional)** |
+| **Send WhatsApp Video Message** | **Video URL** (required; MP4 or 3GP, max 16 MB), **Caption (Optional)** |
+| **Send WhatsApp Audio Message** | **Audio URL** (required; AAC, MP4, AMR, MP3 or OGG, max 16 MB), **Voice Note Format** |
+| **Send WhatsApp Document Message** | **Document URL** (required; max 100 MB), **Caption (Optional)**, **Filename (Optional)** |
+| **Send WhatsApp Interactive Buttons** | **Header Text (Optional)**, **Message Content** (required), **Footer Text (Optional)**, **Button 1 Text** (required), **Button 2 Text (Optional)**, **Button 3 Text (Optional)** |
+| **Send WhatsApp CTA Link Message** | **Header Text (Optional)**, **Message Content**, **Footer Text (Optional)**, **Button Display Text** (required), **Button Web URL** (required) |
+
+Media links must be public URLs that Meta can download.
+
+When a customer taps a button from **Send WhatsApp Interactive Buttons**, the **WhatsApp Button Clicked** trigger fires.
+
+### Action results
+
+Each action returns a result you can use in later Flow steps: whether it succeeded, a status, a message, the WhatsApp message ID, and any error. The status is one of **SENT**, **REPLAYED**, **FAILED**, **RETRYABLE_FAILED**, **NEEDS_REVIEW** or **BLOCKED**.
+
+## Triggers
+
+WhatFlow triggers start a workflow when something happens on WhatsApp. A trigger only fires when you have a workflow turned on that uses it.
+
+### WhatsApp Text Message Received
+
+Fires when a customer sends a text message, asks about a product (with the product's **Message Business** button), or replies from a Click-to-WhatsApp ad.
+
+| Field | Notes |
+| --- | --- |
+| **Sender Phone Number** | The customer's number. |
+| **Profile Name** | The customer's WhatsApp name. |
+| **Message Body** | The text they sent. |
+| **Message ID** | WhatsApp's ID for the message. |
+| **Product Catalog ID**, **Product Retailer ID** | Filled when the customer asked about a catalog product. |
+| **Forwarded** | True or false. |
+| **Ad ID**, **Ad Headline**, **Ad Click ID** | Filled when the message came from a Click-to-WhatsApp ad. |
+| **Business Phone Number ID**, **WABA ID** | Your WhatsApp number and account IDs. |
+| **Timestamp** | When the message was sent. |
+
+### WhatsApp Button Clicked
+
+Fires when a customer taps a quick-reply button in one of your messages. Link buttons don't fire it, because WhatsApp does not report link taps.
+
+| Field | Notes |
+| --- | --- |
+| **Sender Phone Number**, **Profile Name** | The customer. |
+| **Button Text** | The text on the button. |
+| **Button Payload** | The button's hidden value. |
+| **Contextual Message ID** | The ID of your message that had the button. |
+| **Message ID**, **Business Phone Number ID**, **WABA ID**, **Timestamp** | As above. |
+
+### WhatsApp Media Received
+
+Fires when a customer sends an image, video, audio, document or sticker.
+
+| Field | Notes |
+| --- | --- |
+| **From Phone Number**, **Profile Name** | The customer. |
+| **Media Type** | image, video, audio, document or sticker. |
+| **Media ID** | WhatsApp's ID for the file. |
+| **Media URL** | A download link. It expires after 7 days; keep it private. It only works while your WhatsApp account stays connected and the file is still available on Meta. |
+| **Mime Type**, **Caption**, **File Name**, **Media Checksum** | Details about the file. |
+| **Voice Message** | True when the audio is a voice note. |
+| **Animated Sticker** | True for animated stickers. |
+| **Message ID**, **Contextual Message ID**, **Forwarded**, **Business Phone Number ID**, **WABA ID**, **Timestamp** | As above. |
+
+### WhatsApp Order Reply
+
+Fires when a customer replies on WhatsApp, with a button or text, to a message about one of their orders. The workflow gets the Shopify order and customer, so later steps can act on that order.
+
+| Field | Notes |
+| --- | --- |
+| Order and customer | The Shopify order and customer the reply is about. |
+| **Reply Type** | BUTTON or TEXT. |
+| **Button Text**, **Button Payload** | Filled for button replies. |
+| **Message Body** | Filled for text replies. |
+| **Sender Phone Number**, **Profile Name** | The customer. |
+| **Original Message Type** | What the customer replied to, for example ORDER_CONFIRMATION, ORDER_FULFILLMENT or FLOW (a message sent from a Flow action). |
+| **Contextual Message ID** | The message the customer quoted. Empty when the reply was matched by recent message instead. |
+| **Message ID**, **Business Phone Number ID**, **WABA ID**, **Timestamp** | As above. |
+
+How the order is found: if the customer quotes your message, WhatFlow uses that message's order. If they just write a new message, WhatFlow uses the latest order or Flow message sent to that number in the last 72 hours. Opt-out and opt-in keywords such as STOP and START don't fire this trigger.
+
+### WhatsApp Customer Opted Out
+
+Fires when a customer replies STOP or one of your opt-out keywords and is added to your blocklist. It fires once per block, not again if the customer sends STOP twice. See [Blocklist](/docs/account/blocklist).
+
+| Field | Notes |
+| --- | --- |
+| **Customer Phone Number**, **Profile Name** | The customer. |
+| **Keyword** | The keyword they sent, in capital letters. |
+| **Message ID**, **Business Phone Number ID**, **Timestamp** | As above. |
+
+### WhatsApp List Selection Received
+
+Fires when a customer picks a row from a menu list message.
+
+| Field | Notes |
+| --- | --- |
+| **From Phone Number**, **WhatsApp User ID**, **Profile Name** | The customer. |
+| **Row ID** | The row's ID. Use this for workflow conditions. |
+| **Row Title**, **Row Description** | The row the customer picked. |
+| **Message ID**, **Contextual Message ID**, **Business Phone Number ID**, **WABA ID**, **Timestamp** | As above. |
+
+### WhatsApp Product Received
+
+Fires when a customer shares a product from your WhatsApp catalog with you. This is not an order.
+
+| Field | Notes |
+| --- | --- |
+| **From Phone Number**, **WhatsApp User ID**, **Profile Name** | The customer. |
+| **Product Retailer ID**, **Product Title**, **Product Description**, **Product URL** | The product. |
+| **Product Currency**, **Product Price**, **Has Sale Price**, **Product Sale Price** | Price details. |
+| **Message ID**, **Contextual Message ID**, **Business Phone Number ID**, **WABA ID**, **Timestamp** | As above. |
+
+### WhatsApp Catalog Order Received
+
+Fires when a customer sends you a cart from your WhatsApp catalog. This is not a Shopify order; use it to start one, notify your team or reply.
+
+| Field | Notes |
+| --- | --- |
+| **From Phone Number**, **WhatsApp User ID**, **Profile Name** | The customer. |
+| **Catalog Order** | The catalog ID, the customer's note, and a list of products. Each product has a retailer ID, quantity, item price and currency. Use Flow's **For each** step to go through the products. |
+| **Message ID**, **Contextual Message ID**, **Business Phone Number ID**, **WABA ID**, **Timestamp** | As above. |
+
+## Template browser
+
+From the **Send WhatsApp Template** action panel, you can open WhatFlow's **Available WhatsApp Templates** page. It lists your WhatsApp templates so you can copy the exact name.
+
+- Each template shows **Template Name to paste:** with the name to copy into the **Template Name** field.
+- The template already in the action is marked **Currently selected**, with **Found & approved** or **Not found in WhatFlow**.
+- It tells you how many body variables the template uses, for example "fill Body Variable 1–3 in Flow".
+- Templates with a link button that has a variable show "Requires Button URL Variable: enter the destination URL or the dynamic suffix in the Flow action."
+- A template waiting for Meta approval shows a note: you can save the workflow, but messages won't send until Meta approves it.
+
+Click **Close** to go back to Flow.
+
+## Judge.me review requests template
+
+WhatFlow adds a ready-made workflow to the Flow template library: **Send WhatsApp review request for Judge.me reviews**. It sends a WhatsApp message asking customers for a review when Judge.me triggers a review request. Search for it in Flow's templates, then add your template name and fields. See also [Review requests](/docs/automations/review-requests).
+
+## Errors and retries
+
+| What happened | What Flow does | What to do |
+| --- | --- | --- |
+| Meta accepted the message | The step completes. | Nothing. |
+| The number is on your blocklist | The step completes with status **BLOCKED**, "Not sent: this number is on the shop's WhatsApp blocklist." It is not treated as a failure. | Nothing, unless the customer should be unblocked. |
+| Setup problem: invalid phone, template not found or not approved, wrong variables, WhatsApp not connected, no active subscription, or Meta permanently rejected the message | The step fails. Flow does not retry. | Fix the cause shown in the error, then run the workflow again. |
+| Meta rejected WhatFlow's access to your WhatsApp account | The step fails. | Reconnect WhatsApp in WhatFlow, then retry. |
+| Too many messages at once, or a temporary problem | Flow retries the step automatically. | Nothing. The message is never sent twice. |
+| WhatFlow could not confirm the send | The step is marked for review and is not resent. | The message may have been sent. Contact support@whatflow.tech before retrying. |
+
+Common error messages:
+
+- "Recipient phone number is required."
+- "Template name is required."
+- "Template "X" was not found in WhatFlow." Check the spelling against the Templates page; names are case-sensitive.
+- "The recipient phone number is invalid. Include a country calling code or set Country Code in the Flow action."
+- "WhatsApp is not connected. Connect WhatsApp in WhatFlow before retrying."
+- "An active WhatFlow subscription is required."
+- "Meta rejected the WhatsApp authorization (code 190). Reconnect WhatsApp in WhatFlow before retrying."
+- "WhatsApp delivery could not be confirmed. The message may have been sent. Automatic resend is blocked to prevent duplicates; contact WhatFlow support before retrying."
+- "WhatsApp message was accepted by Meta, but Inbox synchronization is unavailable. Do not resend the message." The message was sent; it just may not show in Live Inbox.
+
+## Good to know
+
+- A Flow run never sends the same message twice, even when Flow retries the step.
+- **Send WhatsApp Template** follows your blocklist settings for the template's category. The free-form actions are replies and are never blocked.
+- Each message Meta accepts counts toward your plan.
+- Free-form actions don't check the 24-hour window before sending. If the window is closed, Meta rejects the message and the step fails.
+
+## Troubleshooting
+
+### The WhatFlow action doesn't appear in Flow
+
+Make sure WhatFlow is installed in the same store. Search for **WhatFlow** in the action picker and look under **Apps**.
+
+### A WhatsApp trigger never fires
+
+Check that the workflow is turned on. Triggers only fire for workflows that are on. **WhatsApp Button Clicked** only fires for quick-reply buttons, not link buttons.
+
+### The text or media action fails
+
+The customer has not messaged you in the last 24 hours, so Meta won't accept a free-form message. Use **Send WhatsApp Template** instead.

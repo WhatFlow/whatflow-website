@@ -1,0 +1,86 @@
+Draft order recovery sends WhatsApp reminders after you create a draft order, until the customer pays. Use it when you make orders for customers by hand, for example from a chat, and send them an invoice to pay.
+
+<Path>Home › Draft Order Recovery</Path>
+
+The page heading is **Draft order recovery**.
+
+## How it works
+
+1. You create a draft order in Shopify.
+2. WhatFlow waits for the time you set for the first reminder.
+3. Before each reminder, WhatFlow checks that the draft order is still open. Reminders stop as soon as the customer pays (the draft is completed).
+4. WhatFlow sends the reminder with a link to the draft order invoice.
+5. The next reminder waits the time you set after the previous reminder.
+
+WhatFlow reads the draft order again before each reminder. If you add the customer's phone number after creating the draft, the reminders still go to it.
+
+## Set it up
+
+<Steps>
+<Step title="Get a template">
+
+The Template Library has **Draft Order - Custom Invoice Ready** and **Draft Order - Gentle Reminder**. Both are Utility templates. See [Message templates](/docs/templates/overview).
+
+</Step>
+<Step title="Add reminders">
+
+Under **Reminders**, set **Wait after the draft order is created** for **Reminder 1** and choose its message. Click **Add reminder** to add up to 3.
+
+</Step>
+<Step title="Save and turn on">
+
+Click **Save**, then click **Turn on** in the **Status** card. You need at least one reminder with an approved template, saved.
+
+</Step>
+</Steps>
+
+## Settings
+
+For each reminder (up to 3):
+
+<Settings>
+<Setting name="Wait after the draft order is created">
+
+For **Reminder 1**. How long to wait, in **minutes**, **hours** or **days**. It must be more than 0.
+
+</Setting>
+<Setting name="Wait after reminder N">
+
+For **Reminder 2** and **Reminder 3**. The wait counts from the previous reminder.
+
+</Setting>
+<Setting name="Message">
+
+The template for this reminder. Each reminder can use a different template.
+
+</Setting>
+</Settings>
+
+A reminder with no template, or with no wait time, is skipped.
+
+There is no discount setting. To offer a discount, add it to the draft order in Shopify or write it in the template.
+
+## Template variables
+
+Besides the usual customer and store fields, draft order templates can use:
+
+- **Invoice URL**: the link to pay the draft order.
+- **Draft Order Name**, **Draft Order Total**, **Draft Order Subtotal** and **Draft Order Tax**.
+
+For link buttons, choose **Draft Order Invoice URL**. WhatFlow adds tracking parameters to the link so you can see which reminder brought the customer back.
+
+## Good to know
+
+- **Phone number.** WhatFlow uses the draft order's phone, then the billing address, shipping address and customer's default phone.
+- **Failure tags.** If a reminder fails, WhatFlow can add a failure tag such as `WhatsApp: Not a User` and a note to the draft order. See [Failure tags](/docs/automations/order-confirmation#failure-tags).
+- **Subscription required.** Every automated message needs an active WhatFlow plan. Without one, reminders are skipped.
+- **Meta restrictions turn automations off.** If Meta restricts your WhatsApp number, WhatFlow turns off Draft order recovery and all other automations. Turn them back on yourself after Meta lifts the restriction.
+- **Sending by hand.** To send a draft order reminder once, without this automation, see [Manual messaging](/docs/conversations/manual-messaging).
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| "Cannot enable: configure at least one follow-up with an approved template and save settings first." | Add a reminder with an approved template, click **Save**, then turn it on. |
+| "Set how long to wait before this reminder." | Enter a wait time above 0. |
+| No reminders were sent | The draft has no phone number, the template is not approved, or the automation was off when the draft was created. |

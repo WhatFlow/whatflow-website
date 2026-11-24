@@ -1,3 +1,4 @@
+import { DOCS_ARTICLES } from "@/lib/docs/nav";
 import { HOMEPAGE_UPDATED_AT } from "@/lib/content-dates";
 import { getAllIndexableComparisons } from "@/lib/comparisons-api";
 export const dynamic = "force-dynamic";
@@ -119,6 +120,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    {
+      url: `${baseUrl}/docs`,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    ...DOCS_ARTICLES.map((page) => ({
+      url: `${baseUrl}${page.url}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
   ];
 
   // Blog posts

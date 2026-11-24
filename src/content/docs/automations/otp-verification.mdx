@@ -1,0 +1,154 @@
+OTP order confirmation lets customers confirm their order with a 6-digit code sent to their WhatsApp. They enter the code on the Thank you page right after checkout, or later on the Order status page. When the code is right, WhatFlow tags the order as confirmed. Stores use it to verify cash on delivery (COD) orders.
+
+<Path>Home › OTP Order Confirmation</Path>
+
+The page heading is **OTP order confirmation**.
+
+## How it works
+
+1. The customer places an order. If the order matches your conditions, a **Confirm your order** block shows on the Thank you page.
+2. The customer enters their WhatsApp number and taps **Send code on WhatsApp**. The order gets the tag `⏳ Awaiting WhatsApp OTP`.
+3. WhatFlow sends your code message on WhatsApp.
+4. The customer enters the code and taps **Confirm order**.
+5. WhatFlow removes the waiting tag and adds `✓ WhatsApp Verified`.
+6. If you set one, WhatFlow sends a follow-up message, like a thank-you.
+
+Customers who leave without confirming can come back to the Order status page, which shows whether the order is confirmed, or lets them confirm it.
+
+### Compared with Confirm/Cancel buttons
+
+[Order Confirmation](/docs/automations/order-confirmation) sends a WhatsApp message with buttons, and the customer can also tap Cancel. OTP only lets the customer confirm. See [COD verification on WhatsApp](/docs/automations/cod-verification) for a comparison.
+
+<Warning>
+
+If Order Confirmation is also on, the same customers also get its confirm or cancel message. Turn one off, or give each one different payment methods.
+
+</Warning>
+
+## Set it up
+
+<Steps>
+<Step title="Create a code message">
+
+The code message must be an approved template in the **Authentication** category. WhatsApp writes the text of these messages for you. You can only choose to add a security line ("For your security, do not share this code.") and an expiry time. A **Copy code** button is always included. See [Template editor](/docs/templates/editor).
+
+</Step>
+<Step title="Choose the code message">
+
+On the OTP order confirmation page, under **Message**, choose your approved authentication template. Only authentication messages work here.
+
+</Step>
+<Step title="Add the block to your checkout pages">
+
+Under **Where customers confirm**:
+
+- **Thank you page**: click **Add to Thank you page**. This opens the checkout editor. Works on every plan, and you can move the block anywhere on the page.
+- **Order status page**: click **Add to Order status page**.
+
+Save in the editor. Each block shows **Added** or **Not added**.
+
+</Step>
+<Step title="Choose which orders">
+
+Under **Which orders**, set **Payment status** or **Payment methods**. Other orders never see the block.
+
+</Step>
+<Step title="Save and turn on">
+
+Click **Save**, then click **Turn on** in the **Status** card. You can't turn it on until you choose an approved code message.
+
+</Step>
+</Steps>
+
+## Settings
+
+### Which orders
+
+<Settings>
+<Setting name="Payment status" value="Any order">
+
+**Any order**, **Unpaid orders only (e.g. cash on delivery)** or **Paid orders only**.
+
+</Setting>
+<Setting name="Payment methods" value="Empty (every method)">
+
+Pick your cash on delivery method to ask only those customers. Leave it empty for every method.
+
+</Setting>
+</Settings>
+
+### Order tags
+
+<Settings>
+<Setting name="While waiting for the code" value="⏳ Awaiting WhatsApp OTP">
+
+Added when the customer asks for a code, and removed once they confirm. Up to 40 characters.
+
+</Setting>
+<Setting name="Once confirmed" value="✓ WhatsApp Verified">
+
+Added when the customer enters the right code. Up to 40 characters.
+
+</Setting>
+</Settings>
+
+### After confirmation
+
+Optional. Choose a Utility or Marketing template to send to the number that received the code, like a thank-you or "your order is confirmed" message. Click **Remove** to stop sending it.
+
+## What the customer sees
+
+On the Thank you page, the block shows:
+
+- the heading **Confirm your order**,
+- the text "We'll send a 6-digit code to your WhatsApp. Enter it here to confirm your order.",
+- a **WhatsApp number** field and a **Send code on WhatsApp** button.
+
+After the code is sent, the customer sees **Enter 6-digit code**, a **Confirm order** button, a **Resend code** option (with a countdown), and **Use a different number**. When the code is right, the block shows **Order confirmed** and "Thank you! Your order is confirmed."
+
+The block is translated into Arabic, Chinese (Simplified and Traditional), Dutch, French, German, Hindi, Italian, Japanese, Portuguese (Brazil), Spanish and Turkish. You can change every text in the block settings in the checkout editor, for example the heading, the button labels and the success message.
+
+## Limits
+
+| Limit | Value |
+| --- | --- |
+| Code length | 6 digits |
+| Code expiry | The expiry set on your template (default 10 minutes, 1 to 90) |
+| Wait before resending | 60 seconds |
+| Codes per phone number | 3 every 10 minutes |
+| Wrong codes | After 5 wrong codes, the customer must wait 15 minutes |
+| Codes per store | 300 per hour |
+
+- If the order has phone numbers on it, the number the customer enters must match one of them.
+- The code message is never blocked by the [Blocklist](/docs/account/blocklist).
+- Every code needs an active WhatFlow plan. Without one, no code is sent.
+- If Meta restricts your WhatsApp number, WhatFlow turns off all automations. Turn them back on yourself after Meta lifts the restriction.
+
+## Messages your customers may see
+
+| Message | Meaning |
+| --- | --- |
+| The code you entered is incorrect. Please try again. | Wrong code. |
+| The code has expired. Please request a new one. | The code is older than the expiry time. |
+| Enter a valid WhatsApp number, including the country code. | The number is not valid. |
+| Too many incorrect codes. Please try again in 15 minutes. | 5 wrong codes were entered. |
+| Too many codes were requested. Please try again in a few minutes. | More than 3 codes for this number in 10 minutes. |
+| Verification is busy. Try again later. | Your store sent more than 300 codes in the last hour. |
+
+## Troubleshooting
+
+### The block doesn't show on the Thank you page
+
+- Check that the block shows **Added** on the OTP page. If not, add it in the checkout editor and save.
+- Check **Payment status** and **Payment methods**. Orders that don't match never see the block.
+- Check that the automation is on.
+
+### The customer didn't get the code
+
+- The number must be on WhatsApp and include the country code.
+- If the order has a phone number, the customer must enter that same number.
+- Check that the code message is approved and that your plan is active.
+
+### Customers get two confirmation requests
+
+Order Confirmation is also on for the same orders. Turn one off, or set different payment methods for each.

@@ -1,0 +1,125 @@
+Back in Stock lets customers ask for a WhatsApp alert on a product that is sold out. When the product variant is restocked, WhatFlow messages everyone who asked.
+
+<Path>Home › Back in Stock</Path>
+
+The page heading is **Back in stock**.
+
+## How it works
+
+1. You add the **Stock Notification** block to your product page.
+2. On an out-of-stock variant, the customer taps **Notify me when back in stock**, enters their name and phone number, and taps **Submit request**.
+3. The request shows on the Back in stock page as **Pending**.
+4. When Shopify reports that the variant is back in stock, WhatFlow sends your Back in Stock template to every pending request for that variant. It reads the product again, so the name, price, image and link are current.
+5. The request changes to **Notified**.
+
+<Warning>
+
+**Restocks while the automation is off are not notified later.** WhatFlow keeps collecting requests while Back in Stock is turned off, but if a product is restocked during that time, nobody is messaged, and turning it on afterwards does not send them. Turn Back in Stock on before you restock.
+
+</Warning>
+
+## Set it up
+
+<Steps>
+<Step title="Add the button to your product page">
+
+Under **Product page button**, click **Add to product page**. This opens the theme editor with the **Stock Notification** block. Save the theme.
+
+</Step>
+<Step title="Change the country code prefix">
+
+In the theme editor, open the block settings and change **Default Country Code Prefix**. The default is **+57** (Colombia). Set it to your own country, for example +44 or +91, and change **Phone Input Placeholder** to match.
+
+</Step>
+<Step title="Choose a template">
+
+In the message card, choose an approved Back in Stock template. The Template Library has **Back In Stock - Standard** and **Back In Stock - Available Now**.
+
+</Step>
+<Step title="Turn it on">
+
+In the **Status** card, click **Turn on**.
+
+</Step>
+</Steps>
+
+### Product page button status
+
+| Badge | Meaning | Button |
+| --- | --- | --- |
+| **Not added** | The block is not on your product page yet. | **Add to product page** |
+| **Hidden** | It's on your product page but turned off in the theme editor. | **Show in theme editor** |
+| **On your product page** | Customers can see it. | **Customize in theme editor** |
+
+## Block settings
+
+You change these in the theme editor. Defaults:
+
+| Setting | Default |
+| --- | --- |
+| Out of Stock Title | Out of stock |
+| Out of Stock Body | This item is currently unavailable. Get notified when it is back in stock. |
+| Button Text | Notify me when back in stock |
+| Button Text When Subscribed | You're Subscribed! |
+| Form Heading | Get notified when this item is back in stock |
+| Name Field Label | Name \* |
+| Phone Field Label | Phone Number \* |
+| Default Country Code Prefix | +57 |
+| Phone Input Placeholder | +57 300 123 4567 |
+| Submit Button Text | Submit request |
+| Cancel Button Text | Cancel |
+| Success Message | We'll notify you as soon as this item is back in stock. |
+| Already Subscribed Message | You're already subscribed to receive back in stock alerts for this item. |
+| Error Label | Error: |
+| Error Message | Something went wrong. Please try again later. |
+| Show Phone Number Field | On |
+| Show Name Field | On |
+
+You can also change the colours, **Corner Radius** (0–24 px, default 8), **Inner Padding** (8–32 px, default 16), **Shadow Depth**, **Text Alignment**, **Font Size** (12–18 px, default 14), **Button Background** (default #07b850), **Button Shape** (default rounded rectangle), **Button Font Weight** and **Full Width Button** (default off).
+
+## Customer requests
+
+The **Requests** section shows counts: Waiting, Notified, Failed and Total.
+
+The **Customer requests** table lists each request with the customer, phone, product, variant ID, status, when they subscribed and when they were notified. Filter by **All statuses**, **Pending**, **Notified** or **Failed**. To remove a request, click delete and confirm in **Delete subscription?**.
+
+- If the customer asks again for the same variant while their request is pending, they see the "already subscribed" message.
+- If they ask again after being notified, the request goes back to pending for the next restock.
+
+## Template variables
+
+Back in Stock templates can use **Product Name**, **Product URL**, **Variant Title** and **Product Price**, plus customer and store fields such as **Customer First Name** and **Shop Name**. Product links include tracking parameters so you can see the visits in your analytics.
+
+## What the customer sees
+
+An example using the **Back In Stock - Standard** starter template:
+
+<Preview buttons={["Buy Now","Stop"]}>
+Hi **Sara**, good news! The item **Classic Linen Shirt** from **Your Store** is finally back in stock.
+
+Grab it below before it sells out!
+
+Reply STOP to stop receiving messages.
+</Preview>
+
+## Good to know
+
+- **Marketing messages.** The library templates for Back in Stock are in the Marketing category. Meta charges more for these and may not deliver all of them. If you use the [Blocklist](/docs/account/blocklist), customers who opted out are skipped.
+- **Subscription required.** Every automated message needs an active WhatFlow plan.
+- **Meta restrictions turn automations off.** If Meta restricts your WhatsApp number, WhatFlow turns off Back in Stock and all other automations. Turn them back on yourself after Meta lifts the restriction. Restocks in the meantime are not notified.
+
+## Troubleshooting
+
+### Customers get "Invalid phone number. Please include the country code."
+
+The number must start with the country code. Change **Default Country Code Prefix** in the block settings to your country so customers start with the right code.
+
+### Nobody was notified after a restock
+
+- Back in Stock was off when the product was restocked. Those restocks are not sent later.
+- The template is not approved, or no template is chosen.
+- The customer is on your blocklist.
+
+### The button doesn't show on the product page
+
+Check the badge under **Product page button**. If it says **Hidden**, click **Show in theme editor**. The block only shows on variants that are out of stock.

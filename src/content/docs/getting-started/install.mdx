@@ -1,0 +1,128 @@
+WhatFlow is an embedded Shopify app. You install it from the Shopify App Store, then you work in it from your Shopify admin. This page covers installing the app, the Home screen, the app menu and choosing a plan.
+
+## Install the app
+
+<Steps>
+<Step title="Open the App Store listing">
+
+Go to [WhatFlow Official API on the Shopify App Store](https://apps.shopify.com/whatflow-official-api) and click install.
+
+</Step>
+<Step title="Approve access">
+
+Shopify shows the store data WhatFlow needs, such as orders, customers, products, draft orders and fulfillments. Approve it to finish the install.
+
+</Step>
+<Step title="Open WhatFlow">
+
+The app opens on the **Home** screen. You can always find it again under **Apps › WhatFlow** in your Shopify admin.
+
+</Step>
+</Steps>
+
+<Note>
+
+If your session runs out while the app is open, you see a **Session expired** banner. Click **Reload**, or **Re-authenticate** if Shopify asks for updated permissions.
+
+</Note>
+
+## The app menu
+
+The WhatFlow menu in the Shopify sidebar has seven items:
+
+| Menu item | What it is for |
+| --- | --- |
+| **Home** | Setup guide, status cards, every automation and the guides. Most screens are opened from here. |
+| **Live Inbox** | Your team's shared WhatsApp inbox. See [Live Inbox](/docs/inbox/overview). |
+| **Templates** | Your WhatsApp message templates and their Meta approval status. See [Message templates](/docs/templates/overview). |
+| **Cash on Delivery** | COD fee and COD rules for your Shopify checkout. This is not the WhatsApp COD confirmation message. See [COD checkout rules](/docs/automations/cod-checkout). |
+| **Analytics** | Sent, delivered and read numbers, Meta costs and recovered revenue. See [Analytics](/docs/account/analytics). |
+| **Connection** | Connect, check or disconnect your WhatsApp number. The page itself is called **Connections**. See [Connect WhatsApp](/docs/getting-started/connect-whatsapp). |
+| **Billing** | Your WhatFlow plan. See [Plans and billing](/docs/account/billing). |
+
+Automation pages, the Chat Button, the Blocklist, Shipping journey and the other settings screens are not in the menu. Open them from cards on **Home**.
+
+## The Home screen
+
+### Setup guide
+
+The top of **Home** shows a setup guide with five steps. Each step is marked done when it is complete. You can hide the guide, and bring it back with **Show setup guide**.
+
+| Step | What to do | Button |
+| --- | --- | --- |
+| **Connect WhatsApp Business API** | Connect your WhatsApp number to Meta's Cloud API with Facebook sign-in. | **Connect Account** |
+| **Create Message Templates** | Have at least one message template. | **Create Template**, **Manage Templates** |
+| **Enable an Automation** | Turn on at least one automation. | **Go to Automations** |
+| **Subscribe to WhatFlow** | Choose a plan. | **Select a Plan** |
+| **Add your WhatsApp number** | Give WhatFlow a number to contact you on for setup help and alerts if message delivery stops. | **Add number** |
+
+<Note>
+
+The text under **Connect WhatsApp Business API** mentions a Meta App ID and App Secret. You don't need either. You connect by clicking **Connect with Facebook** on the Connections page, as described in [Connect WhatsApp](/docs/getting-started/connect-whatsapp).
+
+</Note>
+
+The number in **Add your WhatsApp number** is your own contact number. It is not the number your store sends from. Enter it with **+** and the country code, or you see "Please enter a valid WhatsApp number starting with '+' and a country code."
+
+### Analytics at a glance
+
+Four headline numbers for the current billing period, with **View Detailed Analytics** to open the full [Analytics](/docs/account/analytics) page. If Shopify's data can't load, you see "Shopify Analytics couldn't be loaded. This doesn't mean zero messages were sent."
+
+### Status cards
+
+| Card | What it shows |
+| --- | --- |
+| **WhatsApp Status** | **Connected** or **Not Connected**, with your business name and number. Button **View Settings** or **Connect Now**. |
+| **Active Automations** | How many automations are on, and which template each one uses. |
+| **WhatsApp Chat Button** | **Not Configured**, **Checking**, **Active** or **Theme Disabled**, and whether the **Order via WhatsApp block** is on your product page. Button **Configure Chat Button**. |
+| **Total Templates** | How many templates you have. Button **Create Template**. |
+| **Live Inbox**, **Manage Blocklist**, **Broadcast Queue**, **Store Report**, **AI Connections** | Shortcuts to those screens. |
+
+### Automations
+
+Every automation has a card with a **Configure** button and an on/off switch. The card shows **Enabled** or **Disabled**, and **Template not selected** if no message is chosen yet. The switch stays greyed out until you pick a template: "Please select a template from the Configure page, then it can be enabled."
+
+### Guides
+
+Short in-app guides for **Flow Integration**, **Manual Messaging**, **Customer Broadcast** and **Block Extensions**.
+
+## Choose a plan
+
+WhatFlow needs an active subscription to send any message. Without one, nothing is sent: automations are skipped, and order-based automations tag the order `WhatFlow: Subscription Required`.
+
+<Steps>
+<Step title="Open Billing">
+
+Click **Billing** in the app menu, or **Select a Plan** in the setup guide.
+
+</Step>
+<Step title="Pick a plan">
+
+Click **Select plan**. Shopify's plan page opens. Choose a plan and approve the charge in Shopify.
+
+</Step>
+<Step title="Check the subscription">
+
+Back on **Billing**, the **Subscription** section shows your current plan with an **Active** badge. If you are on a trial, it shows when the trial ends.
+
+</Step>
+</Steps>
+
+Every plan includes every feature. Plans differ in how many messages are included and the price of extra messages. See [Plans and billing](/docs/account/billing) and the [pricing page](/pricing).
+
+<Warning>
+
+Your WhatFlow plan does not include Meta's WhatsApp charges. Meta bills those to the payment method on your WhatsApp account. See [Connect WhatsApp](/docs/getting-started/connect-whatsapp).
+
+</Warning>
+
+## Uninstalling
+
+When you uninstall WhatFlow, it stops sending messages straight away. Your WhatsApp connection is kept for one hour, so if you reinstall within that hour you don't need to connect again. After that, WhatFlow disconnects the number, and you may need to connect it again on the **Connections** page. See [Data and privacy](/docs/account/data-and-privacy).
+
+## Next step
+
+<Cards>
+  <Card title="Connect WhatsApp" href="/docs/getting-started/connect-whatsapp">Link your business number with Meta.</Card>
+  <Card title="Quickstart" href="/docs/getting-started/quickstart">Send your first automated message.</Card>
+</Cards>

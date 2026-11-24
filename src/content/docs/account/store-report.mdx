@@ -1,0 +1,155 @@
+Store Report sends you a summary of your store's sales on WhatsApp. Send a keyword such as "report" from your own phone to your connected WhatsApp number, and WhatFlow replies with today's sales, top products and more, straight from Shopify Analytics.
+
+<Path>Home › Store Report</Path>
+
+## How it works
+
+1. You turn on Store Report and add the phone numbers that may ask for reports.
+2. From one of those numbers, you send the keyword to your WhatFlow-connected WhatsApp number.
+3. WhatFlow reads the numbers from Shopify Analytics and replies with the report.
+
+Reports are replies to your own message, so they don't need a template and Meta doesn't charge for them. They also don't count toward your WhatFlow plan.
+
+Only your authorized numbers get a report. Anyone else who sends the keyword gets your normal [auto-replies](/docs/conversations/auto-replies).
+
+## Set it up
+
+<Steps>
+<Step title="Open Store Report">
+
+From **Home**, click **Set Up Reports** on the **Store Report** card.
+
+</Step>
+<Step title="Add your numbers">
+
+Under **Authorized numbers**, type a phone number with the country code in **Add phone number** and click **Add number**. Add up to 10 numbers.
+
+</Step>
+<Step title="Turn it on">
+
+Under **Settings**, tick **Turn on Store Report**. Change the **Keyword** if you want.
+
+</Step>
+<Step title="Choose the sections">
+
+Under **Report sections**, pick what the report includes.
+
+</Step>
+<Step title="Save">
+
+Click **Save** in the bar at the top of the page.
+
+</Step>
+<Step title="Try it">
+
+From an authorized phone, send the keyword (for example `report`) to your connected WhatsApp number.
+
+</Step>
+</Steps>
+
+## Settings
+
+<Settings>
+<Setting name="Turn on Store Report">
+Only the numbers below get a report. Anyone else who sends the keyword gets your normal auto-replies. You need at least one authorized number to turn it on.
+</Setting>
+<Setting name="Keyword" value="report">
+The word that asks for a report. 2 to 20 letters or numbers. It can't be STOP. The whole message must be the keyword, optionally followed by a period. Letter case doesn't matter.
+</Setting>
+<Setting name="Authorized numbers">
+The phone numbers that may get reports. Include the country code. Up to 10 numbers. Your connected WhatsApp number can't be one of them.
+</Setting>
+<Setting name="PIN (optional)">
+4 to 8 digits. With a PIN, send it after the keyword, for example `report 4821`. This protects your reports if a phone is lost or shared. Click **Remove PIN** to stop using one.
+</Setting>
+</Settings>
+
+### Report sections
+
+By default the report includes **Sales**, **Top products** and **WhatsApp recovery**.
+
+| Section | What it shows |
+| --- | --- |
+| **Sales** | Net sales, orders and average order value, compared with the previous period. |
+| **Top products** | Your five best-selling products by net sales. |
+| **Returns and discounts** | Money returned to customers and taken off by discounts. |
+| **Online store traffic** | Sessions and conversion rate, compared with the previous period. |
+| **WhatsApp recovery** | Orders and sales from WhatFlow recovery links. |
+
+Choose at least one section.
+
+## Ask for a report
+
+Send the keyword on its own for today's report, or add a period after it:
+
+| Send | Period |
+| --- | --- |
+| `report` or `report today` | **Today** |
+| `report yesterday` | **Yesterday** |
+| `report week`, `report 7d` or `report last week` | **Last 7 days** |
+| `report month`, `report 30d` or `report last month` | **Last 30 days** |
+
+If you set a PIN, add it at the end: `report week 4821`.
+
+Percentages compare with the period before. For example, **Today** compares with yesterday, and **Last 7 days** compares with the 7 days before.
+
+## What you see
+
+The report arrives as a plain WhatsApp message, with your shop name, the period and the time in your store's time zone. For example:
+
+<Preview>
+\*My Store · Today\*
+
+\*Sales\*
+Net sales: $1,240 (+12%)
+Orders: 18 (+5.9%)
+Average order: $68.89 (+5.8%)
+
+\*Top products\*
+1. Linen shirt — $420
+2. Canvas tote — $180
+
+\*WhatsApp recovery\*
+Recovered: 3 orders · $210
+
+\_% compares with yesterday.\_
+
+Send \*report yesterday\*, \*report week\* or \*report month\* for other periods.
+</Preview>
+
+If a section can't be loaded from Shopify Analytics, it shows "Not available right now." instead.
+
+### Preview a report in the app
+
+Under **Preview**, choose a **Period** and click **Preview report** to see the report without sending a message. If some sections can't load, the preview tells you how many.
+
+## Limits
+
+- One report every 30 seconds, and up to 50 reports a day, per store. Requests over the limit get no reply.
+- A report is at most 4,096 characters. Longer reports are cut short.
+- Up to 10 authorized numbers.
+
+## Store Report and auto-replies
+
+If your keyword is also used by an auto-reply, the page shows **Some auto-replies use this keyword**. Messages from authorized numbers get the report instead of those auto-replies. Other customers still get the auto-reply.
+
+## Troubleshooting
+
+### I sent the keyword and got no reply
+
+- Check that **Turn on Store Report** is ticked and saved.
+- Check that you sent it from an authorized number, to your connected WhatsApp number.
+- The message must be only the keyword, an optional period word and an optional PIN. "Send me the report" does not work.
+- You may have hit the limit of one report every 30 seconds or 50 a day. Wait and try again.
+
+### "Incorrect PIN. Send the report keyword followed by your PIN."
+
+The PIN is missing or wrong. Send the keyword, then a space, then your PIN.
+
+### A section says "Not available right now."
+
+WhatFlow could not load that section from Shopify Analytics. Try again later.
+
+### I got an auto-reply instead of a report
+
+The number you sent from is not in **Authorized numbers**, or Store Report is off. Add the number with its country code, then save.

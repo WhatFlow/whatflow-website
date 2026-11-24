@@ -2,7 +2,7 @@
 const PAGES = new Set([
   '/', '/about', '/affiliate', '/affiliates', '/partners', '/features', '/inbox',
   '/pricing', '/security', '/terms', '/privacy', '/blog', '/compare',
-  '/integrations', '/solutions', '/case-studies', '/changelog',
+  '/integrations', '/solutions', '/case-studies', '/changelog', '/docs',
 ]);
 const FEEDS = new Set(['/sitemap.xml', '/robots.txt', '/blog/rss.xml', '/changelog/rss.xml']);
 const SHORT_TTL = new Set(['/pricing', '/blog', '/compare', '/changelog']);
@@ -24,7 +24,8 @@ export function marketingCacheTTL(request: Request): number | null {
   if (url.protocol !== 'https:') return null;
   const path = url.pathname;
   if (!PAGES.has(path) && !FEEDS.has(path)
-      && !/^\/(blog|compare|integrations|solutions|case-studies|changelog)\/[a-z0-9]+(?:-[a-z0-9]+)*$/.test(path)) return null;
+      && !/^\/(blog|compare|integrations|solutions|case-studies|changelog)\/[a-z0-9]+(?:-[a-z0-9]+)*$/.test(path)
+      && !/^\/docs(?:\/[a-z0-9]+(?:-[a-z0-9]+)*){1,2}$/.test(path)) return null;
   // Only finite, non-personalized directory variants. Queries and previews bypass.
   const allowedParams = path === '/blog' || path === '/compare';
   for (const [key, value] of url.searchParams) {

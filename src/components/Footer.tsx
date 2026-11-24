@@ -32,6 +32,7 @@ const columns = [
 			["/blog", "Blog and guides"],
 			["/case-studies", "Case studies"],
 			["/changelog", "Changelog"],
+			["/docs", "Documentation"],
 			["/docs/mcp", "Connect AI apps (MCP)"],
 			["/admin", "Merchant portal"],
 		],

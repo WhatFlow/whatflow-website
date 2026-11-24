@@ -1,0 +1,186 @@
+You can message a customer by hand from the order, draft order, abandoned checkout or customer you are looking at in Shopify admin. WhatFlow gives you two different tools for this, and they work in very different ways.
+
+## Two ways to send by hand
+
+| | WhatsApp Message Block | Send WhatsApp action buttons |
+| --- | --- | --- |
+| **Where** | A block on the order, draft order, abandoned checkout or customer page | **More actions** on a record, or the bulk actions on the Orders, Draft orders and Abandoned checkouts lists |
+| **What it sends** | Any text you write, prefilled with the customer's details | An approved WhatsApp template |
+| **Sent from** | Your own WhatsApp app or WhatsApp Web, through a wa.me link | Your WhatFlow-connected number, through Meta's Cloud API |
+| **Who presses send** | You, in WhatsApp | WhatFlow, when you click **Send Message** |
+| **Counts toward your WhatFlow plan** | No | Yes, one message per accepted send |
+| **Shows in Live Inbox** | No | Yes, when Live Inbox is on |
+| **24-hour window** | Not applicable (it is a normal chat from your phone) | Not needed, because templates can be sent at any time |
+| **Bulk sending** | No | Yes, up to 50 records at a time |
+
+Use the block for personal, human follow-up from your own WhatsApp. Use the action buttons when you want the message to come from your business number, be tracked by WhatFlow, and appear in [Live Inbox](/docs/inbox/overview).
+
+## WhatsApp Message Block
+
+The block sits on a Shopify admin page and holds a ready-to-send message with the customer's details filled in. When you click **Send in WhatsApp**, a new tab opens a WhatsApp chat with the customer and your message already typed. You press send in WhatsApp yourself.
+
+<Note>
+
+The block does not send through WhatFlow. The message goes from whichever WhatsApp account is open on your device (the WhatsApp app or WhatsApp Web), not from your connected business number. WhatFlow does not count it, track it or show it in Live Inbox.
+
+</Note>
+
+In the app, the guide for this is at <Path>Home › Guides › Manual Messaging</Path>, and the setup steps are at <Path>Home › Guides › Block Extensions</Path>.
+
+### Add the block to a Shopify admin page
+
+The block can be added to these pages:
+
+| Page | Open it from | Good for |
+| --- | --- | --- |
+| Order details | Shopify admin › Orders › open an order | Order follow-up, delivery questions, support, payment reminders |
+| Draft order details | Shopify admin › Draft orders › open a draft order | Invoice reminders, custom quote follow-up, unpaid draft orders |
+| Abandoned checkout details | Shopify admin › Orders › Abandoned checkouts › open a checkout | High-value carts, VIP customers, personal sales outreach |
+| Customer details | Shopify admin › Customers › open a customer | General follow-up with a customer |
+
+Add it once per page type. After that it shows on every record of that type.
+
+<Steps>
+<Step title="Open a record">
+
+Open any order, draft order, abandoned checkout or customer in Shopify admin. Scroll to the **Blocks** section and click **+ Block**.
+
+</Step>
+<Step title="Choose the WhatFlow block">
+
+In the list of blocks, select **WhatsApp Message Block**.
+
+</Step>
+<Step title="Use it">
+
+The block is now pinned to that page type, with the heading **Send WhatsApp Message**. Your team can edit the prefilled text and open the chat from any record.
+
+</Step>
+</Steps>
+
+### Use the block
+
+1. The block shows **Customer Phone:** with the customer's number. If there is no number, it shows "No customer phone number found." On an order, the block uses the order phone first, then the shipping phone, then the billing phone.
+2. Edit the text in **Message** if you want. You can use WhatsApp formatting: \*bold\*, \_italic\_, ~strike~. A character count is shown.
+3. Click **Send in WhatsApp**. A WhatsApp chat opens in a new tab with the message typed in.
+4. Check the message and press send in WhatsApp.
+
+### Change the default message
+
+Click **Edit Default Template**, change the text in **Template**, and click **Save Template**. The default is saved for the whole store, so every staff member sees the same default. Each page type (order, draft order, abandoned checkout, customer) has its own default.
+
+You can use these variables. WhatFlow replaces them with the record's details.
+
+| Page | Default message | Variables |
+| --- | --- | --- |
+| Order | Hello `{{customer_name}}`, thank you for your order `{{order_name}}`! You can check your order status here: `{{order_status_url}}` | `{{customer_name}}`, `{{order_name}}`, `{{order_status_url}}`, `{{total_price}}`, `{{currency}}`, `{{email}}`, `{{city}}`, `{{country}}` |
+| Draft order | Hello `{{customer_name}}`, your draft order `{{order_name}}` is ready. You can pay your invoice here: `{{invoice_url}}` | `{{customer_name}}`, `{{order_name}}`, `{{invoice_url}}`, `{{total_price}}`, `{{currency}}`, `{{email}}`, `{{city}}`, `{{country}}` |
+| Abandoned checkout | Hello `{{customer_name}}`, we noticed you left some items in your cart. You can complete your purchase here: `{{checkout_url}}` | `{{customer_name}}`, `{{checkout_url}}`, `{{total_price}}`, `{{currency}}`, `{{email}}`, `{{city}}`, `{{country}}` |
+| Customer | Hello `{{customer_name}}`, thank you for being a valued customer! Feel free to reach out to us if you have any questions. | `{{customer_name}}`, `{{email}}`, `{{city}}`, `{{country}}` |
+
+## Send WhatsApp action buttons
+
+These actions send one of your approved WhatsApp templates through WhatFlow, from your connected business number. They are the same templates your automations use, so you can send a confirmation, shipping update or recovery message by hand, for example when an automation was off or you want to resend.
+
+### Where to find them
+
+On a single record, open **More actions** at the top of the page. On a list page, select records and open the actions menu.
+
+| Action name | Where | Template used |
+| --- | --- | --- |
+| **Send WhatsApp Confirmation** | Order details | Order confirmation |
+| **Send WhatsApp Fulfillment Notification** | Order details | Shipping / fulfillment update |
+| **Send WhatsApp Notification** | Order details | Order notification |
+| **Send WhatsApp Draft Recovery** | Draft order details | Draft order recovery |
+| **Send WhatsApp Abandoned Checkout Recovery** | Abandoned checkout details | Abandoned checkout recovery |
+| **Send WhatsApp Order Confirmations** | Orders list (select orders) | Order confirmation |
+| **Send WhatsApp Fulfillment Updates** | Orders list (select orders) | Shipping / fulfillment update |
+| **Send WhatsApp Order Notifications** | Orders list (select orders) | Order notification |
+| **Send WhatsApp Draft Recovery** | Draft orders list (select draft orders) | Draft order recovery |
+| **Send WhatsApp Abandoned Checkout Recovery** | Abandoned checkouts list | Abandoned checkout recovery |
+
+### Send a message
+
+<Steps>
+<Step title="Open the action">
+
+Open the record (or select records on the list) and choose the action.
+
+</Step>
+<Step title="Choose a template">
+
+Under **Message template**, pick a template in **Choose a template**. Only approved templates for that type of message are listed. WhatFlow preselects the template set in that automation's settings; if none is set, it picks the active template, or else the newest one.
+
+</Step>
+<Step title="Check the tag and preview">
+
+Change **Delivery tag** if you need to, and read the **Message preview**. Variables are shown in brackets, and each customer receives their own personalised message.
+
+</Step>
+<Step title="Send">
+
+Click **Send Message**. On a single record, WhatFlow asks you to confirm first.
+
+</Step>
+</Steps>
+
+<Settings>
+<Setting name="Choose a template">
+The approved template to send. To add one, create it for that automation in [Templates](/docs/templates/overview) and wait for Meta to approve it.
+</Setting>
+<Setting name="Delivery tag" value="The app setting">
+An order tag WhatFlow uses to record the message's delivery. Maximum 40 characters. It defaults to the tag set in the automation's settings. Leave it blank to skip the tag. Not shown for abandoned checkouts.
+</Setting>
+</Settings>
+
+### Bulk sends
+
+- You can send to 1–50 records at a time. If you select more, you see "Select no more than 50 orders at a time." (or "Select between 1 and 50 items.").
+- WhatFlow queues one message for each eligible record and shows the result for each one. Records that can't be sent are listed with the reason.
+- If WhatFlow could not confirm some sends, click **Retry unconfirmed**. Retrying is safe: a message that was already sent is not sent twice.
+
+### How these sends behave
+
+- They send even when the automation is turned off. Order confirmations sent this way also ignore the automation's conditions, such as payment method filters.
+- They are never stopped by the [Blocklist](/docs/account/blocklist), because you chose to send them.
+- They still need an active WhatFlow subscription, a connected WhatsApp number and an approved template.
+- Every click is a new send. If you click the action twice on the same order, the customer gets two messages.
+- Templates can be sent at any time, so the 24-hour window does not apply.
+- Each message that Meta accepts counts toward your plan.
+- Checkout and draft invoice links get WhatsApp tracking tags, so recovered sales can show in [Analytics](/docs/account/analytics).
+
+The customer's phone number is taken from the billing address first, then the shipping address, then the phone on the record, then the customer's phone. The country code comes from the billing or shipping address, or your store's country.
+
+## Troubleshooting
+
+### "No templates available"
+
+There is no approved template for this type of message. Create one in [Templates](/docs/templates/overview) for the matching automation and wait for Meta's approval.
+
+### "No customer phone found on order" (or checkout, or draft order)
+
+The record has no phone number in the billing address, shipping address, record or customer. Add a phone number to the customer and try again.
+
+### "This checkout has already been completed" or "This draft order has already been completed"
+
+The customer already paid. There is nothing to recover.
+
+### "The order's phone number is the same as the connected WhatFlow WhatsApp number."
+
+You can't send a WhatsApp message from your business number to itself. Use a different customer number for testing.
+
+### "Too many requests; nothing was queued. Retry in a minute."
+
+Too many actions were sent in a short time. Wait a minute and try again.
+
+### "The server did not confirm this message. Retry is safe and will not send it twice."
+
+WhatFlow did not get a confirmation for this send. Click **Retry unconfirmed**.
+
+### The block says "No customer phone number found."
+
+The record has no phone number the block can use. Add one to the order or customer, or use the action buttons, which also check the billing and customer phone.
+
+### The block message did not appear in Live Inbox
+
+That is expected. The block opens your own WhatsApp, so the message never goes through WhatFlow. Use the action buttons if you need the message in Live Inbox.

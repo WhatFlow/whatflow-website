@@ -1,0 +1,196 @@
+The blocklist is the list of phone numbers that should not get your automated WhatsApp template messages. Customers join it by replying STOP, and you can add numbers by hand or import them from a CSV file. Respecting opt-outs protects your number's quality rating and keeps you within Meta's rules.
+
+<Path>Home › Manage Blocklist</Path>
+
+The page is called **WhatsApp Blocklist**.
+
+## How it works
+
+- A customer sends **STOP** (or another opt-out keyword you add). WhatFlow adds their number to the blocklist and, if turned on, sends a confirmation reply.
+- A customer sends **START** (or another opt-in keyword). WhatFlow removes them from the blocklist and, if turned on, sends a confirmation reply.
+- You can also block numbers by hand or import a CSV file.
+- When **Respect blocklist** is on, WhatFlow skips blocked numbers for automated template messages.
+
+<Warning>
+
+**Respect blocklist** is off for new stores. Until you turn it on, numbers are still added to the blocklist when customers send STOP, but WhatFlow keeps sending them automated messages. Turn it on before you send broadcasts or marketing messages.
+
+</Warning>
+
+## Set it up
+
+<Steps>
+<Step title="Open the blocklist">
+
+From **Home**, click **Manage Blocklist**.
+
+</Step>
+<Step title="Turn on Respect blocklist">
+
+Under **Settings**, tick **Respect blocklist**.
+
+</Step>
+<Step title="Choose what to block">
+
+Under **Which automated messages should be blocked?**, choose **Promotions only** or **Marketing and order updates**.
+
+</Step>
+<Step title="Check the keywords and replies">
+
+Review the **Opt-out (STOP)** and **Opt-in (START)** sections and edit the replies if you want.
+
+</Step>
+<Step title="Save">
+
+Click **Save settings**. The page shows "All blocklist settings saved" when everything is saved. Click **Discard changes** to undo unsaved changes.
+
+</Step>
+</Steps>
+
+## Settings
+
+<Settings>
+<Setting name="Respect blocklist" value="Off for new stores">
+Blocked customers stop getting automated template messages: broadcasts, order and shipping automations, Flow template actions and Live Inbox workflows. When it is off, the page warns "Automated messages will also go to customers who opted out". Messaging people who haven't agreed to hear from you can lower your number's quality rating and messaging limits, and Meta may refuse to deliver some of these messages.
+</Setting>
+<Setting name="Which automated messages should be blocked?" value="Marketing and order updates">
+Applies only when **Respect blocklist** is on. See the options below.
+</Setting>
+</Settings>
+
+### Promotions only or Marketing and order updates
+
+| Option | What is blocked | Choose it when |
+| --- | --- | --- |
+| **Promotions only** | Marketing templates, including promotional broadcasts, offers and marketing workflow messages. | A customer wants to stop promotions but still needs order confirmations, shipping updates and other utility templates. |
+| **Marketing and order updates** (default) | Both marketing and utility templates, across broadcasts, order and shipping automations, Flow actions and Inbox workflows. | A customer wants to stop all automated template messages, including order notifications. |
+
+Meta decides each template's category. If a template's category is unknown, WhatFlow treats it as marketing.
+
+### Messages that are never blocked
+
+Even with **Respect blocklist** on, these messages always go through:
+
+- **Auto-replies** and other replies inside the 24-hour chat window, including Live Inbox chat replies and Shopify Flow text, media and button messages.
+- **Messages you send by hand** from Shopify admin (the Send WhatsApp action buttons) or from Live Inbox. See [Manual messaging](/docs/conversations/manual-messaging).
+- **Checkout codes** (one-time passcodes). See [OTP verification](/docs/automations/otp-verification).
+- The opt-out and opt-in confirmation replies.
+
+Template messages sent by connected AI apps follow your blocklist. Their normal replies inside the 24-hour window do not, the same as replies from your team.
+
+## Opt-out (STOP)
+
+**STOP** is always on and can't be removed. It works whether or not **Respect blocklist** is on: the number is always added to the blocklist.
+
+<Settings>
+<Setting name="Add opt-out keyword or phrase" value="block">
+Extra opt-out keywords. Use commas to add several, then click **Add opt-out phrase**. Up to 20 extra keywords, 40 characters each.
+</Setting>
+<Setting name="Reply when a customer opts out" value="On">
+Sent once, right after a customer is blocked by a keyword.
+</Setting>
+<Setting name="Opt-out reply" value="You won't receive automated WhatsApp messages from us anymore. Reply START to subscribe again. You can still message us here anytime.">
+The text of the reply. Up to 1,000 characters.
+</Setting>
+</Settings>
+
+### How keywords match
+
+- The whole message must be the keyword. Letter case, punctuation and emoji are ignored, so "Stop!" matches.
+- A keyword inside a longer message does not match. "Where is the bus stop?" does not block anyone.
+- WhatFlow also checks the text of a tapped button, a menu row the customer picked, and the caption of a photo or file.
+- Opt-out and opt-in messages never trigger [auto-replies](/docs/conversations/auto-replies).
+
+## Opt-in (START)
+
+<Settings>
+<Setting name="Add opt-in keyword or phrase" value="start">
+Keywords that let a customer subscribe again. Click **Add opt-in phrase** to add one. STOP can't be an opt-in keyword, and a keyword can't be both opt-in and opt-out. Remove all phrases to turn keyword opt-in off; customers then cannot resubscribe by keyword.
+</Setting>
+<Setting name="Reply when a customer opts back in" value="On">
+Sent once, right after a customer is unblocked by a keyword.
+</Setting>
+<Setting name="Opt-in reply" value="You're subscribed again and will receive WhatsApp updates from us. Reply STOP anytime to unsubscribe.">
+The text of the reply.
+</Setting>
+</Settings>
+
+Opt-in only removes numbers that were blocked by a customer opt-out or by a CSV import. Numbers you blocked by hand stay blocked until you unblock them.
+
+## Block a number by hand
+
+Under **Block a number**:
+
+1. Enter the **Phone number with country code**, for example +44 7700 900123.
+2. Add a **Note (optional)**, up to 200 characters.
+3. Click **Block number**.
+
+## Blocked numbers
+
+The **Blocked numbers** table lists every blocked number with its **Number**, **Source**, the date it was **Blocked**, and any **Note**. Use **Search by number** to find one.
+
+| Source | Meaning |
+| --- | --- |
+| **Customer opt-out** | The customer sent an opt-out keyword. |
+| **Added manually** | Someone on your team blocked it on this page. |
+| **Imported** | It came from a CSV import. |
+
+Click **Unblock** to remove a number. WhatFlow keeps the history of the block.
+
+### Import a CSV file
+
+Click **Import CSV** and choose a file.
+
+- The file needs a phone column with country codes. WhatFlow looks for a column named phone, number, mobile or whatsapp; otherwise it uses the first column.
+- An optional note column (named note, reason or comment) is kept.
+- Importing the same file twice changes nothing.
+
+When the import finishes, WhatFlow shows how many new numbers were blocked, how many were already blocked, and which rows were invalid. If the file has no phone numbers, you see "No phone numbers found in that file."
+
+Example file:
+
+```csv
+phone,note
++447700900123,Asked by email to stop
++14155551234,
+```
+
+### Export a CSV file
+
+Click **Export CSV** to download `whatsapp-blocklist.csv`. It has the columns phone, source, keyword, note and blocked_at.
+
+## Shared WhatsApp numbers
+
+If one WhatsApp number is connected to several of your stores, an opt-out applies to every store that shares the number.
+
+## What happens to blocked customers
+
+| Message | Result |
+| --- | --- |
+| Automations | Skipped for that customer. |
+| [Broadcasts](/docs/marketing/broadcasts) | The customer is marked **BLOCKLISTED** with "Not sent: this customer is on the WhatsApp blocklist." and counted as skipped. |
+| [Shopify Flow](/docs/integrations/shopify-flow) template action | The step finishes with status **BLOCKED**. It is not treated as a failure. |
+
+When a customer opts out, WhatFlow also fires the **WhatsApp Customer Opted Out** Shopify Flow trigger and counts it as an unsubscribe in [Analytics](/docs/account/analytics).
+
+## Troubleshooting
+
+### A customer sent STOP but still got a message
+
+Check that **Respect blocklist** is on and saved. Then check the type of message: replies inside the 24-hour window, manual sends and checkout codes are never blocked. With **Promotions only**, utility templates such as order confirmations are still sent.
+
+### A customer sent START but is still blocked
+
+The number was blocked by hand. Opt-in keywords only undo customer opt-outs and imports. Click **Unblock** next to the number.
+
+### A message containing "stop" blocked nobody
+
+That is expected. The whole message must be the keyword.
+
+### "STOP can't be an opt-in keyword."
+
+STOP is always an opt-out keyword. Choose a different opt-in keyword.
+
+### "Add up to 20 extra keywords." or "Keywords must be 40 characters or fewer."
+
+Remove some keywords, or shorten them.

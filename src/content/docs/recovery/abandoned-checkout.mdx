@@ -1,0 +1,134 @@
+Abandoned checkout sends WhatsApp reminders to customers who start checkout and leave without ordering. You can send up to 3 reminders, each with its own wait time and message.
+
+<Path>Home › Abandoned Checkout</Path>
+
+The page heading is **Abandoned checkout**.
+
+## How it works
+
+1. A customer reaches checkout and enters their contact details, then leaves.
+2. WhatFlow waits for the time you set for the first reminder (at least 30 minutes).
+3. Before each reminder, WhatFlow checks that the checkout is still unpaid. Reminders stop as soon as the customer orders.
+4. WhatFlow sends the reminder with a link back to the customer's checkout.
+5. The next reminder waits the time you set after the previous reminder.
+
+### When reminders stop
+
+WhatFlow does not send a reminder, and stops the sequence, when:
+
+- the customer placed an order from this checkout,
+- Shopify reports that the customer ordered since they left,
+- the checkout was completed,
+- any order was placed with the same phone number since the customer left,
+- the phone number on the checkout changed,
+- the checkout is older than 60 days.
+
+WhatFlow may also skip reminders for a customer who recently abandoned another checkout.
+
+## Set it up
+
+<Steps>
+<Step title="Get a template">
+
+The Template Library has three abandoned checkout templates: **Abandoned Checkout - Friendly Reminder**, **Abandoned Checkout - Discount Offer** and **Abandoned Checkout - FOMO**. They are Marketing templates. See [Message templates](/docs/templates/overview).
+
+</Step>
+<Step title="Add reminders">
+
+Under **Reminders**, set the wait time for **Reminder 1** and choose its message. Click **Add reminder** to add a second or third reminder.
+
+</Step>
+<Step title="Save">
+
+Click **Save**. You see "Reminders saved."
+
+</Step>
+<Step title="Turn it on">
+
+In the **Status** card, click **Turn on**. You need at least one reminder with an approved template, saved.
+
+</Step>
+</Steps>
+
+## Settings
+
+For each reminder (up to 3):
+
+<Settings>
+<Setting name="Wait after the customer leaves checkout">
+
+For **Reminder 1**. How long to wait, in **minutes**, **hours** or **days**. At least 30 minutes.
+
+</Setting>
+<Setting name="Wait after reminder N">
+
+For **Reminder 2** and **Reminder 3**. The wait counts from the previous reminder, not from when the customer left.
+
+</Setting>
+<Setting name="Message">
+
+The template for this reminder. Each reminder can use a different template.
+
+</Setting>
+</Settings>
+
+A reminder with no template, or with no wait time, is skipped. Each reminder shows a badge, such as **Not set up**, **Message missing**, **Ready** or **Sending**.
+
+For example, Reminder 1 after 1 hour, Reminder 2 after 23 hours and Reminder 3 after 2 days sends at about 1 hour, 1 day and 3 days after the customer left.
+
+## Discounts
+
+<Warning>
+
+There is no discount setting on this page. WhatFlow does not create discount codes or apply discounts to the checkout.
+
+</Warning>
+
+To offer a discount, put it in the template itself:
+
+- Write a fixed code in the message text, for example "Use code SAVE10 at checkout". Create the code in Shopify first.
+- Or add a **Copy code** button to the template with your code.
+
+The library template **Abandoned Checkout - Discount Offer** asks customers to reply YES to get a discount. WhatFlow does **not** send a code automatically when a customer replies YES. If you use this template, set up an [auto-reply](/docs/conversations/auto-replies) or a [Shopify Flow](/docs/integrations/shopify-flow) workflow that sends the code, or have your team answer in [Live Inbox](/docs/inbox/overview). Otherwise, use a template with the code already in it.
+
+## Template variables
+
+Besides the usual customer and store fields, abandoned checkout templates can use:
+
+- **Recovery URL**: the link back to the customer's checkout.
+- **Checkout Total**, **Checkout Subtotal** and **Checkout Tax**.
+
+For link buttons, choose **Checkout Recovery URL**. WhatFlow adds tracking parameters to the link so you can see which reminder brought the customer back. If the header is the product image, it uses the first item in the checkout.
+
+## What the customer sees
+
+An example using the **Abandoned Checkout - Friendly Reminder** starter template:
+
+<Preview buttons={["Complete Checkout","Stop"]}>
+Hi **Sara**! We noticed you left some great items in your cart at **Your Store** 🛒.
+
+**Items:** Classic Linen Shirt x 1
+**Total:** 49.99 USD
+
+They're waiting for you! Tap below to complete your purchase now.
+
+Reply STOP to stop receiving messages.
+</Preview>
+
+## Good to know
+
+- **Phone number needed.** WhatFlow uses the phone from the billing address, shipping address, checkout or customer. If there is none, nothing is sent.
+- **No order tags.** A checkout is not an order, so no tags are added.
+- **Marketing messages.** These templates are Marketing. Meta charges more for them, they must offer a way to opt out, and Meta may not deliver all of them. If you use the [Blocklist](/docs/account/blocklist), customers who opted out are skipped.
+- **Subscription required.** Every automated message needs an active WhatFlow plan. Without one, reminders are skipped.
+- **Meta restrictions turn automations off.** If Meta restricts your WhatsApp number, WhatFlow turns off Abandoned checkout and all other automations. Turn them back on yourself after Meta lifts the restriction.
+
+## Troubleshooting
+
+| Problem | Why |
+| --- | --- |
+| A customer got no reminder | They ordered, the checkout was completed, the phone changed, another order was placed with the same phone, the checkout had no phone, or they recently abandoned another checkout. |
+| "The first reminder must wait at least 30 minutes." | Set Reminder 1 to 30 minutes or more. |
+| "Cannot enable: configure at least one follow-up with an approved template and save settings first." | Add a reminder with an approved template and click **Save**. |
+| "Your reminder messages are waiting for Meta's review." | Wait for Meta to approve the template, then turn it on. |
+| Product image header fails | The first item has no image. Add an image in Shopify or use a fixed header image. |
