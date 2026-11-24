@@ -1,6 +1,6 @@
 Order Confirmation sends a WhatsApp message to the customer when a new order is placed, and asks them to confirm or cancel it with a button. Stores use it mostly to check cash on delivery (COD) orders before they pack and ship them.
 
-This page covers the settings. For how the Confirm and Cancel buttons tag the order, and how to act on those tags, see [COD verification on WhatsApp](/docs/automations/cod-verification).
+This page covers the settings. For how the Confirm and Cancel buttons tag the order, and how to act on those tags, see [COD confirmation](/docs/automations/cod-verification).
 
 ## How it works
 
@@ -36,7 +36,7 @@ The page heading is **Order Confirmation**.
 
 In the message card, click **Choose message** and pick an approved template, then click **Use this message**. To write your own, click **Create new**. See [Message templates](/docs/templates/overview).
 
-When you connect WhatsApp, WhatFlow submits a starter template called **Order Confirmation - Detailed** to Meta for you. It has **Confirm** and **Cancel** buttons. It is not switched on automatically: you still need to choose it here.
+When you connect WhatsApp, WhatFlow submits the library template **Order Confirmation - Detailed** to Meta for you. It has **Confirm** and **Cancel** buttons. It is not switched on automatically: you still need to choose it here.
 
 </Step>
 <Step title="Set when to send">
@@ -147,7 +147,7 @@ When delivery fails, WhatFlow adds one of these tags and writes a note on the or
 | --- | --- |
 | `WhatsApp: Not a User` | The phone number is not on WhatsApp. |
 | `WhatsApp: Opted Out` | The customer chose to stop these messages in WhatsApp. |
-| `WhatsApp: User Blocked` | The customer blocked your number. |
+| `WhatsApp: User Blocked` | Meta refused the message for this customer. |
 | `WhatsApp: Rate Limited` | Meta limited how fast you can send. |
 | `WhatsApp: Sender Restricted` | Meta restricted your number. |
 | `WhatsApp: Payment Issue` | Your Meta account has no working payment method. |
@@ -236,7 +236,7 @@ See [Template editor](/docs/templates/editor).
 
 ## What the customer sees
 
-An example using the **Order Confirmation - Detailed** starter template:
+An example using the **Order Confirmation - Detailed** library template:
 
 <Preview buttons={["Confirm","Cancel"]}>
 Dear **Sara**,
@@ -264,8 +264,8 @@ If the order has no phone number, or the number is not valid, no message is sent
 - **Meta restrictions turn automations off.** If Meta restricts your WhatsApp number, WhatFlow turns off every automation and shows a banner with an **Open Connections** button. After Meta lifts the restriction, you must turn each automation back on yourself.
 - **Template problems turn it off.** If Meta pauses, disables or rejects your template, or rates it low quality, and there is no other usable template, the automation turns off. It does not turn back on by itself after you fix the template.
 - **Order Notification at the same time.** If [Order Notification](/docs/automations/order-updates) is also on, the customer gets both messages.
-- **OTP confirmation at the same time.** If [OTP order confirmation](/docs/automations/otp-verification) is also on for the same orders, customers are asked twice. Turn one off, or give each one different payment methods.
-- **Respect blocklist.** If you turned on the [Blocklist](/docs/account/blocklist) for order updates, blocked customers are skipped.
+- **OTP confirmation at the same time.** If [OTP verification](/docs/automations/otp-verification) is also on for the same orders, customers are asked twice. Turn one off, or give each one different payment methods.
+- **Blocklist.** If **Respect blocklist** is on and set to **Marketing and order updates**, blocked customers are skipped. See [Blocklist](/docs/account/blocklist).
 
 ## Troubleshooting
 

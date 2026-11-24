@@ -2,15 +2,11 @@ The **Cash on Delivery** page lets you charge a fee for cash on delivery (COD) a
 
 <Note>
 
-This page does not send WhatsApp messages. To ask COD customers to confirm their order on WhatsApp, see [COD verification on WhatsApp](/docs/automations/cod-verification).
+This page does not send WhatsApp messages. To ask COD customers to confirm their order on WhatsApp, see [COD confirmation](/docs/automations/cod-verification).
 
 </Note>
 
 <Path>Cash on Delivery (in the app menu)</Path>
-
-## Where COD rules apply
-
-Shopify payment customizations run in supported online checkouts. They do not run in Point of Sale, and Shop Pay supports limited payment-method changes. Test your fee and rules in your store checkout before you take live orders.
 
 ## How the COD fee works
 
@@ -133,6 +129,10 @@ Each rule is a checkbox. Tick it to show its field.
 The rules **Limit if customer has one of tags**, **Limit if customer does not have one of tags**, **Limit if any product has any of tags** and **Limit if any product is in any of collections** can be saved, but they are not applied at checkout yet. COD still shows for these customers and products. Use the rules in the table above instead, for example pick the products one by one with **Limit if any product is in cart**.
 
 </Warning>
+
+## Where COD rules apply
+
+Shopify payment customizations run in supported online checkouts. They do not run in Point of Sale, and Shop Pay supports limited payment-method changes. Test your fee and rules in your store checkout before you take live orders.
 
 ## Troubleshooting
 

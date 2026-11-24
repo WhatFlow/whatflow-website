@@ -30,7 +30,7 @@ WhatFlow may also skip reminders for a customer who recently abandoned another c
 <Steps>
 <Step title="Get a template">
 
-The Template Library has three abandoned checkout templates: **Abandoned Checkout - Friendly Reminder**, **Abandoned Checkout - Discount Offer** and **Abandoned Checkout - FOMO**. They are Marketing templates. See [Message templates](/docs/templates/overview).
+The template library has three abandoned checkout templates: **Abandoned Checkout - Friendly Reminder**, **Abandoned Checkout - Discount Offer** and **Abandoned Checkout - FOMO**. They are Marketing templates. See [Message templates](/docs/templates/overview).
 
 </Step>
 <Step title="Add reminders">
@@ -102,7 +102,7 @@ For link buttons, choose **Checkout Recovery URL**. WhatFlow adds tracking param
 
 ## What the customer sees
 
-An example using the **Abandoned Checkout - Friendly Reminder** starter template:
+An example using the **Abandoned Checkout - Friendly Reminder** library template:
 
 <Preview buttons={["Complete Checkout","Stop"]}>
 Hi **Sara**! We noticed you left some great items in your cart at **Your Store** 🛒.
@@ -119,7 +119,7 @@ Reply STOP to stop receiving messages.
 
 - **Phone number needed.** WhatFlow uses the phone from the billing address, shipping address, checkout or customer. If there is none, nothing is sent.
 - **No order tags.** A checkout is not an order, so no tags are added.
-- **Marketing messages.** These templates are Marketing. Meta charges more for them, they must offer a way to opt out, and Meta may not deliver all of them. If you use the [Blocklist](/docs/account/blocklist), customers who opted out are skipped.
+- **Marketing messages.** These templates are Marketing. Meta charges more for them, they must offer a way to opt out, and Meta may not deliver all of them. If **Respect blocklist** is on, customers on your [Blocklist](/docs/account/blocklist) are skipped.
 - **Subscription required.** Every automated message needs an active WhatFlow plan. Without one, reminders are skipped.
 - **Meta restrictions turn automations off.** If Meta restricts your WhatsApp number, WhatFlow turns off Abandoned checkout and all other automations. Turn them back on yourself after Meta lifts the restriction.
 
