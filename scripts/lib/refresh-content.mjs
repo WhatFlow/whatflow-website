@@ -77,7 +77,7 @@ export async function checkDoc({meta,body},{kind,slug,linkable,root='.'}){
  const dashes=(body.match(/—/g)||[]).length;
  if(dashes>Math.max(3,words/250))warnings.push(`em-dashes ${dashes} in ${words} words`);
  if(/WhatFlow[^.]{0,80}(\b3\.9\b|\b336 reviews|\b332 reviews|\b51 reviews)/.test(body+JSON.stringify(meta)))errors.push('stale rating figure');
- if(/5\.0(\/5| out of 5)? from 5[58] |4\.9(\/5| out of 5)?( rating)? (from|\() ?(5[589]|72) (ratings|reviews)|4\.0(\/5| out of 5)?( rating)? (from|\() ?3(29|31|41) (ratings|reviews)/.test(body+JSON.stringify(meta)))errors.push("stale WhatFlow rating (Nov 23 2026: Business API 5.0 from 84, Chat Automation 4.0 from 349)");
+ if(/5\.0(\/5| out of 5)?( rating)? (from|\() ?(5[58]|84) (ratings|reviews)?|4\.9(\/5| out of 5)?( rating)? (from|\() ?(5[589]|72|84) (ratings|reviews)|4\.0(\/5| out of 5)?( rating)? (from|\() ?3(29|31|41|49) (ratings|reviews)/.test(body+JSON.stringify(meta)))errors.push("stale WhatFlow rating (Nov 24 2026: Business API 5.0 from 85, Chat Automation 4.0 from 351)");
  if(/whatflow\.tech\//i.test(body+JSON.stringify(meta)))errors.push('links the old whatflow.tech domain');
  if(/72[- ]hour (free entry|FEP)|free entry[^.]{0,40}72[- ]hours?/i.test(body.replace(/"72 hours"[^.]*older/gi,'')+JSON.stringify(meta)))errors.push('free entry point window is now up to 7 days');
  if(/\]\(\/contact\b/.test(body))errors.push('/contact does not exist');
