@@ -4,9 +4,11 @@ import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { DocsToc } from "@/components/docs/DocsToc";
 import { DOCS_ARTICLES, getDocNeighbours, getDocPage } from "@/lib/docs/nav";
+import { getBreadcrumbSchema } from "@/lib/schema-org";
 
 export const dynamicParams = false;
 
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://whatflow.io").replace(/\/$/, "");
 const SUPPORT_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_SUPPORT_NUMBER?.trim().replace(/^\+/, "");
 
 export function generateStaticParams() {
@@ -38,15 +40,36 @@ export default async function DocPage({ params }: Props) {
 		notFound();
 	}
 	const { prev, next } = getDocNeighbours(slug);
+	const structuredData = [
+		getBreadcrumbSchema([
+			{ name: "Home", url: "/" },
+			{ name: "Docs", url: "/docs" },
+			{ name: page.title, url: page.url },
+		]),
+		{
+			"@context": "https://schema.org",
+			"@type": "TechArticle",
+			headline: page.title,
+			description: page.description,
+			url: `${SITE_URL}${page.url}`,
+			inLanguage: "en",
+			articleSection: page.group,
+			...(page.keywords?.length ? { keywords: page.keywords.join(", ") } : {}),
+			about: { "@type": "SoftwareApplication", name: "WhatFlow Business API", applicationCategory: "BusinessApplication" },
+			publisher: { "@type": "Organization", name: "WhatFlow", url: SITE_URL },
+		},
+	];
 
 	return (
 		<div className="docs-page" key={slug}>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 			<article className="docs-article">
 				<header className="docs-header">
 					<p className="docs-eyebrow">{page.group}</p>
 					<h1>{page.title}</h1>
 					<p className="docs-lead">{page.description}</p>
 				</header>
+				<DocsToc key={`inline-${slug}`} inline />
 				<div className="docs-prose">
 					<Content />
 				</div>

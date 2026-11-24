@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 type Item = { id: string; text: string; level: number };
 
 /** "On this page" links, read from the rendered article's h2/h3 headings. */
-export function DocsToc() {
+export function DocsToc({ inline = false }: { inline?: boolean }) {
 	const [items, setItems] = useState<Item[]>([]);
 	const [active, setActive] = useState("");
 
@@ -27,6 +27,18 @@ export function DocsToc() {
 	}, []);
 
 	if (items.length < 2) return null;
+	if (inline) {
+		return (
+			<details className="docs-toc-inline">
+				<summary>On this page</summary>
+				<ul>
+					{items.filter((item) => item.level === 2).map((item) => (
+						<li key={item.id}><a href={`#${item.id}`}>{item.text}</a></li>
+					))}
+				</ul>
+			</details>
+		);
+	}
 	return (
 		<nav className="docs-toc" aria-label="On this page">
 			<p className="docs-toc-title">On this page</p>
